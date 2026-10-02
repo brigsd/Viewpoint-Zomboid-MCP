@@ -1,0 +1,9 @@
+# Material Template Library - Canned Sardines (Vanilla B42)
+newmtl Material
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.300 0.300 0.300
+Ns 45.0
+d 1.0
+illum 2
+map_Kd textures/canned_sardines_diffuse.png

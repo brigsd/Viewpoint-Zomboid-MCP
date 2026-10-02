@@ -1,0 +1,26 @@
+{
+  "formatVersion": 2,
+  "mods": [
+    {
+      "id": "TestMod1",
+      "workshop_id": 3709229404,
+      "jar_hash": "c180d888eac78369a58dd266e98095ca7e86e16533294ee43ec750e729827064",
+      "decision": true,
+      "time": "2026-04-01T12:34:56Z",
+      "author_id": 76561198043849998
+    },
+    {
+      "id": "TestMod2",
+      "workshop_id": 1234567890,
+      "jar_hash": "abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234abcd1234",
+      "decision": false,
+      "time": "2026-04-02T10:00:00Z",
+      "author_id": 76561198012345678
+    },
+    {
+      "id": "LocalMod",
+      "jar_hash": "deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "decision": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# ==============================================================================
+# .gitignore - Project Zomboid 3D First Person & Shaders Suite
+# ==============================================================================
+# Mantém o repositório 100% limpo, leve e sem binários pesados.
+# Assets pesados são sintetizados via setup_assets.py ou distribuídos via Releases.
+# ==============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.venv
+venv/
+env/
+.env
+
+# Node / Vite / Playwright
+node_modules/
+dist/
+.vite/
+package-lock.json
+
+# Imagens de Inspeção e Renders Temporários
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+/05-Model-3D-Extractor-MCP/objetos-extraidos-vanilla/inspecoes/
+
+# Modelos 3D Vanilla Proprietários Extraídos do Jogo (Evita Violação de Direitos)
+/05-Model-3D-Extractor-MCP/objetos-extraidos-vanilla/modelos-3d-originais/
+*.fbx
+*.glb
+*.x
+*.pack
+
+# Arquivos Compactados de Releases
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Logs e Arquivos Temporários do Sistema / IDE
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

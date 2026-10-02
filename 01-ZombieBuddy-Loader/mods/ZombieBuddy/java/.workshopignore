@@ -1,0 +1,7 @@
+# see https://github.com/zed-0xff/ZBetterWorkshopUpload
+
+bin
+build/classes
+build/reports
+build/test*
+gradle*

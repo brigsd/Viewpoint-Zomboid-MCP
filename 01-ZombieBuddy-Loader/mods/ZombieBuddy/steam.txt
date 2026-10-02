@@ -1,0 +1,129 @@
+A framework that enables advanced Java mods for Project Zomboid.
+
+[b]What it does:[/b]
+ZombieBuddy is required by some mods to work. If a mod tells you to install ZombieBuddy, follow the instructions below.
+
+[h1]Installation (One-Time Setup)[/h1]
+
+[b]Step 1:[/b] Subscribe to ZombieBuddy on Steam Workshop
+
+[b]Step 2:[/b] Installation is required ONLY ONCE for ZombieBuddy itself.
+
+[b]🪟 Windows:[/b]
+
+[u]Option A: Automated Installer (Recommended)[/u]
+[list]
+[*] Download the latest ZombieBuddyInstaller.exe from [url=https://github.com/zed-0xff/ZombieBuddy/releases/tag/windows_installer]GitHub Releases[/url]
+[*] Run the installer and choose [b]Install or update ZombieBuddy[/b].
+[*] Choose what launch mode to patch:
+[list]
+[*] [b]Both[/b] (recommended): patches Normal Launch and Alternate Launch.
+[*] [b]Normal Launch[/b]: then choose ProjectZomboid64.json, Steam launch options, or both.
+[*] [b]Alternate Launch[/b]: patches ProjectZomboid64.bat.
+[/list]
+[*] The installer shows every system change first and asks for confirmation before applying it.
+[*] If Steam launch options need to be changed, the installer will ask you to close Steam at that point.
+[*] The same installer can also uninstall ZombieBuddy later: run it again and choose [b]Uninstall ZombieBuddy[/b].
+[/list]
+
+[u]Option B: Manual Installation[/u]
+[list]
+[*] Copy ZombieBuddy.jar and zbNative.dll from:
+[code]C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3619862853\mods\ZombieBuddy\libs\[/code]
+to your Project Zomboid folder:
+[code]C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\[/code]
+[*] Open Project Zomboid's launch options in Steam
+[*] Add this launch option: [code]-agentlib:zbNative --[/code]
+[*] [b]⚠️ IMPORTANT:[/b] The -- at the end is mandatory - do not omit it!
+[*] If you use the game's Alternate Launch option on Windows, set the ProjectZomboid64.bat _JAVA_OPTIONS line to: [code]SET _JAVA_OPTIONS=-agentlib:zbNative[/code]
+[/list]
+
+[b]🍎 macOS / 🐧 Linux:[/b]
+[list]
+[*] Copy ZombieBuddy.jar from the mod's libs/ directory to:
+[list]
+[*] [b]macOS:[/b] ~/Library/Application Support/Steam/steamapps/common/ProjectZomboid/Project Zomboid.app/Contents/Java/
+[*] [b]Linux:[/b] ~/.steam/steam/steamapps/common/ProjectZomboid/projectzomboid/
+[/list]
+[*] Open Project Zomboid's launch options in Steam
+[*] Add this JVM argument: -javaagent:ZombieBuddy.jar --
+[*] [b]⚠️ IMPORTANT:[/b] The -- at the end is mandatory - do not omit it!
+[/list]
+
+[b]Step 3:[/b] After this setup, all mods that require ZombieBuddy will work automatically!
+
+[h1]Uninstall[/h1]
+[list]
+[*] [b]Disable the agent first:[/b] Open Project Zomboid → Properties → clear the Launch Options line
+[*] Delete zbNative.dll and ZombieBuddy.jar from your Project Zomboid install directory
+[*] Unsubscribe from ZombieBuddy on Steam
+[/list]
+
+[h1]⚠️ Security Warning ⚠️[/h1]
+Java mods enabled through ZombieBuddy have unrestricted access to your system. Only install mods from sources you trust.
+
+[b]No jar will sneak in.[/b] Whenever a Java mod ships a new or updated JAR, ZombieBuddy shows a native dialog with the mod id, file path, last-modified date, and SHA-256 fingerprint. Nothing is loaded until you click [b]Yes[/b]. You can choose to remember the decision (per-mod, per-hash) or keep it session-only. Persisted allow/deny choices are written to JSON (mod id → { sha256 → true|false }) at:
+[list]
+[*] [b]Windows:[/b] %USERPROFILE%\.zombie_buddy\mod_approvals.json
+[*] [b]macOS / Linux:[/b] ~/.zombie_buddy/mod_approvals.json
+[/list]
+If a previously-approved JAR changes on disk (hash mismatch), you will be prompted again.
+Tip: hold [b]Shift[/b] during game load to force the approval dialog to appear, even for previously approved Java mods.
+
+[h1]Java Mod Policy[/h1]
+Controls what happens when an unknown/changed JAR is seen. Pass as a [b]policy=...[/b] argument:
+[list]
+[*] [b]prompt[/b] (default) - ask me each time via a native dialog.
+[*] [b]deny-new[/b] - silently skip any JAR that isn't already approved.
+[*] [b]allow-all[/b] - load every JAR without prompting. [b]Not recommended.[/b]
+[/list]
+Examples (block form, these go into Steam launch options):
+[code]
+-agentlib:zbNative=policy=deny-new --            (Windows)
+-javaagent:ZombieBuddy.jar=policy=deny-new --    (macOS / Linux)
+[/code]
+
+[h1]FAQ[/h1]
+[list]
+    [*][b]Is it a virus?[/b]
+    No.
+
+    [*][b]How to start game in debug mode?[/b]
+    [code]
+    -agentlib:zbNative -- -debug
+    OR
+    -javaagent:ZombieBuddy.jar -- -debug
+    [/code]
+
+    [*][b]Do I need to repeat manual installation after I upgrade/downgrade/validate game?[/b]
+    No, if you use the default launcher and have agentlib in Steam launch options.
+    Yes, if ZombieBuddy stops loading.
+
+    [*][b]Works on MP?[/b]
+    Yes.
+
+    [*][b]Save compatibility?[/b]
+    Safe to add or remove on existing saves.
+
+    [*][b]I clicked the wrong button in the approval dialog. How do I reset it?[/b]
+    Open mod_approvals.json (path above), under 'mods' find your mod id, then remove or edit the SHA-256 key you want to reset (or change true/false), save, and restart.
+
+    [*][b]Can I see which Java mods were loaded or blocked?[/b]
+    Yes - install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3709229404]Zed's Better ModList[/url] and the status is shown next to each JAR path in the mod list.
+
+    [*][b]Supported game versions?[/b]
+    B41, B42.12-B42.17
+
+    [*][b]Can I hide ZB watermark?[/b]
+    Yes, in ModOptions. During game boot it is always visible.
+
+    [*][b]WHY ALL LINKS ARE REMOVED FROM THIS PAGE AND COMMENTS DISABLED???!!![/b]
+    Steam does that while it checks a newly uploaded mod version for viruses, I suppose. Everything should return to normal in 10..30 minutes, depending on how busy their system is.
+[/list]
+
+[h1]Links[/h1]
+[url=https://github.com/zed-0xff/ZombieBuddy]GitHub Repository[/url]
+
+[h1]Support the Project[/h1]
+If you find ZombieBuddy useful, consider supporting its development:
+[url=https://ko-fi.com/zed_0xff][img]https://i.imgur.com/Utx6OIH.png[/img][/url]

@@ -1,0 +1,47 @@
+# Model: canned_sardines_3d (CannedSardines 1993)
+# Dimensions (m): 0.110 W x 0.040 H x 0.065 D
+mtllib canned_sardines_3d.mtl
+o canned_sardines_3d
+
+v -0.0550 0.0000 -0.0325
+v  0.0550 0.0000 -0.0325
+v  0.0550 0.0400 -0.0325
+v -0.0550 0.0400 -0.0325
+v -0.0550 0.0000  0.0325
+v  0.0550 0.0000  0.0325
+v  0.0550 0.0400  0.0325
+v -0.0550 0.0400  0.0325
+
+vn  0.0  0.0 -1.0
+vn  0.0  0.0  1.0
+vn -1.0  0.0  0.0
+vn  1.0  0.0  0.0
+vn  0.0  1.0  0.0
+vn  0.0 -1.0  0.0
+
+# Topo da lata com anel pull-tab (V: 0.5..1.0)
+vt 0.0000 0.5000
+vt 1.0000 0.5000
+vt 1.0000 1.0000
+vt 0.0000 1.0000
+
+# Lateral metálica da lata (V: 0.0..0.25)
+vt 0.0000 0.0000
+vt 1.0000 0.0000
+vt 1.0000 0.2500
+vt 0.0000 0.2500
+
+s 1
+usemtl Material
+# Frente
+f 5/5/2 6/6/2 7/7/2 8/8/2
+# Traseira
+f 2/5/1 1/6/1 4/7/1 3/8/1
+# Topo (Tampa com anel)
+f 8/1/5 7/2/5 3/3/5 4/4/5
+# Fundo
+f 1/5/6 2/6/6 6/7/6 5/8/6
+# Esquerda
+f 1/5/3 5/6/3 8/7/3 4/8/3
+# Direita
+f 6/5/4 2/6/4 3/7/4 7/8/4

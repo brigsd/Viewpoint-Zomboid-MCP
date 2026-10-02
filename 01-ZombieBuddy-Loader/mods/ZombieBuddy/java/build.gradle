@@ -1,0 +1,515 @@
+plugins {
+    id 'java'
+    id 'signing'
+    id 'com.gradleup.shadow' version '9.2.2'
+    id 'io.github.zed-0xff.zb-gradle-plugin' version '1.0.1'
+}
+
+// Game classpath: comma-separated JARs or dirs. Set via -PgameClasspath=... and/or env PZ_CLASSPATH.
+// Optional: only needed for compilation, not for running tests
+def rawGameClasspath = project.findProperty('gameClasspath')?.toString()?.trim()
+if (!rawGameClasspath) {
+    rawGameClasspath = System.getenv('PZ_CLASSPATH')?.trim()
+}
+if (!rawGameClasspath) {
+    rawGameClasspath = System.getProperty("pz.classpath")
+}
+def GAME_CLASSPATH = []
+if (rawGameClasspath) {
+    GAME_CLASSPATH = rawGameClasspath.split(',').collect { path -> file(path.trim()) }
+}
+
+// Read version from VERSION file
+def versionFile = file('VERSION')
+def version = versionFile.exists() ? versionFile.text.trim() : '1.0.0'
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies {
+    implementation 'net.bytebuddy:byte-buddy:1.18.8'
+    implementation 'net.bytebuddy:byte-buddy-agent:1.18.8'
+    implementation 'io.github.classgraph:classgraph:4.8.184'
+    implementation 'org.bouncycastle:bcprov-jdk18on:1.78.1'
+    implementation 'com.google.code.gson:gson:2.12.1'
+
+    compileOnly files(GAME_CLASSPATH)
+    
+    // Test dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.0'
+    testImplementation 'org.mockito:mockito-core:5.5.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.5.0'
+}
+
+jar {
+    archiveBaseName.set("ZombieBuddy")
+    archiveClassifier.set("plain")
+    manifest {
+        attributes(
+            'Premain-Class': 'me.zed_0xff.zombie_buddy.Agent',
+            'Can-Redefine-Classes': 'true',
+            'Can-Retransform-Classes': 'true',
+            'Implementation-Version': version
+        )
+    }
+}
+
+shadowJar {
+    archiveBaseName.set("ZombieBuddy")
+    archiveClassifier.set("")
+    manifest {
+        attributes(
+            'Premain-Class': 'me.zed_0xff.zombie_buddy.Agent',
+            'Can-Redefine-Classes': 'true',
+            'Can-Retransform-Classes': 'true',
+            'Implementation-Version': version
+        )
+    }
+    mergeServiceFiles()
+    
+    relocate 'com.google.gson', 'zb.com.google.gson'
+    relocate 'org.bouncycastle', 'zb.org.bouncycastle'
+
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+    exclude 'META-INF/*.MF'
+    exclude 'META-INF/versions/**'
+    exclude '*.dll'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+// Configure signing
+// Supports:
+// 1. KeychainStore - Direct access to Apple Keychain (no export needed)
+// 2. PKCS12 (.p12) - Exported from Keychain
+// 3. JKS - Traditional Java keystore
+//
+// To use KeychainStore (recommended on macOS):
+//   - Set signing.storeType=KeychainStore
+//   - Set signing.keyAlias to your certificate's common name
+//   - Find certificate name: security find-identity -p codesigning -v
+//   - No storeFile or passwords needed
+def useKeychain = project.findProperty('signing.storeType') == 'KeychainStore'
+def hasStoreFile = project.hasProperty('signing.storeFile')
+
+if (useKeychain) {
+    // Use KeychainStore - create a custom signing task
+    def keyAlias = project.findProperty('signing.keyAlias')
+    
+    // Create a custom task that uses jarsigner with KeychainStore
+    task signJar(type: Exec) {
+        dependsOn shadowJar
+        onlyIf { keyAlias != null }
+        
+        def jarFile = shadowJar.archiveFile.get().asFile
+        
+        // Use jarsigner from PATH or find it from JAVA_HOME
+        def jarsignerPath = System.getenv('JAVA_HOME') ? 
+            new File(System.getenv('JAVA_HOME'), "bin/jarsigner").absolutePath : 
+            "jarsigner"
+        
+        commandLine jarsignerPath,
+            '-keystore', 'NONE',
+            '-storetype', 'KeychainStore',
+            '-storepass', '',
+            '-keypass', '',
+            jarFile.absolutePath,
+            keyAlias
+    }
+    
+    // Make the build depend on signing
+    build.dependsOn signJar
+} else if (hasStoreFile) {
+    // Use file-based keystore (JKS or PKCS12)
+    signing {
+        required = true
+        
+        def storeFilePath = project.findProperty('signing.storeFile')
+        def storeFileObj = file(storeFilePath)
+        def storeType = project.findProperty('signing.storeType')
+        
+        // Auto-detect keystore type if not specified
+        if (storeType == null) {
+            def fileName = storeFileObj.name.toLowerCase()
+            if (fileName.endsWith('.p12') || fileName.endsWith('.pfx')) {
+                storeType = 'PKCS12'
+            } else if (fileName.endsWith('.jks')) {
+                storeType = 'JKS'
+            }
+        }
+        
+        storeFile = storeFileObj
+        storePassword = project.findProperty('signing.storePassword')
+        keyAlias = project.findProperty('signing.keyAlias')
+        keyPassword = project.findProperty('signing.keyPassword')
+        
+        sign shadowJar
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+            include '**/*.java'
+        }
+    }
+    test {
+        java {
+            srcDirs = ['test']
+            include '**/*.java'
+        }
+        // Ensure test source set can access main source set classes
+        compileClasspath += main.output
+        runtimeClasspath += main.output
+    }
+    testVanilla {
+        java {
+            srcDirs = ['test_vanilla']
+            include '**/*.java'
+        }
+        // Ensure testVanilla source set can access main source set classes
+        compileClasspath += main.output
+        runtimeClasspath += main.output
+    }
+    testPatched {
+        java {
+            srcDirs = ['test_patched']
+            include '**/*.java'
+        }
+        // Ensure testPatched source set can access main source set classes
+        compileClasspath += main.output
+        runtimeClasspath += main.output
+    }
+    testjar {
+        java {
+            srcDirs = ['testjar/src']
+            include '**/*.java'
+        }
+        // testjar needs access to main classes for @Patch annotation
+        compileClasspath += main.output
+    }
+    testpatches {
+        java {
+            srcDirs = ['testpatches']
+            include '**/*.java'
+        }
+        // testpatches needs access to main classes for @Patch annotation
+        compileClasspath += main.output
+        // testpatches needs access to testjar classes for CustomObject
+        compileClasspath += testjar.output
+    }
+}
+
+// Copy native DLL to build/libs
+task copyNativeDll(type: Copy) {
+    description = 'Copies zbNative.dll to build/libs directory'
+    group = 'build'
+    
+    def sourceFile = file('../c/windows/zbNative.dll')
+    
+    doFirst {
+        if (!sourceFile.exists()) {
+            throw new RuntimeException("zbNative.dll not found at ${sourceFile.absolutePath}")
+        }
+        println "[ZB] Copying zbNative.dll from ${sourceFile.absolutePath} to ${buildDir}/libs"
+    }
+    
+    from sourceFile
+    into "$buildDir/libs"
+    
+    // Ensure task always runs
+    outputs.upToDateWhen { false }
+}
+
+// Gradle 9: signJarZBS and copyNativeDll both touch build/libs — declare ordering.
+tasks.whenTaskAdded { task ->
+    if (task.name == 'signJarZBS') {
+        task.dependsOn(tasks.named('copyNativeDll'))
+    }
+}
+
+tasks.named("check") {
+    dependsOn test
+}
+
+tasks.named("build") {
+    dependsOn check
+    dependsOn shadowJar
+    finalizedBy copyNativeDll
+}
+
+tasks.named("assemble") {
+    dependsOn shadowJar
+}
+
+// Ensure copyNativeDll runs after the shaded agent JAR is built
+copyNativeDll.mustRunAfter shadowJar
+
+// disable annotation processing, JNI headers, and incremental compilation
+tasks.withType(JavaCompile).configureEach {
+    options.annotationProcessorPath = files()
+    options.generatedSourceOutputDirectory.set(provider { null })
+    options.headerOutputDirectory.set(provider { null })
+    options.incremental = false
+
+    doLast {
+        delete "${buildDir}/tmp"
+    }
+}
+
+// Helper to recursively check for .class files
+def hasClassFiles(File dir) {
+    if (!dir.exists() || !dir.isDirectory()) {
+        return false
+    }
+    def files = dir.listFiles()
+    if (files == null) {
+        return false
+    }
+    for (def file : files) {
+        if (file.isFile() && file.name.endsWith('.class')) {
+            return true
+        }
+        if (file.isDirectory() && hasClassFiles(file)) {
+            return true
+        }
+    }
+    return false
+}
+
+// Require gameClasspath for main source compilation, unless classes are already compiled
+def compileJavaTask = tasks.named('compileJava', JavaCompile).get()
+compileJavaTask.onlyIf {
+    if (!GAME_CLASSPATH.isEmpty()) {
+        return true // Always compile if gameClasspath is provided
+    }
+    
+    // Check if classes already exist - recursively search for .class files
+    def outputDir = compileJavaTask.destinationDirectory.get().asFile
+    if (hasClassFiles(outputDir)) {
+        return false // Skip compilation if classes exist
+    }
+    
+    // No classes found - will fail in doFirst
+    return true
+}
+
+compileJavaTask.doFirst {
+    if (GAME_CLASSPATH.isEmpty()) {
+        // Verify classes exist (in case onlyIf didn't work)
+        def outputDir = destinationDirectory.get().asFile
+        if (!hasClassFiles(outputDir)) {
+            throw new RuntimeException(
+                "Game classpath must be set: -PgameClasspath=<path1>,<path2>,... and/or env PZ_CLASSPATH " +
+                "(comma-separated JARs or directories).\n" +
+                "Example: gradle build -PgameClasspath=../../../../../42.13/java/projectzomboid.jar\n" +
+                "Note: Tests can run without game classpath if classes are already compiled."
+            )
+        }
+    }
+}
+
+// Create JAR for testjar source set (only TargetClass, no patches)
+task testJar(type: Jar) {
+    archiveBaseName.set("testjar")
+    from sourceSets.testjar.output
+    // Exclude patch classes - only include TargetClass
+    exclude 'testjar/TargetPatch.class'
+    dependsOn compileTestjarJava
+}
+
+// Create JAR for testpatches source set (contains patch classes)
+task testpatchesJar(type: Jar) {
+    archiveBaseName.set("testpatches")
+    from sourceSets.testpatches.output
+    dependsOn compileTestpatchesJava
+}
+
+// Add testjar JAR as test dependency
+dependencies {
+    testImplementation files(tasks.named('testJar'))
+    testVanillaImplementation files(tasks.named('testJar'))
+    testPatchedImplementation files(tasks.named('testJar'))
+    
+    // Test dependencies for vanilla and patched tests
+    testVanillaImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testVanillaRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.0'
+
+    testPatchedImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testPatchedRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.0'
+
+    // required for running tests because many ZB classes reference PZ classes, even if not directly tested, e.g. Exposer
+    testPatchedRuntimeOnly files(GAME_CLASSPATH)
+}
+
+// Configure all test tasks to always run and output test results
+tasks.withType(Test) {
+    // Always run tests, even if build is up-to-date
+    outputs.upToDateWhen { false }
+
+    jvmArgs += "-XX:+EnableDynamicAgentLoading"
+    
+    // Don't capture stdout/stderr - show it directly in console
+    testLogging {
+        showStandardStreams = true
+    }
+    
+    // Disable HTML reports
+    reports {
+        html.required = false
+    }
+    
+    // Output test results summary
+    afterSuite { desc, result ->
+        if (!desc.parent) {
+            println "\n[=] ${name.padRight(12)}: ${result.testCount} tests, ${result.successfulTestCount} successful, ${result.failedTestCount} failed"
+        }
+    }
+}
+
+// Vanilla tests - run without javaagent
+// Run with: gradle test_vanilla
+task test_vanilla(type: Test) {
+    description = 'Runs vanilla tests (without javaagent) from test_vanilla directory'
+    group = 'verification'
+    
+    useJUnitPlatform()
+    dependsOn testJar
+    
+    // Use testVanilla source set
+    testClassesDirs = sourceSets.testVanilla.output.classesDirs
+    classpath = sourceSets.testVanilla.runtimeClasspath
+}
+
+// Patched tests - run with javaagent
+// Run with: gradle test_patched
+task test_patched(type: Test) {
+    description = 'Runs patched tests (with javaagent) from test_patched directory'
+    group = 'verification'
+    
+    useJUnitPlatform()
+    dependsOn testJar
+    dependsOn testpatchesJar
+    dependsOn shadowJar  // Fat shaded ZombieBuddy.jar (javaagent)
+
+    // Use testPatched source set
+    testClassesDirs = sourceSets.testPatched.output.classesDirs
+    classpath = sourceSets.testPatched.runtimeClasspath
+
+    // Add javaagent JVM argument with patches_jar parameter
+    // Format: <path>:<package_name>
+    def patchesJarPath = testpatchesJar.archiveFile.get().asFile.absolutePath
+    def patchesPackageName = "me.zed_0xff.zombie_buddy.testpatches"
+
+    // Gson must be on the bootstrap classpath so it is visible when premain() runs.
+    // Deferred to doFirst so the configuration is fully resolved before we iterate.
+    doFirst {
+        def gsonJar = configurations.runtimeClasspath.find { it.name.contains("gson") }
+        if (!gsonJar) throw new GradleException("gson jar not found in runtimeClasspath")
+        def bcJar = configurations.runtimeClasspath.find { it.name.contains("bcprov") }
+        if (!bcJar) throw new GradleException("bouncycastle jar not found in runtimeClasspath")
+        jvmArgs "-Xbootclasspath/a:${gsonJar}${File.pathSeparator}${bcJar}"
+        jvmArgs "-javaagent:${shadowJar.archiveFile.get().asFile.absolutePath}=patches_jar=${patchesJarPath}:${patchesPackageName},verbosity=2,config_dir=.config"
+    }
+}
+
+// Unit tests (test/ source set) - e.g. AccessorTest, VersionCheckTest, PatchTest
+task unitTest(type: Test) {
+    description = 'Runs unit tests from test/ directory'
+    group = 'verification'
+    useJUnitPlatform()
+    dependsOn testJar
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+}
+
+// Main test task - runs unit tests, vanilla, and patched tests
+// Run with: gradle test
+tasks.named('test', Test) {
+    description = 'Runs unit, vanilla, and patched tests'
+    group = 'verification'
+    
+    // Don't discover tests from the default test source set
+    testClassesDirs = files()
+    classpath = files()
+    
+    dependsOn unitTest
+    dependsOn test_vanilla
+    dependsOn test_patched
+    
+    // Don't fail if no tests are discovered (since we're not running any here)
+    failOnNoDiscoveredTests = false
+    
+    // Force the task to always execute by making it produce output
+    outputs.file("${buildDir}/.test-completed")
+    
+    doLast {
+        // Create a marker file to indicate tests completed
+        file("${buildDir}/.test-completed").createNewFile()
+    }
+}
+
+// Signs ../authors.json in-place.
+// Canonical form: file bytes with the "signature" hex value replaced by "".
+// Signed payload: "ZBAuthors:" + sha256hex(canonical_bytes).
+// Private key: -PzbsPrivateKeyFile=<path-to-ed25519-private.der>
+task signAuthorsJson {
+    description = 'Sign ../authors.json in-place with Ed25519'
+    group = 'signing'
+
+    def authorsFile = file('../authors.json')
+    inputs.file(authorsFile)
+    outputs.file(authorsFile)
+    outputs.upToDateWhen { false }
+
+    doLast {
+        def keyPath = project.findProperty('zbsPrivateKeyFile')?.toString()?.trim()
+        if (!keyPath) {
+            throw new GradleException('signAuthorsJson: no zbsPrivateKeyFile')
+        }
+        def keyFile = file(keyPath)
+        if (!keyFile.isFile()) {
+            throw new GradleException("signAuthorsJson: key file not found: ${keyFile}")
+        }
+
+        def content = authorsFile.getText('UTF-8')
+        def sigPattern = ~/(?s)("signature"\s*:\s*")([0-9a-fA-F]*)(")/
+
+        if (!sigPattern.matcher(content).find()) {
+            throw new GradleException('signAuthorsJson: no "signature" field found in authors.json')
+        }
+
+        // Canonical: same bytes but signature value cleared to ""
+        def canonical = content.replaceFirst(sigPattern, '$1$3')
+        def digest = java.security.MessageDigest.getInstance('SHA-256')
+        def canonicalBytes = canonical.getBytes('UTF-8')
+        digest.update(canonicalBytes)
+        def sha256Hex = digest.digest().collect { String.format('%02x', it & 0xff) }.join('')
+
+        def msgBytes = "ZBAuthors:${sha256Hex}".getBytes('UTF-8')
+
+        def pkcs8 = keyFile.bytes
+        try {
+            def pkInfo = org.bouncycastle.asn1.pkcs.PrivateKeyInfo.getInstance(pkcs8)
+            def asym  = org.bouncycastle.crypto.util.PrivateKeyFactory.createKey(pkInfo)
+            def priv  = (org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters) asym
+            def pubHex = priv.generatePublicKey().getEncoded().collect { String.format('%02x', it & 0xff) }.join('')
+
+            def signer = new org.bouncycastle.crypto.signers.Ed25519Signer()
+            signer.init(true, priv)
+            signer.update(msgBytes, 0, msgBytes.length)
+            def sigHex = signer.generateSignature().collect { String.format('%02x', it & 0xff) }.join('')
+
+            def signed = content.replaceFirst(sigPattern, "\$1${sigHex}\$3")
+            authorsFile.setText(signed, 'UTF-8')
+            logger.lifecycle("authors.json signed (pubkey: ${pubHex})")
+        } finally {
+            Arrays.fill(pkcs8, (byte) 0)
+        }
+    }
+}

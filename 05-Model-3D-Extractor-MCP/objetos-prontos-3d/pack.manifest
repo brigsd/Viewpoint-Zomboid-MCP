@@ -1,0 +1,133 @@
+id = zomboid-3d-essentials
+name = Zomboid 3D Essentials Pack
+
+# ====================================================================
+# Viewpoint 3D Model Pack Manifest - Objetos Prontos Expandidos
+# ====================================================================
+# Formato:
+# model.<id_modelo> = <subpasta>/<arquivo>.obj
+# bind.<nome_do_sprite_2d> = <id_modelo> <graus_rotacao> <offset_x> <offset_y> <offset_z> <escala>
+# ====================================================================
+
+# --------------------------------------------------------------------
+# 1. Móveis, Caixas e Carpintaria (Moveis-e-Caixas)
+# --------------------------------------------------------------------
+model.wooden_crate_3d = Moveis-e-Caixas/wooden_crate_3d.obj
+bind.furniture_storage_01_16 = wooden_crate_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_storage_01_17 = wooden_crate_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_storage_01_18 = wooden_crate_3d 0.0 0.00 0.00 0.00 1.00
+
+model.wooden_table_3d = Moveis-e-Caixas/wooden_table_3d.obj
+bind.furniture_tables_high_01_0 = wooden_table_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_tables_high_01_1 = wooden_table_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_tables_low_01_0 = wooden_table_3d 0.0 0.00 0.00 0.00 1.00
+
+model.office_chair_3d = Moveis-e-Caixas/office_chair_3d.obj
+bind.furniture_seating_indoor_01_16 = office_chair_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_seating_indoor_01_17 = office_chair_3d 0.0 0.00 0.00 0.00 1.00
+
+model.counter_sink_3d = Moveis-e-Caixas/counter_sink_3d.obj
+bind.fixtures_bathroom_01_48 = counter_sink_3d 0.0 0.00 0.00 0.00 1.00
+bind.fixtures_bathroom_01_49 = counter_sink_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 2. Gôndolas de Loja e Prateleiras Comerciais (Moveis-e-Caixas)
+# --------------------------------------------------------------------
+model.store_shelf_gondola_3d = Moveis-e-Caixas/store_shelf_gondola_3d.obj
+bind.furniture_shelving_01_0 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_shelving_01_1 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_0 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_1 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_zippee_01_0 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_zippee_01_1 = store_shelf_gondola_3d 0.0 0.00 0.00 0.00 1.00
+
+model.metal_store_shelf_3d = Moveis-e-Caixas/metal_store_shelf_3d.obj
+bind.furniture_shelving_01_24 = metal_store_shelf_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_shelving_01_25 = metal_store_shelf_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_shelving_01_26 = metal_store_shelf_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 3. Balcões de Atendimento e Vitrines de Loja (Moveis-e-Caixas)
+# --------------------------------------------------------------------
+model.shop_counter_wood_3d = Moveis-e-Caixas/shop_counter_wood_3d.obj
+bind.location_shop_generic_01_24 = shop_counter_wood_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_25 = shop_counter_wood_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_26 = shop_counter_wood_3d 0.0 0.00 0.00 0.00 1.00
+
+model.shop_counter_glass_3d = Moveis-e-Caixas/shop_counter_glass_3d.obj
+bind.location_shop_generic_01_32 = shop_counter_glass_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_33 = shop_counter_glass_3d 0.0 0.00 0.00 0.00 1.00
+bind.location_shop_generic_01_34 = shop_counter_glass_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 4. Portas e Divisórias (Moveis-e-Caixas)
+# --------------------------------------------------------------------
+model.wooden_door_interior_3d = Moveis-e-Caixas/wooden_door_interior_3d.obj
+bind.fixtures_doors_01_0 = wooden_door_interior_3d 0.0 0.00 0.00 0.00 1.00
+bind.fixtures_doors_01_1 = wooden_door_interior_3d 0.0 0.00 0.00 0.00 1.00
+bind.fixtures_doors_01_8 = wooden_door_interior_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 5. Eletrodomésticos e Refrigeração (Eletrodomesticos)
+# --------------------------------------------------------------------
+model.kitchen_stove_3d = Eletrodomesticos/kitchen_stove_3d.obj
+bind.appliances_cooking_01_0 = kitchen_stove_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_cooking_01_1 = kitchen_stove_3d 0.0 0.00 0.00 0.00 1.00
+
+model.microwave_oven_3d = Eletrodomesticos/microwave_oven_3d.obj
+bind.appliances_cooking_01_8 = microwave_oven_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_cooking_01_9 = microwave_oven_3d 0.0 0.00 0.00 0.00 1.00
+
+model.refrigerator_3d = Eletrodomesticos/refrigerator_3d.obj
+bind.appliances_refrigeration_01_0 = refrigerator_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_refrigeration_01_1 = refrigerator_3d 0.0 0.00 0.00 0.00 1.00
+
+model.commercial_freezer_vertical_3d = Eletrodomesticos/commercial_freezer_vertical_3d.obj
+bind.appliances_refrigeration_01_24 = commercial_freezer_vertical_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_refrigeration_01_25 = commercial_freezer_vertical_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_refrigeration_01_26 = commercial_freezer_vertical_3d 0.0 0.00 0.00 0.00 1.00
+
+model.ice_cooler_freezer_3d = Eletrodomesticos/ice_cooler_freezer_3d.obj
+bind.appliances_refrigeration_01_16 = ice_cooler_freezer_3d 0.0 0.00 0.00 0.00 1.00
+bind.appliances_refrigeration_01_17 = ice_cooler_freezer_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 6. Suprimentos, Munição e Kits Médicos (Itens-de-Chao-Loot)
+# --------------------------------------------------------------------
+model.military_ammo_can_3d = Itens-de-Chao-Loot/military_ammo_can_3d.obj
+bind.Item_ShotgunShellsBox = military_ammo_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Item_Bullets9mmBox = military_ammo_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.Bullets9mmBox = military_ammo_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.ShotgunShellsBox = military_ammo_can_3d 0.0 0.00 0.00 0.00 1.00
+
+model.medical_firstaid_kit_3d = Itens-de-Chao-Loot/medical_firstaid_kit_3d.obj
+bind.Item_FirstAidKit = medical_firstaid_kit_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.FirstAidKit = medical_firstaid_kit_3d 0.0 0.00 0.00 0.00 1.00
+
+# --------------------------------------------------------------------
+# 7. Comidas Enlatadas e Garrafas de Bebida (Itens-de-Chao-Loot)
+# --------------------------------------------------------------------
+model.canned_beans_3d = Itens-de-Chao-Loot/canned_beans_3d.obj
+bind.Base.TinnedBeans = canned_beans_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.OpenBeans = canned_beans_3d 0.0 0.00 0.00 0.00 1.00
+
+model.canned_food_can_3d = Itens-de-Chao-Loot/canned_food_can_3d.obj
+bind.Base.CannedChili = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.CannedCorn = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.CannedCarrots2 = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.CannedPeas = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.CannedTomato2 = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.CannedBolognese = canned_food_can_3d 0.0 0.00 0.00 0.00 1.00
+
+model.canned_sardines_3d = Itens-de-Chao-Loot/canned_sardines_3d.obj
+bind.Base.CannedSardines = canned_sardines_3d 0.0 0.00 0.00 0.00 1.00
+
+model.water_bottle_3d = Itens-de-Chao-Loot/water_bottle_3d.obj
+bind.Base.WaterBottle = water_bottle_3d 0.0 0.00 0.00 0.00 1.00
+bind.Base.WaterBottleFull = water_bottle_3d 0.0 0.00 0.00 0.00 1.00
+
+# Gôndola de Mercado (Moveis-e-Caixas)
+model.store_shelves_3d = Moveis-e-Caixas/store_shelves_3d.obj
+bind.furniture_shelving_01_0 = store_shelves_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_shelving_01_1 = store_shelves_3d 0.0 0.00 0.00 0.00 1.00
+bind.furniture_shelving_01_2 = store_shelves_3d 0.0 0.00 0.00 0.00 1.00

@@ -1,0 +1,9 @@
+# Material Template Library - canned_food_can_3d
+newmtl Material
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.2 0.2 0.2
+Ns 30.0
+d 1.0
+illum 2
+map_Kd textures/canned_food_can_diffuse.png

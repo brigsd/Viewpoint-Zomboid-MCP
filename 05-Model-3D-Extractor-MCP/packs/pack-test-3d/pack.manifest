@@ -1,0 +1,12 @@
+id = pack-test-3d
+name = Pack Teste 3D
+
+# ====================================================================
+# Viewpoint 3D Model Pack Manifest
+# ====================================================================
+# Formato:
+# model.<id_modelo> = models/<arquivo>.obj
+# bind.<nome_do_sprite_2d> = <id_modelo> <graus_rotacao> <offset_x> <offset_y> <offset_z> <escala>
+# ====================================================================
+model.wooden_crate_3d = models/wooden_crate_3d.obj
+bind.furniture_storage_01_16 = wooden_crate_3d 0.0 0.00 0.00 0.00 1.00

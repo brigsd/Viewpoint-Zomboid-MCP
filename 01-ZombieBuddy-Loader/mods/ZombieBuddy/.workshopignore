@@ -1,0 +1,23 @@
+# see https://github.com/zed-0xff/ZBetterWorkshopUpload
+*.exe
+*.local
+*.rb
+*.rake
+*.xcf
+*-plain.jar
+test*.jar
+
+.classpath
+.claude
+.cursor
+.gradle
+.project
+.settings
+
+names.yml
+Rakefile
+
+build
+lib
+misc
+tmp
