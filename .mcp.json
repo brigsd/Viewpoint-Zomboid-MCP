@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "pz-live": {
+      "command": "C:\\Users\\micro\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "args": [
+        "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\06-PZ-Lab-Headless\\mcp\\server.py"
+      ]
+    }
+  }
+}

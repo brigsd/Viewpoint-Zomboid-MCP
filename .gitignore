@@ -47,3 +47,7 @@ package-lock.json
 Thumbs.db
 .vscode/
 .idea/
+
+# Laboratório headless (Módulo 06): mundo de teste, logs e senha local
+/06-PZ-Lab-Headless/runtime/
+/06-PZ-Lab-Headless/lab/lab.local.json

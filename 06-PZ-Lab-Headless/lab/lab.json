@@ -1,0 +1,46 @@
+{
+  "game_dir": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ProjectZomboid",
+  "server_name": "pzlab",
+  "admin_username": "admin",
+  "host": "127.0.0.1",
+  "port": 8642,
+  "game_port": 16261,
+  "udp_port": 16262,
+  "xmx": "2048m",
+  "jvm_args": [
+    "--enable-native-access=ALL-UNNAMED",
+    "--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED",
+    "-XX:+UseZGC",
+    "-XX:-CreateCoredumpOnCrash",
+    "-XX:-OmitStackTraceInFastThrow",
+    "-Djava.awt.headless=true",
+    "-Duser.language=en",
+    "-Duser.country=US"
+  ],
+  "zombiebuddy": {
+    "verbosity": 0,
+    "policy": "deny-new",
+    "frontend": "console",
+    "lua_task_timeout_ms": 30000
+  },
+  "server_ini": {
+    "Public": "false",
+    "Open": "true",
+    "PauseEmpty": "false",
+    "SteamVAC": "false",
+    "UPnP": "false",
+    "DoLuaChecksum": "false",
+    "MaxPlayers": "4",
+    "SaveWorldEveryMinutes": "0",
+    "PingLimit": "0",
+    "Map": "Muldraugh, KY",
+    "WorkshopItems": "",
+    "RCONPort": "27015",
+    "RCONPassword": ""
+  },
+  "sandbox": {
+    "Zombies": 6
+  },
+  "ready_marker": "SERVER STARTED",
+  "http_timeout_s": 5
+}

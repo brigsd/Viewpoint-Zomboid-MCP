@@ -1,0 +1,17 @@
+module ZBLabTest
+{
+    imports
+    {
+        Base
+    }
+
+    item LabSample
+    {
+        DisplayCategory = Material,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        Icon = Thread,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+    }
+}

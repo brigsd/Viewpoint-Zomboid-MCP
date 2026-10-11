@@ -1,0 +1,5 @@
+name=ZBLabTest
+id=ZBLabTest
+description=Mod de teste do PZ Lab Headless: 1 item (ZBLabTest.LabSample) + 1 craftRecipe (ZBLabTest.MakeLabSample). Apenas Lua/scripts, sem assets e sem dependencia do ZombieBuddy.
+modversion=0.1
+versionMin=42.21

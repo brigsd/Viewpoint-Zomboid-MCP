@@ -1,0 +1,25 @@
+module ZBLabTest
+{
+    imports
+    {
+        Base
+    }
+
+    craftRecipe MakeLabSample
+    {
+        timedAction = Making,
+        time = 20,
+        Tags = InHandCraft,
+        category = Miscellaneous,
+        inputs
+        {
+            item 2 [Base.Paperclip],
+            item 1 [Base.Twigs],
+            item 1 [Base.Scissors] mode:keep,
+        }
+        outputs
+        {
+            item 1 ZBLabTest.LabSample,
+        }
+    }
+}

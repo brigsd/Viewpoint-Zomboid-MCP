@@ -1,0 +1,5 @@
+# Servidor MCP pz-live (Python 3.12). `mcp` 2.x usa MCPServer; 1.x usa FastMCP — o server.py aceita ambos.
+mcp>=1.2
+httpx>=0.27
+# Opcional: roda os snippets Lua gerados (inspect/reload) em um Lua real durante os testes
+# lupa>=2.0

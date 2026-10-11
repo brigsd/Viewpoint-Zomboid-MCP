@@ -29,6 +29,7 @@ Bem-vindo à central de arquivos e módulos do ecossistema de Primeira Pessoa e 
 | **03** | [`03-Shaders-Customizados`](./03-Shaders-Customizados/) | Pacotes de shaders criados sob medida (Terror, Realismo e Performance). |
 | **04** | [`04-DLSS5-Swapper-Bridge`](./04-DLSS5-Swapper-Bridge/) | Manual e ponte sobre o DLSS 5 Swapper, upscaling por IA e OpenGL. |
 | **05** | [`05-Model-3D-Extractor-MCP`](./05-Model-3D-Extractor-MCP/) | Servidor FastMCP para IA extrair sprites, gerar modelos 3D (.obj) e esteira de inspeção visual. |
+| **06** | [`06-PZ-Lab-Headless`](./06-PZ-Lab-Headless/) | Servidor dedicado headless + MCP `pz-live` para a IA criar e testar mods sem abrir o jogo. |
 
 ---
 
