@@ -1,0 +1,45 @@
+module Base
+{
+    craftRecipe DemoRecipe
+    {
+        timedAction = DemoAction,
+        time = 50,
+        category = Misc,
+        inputs
+        {
+            item 2 [Base.Paperclip] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:hammer] mode:destroy,
+            item variable[1:20] [Base.Hammer] mappers[map1],
+        }
+        outputs
+        {
+            item 1 mapper:map1,
+        }
+        itemMapper map1
+        {
+            Base.A = Base.B,
+            default = Base.A,
+        }
+    }
+
+    fluid DemoFluid
+    {
+        DisplayName = Fluid_Name_Demo,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            ThirstChange = -5.0,
+        }
+    }
+
+    template vehicle DemoTemplate
+    {
+        part Door
+        {
+            area = Left,
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/* comentario de bloco
+   em varias linhas */
+module Base
+{
+    imports
+    {
+        Base,
+    }
+
+    item DemoItem
+    {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = DemoIcon,
+        UseDelta = 0.1,
+        Tags = base:a;base:b,
+    }
+
+    item DemoFood
+    {
+        ItemType = base:food,
+        Icon = DemoFood,
+    }
+}

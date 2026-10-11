@@ -30,6 +30,7 @@ Bem-vindo à central de arquivos e módulos do ecossistema de Primeira Pessoa e 
 | **04** | [`04-DLSS5-Swapper-Bridge`](./04-DLSS5-Swapper-Bridge/) | Manual e ponte sobre o DLSS 5 Swapper, upscaling por IA e OpenGL. |
 | **05** | [`05-Model-3D-Extractor-MCP`](./05-Model-3D-Extractor-MCP/) | Servidor FastMCP para IA extrair sprites, gerar modelos 3D (.obj) e esteira de inspeção visual. |
 | **06** | [`06-PZ-Lab-Headless`](./06-PZ-Lab-Headless/) | Servidor dedicado headless + MCP `pz-live` para a IA criar e testar mods sem abrir o jogo. |
+| **07** | [`07-PZ-API-Knowledge`](./07-PZ-API-Knowledge/) | Índice da API real da 42.21 (classes, funções, eventos, scripts, traduções) consultado pela IA antes de escrever mods. |
 
 ---
 
@@ -116,4 +117,5 @@ python 05-Model-3D-Extractor-MCP/scripts/extrair_modelos_vanilla.py
 ---
 * *Para a visão geral da arquitetura e detalhes de cada módulo, consulte o **[INDEX.md](./INDEX.md)**.*
 * *Para soluções de problemas, armadilhas técnicas e comportamentos não óbvios, consulte o **[GOTCHAS.md](./GOTCHAS.md)**.*
+* *Para o plano ativo, os concluídos e o backlog, consulte **[planos/README.md](./planos/README.md)**.*
 

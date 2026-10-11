@@ -51,3 +51,6 @@ Thumbs.db
 # Laboratório headless (Módulo 06): mundo de teste, logs e senha local
 /06-PZ-Lab-Headless/runtime/
 /06-PZ-Lab-Headless/lab/lab.local.json
+
+# Base de conhecimento da API (Módulo 07): dados gerados a partir do jogo, não redistribuir
+/07-PZ-API-Knowledge/data/

@@ -37,6 +37,8 @@ from typing import Any, Optional
 
 import httpx
 
+import api_index  # consultas ao índice da API (07-PZ-API-Knowledge); mesma pasta que este arquivo
+
 # Compatibilidade entre mcp 2.x (MCPServer) e mcp 1.x (FastMCP) — mesmo estilo do módulo 05
 try:
     from mcp.server.mcpserver import MCPServer as FastMCP
@@ -1284,7 +1286,7 @@ def _one_line(s: str) -> str:
 
 
 @mcp.tool()
-def scaffold_mod(mod_id: str, name: str, description: str = "", version_min: str = "42.0") -> dict:
+def scaffold_mod(mod_id: str, name: str, description: str = "", version_min: str = "42.21") -> dict:
     """Cria o esqueleto mínimo de um mod Build 42 em MODS_DIR/<mod_id>/ (recusa sobrescrever).
 
     Estrutura criada: common/mod.info, 42/media/lua/{client,server,shared}/, 42/media/scripts/,
@@ -1293,7 +1295,7 @@ def scaffold_mod(mod_id: str, name: str, description: str = "", version_min: str
 
     Args:
         mod_id: identificador (letras, números, '_' e '-'; também é o nome da pasta).
-        name: nome exibido. description: texto curto. version_min: versionMin do mod.info (padrão 42.0).
+        name: nome exibido. description: texto curto. version_min: versionMin do mod.info (padrão 42.21, a build do lab).
     """
     if not _MOD_ID_RE.match(mod_id or ""):
         return _fail("mod_id inválido: use letras, números, '_' ou '-' (até 64 chars, sem espaços)",
@@ -1344,6 +1346,103 @@ def scaffold_mod(mod_id: str, name: str, description: str = "", version_min: str
                      for p in target.rglob("*") if p.is_file())
     return {"ok": True, "mod_id": mod_id, "path": str(target), "files": created,
             "hint": f"Ative com lab_start(mods=['{mod_id}']) (ou lab_restart) e confira '[{mod_id}] loaded' em log_tail."}
+
+
+# --------------------------------------------------------------------------- #
+# Base de conhecimento da API 42.21 (índice SQLite de 07-PZ-API-Knowledge) — lógica em api_index.py
+# --------------------------------------------------------------------------- #
+def _api_call(fn: Any, *args: Any, **kwargs: Any) -> dict:
+    try:
+        return fn(*args, **kwargs)
+    except Exception as e:  # nunca derrubar o servidor MCP por causa de uma consulta
+        return _fail(f"{fn.__name__} falhou: {type(e).__name__}: {e}", kind="index_error",
+                     hint="rode python 07-PZ-API-Knowledge/build_index.py para refazer o índice.",
+                     traceback=traceback.format_exc(limit=6))
+
+
+@mcp.tool()
+def api_search(query: str, kind: Optional[str] = None, limit: int = 20) -> dict:
+    """Busca na API REAL do Project Zomboid 42.21 (funções globais, classes/métodos/campos Java expostos ao Lua, eventos).
+
+    Use ANTES de escrever código Lua de mod: não chute nomes de API. Cada resultado traz name, kind, owner,
+    signature, returns e `call`, a forma de chamar no Lua: `Owner.metodo` (estático), `obj:metodo` (instância),
+    `nome()` (função global), `Events.Nome` (evento). Nomes exatos vêm primeiro; aceita 'Classe:metodo' ou
+    'Classe.metodo'. Sem resultado no FTS, cai para busca LIKE; sem nada, devolve found=false + suggestions.
+
+    Args:
+        query: termo (nome parcial ou completo, ex. 'getCraftRecipe', 'ScriptManager:getCraftRecipe').
+        kind: filtro opcional — global_function | class | method | field | event | lua_global.
+        limit: máximo de resultados (1-200, padrão 20).
+    Resposta: results[], count, found, mode ('fts'|'like'), meta.game_version/meta.built_at.
+    """
+    return _api_call(api_index.api_search, query, kind, limit)
+
+
+@mcp.tool()
+def api_class(name: str, filter: Optional[str] = None, limit: int = 200) -> dict:
+    """Mostra uma classe Java exposta ao Lua: java_class e seus métodos e campos (estáticos e de instância separados).
+
+    Aceita o nome curto ('ScriptManager') ou o nome completo ('zombie.scripting.ScriptManager').
+    `filter` restringe por substring no nome/assinatura do membro. Classe inexistente → found=false com
+    suggestions (e also_found_as quando existe como global definido em Lua, ex. ISInventoryPage).
+
+    Args:
+        name: nome da classe. filter: substring opcional. limit: máximo de membros devolvidos (padrão 200).
+    Resposta: static_methods, instance_methods, static_fields, instance_fields, total_members, matched, truncated.
+    """
+    return _api_call(api_index.api_class, name, filter, limit)
+
+
+@mcp.tool()
+def api_event(name: str) -> dict:
+    """Diz se o evento `Events.<name>` existe na 42.21, com usos reais do vanilla (arquivo:linha + trecho, até 10)
+    e, quando dá para inferir, o padrão de argumentos do callback (`callback.args`, tirado de
+    `Events.X.Add(function(a, b)` nos usos). Evento inexistente → exists=false com suggestions.
+
+    Args:
+        name: 'OnServerStarted' ou 'Events.OnServerStarted'.
+    """
+    return _api_call(api_index.api_event, name)
+
+
+@mcp.tool()
+def script_fields(block_type: Optional[str] = None, field: Optional[str] = None) -> dict:
+    """Campos válidos dos blocos de script (media/scripts) da 42.21, com contagem de uso e um exemplo real.
+
+    Sem `block_type` lista os tipos existentes (item, craftRecipe, fluid, entity, ...). Com `block_type` lista
+    os campos mais usados desse tipo. Com `field` detalha um campo; campos aninhados aparecem como
+    `inputs.item` e devolvem as formas reais da linha (example_value). Campo/tipo inexistente → suggestions.
+
+    Args:
+        block_type: ex. 'item', 'craftRecipe'. field: ex. 'ItemType', 'UseDelta', 'inputs', 'inputs.item'.
+    """
+    return _api_call(api_index.script_fields, block_type, field)
+
+
+@mcp.tool()
+def vanilla_examples(symbol: str, limit: int = 10) -> dict:
+    """Usos reais de um símbolo no Lua vanilla da 42.21 (arquivo:linha + trecho de código).
+
+    Args:
+        symbol: nome ('getCraftRecipe'), qualificado ('ScriptManager:getCraftRecipe') ou evento ('Events.OnTick').
+        limit: máximo de exemplos (1-50, padrão 10); prioriza arquivos diferentes.
+    Resposta: examples[], total, definitions[] (linhas do índice com esse nome). Sem uso → found=false + suggestions.
+    """
+    return _api_call(api_index.vanilla_examples, symbol, limit)
+
+
+@mcp.tool()
+def api_exists(name: str, owner: Optional[str] = None) -> dict:
+    """Sim/não rápido: esta API existe na 42.21? Use para NÃO chutar (ex. 'Languages.instance', 'Translator.loadFiles').
+
+    Aceita 'nome', 'Classe.nome', 'Classe:nome' ou 'Events.Nome'; `owner` restringe à classe. Devolve exists,
+    matches[] (com a forma de chamada), e se não existe: suggestions, case_mismatch (o Lua diferencia
+    maiúsculas) e se a própria classe existe (owner_exists).
+
+    Args:
+        name: símbolo. owner: classe dona (opcional).
+    """
+    return _api_call(api_index.api_exists, name, owner)
 
 
 if __name__ == "__main__":

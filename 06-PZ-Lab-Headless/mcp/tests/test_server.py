@@ -592,7 +592,7 @@ class TestMods(BaseCase):
         self.assertIn("id=TestMod", info)
         self.assertIn("name=Test Mod", info)
         self.assertIn("description=uma descrição com quebra", info)
-        self.assertIn("versionMin=42.0", info)
+        self.assertIn("versionMin=42.21", info)
         for d in ("client", "server", "shared"):
             self.assertTrue((root / "42" / "media" / "lua" / d).is_dir())
         self.assertTrue((root / "42" / "media" / "scripts").is_dir())
@@ -602,7 +602,7 @@ class TestMods(BaseCase):
         lst = server.list_dev_mods()
         self.assertTrue(lst["ok"])
         m = [x for x in lst["mods"] if x["id"] == "TestMod"][0]
-        self.assertEqual((m["name"], m["versionMin"]), ("Test Mod", "42.0"))
+        self.assertEqual((m["name"], m["versionMin"]), ("Test Mod", "42.21"))
         self.assertNotIn("warnings", m)
 
     def test_scaffold_refuses_overwrite_and_bad_ids(self):
