@@ -78,6 +78,14 @@ MODELADOR (Sonnet) ── receita ──► folhas (textura + wireframe + sobrep
 - **Estado de cada objeto** (`porte3d/fila.sqlite`). Estados: `fila`, `em_inspecao`, `nao_portar`, `em_modelagem`, `em_critica`, `retrabalho`, `reprovado`, `aguardando_aprovacao`, `aprovado`, `rejeitado`, `publicado`. Guarda a ficha, as notas e o histórico das rodadas.
 - **Lista final de reprovados e não portados** (`porte3d/relatorio.py`). Gerada por script a partir dos vereditos, não escrita por agente. Uma linha por objeto: objeto, última nota, motivo principal (o defeito mais grave da última rodada, ou o motivo do inspetor).
 - **Galeria de aprovação.** Página local com a animação girando, a folha e o veredito do crítico. Botões aprovar e refazer, com comentário.
+- **Variantes e qualidade** (decidido em 2026-10-12, depois da amostra da geladeira em 3 cores × 3 estados). Os objetos se organizam em:
+  1. **família** (ex.: geladeira);
+  2. **forma**: uma receita de geometria por forma (comum, mini, grande, industrial...). É feita uma vez só, e as variantes reaproveitam a malha;
+  3. **cor**: ligada aos sprites que o jogo já tem (`GroupName`: White, Blue, Green, Red, Steel...);
+  4. **estado**: os presets `desgaste` e `ferrugem` dos materiais. No pack do jogo entram só **usada** e **enferrujada**. A **nova** fica fora e reservada para um mod futuro. O estado é uma opção do pack inteiro, já que o jogo não tem sprite por estado; sortear por objeto exigiria mudar o Viewpoint;
+  5. **nível gráfico** (arte, realista);
+  6. **qualidade**, que é a resolução da textura: baixa 512, média 1024 (padrão) ou alta 2048. Escolhida no pack, porque o Viewpoint carrega todos os modelos na placa de vídeo.
+
 - **Pack** (mod próprio, ex. `PZ3DObjects`), com uma opção para escolher o nível gráfico (dois packs registrados, um por nível; só o escolhido fica ativo):
   - `pack.manifest` com valores **separados por vírgula**;
   - Lua de cliente que chama `Viewpoint.ModelPacks.register("PZ3DObjects", "media/.../pack.manifest")`;

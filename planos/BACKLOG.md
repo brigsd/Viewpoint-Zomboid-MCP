@@ -15,3 +15,5 @@ A camada 2 (base de conhecimento da API) saiu daqui em 2026-10-11 e foi [conclu�
 | Globais Lua dentro de blocos `if` | Camada 2 | O extrator só pega definições do nível de cima do arquivo; medir quantas ficam de fora (ex.: dentro de `if isClient() then`). |
 | Conferência visual automática no cliente (Objetos 3D, plano 3) | Plano do acervo | O lab não tem tela, e o Viewpoint só roda no cliente. Abrir o cliente sozinho, ir até o objeto, tirar print com F9 e fechar. Até lá, a conferência visual é do usuário. |
 | Categorias dos tilesets `location_*` | Plano do acervo | 1.840 objetos ainda caem em "outros" (teatro, igreja, posto, bancos…). Refinar as regras de `acervo/categorize.py` pelas propriedades. |
+| Mod com o estado "nova" dos objetos | Esteira de porte 3D | O estado nova (sem desgaste) já sai da `porte3d` (`desgaste` = 0), mas ficou fora do pack do jogo a pedido do usuário. Reservado para um mod futuro. |
+| Estado sorteado por objeto | Esteira de porte 3D | Hoje o estado (usada/enferrujada) é uma opção do pack inteiro. Sortear por objeto (pela posição) exigiria o Viewpoint escolher o modelo por instância, e não só por sprite. |
