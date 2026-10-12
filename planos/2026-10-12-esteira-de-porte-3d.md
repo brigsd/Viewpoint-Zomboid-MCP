@@ -2,7 +2,7 @@
 
 **Estado:** ativo
 
-**Módulos:** `05-Model-3D-Extractor-MCP/porte3d/` (novo), `.claude/agents/` (portador e crítico), `.claude/skills/porte-3d/` (o laço), mod próprio de modelos para o Viewpoint (novo)
+**Módulos:** `05-Model-3D-Extractor-MCP/porte3d/` (novo), `.claude/agents/` (inspetor, modelador e crítico), `.claude/skills/porte-3d/` (o laço), mod próprio de modelos para o Viewpoint (novo)
 
 ## Problema observado
 
@@ -16,7 +16,7 @@ Fazer isso à mão, objeto por objeto, não escala. Aceitar o automático sem ol
 
 ## Resultado
 
-Uma esteira em que um agente **portador** monta o 3D de cada objeto e um agente **crítico** olha as imagens e aponta defeitos, com até 3 rodadas de retrabalho. O usuário aprova o que passou. Os aprovados viram um pack que o Viewpoint carrega no jogo, em **dois níveis gráficos**:
+Uma esteira em que um agente **modelador** monta o 3D de cada objeto e um agente **crítico** olha as imagens e aponta defeitos, com até 3 rodadas de retrabalho. O usuário aprova o que passou. Antes de modelar, um agente **inspetor** levanta o que precisa ser feito numa ficha de serviço; os objetos que não passam em 3 rodadas viram uma lista curta com o motivo. Os aprovados viram um pack que o Viewpoint carrega no jogo, em **dois níveis gráficos**:
 
 - **arte**: textura tirada do desenho do jogo, fiel ao estilo pixel;
 - **realista**: textura de material em alta resolução gerada por código (veio de madeira, metal, tecido...), nas cores da arte, com sombra de contato pintada. O material vem da propriedade `Material` do jogo.
@@ -27,21 +27,33 @@ A mesma geometria serve aos dois níveis; só a textura muda. O Viewpoint só ac
 
 ```text
 acervo (42.544 objetos)
-   │  triagem (script): prioridade + caminho (caixa com geometria | sem geometria | fica 2D)
+   │  prioridade (script)
    ▼
-fila  ──►  PORTADOR (Sonnet)  ──►  folhas de imagem  ──►  CRÍTICO (Sonnet, só olha)
-              ▲  receita do objeto                            │ nota 0–10 + defeitos (JSON)
-              └──────── retrabalho (máx. 3 rodadas) ◄─────────┘
-                                   │ nota ≥ 8                 │ 3 rodadas sem passar
-                                   ▼                          ▼
-                       APROVAÇÃO HUMANA (galeria)      fila "precisa de humano"
-                                   │ aprovado
-                                   ▼
-                       PACK (mod próprio) ──► jogo (Viewpoint)
+INSPETOR  = medições (script) + perguntas visuais (agente Sonnet)
+   │  ficha de serviço: peças prometidas, caminho, problemas previstos, material, simetria
+   ├──► "não portar" (fica 2D / outra fila) ──► lista de não portados
+   ▼
+MODELADOR (Sonnet) ── receita ──► folhas (textura + wireframe + sobreposição + zoom)
+   ▲                                              │
+   │                                              ▼
+   └── retrabalho com os defeitos ◄──── CRÍTICO (Sonnet, só olha; confere a ficha peça por peça)
+       (máx. 3 rodadas, nota < 8)                 │ nota ≥ 8
+                                                  ▼
+                              conferência por amostra (eu) ──► GALERIA (usuário aprova)
+                                                  │ aprovado
+                                                  ▼
+                              PACK (mod próprio, nível arte e realista) ──► jogo (Viewpoint)
+
+3 rodadas sem nota 8 ──► LISTA FINAL DE REPROVADOS (gerada por script): objeto · última nota · motivo em 1 linha
 ```
 
-- **Receita por objeto** (`porte3d/receitas/<objeto>.json`, versionada; é dado nosso). Contém as caixas e cilindros com medidas, a simetria, o modo de textura do nível arte (adesivo ou kit), os recortes do kit, o material e os parâmetros do nível realista, e as correções. O portador edita a receita, e um script determinístico gera tudo a partir dela. O agente não desenha nada direto.
-- **Ferramentas do portador** (scripts em `porte3d/`, consolidando os experimentos):
+- **Inspetor** (`.claude/agents/inspetor-3d.md` + `porte3d/inspecao.py`). Entra antes de modelar e levanta o que precisa ser feito.
+  - **Medições por script** (exatas, sem IA): tem blocos ou não; quantas direções; se E/W são espelho de S/N; se o bloco é maior que o desenho (contorno em 0°); peças só de um lado (sinal de peça escondida, como o pé de trás da mesa); ocupa mais de um tile (`SpriteGridPos`); mapa de profundidade bate com a imagem; material (`Material`).
+  - **Perguntas visuais do agente** (só o que precisa de olho): que objeto é; quais peças tem e a forma de cada uma; se é simétrico (e em que eixo); se tem partes finas, vazadas ou transparentes; o que está escondido no desenho e precisa ser completado; se vale portar ou fica 2D.
+  - **Saída: ficha de serviço** (`porte3d/fichas/<objeto>.json`, esquema validado): peças prometidas (nome, forma, origem: bloco do jogo, simetria ou nova), caminho de textura (adesivo ou kit), material do nível realista, problemas previstos e decisão portar/não portar com o motivo.
+  - Calibração: com os casos conhecidos, o inspetor precisa apontar o pé faltando na mesa, o espelhamento da geladeira e mandar a luminária de parede para "não portar".
+- **Receita por objeto** (`porte3d/receitas/<objeto>.json`, versionada; é dado nosso). Contém as caixas e cilindros com medidas, a simetria, o modo de textura do nível arte (adesivo ou kit), os recortes do kit, o material e os parâmetros do nível realista, e as correções. O modelador parte da ficha do inspetor, edita a receita, e um script determinístico gera tudo a partir dela. O agente não desenha nada direto.
+- **Ferramentas do modelador** (scripts em `porte3d/`, consolidando os experimentos):
   - ajuste automático das medidas pelo contorno;
   - completar por simetria;
   - textura adesivo ou kit;
@@ -53,7 +65,7 @@ fila  ──►  PORTADOR (Sonnet)  ──►  folhas de imagem  ──►  CRÍ
   - **wireframe**, nos mesmos ângulos: só as arestas, e as arestas por cima da textura. Cada peça tem uma cor e o nome dela vai na legenda;
   - sobreposição de contorno em 0°;
   - zoom nas partes finas (pés, alças).
-- **Crítico** (`.claude/agents/critico-3d.md`, no formato do crítico do Mecanifica). Só recebe imagens, sem contexto nem código. Responde a perguntas fixas:
+- **Crítico** (`.claude/agents/critico-3d.md`, no formato do crítico do Mecanifica). Recebe as imagens e a **lista de peças prometidas da ficha** (nomes e formas, sem a justificativa do modelador). Não lê código nem receita. Responde a perguntas fixas, citando a peça da ficha em cada defeito:
   1. Em 0° está igual ao jogo?
   2. Em 180° está igual ao desenho de trás?
   3. Ao girar, falta alguma parte?
@@ -63,7 +75,8 @@ fila  ──►  PORTADOR (Sonnet)  ──►  folhas de imagem  ──►  CRÍ
   7. **Pelo wireframe:** cada peça prometida existe e está no lugar? Há peça flutuando, enterrada ou atravessando outra? A estrutura faz sentido para o objeto (4 pés numa mesa, portas na frente de uma geladeira)? Há peça que deveria ser sólida e é só um plano?
   
   Fecha com JSON: `nota` e `defeitos[{parte, tipo: ausencia|chapado|textura_deslocada|buraco|emenda|proporcao|sobra|estrutura, angulo, vista: textura|wireframe|sobreposicao, onde, evidencia}]`.
-- **Estado de cada objeto** (`porte3d/fila.sqlite`). Estados: `fila`, `em_porte`, `em_critica`, `retrabalho`, `precisa_humano`, `aguardando_aprovacao`, `aprovado`, `rejeitado`, `publicado`. Guarda as notas e o histórico das rodadas.
+- **Estado de cada objeto** (`porte3d/fila.sqlite`). Estados: `fila`, `em_inspecao`, `nao_portar`, `em_modelagem`, `em_critica`, `retrabalho`, `reprovado`, `aguardando_aprovacao`, `aprovado`, `rejeitado`, `publicado`. Guarda a ficha, as notas e o histórico das rodadas.
+- **Lista final de reprovados e não portados** (`porte3d/relatorio.py`). Gerada por script a partir dos vereditos, não escrita por agente. Uma linha por objeto: objeto, última nota, motivo principal (o defeito mais grave da última rodada, ou o motivo do inspetor).
 - **Galeria de aprovação.** Página local com a animação girando, a folha e o veredito do crítico. Botões aprovar e refazer, com comentário.
 - **Pack** (mod próprio, ex. `PZ3DObjects`), com uma opção para escolher o nível gráfico (dois packs registrados, um por nível; só o escolhido fica ativo):
   - `pack.manifest` com valores **separados por vírgula**;
@@ -78,7 +91,7 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 
 1. **Orquestração por script, não por agente.** Um script (`porte3d/fila.py`) faz as transições de estado e distribui os objetos. Os agentes só recebem um objeto, trabalham nos arquivos daquele objeto e devolvem. Nenhum agente edita arquivo compartilhado.
 2. **Contratos validados.** A receita tem esquema JSON. O veredito do crítico também, e veredito fora do esquema é recusado e refeito. As folhas têm nome e layout fixos.
-3. **Crítico independente.** Ele não vê a receita nem a justificativa do portador, só as imagens. Recalibra com os casos conhecidos a cada mudança nas perguntas.
+3. **Crítico independente.** Ele não vê a receita nem a justificativa do modelador; vê as imagens e a lista de peças prometidas da ficha. Recalibra com os casos conhecidos a cada mudança nas perguntas.
 4. **Amostragem humana e minha.** Em cada lote, confiro visualmente uma amostra dos aprovados pelo crítico antes de mandar para a galeria (regra de não aceitar nota sem olhar). Medimos a concordância crítico × usuário; com concordância alta e estável, a galeria passa a mostrar só os casos duvidosos.
 5. **Lotes pequenos e limites.** Lotes de 10 a 20 objetos, no máximo 3 a 4 agentes ao mesmo tempo (já vimos agentes disputando CPU), tempo máximo por objeto e por agente, e no máximo 3 rodadas de retrabalho.
 6. **Freio automático.** Se mais da metade de um lote cair em "precisa de humano", a esteira para e o problema vira ajuste da ferramenta, não mais rodadas.
@@ -91,7 +104,7 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 
 - Biblioteca `porte3d` (receita → modelo → OBJ/MTL/PNG + folhas), com testes.
 - Mod próprio mínimo e **prova no jogo com 1 objeto antes de escalar**.
-- Agentes portador e crítico, mais a skill do laço.
+- Agentes inspetor, modelador e crítico, mais a skill do laço.
 - Calibração do crítico com casos conhecidos, antes de confiar nele. Ele precisa reprovar:
   - a geladeira borrada da "profundidade";
   - a mesa sem o pé de trás, que **o wireframe** tem que denunciar;
@@ -113,9 +126,9 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 ## Gate de saída
 
 1. O objeto de prova aparece em 3D no jogo. O log do Viewpoint mostra modelos de pack na GPU (`model packs N models`, N > 0) e o usuário confirma visualmente com um print (F9).
-2. Na calibração, o crítico reprova os 3 casos ruins e aprova o caso bom.
+2. Na calibração, o inspetor aponta os problemas conhecidos (pé faltando, espelhamento, luminária "não portar"), e o crítico reprova os 3 casos ruins e aprova o caso bom.
 3. O piloto passa 10 objetos pela esteira nos dois níveis. Pelo menos 7 são aprovados pelo usuário na galeria em cada nível, e todos os aprovados aparecem no jogo, com a troca de nível funcionando.
-4. Cada aprovado tem receita versionada, histórico de rodadas e veredito do crítico registrados.
+4. Cada objeto tem ficha do inspetor, receita versionada, histórico de rodadas e veredito do crítico registrados, e a lista final de reprovados e não portados é gerada por script.
 5. Nada é gravado na pasta do jogo nem na do Viewpoint da Workshop, e a arte extraída do jogo fica fora do git.
 6. `python planos/check.py` passa.
 
@@ -123,8 +136,8 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 
 1. **Biblioteca `porte3d`:** receita, modelo, export OBJ/MTL/PNG e folhas, consolidando `teste_adesivo*`, `teste_manual_mesa*` e o ajuste de contorno.
 2. **Prova no jogo com a geladeira:** mod próprio, pack.manifest e register. O usuário confere. Aqui se descobre a escala, os eixos, a orientação do UV e como o Viewpoint ilumina o modelo. Se falhar, nada mais adianta.
-3. **Crítico:** a definição do agente e a calibração com os 4 casos conhecidos.
-4. **Portador, laço e fila:** a skill `porte-3d` e os estados.
+3. **Inspetor e crítico:** as definições dos agentes, o vocabulário comum (peças prometidas, tipos de defeito) e a calibração dos dois com os casos conhecidos.
+4. **Modelador, laço, fila e relatório:** a skill `porte-3d`, os estados e a lista final de reprovados.
 5. **Galeria e piloto de 10 objetos.**
 6. **Fechamento.**
 
