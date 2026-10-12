@@ -5,7 +5,7 @@ O **Viewpoint** é o mod que converte a câmera isométrica do *Project Zomboid 
 | Campo | Valor |
 | :--- | :--- |
 | **ID do mod** | `Viewpoint` |
-| **Versão** | `0.1.5a-hotfix` |
+| **Versão** | `0.1.6` (igual na Workshop, na pasta do jogo e aqui; veja *Atualizar*) |
 | **Build suportada** | `42.21` (mínima e máxima) |
 | **Dependência** | `ZombieBuddy` ≥ `2.3.0` ([Módulo 01](../01-ZombieBuddy-Loader/)) |
 | **Workshop** | [3809306528](https://steamcommunity.com/sharedfiles/filedetails/?id=3809306528) |
@@ -26,7 +26,9 @@ O **Viewpoint** é o mod que converte a câmera isométrica do *Project Zomboid 
         ├── java/client/Viewpoint.jar     # Motor Java (pacote `viewpoint`), carregado pelo ZombieBuddy
         └── lua/client/
             ├── Viewpoint_Options.lua         # Painel de opções e remapeamento de teclas
-            ├── Viewpoint_FrameCapOptions.lua # Limites de FPS (24 a 500)
+            ├── Viewpoint_FrameCaps.lua       # Limites de FPS
+            ├── Viewpoint_Pad*.lua            # Suporte a controle (gamepad)
+            ├── Viewpoint_ReliefMap.lua       # Mapa de relevo
             ├── Viewpoint_Interact.lua        # Interação com objetos pela mira 3D
             ├── Viewpoint_Loot.lua            # Saque de containers e chão pela mira
             └── Viewpoint_Mouse.lua           # Conversão de coordenadas do mouse em 3D
@@ -48,13 +50,23 @@ Além do mod da Workshop (`steamapps\workshop\content\108600\3809306528`), o jog
 * `Viewpoint.jar` copiado para a pasta do jogo (o arquivo da raiz deste módulo é essa cópia);
 * `ProjectZomboid64.json` com `Viewpoint.jar` no `classpath` e `-agentlib:zbNative=patches_jar=Viewpoint.jar:viewpoint` nos `vmArgs`.
 
-Ao atualizar o Viewpoint, troque o JAR nos dois lugares. Uma versão diferente na pasta do jogo e no mod pode dar conflito.
+Uma versão diferente na pasta do jogo e no mod causa conflito (até 2026-10-11 rodavam a 0.1.5a e a 0.1.6 juntas).
+
+### Atualizar
+
+Quando a Workshop atualizar o Viewpoint, com o jogo fechado:
+
+```bash
+python 02-Viewpoint-PrimeiraPessoa/sync_viewpoint.py --apply
+```
+
+O script copia o JAR da Workshop para a pasta do jogo (o antigo fica como `Viewpoint.jar.bak-<hash>`), atualiza a cópia desta pasta e registra o hash novo em `~/.zombie_buddy/mod_approvals.json`, para não aparecer a janela de aprovação. Sem `--apply` ele só mostra o que mudaria.
 
 ---
 
 ## 🎮 Atalhos Padrão
 
-Lista tirada do próprio `Viewpoint.jar` (classe `viewpoint.platform.Keys`) da versão `0.1.5a-hotfix`.
+Lista tirada do próprio `Viewpoint.jar` (classe `viewpoint.platform.Keys`) da versão `0.1.6`.
 
 | Tecla | Ação |
 | :--- | :--- |
@@ -62,6 +74,10 @@ Lista tirada do próprio `Viewpoint.jar` (classe `viewpoint.platform.Keys`) da v
 | **`SHIFT + O`** | Com a visão ligada: alterna entre Primeira e Terceira Pessoa (sobre o ombro) |
 | **`DELETE`** | Abre/fecha a janela de configurações (shaders, FOV, iluminação) |
 | **`F9`** | Captura de tela (salva em `Zomboid/viewpoint-shots/`) |
+| **`;`** | Terceira Pessoa: troca o ombro da câmera |
+| **`SHIFT + ;`** | Terceira Pessoa: câmera vira para trás do personagem |
+| **Botão lateral do mouse (MOUSE4)** (segurar) | Olhar livre: a visão gira sem girar o corpo; ao soltar, volta |
+| **Botão do meio do mouse (MOUSE3)** | Solta ou prende o cursor (para clicar em coisas ou voltar a olhar em volta) |
 | **`'`** (apóstrofo) | Overlay de desempenho: completo, compacto, só o gráfico ou desligado |
 
 **Menu de saque** (aparece ao mirar em um container ou item):

@@ -89,6 +89,12 @@ function ViewpointLoot.openWindow(player, container)
     loot.isCollapsed = false
     loot:clearMaxDrawHeight()
     loot.collapseCounter = 0
+
+    local joypadData = JoypadState.players[playerNum + 1]
+    if joypadData then
+        joypadData.focus = loot
+        updateJoypadFocus(joypadData)
+    end
 end
 
 

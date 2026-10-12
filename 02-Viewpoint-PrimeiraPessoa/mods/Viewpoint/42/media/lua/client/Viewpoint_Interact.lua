@@ -219,10 +219,22 @@ end
 
 
 
-local function withoutDebugMenu(build)
+local HALO_TEXTS = { "addText", "addGoodText", "addBadText", "addTextWithArrow" }
+
+
+
+
+
+local function unseen(build)
     local debug = DebugContextMenu and DebugContextMenu.doDebugMenu
     if debug then DebugContextMenu.doDebugMenu = function() end end
+    local halo = {}
+    for _, name in ipairs(HALO_TEXTS) do
+        halo[name] = HaloTextHelper[name]
+        HaloTextHelper[name] = function() end
+    end
     local ok, result = pcall(build)
+    for _, name in ipairs(HALO_TEXTS) do HaloTextHelper[name] = halo[name] end
     if debug then DebugContextMenu.doDebugMenu = debug end
     return ok, result
 end
@@ -241,7 +253,7 @@ function ViewpointInteract.harvest(player, object)
     local x = isoToScreenX(playerNum, sq:getX(), sq:getY(), sq:getZ())
     local y = isoToScreenY(playerNum, sq:getX(), sq:getY(), sq:getZ())
     local worldobjects = { object }
-    local ok, context = withoutDebugMenu(function() return W.createMenu(playerNum, worldobjects, x, y) end)
+    local ok, context = unseen(function() return W.createMenu(playerNum, worldobjects, x, y) end)
     local list = {}
     local state = { skip = skipped(), first = primary(), own = own(object), object = object, curtain = curtain(object),
                     worldobjects = worldobjects, debugIcon = getTexture("media/textures/Item_Plumpabug_Left.png"),

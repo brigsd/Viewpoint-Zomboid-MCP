@@ -6,7 +6,14 @@
 
 
 
+
+
+
+
 ViewpointOptions = ViewpointOptions or {}
+
+
+local FIRST_BUTTON = 2
 
 
 local binds = {}
@@ -14,8 +21,17 @@ local binds = {}
 local pending = {}
 local lootSwitch
 
+
+local pads = {}
+local padPending = {}
+local looks = {}
+
 local function keys()
     return Viewpoint and Viewpoint.Keys
+end
+
+local function padApi()
+    return Viewpoint and Viewpoint.Pads
 end
 
 
@@ -63,12 +79,100 @@ local function sync()
     end
 end
 
+local function padCurrent(pad)
+    return padPending[pad.id] or pad.shown or padApi().get(pad.id)
+end
+
+
+
+local function padShow(pad, text)
+    local button = pad.option.element
+    if type(button) ~= "table" or not button.setTitle then return end
+    local p = padApi()
+    local warning = p.warning(pad.id, text)
+    local chord = text == "" and "None" or p.display(text)
+    button:setTitle((warning ~= "" and "! " or "") .. p.label(pad.id) .. ": " .. chord)
+    button:setWidthToTitle()
+    button:setTooltip((warning ~= "" and warning .. " <LINE> " or "") .. p.tooltip(pad.id))
+    local glyph = p.glyph(text)
+    pad.glyph = glyph ~= "" and getTexture(glyph) or nil
+    if pad.drawn == button then return end
+    pad.drawn = button
+    local render = button.render
+    function button:render()
+        render(self)
+        if pad.glyph then self:drawTextureScaledAspect(pad.glyph, self.width + 6, 0, self.height, self.height, 1, 1, 1, 1) end
+    end
+end
+
+local function padChoose(pad, text)
+    padPending[pad.id] = text
+    padShow(pad, text)
+    if MainOptions.instance then MainOptions.instance.gameOptions.changed = true end
+end
+
+local function onPadButton(_, _, id)
+    local pad = pads[id]
+    if not pad or not ViewpointPadDialog then return end
+    ViewpointPadDialog.show(id, padCurrent(pad), function(text) padChoose(pad, text) end)
+end
+
+
+local function padSync()
+    local p = padApi()
+    if not p then return end
+    padPending = {}
+    for _, pad in pairs(pads) do
+        pad.shown = p.get(pad.id)
+        padShow(pad, pad.shown)
+    end
+    for id, option in pairs(looks) do
+        local value = p.lookValue(id)
+        if p.lookToggle(id) then option:setValue(value ~= 0) else option:setValue(value) end
+    end
+end
+
+local function padApply()
+    local p = padApi()
+    if not p then return end
+    for id, text in pairs(padPending) do p.set(id, text) end
+    for id, option in pairs(looks) do
+        local element = option.element
+        if element and p.lookToggle(id) then
+            p.lookSet(id, element:isSelected(1) and 1 or 0)
+        elseif element then
+            p.lookSet(id, element:getCurrentValue())
+        end
+    end
+    padSync()
+end
+
+local function addController(page)
+    local p = padApi()
+    if not p then return end
+    page:addTitle("Controller")
+    for i = 0, p.count() - 1 do
+        local id = p.id(i)
+        pads[id] = { id = id, option = page:addButton(id, p.label(id), p.tooltip(id), onPadButton, nil, id) }
+    end
+    for i = 0, p.lookCount() - 1 do
+        local id = p.lookId(i)
+        if p.lookToggle(id) then
+            looks[id] = page:addTickBox(id, p.lookLabel(id), p.lookValue(id) ~= 0, p.lookTooltip(id))
+        else
+            looks[id] = page:addSlider(id, p.lookLabel(id), p.lookMin(id), p.lookMax(id), p.lookStep(id),
+                p.lookValue(id), p.lookTooltip(id))
+        end
+    end
+end
+
 local function sendLoot()
     if lootSwitch and Viewpoint and Viewpoint.Loot then Viewpoint.Loot.setEnabled(lootSwitch:getValue()) end
 end
 
 local function apply()
     sendLoot()
+    padApply()
     local k = keys()
     if not k then return end
     for _, bind in pairs(binds) do
@@ -93,6 +197,7 @@ local function wrapDialog()
     function ISSetKeybindDialog:onKeyRelease(key)
         local bind = ours(self)
         if not bind then return release(self, key) end
+        if keys().waits(key) then return end
         self:destroy()
         if key ~= Keyboard.KEY_ESCAPE then choose(bind, keys().captured(key)) end
     end
@@ -111,8 +216,14 @@ local function wrapDialog()
         choose(bind, "")
     end
 
+
+
     function ISSetKeybindDialog:onMouseButtonDown(button)
-        if not ours(self) then return mouse(self, button) end
+        local bind = ours(self)
+        if not bind then return mouse(self, button) end
+        if button < FIRST_BUTTON then return end
+        self:destroy()
+        choose(bind, keys().captured(Mouse.BTN_OFFSET + button))
     end
 end
 
@@ -124,11 +235,13 @@ local function wrapOptions()
     function MainOptions:addModOptionsPanel()
         build(self)
         sync()
+        padSync()
     end
 
     function MainOptions:onKeyboardLayoutChanged()
         relabel(self)
         sync()
+        padSync()
     end
 end
 
@@ -153,6 +266,7 @@ local function install()
         binds[label] = { id = id, option = page:addKeyBind(id, label, k.trigger(k.fallback(id)), k.tooltip(id)) }
     end
     if not lootSwitch then addLootSwitch(page) end
+    addController(page)
     page.apply = apply
     wrapOptions()
     wrapDialog()

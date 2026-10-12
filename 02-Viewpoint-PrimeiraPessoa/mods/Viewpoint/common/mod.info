@@ -1,7 +1,7 @@
 name=Viewpoint
 id=Viewpoint
 description=True first-person view for Build 42, rendered in-engine.
-modversion=0.1.5a-hotfix
+modversion=0.1.6
 poster=poster.png
 url=https://steamcommunity.com/sharedfiles/filedetails/?id=3809306528
 versionMin=42.21
