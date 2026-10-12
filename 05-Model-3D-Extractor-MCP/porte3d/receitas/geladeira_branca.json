@@ -1,0 +1,39 @@
+{
+ "versao": 1,
+ "id": "geladeira_branca",
+ "sprites": {
+  "S": "appliances_refrigeration_01_0",
+  "E": "appliances_refrigeration_01_1",
+  "N": "appliances_refrigeration_01_2",
+  "W": "appliances_refrigeration_01_3"
+ },
+ "tras": "N",
+ "material": "metal",
+ "pecas": [
+  {
+   "nome": "forma_0",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.25,
+    -0.06
+   ],
+   "max": [
+    0.4,
+    0.45,
+    1.55
+   ]
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   }
+  }
+ },
+ "nota": "Sugerida por acervo.sugerir_receita (sem ajuste à mão): prova da fatia 1."
+}

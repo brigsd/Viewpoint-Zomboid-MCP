@@ -19,9 +19,9 @@ Fazer isso à mão, objeto por objeto, não escala. Aceitar o automático sem ol
 Uma esteira em que um agente **modelador** monta o 3D de cada objeto e um agente **crítico** olha as imagens e aponta defeitos, com até 3 rodadas de retrabalho. O usuário aprova o que passou. Antes de modelar, um agente **inspetor** levanta o que precisa ser feito numa ficha de serviço; os objetos que não passam em 3 rodadas viram uma lista curta com o motivo. Os aprovados viram um pack que o Viewpoint carrega no jogo, em **dois níveis gráficos**:
 
 - **arte**: textura tirada do desenho do jogo, fiel ao estilo pixel;
-- **realista**: textura de material em alta resolução gerada por código (veio de madeira, metal, tecido...), nas cores da arte, com sombra de contato pintada. O material vem da propriedade `Material` do jogo.
+- **realista** (o "nível 3", adotado em 2026-10-12 depois do teste da mesa): geometria com detalhe (chanfro nas bordas, pés afinando, saia, cantoneiras, puxadores) e textura de material gerada no Blender sem janela (madeira com anéis e tábuas diferentes entre si, metal, tecido), nas cores da arte, com a oclusão de ambiente assada na textura. O material vem da propriedade `Material` do jogo.
 
-A mesma geometria serve aos dois níveis; só a textura muda. O Viewpoint só aceita uma textura de cor (`map_Kd`), então todo o volume do realista é pintado na textura ou modelado na geometria (teste de 2026-10-12: `experimentos3d/teste_realista_mesa.py`).
+A mesma malha serve aos dois níveis; só a textura muda. O Viewpoint só aceita uma textura de cor (`map_Kd`), então todo o volume do realista é modelado na geometria ou assado na textura (testes de 2026-10-12: `experimentos3d/teste_realista_mesa.py` e `experimentos3d/blender_mesa_nivel3.py`). Ferramenta: Blender 5.2 (instalado pela Steam), rodando sem janela.
 
 ## Como funciona
 
@@ -53,8 +53,8 @@ MODELADOR (Sonnet) ── receita ──► folhas (textura + wireframe + sobrep
   - **Saída: ficha de serviço** (`porte3d/fichas/<objeto>.json`, esquema validado): peças prometidas (nome, forma, origem: bloco do jogo, simetria ou nova), caminho de textura (adesivo ou kit), material do nível realista, problemas previstos e decisão portar/não portar com o motivo.
   - Calibração: com os casos conhecidos, o inspetor precisa apontar o pé faltando na mesa, o espelhamento da geladeira e mandar a luminária de parede para "não portar".
 - **Receita por objeto** (`porte3d/receitas/<objeto>.json`, versionada; é dado nosso). Contém as caixas e cilindros com medidas, a simetria, o modo de textura do nível arte (adesivo ou kit), os recortes do kit, o material e os parâmetros do nível realista, e as correções. O modelador parte da ficha do inspetor, edita a receita, e um script determinístico gera tudo a partir dela. O agente não desenha nada direto.
-- **Ferramentas do modelador** (scripts em `porte3d/`, consolidando os experimentos):
-  - ajuste automático das medidas pelo contorno;
+- **Ferramentas do modelador** (scripts em `porte3d/`, consolidando os experimentos; o Blender monta a malha, faz o UV, assa e renderiza, e o Python compõe as texturas e as folhas):
+  - medida do contorno em 0° (o ajuste automático das medidas fica para a fatia 4, se o modelador precisar);
   - completar por simetria;
   - textura adesivo ou kit;
   - exportar OBJ + MTL + PNG com UV;
@@ -113,7 +113,7 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
   E precisa aprovar a geladeira "adesivo".
 - Fila, estados e galeria de aprovação.
 - Piloto com 10 objetos de caixa com geometria: geladeiras, fogões, máquinas, balcões, armários, mesas e caixotes, nos dois níveis.
-- Geradores de material do nível realista: madeira (feito no teste), metal e tecido no piloto; os demais entram conforme a fila pedir.
+- Geradores de material do nível realista no Blender: madeira (feito no teste), metal e tecido no piloto; os demais entram conforme a fila pedir.
 - Limpeza do que o Módulo 05 antigo gravou na pasta da Workshop.
 
 ## Excluído
@@ -134,7 +134,7 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 
 ## Fatias
 
-1. **Biblioteca `porte3d`:** receita, modelo, export OBJ/MTL/PNG e folhas, consolidando `teste_adesivo*`, `teste_manual_mesa*` e o ajuste de contorno.
+1. **Biblioteca `porte3d`:** receita, malha no Blender, textura dos dois níveis, export OBJ/MTL/PNG e folhas, consolidando `teste_adesivo*`, `teste_manual_mesa*` e `blender_mesa_nivel3.py`. Prova: a mesa e a geladeira saem pela biblioteca, nos dois níveis.
 2. **Prova no jogo com a geladeira:** mod próprio, pack.manifest e register. O usuário confere. Aqui se descobre a escala, os eixos, a orientação do UV e como o Viewpoint ilumina o modelo. Se falhar, nada mais adianta.
 3. **Inspetor e crítico:** as definições dos agentes, o vocabulário comum (peças prometidas, tipos de defeito) e a calibração dos dois com os casos conhecidos.
 4. **Modelador, laço, fila e relatório:** a skill `porte-3d`, os estados e a lista final de reprovados.
