@@ -70,8 +70,9 @@ Este documento é o **mapa técnico e conceitual** de todos os módulos reunidos
   * **`SHIFT + O`**: Alternar entre **Primeira Pessoa e Terceira Pessoa** (sobre o ombro).
   * **`DELETE`**: Abrir/fechar a **Janela de Configurações do Viewpoint** (seleção de Shaders, FOV, iluminação e efeitos).
   * **`INSERT + O`**: Modo **Câmera Livre** (Free Camera).
-  * **`F`**: Interagir / Pegar item onde a mira 3D aponta.
-  * **`R`**: Pegar tudo do container mirado.
+  * **`F`**: No menu de saque da mira, pega o item ou faz a ação selecionada (a roda do mouse escolhe).
+  * **`R`**: Pega tudo o que o menu de saque mostra.
+  * **`TAB`**: Abre a janela de saque do próprio jogo sobre o que a mira aponta.
   * **`F9`**: Captura de tela pelo motor do Viewpoint (salva em `Zomboid/viewpoint-shots/`).
 * **Local de instalação ativa no sistema:**
   * Mod de conteúdo: `C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3809306528\`
