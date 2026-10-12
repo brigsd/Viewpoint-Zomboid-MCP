@@ -1,0 +1,341 @@
+{
+ "versao": 1,
+ "id": "geladeira_branca_n3",
+ "nota": "Geladeira modelada à mão no nível 3 (portas, fresta, puxadores, rodapé, serpentina), a partir da caixa do jogo.",
+ "sprites": {
+  "S": "appliances_refrigeration_01_0",
+  "E": "appliances_refrigeration_01_1",
+  "N": "appliances_refrigeration_01_2",
+  "W": "appliances_refrigeration_01_3"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   228,
+   226,
+   214
+  ],
+  "metal_escuro": [
+   72,
+   72,
+   70
+  ],
+  "cromado": [
+   190,
+   188,
+   182
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.22,
+    0.05
+   ],
+   "max": [
+    0.4,
+    0.45,
+    1.55
+   ],
+   "chanfro": 0.035
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.47,
+    -0.19,
+    0.0
+   ],
+   "max": [
+    0.37,
+    0.42000000000000004,
+    0.06
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_freezer",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.25,
+    1.045
+   ],
+   "max": [
+    0.39,
+    -0.215,
+    1.5350000000000001
+   ],
+   "chanfro": 0.022
+  },
+  {
+   "nome": "porta_geladeira",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.25,
+    0.075
+   ],
+   "max": [
+    0.39,
+    -0.215,
+    1.03
+   ],
+   "chanfro": 0.022
+  },
+  {
+   "nome": "puxador_freezer",
+   "forma": "cilindro",
+   "centro": [
+    -0.44,
+    -0.272,
+    1.12
+   ],
+   "raio": 0.011,
+   "altura": 0.2999999999999998,
+   "material": "cromado",
+   "segmentos": 12
+  },
+  {
+   "nome": "puxador_freezer_apoio0",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.275,
+    1.135
+   ],
+   "max": [
+    -0.43,
+    -0.248,
+    1.155
+   ],
+   "material": "cromado",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "puxador_freezer_apoio1",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.275,
+    1.385
+   ],
+   "max": [
+    -0.43,
+    -0.248,
+    1.405
+   ],
+   "material": "cromado",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "puxador_geladeira",
+   "forma": "cilindro",
+   "centro": [
+    -0.44,
+    -0.272,
+    0.62
+   ],
+   "raio": 0.011,
+   "altura": 0.36,
+   "material": "cromado",
+   "segmentos": 12
+  },
+  {
+   "nome": "puxador_geladeira_apoio0",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.275,
+    0.635
+   ],
+   "max": [
+    -0.43,
+    -0.248,
+    0.655
+   ],
+   "material": "cromado",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "puxador_geladeira_apoio1",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.275,
+    0.945
+   ],
+   "max": [
+    -0.43,
+    -0.248,
+    0.965
+   ],
+   "material": "cromado",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "serpentina_moldura",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    0.45,
+    0.42
+   ],
+   "max": [
+    0.30000000000000004,
+    0.462,
+    1.38
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "serpentina_tubo0",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    0.47
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo1",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    0.58
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo2",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    0.69
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo3",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    0.8
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo4",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    0.9099999999999999
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo5",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    1.02
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo6",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    1.13
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo7",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    1.24
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo8",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47200000000000003,
+    1.35
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "metal_escuro": {
+    "tipo": "metal"
+   },
+   "cromado": {
+    "tipo": "metal"
+   }
+  }
+ }
+}
