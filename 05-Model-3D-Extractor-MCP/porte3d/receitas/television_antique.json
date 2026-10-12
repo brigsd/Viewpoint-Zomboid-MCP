@@ -1,0 +1,499 @@
+{
+ "versao": 1,
+ "id": "television_antique",
+ "nota": "TV antiga de tubo: gabinete de madeira, 4 pes, moldura/tela/painel na frente (-y), painel e grade atras (+y), 2 antenas em V sobre o tampo. Pe de tras por copia explicita (o centro do objeto nao e a origem, entao espelhar nao serve). Antenas cruzam as duas vistas (frente e tras do desenho).",
+ "sprites": {
+  "S": "appliances_television_01_9",
+  "E": "appliances_television_01_8",
+  "N": "appliances_television_01_11",
+  "W": "appliances_television_01_10"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "forma": "caixa",
+   "min": [
+    -0.4597,
+    -0.1619,
+    0.2136
+   ],
+   "max": [
+    0.3553,
+    0.2443,
+    0.7639
+   ],
+   "chanfro": 0.012,
+   "veio": "x"
+  },
+  {
+   "nome": "pe_a",
+   "forma": "caixa",
+   "min": [
+    -0.3865,
+    -0.1599,
+    0.0
+   ],
+   "max": [
+    -0.3511,
+    -0.1327,
+    0.2125
+   ],
+   "chanfro": 0.002,
+   "veio": "z",
+   "afinar": {
+    "quanto": 0.004,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   },
+   "material": "madeira_escura"
+  },
+  {
+   "nome": "pe_b",
+   "forma": "caixa",
+   "min": [
+    0.269,
+    -0.1599,
+    0.0
+   ],
+   "max": [
+    0.3044,
+    -0.1327,
+    0.2125
+   ],
+   "chanfro": 0.002,
+   "veio": "z",
+   "afinar": {
+    "quanto": 0.004,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   },
+   "material": "madeira_escura"
+  },
+  {
+   "nome": "pe_c",
+   "forma": "caixa",
+   "min": [
+    0.269,
+    0.2151,
+    0.0
+   ],
+   "max": [
+    0.3044,
+    0.2423,
+    0.2125
+   ],
+   "chanfro": 0.002,
+   "veio": "z",
+   "afinar": {
+    "quanto": 0.004,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   },
+   "material": "madeira_escura"
+  },
+  {
+   "nome": "pe_tras",
+   "forma": "caixa",
+   "min": [
+    -0.3865,
+    0.2151,
+    0.0
+   ],
+   "max": [
+    -0.3511,
+    0.2423,
+    0.2125
+   ],
+   "chanfro": 0.002,
+   "veio": "z",
+   "afinar": {
+    "quanto": 0.004,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   },
+   "material": "madeira_escura"
+  },
+  {
+   "nome": "moldura_tela",
+   "forma": "caixa",
+   "min": [
+    -0.428,
+    -0.1739,
+    0.243
+   ],
+   "max": [
+    0.322,
+    -0.1619,
+    0.737
+   ],
+   "material": "moldura",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "borda_tela",
+   "forma": "caixa",
+   "min": [
+    -0.412,
+    -0.1769,
+    0.268
+   ],
+   "max": [
+    0.097,
+    -0.172,
+    0.707
+   ],
+   "material": "borda_escura",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "tela",
+   "forma": "caixa",
+   "min": [
+    -0.395,
+    -0.19,
+    0.285
+   ],
+   "max": [
+    0.08,
+    -0.168,
+    0.69
+   ],
+   "material": "vidro",
+   "chanfro": 0.035
+  },
+  {
+   "nome": "painel_botoes",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.1759,
+    0.27
+   ],
+   "max": [
+    0.315,
+    -0.1729,
+    0.705
+   ],
+   "material": "moldura",
+   "chanfro": 0.0015
+  },
+  {
+   "nome": "botao_f0",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    -0.1799,
+    0.58
+   ],
+   "raio": 0.025,
+   "altura": 0.0055,
+   "eixo": "y",
+   "material": "moldura",
+   "segmentos": 20
+  },
+  {
+   "nome": "botao_f1",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    -0.1799,
+    0.45
+   ],
+   "raio": 0.025,
+   "altura": 0.0055,
+   "eixo": "y",
+   "material": "moldura",
+   "segmentos": 20
+  },
+  {
+   "nome": "mostrador_f",
+   "forma": "caixa",
+   "min": [
+    0.19,
+    -0.1779,
+    0.31
+   ],
+   "max": [
+    0.25,
+    -0.1759,
+    0.35
+   ],
+   "material": "vidro",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    0.04,
+    0.2443,
+    0.25
+   ],
+   "max": [
+    0.26,
+    0.2523,
+    0.65
+   ],
+   "material": "moldura",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_t",
+   "forma": "cilindro",
+   "centro": [
+    0.15,
+    0.2523,
+    0.55
+   ],
+   "raio": 0.035,
+   "altura": 0.008,
+   "eixo": "y",
+   "material": "moldura",
+   "segmentos": 24
+  },
+  {
+   "nome": "mostrador_t",
+   "forma": "caixa",
+   "min": [
+    0.09,
+    0.2523,
+    0.4
+   ],
+   "max": [
+    0.21,
+    0.2563,
+    0.46
+   ],
+   "material": "vidro",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_som",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    0.2443,
+    0.27
+   ],
+   "max": [
+    -0.1,
+    0.2503,
+    0.43
+   ],
+   "material": "grade",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "grade_ripa_0",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.2493,
+    0.29
+   ],
+   "max": [
+    -0.11,
+    0.2523,
+    0.302
+   ],
+   "material": "grade_ripa",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "grade_ripa_1",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.2493,
+    0.316
+   ],
+   "max": [
+    -0.11,
+    0.2523,
+    0.328
+   ],
+   "material": "grade_ripa",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "grade_ripa_2",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.2493,
+    0.342
+   ],
+   "max": [
+    -0.11,
+    0.2523,
+    0.354
+   ],
+   "material": "grade_ripa",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "grade_ripa_3",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.2493,
+    0.368
+   ],
+   "max": [
+    -0.11,
+    0.2523,
+    0.38
+   ],
+   "material": "grade_ripa",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "grade_ripa_4",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.2493,
+    0.394
+   ],
+   "max": [
+    -0.11,
+    0.2523,
+    0.406
+   ],
+   "material": "grade_ripa",
+   "chanfro": 0.0008
+  },
+  {
+   "nome": "base_antena",
+   "forma": "cilindro",
+   "centro": [
+    0.083,
+    0.2423,
+    0.73
+   ],
+   "raio": 0.02,
+   "altura": 0.047,
+   "material": "antena",
+   "segmentos": 20,
+   "eixo": "y"
+  },
+  {
+   "nome": "antena_0",
+   "forma": "cilindro",
+   "centro": [
+    0.0096,
+    0.272,
+    0.7169
+   ],
+   "raio": 0.011,
+   "altura": 0.4239,
+   "material": "antena",
+   "rot": [
+    0,
+    -20.28,
+    0
+   ],
+   "segmentos": 10
+  },
+  {
+   "nome": "antena_1",
+   "forma": "cilindro",
+   "centro": [
+    0.1709,
+    0.272,
+    0.7118
+   ],
+   "raio": 0.011,
+   "altura": 0.4427,
+   "material": "antena",
+   "rot": [
+    0,
+    23.41,
+    0
+   ],
+   "segmentos": 10
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.3
+   },
+   "moldura": {
+    "tipo": "liso"
+   },
+   "vidro": {
+    "tipo": "liso"
+   },
+   "antena": {
+    "tipo": "metal"
+   },
+   "grade": {
+    "tipo": "liso"
+   },
+   "madeira_escura": {
+    "tipo": "madeira"
+   },
+   "grade_ripa": {
+    "tipo": "liso"
+   },
+   "borda_escura": {
+    "tipo": "liso"
+   }
+  }
+ },
+ "cores": {
+  "madeira": [
+   120,
+   80,
+   54
+  ],
+  "madeira_escura": [
+   62,
+   46,
+   32
+  ],
+  "antena": [
+   66,
+   66,
+   72
+  ],
+  "grade": [
+   150,
+   150,
+   154
+  ],
+  "grade_ripa": [
+   178,
+   178,
+   182
+  ],
+  "borda_escura": [
+   28,
+   24,
+   22
+  ]
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "versao": 1,
+ "objeto": "television_antique",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_tras",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela",
+   "situacao": "ok",
+   "nota": "plana, sem abaulado"
+  },
+  {
+   "nome": "painel_botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_som",
+   "situacao": "forma_errada",
+   "nota": "no realista é um retângulo liso cor de madeira, sem ranhuras nem cinza claro"
+  },
+  {
+   "nome": "antena",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_antena",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "grade_som",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "grade de som na traseira, à direita do painel traseiro",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180/225/270 e comparacao.png realista 180: retângulo cor de madeira, sem ranhuras e sem cinza claro",
+   "gravidade": "media"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "painel traseiro, parte de cima, em volta do anel",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: silhueta escura em Y da antena do desenho de trás pintada no painel, além das antenas 3D",
+   "gravidade": "media"
+  },
+  {
+   "parte": "antena",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "haste direita da antena, metade de baixo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090 e 180: trecho da haste com cor de madeira, mais claro que o cinza escuro",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "antena",
+   "tipo": "estrutura",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "V das antenas visto por trás",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: no jogo-trás uma haste é vertical e a outra se inclina para a direita; no modelo uma se inclina para a esquerda e a outra é vertical",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "gabinete",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "laterais e frente do gabinete",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: madeira mais clara e alaranjada que o marrom do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tela",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "vidro da tela",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0 e 45: tela plana, sem abaulado nem borda afundada",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Frente e lados batem com o desenho; os problemas estão na traseira (grade de som sem ranhuras no realista e a antena pintada no painel traseiro da arte)."
+}

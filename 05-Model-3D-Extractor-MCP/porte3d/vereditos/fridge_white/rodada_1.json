@@ -1,0 +1,100 @@
+{
+ "versao": 1,
+ "objeto": "fridge_white",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vao_compressor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "compressor",
+   "situacao": "ok",
+   "nota": "tubos ao lado quase invisíveis no realista"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "bloco de baixo (corpo_baixo), lateral direita da metade inferior",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png 0°: magenta na lateral direita embaixo; comparacao.png 0°: degrau sobre o gabinete de cima que não existe no desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "topo e quina superior onde passa a linha escura de emenda do desenho",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045/135: linha escura em zigue-zague esticada no topo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "compressor",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "tubos de cobre/azuis ao lado do compressor, dentro do vão",
+   "sentido": "menor",
+   "evidencia": "giro_realista.png 180/225: tubos não visíveis, embora existam no fio.png",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_cima",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "faces das duas portas e do gabinete",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: realista mais cinza-esverdeado e limpo que o off-white sujo do desenho, sem degradê de sujeira embaixo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "rodape",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "base, borda inferior",
+   "sentido": "alto",
+   "evidencia": "sobreposicao.png 0°: verde ao longo da borda de baixo — o desenho vai um pouco mais fundo que o modelo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Porte sólido e completo; faltam só pequenos acertos de largura do bloco de baixo, cor do realista e tubos do compressor."
+}

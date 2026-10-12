@@ -1,0 +1,111 @@
+{
+ "versao": 1,
+ "objeto": "washing_machine_white",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel",
+   "situacao": "ok",
+   "nota": "forma e posição certas; face branca no realista em vez de escura"
+  },
+  {
+   "nome": "tampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_tampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "teclas",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mangueira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "painel",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face inclinada do painel de comandos",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: a face do painel é branca; no desenho do jogo é preta/escura, e as laterais são brancas",
+   "gravidade": "media"
+  },
+  {
+   "parte": "puxador_tampa",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "alça na borda da frente da tampa",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270, 180 e 135: borrão preto serrilhado onde devia haver uma alça cinza pequena",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "botao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "botões azul e vermelho na face do painel",
+   "sentido": "",
+   "evidencia": "zoom.png arte 45° parte de cima: meia-luas escuras ao lado dos botões 3D, que não casam com os pintados",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "mangueira",
+   "tipo": "sobra",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "trecho vertical da mangueira, metade de baixo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: a mangueira 3D aparece ao lado da mangueira pintada, com dupla linha",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "lado esquerdo do gabinete e topo do painel",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png 0°: faixa magenta na esquerda e no topo do painel, faixa verde na direita; IoU 95,1%",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampa",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "face de cima da tampa",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: a tampa é mais bege/escura que o corpo branco; o desenho tem tampa branca com borda branca",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo completo e bem posicionado; falta só acertar a cor da face do painel no realista e limpar pequenos borrões de textura no arte."
+}

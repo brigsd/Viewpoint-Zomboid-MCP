@@ -21,13 +21,15 @@ from PIL import Image
 FACES = ("+x", "-x", "+y", "-y", "+z", "-z")
 LUZ = {"+x": 0.83, "-x": 0.78, "-y": 1.0, "+y": 0.9, "+z": 1.0, "-z": 0.5}   # luz pintada por face no desenho do jogo
 VIS_MIN = 0.02
+MARGEM_VISTA = 0.15
 
 
-def projetar(p: np.ndarray, ang: float = 0.0) -> tuple[np.ndarray, np.ndarray]:
-    """Ponto da receita (metros) -> pixel no quadro 128x256 do jogo, com o objeto girado `ang` graus em z."""
+def projetar(p: np.ndarray, ang: float = 0.0, desloc=(0.0, 0.0)) -> tuple[np.ndarray, np.ndarray]:
+    """Ponto da receita (metros) -> pixel no quadro 128x256 do jogo, com o objeto girado `ang` graus em z e
+    depois deslocado `desloc` (x, y) no tile (o jogo posiciona cada direção por conta própria)."""
     t = np.radians(ang)
-    x = p[..., 0] * np.cos(t) - p[..., 1] * np.sin(t)
-    y = p[..., 0] * np.sin(t) + p[..., 1] * np.cos(t)
+    x = p[..., 0] * np.cos(t) - p[..., 1] * np.sin(t) + desloc[0]
+    y = p[..., 0] * np.sin(t) + p[..., 1] * np.cos(t) + desloc[1]
     return 64 + 64 * (x + y), 224 + 32 * (x - y) - 78.38 * p[..., 2]
 
 
@@ -101,19 +103,22 @@ def recorte(quadro, receita, nome):
     return img, rc["face"]
 
 
-def adesivo(buf: dict, vistas: list[tuple[np.ndarray, float, np.ndarray]]) -> tuple[np.ndarray, np.ndarray]:
+def adesivo(buf: dict, vistas: list[tuple]) -> tuple[np.ndarray, np.ndarray]:
     """Cor por texel tirada da vista que melhor o enxerga. Devolve (rgb float, máscara de texels resolvidos)."""
     pos, peca = buf["posicao"], buf["peca"]
     valido = peca >= 0
     out = np.zeros(pos.shape[:2] + (3,), np.float32)
     melhor = np.zeros(pos.shape[:2], np.float32)
-    for quadro, ang, vis in vistas:
-        sx, sy = projetar(pos, ang)
+    for quadro, ang, vis, *resto in vistas:
+        sx, sy = projetar(pos, ang, resto[0] if resto else (0.0, 0.0))
         px, py = np.floor(sx).astype(int), np.floor(sy).astype(int)
         dentro = (px >= 0) & (px < quadro.shape[1]) & (py >= 0) & (py < quadro.shape[0])
         pxc, pyc = np.clip(px, 0, quadro.shape[1] - 1), np.clip(py, 0, quadro.shape[0] - 1)
         cor = quadro[pyc, pxc]
-        bom = valido & dentro & (cor[..., 3] >= 128) & (vis > VIS_MIN) & (vis > melhor)
+        # a primeira vista (a frente) ganha os empates: a segunda só substitui onde enxerga claramente melhor.
+        # Sem isso, faces vistas igualmente pelas duas (o topo) alternam de desenho e viram cunhas e emendas.
+        limiar = np.where(melhor > 0, melhor + MARGEM_VISTA, VIS_MIN)
+        bom = valido & dentro & (cor[..., 3] >= 128) & (vis > limiar)
         out[bom] = cor[bom][:, :3]
         melhor[bom] = vis[bom]
     return out, melhor > 0
@@ -184,14 +189,35 @@ def compor(pasta: Path) -> dict:
     receita = json.loads((pasta / "entrada" / "receita.json").read_text(encoding="utf-8"))
     b = pasta / "buffers"
     buf = {k: np.load(b / f"{k}.npy") for k in ("posicao", "normal", "peca", "vis_0", "vis_180", "ao", "albedo")}
+    # O bake de luz diz só SE o texel é visto pela câmera (tem ruído de amostragem de ~20%); o QUANTO é visto de
+    # frente sai exato da normal. Assim faces vistas igual pelas duas vistas (o topo) empatam, e o empate é da frente.
+    escala = max(float(buf["vis_0"].max()), float(buf["vis_180"].max()), 1e-6)
+    # normal "canônica" (o eixo dominante): a normal assada é a suavizada, que sai inclinada perto dos chanfros
+    # e faria o canto de um tampo plano parecer virado para trás
+    k = np.abs(buf["normal"]).argmax(-1)
+    canon = np.zeros_like(buf["normal"])
+    np.put_along_axis(canon, k[..., None], np.sign(np.take_along_axis(buf["normal"], k[..., None], -1)), -1)
+    for ang in (0, 180):
+        t = np.radians(ang)
+        d = np.array([np.cos(t) + np.sin(t), np.sin(t) - np.cos(t), 0.8166])   # direção da câmera vista do objeto
+        d = d / np.linalg.norm(d)
+        visto = buf[f"vis_{ang}"] > 0.1 * escala
+        buf[f"vis_{ang}"] = np.where(visto, np.clip(canon @ d, 0, 1), 0.0).astype(np.float32)
     frente = np.asarray(Image.open(pasta / "entrada" / "frente.png").convert("RGBA"))
     tras = np.asarray(Image.open(pasta / "entrada" / "tras.png").convert("RGBA"))
 
-    out, ok = adesivo(buf, [(frente, 0.0, buf["vis_0"]), (tras, 180.0, buf["vis_180"])])
+    desloc = tuple(receita.get("deslocamento_tras", (0.0, 0.0)))
+    out, ok = adesivo(buf, [(frente, 0.0, buf["vis_0"]), (tras, 180.0, buf["vis_180"], desloc)])
     vistos = float(ok[buf["peca"] >= 0].mean())
     if receita["arte"]["modo"] == "kit":
         out, ok = kit(buf, receita, frente, out, ok)
     out = preencher(out, ok, buf)
+    # peças marcadas com "arte_cor" (vidro, transparências que o desenho não sabe mostrar) ficam com a cor lisa do
+    # material no nível arte, em vez de receber pedaços do desenho que está atrás delas
+    cores = receita.get("cores", {})
+    for i, p in enumerate(receita["pecas"]):
+        if p.get("arte_cor") and p["material"] in cores:
+            out[buf["peca"] == i] = np.array(cores[p["material"]], np.float32)
     Image.fromarray(np.clip(out, 0, 255).astype(np.uint8), "RGB").save(pasta / "arte.png")
 
     real = buf["albedo"] * (0.30 + 0.70 * np.clip(buf["ao"], 0, 1)[..., None] ** 0.9)

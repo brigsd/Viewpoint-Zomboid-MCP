@@ -1,0 +1,617 @@
+{
+ "versao": 1,
+ "id": "fridge_blue",
+ "sprites": {
+  "S": "appliances_refrigeration_01_4",
+  "E": "appliances_refrigeration_01_5",
+  "N": "appliances_refrigeration_01_6",
+  "W": "appliances_refrigeration_01_7"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "cromado": [
+   190,
+   188,
+   182
+  ],
+  "metal_escuro": [
+   70,
+   72,
+   80
+  ],
+  "liso_escuro": [
+   50,
+   44,
+   40
+  ],
+  "metal": [
+   162,
+   215,
+   215
+  ],
+  "cobre": [
+   176,
+   84,
+   62
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": -0.22,
+   "ate": 0.3,
+   "chanfro": 0.045,
+   "perfil": [
+    [
+     -0.35,
+     0.06
+    ],
+    [
+     0.42,
+     0.06
+    ],
+    [
+     0.42,
+     1.5
+    ],
+    [
+     0.36,
+     1.6
+    ],
+    [
+     -0.27,
+     1.6
+    ],
+    [
+     -0.35,
+     1.5
+    ]
+   ]
+  },
+  {
+   "nome": "corpo_alto",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": 0.25,
+   "ate": 0.45,
+   "chanfro": 0.045,
+   "perfil": [
+    [
+     -0.35,
+     0.42
+    ],
+    [
+     0.42,
+     0.42
+    ],
+    [
+     0.42,
+     1.5
+    ],
+    [
+     0.36,
+     1.6
+    ],
+    [
+     -0.27,
+     1.6
+    ],
+    [
+     -0.35,
+     1.5
+    ]
+   ]
+  },
+  {
+   "nome": "jamba_esq",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    0.25,
+    0.06
+   ],
+   "max": [
+    -0.29,
+    0.45,
+    0.42
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "jamba_dir",
+   "forma": "caixa",
+   "min": [
+    0.36,
+    0.25,
+    0.06
+   ],
+   "max": [
+    0.42,
+    0.45,
+    0.42
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "fresta_quina",
+   "forma": "caixa",
+   "min": [
+    0.4,
+    -0.222,
+    0.09
+   ],
+   "max": [
+    0.418,
+    -0.19,
+    1.5
+   ],
+   "material": "liso_escuro"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    -0.19,
+    0.0
+   ],
+   "max": [
+    0.39,
+    0.42,
+    0.07
+   ],
+   "material": "liso_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_cima",
+   "forma": "caixa",
+   "min": [
+    -0.34,
+    -0.245,
+    0.68
+   ],
+   "max": [
+    0.41,
+    -0.21,
+    1.52
+   ],
+   "chanfro": 0.03
+  },
+  {
+   "nome": "porta_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.34,
+    -0.245,
+    0.08
+   ],
+   "max": [
+    0.41,
+    -0.21,
+    0.65
+   ],
+   "chanfro": 0.03
+  },
+  {
+   "nome": "puxador_cima",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    -0.262,
+    0.95
+   ],
+   "raio": 0.011,
+   "altura": 0.17,
+   "material": "cromado",
+   "segmentos": 12
+  },
+  {
+   "nome": "puxador_baixo",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.15,
+    -0.262,
+    0.57
+   ],
+   "raio": 0.011,
+   "altura": 0.4,
+   "material": "cromado",
+   "segmentos": 12
+  },
+  {
+   "nome": "serpentina_moldura",
+   "forma": "caixa",
+   "min": [
+    -0.26,
+    0.45,
+    0.42
+   ],
+   "max": [
+    0.3,
+    0.465,
+    1.4
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "vao_motor",
+   "forma": "caixa",
+   "min": [
+    -0.29,
+    0.3,
+    0.08
+   ],
+   "max": [
+    0.36,
+    0.308,
+    0.42
+   ],
+   "material": "liso_escuro"
+  },
+  {
+   "nome": "compressor",
+   "forma": "cilindro",
+   "centro": [
+    -0.05,
+    0.38,
+    0.1
+   ],
+   "raio": 0.075,
+   "altura": 0.22,
+   "material": "metal_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "compressor_tubo_a",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.09,
+    0.36,
+    0.26
+   ],
+   "raio": 0.013,
+   "altura": 0.3,
+   "material": "cobre",
+   "segmentos": 10
+  },
+  {
+   "nome": "compressor_tubo_b",
+   "forma": "cilindro",
+   "centro": [
+    0.24,
+    0.36,
+    0.2
+   ],
+   "raio": 0.013,
+   "altura": 0.22,
+   "material": "cobre",
+   "segmentos": 10
+  },
+  {
+   "nome": "compressor_tubo_c",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.16,
+    0.35,
+    0.12
+   ],
+   "raio": 0.013,
+   "altura": 0.12,
+   "material": "cobre",
+   "segmentos": 10
+  },
+  {
+   "nome": "compressor_tubo_d",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.13,
+    0.4,
+    0.12
+   ],
+   "raio": 0.013,
+   "altura": 0.26,
+   "material": "cobre",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo0",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.47
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo1",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.56
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo2",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.65
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo3",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.74
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo4",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.83
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo5",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    0.92
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo6",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    1.01
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo7",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    1.1
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo8",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    1.19
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo9",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    1.28
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo10",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.25,
+    0.47,
+    1.37
+   ],
+   "raio": 0.009,
+   "altura": 0.54,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_a0",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.3,
+    0.45,
+    0.56
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_b0",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.26,
+    0.45,
+    0.56
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_a1",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.3,
+    0.45,
+    0.79
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_b1",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.26,
+    0.45,
+    0.79
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_a2",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.3,
+    0.45,
+    1.02
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_b2",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.26,
+    0.45,
+    1.02
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_a3",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.3,
+    0.45,
+    1.25
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "pino_b3",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.26,
+    0.45,
+    1.25
+   ],
+   "raio": 0.018,
+   "altura": 0.03,
+   "material": "metal_escuro",
+   "segmentos": 10
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "cromado": {
+    "tipo": "metal"
+   },
+   "liso_escuro": {
+    "tipo": "liso"
+   },
+   "cobre": {
+    "tipo": "metal"
+   }
+  }
+ }
+}

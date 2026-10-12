@@ -260,7 +260,7 @@ def etapa_malha(pasta: Path, tex: int):
         d.rotate(Euler((0, 0, -math.radians(ang))))     # câmera vista do referencial do objeto girado
         sol.rotation_euler = d.to_track_quat("Z", "Y").to_euler()
         v = assar(ob, "DIFFUSE", tex, pass_filter={"DIRECT"})[..., 0]
-        np.save(buf / f"vis_{ang}.npy", (v / max(float(v.max()), 1e-6)).astype(np.float32))
+        np.save(buf / f"vis_{ang}.npy", v.astype(np.float32))      # cru: texturas.py normaliza as duas vistas juntas
     bpy.data.objects.remove(sol)
 
     # oclusão de ambiente, com o chão
@@ -319,6 +319,7 @@ def etapa_vistas(pasta: Path, escala: int):
     t0 = time.time()
     sc = bpy.context.scene
     pecas = json.loads((pasta / "pecas.json").read_text(encoding="utf-8"))
+    desloc = json.loads((pasta / "entrada" / "receita.json").read_text(encoding="utf-8")).get("deslocamento_tras", [0.0, 0.0])
     ob = next(o for o in sc.objects if o.type == "MESH")
     sc.render.engine = "CYCLES"
     sc.render.film_transparent = True
@@ -368,6 +369,7 @@ def etapa_vistas(pasta: Path, escala: int):
         for a in ANGULOS:
             for o in objetos:
                 o.rotation_euler = (0, 0, math.radians(a))
+                o.location = (desloc[0], desloc[1], 0.0) if a == 180 else (0.0, 0.0, 0.0)
             sc.render.filepath = str(vistas / f"{nome}_{a:03d}.png")
             bpy.ops.render.render(write_still=True)
 

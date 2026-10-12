@@ -1,0 +1,86 @@
+{
+ "versao": 1,
+ "objeto": "counter_corner_a",
+ "rodada": 3,
+ "nota_arte": 6,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "borda_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "poste",
+   "situacao": "ok"
+  },
+  {
+   "nome": "trilho_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_traseiro",
+   "situacao": "ok",
+   "nota": "forma e posição certas, mas opaco e azul escuro"
+  },
+  {
+   "nome": "vidro_lateral",
+   "situacao": "ok",
+   "nota": "forma e posição certas, mas opaco e azul escuro"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "painel inteiro entre o poste e a ponta do trilho",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: no jogo o vidro é azul claro translúcido e mostra a cuba e o poste por trás; no modelo arte é azul escuro opaco. sobreposicao.png: grande área magenta (só modelo) onde o jogo tem alfa baixo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "painel inteiro",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°/180° e giro_realista.png: vidro sólido azul escuro, escurece além do azul claro prometido e esconde a cuba por trás",
+   "gravidade": "media"
+  },
+  {
+   "parte": "vidro_lateral",
+   "tipo": "cor",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "triângulo do lado esquerdo, do poste até a ponta do tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: no jogo é azul claro translúcido; no modelo é azul opaco. sobreposicao.png: vermelho (diferença alta) sobre todo o triângulo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cuba",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "moldura em volta da cuba, no tampo",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0° parte de cima: a moldura tem a mesma cor do tampo e quase não se distingue; era para ser mais clara",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Estrutura completa e bem posicionada nas 7 peças; o que falta é o vidro ficar claro e translúcido como no desenho do jogo, tanto na arte quanto no realista."
+}

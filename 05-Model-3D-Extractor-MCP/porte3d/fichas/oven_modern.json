@@ -1,0 +1,275 @@
+{
+ "versao": 1,
+ "objeto": "oven_modern",
+ "sprite": "appliances_cooking_01_13",
+ "decisao": "portar",
+ "motivo": "fogão de 1 tile feito de caixas simples com bocas, botões e porta; sem partes vazadas",
+ "o_que_e": "fogão de cozinha moderno, branco/cinza, com tampo de 4 bocas, painel de botões na frente, forno com porta de vidro escuro e uma aba (protetor) alta e escura ao fundo; a traseira é um painel liso com grades de ventilação",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "gabinete principal ~94 x 67 cm de base, ~92 cm de altura (z 0 a 92), a forma_0 do jogo; tampo no topo"
+  },
+  {
+   "nome": "aba_traseira",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "protetor de fundo sobre o tampo, ~94 cm de largura, ~17 cm de profundidade, ~20 cm de altura (z 92 a 112), encostado no lado do fundo; a forma_1 do jogo. Só existe no fundo, não deve ser espelhada para a frente"
+  },
+  {
+   "nome": "faixa_aba",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa escura (quase preta) no topo da aba, ~94 cm de largura, ~3 cm de altura, cobrindo a profundidade da aba"
+  },
+  {
+   "nome": "boca",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "boca do fogão: anel escuro de ~15 cm de diâmetro, ~2 cm de altura, sobre o tampo, uma em cada quadrante (2 na frente, 2 atrás; a da frente-direita é maior)"
+  },
+  {
+   "nome": "grelha",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "grade escura baixa (~1 cm) sobre cada boca, aproximada por uma caixa fina; opcional se a boca já tiver o desenho"
+  },
+  {
+   "nome": "painel_frontal",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "faixa do painel de comando logo abaixo do tampo na frente, ~94 cm de largura, ~10 cm de altura, levemente saliente"
+  },
+  {
+   "nome": "botao",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 5,
+   "material": "metal",
+   "descricao": "botão redondo de ~4 cm de diâmetro e ~3 cm de saliência, em fila no painel frontal"
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "porta do forno na frente, ~80 cm de largura, ~50 cm de altura, saliente ~2 cm, abaixo do painel"
+  },
+  {
+   "nome": "vidro_forno",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "janela de vidro escuro na porta, ~65 x 30 cm, rente à porta ou levemente afundada"
+  },
+  {
+   "nome": "puxador_forno",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "barra horizontal no alto da porta do forno, ~80 cm de comprimento, ~3 cm de diâmetro, afastada ~4 cm da porta"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "gaveta ou rodapé recuado na parte de baixo da frente, ~10 cm de altura, um pouco mais fundo que o corpo (fundo escuro/sujo)"
+  },
+  {
+   "nome": "grade_traseira",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "painel de ventilação na traseira com ranhuras horizontais, ~25 x 15 cm cada, rasos; mais um furo redondo pequeno (~4 cm) de entrada de cabo ou gás no lado esquerdo da traseira"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o jogo tem só 2 blocos: corpo e aba; porta, vidro, painel, botões e bocas precisam ser criados",
+  "pecas_provavelmente_faltando da medição sugere uma cópia da aba no lado y oposto (frente), mas isso é falso: o fogão tem aba só no fundo; ignorar",
+  "frente (S) e traseira (N) são desenhos diferentes (N igual a S só 0,47): a traseira tem painel liso e grades de ventilação; usar o desenho N para trás",
+  "o desenho tem sujeira e ferrugem nas laterais; cuidado para o desgaste não parecer erro de textura",
+  "botões e bocas são pequenos (~4 a 15 cm) e ficam apertados no desenho; risco de ficarem fora de escala ou desalinhados",
+  "janela do forno é vidro escuro/espelhado: usar tinta lisa escura, sem transparência",
+  "a geometria do jogo é um pouco maior que o desenho nas bordas (sobra 12%): ajustar para não sobrar volume nas laterais"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_13",
+  "sprites": {
+   "S": "appliances_cooking_01_13",
+   "E": "appliances_cooking_01_12",
+   "N": "appliances_cooking_01_15",
+   "W": "appliances_cooking_01_14"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 2,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 2,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4521,
+     -0.22,
+     0.0
+    ],
+    "max": [
+     0.4923,
+     0.4534,
+     0.925
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4528,
+     0.2797,
+     0.9248
+    ],
+    "max": [
+     0.4922,
+     0.4533,
+     1.1234
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "Electric",
+   "Material3": "MetalScrap",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Oven",
+   "GroupName": "Modern",
+   "Facing": "S",
+   "container": "stove",
+   "Surface": "34",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "15",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "37",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4528,
+    -0.22,
+    0.0
+   ],
+   "max": [
+    0.4923,
+    0.4534,
+    1.1234
+   ],
+   "largura": 0.9451,
+   "profundidade": 0.6734,
+   "altura": 1.1234
+  },
+  "menor_medida_peca": 0.1736,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8801,
+  "cobertura": 1.0,
+  "sobra": 0.1199,
+  "pixels_desenho": 10071,
+  "pixels_geometria": 11443,
+  "espelhado_E_S": 0.7664,
+  "espelhado_W_N": 0.8009,
+  "N_igual_S": 0.4657,
+  "silhueta_espelho_E_S": 0.9127,
+  "silhueta_espelho_W_N": 0.9501,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0198,
+   0.1167
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.4528,
+     -0.2199,
+     0.9248
+    ],
+    "max": [
+     0.4922,
+     -0.0463,
+     1.1234
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 10443,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0356
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_modern",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_modern\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_modern\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_modern\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_modern\\profundidade.png"
+  }
+ }
+}

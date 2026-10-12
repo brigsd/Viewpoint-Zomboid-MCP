@@ -1,0 +1,110 @@
+{
+ "versao": 1,
+ "objeto": "fridge_white",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vao_compressor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "compressor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "compressor",
+   "tipo": "sobra",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "tubo azul do compressor, aparece como botão azul na lateral direita da frente perto da base",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000/270/315: botão azul saindo da parede lateral; fio.png 000/225: ponta do tubo no limite ou fora do corpo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "rodape",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "faixa da base sob o gabinete",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: base azul-acinzentada; desenho bege-marrom",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "portas e laterais, metade de baixo",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: creme limpo e amarelado; desenho cinza-bege sujo escurecendo para baixo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "compressor",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "tubos de cobre ao lado do compressor, dentro do vão",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180: só uma barra escura fina; desenho tem tubos cobre visíveis",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "lateral direita, junção do corpo de baixo com o de cima",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0: linha fraca e degrau mínimo na silhueta direita",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_cima",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "costura entre o topo e a porta do congelador",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045/090: costura serrilhada",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Arte quase igual ao desenho nos dois lados; o realista pede recuar o tubo azul que fura a lateral e acertar a cor do rodapé e da sujeira."
+}

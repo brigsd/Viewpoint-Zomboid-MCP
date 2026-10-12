@@ -1,0 +1,127 @@
+{
+ "versao": 1,
+ "objeto": "oven_modern",
+ "rodada": 3,
+ "nota_arte": 7,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "faixa_aba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "boca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok",
+   "nota": "opcional; no arte a boca já tem o desenho, no realista não há grelha (defeito leve)"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_traseira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "aba_traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "ponta esquerda da aba, onde encontra o tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0: triângulo preto sobre o tampo e falta o pedaço cinza da lateral da aba; sobreposicao: verde no topo esquerdo e mancha vermelha na diferença de cor",
+   "gravidade": "media"
+  },
+  {
+   "parte": "aba_traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "tampo, junto da base da aba, lado esquerdo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090 e 135: linha preta serrilhada cortando o tampo ao lado da aba",
+   "gravidade": "media"
+  },
+  {
+   "parte": "aba_traseira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo e lado direito da aba traseira",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png: faixa magenta fina ao longo do topo e da lateral direita da aba",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "boca",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "as 4 bocas sobre o tampo",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0 cima: discos pretos lisos, sem grelha nem anel como no desenho do jogo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "metade de baixo do gabinete e laterais",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: branco limpo e claro, enquanto o jogo é cinza sujo na parte de baixo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "painel_frontal",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "fileira de botões do painel",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 cima: desenho dos botões esticado e distorcido no painel",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Fogão completo e bem montado nos dois níveis; o único defeito que se nota jogando é a cunha preta e a lateral que falta na ponta esquerda da aba no arte."
+}

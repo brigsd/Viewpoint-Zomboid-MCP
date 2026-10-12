@@ -1,0 +1,186 @@
+{
+ "versao": 1,
+ "id": "freezer_chest",
+ "nota": "Freezer de bau branco-creme: corpo, junta escura, tampo grosso, puxador na frente, 2 dobradicas e grade de ventilacao atras.",
+ "sprites": {
+  "S": "appliances_refrigeration_01_48",
+  "E": "appliances_refrigeration_01_49",
+  "N": "appliances_refrigeration_01_50",
+  "W": "appliances_refrigeration_01_51"
+ },
+ "tras": "N",
+ "material": "metal",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4726,
+    -0.2249,
+    0.0
+   ],
+   "max": [
+    0.4682,
+    0.4879,
+    0.668
+   ],
+   "chanfro": 0.012
+  },
+  {
+   "nome": "junta",
+   "forma": "caixa",
+   "min": [
+    -0.4806,
+    -0.2329,
+    0.655
+   ],
+   "max": [
+    0.4762,
+    0.4959,
+    0.685
+   ],
+   "material": "liso",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.4846,
+    -0.2369,
+    0.68
+   ],
+   "max": [
+    0.4802,
+    0.4999,
+    0.8159
+   ],
+   "chanfro": 0.03
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "min": [
+    -0.175,
+    -0.2569,
+    0.715
+   ],
+   "max": [
+    0.185,
+    -0.2319,
+    0.74
+   ],
+   "material": "metal",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "dobradica0",
+   "forma": "caixa",
+   "min": [
+    0.315,
+    0.4979,
+    0.62
+   ],
+   "max": [
+    0.365,
+    0.5299,
+    0.72
+   ],
+   "material": "metal",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "dobradica1",
+   "forma": "caixa",
+   "min": [
+    -0.325,
+    0.4979,
+    0.62
+   ],
+   "max": [
+    -0.275,
+    0.5299,
+    0.72
+   ],
+   "material": "metal",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "grade0",
+   "forma": "caixa",
+   "min": [
+    0.39,
+    0.4879,
+    0.04
+   ],
+   "max": [
+    0.41,
+    0.5019,
+    0.17
+   ],
+   "material": "liso",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade1",
+   "forma": "caixa",
+   "min": [
+    0.34,
+    0.4879,
+    0.04
+   ],
+   "max": [
+    0.36,
+    0.5019,
+    0.17
+   ],
+   "material": "liso",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade2",
+   "forma": "caixa",
+   "min": [
+    0.29,
+    0.4879,
+    0.04
+   ],
+   "max": [
+    0.31,
+    0.5019,
+    0.17
+   ],
+   "material": "liso",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade3",
+   "forma": "caixa",
+   "min": [
+    0.24,
+    0.4879,
+    0.04
+   ],
+   "max": [
+    0.26,
+    0.5019,
+    0.17
+   ],
+   "material": "liso",
+   "chanfro": 0.001
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "versao": 1,
+ "objeto": "freezer_chest",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "junta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "dobradica",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "tampo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda de baixo e laterais da face da frente da tampa, e faixa da junta",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 cima: borda serrilhada em escadinha; giro_arte 135/315 igual na faixa da junta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "dobradica",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "ponta direita da junta/trinco de trás, na altura da junta",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png 0°: faixa magenta (só modelo) na direita e pequeno calombo na esquerda, fora da silhueta do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "junta",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "faixa entre corpo e tampa, em volta",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0°: saliência clara, sem a faixa escura de borracha prometida",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grade_ventilacao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "frestas perto do pé do canto de trás",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225/270: frestas borradas, desenho e geometria sobrepostos",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "paredes do corpo",
+   "sentido": "",
+   "evidencia": "giro_realista.png: superfície lisa, sem as manchas leves da ficha",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Objeto completo e fiel ao desenho; só restam defeitos leves de acabamento (serrilha na arte, junta clara e material liso no realista)."
+}

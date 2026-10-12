@@ -1,0 +1,246 @@
+{
+ "versao": 1,
+ "objeto": "washing_machine_white",
+ "sprite": "appliances_laundry_01_4",
+ "decisao": "portar",
+ "motivo": "máquina de lavar de abertura por cima, corpo em caixa com painel no fundo; formas simples",
+ "o_que_e": "máquina de lavar branca de carga superior: gabinete quadrado baixo (~80x75x90 cm), tampa levemente rebaixada em cima, painel de comandos escuro e inclinado no fundo do tampo com botões coloridos, base recuada mais escura e mangueira preta na traseira",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "gabinete branco ~80 x 75 cm de base e ~90 cm de altura (z 0 a 90), cantos levemente arredondados no desenho; vincos de tampa e painéis de acesso só na textura"
+  },
+  {
+   "nome": "painel",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "painel de comandos no fundo do tampo (lado +y), faixa de ~80 cm de largura, ~15 cm de fundo e ~15 cm de altura (z 90 a 105), face escura virada para a frente e inclinada; as laterais são brancas"
+  },
+  {
+   "nome": "tampa",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "tampa retangular de ~60 x 45 cm sobre o tampo, ~1,5 cm de espessura, com borda branca, ocupando a parte da frente do tampo (a frente do painel)"
+  },
+  {
+   "nome": "puxador_tampa",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "pequena alça cinza de ~10 x 2 x 1 cm na borda da frente da tampa, perto do centro"
+  },
+  {
+   "nome": "botao",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 3,
+   "material": "liso",
+   "descricao": "botões redondos de ~4 cm sobre a face do painel, em fila, nas cores azul, vermelho e cinza (o cinza com aro); mais perto da ponta direita do painel"
+  },
+  {
+   "nome": "teclas",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "liso",
+   "descricao": "botõezinhos quadrados de ~1,5 cm, amarelos e cinza, agrupados em 2x2 na ponta esquerda do painel; podem virar só pintura se ficarem pequenos demais"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base recuada de ~5 cm de altura, cor bege-escura, ~3 cm menor que o corpo em cada lado, sob o gabinete (aparece como sombra/faixa no desenho)"
+  },
+  {
+   "nome": "mangueira",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "mangueira preta de ~3 cm de diâmetro em forma de J na traseira, descendo do alto até perto do chão, perto de um canto; pode ser aproximada com um cilindro vertical mais um curto horizontal"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o aviso de peça faltando (cópia espelhada do painel em y) é falso: o painel existe só de um lado; NÃO criar segundo painel. Quem conferir deve ignorar esse aviso",
+  "o painel é inclinado no desenho mas o jogo só dá uma caixa reta; decidir entre caixa reta ou prisma e conferir se o painel aparece escuro de frente",
+  "a traseira (N) é bem diferente da frente: a mangueira em J e as grades de ventilação só existem na textura de trás; garantir que a mangueira fique no lado certo ao girar",
+  "a caixa do jogo é maior que o desenho (sobra de ~13% em volta): cuidado para o corpo 3D não ficar mais largo que o sprite",
+  "botões e teclas são muito pequenos (<5 cm) e podem sumir ou ficar ruidosos; aceitar pintura se não aparecerem",
+  "a tampa é só um rebaixo de poucos mm no tampo; o risco é z-fighting com o topo do corpo",
+  "o jogo marca o objeto como Translucent na geometria, mas o desenho é opaco: ignorar"
+ ],
+ "medidas": {
+  "sprite": "appliances_laundry_01_4",
+  "sprites": {
+   "S": "appliances_laundry_01_4",
+   "E": "appliances_laundry_01_5",
+   "N": "appliances_laundry_01_6",
+   "W": "appliances_laundry_01_7"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 2,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 2,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4,
+     -0.3,
+     0.0
+    ],
+    "max": [
+     0.4,
+     0.45,
+     0.9
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4,
+     0.3,
+     0.9
+    ],
+    "max": [
+     0.4,
+     0.45,
+     1.05
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "MetalScrap",
+   "Material3": "Electric",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Washing Machine",
+   "GroupName": "White",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "clothingwasher",
+   "Surface": "36",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "20",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "36",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    0.4,
+    0.45,
+    1.05
+   ],
+   "largura": 0.8,
+   "profundidade": 0.75,
+   "altura": 1.05
+  },
+  "menor_medida_peca": 0.15,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8679,
+  "cobertura": 1.0,
+  "sobra": 0.1321,
+  "pixels_desenho": 8949,
+  "pixels_geometria": 10311,
+  "espelhado_E_S": 0.8199,
+  "espelhado_W_N": 0.7934,
+  "N_igual_S": 0.6171,
+  "silhueta_espelho_E_S": 0.9484,
+  "silhueta_espelho_W_N": 0.9457,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   0.075
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.4,
+     -0.3,
+     0.9
+    ],
+    "max": [
+     0.4,
+     -0.15,
+     1.05
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 10122,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1159
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\washing_machine_white",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\washing_machine_white\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\washing_machine_white\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\washing_machine_white\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\washing_machine_white\\profundidade.png"
+  }
+ }
+}

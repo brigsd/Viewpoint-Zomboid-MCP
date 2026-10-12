@@ -178,6 +178,15 @@
           }
         }
       }
+    },
+    "deslocamento_tras": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "preenchido por preparar.py: deslocamento [dx, dy] do objeto N no tile depois de girar 180 graus"
     }
   },
   "$defs": {
@@ -333,6 +342,10 @@
         "segmentos": {
           "type": "integer",
           "minimum": 3
+        },
+        "arte_cor": {
+          "type": "boolean",
+          "description": "no nível arte, usa a cor lisa do material (vidro, transparências) em vez do desenho"
         }
       },
       "allOf": [

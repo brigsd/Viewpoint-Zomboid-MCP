@@ -1,0 +1,120 @@
+{
+ "versao": 1,
+ "objeto": "counter_corner_a",
+ "rodada": 2,
+ "nota_arte": 6,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "borda_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "forma_errada",
+   "nota": "no realista é um buraco que ocupa quase todo o tampo, sem moldura clara; no arte está ok"
+  },
+  {
+   "nome": "poste",
+   "situacao": "ok"
+  },
+  {
+   "nome": "trilho_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_traseiro",
+   "situacao": "ok",
+   "nota": "forma certa; no arte a textura vem errada"
+  },
+  {
+   "nome": "vidro_lateral",
+   "situacao": "ok",
+   "nota": "forma certa; no arte a textura vem errada"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "vidro traseiro, metade de baixo, perto da cuba",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225: retângulo escuro com a forma do interior da cuba aparece desenhado dentro do vidro; em 270 e 090 há mais manchas de cuba/tampo no vidro",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "vidro traseiro, região central-baixa, abaixo do poste",
+   "sentido": "",
+   "evidencia": "comparacao.png 0° e zoom.png: polígono mais claro com borda em degraus dentro do vidro; no jogo o vidro é azul escuro uniforme; sobreposicao.png mostra magenta (só modelo) em toda essa área",
+   "gravidade": "media"
+  },
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "vidro traseiro visto por trás, entre o trilho e o poste",
+   "sentido": "",
+   "evidencia": "comparacao.png 180°: vidro cinza opaco com a textura do trilho esticada; o jogo trás mostra azul escuro translúcido",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cuba",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "abertura da cuba no tampo, margem da frente e da direita",
+   "sentido": "maior",
+   "evidencia": "giro_realista.png 000 e zoom.png: o buraco ocupa cerca de 85% do tampo e não tem moldura mais clara; no jogo a cuba é menor, centrada e com moldura",
+   "gravidade": "media"
+  },
+  {
+   "parte": "vidro_lateral",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "vidro lateral perto da ponta do tampo, sobre a cuba",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090: forma de pirâmide clara dentro da cuba, que é textura do tampo projetada no vidro",
+   "gravidade": "media"
+  },
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "painel de vidro inteiro",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: azul saturado e quase opaco; o jogo mostra vidro cinza-azulado translúcido",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "base",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "laterais da base",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: aço com tom mais azulado que o cinza neutro do desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Estrutura e peças completas; o que falta é limpar a textura da arte nos vidros e reduzir a cuba do realista com moldura."
+}

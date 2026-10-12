@@ -1,0 +1,148 @@
+{
+ "versao": 1,
+ "objeto": "oven_modern",
+ "rodada": 2,
+ "nota_arte": 7,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "faixa_aba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "boca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_traseira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "faixa_aba",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "faixa escura da aba, perto do meio do comprimento",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 180: corte branco diagonal atravessa a faixa escura, que no jogo é contínua",
+   "gravidade": "media"
+  },
+  {
+   "parte": "aba_traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "borda de cima da aba, canto esquerdo",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0 e giro_arte 045: borda serrilhada com pedaço branco rasgado; o jogo tem a borda reta",
+   "gravidade": "media"
+  },
+  {
+   "parte": "aba_traseira",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "lado direito e topo da aba, e borda direita do corpo",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png 0: faixa magenta fina no topo e na direita, só no modelo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "puxador_forno",
+   "tipo": "sobra",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "ponta esquerda do puxador, fora da lateral esquerda da porta",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 0: magenta à esquerda na altura da porta; comparacao.png arte 0: saliência cinza que o jogo não tem",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "franja rosada na base do corpo, nas arestas de baixo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090, 135 e 180: franja rosa/roxa no pé do modelo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "botao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "fila de botões do painel frontal",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 cima: botões esticados e borrados, projeção do desenho isométrico numa face reta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "faixa_aba",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "faixa escura no topo da aba, pontas esquerda e da frente",
+   "sentido": "maior",
+   "evidencia": "giro_realista.png 180 e 270: a faixa escura passa um pouco da borda do corpo branco da aba",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo e lateral do corpo",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: branco mais limpo e claro que o cinza com manchas do jogo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Conjunto pronto para o jogo no realista; o arte só precisa limpar a textura da aba (borda serrilhada e corte branco na faixa escura)."
+}

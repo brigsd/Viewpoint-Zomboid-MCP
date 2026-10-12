@@ -1,0 +1,110 @@
+{
+ "versao": 1,
+ "objeto": "television_antique",
+ "rodada": 3,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_tras",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_botoes",
+   "situacao": "ok",
+   "nota": "no realista é cinza claro; o desenho é escuro"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok",
+   "nota": "no realista é cinza claro; o desenho é escuro"
+  },
+  {
+   "nome": "grade_som",
+   "situacao": "ok"
+  },
+  {
+   "nome": "antena",
+   "situacao": "ok",
+   "nota": "textura esmaecida no arte e desvio de 1 a 2 px"
+  },
+  {
+   "nome": "base_antena",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "antena",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "hastes das duas antenas, trechos que cruzam o tampo e o painel traseiro",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180 e comparacao.png arte 180: hastes com trechos esmaecidos e manchas de madeira; 090 e 135 mostram faixas marrons na haste",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "painel_botoes",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "faixa vertical à direita da tela, na frente",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: painel cinza claro; o desenho do jogo é preto com botões claros",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "placa do lado esquerdo da face de trás, com botão e mostrador",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 180: placa cinza claro; o desenho de trás é escuro",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "antena",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "haste da esquerda, ponta de cima",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png: verde acima e à esquerda da haste esquerda, magenta ao lado; desvio de 1 a 2 px",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "pe",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "pé da frente, ponta de baixo",
+   "sentido": "baixo",
+   "evidencia": "sobreposicao.png: faixa magenta na ponta do pé da frente e verde à esquerda dos pés; desvio de cerca de 1 px",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo fiel ao desenho em 0° e 180°, com as 11 peças prometidas no lugar. Só restam diferenças leves de cor no realista e nas antenas do arte."
+}

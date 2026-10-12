@@ -434,3 +434,26 @@ def sugerir_receita(db: sqlite3.Connection, nome_S: str) -> dict:
     }
     _receita.validar(r)
     return r
+
+
+def deslocamento_tras(db: sqlite3.Connection, nome_S: str, nome_N: str) -> list[float]:
+    """Quanto o objeto virado para N está deslocado, no tile, em relação ao objeto virado para S girado 180°.
+    O jogo posiciona cada direção por conta própria (ex.: a geladeira N tem translate), então o desenho N não é
+    exatamente o desenho S girado no centro do tile. Devolve [dx, dy] em metros, nos eixos da receita, a somar
+    depois de girar 180°: p_N = giro180(p_S) + [dx, dy]. Usa o centro da caixa envolvente das peças (caixas e
+    cilindros); [0, 0] se faltar geometria em uma das direções."""
+    def centro(nome):
+        lo, hi = [], []
+        for p in formas(db, nome):
+            if p["forma"] == "caixa":
+                lo.append(p["min"]); hi.append(p["max"])
+            elif p["forma"] == "cilindro":
+                c, r = np.array(p["centro"], float), float(p["raio"])
+                lo.append((c - r).tolist()); hi.append((c + r).tolist())
+        if not lo:
+            return None
+        return (np.min(lo, axis=0) + np.max(hi, axis=0)) / 2
+    cs, cn = centro(nome_S), centro(nome_N)
+    if cs is None or cn is None:
+        return [0.0, 0.0]
+    return [round(float(cn[0] + cs[0]), 4), round(float(cn[1] + cs[1]), 4)]

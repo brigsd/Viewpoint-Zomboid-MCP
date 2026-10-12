@@ -1,0 +1,96 @@
+{
+ "versao": 1,
+ "objeto": "dishwasher_metal",
+ "rodada": 2,
+ "nota_arte": 5,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "faixa_painel",
+   "situacao": "ok"
+  },
+  {
+   "nome": "frisa_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bloco_controle",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao_giratorio",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "furo_traseiro",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo, metade de trás e lado direito, junto à aresta de trás",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0 e 180: cunha escura e linha branca na aresta do tampo, ausentes no desenho; sobreposicao.png: vermelho no topo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "tampo visto de lado, canto superior esquerdo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135 e 315: região escura em degrau cobrindo parte do tampo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "frisa_tampo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda da frisa e faixa entre tampo e painel, frente",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 parte de cima: serrilhado de pixel esticado ao longo da frisa",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "rodapé, base da frente e lateral",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 parte de baixo: rodapé claro e recuado, o desenho tem base escura",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo completo, com peças certas e traseira correta, mas a arte tem uma mancha escura em forma de cunha no tampo que volta em quase todos os ângulos."
+}

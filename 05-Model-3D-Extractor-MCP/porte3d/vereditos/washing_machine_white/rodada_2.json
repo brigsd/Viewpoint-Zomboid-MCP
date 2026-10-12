@@ -1,0 +1,100 @@
+{
+ "versao": 1,
+ "objeto": "washing_machine_white",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_tampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "teclas",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mangueira",
+   "situacao": "ok",
+   "nota": "no realista é barra vertical mais um trecho horizontal curto, aproximação aceita"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "mangueira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "mangueira, trecho de baixo na traseira",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270 e 225: o desenho da mangueira fica esticado, recortado e com dobra estranha visto de lado",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampa",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "tampa, perto do puxador na borda da frente",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045, 090 e 315: o desenho do puxador vira um borrão escuro serrilhado sobre a tampa",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "botao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "lateral dos botões azul, vermelho e cinza",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045: meias-luas escuras ao lado dos botões",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampa",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "canto de trás da tampa, junto ao painel",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270: triângulo escuro pequeno no canto",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "gabinete inteiro, faces laterais",
+   "sentido": "",
+   "evidencia": "comparacao.png e zoom.png: branco frio e acinzentado no realista, o desenho é creme quente",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo fiel ao desenho em 0° e em 180°, com todas as peças prometidas no lugar e sólidas; sobram só texturas esticadas na arte em ângulos de lado e uma cor um pouco fria no realista."
+}

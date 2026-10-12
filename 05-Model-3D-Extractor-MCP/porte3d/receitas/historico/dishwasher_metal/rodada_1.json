@@ -1,0 +1,236 @@
+{
+ "versao": 1,
+ "id": "dishwasher_metal",
+ "nota": "Lava-louças compacta de bancada: corpo, porta, faixa de painel, frisa do tampo, módulo de controle com botão; traseira com moldura, painel, grades e furo.",
+ "sprites": {
+  "S": "appliances_cooking_01_77",
+  "E": "appliances_cooking_01_76",
+  "N": "appliances_cooking_01_79",
+  "W": "appliances_cooking_01_78"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   199,
+   198,
+   195
+  ],
+  "metal_frisa": [
+   178,
+   172,
+   162
+  ],
+  "metal_painel": [
+   150,
+   150,
+   148
+  ],
+  "liso": [
+   45,
+   45,
+   48
+  ],
+  "liso_claro": [
+   200,
+   198,
+   190
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.0949,
+    0.0
+   ],
+   "max": [
+    0.4977,
+    0.4811,
+    0.7449
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.1099,
+    0.04
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.575
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "faixa_painel",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.1049,
+    0.585
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.725
+   ],
+   "material": "liso",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "frisa_tampo",
+   "forma": "caixa",
+   "min": [
+    -0.4813,
+    -0.1149,
+    0.725
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.7449
+   ],
+   "material": "metal_frisa",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "bloco_controle",
+   "forma": "caixa",
+   "min": [
+    0.2,
+    -0.1099,
+    0.61
+   ],
+   "max": [
+    0.47,
+    -0.1049,
+    0.715
+   ],
+   "material": "liso_claro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "botao_giratorio",
+   "forma": "cilindro",
+   "centro": [
+    0.35,
+    -0.1199,
+    0.66
+   ],
+   "raio": 0.025,
+   "altura": 0.015,
+   "eixo": "y",
+   "material": "liso_claro",
+   "segmentos": 20
+  },
+  {
+   "nome": "moldura_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.4743,
+    0.4811,
+    0.0
+   ],
+   "max": [
+    0.4957,
+    0.4961,
+    0.7429
+   ],
+   "material": "liso",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.376,
+    0.4961,
+    0.04
+   ],
+   "max": [
+    0.428,
+    0.5011,
+    0.655
+   ],
+   "material": "metal_painel",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_ventilacao",
+   "forma": "caixa",
+   "min": [
+    0.1,
+    0.5011,
+    0.098
+   ],
+   "max": [
+    0.387,
+    0.5081,
+    0.218
+   ],
+   "material": "liso",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "grade_ventilacao_2",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.5011,
+    0.105
+   ],
+   "max": [
+    -0.045,
+    0.5081,
+    0.225
+   ],
+   "material": "liso",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "furo_traseiro",
+   "forma": "cilindro",
+   "centro": [
+    0.29,
+    0.5011,
+    0.345
+   ],
+   "raio": 0.04,
+   "altura": 0.006,
+   "eixo": "y",
+   "material": "liso",
+   "segmentos": 20
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "metal_frisa": {
+    "tipo": "metal"
+   },
+   "metal_painel": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "liso": {
+    "tipo": "liso"
+   },
+   "liso_claro": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

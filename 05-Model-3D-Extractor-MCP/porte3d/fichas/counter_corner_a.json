@@ -1,0 +1,196 @@
+{
+ "versao": 1,
+ "objeto": "counter_corner_a",
+ "sprite": "location_restaurant_generic_01_24",
+ "decisao": "portar",
+ "motivo": "balcão-vitrine de uma casa só, base em caixa com protetor de vidro; formas simples, mas o vidro e o trilho do alto pedem cuidado",
+ "o_que_e": "balcão refrigerado de restaurante, de aço inox, com uma cuba rebaixada no tampo, um poste de canto, um trilho no alto e painéis de vidro de proteção",
+ "pecas": [
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "metal",
+   "descricao": "corpo do balcão em aço, ~100 x 65 cm de planta e ~85-90 cm de altura (o bloco do jogo tem 162 cm porque inclui o protetor de vidro; precisa ser reduzido só ao corpo). Laterais lisas, com uma faixa mais escura na parte de baixo (rodapé de ~20 cm)"
+  },
+  {
+   "nome": "borda_tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "metal",
+   "descricao": "tampo fino de ~3 cm sobre a base, ligeiramente maior (beira saliente de 1-2 cm), cor de aço claro"
+  },
+  {
+   "nome": "cuba",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "metal",
+   "descricao": "cuba retangular rebaixada no tampo, ~70 x 40 cm, ~10 cm de fundo, centrada, com moldura mais clara em volta; interior cinza escuro. Modelar como buraco no tampo ou como moldura + fundo"
+  },
+  {
+   "nome": "poste",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "metal",
+   "descricao": "poste vertical quadrado de ~8-10 cm, do tampo até o trilho (~162 cm de altura), no canto esquerdo de trás visto em S; aço cinza"
+  },
+  {
+   "nome": "trilho_superior",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "metal",
+   "descricao": "barra horizontal de ~8 cm de largura e ~4 cm de espessura no topo (~162 cm), saindo do poste e acompanhando a aresta de trás até quase o fim do balcão (~85 cm de comprimento)"
+  },
+  {
+   "nome": "vidro_traseiro",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "painel de vidro vertical fino (~1 cm), azul claro e translúcido, entre o trilho e o tampo, preso ao poste e acompanhando o trilho"
+  },
+  {
+   "nome": "vidro_lateral",
+   "forma": "prisma",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "painel de vidro em forma de triângulo/trapézio inclinado, translúcido, saindo do poste (alto) até a ponta do tampo (baixo), fechando o lado esquerdo visto em S; no desenho N aparece do lado direito"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco único do jogo é a caixa inteira (162 cm): ele cobre o vidro, mas o corpo real tem só ~85-90 cm; é preciso reduzir a base e criar as peças do alto",
+  "vidro translúcido e fino (painéis de ~1 cm): risco de z-fighting, de aparecer opaco ou de sumir no adesivo; usar material liso com transparência",
+  "vidro lateral inclinado (triângulo): a forma e a posição exata são difíceis de ler só pelo desenho; conferir em S e N",
+  "cuba rebaixada vista de cima: o interior está parcialmente escondido pelo vidro; deduzir o fundo",
+  "o desenho N não é espelho de S (N~S 0.46, E/W não são espelho): poste e trilho mudam de lado, então usar o desenho de N para a traseira e conferir o lado do poste",
+  "pixels de desgaste e manchas escuras na parte baixa da base: tratar como textura, não como peça"
+ ],
+ "medidas": {
+  "sprite": "location_restaurant_generic_01_24",
+  "sprites": {
+   "S": "location_restaurant_generic_01_24",
+   "E": "location_restaurant_generic_01_27",
+   "N": "location_restaurant_generic_01_34",
+   "W": "location_restaurant_generic_01_37"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.5,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.15,
+     1.62
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "MetalPlates",
+   "Material2": "MetalScrap",
+   "MaterialType": "Glass_Light"
+  },
+  "props": {
+   "CustomName": "Counter",
+   "GroupName": "Corner A",
+   "Facing": "S",
+   "container": "restaurantdisplay",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "ItemHeight": "64",
+   "Translucent": "true"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.5,
+    -0.5,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.15,
+    1.62
+   ],
+   "largura": 1.0,
+   "profundidade": 0.65,
+   "altura": 1.62
+  },
+  "menor_medida_peca": 0.65,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7057,
+  "cobertura": 1.0,
+  "sobra": 0.2943,
+  "pixels_desenho": 11445,
+  "pixels_geometria": 16218,
+  "espelhado_E_S": 0.7754,
+  "espelhado_W_N": 0.7717,
+  "N_igual_S": 0.4593,
+  "silhueta_espelho_E_S": 0.8268,
+  "silhueta_espelho_W_N": 0.8373,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   -0.175
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 15991,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.2843
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_corner_a",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_corner_a\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_corner_a\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_corner_a\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_corner_a\\profundidade.png"
+  }
+ }
+}

@@ -1,0 +1,414 @@
+{
+ "versao": 1,
+ "id": "fridge_white",
+ "nota": "Geladeira branca de duas portas, traseira com serpentina e vao do compressor.",
+ "sprites": {
+  "S": "appliances_refrigeration_01_0",
+  "E": "appliances_refrigeration_01_1",
+  "N": "appliances_refrigeration_01_2",
+  "W": "appliances_refrigeration_01_3"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal_escuro": [
+   118,
+   126,
+   138
+  ],
+  "cobre": [
+   196,
+   140,
+   100
+  ],
+  "azul": [
+   150,
+   162,
+   180
+  ],
+  "escuro": [
+   60,
+   56,
+   52
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.22,
+    0.4
+   ],
+   "max": [
+    0.4,
+    0.45,
+    1.55
+   ],
+   "chanfro": 0.035
+  },
+  {
+   "nome": "corpo_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.22,
+    0.05
+   ],
+   "max": [
+    0.4,
+    0.37,
+    0.4
+   ],
+   "chanfro": 0.02
+  },
+  {
+   "nome": "jamba_esq",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    0.37,
+    0.05
+   ],
+   "max": [
+    -0.46,
+    0.45,
+    0.4
+   ]
+  },
+  {
+   "nome": "jamba_dir",
+   "forma": "caixa",
+   "min": [
+    0.36,
+    0.37,
+    0.05
+   ],
+   "max": [
+    0.4,
+    0.45,
+    0.4
+   ]
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.47,
+    -0.19,
+    0.0
+   ],
+   "max": [
+    0.37,
+    0.42,
+    0.06
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_cima",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.25,
+    1.045
+   ],
+   "max": [
+    0.39,
+    -0.215,
+    1.535
+   ],
+   "chanfro": 0.022
+  },
+  {
+   "nome": "porta_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.25,
+    0.075
+   ],
+   "max": [
+    0.39,
+    -0.215,
+    1.03
+   ],
+   "chanfro": 0.022
+  },
+  {
+   "nome": "puxador_cima",
+   "forma": "caixa",
+   "min": [
+    -0.455,
+    -0.28,
+    1.12
+   ],
+   "max": [
+    -0.435,
+    -0.25,
+    1.37
+   ],
+   "material": "cobre",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "puxador_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.455,
+    -0.28,
+    0.4
+   ],
+   "max": [
+    -0.435,
+    -0.25,
+    0.98
+   ],
+   "material": "cobre",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "vao_compressor",
+   "forma": "caixa",
+   "min": [
+    -0.46,
+    0.37,
+    0.08
+   ],
+   "max": [
+    0.36,
+    0.375,
+    0.37
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "compressor",
+   "forma": "cilindro",
+   "centro": [
+    -0.08,
+    0.3,
+    0.09
+   ],
+   "raio": 0.125,
+   "altura": 0.25,
+   "material": "metal_escuro",
+   "segmentos": 20
+  },
+  {
+   "nome": "compressor_tubo",
+   "forma": "caixa",
+   "min": [
+    0.12,
+    0.33,
+    0.1
+   ],
+   "max": [
+    0.14,
+    0.36,
+    0.34
+   ],
+   "material": "cobre",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "compressor_tubo_azul",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.17,
+    0.34,
+    0.3
+   ],
+   "raio": 0.012,
+   "altura": 0.18,
+   "material": "azul",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_fundo",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    0.45,
+    0.42
+   ],
+   "max": [
+    0.3,
+    0.46,
+    1.38
+   ],
+   "material": "azul"
+  },
+  {
+   "nome": "serpentina_moldura_esq",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    0.45,
+    0.42
+   ],
+   "max": [
+    -0.385,
+    0.465,
+    1.38
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "serpentina_moldura_dir",
+   "forma": "caixa",
+   "min": [
+    0.285,
+    0.45,
+    0.42
+   ],
+   "max": [
+    0.3,
+    0.465,
+    1.38
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "serpentina_tubo0",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    0.47
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo1",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    0.595
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo2",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    0.72
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo3",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    0.845
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo4",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    0.97
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo5",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    1.095
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo6",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    1.22
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  },
+  {
+   "nome": "serpentina_tubo7",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.42,
+    0.47,
+    1.345
+   ],
+   "raio": 0.008,
+   "altura": 0.74,
+   "material": "metal_escuro",
+   "segmentos": 10
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "cobre": {
+    "tipo": "metal"
+   },
+   "azul": {
+    "tipo": "metal"
+   },
+   "escuro": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

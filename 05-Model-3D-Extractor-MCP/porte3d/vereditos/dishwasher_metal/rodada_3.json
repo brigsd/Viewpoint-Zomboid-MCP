@@ -1,0 +1,86 @@
+{
+ "versao": 1,
+ "objeto": "dishwasher_metal",
+ "rodada": 3,
+ "nota_arte": 9,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok",
+   "nota": "junta do rodapé nítida; a do meio quase imperceptível no realista"
+  },
+  {
+   "nome": "faixa_painel",
+   "situacao": "ok"
+  },
+  {
+   "nome": "frisa_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bloco_controle",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao_giratorio",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "furo_traseiro",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta",
+   "tipo": "emenda",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "porta, altura do meio",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 parte de baixo: só a junta do rodapé aparece, a do meio não",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "base recuada embaixo da porta",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: base clara; o jogo tem uma faixa escura sob a porta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "bloco_controle",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "módulo de controle, canto direito da faixa",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 parte de cima: pixels esticados e borrados no módulo; a borda do tampo e da frisa fica serrilhada",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo completo e fiel ao jogo em 0° e 180° nos dois níveis; só restam detalhes leves de textura (arte) e de junta e base (realista)."
+}

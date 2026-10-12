@@ -1,0 +1,99 @@
+{
+ "versao": 1,
+ "objeto": "fridge_white",
+ "rodada": 3,
+ "nota_arte": 9,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vao_compressor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "compressor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "serpentina",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "pontas das barras da serpentina",
+   "sentido": "",
+   "evidencia": "giro_realista 180: barras sem os ganchinhos redondos do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "compressor",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "corpo do cilindro do compressor",
+   "sentido": "",
+   "evidencia": "comparacao realista 180: azul-acinzentado; desenho cinza-escuro",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_baixo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face das portas, esmalte",
+   "sentido": "",
+   "evidencia": "zoom realista 0/45: veio vertical escovado lembra madeira clara",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "bloco de baixo, lado de trás junto ao vão",
+   "sentido": "maior",
+   "evidencia": "giro_realista 090: bloco inferior avança ~3 cm além do corpo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "vao_compressor",
+   "tipo": "chapado",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "interior do vão atrás do compressor",
+   "sentido": "",
+   "evidencia": "giro_arte 225: interior quase plano",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Porte quase pronto: frente e traseira batem com os desenhos, todas as peças existem; só detalhes leves."
+}

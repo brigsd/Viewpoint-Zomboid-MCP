@@ -1,0 +1,358 @@
+{
+ "versao": 1,
+ "id": "washing_machine_white",
+ "nota": "Maquina de lavar de carga superior: gabinete, rodape recuado, tampa com puxador, painel inclinado com botoes e teclas, mangueira em J na traseira.",
+ "sprites": {
+  "S": "appliances_laundry_01_4",
+  "E": "appliances_laundry_01_5",
+  "N": "appliances_laundry_01_6",
+  "W": "appliances_laundry_01_7"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   234,
+   232,
+   222
+  ],
+  "base": [
+   196,
+   192,
+   172
+  ],
+  "azul": [
+   28,
+   140,
+   220
+  ],
+  "vermelho": [
+   170,
+   36,
+   36
+  ],
+  "cinza": [
+   140,
+   140,
+   146
+  ],
+  "aro": [
+   190,
+   190,
+   194
+  ],
+  "amarelo": [
+   236,
+   196,
+   80
+  ],
+  "mangueira": [
+   48,
+   50,
+   62
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    -0.28,
+    0.05
+   ],
+   "max": [
+    0.37,
+    0.42,
+    0.9
+   ],
+   "chanfro": 0.02
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.33999999999999997,
+    -0.25,
+    0.0
+   ],
+   "max": [
+    0.33999999999999997,
+    0.39,
+    0.060000000000000005
+   ],
+   "material": "base",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "painel",
+   "forma": "prisma",
+   "perfil": [
+    [
+     0.27,
+     0.9
+    ],
+    [
+     0.42,
+     0.9
+    ],
+    [
+     0.42,
+     1.05
+    ],
+    [
+     0.37,
+     1.05
+    ]
+   ],
+   "eixo": "x",
+   "de": -0.37,
+   "ate": 0.37,
+   "material": "painel",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "tampa",
+   "forma": "caixa",
+   "min": [
+    -0.31,
+    -0.23,
+    0.9
+   ],
+   "max": [
+    0.31,
+    0.23,
+    0.915
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "puxador_tampa",
+   "forma": "caixa",
+   "min": [
+    -0.05,
+    -0.245,
+    0.905
+   ],
+   "max": [
+    0.05,
+    -0.225,
+    0.925
+   ],
+   "material": "cinza",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "aro_cinza",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    0.3175,
+    0.9737
+   ],
+   "raio": 0.026,
+   "altura": 0.006,
+   "eixo": "z",
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "aro"
+  },
+  {
+   "nome": "botao_cinza",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    0.3133,
+    0.9714
+   ],
+   "raio": 0.019,
+   "altura": 0.016,
+   "eixo": "z",
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "cinza"
+  },
+  {
+   "nome": "botao_vermelho",
+   "forma": "cilindro",
+   "centro": [
+    0.1,
+    0.3133,
+    0.9714
+   ],
+   "raio": 0.02,
+   "altura": 0.016,
+   "eixo": "z",
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "vermelho"
+  },
+  {
+   "nome": "botao_azul",
+   "forma": "cilindro",
+   "centro": [
+    -0.02,
+    0.3133,
+    0.9714
+   ],
+   "raio": 0.02,
+   "altura": 0.016,
+   "eixo": "z",
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "azul"
+  },
+  {
+   "nome": "tecla0",
+   "forma": "caixa",
+   "min": [
+    -0.3075,
+    0.2972,
+    0.9552
+   ],
+   "max": [
+    -0.2925,
+    0.3122,
+    0.9632
+   ],
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "amarelo"
+  },
+  {
+   "nome": "tecla1",
+   "forma": "caixa",
+   "min": [
+    -0.2725,
+    0.2972,
+    0.9552
+   ],
+   "max": [
+    -0.2575,
+    0.3122,
+    0.9632
+   ],
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "cinza"
+  },
+  {
+   "nome": "tecla2",
+   "forma": "caixa",
+   "min": [
+    -0.3075,
+    0.3212,
+    0.9912
+   ],
+   "max": [
+    -0.2925,
+    0.3362,
+    0.9992
+   ],
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "cinza"
+  },
+  {
+   "nome": "tecla3",
+   "forma": "caixa",
+   "min": [
+    -0.2725,
+    0.3212,
+    0.9912
+   ],
+   "max": [
+    -0.2575,
+    0.3362,
+    0.9992
+   ],
+   "rot": [
+    56.3099,
+    0,
+    0
+   ],
+   "material": "amarelo"
+  },
+  {
+   "nome": "mangueira",
+   "forma": "cilindro",
+   "centro": [
+    -0.285,
+    0.436,
+    0.15
+   ],
+   "raio": 0.015,
+   "altura": 0.62,
+   "eixo": "z",
+   "material": "mangueira"
+  },
+  {
+   "nome": "mangueira_curva",
+   "forma": "cilindro",
+   "centro": [
+    -0.285,
+    0.436,
+    0.15
+   ],
+   "raio": 0.015,
+   "altura": 0.13,
+   "eixo": "x",
+   "material": "mangueira"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "base": {
+    "tipo": "liso"
+   },
+   "painel": {
+    "tipo": "liso"
+   },
+   "azul": {
+    "tipo": "liso"
+   },
+   "vermelho": {
+    "tipo": "liso"
+   },
+   "cinza": {
+    "tipo": "liso"
+   },
+   "aro": {
+    "tipo": "liso"
+   },
+   "amarelo": {
+    "tipo": "liso"
+   },
+   "mangueira": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

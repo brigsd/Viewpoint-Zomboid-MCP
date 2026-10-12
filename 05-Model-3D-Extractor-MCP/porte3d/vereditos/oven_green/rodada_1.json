@@ -1,0 +1,116 @@
+{
+ "versao": 1,
+ "objeto": "oven_green",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "queimador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha_queimador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "visor_forno",
+   "situacao": "ok",
+   "nota": "no realista ocupa quase toda a porta"
+  },
+  {
+   "nome": "puxador_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "friso_cromado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha_ventilacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo e laterais do corpo, tinta verde",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: verde-oliva escuro e acinzentado, o desenho é verde-menta claro",
+   "gravidade": "media"
+  },
+  {
+   "parte": "visor_forno",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "visor e moldura da porta do forno, metade de baixo da frente",
+   "sentido": "maior",
+   "evidencia": "zoom.png realista 000 e 045 baixo: o vidro escuro quase enche a porta e a moldura clara do desenho não aparece",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "queimador",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "as 4 bocas no tampo, vistas de cima",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 135: as bocas viram losangos esticados, a textura do tampo está na projeção isométrica",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "borda esquerda da porta do forno, linha clara vertical",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 090: faixa vertical clara ao lado da moldura, fora da moldura da porta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "queimador",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "as 4 bocas, aro externo",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 cima: disco preto liso sem o anel claro que o desenho tem em volta das bocas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Porte completo e fiel ao desenho nos dois níveis; o que sobra é cor e acabamento do realista, nada estrutural."
+}

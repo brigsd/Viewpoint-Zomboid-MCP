@@ -23,6 +23,7 @@ Este arquivo fixa o que cada parte da biblioteca entrega para a outra. Quem mexe
   ```
 
   Um objeto girado `a` graus em torno de `z` é projetado com o ponto já girado.
+- **Desenho de trás:** o jogo posiciona o objeto virado para N por conta própria, a alguns centímetros do objeto S girado 180°. `preparar.py` mede esse deslocamento pela geometria do jogo (`acervo.deslocamento_tras`) e grava `deslocamento_tras` = [dx, dy] na receita expandida. A textura de trás, a prévia e a vista de 180° usam o mesmo deslocamento.
 
 ## Receita (`receitas/<id>.json`)
 
@@ -51,6 +52,7 @@ Campos comuns a todas as formas:
 - `chanfro`: raio do arredondamento das arestas, em metros, padrão 0.
 - `veio`: opcional, `"x" | "y" | "z"`, direção do comprimento da madeira. Se faltar, é o maior lado da peça.
 - `tabuas`: opcional, número de tábuas lado a lado na face maior.
+- `arte_cor`: opcional. Se `true`, no nível arte a peça fica com a cor lisa do seu material, tirada de `cores`, em vez de receber o desenho. Serve para vidro e partes transparentes, em que o desenho mostra o que está atrás.
 
 As formas:
 
@@ -71,7 +73,7 @@ As formas:
 | `entrada/frente.png`, `entrada/tras.png` | `preparar.py` | quadros 128×256 do jogo (frente S; trás N ou S), já com `bleed` |
 | `entrada/frente_original.png`, `entrada/tras_original.png` | `preparar.py` | quadros sem `bleed`, para comparação nas folhas; `tras_original` é sempre o desenho N do jogo quando ele existe, mesmo com `tras = simetrico` |
 | `entrada/receita.json` | `preparar.py` | receita expandida (espelhos já aplicados), com cores resolvidas |
-| `buffers/*.npy` | Blender, etapa 1 | por texel do atlas: `posicao` (H,W,3), `normal` (H,W,3), `peca` (H,W) com índice da peça ou −1, `vis_0` e `vis_180` (H,W) com visibilidade 0..1 da câmera do jogo em 0° e 180°, `ao` (H,W), `albedo` (H,W,3) linear do realista |
+| `buffers/*.npy` | Blender, etapa 1 | por texel do atlas: `posicao` (H,W,3), `normal` (H,W,3), `peca` (H,W) com índice da peça ou −1, `vis_0` e `vis_180` (H,W) com a luz direta crua de um sol na direção da câmera do jogo em 0° e 180° (0 = não vê; `texturas.py` normaliza as duas pela mesma escala), `ao` (H,W), `albedo` (H,W,3) linear do realista |
 | `malha.obj`, `cena.blend` | Blender, etapa 1 | malha juntada com UV (um `usemtl` por peça) e a cena para a etapa 2 |
 | `pecas.json` | Blender, etapa 1 | `[{"indice", "nome", "cor_fio": [r,g,b]}]` |
 | `arte.png`, `realista.png` | `texturas.py` | texturas finais do atlas, sRGB |

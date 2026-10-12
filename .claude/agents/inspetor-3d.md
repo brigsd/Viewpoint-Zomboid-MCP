@@ -36,6 +36,7 @@ Abra todas as imagens com `Read`.
 7. **Há partes finas, vazadas ou transparentes?** Grade, vidro, haste fina, tecido pendurado. Elas dão trabalho e precisam ir em `problemas_previstos`.
 8. **Qual o material de cada parte** no nível realista: `madeira`, `metal`, `tecido` ou `liso` (tinta ou plástico)?
 9. **Vale portar ou fica 2D?**
+10. **Arte:** use `adesivo`, que cola o desenho do jogo nas peças e serve para quase tudo. Use `kit` (recortes do desenho repetidos nas faces escondidas) só se o objeto tiver faces grandes que nenhum desenho mostra e que ficariam com uma cor lisa, por exemplo o tampo de uma mesa visto de baixo. Na dúvida, `adesivo`.
 
 ## Quando não portar
 

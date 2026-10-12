@@ -1,0 +1,189 @@
+{
+ "versao": 1,
+ "objeto": "freezer_chest",
+ "sprite": "appliances_refrigeration_01_48",
+ "decisao": "portar",
+ "motivo": "freezer horizontal de uma caixa so, com tampo, puxador e detalhes pequenos; facil de portar",
+ "o_que_e": "freezer de bau (horizontal) branco-creme: caixa baixa de ~96x74x82 cm com tampo arredondado que se destaca do corpo por uma junta escura, puxador de barra na frente, dobradicas atras e grade de ventilacao numa lateral de tras",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "caixa principal ~96x74 cm de base, indo do chao ate ~67 cm de altura (o resto e o tampo); paredes lisas pintadas de branco-creme com manchas leves"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampa grossa (~14 cm) que cobre todo o topo, um pouco maior que o corpo (~1-2 cm de beirada), quinas arredondadas, face de cima plana, de ~67 a 82 cm de altura; a regiao do jogo (82 cm) inclui o tampo, entao o bloco do jogo precisa ser encurtado"
+  },
+  {
+   "nome": "junta",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa escura fina (~2 cm) de borracha/vedacao, recuada, entre o corpo e o tampo, dando a linha escura que corre em volta nas faces visiveis"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "barra horizontal fina e clara (~20 cm x 2 cm x 2 cm) na face da frente, bem na borda de baixo do tampo, na lateral esquerda do desenho S; sobressai do tampo"
+  },
+  {
+   "nome": "dobradica",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "duas dobradicas/trincos pequenos (~5x3x8 cm) na face de tras, na altura da junta, uma perto de cada ponta lateral; aparecem no desenho N"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "liso",
+   "descricao": "4 frestas verticais escuras (~1 cm de largura, ~10 cm de altura) lado a lado perto do pe do canto de tras, numa face lateral/de tras (aparece no desenho N, canto inferior esquerdo; no W, canto direito); pode ser so textura/rebaixo raso"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o jogo tem um unico bloco de 82 cm de altura que inclui o tampo: separar corpo e tampo e preciso para a junta escura aparecer no 3D",
+  "o desenho de N e diferente de S (dobradicas e grade no lugar do puxador): a traseira tem de usar o desenho N, nao o espelho da frente",
+  "puxador, dobradicas e frestas da grade sao detalhes pequenos (poucos pixels); correm o risco de sumir ou ficar enormes no 3D",
+  "cobertura 1.00 mas contorno do bloco sobra um pouco (~6%) nas bordas: o bloco e levemente maior que o desenho",
+  "E/W sao apenas espelhos de S/N, entao bastam S e N"
+ ],
+ "medidas": {
+  "sprite": "appliances_refrigeration_01_48",
+  "sprites": {
+   "S": "appliances_refrigeration_01_48",
+   "E": "appliances_refrigeration_01_49",
+   "N": "appliances_refrigeration_01_50",
+   "W": "appliances_refrigeration_01_51"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4846,
+     -0.2369,
+     0.0
+    ],
+    "max": [
+     0.4802,
+     0.4999,
+     0.8159
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "Electric",
+   "Material3": "MetalScrap"
+  },
+  "props": {
+   "CustomName": "Freezer",
+   "GroupName": "Chest",
+   "Facing": "S",
+   "Surface": "34",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "30",
+   "Freezer": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "32",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4846,
+    -0.2369,
+    0.0
+   ],
+   "max": [
+    0.4802,
+    0.4999,
+    0.8159
+   ],
+   "largura": 0.9648,
+   "profundidade": 0.7368,
+   "altura": 0.8159
+  },
+  "menor_medida_peca": 0.7368,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.9362,
+  "cobertura": 1.0,
+  "sobra": 0.0638,
+  "pixels_desenho": 9384,
+  "pixels_geometria": 10024,
+  "espelhado_E_S": 0.9044,
+  "espelhado_W_N": 0.8925,
+  "N_igual_S": 0.6382,
+  "silhueta_espelho_E_S": 0.9546,
+  "silhueta_espelho_W_N": 0.9517,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0022,
+   0.1315
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9438,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0057
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\freezer_chest",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\freezer_chest\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\freezer_chest\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\freezer_chest\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\freezer_chest\\profundidade.png"
+  }
+ }
+}

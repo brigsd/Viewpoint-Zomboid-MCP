@@ -1,0 +1,529 @@
+{
+ "versao": 1,
+ "objeto": "television_antique",
+ "sprite": "appliances_television_01_9",
+ "decisao": "portar",
+ "motivo": "gabinete de madeira em caixa com 4 pezinhos e antenas finas; o corpo é simples, só as antenas são delicadas",
+ "o_que_e": "televisor antigo de tubo num gabinete de madeira, com tela de vidro verde-acinzentada e moldura cinza na face da frente, painel de botões ao lado, 4 pezinhos finos de madeira escura e duas antenas de coelho em cima",
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "corpo de madeira ~82x41x55 cm, de ~21 a ~76 cm do chão; tampo com veio de madeira, laterais lisas com manchas de desgaste"
+  },
+  {
+   "nome": "pe",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 3,
+   "material": "madeira",
+   "descricao": "pé quadrado de ~4x3 cm e ~21 cm de altura, madeira escura, recuado dos cantos de baixo do gabinete (3 dos 4 descritos pelo jogo)"
+  },
+  {
+   "nome": "pe_tras",
+   "forma": "caixa",
+   "origem": "simetria",
+   "material": "madeira",
+   "descricao": "quarto pé escondido no desenho, espelho dos outros três, mesmo tamanho (~4x3x21 cm)"
+  },
+  {
+   "nome": "moldura_tela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "moldura cinza clara, rasa (~1-2 cm), na face da frente, cobrindo a área da tela e do painel; borda interna escura"
+  },
+  {
+   "nome": "tela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "vidro do tubo, retângulo de cantos arredondados verde-acinzentado, ligeiramente abaulado, ocupando ~2/3 da face da frente (lado esquerdo no desenho S), afundado na moldura"
+  },
+  {
+   "nome": "painel_botoes",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa escura vertical à direita da tela na frente, ~12 cm de largura, com 2 botões redondos cinza (cilindros baixos) e um mostrador pequeno"
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "placa escura rasa na face de trás, perto da borda esquerda do desenho N, com botão redondo central, mostrador retangular e 2 botões pequenos"
+  },
+  {
+   "nome": "grade_som",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "grade horizontal de alto-falante na face de trás, à direita do painel traseiro, ~25x15 cm, rasa, ranhuras cinza claro"
+  },
+  {
+   "nome": "antena",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "haste fina escura (~1 cm), ~35-50 cm, saindo de uma base no tampo, abertas em V, uma inclinada mais para a frente e outra para o lado; no desenho aparece só como silhueta fina. Substitui o prisma plano do jogo (forma_0), que é só uma placa de contorno"
+  },
+  {
+   "nome": "base_antena",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "pequeno disco/pino de ~3 cm no tampo, perto do fundo, onde as duas hastes se encontram"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira",
+  "moldura": "liso",
+  "vidro": "liso",
+  "antena": "metal",
+  "grade": "metal"
+ },
+ "problemas_previstos": [
+  "o jogo só descreve 3 dos 4 pés: completar o quarto por simetria",
+  "forma_0 é um prisma plano de 1 cm que só contorna a antena; não usar como peça, substituir por 2 hastes cilíndricas finas (a medida marca 'fino' por causa dele)",
+  "antenas muito finas (~1 cm): risco de sumirem ou ficarem lisas; a direção N mostra as hastes em posição diferente de S, conferir a posição real",
+  "frente e traseira são desenhos diferentes (N igual a S só 0.42): tela e botões na frente, painel e grade atrás",
+  "E/W não são espelho de S/N (0.63 e 0.69): não espelhar; a tela também aparece na lateral E, conferir qual face leva a tela",
+  "detalhes rasos na superfície (botões, grade, moldura): melhor como relevo mínimo ou só adesivo",
+  "pezinhos finos (~4 cm) sob um gabinete grande: manter o recuo certo para o gabinete não parecer flutuando"
+ ],
+ "medidas": {
+  "sprite": "appliances_television_01_9",
+  "sprites": {
+   "S": "appliances_television_01_9",
+   "E": "appliances_television_01_8",
+   "N": "appliances_television_01_11",
+   "W": "appliances_television_01_10"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 1
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "prisma",
+    "perfil": [
+     [
+      -0.0067,
+      0.7281
+     ],
+     [
+      0.3526,
+      0.7217
+     ],
+     [
+      0.3526,
+      1.2575
+     ],
+     [
+      -0.0067,
+      1.251
+     ]
+    ],
+    "eixo": "y",
+    "de": 0.2673,
+    "ate": 0.2773
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4597,
+     -0.1619,
+     0.2136
+    ],
+    "max": [
+     0.3553,
+     0.2443,
+     0.7639
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.3865,
+     -0.1599,
+     0.0
+    ],
+    "max": [
+     -0.3511,
+     -0.1327,
+     0.2125
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.269,
+     -0.1599,
+     0.0
+    ],
+    "max": [
+     0.3044,
+     -0.1327,
+     0.2125
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     0.269,
+     0.2151,
+     0.0
+    ],
+    "max": [
+     0.3044,
+     0.2423,
+     0.2125
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric"
+  },
+  "props": {
+   "CustomName": "Television",
+   "GroupName": "Antique",
+   "Facing": "S",
+   "Surface": "30",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4597,
+    -0.1619,
+    0.0
+   ],
+   "max": [
+    0.3553,
+    0.2773,
+    1.2575
+   ],
+   "largura": 0.815,
+   "profundidade": 0.4392,
+   "altura": 1.2575
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_0"
+  ],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8,
+  "cobertura": 0.9959,
+  "sobra": 0.1974,
+  "pixels_desenho": 4884,
+  "pixels_geometria": 6060,
+  "espelhado_E_S": 0.6265,
+  "espelhado_W_N": 0.694,
+  "N_igual_S": 0.4247,
+  "silhueta_espelho_E_S": 0.6887,
+  "silhueta_espelho_W_N": 0.749,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0522,
+   0.0577
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.457,
+     0.2673,
+     0.7217
+    ],
+    "max": [
+     -0.0977,
+     0.2773,
+     1.2575
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0067,
+     -0.1619,
+     0.7217
+    ],
+    "max": [
+     0.3526,
+     -0.1519,
+     1.2575
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.457,
+     -0.1619,
+     0.7217
+    ],
+    "max": [
+     -0.0977,
+     -0.1519,
+     1.2575
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2467,
+     -0.1599,
+     0.0
+    ],
+    "max": [
+     0.2821,
+     -0.1327,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.3865,
+     0.2481,
+     0.0
+    ],
+    "max": [
+     -0.3511,
+     0.2753,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2467,
+     0.2481,
+     0.0
+    ],
+    "max": [
+     0.2821,
+     0.2753,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.4088,
+     -0.1599,
+     0.0
+    ],
+    "max": [
+     -0.3734,
+     -0.1327,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.269,
+     0.2481,
+     0.0
+    ],
+    "max": [
+     0.3044,
+     0.2753,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.4088,
+     0.2481,
+     0.0
+    ],
+    "max": [
+     -0.3734,
+     0.2753,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.4088,
+     0.2151,
+     0.0
+    ],
+    "max": [
+     -0.3734,
+     0.2423,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.269,
+     -0.1269,
+     0.0
+    ],
+    "max": [
+     0.3044,
+     -0.0997,
+     0.2125
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.4088,
+     -0.1269,
+     0.0
+    ],
+    "max": [
+     -0.3734,
+     -0.0997,
+     0.2125
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5886,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1702
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_0): candidato a não portar",
+   "3 pés descritos, provável pé escondido (faltam 9, espelho de forma_2): completar por simetria",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_antique",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_antique\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_antique\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_antique\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_antique\\profundidade.png"
+  }
+ }
+}

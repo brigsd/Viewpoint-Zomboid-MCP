@@ -59,13 +59,23 @@ def mapa_de_pecas(pecas: list[dict]) -> np.ndarray:
     return idx
 
 
+def _cor_iluminada(pix, fracao: float = 0.35) -> list[int]:
+    """Mediana dos `fracao` pixels mais claros (luminância), em sRGB 0..255."""
+    pix = np.asarray(pix, float)
+    lum = pix @ np.array([0.2126, 0.7152, 0.0722])
+    corte = np.quantile(lum, 1 - fracao)
+    return [int(round(v)) for v in np.median(pix[lum >= corte], axis=0)]
+
+
 def estimar_cores(pecas: list[dict], frente: np.ndarray, ja_tem: dict | None = None) -> dict:
-    """Cor sRGB (mediana dos pixels opacos) de cada material das peças que ainda não tem cor em `ja_tem`.
-    Cada pixel vale para a peça mais perto da câmera; sem pixels próprios, usa a mediana do desenho todo."""
+    """Cor sRGB de cada material das peças que ainda não tem cor em `ja_tem`: a mediana dos pixels MAIS
+    ILUMINADOS (os 35% mais claros) daquele material, porque a cor do material no nível realista é a da tinta,
+    e o desenho traz a sombra pintada (a mediana simples saía escura demais).
+    Cada pixel vale para a peça mais perto da câmera; sem pixels próprios, usa o desenho todo."""
     ja_tem = ja_tem or {}
     opaco = frente[..., 3] >= 200
     todos = frente[opaco][:, :3]
-    geral = [int(round(v)) for v in np.median(todos, axis=0)] if len(todos) else [128, 128, 128]
+    geral = _cor_iluminada(todos) if len(todos) else [128, 128, 128]
     idx = mapa_de_pecas(pecas)
     cores = {}
     for m in dict.fromkeys(p["material"] for p in pecas):
@@ -73,7 +83,7 @@ def estimar_cores(pecas: list[dict], frente: np.ndarray, ja_tem: dict | None = N
             continue
         donas = [k for k, p in enumerate(pecas) if p["material"] == m]
         pix = frente[opaco & np.isin(idx, donas)][:, :3]
-        cores[m] = [int(round(v)) for v in np.median(pix, axis=0)] if len(pix) else list(geral)
+        cores[m] = _cor_iluminada(pix) if len(pix) else list(geral)
     return cores
 
 
@@ -98,6 +108,9 @@ def preparar(receita_path: str | Path, saida_dir: str | Path, db: sqlite3.Connec
         tras = frente
     exp = receita.expandir(r)
     exp["cores"] = {**exp.get("cores", {}), **estimar_cores(exp["pecas"], frente, exp.get("cores"))}
+    # o objeto N fica noutra posição do tile: a textura e as folhas de trás precisam do mesmo deslocamento
+    exp["deslocamento_tras"] = (acervo.deslocamento_tras(db, s_nome, r["sprites"]["N"])
+                                if r.get("tras", "simetrico") == "N" else [0.0, 0.0])
 
     pasta = Path(saida_dir) / r["id"]
     entrada = pasta / "entrada"

@@ -1,0 +1,125 @@
+{
+ "versao": 1,
+ "objeto": "fridge_blue",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vao_motor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "compressor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "vao_motor",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "vão escuro embaixo da serpentina, nas costas",
+   "sentido": "",
+   "evidencia": "giro_realista 225/180: retângulo preto liso rente à parede, sem profundidade; fio 135/315 só um plano",
+   "gravidade": "media"
+  },
+  {
+   "parte": "compressor",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "tubo vermelho/cobre em volta do cilindro, dentro do vão do motor",
+   "sentido": "",
+   "evidencia": "giro_realista 180/225: só uma coluna escura fina; a arte mostra o tubo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "pintura da porta de cima e das laterais",
+   "sentido": "",
+   "evidencia": "comparacao 0°: verde-acinzentado escuro e fosco contra o azul-claro do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_cima",
+   "tipo": "emenda",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "quina vertical entre a porta de cima e a lateral",
+   "sentido": "",
+   "evidencia": "giro_realista 090: falta a fresta escura vertical da quina das portas",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "arestas verticais e topo do corpo",
+   "sentido": "",
+   "evidencia": "comparacao 0°: desenho com cantos bem arredondados; realista com quinas quase retas",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "serpentina",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "borda lateral da serpentina, do lado das costas",
+   "sentido": "",
+   "evidencia": "giro_arte 135/315: faixa cinza irregular na espessura da serpentina",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo direito da silhueta",
+   "sentido": "alto",
+   "evidencia": "sobreposicao 0°: faixa magenta fina no topo direito e verde fina embaixo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Arte fiel com traseira correta; no realista o vão do motor é plano, o tubo do compressor some e a cor é mais apagada."
+}

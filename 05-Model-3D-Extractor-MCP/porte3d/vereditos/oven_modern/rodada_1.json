@@ -1,0 +1,148 @@
+{
+ "versao": 1,
+ "objeto": "oven_modern",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "faixa_aba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "boca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_traseira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "aba_traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "topo da aba e faixa escura, lado esquerdo até o meio",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0: cunha diagonal branca/cinza corta a faixa escura e há pedaço de queimador na aba",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "faixa_aba",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "faixa escura da aba vista de trás, lado esquerdo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180/270/315: triângulo claro invade a faixa escura",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "boca",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "boca da frente-esquerda do tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0: dois queimadores sobrepostos onde o desenho tem um",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "botao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "queimadores e botões vistos de 45 a 135 graus",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045/090: textura da frente projetada no topo e nos cilindros, borrada",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "superfície do gabinete e da aba",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0: cinza médio escuro; o desenho é branco acinzentado claro",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grade_traseira",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "as duas grades de ventilação embaixo da traseira",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180/225: retângulos lisos sem ranhuras",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "grelha sobre cada boca",
+   "sentido": "deslocado_z",
+   "evidencia": "zoom.png realista 0: quadrado escuro girado sobre disco, sem desenho de anel e grade",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "aba_traseira",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "borda do topo da aba e lado direito do corpo",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png: faixa magenta fina no topo da aba e no lado direito",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Geometria completa; segura a nota a textura da aba no nível arte (cunha), cor escura e grades lisas no realista."
+}

@@ -1,0 +1,202 @@
+{
+ "versao": 1,
+ "objeto": "microwave_white",
+ "sprite": "appliances_cooking_01_25",
+ "decisao": "portar",
+ "motivo": "micro-ondas de bancada, um bloco só com porta, janela e painel pequenos por cima; fácil de portar",
+ "o_que_e": "micro-ondas branco de bancada: caixa branca com porta de janela escura à esquerda da frente, painel de botões à direita da frente e grade de ventilação na lateral",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "caixa branca ~64 x 44 cm de base e ~49 cm de altura, flutuando de ~81 a ~131 cm do chão (fica sobre bancada); frente no lado -y (a face grande que aparece à esquerda no desenho S)"
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "moldura bege-claro da porta na frente, ~42 cm de largura e ~32 cm de altura, saliente ~1 cm, na metade esquerda da frente e levemente abaixo do meio"
+  },
+  {
+   "nome": "janela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "vidro escuro azulado dentro da porta, ~32 x 22 cm, rebaixado ou colado ao rente da moldura (quase sem relevo)"
+  },
+  {
+   "nome": "painel",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa vertical de controle na direita da frente, ~14 cm de largura e quase toda a altura, saliente ~1 cm, branco-sujo com visor escuro no topo"
+  },
+  {
+   "nome": "visor",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "visor retangular escuro ~8 x 6 cm no alto do painel"
+  },
+  {
+   "nome": "botoes",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 6,
+   "material": "liso",
+   "descricao": "botões pequenos marrom-avermelhados (~2 cm) em coluna no painel, abaixo do visor; podem ser só textura"
+  },
+  {
+   "nome": "ventilacao",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "grade de ranhuras horizontais na lateral direita (E) e no mesmo lado perto do fundo, ~10 x 10 cm, quase rente; pode ser só textura"
+  },
+  {
+   "nome": "base_escura",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa escura/marrom fina (~2 cm) sob o corpo, levemente recuada, simulando pés/base"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "objeto suspenso: geometria começa a ~81 cm do chão (fica sobre bancada); o modelo deve manter essa altura, sem inventar pés até o chão",
+  "a frente (porta, janela, painel) é detalhe fino: decidir entre geometria rasa e textura adesivo, sem deixar a porta flutuar",
+  "a traseira é diferente da frente (N não é igual a S, tem um parafuso/tomada pequeno e grade de ventilação): usar o desenho N na traseira",
+  "E não é o espelho de S, só W é o espelho de N: não espelhar a frente para a lateral",
+  "vidro da janela escuro e brilhante: dá para usar material liso/escuro, sem transparência real",
+  "botões e ranhuras de ventilação minúsculos: podem ficar só na textura"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_25",
+  "sprites": {
+   "S": "appliances_cooking_01_25",
+   "E": "appliances_cooking_01_24",
+   "N": "appliances_cooking_01_27",
+   "W": "appliances_cooking_01_26"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3779,
+     -0.0816,
+     0.8143
+    ],
+    "max": [
+     0.2601,
+     0.3534,
+     1.3051
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "MetalScrap",
+   "Material2": "Electric",
+   "MaterialType": "Metal_Light"
+  },
+  "props": {
+   "CustomName": "Microwave",
+   "GroupName": "White",
+   "Facing": "S",
+   "container": "microwave",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "ContainerCapacity": "5",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "ItemHeight": "19",
+   "Surface": "32"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.3779,
+    -0.0816,
+    0.8143
+   ],
+   "max": [
+    0.2601,
+    0.3534,
+    1.3051
+   ],
+   "largura": 0.638,
+   "profundidade": 0.435,
+   "altura": 0.4908
+  },
+  "menor_medida_peca": 0.435,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.8143,
+  "montado_na_parede": false,
+  "contorno_0": 0.9217,
+  "cobertura": 1.0,
+  "sobra": 0.0783,
+  "pixels_desenho": 3579,
+  "pixels_geometria": 3883,
+  "espelhado_E_S": 0.6288,
+  "espelhado_W_N": 0.8124,
+  "N_igual_S": 0.3663,
+  "silhueta_espelho_E_S": 0.7312,
+  "silhueta_espelho_W_N": 0.9075,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0589,
+   0.1359
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 3708,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0348
+  },
+  "sugestao": [
+   "a geometria começa a 81 cm do chão: objeto suspenso ou sobre outro móvel",
+   "W é o espelho de N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_white",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_white\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_white\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_white\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_white\\profundidade.png"
+  }
+ }
+}

@@ -1,7 +1,7 @@
 ---
 name: critico-3d
 description: Crítico visual da esteira de porte 3D. Olha as folhas de um modelo (comparação com o jogo, giro, wireframe, sobreposição, zoom), confere peça por peça a lista prometida pelo inspetor e dá nota 0–10 para o nível arte e para o realista. Só olha; não lê receita, código nem justificativa do modelador.
-tools: Read
+tools: Read, Write
 model: sonnet
 ---
 
@@ -65,6 +65,8 @@ Curto, em pt-BR:
 2. **As 8 perguntas,** uma linha cada, citando a folha e o ângulo.
 3. **Peças:** uma linha por peça prometida.
 4. **As duas notas,** com uma frase dizendo o que mais pesou em cada uma.
+
+Se quem te chamou passou um caminho em `gravar resposta em`, grave nesse arquivo, com `Write`, a resposta inteira (texto + bloco JSON). É o único arquivo que você escreve.
 
 Feche **sempre** com um bloco ```json no formato abaixo. O validador lê só esse bloco: veredito fora do esquema é recusado e a crítica é refeita.
 

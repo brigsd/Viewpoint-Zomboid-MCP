@@ -1,0 +1,690 @@
+{
+ "versao": 1,
+ "id": "dishwasher_metal",
+ "nota": "Lava-louças compacta de bancada: corpo, porta com junta de rodapé, faixa de painel com display e botões, frisa do tampo, módulo de controle com botão e luzes laranja; traseira com placa-moldura, painel, grades com ripas e furo.",
+ "sprites": {
+  "S": "appliances_cooking_01_77",
+  "E": "appliances_cooking_01_76",
+  "N": "appliances_cooking_01_79",
+  "W": "appliances_cooking_01_78"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   199,
+   198,
+   195
+  ],
+  "metal_frisa": [
+   178,
+   172,
+   162
+  ],
+  "metal_painel": [
+   150,
+   150,
+   148
+  ],
+  "liso": [
+   45,
+   45,
+   48
+  ],
+  "liso_claro": [
+   200,
+   198,
+   190
+  ],
+  "liso_preto": [
+   14,
+   14,
+   16
+  ],
+  "liso_botao": [
+   92,
+   92,
+   96
+  ],
+  "laranja": [
+   235,
+   140,
+   40
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.0949,
+    0.0
+   ],
+   "max": [
+    0.4977,
+    0.4961,
+    0.7449
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.1099,
+    0.04
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.575
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "faixa_painel",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.1049,
+    0.585
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.725
+   ],
+   "material": "liso",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "frisa_tampo",
+   "forma": "caixa",
+   "min": [
+    -0.4813,
+    -0.1149,
+    0.725
+   ],
+   "max": [
+    0.4977,
+    -0.0949,
+    0.7449
+   ],
+   "material": "metal_frisa"
+  },
+  {
+   "nome": "bloco_controle",
+   "forma": "caixa",
+   "min": [
+    0.2,
+    -0.1099,
+    0.61
+   ],
+   "max": [
+    0.47,
+    -0.1049,
+    0.715
+   ],
+   "material": "liso_claro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "botao_giratorio",
+   "forma": "cilindro",
+   "centro": [
+    0.35,
+    -0.1199,
+    0.66
+   ],
+   "raio": 0.025,
+   "altura": 0.015,
+   "eixo": "y",
+   "material": "liso_claro",
+   "segmentos": 20
+  },
+  {
+   "nome": "moldura_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    0.4961,
+    0.0
+   ],
+   "max": [
+    0.4977,
+    0.4991,
+    0.7449
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.376,
+    0.4991,
+    0.04
+   ],
+   "max": [
+    0.428,
+    0.5011,
+    0.655
+   ],
+   "material": "metal_painel"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "forma": "caixa",
+   "min": [
+    0.1,
+    0.5011,
+    0.098
+   ],
+   "max": [
+    0.387,
+    0.5041,
+    0.218
+   ],
+   "material": "metal_painel"
+  },
+  {
+   "nome": "grade_ventilacao_2",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.5011,
+    0.105
+   ],
+   "max": [
+    -0.045,
+    0.5041,
+    0.225
+   ],
+   "material": "metal_painel"
+  },
+  {
+   "nome": "furo_traseiro",
+   "forma": "cilindro",
+   "centro": [
+    0.29,
+    0.5011,
+    0.345
+   ],
+   "raio": 0.04,
+   "altura": 0.006,
+   "eixo": "y",
+   "material": "liso",
+   "segmentos": 20
+  },
+  {
+   "nome": "junta_porta_rodape",
+   "forma": "caixa",
+   "min": [
+    -0.4763,
+    -0.1109,
+    0.172
+   ],
+   "max": [
+    0.4977,
+    -0.1099,
+    0.18
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "display",
+   "forma": "caixa",
+   "min": [
+    -0.215,
+    -0.1069,
+    0.625
+   ],
+   "max": [
+    -0.04,
+    -0.1049,
+    0.7
+   ],
+   "material": "liso_preto"
+  },
+  {
+   "nome": "botao_painel_e11",
+   "forma": "caixa",
+   "min": [
+    -0.427,
+    -0.1089,
+    0.613
+   ],
+   "max": [
+    -0.39899999999999997,
+    -0.1049,
+    0.637
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_e12",
+   "forma": "caixa",
+   "min": [
+    -0.427,
+    -0.1089,
+    0.673
+   ],
+   "max": [
+    -0.39899999999999997,
+    -0.1049,
+    0.6970000000000001
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_e21",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    -0.1089,
+    0.613
+   ],
+   "max": [
+    -0.33199999999999996,
+    -0.1049,
+    0.637
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_e22",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    -0.1089,
+    0.673
+   ],
+   "max": [
+    -0.33199999999999996,
+    -0.1049,
+    0.6970000000000001
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_e31",
+   "forma": "caixa",
+   "min": [
+    -0.297,
+    -0.1089,
+    0.613
+   ],
+   "max": [
+    -0.26899999999999996,
+    -0.1049,
+    0.637
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_e32",
+   "forma": "caixa",
+   "min": [
+    -0.297,
+    -0.1089,
+    0.673
+   ],
+   "max": [
+    -0.26899999999999996,
+    -0.1049,
+    0.6970000000000001
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_d1",
+   "forma": "caixa",
+   "min": [
+    -0.0002999999999999999,
+    -0.1089,
+    0.64
+   ],
+   "max": [
+    0.027700000000000002,
+    -0.1049,
+    0.665
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_d2",
+   "forma": "caixa",
+   "min": [
+    0.0697,
+    -0.1089,
+    0.64
+   ],
+   "max": [
+    0.0977,
+    -0.1049,
+    0.665
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "botao_painel_d3",
+   "forma": "caixa",
+   "min": [
+    0.13599999999999998,
+    -0.1089,
+    0.64
+   ],
+   "max": [
+    0.164,
+    -0.1049,
+    0.665
+   ],
+   "material": "liso_botao"
+  },
+  {
+   "nome": "luz_laranja_1",
+   "forma": "caixa",
+   "min": [
+    0.24,
+    -0.1119,
+    0.645
+   ],
+   "max": [
+    0.262,
+    -0.1099,
+    0.685
+   ],
+   "material": "laranja"
+  },
+  {
+   "nome": "luz_laranja_2",
+   "forma": "caixa",
+   "min": [
+    0.344,
+    -0.1214,
+    0.668
+   ],
+   "max": [
+    0.356,
+    -0.1189,
+    0.688
+   ],
+   "material": "laranja"
+  },
+  {
+   "nome": "ripa_g1_c1_r1",
+   "forma": "caixa",
+   "min": [
+    0.108,
+    0.5041,
+    0.108
+   ],
+   "max": [
+    0.235,
+    0.5056,
+    0.118
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c1_r2",
+   "forma": "caixa",
+   "min": [
+    0.108,
+    0.5041,
+    0.136
+   ],
+   "max": [
+    0.235,
+    0.5056,
+    0.14600000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c1_r3",
+   "forma": "caixa",
+   "min": [
+    0.108,
+    0.5041,
+    0.164
+   ],
+   "max": [
+    0.235,
+    0.5056,
+    0.17400000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c1_r4",
+   "forma": "caixa",
+   "min": [
+    0.108,
+    0.5041,
+    0.192
+   ],
+   "max": [
+    0.235,
+    0.5056,
+    0.202
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c2_r1",
+   "forma": "caixa",
+   "min": [
+    0.252,
+    0.5041,
+    0.108
+   ],
+   "max": [
+    0.379,
+    0.5056,
+    0.118
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c2_r2",
+   "forma": "caixa",
+   "min": [
+    0.252,
+    0.5041,
+    0.136
+   ],
+   "max": [
+    0.379,
+    0.5056,
+    0.14600000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c2_r3",
+   "forma": "caixa",
+   "min": [
+    0.252,
+    0.5041,
+    0.164
+   ],
+   "max": [
+    0.379,
+    0.5056,
+    0.17400000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g1_c2_r4",
+   "forma": "caixa",
+   "min": [
+    0.252,
+    0.5041,
+    0.192
+   ],
+   "max": [
+    0.379,
+    0.5056,
+    0.202
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c1_r1",
+   "forma": "caixa",
+   "min": [
+    -0.312,
+    0.5041,
+    0.115
+   ],
+   "max": [
+    -0.19,
+    0.5056,
+    0.125
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c1_r2",
+   "forma": "caixa",
+   "min": [
+    -0.312,
+    0.5041,
+    0.14300000000000002
+   ],
+   "max": [
+    -0.19,
+    0.5056,
+    0.15300000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c1_r3",
+   "forma": "caixa",
+   "min": [
+    -0.312,
+    0.5041,
+    0.171
+   ],
+   "max": [
+    -0.19,
+    0.5056,
+    0.18100000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c1_r4",
+   "forma": "caixa",
+   "min": [
+    -0.312,
+    0.5041,
+    0.199
+   ],
+   "max": [
+    -0.19,
+    0.5056,
+    0.20900000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c2_r1",
+   "forma": "caixa",
+   "min": [
+    -0.175,
+    0.5041,
+    0.115
+   ],
+   "max": [
+    -0.053,
+    0.5056,
+    0.125
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c2_r2",
+   "forma": "caixa",
+   "min": [
+    -0.175,
+    0.5041,
+    0.14300000000000002
+   ],
+   "max": [
+    -0.053,
+    0.5056,
+    0.15300000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c2_r3",
+   "forma": "caixa",
+   "min": [
+    -0.175,
+    0.5041,
+    0.171
+   ],
+   "max": [
+    -0.053,
+    0.5056,
+    0.18100000000000002
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "ripa_g2_c2_r4",
+   "forma": "caixa",
+   "min": [
+    -0.175,
+    0.5041,
+    0.199
+   ],
+   "max": [
+    -0.053,
+    0.5056,
+    0.20900000000000002
+   ],
+   "material": "liso"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "metal_frisa": {
+    "tipo": "metal"
+   },
+   "metal_painel": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "liso": {
+    "tipo": "liso"
+   },
+   "liso_claro": {
+    "tipo": "liso"
+   },
+   "liso_preto": {
+    "tipo": "liso"
+   },
+   "liso_botao": {
+    "tipo": "liso"
+   },
+   "laranja": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

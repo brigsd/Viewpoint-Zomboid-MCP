@@ -1,0 +1,114 @@
+{
+ "versao": 1,
+ "objeto": "fridge_blue",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_cima",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vao_motor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "compressor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "jamba direita / lado inferior",
+   "tipo": "buraco",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "bloco do canto inferior direito, junto à jamba, faixa vertical preta",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000, 090 e 135 e zoom.png 0° parte de baixo: faixa preta vertical entre o bloco inferior e o corpo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "jamba direita / rodape",
+   "tipo": "sobra",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "canto inferior direito, bloco abaixo do corpo que sai do contorno",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 0°: magenta na borda direita inferior; comparacao.png 0° e 180°: degrau que se projeta além do corpo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "fresta entre as portas",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "linha escura entre porta de cima e topo, serrilhada",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 090: linha da fresta em dente de serra",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo_alto / topo",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "topo e cantos de cima, chanfro reto no lugar do arredondado do desenho",
+   "sentido": "menor",
+   "evidencia": "comparacao.png realista 0° e zoom.png parte de cima: topo anguloso, o jogo é arredondado",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "fresta entre portas",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "fresta horizontal entre porta de cima e de baixo, mais fina que a do jogo",
+   "sentido": "menor",
+   "evidencia": "zoom.png realista 0° parte de baixo: fresta fina, sem a linha escura do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "vao_motor",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "interior do vão do motor visto de lado, caixas cinza com textura esticada",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: interior do vão com blocos cinza lisos e desenho esticado",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo fiel ao desenho nos dois níveis, com todas as peças prometidas presentes; restam o bloco lateral inferior com faixa preta e saliente, e detalhes leves de acabamento."
+}

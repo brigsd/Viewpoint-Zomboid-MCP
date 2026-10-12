@@ -1,0 +1,133 @@
+{
+ "versao": 1,
+ "objeto": "dishwasher_metal",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok",
+   "nota": "faltam as linhas de junta no meio e no rodapé no realista"
+  },
+  {
+   "nome": "faixa_painel",
+   "situacao": "ok",
+   "nota": "no realista é barra preta lisa, sem display e botões"
+  },
+  {
+   "nome": "frisa_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bloco_controle",
+   "situacao": "ok",
+   "nota": "sem luzes laranja no realista"
+  },
+  {
+   "nome": "botao_giratorio",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok",
+   "nota": "no realista, retângulos escuros lisos sem frestas"
+  },
+  {
+   "nome": "furo_traseiro",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face de cima do tampo, perto do canto de trás e da borda direita",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0° e sobreposicao.png: cunha escura rasgada e borda serrilhada no tampo; mancha vermelha de diferença de cor no topo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "faixa_painel",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "faixa escura da frente, lado esquerdo e centro",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0° e 45°: a faixa é uma barra preta lisa, sem display nem botões como no desenho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grade_ventilacao",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "os dois blocos no canto inferior do painel traseiro",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 180°: retângulos escuros lisos, sem frestas horizontais como no desenho de trás",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "borda do tampo e frisa vistas de lado, textura esticada em dente de serra",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045, 135, 315: borda em zigue-zague e tampo com textura esticada",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face da porta, meio e rodapé",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0° parte de baixo: porta lisa, sem as linhas de junta do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "bloco_controle",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "módulo claro, canto direito da faixa",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0°: sem as duas luzes laranja do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "frisa_tampo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "borda superior direita do tampo (0°) e borda esquerda (180°)",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0° e 180°: linha fina clara/escura solta ao longo da borda do tampo, que não existe no desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Todas as peças existem e a frente e a traseira da arte batem com o jogo, mas o tampo da arte tem textura errada e o realista perdeu os detalhes finos (display, juntas, frestas, luzes)."
+}

@@ -1,0 +1,111 @@
+{
+ "versao": 1,
+ "objeto": "television_antique",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "situacao": "ok",
+   "nota": "realista sem manchas de desgaste nas laterais (leve)"
+  },
+  {
+   "nome": "pe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_tras",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_tela",
+   "situacao": "ok",
+   "nota": "no realista está larga e sem borda interna escura"
+  },
+  {
+   "nome": "tela",
+   "situacao": "forma_errada",
+   "nota": "só no realista: retângulo reto, sem cantos arredondados nem abaulado"
+  },
+  {
+   "nome": "painel_botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_som",
+   "situacao": "ok"
+  },
+  {
+   "nome": "antena",
+   "situacao": "ok",
+   "nota": "no arte, um pouco mais abertas que o desenho"
+  },
+  {
+   "nome": "base_antena",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "tela",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "frente, retângulo da tela e borda interna da moldura",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 e 045: tela reta e plana, sem cantos arredondados, sem abaulado e sem borda interna escura",
+   "gravidade": "media"
+  },
+  {
+   "parte": "moldura_tela",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "moldura cinza, quina esquerda e base da frente",
+   "sentido": "maior",
+   "evidencia": "comparacao.png realista 0°: a moldura vai até a quina esquerda e apaga a moldura de madeira que o desenho mostra em volta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "antena",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "pontas das duas hastes",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png 0°: verde e magenta nas duas antenas, hastes abertas alguns pixels a mais que o desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "gabinete",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "laterais do gabinete",
+   "sentido": "",
+   "evidencia": "giro_realista.png 090 e 270: laterais lisas, sem as manchas de desgaste do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "antena",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "pontas das hastes da antena, perto do tampo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180 e 225: pontas das hastes esmaecidas, quase translúcidas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Arte fiel ao desenho nas duas faces e com todas as peças no lugar; o realista só perde pela frente, com tela reta e sem borda escura, que parece eletrodoméstico moderno."
+}

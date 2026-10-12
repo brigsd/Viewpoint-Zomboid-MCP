@@ -1,0 +1,208 @@
+{
+ "versao": 1,
+ "objeto": "fridge_white",
+ "sprite": "appliances_refrigeration_01_0",
+ "decisao": "portar",
+ "motivo": "geladeira de duas portas, corpo de uma caixa com portas e puxadores em relevo e traseira com serpentina; já há receita parecida de geladeira",
+ "o_que_e": "geladeira branca antiga, de duas portas (congelador pequeno em cima, compartimento grande embaixo), cantos bem arredondados, puxadores finos verticais na borda esquerda das portas; na traseira tem uma grade de serpentina e, embaixo, um vão aberto com o compressor",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "caixa única ~90 x 70 cm de base e ~1,55 m de altura (de z ~0 a ~1,55), cor branca suja, cantos e topo arredondados no desenho; é o gabinete inteiro"
+  },
+  {
+   "nome": "porta_cima",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "porta do congelador, ~20 cm abaixo do topo até ~45 cm de altura da porta, saliente ~2 cm na face da frente (a face grande da esquerda no desenho S), bordas arredondadas"
+  },
+  {
+   "nome": "porta_baixo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "porta grande do compartimento de baixo, da altura de ~10 cm do chão até a fresta do congelador (~1,0 m), saliente ~2 cm na face da frente, bordas arredondadas"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "barra vertical fina (~2 x 3 cm de seção) colada na borda esquerda da face da frente, um em cada porta; o de cima curto (~25 cm), o de baixo longo (~60 cm); detalhe alaranjado/cobre no desenho"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base escura recuada de ~6 cm de altura sob o gabinete, ~3 cm mais estreita que o corpo, que dá a sombra do chão"
+  },
+  {
+   "nome": "serpentina",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "grade de serpentina na traseira (face N): painel de ~65 x 75 cm, bem fino (~2 cm), com ~8 barras horizontais cinza-escuras e fundo azul acinzentado, da altura de ~45 cm até ~1,4 m, com ganchinhos redondos nas pontas"
+  },
+  {
+   "nome": "vao_compressor",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "recorte aberto na traseira, embaixo da serpentina (~40 cm de altura, quase a largura toda), escuro por dentro"
+  },
+  {
+   "nome": "compressor",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "cilindro cinza-escuro (~25 cm de diâmetro, ~25 cm de altura) dentro do vão traseiro, ligeiramente à direita, com tubos de cobre/azuis ao lado"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso",
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "o jogo só dá um bloco (o gabinete): portas, puxadores, rodapé, serpentina e compressor têm de ser criados do zero",
+  "a traseira é um desenho diferente da frente (N igual a S só 0,68); a serpentina é uma grade vazada fina com barras, difícil de fazer sem parecer um bloco chapado",
+  "o vão do compressor na traseira é um recorte com tubos finos e peça pequena dentro; vai precisar escavar o gabinete ou colar um painel escuro",
+  "os puxadores são muito finos (~2 cm) e podem sumir na escala do jogo",
+  "cantos e topo arredondados no desenho, mas a peça do jogo é uma caixa reta; chanfro pode ser necessário",
+  "o desenho tem sujeira e escorrido desenhados na parte de baixo; não repetir na textura sem querer, ou deixar para a camada de desgaste",
+  "o bloco do jogo é Translucent; confira se o corpo precisa de alguma marcação especial",
+  "E/W são espelhos de S/N, então a porta só aparece corretamente nas duas direções se a frente for modelada de verdade (não só a pintura)",
+  "arte trocada de kit para adesivo pelo orquestrador: o kit só serve para faces grandes sem desenho"
+ ],
+ "medidas": {
+  "sprite": "appliances_refrigeration_01_0",
+  "sprites": {
+   "S": "appliances_refrigeration_01_0",
+   "E": "appliances_refrigeration_01_1",
+   "N": "appliances_refrigeration_01_2",
+   "W": "appliances_refrigeration_01_3"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.25,
+     -0.06
+    ],
+    "max": [
+     0.4,
+     0.45,
+     1.55
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "MetalScrap",
+   "Material3": "Electric",
+   "MaterialType": "Metal_Large"
+  },
+  "props": {
+   "CustomName": "Fridge",
+   "GroupName": "White",
+   "Facing": "S",
+   "container": "fridge",
+   "Surface": "60",
+   "IsMoveAble": "",
+   "ContainerCapacity": "40",
+   "IsFridge": "",
+   "Freezer": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Large",
+   "PickUpWeight": "400"
+  },
+  "props_geometria": {
+   "Surface": "62",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5,
+    -0.25,
+    -0.06
+   ],
+   "max": [
+    0.4,
+    0.45,
+    1.55
+   ],
+   "largura": 0.9,
+   "profundidade": 0.7,
+   "altura": 1.61
+  },
+  "menor_medida_peca": 0.7,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": -0.06,
+  "montado_na_parede": false,
+  "contorno_0": 0.9313,
+  "cobertura": 1.0,
+  "sobra": 0.0687,
+  "pixels_desenho": 14565,
+  "pixels_geometria": 15639,
+  "espelhado_E_S": 0.8731,
+  "espelhado_W_N": 0.8414,
+  "N_igual_S": 0.6769,
+  "silhueta_espelho_E_S": 0.9588,
+  "silhueta_espelho_W_N": 0.9472,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.05,
+   0.1
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 15462,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.058
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white\\profundidade.png"
+  }
+ }
+}

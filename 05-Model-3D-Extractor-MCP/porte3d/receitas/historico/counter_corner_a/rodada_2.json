@@ -1,0 +1,231 @@
+{
+ "versao": 1,
+ "id": "counter_corner_a",
+ "nota": "Balcao-vitrine inox: base, tampo com cuba, poste, trilho e vidros finos.",
+ "sprites": {
+  "S": "location_restaurant_generic_01_24",
+  "E": "location_restaurant_generic_01_27",
+  "N": "location_restaurant_generic_01_34",
+  "W": "location_restaurant_generic_01_37"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "vidro": [
+   165,
+   190,
+   205
+  ],
+  "metal_escuro": [
+   88,
+   92,
+   98
+  ],
+  "interior": [
+   140,
+   146,
+   152
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "min": [
+    -0.495,
+    -0.495,
+    0.1
+   ],
+   "max": [
+    0.495,
+    0.105,
+    0.78
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.485,
+    -0.485,
+    0.0
+   ],
+   "max": [
+    0.485,
+    0.095,
+    0.105
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "borda_tampo",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.5,
+    0.78
+   ],
+   "max": [
+    0.5,
+    -0.4,
+    0.9
+   ]
+  },
+  {
+   "nome": "borda_tampo_t",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    0.04,
+    0.78
+   ],
+   "max": [
+    0.5,
+    0.11,
+    0.9
+   ]
+  },
+  {
+   "nome": "borda_tampo_e",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.4,
+    0.78
+   ],
+   "max": [
+    -0.38,
+    0.04,
+    0.9
+   ]
+  },
+  {
+   "nome": "borda_tampo_d",
+   "forma": "caixa",
+   "min": [
+    0.38,
+    -0.4,
+    0.78
+   ],
+   "max": [
+    0.5,
+    0.04,
+    0.9
+   ]
+  },
+  {
+   "nome": "cuba",
+   "forma": "caixa",
+   "min": [
+    -0.38,
+    -0.4,
+    0.78
+   ],
+   "max": [
+    0.38,
+    0.04,
+    0.792
+   ],
+   "material": "interior"
+  },
+  {
+   "nome": "poste",
+   "forma": "caixa",
+   "min": [
+    -0.498,
+    -0.118,
+    0.9
+   ],
+   "max": [
+    -0.422,
+    -0.042,
+    1.6
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "trilho_superior",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    -0.12,
+    1.58
+   ],
+   "max": [
+    0.5,
+    0.03,
+    1.62
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "vidro_traseiro",
+   "forma": "prisma",
+   "eixo": "y",
+   "material": "vidro",
+   "perfil": [
+    [
+     -0.42,
+     0.9
+    ],
+    [
+     0.25,
+     0.9
+    ],
+    [
+     0.5,
+     1.585
+    ],
+    [
+     -0.42,
+     1.585
+    ]
+   ],
+   "de": -0.0475,
+   "ate": -0.0395
+  },
+  {
+   "nome": "vidro_lateral",
+   "forma": "prisma",
+   "eixo": "x",
+   "material": "vidro",
+   "perfil": [
+    [
+     -0.04,
+     0.9
+    ],
+    [
+     -0.04,
+     1.62
+    ],
+    [
+     -0.5,
+     0.9
+    ]
+   ],
+   "de": -0.495,
+   "ate": -0.485
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "interior": {
+    "tipo": "metal"
+   },
+   "vidro": {
+    "tipo": "liso"
+   },
+   "metal_escuro": {
+    "tipo": "metal"
+   }
+  }
+ }
+}

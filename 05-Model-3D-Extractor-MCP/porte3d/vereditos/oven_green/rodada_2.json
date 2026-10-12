@@ -1,0 +1,105 @@
+{
+ "versao": 1,
+ "objeto": "oven_green",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "queimador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha_queimador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "visor_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "friso_cromado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha_ventilacao",
+   "situacao": "ok",
+   "nota": "no realista são só 2 retângulos rasos, sem frestas finas"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta_forno",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "moldura da porta do forno, em volta do visor",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: moldura larga cinza-esbranquiçada; no desenho é uma moldura cromada fina sobre o verde",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampa_traseira",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "tampa traseira, borda esquerda",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: linha vertical fina na borda esquerda da tampa cinza",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "arco do topo do painel traseiro, lado direito",
+   "sentido": "baixo",
+   "evidencia": "sobreposicao.png: amarelo/laranja na diferença de cor no arco do topo e sobra magenta fina na borda direita",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grelha_ventilacao",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "parte baixa da tampa traseira",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180: 2 retângulos rasos em vez de fileiras de frestas finas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Conjunto completo e fiel ao desenho nos dois níveis; só restam detalhes leves de cor da moldura da porta e acabamento."
+}

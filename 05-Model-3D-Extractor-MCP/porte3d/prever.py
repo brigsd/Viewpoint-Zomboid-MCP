@@ -68,15 +68,34 @@ def malha(p: dict) -> tuple[np.ndarray, list[tuple[int, ...]]]:
     return v, f
 
 
-def silhueta(pecas: list[dict], ang: float) -> np.ndarray:
+def silhueta(pecas: list[dict], ang: float, desloc=(0.0, 0.0)) -> np.ndarray:
     img = Image.new("L", (128, 256), 0)
     dr = ImageDraw.Draw(img)
     for p in pecas:
         v, faces = malha(p)
-        sx, sy = projetar(v, ang)
+        sx, sy = projetar(v, ang, desloc)
         for f in faces:
             dr.polygon([(sx[i], sy[i]) for i in f], fill=255)
     return np.asarray(img) >= 128
+
+
+def faces_coincidentes(pecas: list[dict], tol: float = 0.0015) -> list[str]:
+    """Pares de caixas com uma face no MESMO plano, virada para o MESMO lado e sobrepostas: o renderizador não
+    sabe qual mostrar e alterna entre as duas (z-fighting), o que aparece como cunhas e manchas na textura.
+    Uma das duas tem que recuar 1–2 mm."""
+    caixas = [p for p in pecas if p["forma"] == "caixa" and not p.get("rot")]
+    avisos = []
+    for i, a in enumerate(caixas):
+        for b in caixas[i + 1:]:
+            for k, eixo in enumerate("xyz"):
+                outros = [j for j in range(3) if j != k]
+                sobrepoe = all(min(a["max"][j], b["max"][j]) - max(a["min"][j], b["min"][j]) > tol for j in outros)
+                if not sobrepoe:
+                    continue
+                for lado, campo in (("+", "max"), ("-", "min")):
+                    if abs(a[campo][k] - b[campo][k]) <= tol:
+                        avisos.append(f"{a['nome']} e {b['nome']}: face {lado}{eixo} no mesmo plano ({eixo}={a[campo][k]:.4f})")
+    return avisos
 
 
 def prever(caminho: str | Path, saida: Path = SAIDA, db=None) -> dict:
@@ -85,14 +104,16 @@ def prever(caminho: str | Path, saida: Path = SAIDA, db=None) -> dict:
     frente = acervo.quadro(db, r["sprites"]["S"])
     tras_nome = r["sprites"].get("N") if r.get("tras") == "N" else None
     tras = acervo.quadro(db, tras_nome) if tras_nome else frente
+    desloc_tras = acervo.deslocamento_tras(db, r["sprites"]["S"], tras_nome) if tras_nome else [0.0, 0.0]
     if frente is None:
         raise SystemExit(f"sprite {r['sprites']['S']} não encontrado no acervo")
     medidas = {}
     folha = Image.new("RGBA", (2 * 128 * Z + 30, 256 * Z + 40 + 16 * (len(r["pecas"]) // 3 + 1)), (40, 42, 48, 255))
     dr = ImageDraw.Draw(folha)
-    for k, (rot, quadro, ang) in enumerate((("frente (0 graus)", frente, 0.0), ("tras (180 graus)", tras, 180.0))):
+    for k, (rot, quadro, ang, desl) in enumerate((("frente (0 graus)", frente, 0.0, (0.0, 0.0)),
+                                                  ("tras (180 graus)", tras, 180.0, desloc_tras))):
         des = quadro[..., 3] >= 128
-        sil = silhueta(r["pecas"], ang)
+        sil = silhueta(r["pecas"], ang, desl)
         iou = float((des & sil).sum() / max((des | sil).sum(), 1))
         medidas["contorno_" + ("frente" if k == 0 else "tras")] = round(iou, 3)
         if k == 0:
@@ -107,7 +128,7 @@ def prever(caminho: str | Path, saida: Path = SAIDA, db=None) -> dict:
         for i, p in enumerate(r["pecas"]):
             cor = tuple(int(c * 255) for c in colorsys.hsv_to_rgb((i * 0.618034) % 1.0, 0.8, 1.0))
             v, faces = malha(p)
-            sx, sy = projetar(v, ang)
+            sx, sy = projetar(v, ang, desl)
             for f in faces:
                 pts = [(x0 + sx[j] * Z, 30 + sy[j] * Z) for j in f]
                 d2.line(pts + [pts[0]], fill=cor, width=1)
@@ -123,7 +144,8 @@ def prever(caminho: str | Path, saida: Path = SAIDA, db=None) -> dict:
     saida.mkdir(parents=True, exist_ok=True)
     arq = saida / f"{r['id']}_previa.png"
     folha.save(arq)
-    return {"previa": str(arq), **medidas}
+    avisos = faces_coincidentes(r["pecas"])
+    return {"previa": str(arq), **medidas, "faces_coincidentes": avisos}
 
 
 def main(argv=None) -> int:

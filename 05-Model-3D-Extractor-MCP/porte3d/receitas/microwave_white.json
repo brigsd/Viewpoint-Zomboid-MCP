@@ -1,0 +1,399 @@
+{
+ "versao": 1,
+ "id": "microwave_white",
+ "nota": "Micro-ondas de bancada suspenso (z 81-131 cm): corpo, base, porta com janela, painel com visor e botoes, grades laterais.",
+ "sprites": {
+  "S": "appliances_cooking_01_25",
+  "E": "appliances_cooking_01_24",
+  "N": "appliances_cooking_01_27",
+  "W": "appliances_cooking_01_26"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   238,
+   238,
+   232
+  ],
+  "moldura": [
+   224,
+   222,
+   198
+  ],
+  "vidro": [
+   58,
+   62,
+   82
+  ],
+  "painel_mat": [
+   226,
+   224,
+   214
+  ],
+  "botao": [
+   140,
+   78,
+   68
+  ],
+  "base": [
+   121,
+   102,
+   93
+  ],
+  "ventil": [
+   190,
+   189,
+   182
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.3779,
+    -0.0816,
+    0.8353
+   ],
+   "max": [
+    0.2601,
+    0.3534,
+    1.3051
+   ],
+   "chanfro": 0.025
+  },
+  {
+   "nome": "base_escura",
+   "forma": "caixa",
+   "min": [
+    -0.3579,
+    -0.0616,
+    0.8143
+   ],
+   "max": [
+    0.2401,
+    0.3334,
+    0.8363
+   ],
+   "material": "base",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "min": [
+    -0.325,
+    -0.0936,
+    0.9
+   ],
+   "max": [
+    0.06,
+    -0.0816,
+    1.215
+   ],
+   "material": "moldura",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "janela",
+   "forma": "caixa",
+   "min": [
+    -0.295,
+    -0.0976,
+    0.945
+   ],
+   "max": [
+    0.03,
+    -0.0926,
+    1.175
+   ],
+   "material": "vidro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "painel",
+   "forma": "caixa",
+   "min": [
+    0.095,
+    -0.0916,
+    0.865
+   ],
+   "max": [
+    0.245,
+    -0.0816,
+    1.275
+   ],
+   "material": "painel_mat",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "visor",
+   "forma": "caixa",
+   "min": [
+    0.115,
+    -0.0956,
+    1.15
+   ],
+   "max": [
+    0.225,
+    -0.0906,
+    1.235
+   ],
+   "material": "vidro",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao0",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    0.89
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    0.912
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao1",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    0.93
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    0.9520000000000001
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao2",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    0.97
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    0.992
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao3",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    1.01
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    1.032
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao4",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    1.05
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    1.072
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao5",
+   "forma": "caixa",
+   "min": [
+    0.125,
+    -0.0976,
+    1.09
+   ],
+   "max": [
+    0.215,
+    -0.0906,
+    1.112
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "ventilacao_e0",
+   "forma": "caixa",
+   "min": [
+    0.2601,
+    0.18,
+    0.97
+   ],
+   "max": [
+    0.2661,
+    0.27,
+    0.981
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_e1",
+   "forma": "caixa",
+   "min": [
+    0.2601,
+    0.18,
+    0.988
+   ],
+   "max": [
+    0.2661,
+    0.27,
+    0.999
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_e2",
+   "forma": "caixa",
+   "min": [
+    0.2601,
+    0.18,
+    1.006
+   ],
+   "max": [
+    0.2661,
+    0.27,
+    1.017
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_e3",
+   "forma": "caixa",
+   "min": [
+    0.2601,
+    0.18,
+    1.024
+   ],
+   "max": [
+    0.2661,
+    0.27,
+    1.035
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_w0",
+   "forma": "caixa",
+   "min": [
+    -0.3839,
+    0.18,
+    0.97
+   ],
+   "max": [
+    -0.3779,
+    0.27,
+    0.981
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_w1",
+   "forma": "caixa",
+   "min": [
+    -0.3839,
+    0.18,
+    0.988
+   ],
+   "max": [
+    -0.3779,
+    0.27,
+    0.999
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_w2",
+   "forma": "caixa",
+   "min": [
+    -0.3839,
+    0.18,
+    1.006
+   ],
+   "max": [
+    -0.3779,
+    0.27,
+    1.017
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "ventilacao_w3",
+   "forma": "caixa",
+   "min": [
+    -0.3839,
+    0.18,
+    1.024
+   ],
+   "max": [
+    -0.3779,
+    0.27,
+    1.035
+   ],
+   "material": "ventil",
+   "chanfro": 0.001
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "moldura": {
+    "tipo": "liso"
+   },
+   "vidro": {
+    "tipo": "liso"
+   },
+   "painel_mat": {
+    "tipo": "liso"
+   },
+   "botao": {
+    "tipo": "liso"
+   },
+   "base": {
+    "tipo": "liso"
+   },
+   "ventil": {
+    "tipo": "metal"
+   }
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "versao": 1,
+ "objeto": "microwave_white",
+ "rodada": 1,
+ "nota_arte": 9,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "janela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel",
+   "situacao": "ok"
+  },
+  {
+   "nome": "visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "ventilacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_escura",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "faixa de cima da face da frente, logo abaixo da quina do topo",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 cima: serrilhado diagonal de pixels do desenho do topo aparece esticado na face da frente",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face da frente e lateral do corpo, sem emenda ou detalhe",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: corpo totalmente liso, sem emenda de porta nem desgaste, mais limpo que o desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo fiel ao desenho nos dois níveis, com todas as peças prometidas presentes e no lugar, e só defeitos leves de acabamento."
+}

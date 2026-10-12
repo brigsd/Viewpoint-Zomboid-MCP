@@ -32,7 +32,10 @@ Leia antes o contrato `05-Model-3D-Extractor-MCP/porte3d/CONTRATO.md`, na parte 
    - puxadores, rodapé, tampo com saia.
    
    Cada peça precisa aparecer no desenho ou ser exigida pela ficha. Nada de enfeite inventado.
-3. Materiais: um nome por material em `cores` e em `realista.materiais`, com o `tipo` da ficha. Deixe a cor sair do desenho, omitindo-a em `cores`, ou ponha uma cor clara e limpa do objeto. Nunca use a cor da sombra do desenho.
+3. Materiais: um nome por material em `cores` e em `realista.materiais`, com o `tipo` da ficha.
+   - **Cor:** ponha em `cores` a cor da tinta ou do material do objeto, tirada da parte **iluminada** do desenho (a face de cima ou a da esquerda). Nunca use a média do desenho nem a cor da sombra: a estimativa automática sai escura demais.
+   - **Uso:** `realista.materiais.<mat>.desgaste` vai de 0 a 1 e põe encardido, tinta lascada nas quinas e amarelado. Comece em 0,3 a 0,4 se o desenho mostra sujeira.
+   - **Ferrugem:** `ferrugem` vai de 0 a 1. Use só se o desenho mostrar ferrugem.
 4. Arte: use `adesivo`, que serve para quase tudo. Use `kit` só quando a ficha pedir, porque o adesivo fica feio numa peça escondida grande.
 5. **Acerte as medidas com a prévia:**
    - valide com `python -m porte3d.receita <receita>`;
@@ -44,7 +47,7 @@ Leia antes o contrato `05-Model-3D-Extractor-MCP/porte3d/CONTRATO.md`, na parte 
 
 ## Regras
 
-- Escreva **só** no caminho da receita. Os únicos comandos que você roda são os dois acima.
+- Escreva **só** dentro da pasta da receita (`acervo/data/porte3d/trabalho/<id>/`). Se precisar de um script auxiliar para gerar a receita, ponha-o nessa pasta, **nunca** numa pasta temporária compartilhada, porque outros modeladores rodam ao mesmo tempo. Os comandos que você roda são os dois acima e os seus scripts dessa pasta.
 - Não rode o Blender nem `porte3d.portar`: quem gera o modelo é a esteira.
 - O `id` da receita é o id do objeto que te passaram.
 - Grave JSON válido e com indentação.

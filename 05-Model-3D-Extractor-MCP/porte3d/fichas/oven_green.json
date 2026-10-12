@@ -1,0 +1,277 @@
+{
+ "versao": 1,
+ "objeto": "oven_green",
+ "sprite": "appliances_cooking_01_1",
+ "decisao": "portar",
+ "motivo": "fogão de caixa única com painel traseiro; os blocos do jogo cobrem 100% do desenho, o resto são detalhes aplicados",
+ "o_que_e": "fogão antigo verde-claro de 4 bocas: corpo em caixa (~94x66x92 cm), tampo com 4 queimadores, painel traseiro de ~15 cm com topo arredondado, painel de botões e porta de forno com visor escuro na frente, tampa cinza com grelhas de ventilação atrás",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "corpo inteiro do fogão: ~94 cm de largura (x), ~66 cm de profundidade (y), ~92 cm de altura, apoiado no chão; o tampo é a face de cima. A frente (face -y) leva a porta e os botões"
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "painel alto atrás do tampo, ~94 cm de largura, ~15 cm de altura acima do tampo (z 92-107), ~18 cm de profundidade encostado no fundo (y alto). O desenho tem topo arredondado: a caixa serve como aproximação, de preferência com o topo abaulado"
+  },
+  {
+   "nome": "queimador",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "boca de fogão redonda de ~16 cm de diâmetro, rebaixada ou bem baixa (~1-2 cm), cor escura com anel claro, dispostas em 2x2 no tampo"
+  },
+  {
+   "nome": "grelha_queimador",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "cruz escura fina (~1 cm) sobre cada boca; só detalhe de topo, pode virar textura se der trabalho"
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "porta do forno na frente, ~70 cm de largura x ~40 cm de altura, saliente ~2 cm, na metade de baixo da frente, com moldura clara"
+  },
+  {
+   "nome": "visor_forno",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "vidro escuro do forno, retângulo ~58 x 28 cm no centro da porta, quase preto, levemente rebaixado"
+  },
+  {
+   "nome": "puxador_forno",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "barra horizontal cromada de ~70 cm na parte de cima da porta, afastada ~3 cm da face"
+  },
+  {
+   "nome": "friso_cromado",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "faixa cromada fina (~2 cm) que contorna o corpo, uma logo abaixo do painel de botões e outra perto do rodapé, correndo em volta nos lados visíveis"
+  },
+  {
+   "nome": "botao",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 6,
+   "material": "metal",
+   "descricao": "botão redondo de ~4 cm de diâmetro e ~2 cm de saliência, em fileira na frente, logo abaixo do tampo (acima da porta)"
+  },
+  {
+   "nome": "tampa_traseira",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "painel cinza-escuro na traseira (lado N), ~60 x 50 cm, quase rente à parede do corpo, com um furo preto redondo de ~5 cm no canto e fileiras de grelhas de ventilação embaixo"
+  },
+  {
+   "nome": "grelha_ventilacao",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "conjunto de frestas horizontais finas na parte baixa da tampa traseira; só relevo bem raso ou textura"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base recuada de ~6 cm de altura embaixo do corpo, levemente menor que ele; no desenho aparece como borda inferior"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso",
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "ATENÇÃO: medidas.json sugere uma 'peça faltando' (cópia da forma_1 espelhada em y, na frente). É falso positivo: o painel traseiro existe só atrás. NÃO criar essa cópia",
+  "o jogo tem só 2 caixas; porta, visor, botões, queimadores, frisos e tampa traseira são todos nova, a maior parte é detalhe pequeno",
+  "painel traseiro tem topo arredondado no desenho e o bloco é caixa reta: o contorno vai sobrar nos cantos de cima (o ciano em cobertura.png mostra sobra de bloco, ~11%)",
+  "visor do forno é vidro escuro semitransparente; fazer como caixa opaca escura com leve brilho",
+  "a frente e a traseira são desenhos diferentes (N igual a S: 0.50): usar N para a traseira com tampa cinza e grelhas; E/W são espelhos de S/N",
+  "os blocos do jogo têm 'Translucent' marcado: confirmar que o modelo final não fica transparente",
+  "botões, grelhas e queimadores são muito pequenos (<5 cm): podem sumir na escala; considerar textura em vez de geometria",
+  "desgaste e ferrugem no desenho (manchas escuras no tampo e nas laterais): precisa de camada de desgaste do nível realista"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_1",
+  "sprites": {
+   "S": "appliances_cooking_01_1",
+   "E": "appliances_cooking_01_0",
+   "N": "appliances_cooking_01_3",
+   "W": "appliances_cooking_01_2"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 2,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 2,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4521,
+     -0.2109,
+     0.0
+    ],
+    "max": [
+     0.4923,
+     0.4535,
+     0.9213
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4528,
+     0.2764,
+     0.9204
+    ],
+    "max": [
+     0.4922,
+     0.4548,
+     1.0722
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "Electric",
+   "Material3": "MetalScrap",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Oven",
+   "GroupName": "Green",
+   "Facing": "S",
+   "container": "stove",
+   "Surface": "34",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "15",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "37",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4528,
+    -0.2109,
+    0.0
+   ],
+   "max": [
+    0.4923,
+    0.4548,
+    1.0722
+   ],
+   "largura": 0.9451,
+   "profundidade": 0.6657,
+   "altura": 1.0722
+  },
+  "menor_medida_peca": 0.1518,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8875,
+  "cobertura": 0.9995,
+  "sobra": 0.1121,
+  "pixels_desenho": 9807,
+  "pixels_geometria": 11039,
+  "espelhado_E_S": 0.7914,
+  "espelhado_W_N": 0.8194,
+  "N_igual_S": 0.5022,
+  "silhueta_espelho_E_S": 0.9236,
+  "silhueta_espelho_W_N": 0.9519,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0198,
+   0.1219
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.4528,
+     -0.2109,
+     0.9204
+    ],
+    "max": [
+     0.4922,
+     -0.0325,
+     1.0722
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 10851,
+   "cobertura": 0.9995,
+   "fora_do_desenho": 0.0967
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_green",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_green\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_green\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_green\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_green\\profundidade.png"
+  }
+ }
+}

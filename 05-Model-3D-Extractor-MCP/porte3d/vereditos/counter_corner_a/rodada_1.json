@@ -1,0 +1,107 @@
+{
+ "versao": 1,
+ "objeto": "counter_corner_a",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "borda_tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "poste",
+   "situacao": "ok"
+  },
+  {
+   "nome": "trilho_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "vidro_traseiro",
+   "situacao": "forma_errada",
+   "nota": "só aparece a moldura fina; o painel entre o trilho e o tampo está vazio, ao contrário do desenho"
+  },
+  {
+   "nome": "vidro_lateral",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "chapado",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "painel entre o poste, o trilho e o tampo, do lado direito do poste",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: o desenho tem painel azulado cheio, o modelo arte mostra só uma barra inclinada e uma faixa na base com o miolo vazio",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "vidro_traseiro",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "painel de vidro de trás, miolo entre o trilho e o tampo",
+   "sentido": "",
+   "evidencia": "giro_realista.png 045: só uma moldura azul fina, enquanto o vidro lateral aparece como superfície azul sólida",
+   "gravidade": "media"
+  },
+  {
+   "parte": "poste",
+   "tipo": "buraco",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "topo do poste e ponta do trilho, face de cima",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000/090/180: quadrado preto no topo do poste e na ponta do trilho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cuba",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "interior da cuba e base do vidro traseiro",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090/270/315: degraus escuros e blocos do desenho da cuba aplicados fora do lugar dentro da cuba",
+   "gravidade": "media"
+  },
+  {
+   "parte": "borda_tampo",
+   "tipo": "emenda",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "cantos da borda do tampo, lado direito da frente",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000/270: linhas de junção entre as peças da borda, com degrau no canto",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "base",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "parte de baixo das laterais da base (rodapé)",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: o desenho tem faixa mais escura embaixo; o realista tem cor uniforme",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Conjunto bem montado e fiel ao desenho; falta basicamente o painel de vidro traseiro e a face preta no topo do poste no realista."
+}
