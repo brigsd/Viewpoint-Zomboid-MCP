@@ -93,83 +93,119 @@ def prism(name, pts2d, axis, t0, t1, mat):
 
 
 # ---------------------------------------------------------------- materiais (madeira procedural)
-def wood(name, rgb, grain_axis, planks=0, plank_axis="y", plank_len=0.98):
+AX = {"x": 0, "y": 1, "z": 2}
+
+
+def wood(name, rgb, length, across, depth, planks=0, plank_len=0.98, surf=0.72, seed=0.0, spacing=0.0055):
+    """Madeira com anéis de crescimento de verdade: cada tábua tem o próprio centro de tronco (sorteado),
+    inclinação, espaçamento de anel e tom — então nenhuma tábua repete a outra. Os anéis viram linhas finas
+    escuras (lenho tardio) sobre fundo claro, e não listras de seno."""
     mat = bpy.data.materials.new(name)
     mat.use_nodes = True
     nt = mat.node_tree
-    N, L = nt.nodes, nt.links
+    N, Lk = nt.nodes, nt.links
     bsdf = N["Principled BSDF"]
     bsdf.inputs["Roughness"].default_value = 0.65
     tc = N.new("ShaderNodeTexCoord")
-    # veio: anéis em volta do eixo do comprimento, centro deslocado para fora da peça (arcos suaves, quase retos)
-    mp = N.new("ShaderNodeMapping")
-    mp.inputs["Location"].default_value = {"x": (0, 0.9, 0.35), "y": (0.9, 0, 0.35), "z": (0.7, 0.55, 0)}[grain_axis]
-    L.new(tc.outputs["Object"], mp.inputs["Vector"])
-    wave = N.new("ShaderNodeTexWave")
-    wave.wave_type, wave.rings_direction = "RINGS", grain_axis.upper()
-    wave.inputs["Scale"].default_value = 8.0
-    wave.inputs["Distortion"].default_value = 2.2
-    wave.inputs["Detail"].default_value = 2.5
-    wave.inputs["Detail Scale"].default_value = 0.25
-    L.new(mp.outputs["Vector"], wave.inputs["Vector"])
-    # fibras: ruído esticado ao longo do comprimento
-    mp2 = N.new("ShaderNodeMapping")
-    mp2.inputs["Scale"].default_value = {"x": (1.5, 90, 90), "y": (90, 1.5, 90), "z": (90, 90, 1.5)}[grain_axis]
-    L.new(tc.outputs["Object"], mp2.inputs["Vector"])
-    fib = N.new("ShaderNodeTexNoise")
-    fib.inputs["Scale"].default_value = 1.0
-    fib.inputs["Detail"].default_value = 4.0
-    L.new(mp2.outputs["Vector"], fib.inputs["Vector"])
-    mix = N.new("ShaderNodeMix")
-    mix.data_type = "FLOAT"
-    mix.inputs["Factor"].default_value = 0.55
-    L.new(wave.outputs["Fac"], mix.inputs["A"])
-    L.new(fib.outputs["Fac"], mix.inputs["B"])
+    sep = N.new("ShaderNodeSeparateXYZ")
+    Lk.new(tc.outputs["Object"], sep.inputs["Vector"])
+
+    def M(op, a, b=None, c=None):
+        n = N.new("ShaderNodeMath")
+        n.operation = op
+        for i, v in enumerate((a, b, c)):
+            if v is None:
+                continue
+            if isinstance(v, (int, float)):
+                n.inputs[i].default_value = v
+            else:
+                Lk.new(v, n.inputs[i])
+        return n.outputs[0]
+
+    pl, pa, pb = (sep.outputs[AX[k]] for k in (length, across, depth))
+    if planks:
+        idx = M("FLOOR", M("MULTIPLY_ADD", pa, planks / plank_len, planks / 2))
+    else:
+        idx = M("ADD", 0.0, 0.0)
+    rnd = []
+    for k in range(2):                                   # 6 números sorteados por tábua
+        wn = N.new("ShaderNodeTexWhiteNoise")
+        wn.noise_dimensions = "1D"
+        Lk.new(M("ADD", idx, seed * 13.7 + k * 0.37), wn.inputs["W"])
+        sc = N.new("ShaderNodeSeparateColor")
+        Lk.new(wn.outputs["Color"], sc.inputs["Color"])
+        rnd += [sc.outputs[i] for i in range(3)]
+    r0, r1, r2, r3, r4, r5 = rnd
+    w = plank_len / planks if planks else 0.6
+    # centro do tronco: ao lado da tábua (às vezes dentro dela -> arcos "catedral"), um pouco inclinado
+    base_a = M("MULTIPLY", M("SUBTRACT", M("ADD", idx, 0.5), planks / 2), w) if planks else 0.0
+    ca = M("ADD", M("ADD", base_a, M("MULTIPLY", M("SUBTRACT", r0, 0.5), w * 1.6)),
+           M("MULTIPLY", pl, M("MULTIPLY", M("SUBTRACT", r1, 0.5), 0.05)))
+    cb = M("ADD", M("SUBTRACT", surf, M("MULTIPLY_ADD", r2, 0.22, 0.02)),
+           M("MULTIPLY", pl, M("MULTIPLY", M("SUBTRACT", r3, 0.5), 0.12)))
+    da, db = M("SUBTRACT", pa, ca), M("SUBTRACT", pb, cb)
+    dist = M("SQRT", M("ADD", M("MULTIPLY", da, da), M("MULTIPLY", db, db)))
+    # anéis levemente tortos (ruído lento ao longo do comprimento)
+    mpn = N.new("ShaderNodeMapping")
+    sc_v = [6.0, 6.0, 6.0]; sc_v[AX[length]] = 1.2
+    mpn.inputs["Scale"].default_value = sc_v
+    Lk.new(tc.outputs["Object"], mpn.inputs["Vector"])
+    nz = N.new("ShaderNodeTexNoise"); nz.inputs["Scale"].default_value = 1.0; nz.inputs["Detail"].default_value = 3.0
+    Lk.new(mpn.outputs["Vector"], nz.inputs["Vector"])
+    dist = M("ADD", dist, M("MULTIPLY", M("SUBTRACT", nz.outputs["Fac"], 0.5), 0.012))
+    sp = M("MULTIPLY_ADD", r4, spacing * 0.6, spacing * 0.7)
+    rings = M("FRACT", M("DIVIDE", dist, sp))
     ramp = N.new("ShaderNodeValToRGB")
     base = lin(rgb)
-    ramp.color_ramp.elements[0].position, ramp.color_ramp.elements[1].position = 0.25, 0.85
-    ramp.color_ramp.elements[0].color = (*(base * 0.84), 1)
-    ramp.color_ramp.elements[1].color = (*(base * 1.14), 1)
-    L.new(mix.outputs["Result"], ramp.inputs["Fac"])
+    els = ramp.color_ramp.elements
+    els[0].position, els[0].color = 0.0, (*(base * 1.06), 1)
+    els[1].position, els[1].color = 1.0, (*(base * 1.04), 1)
+    for pos, f in ((0.55, 1.0), (0.80, 0.80), (0.88, 0.70)):
+        e = els.new(pos); e.color = (*(base * f), 1)
+    Lk.new(rings, ramp.inputs["Fac"])
     col = ramp.outputs["Color"]
-    if planks:
-        # junta entre tábuas: linha escura a cada 1/planks do comprimento perpendicular
-        sep = N.new("ShaderNodeSeparateXYZ")
-        L.new(tc.outputs["Object"], sep.inputs["Vector"])
-        m1 = N.new("ShaderNodeMath"); m1.operation = "MULTIPLY_ADD"
-        m1.inputs[1].default_value = planks / plank_len
-        m1.inputs[2].default_value = planks / 2
-        L.new(sep.outputs[plank_axis.upper()], m1.inputs[0])
-        fr = N.new("ShaderNodeMath"); fr.operation = "PINGPONG"; fr.inputs[1].default_value = 0.5
-        L.new(m1.outputs[0], fr.inputs[0])
-        st = N.new("ShaderNodeMapRange")
-        st.inputs["From Min"].default_value, st.inputs["From Max"].default_value = 0.0, 0.02
-        st.inputs["To Min"].default_value, st.inputs["To Max"].default_value = 0.45, 1.0
-        L.new(fr.outputs[0], st.inputs["Value"])
+
+    def mult(col, fac):
         mm = N.new("ShaderNodeMix"); mm.data_type = "RGBA"; mm.blend_type = "MULTIPLY"
         mm.inputs["Factor"].default_value = 1.0
-        L.new(col, mm.inputs["A"])
-        L.new(st.outputs["Result"], mm.inputs["B"])
-        col = mm.outputs["Result"]
-    # variação grande de tom (manchas de idade)
-    mp3 = N.new("ShaderNodeTexNoise"); mp3.inputs["Scale"].default_value = 4.0
-    L.new(tc.outputs["Object"], mp3.inputs["Vector"])
-    vr = N.new("ShaderNodeMapRange")
-    vr.inputs["To Min"].default_value, vr.inputs["To Max"].default_value = 0.9, 1.08
-    L.new(mp3.outputs["Fac"], vr.inputs["Value"])
-    mv = N.new("ShaderNodeMix"); mv.data_type = "RGBA"; mv.blend_type = "MULTIPLY"
-    mv.inputs["Factor"].default_value = 1.0
-    L.new(col, mv.inputs["A"])
-    L.new(vr.outputs["Result"], mv.inputs["B"])
-    L.new(mv.outputs["Result"], bsdf.inputs["Base Color"])
+        Lk.new(col, mm.inputs["A"])
+        if isinstance(fac, float):
+            mm.inputs["B"].default_value = (fac, fac, fac, 1)
+        else:
+            Lk.new(fac, mm.inputs["B"])
+        return mm.outputs["Result"]
+
+    def rng(v, lo, hi, fmin=0.0, fmax=1.0):
+        mr = N.new("ShaderNodeMapRange")
+        mr.inputs["From Min"].default_value, mr.inputs["From Max"].default_value = fmin, fmax
+        mr.inputs["To Min"].default_value, mr.inputs["To Max"].default_value = lo, hi
+        Lk.new(v, mr.inputs["Value"])
+        return mr.outputs["Result"]
+
+    # poros/fibras: ruído fino esticado no comprimento
+    mpf = N.new("ShaderNodeMapping")
+    sf = [140.0, 140.0, 140.0]; sf[AX[length]] = 3.0
+    mpf.inputs["Scale"].default_value = sf
+    Lk.new(tc.outputs["Object"], mpf.inputs["Vector"])
+    fib = N.new("ShaderNodeTexNoise"); fib.inputs["Scale"].default_value = 1.0; fib.inputs["Detail"].default_value = 2.0
+    Lk.new(mpf.outputs["Vector"], fib.inputs["Vector"])
+    col = mult(col, rng(fib.outputs["Fac"], 0.90, 1.07, 0.3, 0.7))
+    col = mult(col, rng(r5, 0.88, 1.08))                  # tom próprio de cada tábua
+    if planks:                                           # junta entre tábuas
+        fr = M("PINGPONG", M("MULTIPLY_ADD", pa, planks / plank_len, planks / 2), 0.5)
+        col = mult(col, rng(fr, 0.4, 1.0, 0.0, 0.015))
+    big = N.new("ShaderNodeTexNoise"); big.inputs["Scale"].default_value = 3.0
+    Lk.new(tc.outputs["Object"], big.inputs["Vector"])
+    col = mult(col, rng(big.outputs["Fac"], 0.92, 1.06, 0.3, 0.7))   # manchas de uso
+    Lk.new(col, bsdf.inputs["Base Color"])
     return mat
 
 
 top_rgb, side_rgb = P["tampo"], P["pe"]
-m_top = wood("tampo", top_rgb, "x", planks=3, plank_axis="y")
-m_leg = wood("pe", side_rgb, "z")
-m_ax = wood("saia_x", side_rgb, "x")
-m_ay = wood("saia_y", side_rgb, "y")
+m_top = wood("tampo", top_rgb, "x", "y", "z", planks=3, surf=TOP_HI, seed=1)
+m_leg = wood("pe", side_rgb, "z", "x", "y", surf=0.9, seed=2)
+m_ax = wood("saia_x", side_rgb, "x", "z", "y", surf=1.0, seed=3)
+m_ay = wood("saia_y", side_rgb, "y", "z", "x", surf=1.0, seed=4)
 
 parts = [box("tampo", (-TOP_HALF, -TOP_HALF, TOP_LO), (TOP_HALF, TOP_HALF, TOP_HI), 0.008, m_top)]
 for sx in (-1, 1):
