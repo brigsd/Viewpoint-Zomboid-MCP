@@ -105,7 +105,11 @@ def preparar(receita_path: str | Path, saida_dir: str | Path, db: sqlite3.Connec
     _salvar(acervo.bleed(frente), entrada / "frente.png")
     _salvar(acervo.bleed(tras), entrada / "tras.png")
     _salvar(frente, entrada / "frente_original.png")
-    _salvar(tras, entrada / "tras_original.png")
+    # a folha do crítico compara sempre com o desenho de trás DE VERDADE do jogo (N, se existir),
+    # mesmo quando a receita escolheu texturizar a traseira com a frente ('simetrico')
+    n_nome = r["sprites"].get("N")
+    n_real = acervo.quadro(db, n_nome) if n_nome else None
+    _salvar(n_real if n_real is not None else tras, entrada / "tras_original.png")
     (entrada / "receita.json").write_text(json.dumps(exp, indent=2, ensure_ascii=False), encoding="utf-8")
     return pasta
 

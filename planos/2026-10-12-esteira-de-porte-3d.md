@@ -106,19 +106,20 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 7. **Variantes primeiro.** Objetos com a mesma forma e cores diferentes (mesmo tileset/GroupName) reaproveitam a geometria e só trocam a textura. Um modelo aprovado vira vários.
 8. **Prioridade.** Primeiro o que aparece em toda casa: cozinha, eletrodomésticos e móveis com geometria, ordenados por número de variantes. O usuário pode furar a fila a qualquer momento com o que mais incomoda no jogo.
 9. **Git por lote.** As receitas, os vereditos e o histórico são commitados ao fim de cada lote. As imagens e texturas derivadas do jogo ficam fora do git.
-10. **Despacho em massa só depois do gate.** Lotes além do piloto só rodam depois que o gate deste plano passar, como plano próprio. Para isso o usuário precisa pedir explicitamente um workflow ("use um workflow"), porque são dezenas de agentes.
+10. **Despacho em massa só depois do piloto aprovado.** Os lotes de produção (fatia 6) só rodam depois que a calibração e o piloto passarem. O usuário precisa pedir explicitamente um workflow ("use um workflow"), porque são dezenas de agentes.
 
 ## Incluído
 
 - Biblioteca `porte3d` (receita → modelo → OBJ/MTL/PNG + folhas), com testes.
-- Mod próprio mínimo e **prova no jogo com 1 objeto antes de escalar**.
+- Mod próprio mínimo e prova no jogo. Foi adiada a pedido do usuário em 2026-10-12, porque tudo é regerado da receita. Recomendação: conferir 1 objeto no jogo antes do primeiro lote grande.
+- Produção em lotes nas categorias de casa (móveis, eletrodomésticos, cozinha, banheiro e caixas). São cerca de 1.188 sprites, 290 objetos e 120 formas. Começa por cozinha e eletrodomésticos, e pelas 12 formas de geladeira.
 - Agentes inspetor, modelador e crítico, mais a skill do laço.
-- Calibração do crítico com casos conhecidos, antes de confiar nele. Ele precisa reprovar:
-  - a geladeira borrada da "profundidade";
-  - a mesa sem o pé de trás, que **o wireframe** tem que denunciar;
-  - o pé com linha preta.
+- Calibração do crítico com casos conhecidos, gerados pela própria biblioteca no formato das folhas (`porte3d/calibracao/`), antes de confiar nele. Ele precisa reprovar:
+  - a mesa sem os pés de trás, que **o wireframe** tem que denunciar;
+  - a mesa com um pé chapado (um plano em vez de um bloco);
+  - a geladeira com a traseira errada (a frente repetida atrás).
   
-  E precisa aprovar a geladeira "adesivo".
+  E precisa aprovar a mesa e a geladeira boas.
 - Fila, estados e galeria de aprovação.
 - Piloto com 10 objetos de caixa com geometria: geladeiras, fogões, máquinas, balcões, armários, mesas e caixotes, nos dois níveis.
 - Geradores de material do nível realista no Blender: madeira (feito no teste), metal e tecido no piloto; os demais entram conforme a fila pedir.
@@ -133,28 +134,31 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 
 ## Gate de saída
 
-1. O objeto de prova aparece em 3D no jogo. O log do Viewpoint mostra modelos de pack na GPU (`model packs N models`, N > 0) e o usuário confirma visualmente com um print (F9).
-2. Na calibração, o inspetor aponta os problemas conhecidos (pé faltando, espelhamento, luminária "não portar"), e o crítico reprova os 3 casos ruins e aprova o caso bom.
-3. O piloto passa 10 objetos pela esteira nos dois níveis. Pelo menos 7 são aprovados pelo usuário na galeria em cada nível, e todos os aprovados aparecem no jogo, com a troca de nível funcionando.
+1. (Fatia 7) O objeto de prova aparece em 3D no jogo. O log do Viewpoint mostra modelos de pack na GPU (`model packs N models`, N > 0) e o usuário confirma visualmente com um print (F9).
+2. Na calibração, o inspetor aponta os problemas conhecidos (pé faltando, espelhamento, luminária "não portar"), e o crítico reprova os 3 casos ruins e aprova os 2 casos bons.
+3. O piloto passa 10 objetos pela esteira nos dois níveis. Pelo menos 7 são aprovados pelo usuário na galeria em cada nível.
 4. Cada objeto tem ficha do inspetor, receita versionada, histórico de rodadas e veredito do crítico registrados, e a lista final de reprovados e não portados é gerada por script.
 5. Nada é gravado na pasta do jogo nem na do Viewpoint da Workshop, e a arte extraída do jogo fica fora do git.
 6. `python planos/check.py` passa.
+7. Os lotes de produção rodaram nas categorias de casa, e todos os aprovados aparecem no jogo (fatia 7), com a troca de nível funcionando.
 
 ## Fatias
 
 1. **Biblioteca `porte3d`:** receita, malha no Blender, textura dos dois níveis, export OBJ/MTL/PNG e folhas, consolidando `teste_adesivo*`, `teste_manual_mesa*` e `blender_mesa_nivel3.py`. Prova: a mesa e a geladeira saem pela biblioteca, nos dois níveis.
-2. **Prova no jogo com a geladeira:** mod próprio, pack.manifest e register. O usuário confere. Aqui se descobre a escala, os eixos, a orientação do UV e como o Viewpoint ilumina o modelo. Se falhar, nada mais adianta.
-3. **Inspetor e crítico:** as definições dos agentes, o vocabulário comum (peças prometidas, tipos de defeito) e a calibração dos dois com os casos conhecidos.
-4. **Modelador, laço, fila e relatório:** a skill `porte-3d`, os estados e a lista final de reprovados.
-5. **Galeria e piloto de 10 objetos.**
-6. **Fechamento.**
+2. **Inspetor e crítico:** as definições dos agentes, o vocabulário comum (peças prometidas, tipos de defeito) e a calibração dos dois com os casos conhecidos.
+3. **Modelador, laço, fila e relatório:** a skill `porte-3d`, os estados e a lista final de reprovados.
+4. **Galeria e piloto de 10 objetos.**
+5. **Variantes:** cor e estado reaproveitando a malha da forma, e a qualidade (512, 1024 ou 2048).
+6. **Produção em lotes** nas categorias de casa, por workflow pedido pelo usuário.
+7. **Prova no jogo e pack:** mod próprio, pack.manifest e register. O usuário confere. Aqui se descobre a escala, os eixos, a orientação do UV e como o Viewpoint ilumina o modelo. Adiada a pedido do usuário em 2026-10-12; se der errado, tudo é regerado das receitas.
+8. **Fechamento.**
 
 ## Riscos e parada
 
-- **O Viewpoint não carrega ou desenha errado o OBJ na fatia 2** (escala, eixos, textura). Parar e investigar o formato no `Viewpoint.jar` (`viewpoint.packs.*`) antes de seguir.
+- **O Viewpoint não carrega ou desenha errado o OBJ na fatia 7** (escala, eixos, textura). Parar e investigar o formato no `Viewpoint.jar` (`viewpoint.packs.*`). Como a prova ficou para o fim, o risco é regerar tudo: custa tempo de máquina, mas não o trabalho dos agentes, porque as receitas continuam valendo.
 - **O crítico não separa bom de ruim na calibração.** Ajustar as perguntas. Se ainda assim falhar, a aprovação fica toda com o usuário e o crítico vira só uma triagem.
 - **Arte do jogo dentro do mod.** As texturas são derivadas da arte da The Indie Stone. Para uso pessoal tudo bem; publicar na Workshop exige decidir antes, porque muitos mods fazem isso, mas é uma decisão do usuário.
-- **Direções espelhadas** (E/W são espelho de S/N). Ligar o mesmo modelo girado pode mostrar o objeto "ao contrário" do desenho 2D. Conferir na prova da fatia 2.
+- **Direções espelhadas** (E/W são espelho de S/N). Ligar o mesmo modelo girado pode mostrar o objeto "ao contrário" do desenho 2D. Conferir na prova da fatia 7.
 
 ## Fechamento
 

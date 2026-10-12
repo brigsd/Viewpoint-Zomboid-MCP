@@ -12,14 +12,14 @@
  "material": "metal",
  "cores": {
   "metal": [
-   228,
    226,
-   214
+   222,
+   204
   ],
   "metal_escuro": [
-   72,
-   72,
-   70
+   118,
+   126,
+   138
   ],
   "cromado": [
    190,
@@ -328,10 +328,12 @@
  "realista": {
   "materiais": {
    "metal": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.35
    },
    "metal_escuro": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.3
    },
    "cromado": {
     "tipo": "metal"

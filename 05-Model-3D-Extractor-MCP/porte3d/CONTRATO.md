@@ -69,7 +69,7 @@ As formas:
 | arquivo | quem escreve | o que é |
 |---|---|---|
 | `entrada/frente.png`, `entrada/tras.png` | `preparar.py` | quadros 128×256 do jogo (frente S; trás N ou S), já com `bleed` |
-| `entrada/frente_original.png`, `entrada/tras_original.png` | `preparar.py` | os mesmos quadros sem `bleed`, para comparação nas folhas |
+| `entrada/frente_original.png`, `entrada/tras_original.png` | `preparar.py` | quadros sem `bleed`, para comparação nas folhas; `tras_original` é sempre o desenho N do jogo quando ele existe, mesmo com `tras = simetrico` |
 | `entrada/receita.json` | `preparar.py` | receita expandida (espelhos já aplicados), com cores resolvidas |
 | `buffers/*.npy` | Blender, etapa 1 | por texel do atlas: `posicao` (H,W,3), `normal` (H,W,3), `peca` (H,W) com índice da peça ou −1, `vis_0` e `vis_180` (H,W) com visibilidade 0..1 da câmera do jogo em 0° e 180°, `ao` (H,W), `albedo` (H,W,3) linear do realista |
 | `malha.obj`, `cena.blend` | Blender, etapa 1 | malha juntada com UV (um `usemtl` por peça) e a cena para a etapa 2 |

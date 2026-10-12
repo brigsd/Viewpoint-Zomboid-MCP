@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Veredito do crítico 3D (porte3d, versão 1)",
+  "description": "O bloco JSON com que o crítico fecha a resposta. Veredito fora deste esquema é recusado e a crítica é refeita.",
+  "type": "object",
+  "required": ["versao", "objeto", "rodada", "nota_arte", "nota_realista", "pecas", "defeitos", "observacao"],
+  "additionalProperties": false,
+  "properties": {
+    "versao": {"const": 1},
+    "objeto": {"type": "string"},
+    "rodada": {"type": "integer", "minimum": 1, "maximum": 3},
+    "nota_arte": {"type": "number", "minimum": 0, "maximum": 10},
+    "nota_realista": {"type": "number", "minimum": 0, "maximum": 10},
+    "pecas": {
+      "type": "array",
+      "description": "uma linha por peça prometida na ficha: se ela existe e tem a forma prometida",
+      "items": {
+        "type": "object",
+        "required": ["nome", "situacao"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": {"type": "string"},
+          "situacao": {"enum": ["ok", "ausente", "forma_errada", "fora_do_lugar"]},
+          "nota": {"type": "string"}
+        }
+      }
+    },
+    "defeitos": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["parte", "tipo", "nivel", "vista", "onde", "evidencia", "gravidade"],
+        "additionalProperties": false,
+        "properties": {
+          "parte": {"type": "string", "description": "nome da peça da ficha, ou 'conjunto'"},
+          "tipo": {"enum": ["ausencia", "chapado", "textura_deslocada", "buraco", "emenda", "proporcao", "sobra", "estrutura", "cor"]},
+          "nivel": {"enum": ["arte", "realista", "ambos"]},
+          "vista": {"enum": ["comparacao", "giro", "fio", "sobreposicao", "zoom"]},
+          "angulo": {"type": "integer", "minimum": 0, "maximum": 315},
+          "onde": {"type": "string", "description": "trecho da peça (ex.: 'pé de trás, metade de baixo'), nunca o objeto inteiro"},
+          "sentido": {"type": "string", "description": "para proporcao: maior | menor | alto | baixo | deslocado_<eixo>; livre nos outros tipos"},
+          "evidencia": {"type": "string", "description": "a folha, o ângulo e a região da imagem onde se vê"},
+          "gravidade": {"enum": ["grave", "media", "leve"]}
+        }
+      }
+    },
+    "observacao": {"type": "string"}
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "versao": 1,
+  "objeto": "insp_mesa",
+  "sprite": "furniture_tables_high_01_16",
+  "decisao": "portar",
+  "motivo": "mesa quadrada simples de caixas (tampo, saia e 4 pes), 1 tile, facil de portar",
+  "o_que_e": "mesa quadrada de madeira escura, tampo grosso e levemente maior que o corpo, saia fina embaixo do tampo e 4 pes retos",
+  "pecas": [
+    {"nome": "tampo", "forma": "caixa", "origem": "jogo", "material": "madeira", "descricao": "tampo quadrado de ~1 m x 1 m, ~18 cm de espessura segundo o bloco do jogo (z 58 a 76 cm); no desenho parece mais fino, com a borda de baixo recuada, entao o crítico deve conferir a espessura visivel"},
+    {"nome": "saia", "forma": "caixa", "origem": "nova", "quantidade": 4, "material": "madeira", "descricao": "tabua fina de ~8 cm de altura e ~2 cm de espessura logo abaixo do tampo, recuada ~6 cm da borda do tampo, ligando os pes nos 4 lados; no desenho aparece escura nos lados da frente"},
+    {"nome": "pe", "forma": "caixa", "origem": "jogo", "quantidade": 3, "material": "madeira", "descricao": "pe quadrado de ~10 x 6 cm e 58 cm de altura, nos cantos da esquerda, da frente e da direita (blocos forma_0, forma_1 e forma_2)"},
+    {"nome": "pe_tras", "forma": "caixa", "origem": "simetria", "material": "madeira", "descricao": "pe do canto do fundo, escondido pelo tampo; espelho de forma_0 em y, mesmas medidas (10 x 6 x 58 cm), em x -44..-34 cm e y 38..44 cm"}
+  ],
+  "simetria": "espelho_xy",
+  "tras": "simetrico",
+  "direcoes_espelhadas": false,
+  "arte": "adesivo",
+  "materiais": {"madeira": "madeira"},
+  "problemas_previstos": [
+    "o jogo so descreve 3 pes: completar o quarto por simetria (espelho de forma_0 em y)",
+    "so existe o desenho S: traseira e lados inventados por simetria, nao ha N nem E/W para conferir",
+    "o bloco do tampo tem 18 cm de espessura, mas o desenho mostra um tampo bem mais fino com a saia embaixo: a saia nao existe nos blocos do jogo e vai ficar dentro do bloco do tampo, ajustar espessura do tampo e criar a saia como peca nova",
+    "os pes no desenho parecem levemente afinados e com leve desgaste; o bloco e uma caixa reta, pequenos detalhes de pe (pontas, cantoneiras) ficam como aproximacao",
+    "o desenho tem sombra no chao que nao e parte do objeto (placa ignorada nas medidas)",
+    "o tampo no desenho e levemente maior que o corpo, com a borda frontal visivel; conferir o beiral em relacao aos pes (pes recuados ~6 cm da borda)"
+  ],
+  "medidas": {
+    "sprite": "furniture_tables_high_01_16",
+    "sprites": {"S": "furniture_tables_high_01_16"},
+    "tem_quadro_S": true,
+    "n_formas_jogo": 5,
+    "formas_ignoradas": [{"indice": 0, "motivo": "placa de sombra no chão"}],
+    "tem_geometria": true,
+    "n_formas": 4,
+    "tipos": {"caixa": 4, "cilindro": 0, "prisma": 0},
+    "pecas": [
+      {"nome": "forma_0", "forma": "caixa", "min": [-0.44, -0.44, 0.0], "max": [-0.34, -0.38, 0.58]},
+      {"nome": "forma_1", "forma": "caixa", "min": [0.34, 0.38, 0.0], "max": [0.44, 0.44, 0.58]},
+      {"nome": "forma_2", "forma": "caixa", "min": [0.34, -0.44, 0.0], "max": [0.44, -0.38, 0.58]},
+      {"nome": "forma_3", "forma": "caixa", "min": [-0.5, -0.5, 0.58], "max": [0.5, 0.5, 0.76]}
+    ],
+    "multi_tile": false,
+    "material": "madeira",
+    "material_props": {"Material": "Nails", "Material2": "Wood"},
+    "props": {
+      "CustomName": "Fancy Dark Table",
+      "IsTable": "",
+      "Surface": "30",
+      "IsLow": "",
+      "IsMoveAble": "",
+      "BlocksPlacement": "",
+      "solidtrans": "",
+      "ScrapSize": "Small",
+      "PickUpWeight": "100"
+    },
+    "props_geometria": {"Surface": "30", "Translucent": "true"},
+    "categoria": "moveis",
+    "caixa": {"min": [-0.5, -0.5, 0.0], "max": [0.5, 0.5, 0.76], "largura": 1.0, "profundidade": 1.0, "altura": 0.76},
+    "menor_medida_peca": 0.06,
+    "fino": false,
+    "pecas_finas": [],
+    "altura_base": 0.0,
+    "montado_na_parede": false,
+    "contorno_0": 0.8782,
+    "cobertura": 0.9937,
+    "sobra": 0.1169,
+    "pixels_desenho": 6536,
+    "pixels_geometria": 7355,
+    "espelhado_E_S": null,
+    "espelhado_W_N": null,
+    "N_igual_S": null,
+    "silhueta_espelho_E_S": null,
+    "silhueta_espelho_W_N": null,
+    "E_e_espelho_de_S": false,
+    "W_e_espelho_de_N": false,
+    "tem_N": false,
+    "centro_simetria": [0.0, 0.0],
+    "pecas_sem_par": [
+      {"peca": "forma_0", "sem_par": ["y"]},
+      {"peca": "forma_1", "sem_par": ["x"]},
+      {"peca": "forma_2", "sem_par": ["xy"]}
+    ],
+    "pecas_provavelmente_faltando": [
+      {"forma": "caixa", "copia_de": "forma_0", "espelho": "y", "votos": 3, "pe": true, "min": [-0.44, 0.38, 0.0], "max": [-0.34, 0.44, 0.58]}
+    ],
+    "n_pes": 3,
+    "profundidade": {"existe": true, "pixels": 10379, "cobertura": 0.996, "fora_do_desenho": 0.3728},
+    "sugestao": [
+      "3 pés descritos, provável pé escondido (falta 1, espelho de forma_0): completar por simetria",
+      "sem desenho de trás (N): tras = simetrico, a traseira é inventada",
+      "só 1 direção no acervo (S)"
+    ],
+    "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\furniture_tables_high_01_16",
+    "imagens": {
+      "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\furniture_tables_high_01_16\\direcoes.png",
+      "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\furniture_tables_high_01_16\\geometria.png",
+      "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\furniture_tables_high_01_16\\cobertura.png",
+      "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\furniture_tables_high_01_16\\profundidade.png"
+    }
+  }
+}

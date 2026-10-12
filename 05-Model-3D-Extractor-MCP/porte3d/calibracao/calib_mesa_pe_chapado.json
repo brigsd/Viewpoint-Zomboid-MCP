@@ -1,0 +1,331 @@
+{
+ "versao": 1,
+ "id": "calib_mesa_pe_chapado",
+ "nota": "CALIBRAÇÃO (ruim): o pé da frente é uma placa de 3 mm (chapado). O crítico deve reprovar (chapado), visível no giro de 45/90 graus e no fio.",
+ "sprites": {
+  "S": "furniture_tables_high_01_16"
+ },
+ "tras": "simetrico",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   88,
+   82,
+   78
+  ],
+  "madeira_escura": [
+   76,
+   68,
+   62
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.49,
+    0.68
+   ],
+   "max": [
+    0.49,
+    0.49,
+    0.72
+   ],
+   "chanfro": 0.008,
+   "veio": "x",
+   "tabuas": 3
+  },
+  {
+   "forma": "caixa",
+   "chanfro": 0.0,
+   "veio": "z",
+   "material": "madeira_escura",
+   "nome": "pe_frente",
+   "min": [
+    0.36,
+    -0.44,
+    0.0
+   ],
+   "max": [
+    0.44,
+    -0.437,
+    0.68
+   ]
+  },
+  {
+   "forma": "caixa",
+   "chanfro": 0.004,
+   "veio": "z",
+   "material": "madeira_escura",
+   "afinar": {
+    "quanto": 0.012,
+    "lados": [
+     "+x",
+     "+y"
+    ]
+   },
+   "nome": "pe_esq",
+   "min": [
+    -0.44,
+    -0.44,
+    0.0
+   ],
+   "max": [
+    -0.36,
+    -0.36,
+    0.68
+   ]
+  },
+  {
+   "forma": "caixa",
+   "chanfro": 0.004,
+   "veio": "z",
+   "material": "madeira_escura",
+   "afinar": {
+    "quanto": 0.012,
+    "lados": [
+     "-x",
+     "-y"
+    ]
+   },
+   "nome": "pe_tras_dir",
+   "min": [
+    0.36,
+    0.36,
+    0.0
+   ],
+   "max": [
+    0.44,
+    0.44,
+    0.68
+   ]
+  },
+  {
+   "forma": "caixa",
+   "chanfro": 0.004,
+   "veio": "z",
+   "material": "madeira_escura",
+   "afinar": {
+    "quanto": 0.012,
+    "lados": [
+     "+x",
+     "-y"
+    ]
+   },
+   "nome": "pe_tras_esq",
+   "min": [
+    -0.44,
+    0.36,
+    0.0
+   ],
+   "max": [
+    -0.36,
+    0.44,
+    0.68
+   ]
+  },
+  {
+   "nome": "saia_frente",
+   "forma": "caixa",
+   "min": [
+    -0.365,
+    -0.434,
+    0.565
+   ],
+   "max": [
+    0.365,
+    -0.412,
+    0.68
+   ],
+   "chanfro": 0.003,
+   "veio": "x",
+   "material": "madeira_escura",
+   "espelhar": [
+    "y"
+   ]
+  },
+  {
+   "nome": "saia_lado",
+   "forma": "caixa",
+   "min": [
+    0.412,
+    -0.365,
+    0.565
+   ],
+   "max": [
+    0.434,
+    0.365,
+    0.68
+   ],
+   "chanfro": 0.003,
+   "veio": "y",
+   "material": "madeira_escura",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "cantoneira_frente",
+   "forma": "prisma",
+   "perfil": [
+    [
+     0.36,
+     0.565
+    ],
+    [
+     0.31,
+     0.565
+    ],
+    [
+     0.36,
+     0.515
+    ]
+   ],
+   "eixo": "y",
+   "de": -0.434,
+   "ate": -0.412,
+   "chanfro": 0.002,
+   "material": "madeira_escura",
+   "espelhar": [
+    "x",
+    "y"
+   ]
+  },
+  {
+   "nome": "cantoneira_lado",
+   "forma": "prisma",
+   "perfil": [
+    [
+     0.36,
+     0.565
+    ],
+    [
+     0.31,
+     0.565
+    ],
+    [
+     0.36,
+     0.515
+    ]
+   ],
+   "eixo": "x",
+   "de": 0.412,
+   "ate": 0.434,
+   "chanfro": 0.002,
+   "material": "madeira_escura",
+   "espelhar": [
+    "x",
+    "y"
+   ]
+  }
+ ],
+ "arte": {
+  "modo": "kit",
+  "recortes": {
+   "tampo_topo": {
+    "peca": "tampo",
+    "face": "+z",
+    "recorte": [
+     0.15,
+     0.15,
+     0.85,
+     0.85
+    ]
+   },
+   "tampo_borda": {
+    "peca": "tampo",
+    "face": "-y",
+    "recorte": [
+     0.31,
+     0.1,
+     0.69,
+     0.7
+    ]
+   },
+   "pe_frente": {
+    "peca": "pe_esq",
+    "face": "-y",
+    "recorte": [
+     0.0,
+     0.22,
+     1.0,
+     1.0
+    ],
+    "limpar_transparente": true
+   },
+   "saia": {
+    "peca": "saia_frente",
+    "face": "-y",
+    "recorte": [
+     0.3,
+     0.3,
+     0.7,
+     1.0
+    ]
+   }
+  },
+  "faces": {
+   "tampo": {
+    "+z": "tampo_topo",
+    "-z": "tampo_topo",
+    "lados": "tampo_borda"
+   },
+   "saia_frente": {
+    "lados": "saia",
+    "+z": "saia",
+    "-z": "saia"
+   },
+   "saia_lado": {
+    "lados": "saia",
+    "+z": "saia",
+    "-z": "saia"
+   },
+   "cantoneira_frente": {
+    "lados": "saia",
+    "+z": "saia",
+    "-z": "saia"
+   },
+   "cantoneira_lado": {
+    "lados": "saia",
+    "+z": "saia",
+    "-z": "saia"
+   },
+   "pe_frente": {
+    "lados": "pe_frente",
+    "+z": "pe_frente",
+    "-z": "pe_frente"
+   },
+   "pe_esq": {
+    "lados": "pe_frente",
+    "+z": "pe_frente",
+    "-z": "pe_frente"
+   },
+   "pe_tras_dir": {
+    "lados": "pe_frente",
+    "+z": "pe_frente",
+    "-z": "pe_frente"
+   },
+   "pe_tras_esq": {
+    "lados": "pe_frente",
+    "+z": "pe_frente",
+    "-z": "pe_frente"
+   }
+  },
+  "repetir": {
+   "tampo_borda": 0.3,
+   "saia": 0.25
+  }
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira"
+   },
+   "madeira_escura": {
+    "tipo": "madeira"
+   }
+  }
+ }
+}

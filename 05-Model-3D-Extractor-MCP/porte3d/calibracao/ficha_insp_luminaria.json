@@ -1,0 +1,91 @@
+{
+  "versao": 1,
+  "objeto": "insp_luminaria",
+  "sprite": "lighting_indoor_01_17",
+  "decisao": "nao_portar",
+  "motivo": "luminária de parede (MoveType WallObject) presa à parede, pequena, e as caixas do jogo não casam com o desenho (contorno 0.25, 75% da geometria fora da arte)",
+  "o_que_e": "arandela de parede: abajur rosa em forma de cone truncado aberto em cima, preso por um braço curto a uma placa de fixação retangular dourada/latão colada na parede",
+  "problemas_previstos": [
+    "objeto de parede, o jogo o prende à parede; a placa de fixação é fina (~5 cm)",
+    "as duas caixas do jogo (placa 75x5x57 cm e bloco 55x25x72 cm) são muito maiores que o desenho; o abajur real tem cerca de 25 cm e o bloco do jogo seria só uma área de colisão/seleção",
+    "o desenho muda de posição conforme a parede (S/E/N/W com placa em lados diferentes), N não é igual a S e E/W não são espelho exato",
+    "abajur é translúcido (Translucent true na geometria) e tem a boca aberta, difícil de modelar fiel"
+  ],
+  "medidas": {
+    "sprite": "lighting_indoor_01_17",
+    "sprites": {"S": "lighting_indoor_01_17", "E": "lighting_indoor_01_16", "N": "lighting_indoor_01_19", "W": "lighting_indoor_01_18"},
+    "tem_quadro_S": true,
+    "n_formas_jogo": 2,
+    "formas_ignoradas": [],
+    "tem_geometria": true,
+    "n_formas": 2,
+    "tipos": {"caixa": 2, "cilindro": 0, "prisma": 0},
+    "pecas": [
+      {"nome": "forma_0", "forma": "caixa", "min": [-0.45, 0.4, 1.2], "max": [0.3, 0.45, 1.77]},
+      {"nome": "forma_1", "forma": "caixa", "min": [-0.15, 0.1, 1.78], "max": [0.4, 0.35, 2.5]}
+    ],
+    "multi_tile": false,
+    "material": "metal",
+    "material_props": {"Material": "Electric"},
+    "props": {
+      "CustomName": "Wall Lamp",
+      "GroupName": "Pink",
+      "Facing": "S",
+      "MoveType": "WallObject",
+      "IsHigh": "",
+      "IsMoveAble": "",
+      "attachedN": "",
+      "lightswitch": "",
+      "HasLightOnSprite": "",
+      "ScrapSize": "Small",
+      "PickUpWeight": "20"
+    },
+    "props_geometria": {"Translucent": "true"},
+    "categoria": "iluminacao",
+    "caixa": {"min": [-0.45, 0.1, 1.2], "max": [0.4, 0.45, 2.5], "largura": 0.85, "profundidade": 0.35, "altura": 1.3},
+    "menor_medida_peca": 0.05,
+    "fino": false,
+    "pecas_finas": [],
+    "altura_base": 1.2,
+    "montado_na_parede": true,
+    "contorno_0": 0.2497,
+    "cobertura": 1.0,
+    "sobra": 0.7503,
+    "pixels_desenho": 1276,
+    "pixels_geometria": 5110,
+    "espelhado_E_S": 0.6707,
+    "espelhado_W_N": 0.6961,
+    "N_igual_S": 0.0,
+    "silhueta_espelho_E_S": 0.7128,
+    "silhueta_espelho_W_N": 0.7259,
+    "E_e_espelho_de_S": false,
+    "W_e_espelho_de_N": false,
+    "tem_N": true,
+    "centro_simetria": [-0.025, 0.275],
+    "pecas_sem_par": [
+      {"peca": "forma_0", "sem_par": ["x", "y", "xy"]},
+      {"peca": "forma_1", "sem_par": ["x", "y", "xy"]}
+    ],
+    "pecas_provavelmente_faltando": [
+      {"forma": "caixa", "copia_de": "forma_0", "espelho": "y", "votos": 1, "pe": false, "min": [-0.45, 0.1, 1.2], "max": [0.3, 0.15, 1.77]},
+      {"forma": "caixa", "copia_de": "forma_0", "espelho": "xy", "votos": 1, "pe": false, "min": [-0.35, 0.1, 1.2], "max": [0.4, 0.15, 1.77]},
+      {"forma": "caixa", "copia_de": "forma_1", "espelho": "x", "votos": 1, "pe": false, "min": [-0.45, 0.1, 1.78], "max": [0.1, 0.35, 2.5]},
+      {"forma": "caixa", "copia_de": "forma_1", "espelho": "xy", "votos": 1, "pe": false, "min": [-0.45, 0.2, 1.78], "max": [0.1, 0.45, 2.5]}
+    ],
+    "n_pes": 0,
+    "profundidade": {"existe": true, "pixels": 4915, "cobertura": 1.0, "fora_do_desenho": 0.7404},
+    "sugestao": [
+      "objeto de parede (o jogo o prende à parede: MoveType/attached): candidato a não portar",
+      "75% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peça que não aparece",
+      "contorno em 0° baixo (IoU 0.25): as caixas do jogo não casam com o desenho",
+      "há desenho de trás real (N): usar tras = N"
+    ],
+    "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\lighting_indoor_01_17",
+    "imagens": {
+      "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\lighting_indoor_01_17\\direcoes.png",
+      "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\lighting_indoor_01_17\\geometria.png",
+      "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\lighting_indoor_01_17\\cobertura.png",
+      "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\lighting_indoor_01_17\\profundidade.png"
+    }
+  }
+}

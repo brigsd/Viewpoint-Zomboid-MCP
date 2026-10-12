@@ -1,0 +1,60 @@
+{
+ "mesa": [
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "descricao": "tampo quadrado ~1 m, fino (~4 cm), a ~70 cm do chão"
+  },
+  {
+   "nome": "pe",
+   "forma": "caixa",
+   "quantidade": 4,
+   "descricao": "pé quadrado ~8 cm em cada um dos 4 cantos, afinando para baixo"
+  },
+  {
+   "nome": "saia",
+   "forma": "caixa",
+   "quantidade": 4,
+   "descricao": "tábua de ~11 cm logo abaixo do tampo, recuada, ligando os pés nos 4 lados"
+  },
+  {
+   "nome": "cantoneira",
+   "forma": "prisma",
+   "quantidade": 8,
+   "descricao": "triângulo pequeno sob a saia, encostado em cada pé"
+  }
+ ],
+ "geladeira": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "descricao": "corpo da geladeira ~0,9 x 0,7 x 1,55 m, cantos arredondados"
+  },
+  {
+   "nome": "porta_freezer",
+   "forma": "caixa",
+   "descricao": "porta de cima na frente, ~1/3 da altura"
+  },
+  {
+   "nome": "porta_geladeira",
+   "forma": "caixa",
+   "descricao": "porta de baixo na frente, ~2/3 da altura, com fresta para a de cima"
+  },
+  {
+   "nome": "puxador",
+   "forma": "cilindro",
+   "quantidade": 2,
+   "descricao": "puxador vertical em cada porta, no lado esquerdo da frente"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "descricao": "rodapé escuro recuado embaixo"
+  },
+  {
+   "nome": "serpentina",
+   "forma": "caixa",
+   "descricao": "grade/serpentina na traseira"
+  }
+ ]
+}

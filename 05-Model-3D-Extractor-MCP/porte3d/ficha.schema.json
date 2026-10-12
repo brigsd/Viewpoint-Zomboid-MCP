@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ficha de serviço do inspetor (porte3d, versão 1)",
+  "description": "O que o inspetor entrega antes de modelar: o que é o objeto, as peças prometidas (que o crítico confere uma a uma), o caminho e os problemas previstos, ou a decisão de não portar.",
+  "type": "object",
+  "required": ["versao", "objeto", "sprite", "decisao", "motivo", "o_que_e"],
+  "additionalProperties": false,
+  "properties": {
+    "versao": {"const": 1},
+    "objeto": {"type": "string", "pattern": "^[a-z0-9_]+$", "description": "id do objeto na fila (vira o id da receita)"},
+    "sprite": {"type": "string", "description": "sprite da direção S"},
+    "decisao": {"enum": ["portar", "nao_portar"]},
+    "motivo": {"type": "string", "minLength": 3, "description": "uma frase; quando nao_portar, é o motivo que vai para a lista final"},
+    "o_que_e": {"type": "string", "description": "o objeto em poucas palavras, sem saber o nome do jogo"},
+    "pecas": {
+      "type": "array",
+      "description": "peças prometidas; obrigatório quando decisao = portar",
+      "items": {
+        "type": "object",
+        "required": ["nome", "forma", "origem", "descricao"],
+        "additionalProperties": false,
+        "properties": {
+          "nome": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "forma": {"enum": ["caixa", "cilindro", "prisma"]},
+          "origem": {"enum": ["jogo", "simetria", "nova"], "description": "jogo = bloco da geometria do jogo; simetria = cópia espelhada de outra peça; nova = não existe no jogo e precisa ser criada"},
+          "quantidade": {"type": "integer", "minimum": 1},
+          "material": {"type": "string"},
+          "descricao": {"type": "string", "description": "forma e posição em palavras (ex.: 'pé quadrado de 8 cm em cada canto, afinando para baixo')"}
+        }
+      }
+    },
+    "simetria": {"enum": ["nenhuma", "espelho_x", "espelho_y", "espelho_xy", "giro_180"]},
+    "tras": {"enum": ["N", "simetrico"]},
+    "direcoes_espelhadas": {"type": "boolean", "description": "E/W são o desenho de S/N espelhado"},
+    "arte": {"enum": ["adesivo", "kit"]},
+    "materiais": {"type": "object", "additionalProperties": {"enum": ["madeira", "metal", "tecido", "liso"]}},
+    "problemas_previstos": {"type": "array", "items": {"type": "string"}},
+    "medidas": {"type": "object", "description": "copiado de inspecao.py (não editar à mão)"}
+  },
+  "allOf": [
+    {"if": {"properties": {"decisao": {"const": "portar"}}}, "then": {"required": ["pecas", "simetria", "tras", "arte", "materiais"], "properties": {"pecas": {"minItems": 1}}}}
+  ]
+}

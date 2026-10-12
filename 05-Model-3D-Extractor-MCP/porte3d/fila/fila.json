@@ -1,0 +1,4491 @@
+{
+ "objetos": {
+  "appliances_01_0": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_0",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_0"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_1": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_1",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_1"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_4": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_4",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_4"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_5": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_5",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_5"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_72": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_72",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_72"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_73": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_73",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_73"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_74": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": "appliances_01_72",
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_74",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_74"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_75": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_75",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_75"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_8": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_8",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_8"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_01_9": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_01_9",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 410,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_01_9"
+   },
+   "tileset": "appliances_01"
+  },
+  "appliances_com_01_142": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_142",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_142"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_143": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_143",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_143"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_144": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_144",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_144"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_145": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_145",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_145"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_146": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_146",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_146"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_147": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_147",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_147"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_166": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_166",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_166"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_167": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_167",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_167"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_89": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_89",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_89"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_90": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_90",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_90"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_91": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_91",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_91"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_92": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_92",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_92"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_93": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_93",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_93"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_95": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_95",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_95"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_com_01_96": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_com_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_com_01_96",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 415,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_com_01_96"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "appliances_laundry_01_26": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_26",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_26"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_laundry_01_27": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_27",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_27"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_laundry_01_28": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_28",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_28"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_laundry_01_29": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_29",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_29"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_laundry_01_30": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_30",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_30"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_laundry_01_31": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_laundry_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_laundry_01_31",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_laundry_01_31"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "appliances_radio_01_12_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_12_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_12"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_13_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_13_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_13"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_14_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_14_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_14"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_15_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_15_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_15"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_4_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_4_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_4"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_5_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_5_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_5"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_6_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_6_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_6"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "appliances_radio_01_7_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "appliances_radio_01",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "appliances_radio_01_7_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 408,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_radio_01_7"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "bar_bar_wall": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Bar",
+   "estado": "fila",
+   "familia": "bar",
+   "forma_de": null,
+   "group_name": "Bar Wall",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "bar_bar_wall",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_38",
+    "N": "location_restaurant_bar_01_113",
+    "S": "location_restaurant_bar_01_30",
+    "W": "location_restaurant_bar_01_116"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "bar_left_bar_wall": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Bar",
+   "estado": "fila",
+   "familia": "bar",
+   "forma_de": null,
+   "group_name": "Left Bar Wall",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "bar_left_bar_wall",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_37",
+    "N": "location_restaurant_bar_01_112",
+    "S": "location_restaurant_bar_01_29",
+    "W": "location_restaurant_bar_01_115"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "bar_right_bar_wall": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Bar",
+   "estado": "fila",
+   "familia": "bar",
+   "forma_de": null,
+   "group_name": "Right Bar Wall",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "bar_right_bar_wall",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_39",
+    "N": "location_restaurant_bar_01_114",
+    "S": "location_restaurant_bar_01_31",
+    "W": "location_restaurant_bar_01_117"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "barbecue_charcoal": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Barbecue",
+   "estado": "fila",
+   "familia": "barbecue",
+   "forma_de": null,
+   "group_name": "Charcoal",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "barbecue_charcoal",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "appliances_cooking_01_35"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "barbecue_full_jorge_foreguy": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Barbecue",
+   "estado": "fila",
+   "familia": "barbecue",
+   "forma_de": null,
+   "group_name": "Full Jorge Foreguy",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "barbecue_full_jorge_foreguy",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_37",
+    "N": "appliances_cooking_01_38",
+    "S": "appliances_cooking_01_36",
+    "W": "appliances_cooking_01_39"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "barbecue_jorge_foreguy": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Barbecue",
+   "estado": "fila",
+   "familia": "barbecue",
+   "forma_de": "barbecue_full_jorge_foreguy",
+   "group_name": "Jorge Foreguy",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "barbecue_jorge_foreguy",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_45",
+    "N": "appliances_cooking_01_46",
+    "S": "appliances_cooking_01_44",
+    "W": "appliances_cooking_01_47"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "brazier_simple": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Brazier",
+   "estado": "fila",
+   "familia": "brazier",
+   "forma_de": null,
+   "group_name": "Simple",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "brazier_simple",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_42"
+   },
+   "tileset": "crafted_02"
+  },
+  "brazier_simple_crafted_02": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Brazier",
+   "estado": "fila",
+   "familia": "brazier",
+   "forma_de": "brazier_simple",
+   "group_name": "Simple",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "brazier_simple_crafted_02",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_43"
+   },
+   "tileset": "crafted_02"
+  },
+  "brazier_simple_crafted_02_44": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Brazier",
+   "estado": "fila",
+   "familia": "brazier",
+   "forma_de": "brazier_simple",
+   "group_name": "Simple",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "brazier_simple_crafted_02_44",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_44"
+   },
+   "tileset": "crafted_02"
+  },
+  "charcoal_burner": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Charcoal Burner",
+   "estado": "fila",
+   "familia": "charcoal_burner",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "charcoal_burner",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_49"
+   },
+   "tileset": "crafted_02"
+  },
+  "charcoal_burner_crafted_02": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Charcoal Burner",
+   "estado": "fila",
+   "familia": "charcoal_burner",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "charcoal_burner_crafted_02",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_50"
+   },
+   "tileset": "crafted_02"
+  },
+  "charcoal_burner_crafted_02_51": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Charcoal Burner",
+   "estado": "fila",
+   "familia": "charcoal_burner",
+   "forma_de": "charcoal_burner_crafted_02",
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "charcoal_burner_crafted_02_51",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_51"
+   },
+   "tileset": "crafted_02"
+  },
+  "combo_washer_dryer_blue": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Combo Washer Dryer",
+   "estado": "fila",
+   "familia": "combo_washer_dryer",
+   "forma_de": null,
+   "group_name": "Blue",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "combo_washer_dryer_blue",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_laundry_01_1",
+    "N": "appliances_laundry_01_2",
+    "S": "appliances_laundry_01_0",
+    "W": "appliances_laundry_01_3"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "composter": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Composter",
+   "estado": "fila",
+   "familia": "composter",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "composter",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "S": "camping_01_19"
+   },
+   "tileset": "camping_01"
+  },
+  "composter_camping_01": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Composter",
+   "estado": "fila",
+   "familia": "composter",
+   "forma_de": "composter",
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "composter_camping_01",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "S": "camping_01_20"
+   },
+   "tileset": "camping_01"
+  },
+  "composter_carpentry_02": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Composter",
+   "estado": "fila",
+   "familia": "composter",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "composter_carpentry_02",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "S": "carpentry_02_116"
+   },
+   "tileset": "carpentry_02"
+  },
+  "composter_carpentry_02_117": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Composter",
+   "estado": "fila",
+   "familia": "composter",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "composter_carpentry_02_117",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "S": "carpentry_02_117"
+   },
+   "tileset": "carpentry_02"
+  },
+  "computer_desktop": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Computer",
+   "estado": "fila",
+   "familia": "computer",
+   "forma_de": null,
+   "group_name": "Desktop",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "computer_desktop",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_73",
+    "N": "appliances_com_01_74",
+    "S": "appliances_com_01_72",
+    "W": "appliances_com_01_75"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "conditioner_air": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": null,
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_4",
+    "S": "rooftop_furniture_5"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_32",
+    "S": "rooftop_furniture_33"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_35": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_35",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_34",
+    "S": "rooftop_furniture_35"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_37": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_37",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_36",
+    "S": "rooftop_furniture_37"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_39": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_39",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_38",
+    "S": "rooftop_furniture_39"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_41": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_41",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_40",
+    "S": "rooftop_furniture_41"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_43": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_43",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_42",
+    "S": "rooftop_furniture_43"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_45": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_45",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_44",
+    "S": "rooftop_furniture_45"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_47": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": null,
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_47",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_46",
+    "S": "rooftop_furniture_47"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_49": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_49",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_48",
+    "S": "rooftop_furniture_49"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_51": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_51",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_50",
+    "S": "rooftop_furniture_51"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_53": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_53",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_52",
+    "S": "rooftop_furniture_53"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "conditioner_air_rooftop_furniture_55": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Conditioner",
+   "estado": "fila",
+   "familia": "conditioner",
+   "forma_de": "conditioner_air",
+   "group_name": "Air",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "conditioner_air_rooftop_furniture_55",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 413,
+   "rodada": 0,
+   "sprites": {
+    "E": "rooftop_furniture_54",
+    "S": "rooftop_furniture_55"
+   },
+   "tileset": "rooftop_furniture"
+  },
+  "cooking_pit": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Cooking Pit",
+   "estado": "fila",
+   "familia": "cooking_pit",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "cooking_pit",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "S": "camping_03_19"
+   },
+   "tileset": "camping_03"
+  },
+  "cooking_pit_simple": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Cooking Pit",
+   "estado": "fila",
+   "familia": "cooking_pit",
+   "forma_de": null,
+   "group_name": "Simple",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "cooking_pit_simple",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "S": "camping_03_16"
+   },
+   "tileset": "camping_03"
+  },
+  "counter_bar": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Bar",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_bar",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_7",
+    "N": "location_restaurant_bar_01_1",
+    "S": "location_restaurant_bar_01_5",
+    "W": "location_restaurant_bar_01_3"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "counter_bar_corner": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Bar Corner",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_bar_corner",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_6",
+    "N": "location_restaurant_bar_01_0",
+    "S": "location_restaurant_bar_01_4",
+    "W": "location_restaurant_bar_01_2"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "counter_cantina_food": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Cantina Food",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_cantina_food",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_19",
+    "S": "location_restaurant_generic_01_20"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_cantina_food_location_restaurant_generic_01": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Cantina Food",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_cantina_food_location_restaurant_generic_01",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_19",
+    "S": "location_restaurant_generic_01_21"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_cantina_food_location_restaurant_generic_01_22": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Cantina Food",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_cantina_food_location_restaurant_generic_01_22",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_19",
+    "S": "location_restaurant_generic_01_22"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_cantina_food_location_restaurant_generic_01_23": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Cantina Food",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_cantina_food_location_restaurant_generic_01_23",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_19",
+    "S": "location_restaurant_generic_01_23"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_corner_a": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Corner A",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_corner_a",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_27",
+    "N": "location_restaurant_generic_01_34",
+    "S": "location_restaurant_generic_01_24",
+    "W": "location_restaurant_generic_01_37"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_corner_b": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": "counter_corner_a",
+   "group_name": "Corner B",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_corner_b",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_29",
+    "N": "location_restaurant_generic_01_32",
+    "S": "location_restaurant_generic_01_26",
+    "W": "location_restaurant_generic_01_35"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_dark_bar": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Dark Bar",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_dark_bar",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_23",
+    "N": "location_restaurant_bar_01_17",
+    "S": "location_restaurant_bar_01_21",
+    "W": "location_restaurant_bar_01_19"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "counter_dark_bar_corner": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Dark Bar Corner",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_dark_bar_corner",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_bar_01_22",
+    "N": "location_restaurant_bar_01_16",
+    "S": "location_restaurant_bar_01_20",
+    "W": "location_restaurant_bar_01_18"
+   },
+   "tileset": "location_restaurant_bar_01"
+  },
+  "counter_glass_theater": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Glass Theater",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_glass_theater",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_entertainment_theatre_01_5",
+    "N": "location_entertainment_theatre_01_4",
+    "S": "location_entertainment_theatre_01_6",
+    "W": "location_entertainment_theatre_01_7"
+   },
+   "tileset": "location_entertainment_theatre_01"
+  },
+  "counter_low_motel": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Low Motel",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_low_motel",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_hospitality_sunstarmotel_02_21",
+    "N": "location_hospitality_sunstarmotel_02_20",
+    "S": "location_hospitality_sunstarmotel_02_22",
+    "W": "location_hospitality_sunstarmotel_02_23"
+   },
+   "tileset": "location_hospitality_sunstarmotel_02"
+  },
+  "counter_low_motel_location_hospitality_sunstarmotel_02": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Low Motel",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_low_motel_location_hospitality_sunstarmotel_02",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_hospitality_sunstarmotel_02_53",
+    "N": "location_hospitality_sunstarmotel_02_52",
+    "S": "location_hospitality_sunstarmotel_02_54",
+    "W": "location_hospitality_sunstarmotel_02_55"
+   },
+   "tileset": "location_hospitality_sunstarmotel_02"
+  },
+  "counter_middle": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": "counter_corner_a",
+   "group_name": "Middle",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_middle",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_restaurant_generic_01_28",
+    "N": "location_restaurant_generic_01_33",
+    "S": "location_restaurant_generic_01_25",
+    "W": "location_restaurant_generic_01_36"
+   },
+   "tileset": "location_restaurant_generic_01"
+  },
+  "counter_mobile_tool": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Mobile Tool",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_mobile_tool",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_community_medical_01_50",
+    "N": "location_community_medical_01_51",
+    "S": "location_community_medical_01_49",
+    "W": "location_community_medical_01_48"
+   },
+   "tileset": "location_community_medical_01"
+  },
+  "counter_quality_crafted": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Quality Crafted",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_quality_crafted",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "carpentry_02_19",
+    "N": "carpentry_02_17",
+    "S": "carpentry_02_21",
+    "W": "carpentry_02_23"
+   },
+   "tileset": "carpentry_02"
+  },
+  "counter_quality_crafted_corner": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Counter",
+   "estado": "fila",
+   "familia": "counter",
+   "forma_de": null,
+   "group_name": "Quality Crafted Corner",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "counter_quality_crafted_corner",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 417,
+   "rodada": 0,
+   "sprites": {
+    "E": "carpentry_02_18",
+    "N": "carpentry_02_16",
+    "S": "carpentry_02_20",
+    "W": "carpentry_02_22"
+   },
+   "tileset": "carpentry_02"
+  },
+  "crafted_01_104": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_104",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_104"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_112": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_112",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_112"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_113": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": "crafted_01_112",
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_113",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_113"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_125": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_125",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_125"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_16": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_16",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_16"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_33": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_33",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_33"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_36": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_36",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_36"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_42": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_42",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_42"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_44": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_44",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_44"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_47": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_47",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_47"
+   },
+   "tileset": "crafted_01"
+  },
+  "crafted_01_56": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": null,
+   "estado": "fila",
+   "familia": "crafted_01",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "crafted_01_56",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 411,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_56"
+   },
+   "tileset": "crafted_01"
+  },
+  "deluxe_espresso": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Deluxe",
+   "estado": "fila",
+   "familia": "deluxe",
+   "forma_de": null,
+   "group_name": "Espresso",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "deluxe_espresso",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_60",
+    "N": "appliances_cooking_01_62",
+    "S": "appliances_cooking_01_61",
+    "W": "appliances_cooking_01_63"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "dish_satellite": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Dish",
+   "estado": "fila",
+   "familia": "dish",
+   "forma_de": null,
+   "group_name": "Satellite",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "dish_satellite",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_21",
+    "S": "appliances_com_01_20"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "dishwasher_brown": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Dishwasher",
+   "estado": "fila",
+   "familia": "dishwasher",
+   "forma_de": null,
+   "group_name": "Brown",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "dishwasher_brown",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_72",
+    "N": "appliances_cooking_01_75",
+    "S": "appliances_cooking_01_73",
+    "W": "appliances_cooking_01_74"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "dishwasher_metal": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Dishwasher",
+   "estado": "fila",
+   "familia": "dishwasher",
+   "forma_de": null,
+   "group_name": "Metal",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "dishwasher_metal",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_76",
+    "N": "appliances_cooking_01_79",
+    "S": "appliances_cooking_01_77",
+    "W": "appliances_cooking_01_78"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "forge_electric_blower": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Forge",
+   "estado": "fila",
+   "familia": "forge",
+   "forma_de": null,
+   "group_name": "Electric Blower",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "forge_electric_blower",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_52"
+   },
+   "tileset": "crafted_02"
+  },
+  "forge_electric_blower_crafted_02": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Forge",
+   "estado": "fila",
+   "familia": "forge",
+   "forma_de": null,
+   "group_name": "Electric Blower",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "forge_electric_blower_crafted_02",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_54"
+   },
+   "tileset": "crafted_02"
+  },
+  "forge_primitive": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Forge",
+   "estado": "fila",
+   "familia": "forge",
+   "forma_de": null,
+   "group_name": "Primitive",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "forge_primitive",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_01_45"
+   },
+   "tileset": "crafted_01"
+  },
+  "freezer_chest": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Freezer",
+   "estado": "fila",
+   "familia": "freezer",
+   "forma_de": null,
+   "group_name": "Chest",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "freezer_chest",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_49",
+    "N": "appliances_refrigeration_01_50",
+    "S": "appliances_refrigeration_01_48",
+    "W": "appliances_refrigeration_01_51"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_blue": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "Blue",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_blue",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_5",
+    "N": "appliances_refrigeration_01_6",
+    "S": "appliances_refrigeration_01_4",
+    "W": "appliances_refrigeration_01_7"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_industrial": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "Industrial",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_industrial",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_23",
+    "N": "appliances_refrigeration_01_36",
+    "S": "appliances_refrigeration_01_22",
+    "W": "appliances_refrigeration_01_37"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_mini": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "Mini",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_mini",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_24",
+    "N": "appliances_refrigeration_01_27",
+    "S": "appliances_refrigeration_01_25",
+    "W": "appliances_refrigeration_01_26"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_steel": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "Steel",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_steel",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_9",
+    "N": "appliances_refrigeration_01_10",
+    "S": "appliances_refrigeration_01_8",
+    "W": "appliances_refrigeration_01_11"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_white": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "White",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_white",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_1",
+    "N": "appliances_refrigeration_01_2",
+    "S": "appliances_refrigeration_01_0",
+    "W": "appliances_refrigeration_01_3"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "fridge_white_industrial": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Fridge",
+   "estado": "fila",
+   "familia": "fridge",
+   "forma_de": null,
+   "group_name": "White Industrial",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "fridge_white_industrial",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_refrigeration_01_41",
+    "N": "appliances_refrigeration_01_42",
+    "S": "appliances_refrigeration_01_40",
+    "W": "appliances_refrigeration_01_43"
+   },
+   "tileset": "appliances_refrigeration_01"
+  },
+  "generator_blue": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Generator",
+   "estado": "fila",
+   "familia": "generator",
+   "forma_de": null,
+   "group_name": "Blue",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "generator_blue",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_misc_01_13",
+    "N": "appliances_misc_01_14",
+    "S": "appliances_misc_01_12",
+    "W": "appliances_misc_01_15"
+   },
+   "tileset": "appliances_misc_01"
+  },
+  "generator_old": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Generator",
+   "estado": "fila",
+   "familia": "generator",
+   "forma_de": null,
+   "group_name": "Old",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "generator_old",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_misc_01_4",
+    "N": "appliances_misc_01_7",
+    "S": "appliances_misc_01_5",
+    "W": "appliances_misc_01_6"
+   },
+   "tileset": "appliances_misc_01"
+  },
+  "generator_red": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Generator",
+   "estado": "fila",
+   "familia": "generator",
+   "forma_de": null,
+   "group_name": "Red",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "generator_red",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_misc_01_0",
+    "N": "appliances_misc_01_3",
+    "S": "appliances_misc_01_1",
+    "W": "appliances_misc_01_2"
+   },
+   "tileset": "appliances_misc_01"
+  },
+  "hk533p_imekagi": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "HK533p",
+   "estado": "fila",
+   "familia": "hk533p",
+   "forma_de": null,
+   "group_name": "Imekagi",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "hk533p_imekagi",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_45",
+    "N": "appliances_com_01_47",
+    "S": "appliances_com_01_44",
+    "W": "appliances_com_01_46"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "hood_extractor": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Hood",
+   "estado": "fila",
+   "familia": "hood",
+   "forma_de": null,
+   "group_name": "Extractor",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "hood_extractor",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_68",
+    "N": "appliances_cooking_01_70",
+    "S": "appliances_cooking_01_69",
+    "W": "appliances_cooking_01_71"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "industrial_2000_fryers_club": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Industrial 2000",
+   "estado": "fila",
+   "familia": "industrial_2000",
+   "forma_de": null,
+   "group_name": "Fryers Club",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "industrial_2000_fryers_club",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_52",
+    "N": "appliances_cooking_01_55",
+    "S": "appliances_cooking_01_53",
+    "W": "appliances_cooking_01_54"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "industrial_bake_o_matic": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Industrial",
+   "estado": "fila",
+   "familia": "industrial",
+   "forma_de": null,
+   "group_name": "Bake-O-Matic",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "industrial_bake_o_matic",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_64",
+    "N": "appliances_cooking_01_67",
+    "S": "appliances_cooking_01_65",
+    "W": "appliances_cooking_01_66"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "lightcharcoal_burner": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "LightCharcoal Burner",
+   "estado": "fila",
+   "familia": "lightcharcoal_burner",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "lightcharcoal_burner",
+   "material": "liso",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "S": "crafted_02_48"
+   },
+   "tileset": "crafted_02"
+  },
+  "machine_large": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Machine",
+   "estado": "fila",
+   "familia": "machine",
+   "forma_de": null,
+   "group_name": "Large",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "machine_large",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_shop_accessories_01_16",
+    "S": "location_shop_accessories_01_17"
+   },
+   "tileset": "location_shop_accessories_01"
+  },
+  "machine_small_soda": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Machine",
+   "estado": "fila",
+   "familia": "machine",
+   "forma_de": null,
+   "group_name": "Small Soda",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "machine_small_soda",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_shop_accessories_01_18",
+    "S": "location_shop_accessories_01_19"
+   },
+   "tileset": "location_shop_accessories_01"
+  },
+  "microphone_standing": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Microphone",
+   "estado": "fila",
+   "familia": "microphone",
+   "forma_de": null,
+   "group_name": "Standing",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "microphone_standing",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_71",
+    "N": "appliances_com_01_68",
+    "S": "appliances_com_01_69",
+    "W": "appliances_com_01_70"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "microwave_chrome": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Microwave",
+   "estado": "fila",
+   "familia": "microwave",
+   "forma_de": null,
+   "group_name": "Chrome",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "microwave_chrome",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_29",
+    "N": "appliances_cooking_01_31",
+    "S": "appliances_cooking_01_28",
+    "W": "appliances_cooking_01_30"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "microwave_white": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Microwave",
+   "estado": "fila",
+   "familia": "microwave",
+   "forma_de": null,
+   "group_name": "White",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "microwave_white",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_24",
+    "N": "appliances_cooking_01_27",
+    "S": "appliances_cooking_01_25",
+    "W": "appliances_cooking_01_26"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_antique": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Antique",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_antique",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_16",
+    "N": "appliances_cooking_01_18",
+    "S": "appliances_cooking_01_17",
+    "W": "appliances_cooking_01_19"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_crafted": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Crafted",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_crafted",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "crafted_05_6",
+    "N": "crafted_05_4",
+    "S": "crafted_05_7",
+    "W": "crafted_05_5"
+   },
+   "tileset": "crafted_05"
+  },
+  "oven_green": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Green",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_green",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_0",
+    "N": "appliances_cooking_01_3",
+    "S": "appliances_cooking_01_1",
+    "W": "appliances_cooking_01_2"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_grey": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Grey",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_grey",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_4",
+    "N": "appliances_cooking_01_7",
+    "S": "appliances_cooking_01_5",
+    "W": "appliances_cooking_01_6"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_industrial": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Industrial",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_industrial",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_20",
+    "N": "appliances_cooking_01_23",
+    "S": "appliances_cooking_01_21",
+    "W": "appliances_cooking_01_22"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_modern": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Modern",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_modern",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_12",
+    "N": "appliances_cooking_01_15",
+    "S": "appliances_cooking_01_13",
+    "W": "appliances_cooking_01_14"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "oven_red": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Oven",
+   "estado": "fila",
+   "familia": "oven",
+   "forma_de": null,
+   "group_name": "Red",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "oven_red",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 407,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_8",
+    "N": "appliances_cooking_01_11",
+    "S": "appliances_cooking_01_9",
+    "W": "appliances_cooking_01_10"
+   },
+   "tileset": "appliances_cooking_01"
+  },
+  "phone_beige_rotary": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Phone",
+   "estado": "fila",
+   "familia": "phone",
+   "forma_de": null,
+   "group_name": "Beige Rotary",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "phone_beige_rotary",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_business_office_generic_02_0",
+    "N": "location_business_office_generic_02_3",
+    "S": "location_business_office_generic_02_1",
+    "W": "location_business_office_generic_02_2"
+   },
+   "tileset": "location_business_office_generic_02"
+  },
+  "phone_white_modern": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Phone",
+   "estado": "fila",
+   "familia": "phone",
+   "forma_de": null,
+   "group_name": "White Modern",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "phone_white_modern",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 402,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_business_office_generic_02_19",
+    "N": "location_business_office_generic_02_18",
+    "S": "location_business_office_generic_02_16",
+    "W": "location_business_office_generic_02_17"
+   },
+   "tileset": "location_business_office_generic_02"
+  },
+  "projector_cinema": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Projector",
+   "estado": "fila",
+   "familia": "projector",
+   "forma_de": null,
+   "group_name": "Cinema",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "projector_cinema",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_85",
+    "N": "appliances_com_01_87",
+    "S": "appliances_com_01_84",
+    "W": "appliances_com_01_86"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "radio_makeshift": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Radio",
+   "estado": "fila",
+   "familia": "radio",
+   "forma_de": null,
+   "group_name": "Makeshift",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "radio_makeshift",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_radio_01_17",
+    "N": "appliances_radio_01_18",
+    "S": "appliances_radio_01_16",
+    "W": "appliances_radio_01_19"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "radio_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Radio",
+   "estado": "fila",
+   "familia": "radio",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "radio_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_radio_01_9",
+    "N": "appliances_radio_01_10",
+    "S": "appliances_radio_01_8",
+    "W": "appliances_radio_01_11"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "radio_premium_technologies_ham": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Radio",
+   "estado": "fila",
+   "familia": "radio",
+   "forma_de": null,
+   "group_name": "Premium Technologies Ham",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "radio_premium_technologies_ham",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_1",
+    "N": "appliances_com_01_2",
+    "S": "appliances_com_01_0",
+    "W": "appliances_com_01_3"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "radio_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Radio",
+   "estado": "fila",
+   "familia": "radio",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "radio_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 404,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_radio_01_1",
+    "N": "appliances_radio_01_2",
+    "S": "appliances_radio_01_0",
+    "W": "appliances_radio_01_3"
+   },
+   "tileset": "appliances_radio_01"
+  },
+  "shelves_generic_cooled": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Shelves",
+   "estado": "fila",
+   "familia": "shelves",
+   "forma_de": null,
+   "group_name": "Generic Cooled",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "shelves_generic_cooled",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_shop_generic_01_67",
+    "S": "location_shop_generic_01_64"
+   },
+   "tileset": "location_shop_generic_01"
+  },
+  "shelves_generic_cooled_location_shop_generic_01": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Shelves",
+   "estado": "fila",
+   "familia": "shelves",
+   "forma_de": null,
+   "group_name": "Generic Cooled",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "shelves_generic_cooled_location_shop_generic_01",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_shop_generic_01_67",
+    "S": "location_shop_generic_01_65"
+   },
+   "tileset": "location_shop_generic_01"
+  },
+  "shelves_generic_cooled_location_shop_generic_01_66": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Shelves",
+   "estado": "fila",
+   "familia": "shelves",
+   "forma_de": null,
+   "group_name": "Generic Cooled",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "shelves_generic_cooled_location_shop_generic_01_66",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_shop_generic_01_67",
+    "S": "location_shop_generic_01_66"
+   },
+   "tileset": "location_shop_generic_01"
+  },
+  "sink_chrome": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "Chrome",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_chrome",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_8",
+    "N": "fixtures_sinks_01_11",
+    "S": "fixtures_sinks_01_9",
+    "W": "fixtures_sinks_01_10"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "sink_fancy_hanging": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "Fancy Hanging",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_fancy_hanging",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_25",
+    "S": "fixtures_sinks_01_24"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "sink_industrial": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "Industrial",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_industrial",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_4",
+    "N": "fixtures_sinks_01_7",
+    "S": "fixtures_sinks_01_5",
+    "W": "fixtures_sinks_01_6"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "sink_large_industrial": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "Large Industrial",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_large_industrial",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_32",
+    "N": "fixtures_sinks_01_35",
+    "S": "fixtures_sinks_01_33",
+    "W": "fixtures_sinks_01_34"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "sink_white_hanging": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "White Hanging",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_white_hanging",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_15",
+    "N": "fixtures_sinks_01_30",
+    "S": "fixtures_sinks_01_14",
+    "W": "fixtures_sinks_01_31"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "sink_white_standing": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Sink",
+   "estado": "fila",
+   "familia": "sink",
+   "forma_de": null,
+   "group_name": "White Standing",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "sink_white_standing",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 406,
+   "rodada": 0,
+   "sprites": {
+    "E": "fixtures_sinks_01_13",
+    "N": "fixtures_sinks_01_28",
+    "S": "fixtures_sinks_01_12",
+    "W": "fixtures_sinks_01_29"
+   },
+   "tileset": "fixtures_sinks_01"
+  },
+  "square_theater_counter": {
+   "categoria": "cozinha",
+   "comentario_usuario": null,
+   "custom_name": "Square Theater Counter",
+   "estado": "fila",
+   "familia": "square_theater_counter",
+   "forma_de": null,
+   "group_name": null,
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "square_theater_counter",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "S": "location_entertainment_theatre_01_16"
+   },
+   "tileset": "location_entertainment_theatre_01"
+  },
+  "television_antique": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Television",
+   "estado": "fila",
+   "familia": "television",
+   "forma_de": null,
+   "group_name": "Antique",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "television_antique",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_television_01_8",
+    "N": "appliances_television_01_11",
+    "S": "appliances_television_01_9",
+    "W": "appliances_television_01_10"
+   },
+   "tileset": "appliances_television_01"
+  },
+  "television_premium_technologies": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Television",
+   "estado": "fila",
+   "familia": "television",
+   "forma_de": null,
+   "group_name": "Premium Technologies",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "television_premium_technologies",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_television_01_0",
+    "N": "appliances_television_01_3",
+    "S": "appliances_television_01_1",
+    "W": "appliances_television_01_2"
+   },
+   "tileset": "appliances_television_01"
+  },
+  "television_valutech": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Television",
+   "estado": "fila",
+   "familia": "television",
+   "forma_de": null,
+   "group_name": "ValuTech",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "television_valutech",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 403,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_television_01_5",
+    "N": "appliances_television_01_6",
+    "S": "appliances_television_01_4",
+    "W": "appliances_television_01_7"
+   },
+   "tileset": "appliances_television_01"
+  },
+  "terminal_cerosec": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Terminal",
+   "estado": "fila",
+   "familia": "terminal",
+   "forma_de": null,
+   "group_name": "CeroSec",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "terminal_cerosec",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_com_01_53",
+    "N": "appliances_com_01_54",
+    "S": "appliances_com_01_52",
+    "W": "appliances_com_01_55"
+   },
+   "tileset": "appliances_com_01"
+  },
+  "trough_small_animal": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Trough",
+   "estado": "fila",
+   "familia": "trough",
+   "forma_de": null,
+   "group_name": "Small Animal",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "trough_small_animal",
+   "material": "madeira",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "location_farm_accesories_01_14",
+    "S": "location_farm_accesories_01_15"
+   },
+   "tileset": "location_farm_accesories_01"
+  },
+  "washing_machine_white": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "Washing Machine",
+   "estado": "fila",
+   "familia": "washing_machine",
+   "forma_de": null,
+   "group_name": "White",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "washing_machine_white",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_laundry_01_5",
+    "N": "appliances_laundry_01_6",
+    "S": "appliances_laundry_01_4",
+    "W": "appliances_laundry_01_7"
+   },
+   "tileset": "appliances_laundry_01"
+  },
+  "x_press_coffee": {
+   "categoria": "eletrodomesticos",
+   "comentario_usuario": null,
+   "custom_name": "X-press",
+   "estado": "fila",
+   "familia": "x_press",
+   "forma_de": null,
+   "group_name": "Coffee",
+   "historico": [
+    {
+     "de": null,
+     "nota": "criado por popular",
+     "para": "fila",
+     "quando": "2026-10-12T19:39:40-03:00"
+    }
+   ],
+   "id": "x_press_coffee",
+   "material": "metal",
+   "motivo": null,
+   "notas": [],
+   "prioridade": 401,
+   "rodada": 0,
+   "sprites": {
+    "E": "appliances_cooking_01_57",
+    "N": "appliances_cooking_01_59",
+    "S": "appliances_cooking_01_56",
+    "W": "appliances_cooking_01_58"
+   },
+   "tileset": "appliances_cooking_01"
+  }
+ },
+ "versao": 1
+}

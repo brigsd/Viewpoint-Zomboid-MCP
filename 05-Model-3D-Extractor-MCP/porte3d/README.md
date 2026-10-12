@@ -36,7 +36,18 @@ Precisa do Blender 5.2, por padrão o da Steam. Outro caminho pode ser indicado 
 | `folhas.py` | folhas para o crítico (comparação, giro, wireframe com legenda, sobreposição de contorno, zoom) e as medidas |
 | `portar.py` | o caminho completo de um objeto |
 | `conferir_formas.py` | folha que desenha a geometria do jogo convertida por cima dos sprites, para conferir a conversão |
-| `receitas/` | as receitas (dado nosso, versionado) |
+| `prever.py` | prévia rápida da receita sobre o desenho do jogo, sem Blender (ferramenta do modelador) |
+| `inspecao.py` | medições do inspetor: cobertura da geometria, pé escondido, espelhamento, objeto de parede, dicas |
+| `ficha.schema.json`, `veredito.schema.json`, `veredito.py` | contratos do inspetor e do crítico; `veredito.py` extrai e valida o JSON do crítico |
+| `fila.py`, `fila/fila.json` | estados de cada objeto, com transições validadas; é o único que grava a fila |
+| `relatorio.py` | lista final de reprovados e não portados (gerada por script) |
+| `galeria.py` | página local de aprovação (`servir` abre em 127.0.0.1:8765) |
+| `calibracao/` | casos e resultado da calibração do inspetor e do crítico |
+| `receitas/`, `fichas/`, `vereditos/` | o que a esteira produz (dado nosso, versionado) |
+
+## Esteira com agentes
+
+O laço inspetor → modelador → crítico está na skill `.claude/skills/porte-3d/SKILL.md`, e os agentes estão em `.claude/agents/` (`inspetor-3d`, `modelador-3d` e `critico-3d`).
 
 ## Testes
 
