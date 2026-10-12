@@ -16,6 +16,7 @@ Candidatos esperando decisão estão no [`BACKLOG.md`](BACKLOG.md).
 
 | Data | Plano | Resultado |
 | :--- | :--- | :--- |
+| 2026-10-11 | [Acervo de objetos do jogo com textura](concluidos/2026-10-11-acervo-de-objetos.md) | 42.544 objetos com imagem, propriedades, geometria 3D e profundidade, com alinhamento comprovado |
 | 2026-10-11 | [Base de conhecimento da API 42.21 (camada 2)](concluidos/2026-10-11-base-de-conhecimento-api.md) | Índice da API real consultado pelo `pz-live` + skill `pz-modding`; 23/23 no índice e no jogo vivo |
 | 2026-10-11 | [Laboratório headless (camada 1)](concluidos/2026-10-11-laboratorio-headless.md) | Servidor dedicado sem janela + MCP `pz-live`; mod de prova passa 29/31, 0 falhas |
 

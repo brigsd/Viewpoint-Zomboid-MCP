@@ -54,3 +54,6 @@ Thumbs.db
 
 # Base de conhecimento da API (Módulo 07): dados gerados a partir do jogo, não redistribuir
 /07-PZ-API-Knowledge/data/
+
+# Acervo de objetos (Módulo 05): imagens e catálogo extraídos do jogo, não redistribuir
+/05-Model-3D-Extractor-MCP/acervo/data/
