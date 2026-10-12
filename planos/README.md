@@ -2,7 +2,9 @@
 
 ## Estado
 
-**Plano ativo:** nenhum.
+**Plano ativo:** [Esteira de porte 3D](2026-10-12-esteira-de-porte-3d.md).
+
+Agentes que portam os objetos do jogo para 3D (portador), um crítico visual que só olha as imagens (inclusive o wireframe) e aprovação do usuário numa galeria, em dois níveis gráficos (arte e realista), publicados num mod próprio que o Viewpoint carrega. Começa com a prova de 1 objeto no jogo e termina com um piloto de 10.
 
 Candidatos esperando decisão estão no [`BACKLOG.md`](BACKLOG.md).
 

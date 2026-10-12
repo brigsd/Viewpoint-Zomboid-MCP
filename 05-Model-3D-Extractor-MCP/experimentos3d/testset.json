@@ -1,0 +1,472 @@
+[
+ {
+  "key": "appliances_cooking_01 | Barbecue | Full Jorge Foreguy",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_cooking_01_36",
+   "E": "appliances_cooking_01_37",
+   "N": "appliances_cooking_01_38",
+   "W": "appliances_cooking_01_39"
+  }
+ },
+ {
+  "key": "appliances_laundry_01 | Combo Washer Dryer | Blue",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_laundry_01_0",
+   "E": "appliances_laundry_01_1",
+   "N": "appliances_laundry_01_2",
+   "W": "appliances_laundry_01_3"
+  }
+ },
+ {
+  "key": "appliances_cooking_01 | Microwave | Chrome",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_cooking_01_28",
+   "E": "appliances_cooking_01_29",
+   "W": "appliances_cooking_01_30",
+   "N": "appliances_cooking_01_31"
+  }
+ },
+ {
+  "key": "appliances_refrigeration_01 | Fridge | Plain",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_refrigeration_01_28",
+   "E": "appliances_refrigeration_01_29",
+   "N": "appliances_refrigeration_01_30",
+   "W": "appliances_refrigeration_01_31"
+  }
+ },
+ {
+  "key": "appliances_com_01 | Terminal | CeroSec",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_com_01_52",
+   "E": "appliances_com_01_53",
+   "N": "appliances_com_01_54",
+   "W": "appliances_com_01_55"
+  }
+ },
+ {
+  "key": "appliances_refrigeration_01 | Fridge | Red",
+  "category": "eletrodomesticos",
+  "names": {
+   "S": "appliances_refrigeration_01_32",
+   "E": "appliances_refrigeration_01_33",
+   "N": "appliances_refrigeration_01_34",
+   "W": "appliances_refrigeration_01_35"
+  }
+ },
+ {
+  "key": "carpentry_02 | Counter | Poorly Crafted Corner",
+  "category": "cozinha",
+  "names": {
+   "N": "carpentry_02_32",
+   "E": "carpentry_02_34",
+   "S": "carpentry_02_36",
+   "W": "carpentry_02_38"
+  }
+ },
+ {
+  "key": "location_trailer_02 | Counter | Floating Trailer Corner",
+  "category": "cozinha",
+  "names": {
+   "N": "location_trailer_02_68",
+   "E": "location_trailer_02_69",
+   "S": "location_trailer_02_70",
+   "W": "location_trailer_02_71"
+  }
+ },
+ {
+  "key": "fixtures_sinks_01 | Sink | White Standing",
+  "category": "cozinha",
+  "names": {
+   "S": "fixtures_sinks_01_12",
+   "E": "fixtures_sinks_01_13",
+   "N": "fixtures_sinks_01_28",
+   "W": "fixtures_sinks_01_29"
+  }
+ },
+ {
+  "key": "location_entertainment_theatre_01 | Counter | Glass Theater",
+  "category": "cozinha",
+  "names": {
+   "N": "location_entertainment_theatre_01_4",
+   "E": "location_entertainment_theatre_01_5",
+   "S": "location_entertainment_theatre_01_6",
+   "W": "location_entertainment_theatre_01_7"
+  }
+ },
+ {
+  "key": "location_shop_gas2go_01 | Counter | Gas2Go",
+  "category": "cozinha",
+  "names": {
+   "N": "location_shop_gas2go_01_17",
+   "E": "location_shop_gas2go_01_19",
+   "S": "location_shop_gas2go_01_21",
+   "W": "location_shop_gas2go_01_23"
+  }
+ },
+ {
+  "key": "carpentry_02 | Counter | Poorly Crafted",
+  "category": "cozinha",
+  "names": {
+   "N": "carpentry_02_33",
+   "E": "carpentry_02_35",
+   "S": "carpentry_02_37",
+   "W": "carpentry_02_39"
+  }
+ },
+ {
+  "key": "furniture_seating_indoor_03 | Chair | Rocking 2",
+  "category": "moveis",
+  "names": {
+   "E": "furniture_seating_indoor_03_148",
+   "S": "furniture_seating_indoor_03_149",
+   "N": "furniture_seating_indoor_03_150",
+   "W": "furniture_seating_indoor_03_151"
+  }
+ },
+ {
+  "key": "furniture_seating_indoor_03 | Chair | White Simple",
+  "category": "moveis",
+  "names": {
+   "E": "furniture_seating_indoor_03_56",
+   "S": "furniture_seating_indoor_03_57",
+   "W": "furniture_seating_indoor_03_58",
+   "N": "furniture_seating_indoor_03_59"
+  }
+ },
+ {
+  "key": "furniture_seating_indoor_02 | Chair | White Lazy",
+  "category": "moveis",
+  "names": {
+   "S": "furniture_seating_indoor_02_20",
+   "E": "furniture_seating_indoor_02_21",
+   "W": "furniture_seating_indoor_02_22",
+   "N": "furniture_seating_indoor_02_23"
+  }
+ },
+ {
+  "key": "furniture_storage_01 | Table | Small",
+  "category": "moveis",
+  "names": {
+   "S": "furniture_storage_01_52",
+   "E": "furniture_storage_01_53",
+   "W": "furniture_storage_01_54",
+   "N": "furniture_storage_01_55"
+  }
+ },
+ {
+  "key": "recreational_01 | Machine | Dr. Oids Arcade",
+  "category": "moveis",
+  "names": {
+   "S": "recreational_01_16",
+   "E": "recreational_01_17",
+   "W": "recreational_01_18",
+   "N": "recreational_01_19"
+  }
+ },
+ {
+  "key": "furniture_shelving_01 | Shelves | Corner B",
+  "category": "moveis",
+  "names": {
+   "S": "furniture_shelving_01_18",
+   "E": "furniture_shelving_01_22",
+   "N": "furniture_shelving_01_48",
+   "W": "furniture_shelving_01_52"
+  }
+ },
+ {
+  "key": "street_decoration_01 | Box | Mail",
+  "category": "containers",
+  "names": {
+   "E": "street_decoration_01_18",
+   "S": "street_decoration_01_19",
+   "W": "street_decoration_01_20",
+   "N": "street_decoration_01_21"
+  }
+ },
+ {
+  "key": "furniture_shelving_01 | Shelves | Metal Wall",
+  "category": "containers",
+  "names": {
+   "S": "furniture_shelving_01_28",
+   "E": "furniture_shelving_01_29",
+   "W": "furniture_shelving_01_30",
+   "N": "furniture_shelving_01_31"
+  }
+ },
+ {
+  "key": "location_shop_accessories_01 | Register | Black Cash",
+  "category": "containers",
+  "names": {
+   "E": "location_shop_accessories_01_20",
+   "S": "location_shop_accessories_01_21",
+   "N": "location_shop_accessories_01_22",
+   "W": "location_shop_accessories_01_23"
+  }
+ },
+ {
+  "key": "furniture_storage_02 | Locker | Yellow Wall",
+  "category": "containers",
+  "names": {
+   "E": "furniture_storage_02_12",
+   "S": "furniture_storage_02_13",
+   "W": "furniture_storage_02_14",
+   "N": "furniture_storage_02_15"
+  }
+ },
+ {
+  "key": "furniture_shelving_01 | Shelves | Dark Wall",
+  "category": "containers",
+  "names": {
+   "E": "furniture_shelving_01_34",
+   "S": "furniture_shelving_01_35",
+   "W": "furniture_shelving_01_58",
+   "N": "furniture_shelving_01_59"
+  }
+ },
+ {
+  "key": "location_shop_zippee_01 | Shelves | Zippee Wall",
+  "category": "containers",
+  "names": {
+   "W": "location_shop_zippee_01_0",
+   "N": "location_shop_zippee_01_1",
+   "S": "location_shop_zippee_01_2",
+   "E": "location_shop_zippee_01_3"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_01 | Toilet | Hanging",
+  "category": "banheiro",
+  "names": {
+   "N": "fixtures_bathroom_01_10",
+   "W": "fixtures_bathroom_01_11",
+   "S": "fixtures_bathroom_01_8",
+   "E": "fixtures_bathroom_01_9"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_02 | Toilet | Chemical",
+  "category": "banheiro",
+  "names": {
+   "W": "fixtures_bathroom_02_14",
+   "N": "fixtures_bathroom_02_15",
+   "S": "fixtures_bathroom_02_4",
+   "E": "fixtures_bathroom_02_5"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_01 | Toilet | Low",
+  "category": "banheiro",
+  "names": {
+   "S": "fixtures_bathroom_01_4",
+   "E": "fixtures_bathroom_01_5",
+   "W": "fixtures_bathroom_01_6",
+   "N": "fixtures_bathroom_01_7"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_01 | Shower | Wall",
+  "category": "banheiro",
+  "names": {
+   "N": "fixtures_bathroom_01_22",
+   "W": "fixtures_bathroom_01_23",
+   "S": "fixtures_bathroom_01_30",
+   "E": "fixtures_bathroom_01_31"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_01 | Toilet | Fancy",
+  "category": "banheiro",
+  "names": {
+   "S": "fixtures_bathroom_01_0",
+   "E": "fixtures_bathroom_01_1",
+   "W": "fixtures_bathroom_01_2",
+   "N": "fixtures_bathroom_01_3"
+  }
+ },
+ {
+  "key": "fixtures_bathroom_01 | Cabinet | Medicine",
+  "category": "banheiro",
+  "names": {
+   "S": "fixtures_bathroom_01_28",
+   "E": "fixtures_bathroom_01_29",
+   "N": "fixtures_bathroom_01_37",
+   "W": "fixtures_bathroom_01_38"
+  }
+ },
+ {
+  "key": "lighting_indoor_02 | Wall Light | Fluorescent",
+  "category": "iluminacao",
+  "names": {
+   "E": "lighting_indoor_02_44",
+   "S": "lighting_indoor_02_45",
+   "N": "lighting_indoor_02_46",
+   "W": "lighting_indoor_02_47"
+  }
+ },
+ {
+  "key": "lighting_outdoor_01 | Outdoor Lamp | Antique",
+  "category": "iluminacao",
+  "names": {
+   "S": "lighting_outdoor_01_26",
+   "E": "lighting_outdoor_01_27",
+   "N": "lighting_outdoor_01_30",
+   "W": "lighting_outdoor_01_31"
+  }
+ },
+ {
+  "key": "lighting_outdoor_01 | Outdoor Lamp | Oval",
+  "category": "iluminacao",
+  "names": {
+   "S": "lighting_outdoor_01_40",
+   "E": "lighting_outdoor_01_41",
+   "N": "lighting_outdoor_01_44",
+   "W": "lighting_outdoor_01_45"
+  }
+ },
+ {
+  "key": "lighting_indoor_01 | Lamp | Blue",
+  "category": "iluminacao",
+  "names": {
+   "E": "lighting_indoor_01_12",
+   "S": "lighting_indoor_01_36",
+   "W": "lighting_indoor_01_44",
+   "N": "lighting_indoor_01_52"
+  }
+ },
+ {
+  "key": "lighting_indoor_02 | Lamp | Small Red",
+  "category": "iluminacao",
+  "names": {
+   "N": "lighting_indoor_02_16",
+   "W": "lighting_indoor_02_17",
+   "E": "lighting_indoor_02_18",
+   "S": "lighting_indoor_02_19"
+  }
+ },
+ {
+  "key": "lighting_indoor_01 | Lamp | Grey",
+  "category": "iluminacao",
+  "names": {
+   "E": "lighting_indoor_01_11",
+   "N": "lighting_indoor_01_9",
+   "S": "lighting_indoor_01_35",
+   "W": "lighting_indoor_01_43"
+  }
+ },
+ {
+  "key": "fixtures_windows_curtains_01 | Curtain | Black",
+  "category": "decoracao",
+  "names": {
+   "E": "fixtures_windows_curtains_01_76",
+   "W": "fixtures_windows_curtains_01_77",
+   "S": "fixtures_windows_curtains_01_78",
+   "N": "fixtures_windows_curtains_01_79"
+  }
+ },
+ {
+  "key": "fixtures_windows_curtains_02 | Curtain | None",
+  "category": "decoracao",
+  "names": {
+   "E": "fixtures_windows_curtains_02_8",
+   "W": "fixtures_windows_curtains_02_9",
+   "S": "fixtures_windows_curtains_02_26",
+   "N": "fixtures_windows_curtains_02_3"
+  }
+ },
+ {
+  "key": "location_restaurant_spiffos_02 | Sign | Spiffos Arrow",
+  "category": "decoracao",
+  "names": {
+   "E": "location_restaurant_spiffos_02_56",
+   "S": "location_restaurant_spiffos_02_57",
+   "N": "location_restaurant_spiffos_02_58",
+   "W": "location_restaurant_spiffos_02_59"
+  }
+ },
+ {
+  "key": "fixtures_windows_curtains_01 | Curtain | Grey Long",
+  "category": "decoracao",
+  "names": {
+   "E": "fixtures_windows_curtains_01_92",
+   "W": "fixtures_windows_curtains_01_93",
+   "S": "fixtures_windows_curtains_01_94",
+   "N": "fixtures_windows_curtains_01_95"
+  }
+ },
+ {
+  "key": "fixtures_windows_curtains_02 | Curtain | Small Bordeaux",
+  "category": "decoracao",
+  "names": {
+   "E": "fixtures_windows_curtains_02_20",
+   "W": "fixtures_windows_curtains_02_21",
+   "S": "fixtures_windows_curtains_02_22",
+   "N": "fixtures_windows_curtains_02_23"
+  }
+ },
+ {
+  "key": "constructedobjects_signs_01 | Skull on Pole | Cow",
+  "category": "decoracao",
+  "names": {
+   "S": "constructedobjects_signs_01_60",
+   "N": "constructedobjects_signs_01_61",
+   "W": "constructedobjects_signs_01_62",
+   "E": "constructedobjects_signs_01_63"
+  }
+ },
+ {
+  "key": "vegetation_ornamental_01 | Hedge | Low Corner",
+  "category": "vegetacao",
+  "names": {
+   "W": "vegetation_ornamental_01_12",
+   "E": "vegetation_ornamental_01_13",
+   "S": "vegetation_ornamental_01_6",
+   "N": "vegetation_ornamental_01_7"
+  }
+ },
+ {
+  "key": "vegetation_ornamental_01 | Flamingo | Pecking Imitation",
+  "category": "vegetacao",
+  "names": {
+   "S": "vegetation_ornamental_01_40",
+   "E": "vegetation_ornamental_01_41",
+   "W": "vegetation_ornamental_01_42",
+   "N": "vegetation_ornamental_01_43"
+  }
+ },
+ {
+  "key": "vegetation_ornamental_01 | The Gnome | David",
+  "category": "vegetacao",
+  "names": {
+   "S": "vegetation_ornamental_01_48",
+   "E": "vegetation_ornamental_01_49",
+   "W": "vegetation_ornamental_01_56",
+   "N": "vegetation_ornamental_01_57"
+  }
+ },
+ {
+  "key": "vegetation_ornamental_01 | Hedge | Tall Corner",
+  "category": "vegetacao",
+  "names": {
+   "W": "vegetation_ornamental_01_10",
+   "E": "vegetation_ornamental_01_11",
+   "S": "vegetation_ornamental_01_2",
+   "N": "vegetation_ornamental_01_3"
+  }
+ },
+ {
+  "key": "vegetation_ornamental_01 | Flamingo | Imitation",
+  "category": "vegetacao",
+  "names": {
+   "S": "vegetation_ornamental_01_24",
+   "E": "vegetation_ornamental_01_25",
+   "W": "vegetation_ornamental_01_26",
+   "N": "vegetation_ornamental_01_27"
+  }
+ }
+]
