@@ -2,39 +2,113 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Receita de porte 3D (porte3d, versão 1)",
   "type": "object",
-  "required": ["versao", "id", "sprites", "pecas", "arte"],
+  "required": [
+    "versao",
+    "id",
+    "sprites",
+    "pecas",
+    "arte"
+  ],
   "additionalProperties": false,
   "properties": {
-    "versao": {"const": 1},
-    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-    "nota": {"type": "string"},
+    "versao": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "nota": {
+      "type": "string"
+    },
     "sprites": {
       "type": "object",
-      "required": ["S"],
-      "additionalProperties": false,
-      "properties": {"S": {"type": "string"}, "E": {"type": "string"}, "N": {"type": "string"}, "W": {"type": "string"}}
-    },
-    "tras": {"enum": ["N", "simetrico"], "default": "simetrico"},
-    "material": {"type": "string", "default": "madeira"},
-    "cores": {"type": "object", "additionalProperties": {"$ref": "#/$defs/rgb"}},
-    "pecas": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/peca"}},
-    "arte": {
-      "type": "object",
-      "required": ["modo"],
+      "required": [
+        "S"
+      ],
       "additionalProperties": false,
       "properties": {
-        "modo": {"enum": ["adesivo", "kit"]},
+        "S": {
+          "type": "string"
+        },
+        "E": {
+          "type": "string"
+        },
+        "N": {
+          "type": "string"
+        },
+        "W": {
+          "type": "string"
+        }
+      }
+    },
+    "tras": {
+      "enum": [
+        "N",
+        "simetrico"
+      ],
+      "default": "simetrico"
+    },
+    "material": {
+      "type": "string",
+      "default": "madeira"
+    },
+    "cores": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/rgb"
+      }
+    },
+    "pecas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/peca"
+      }
+    },
+    "arte": {
+      "type": "object",
+      "required": [
+        "modo"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "modo": {
+          "enum": [
+            "adesivo",
+            "kit"
+          ]
+        },
         "recortes": {
           "type": "object",
           "additionalProperties": {
             "type": "object",
-            "required": ["peca", "face", "recorte"],
+            "required": [
+              "peca",
+              "face",
+              "recorte"
+            ],
             "additionalProperties": false,
             "properties": {
-              "peca": {"type": "string"},
-              "face": {"$ref": "#/$defs/face"},
-              "recorte": {"type": "array", "items": {"type": "number", "minimum": 0, "maximum": 1}, "minItems": 4, "maxItems": 4},
-              "limpar_transparente": {"type": "boolean"}
+              "peca": {
+                "type": "string"
+              },
+              "face": {
+                "$ref": "#/$defs/face"
+              },
+              "recorte": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 4,
+                "maxItems": 4
+              },
+              "limpar_transparente": {
+                "type": "boolean"
+              }
             }
           }
         },
@@ -42,11 +116,29 @@
           "type": "object",
           "additionalProperties": {
             "type": "object",
-            "propertyNames": {"enum": ["+x", "-x", "+y", "-y", "+z", "-z", "lados"]},
-            "additionalProperties": {"type": "string"}
+            "propertyNames": {
+              "enum": [
+                "+x",
+                "-x",
+                "+y",
+                "-y",
+                "+z",
+                "-z",
+                "lados"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            }
           }
         },
-        "repetir": {"type": "object", "additionalProperties": {"type": "number", "exclusiveMinimum": 0}}
+        "repetir": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
       }
     },
     "realista": {
@@ -57,10 +149,31 @@
           "type": "object",
           "additionalProperties": {
             "type": "object",
-            "required": ["tipo"],
+            "required": [
+              "tipo"
+            ],
             "properties": {
-              "tipo": {"enum": ["madeira", "metal", "tecido", "liso"]},
-              "cor": {"$ref": "#/$defs/rgb"}
+              "tipo": {
+                "enum": [
+                  "madeira",
+                  "metal",
+                  "tecido",
+                  "liso"
+                ]
+              },
+              "cor": {
+                "$ref": "#/$defs/rgb"
+              },
+              "desgaste": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "ferrugem": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
             }
           }
         }
@@ -68,46 +181,217 @@
     }
   },
   "$defs": {
-    "rgb": {"type": "array", "items": {"type": "number", "minimum": 0, "maximum": 255}, "minItems": 3, "maxItems": 3},
-    "vec3": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
-    "face": {"enum": ["+x", "-x", "+y", "-y", "+z", "-z"]},
+    "rgb": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 255
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "vec3": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "face": {
+      "enum": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ]
+    },
     "peca": {
       "type": "object",
-      "required": ["nome", "forma"],
+      "required": [
+        "nome",
+        "forma"
+      ],
       "properties": {
-        "nome": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-        "forma": {"enum": ["caixa", "prisma", "cilindro"]},
-        "material": {"type": "string"},
-        "espelhar": {"type": "array", "items": {"enum": ["x", "y"]}, "uniqueItems": true},
-        "rot": {"$ref": "#/$defs/vec3"},
-        "chanfro": {"type": "number", "minimum": 0},
-        "veio": {"enum": ["x", "y", "z"]},
-        "tabuas": {"type": "integer", "minimum": 1},
-        "min": {"$ref": "#/$defs/vec3"},
-        "max": {"$ref": "#/$defs/vec3"},
+        "nome": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "forma": {
+          "enum": [
+            "caixa",
+            "prisma",
+            "cilindro"
+          ]
+        },
+        "material": {
+          "type": "string"
+        },
+        "espelhar": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "x",
+              "y"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "rot": {
+          "$ref": "#/$defs/vec3"
+        },
+        "chanfro": {
+          "type": "number",
+          "minimum": 0
+        },
+        "veio": {
+          "enum": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "tabuas": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "min": {
+          "$ref": "#/$defs/vec3"
+        },
+        "max": {
+          "$ref": "#/$defs/vec3"
+        },
         "afinar": {
           "type": "object",
-          "required": ["quanto", "lados"],
+          "required": [
+            "quanto",
+            "lados"
+          ],
           "additionalProperties": false,
           "properties": {
-            "quanto": {"type": "number", "minimum": 0},
-            "lados": {"type": "array", "items": {"enum": ["+x", "-x", "+y", "-y"]}, "uniqueItems": true}
+            "quanto": {
+              "type": "number",
+              "minimum": 0
+            },
+            "lados": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "+x",
+                  "-x",
+                  "+y",
+                  "-y"
+                ]
+              },
+              "uniqueItems": true
+            }
           }
         },
-        "perfil": {"type": "array", "minItems": 3, "items": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}},
-        "eixo": {"enum": ["x", "y", "z"]},
-        "de": {"type": "number"},
-        "ate": {"type": "number"},
-        "centro": {"$ref": "#/$defs/vec3"},
-        "raio": {"type": "number", "exclusiveMinimum": 0},
-        "raio_topo": {"type": "number", "minimum": 0},
-        "altura": {"type": "number", "exclusiveMinimum": 0},
-        "segmentos": {"type": "integer", "minimum": 3}
+        "perfil": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "eixo": {
+          "enum": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "de": {
+          "type": "number"
+        },
+        "ate": {
+          "type": "number"
+        },
+        "centro": {
+          "$ref": "#/$defs/vec3"
+        },
+        "raio": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "raio_topo": {
+          "type": "number",
+          "minimum": 0
+        },
+        "altura": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "segmentos": {
+          "type": "integer",
+          "minimum": 3
+        }
       },
       "allOf": [
-        {"if": {"properties": {"forma": {"const": "caixa"}}}, "then": {"required": ["min", "max"]}},
-        {"if": {"properties": {"forma": {"const": "prisma"}}}, "then": {"required": ["perfil", "eixo", "de", "ate"], "properties": {"eixo": {"enum": ["x", "y"]}}}},
-        {"if": {"properties": {"forma": {"const": "cilindro"}}}, "then": {"required": ["centro", "raio", "altura"]}}
+        {
+          "if": {
+            "properties": {
+              "forma": {
+                "const": "caixa"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "min",
+              "max"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "forma": {
+                "const": "prisma"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "perfil",
+              "eixo",
+              "de",
+              "ate"
+            ],
+            "properties": {
+              "eixo": {
+                "enum": [
+                  "x",
+                  "y"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "forma": {
+                "const": "cilindro"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "centro",
+              "raio",
+              "altura"
+            ]
+          }
+        }
       ]
     }
   }

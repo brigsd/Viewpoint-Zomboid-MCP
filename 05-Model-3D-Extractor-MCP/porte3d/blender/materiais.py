@@ -324,13 +324,90 @@ def _liso(R, cor):
     R.saida(col, 0.5)
 
 
+# ------------------------------------------------------------------------------------------ desgaste
+def _ao(R, distancia, dentro=False):
+    """Oclusão calculada no próprio material (vale no bake do Cycles): perto de 0 nas frestas e cantos internos;
+    com `dentro`, perto de 0 nas quinas (arestas vivas para fora)."""
+    n = R.N.new("ShaderNodeAmbientOcclusion")
+    n.samples = 16
+    n.inside = dentro
+    n.only_local = True
+    n.inputs["Distance"].default_value = distancia
+    return n.outputs["AO"]
+
+
+def _quina(R, limites, largura=0.035):
+    """1 perto das arestas da caixa envolvente da peça, 0 no meio das faces: perto de duas faces ao mesmo tempo
+    (a segunda menor distância às faces é pequena). Não depende da espessura da peça nem da malha."""
+    M = R.M
+    lo, hi = limites
+    d = [M("MINIMUM", M("SUBTRACT", R.coord(e), float(lo[i])), M("SUBTRACT", float(hi[i]), R.coord(e)))
+         for i, e in enumerate("xyz")]
+    soma = M("ADD", M("ADD", d[0], d[1]), d[2])
+    menor = M("MINIMUM", M("MINIMUM", d[0], d[1]), d[2])
+    maior = M("MAXIMUM", M("MAXIMUM", d[0], d[1]), d[2])
+    segunda = M("SUBTRACT", M("SUBTRACT", soma, menor), maior)
+    return R.rng(segunda, 1.0, 0.0, 0.0, largura, suave=True)
+
+
+def _aplicar_desgaste(R, nivel, limites=None, ferrugem=0.0):
+    """Camada de uso por cima de qualquer material: tinta amarelada, encardido (embaixo, nas frestas e em manchas),
+    escorridos verticais, tinta lascada nas quinas e em pontos soltos (mostrando chapa escura), e ferrugem em
+    manchas irregulares com auréola e escorrido para baixo. `nivel` 0..1."""
+    M = R.M
+    lk = R.bsdf.inputs["Base Color"].links[0]
+    col = lk.from_socket
+    R.Lk.remove(lk)
+    z = R.coord("z")
+    k = float(nivel)
+    # tinta envelhecida: amarelada e desigual
+    tom = R.rng(R.ruido((3.0, 3.0, 3.0), detalhe=2.0), 0.5, 1.0, 0.3, 0.7)
+    col = R.misturar(col, R.mult(col, (0.97, 0.91, 0.76)), M("MULTIPLY", tom, 0.7 * k))
+    # encardido
+    fresta = R.rng(_ao(R, 0.06), 1.0, 0.0, 0.45, 1.0)
+    fe = float(ferrugem)
+    baixo = R.rng(z, 1.0, 0.0, 0.0, 0.30 + 0.12 * fe, suave=True)
+    escorre = R.rng(R.ruido(R.esc(30.0, "z", 1.8), detalhe=3.0), 0.0, 1.0, 0.48, 0.72)
+    mancha = R.rng(R.ruido((6.0, 6.0, 6.0), detalhe=5.0, rugosidade=0.6), 0.0, 1.0, 0.45, 0.72)
+    sujo = M("MAXIMUM", fresta, M("MULTIPLY", baixo, 0.9))
+    sujo = M("MAXIMUM", sujo, M("MULTIPLY", escorre, 0.45))
+    sujo = M("MAXIMUM", sujo, M("MULTIPLY", mancha, 0.35))
+    col = R.misturar(col, R.mult(col, (0.58, 0.50, 0.40)), M("MINIMUM", M("MULTIPLY", sujo, 0.8 * k), 0.9))
+    # campo de ferrugem: manchas grandes irregulares + pontos pequenos espalhados, puxados para quinas/frestas/baixo
+    quina = _quina(R, limites) if limites is not None else R.rng(_ao(R, 0.01, dentro=True), 1.0, 0.0, 0.80, 0.99)
+    grande = R.rng(R.ruido((3.5, 3.5, 3.5), detalhe=6.0, rugosidade=0.7), 0.0, 1.0, 0.40, 0.75)
+    pontos = R.rng(R.ruido((30.0, 30.0, 30.0), detalhe=4.0, rugosidade=0.7), 0.0, 1.0, 0.66, 0.86)
+    pressao = M("MAXIMUM", M("MAXIMUM", quina, M("MULTIPLY", baixo, 0.85 + 0.5 * fe)), M("MULTIPLY", fresta, 0.6 + 0.3 * fe))
+    f = M("ADD", M("MULTIPLY", grande, 0.55), M("MULTIPLY", pressao, 0.5))
+    f = M("ADD", f, M("MULTIPLY", pontos, 0.25))
+    limiar = 1.0 - 0.45 * k - 0.22 * fe
+    ferr = R.rng(f, 0.0, 1.0, limiar, limiar + 0.06, suave=True)
+    aureola = R.rng(f, 0.0, 1.0, limiar - 0.14, limiar, suave=True)
+    # escorrido de ferrugem: riscos verticais finos onde o campo é alto
+    risco = R.rng(R.ruido(R.esc(90.0, "z", 2.5), detalhe=3.0), 0.0, 1.0, 0.55, 0.75)
+    escorrido = M("MULTIPLY", risco, R.rng(f, 0.0, 1.0, limiar - 0.30, limiar - 0.05))
+    # tinta lascada: nas quinas e em pontinhos, borda irregular
+    rasgo = R.rng(R.ruido((70.0, 70.0, 70.0), detalhe=5.0, rugosidade=0.75), 0.0, 1.0, 0.40, 0.60)
+    lasca = M("GREATER_THAN", M("ADD", M("MULTIPLY", quina, rasgo), M("MULTIPLY", pontos, 0.3)), 1.0 - 0.5 * k)
+    tons = R.N.new("ShaderNodeValToRGB")
+    els = tons.color_ramp.elements
+    els[0].position, els[0].color = 0.0, (*_lin((52, 30, 20)), 1)
+    els[1].position, els[1].color = 1.0, (*_lin((150, 86, 48)), 1)
+    e = els.new(0.5)
+    e.color = (*_lin((104, 54, 30)), 1)
+    R.Lk.new(R.ruido((120.0, 120.0, 120.0), detalhe=6.0, rugosidade=0.75), tons.inputs["Fac"])
+    col = R.misturar(col, R.mult(col, (0.70, 0.56, 0.42)), M("MULTIPLY", M("MAXIMUM", aureola, escorrido), 0.65 * k))
+    col = R.misturar(col, R.mult(tons.outputs["Color"], (0.55, 0.55, 0.55)), M("MULTIPLY", lasca, 0.9))
+    col = R.misturar(col, tons.outputs["Color"], M("MULTIPLY", ferr, 0.95))
+    R.Lk.new(col, R.bsdf.inputs["Base Color"])
+
 def _cinza_medio(cor):
     c = np.asarray(cor, float)
     return (c.max() - c.min()) <= 22 and c.mean() <= 205
 
 
 def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=0.0, tabuas=0,
-          semente=0, lado=1, acabamento=None):
+          semente=0, lado=1, acabamento=None, desgaste=0.0, limites=None, ferrugem=0.0):
     """Cria o material procedural `tipo` (madeira | metal | tecido | liso) com cor base `cor` (sRGB 0..255).
 
     eixos      = (comprimento, atravessado, profundidade): direção do veio/comprimento da peça, o eixo em que
@@ -341,6 +418,9 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
     semente    = faz peças diferentes ficarem diferentes.
     lado       = +1 se a face principal é a de maior coordenada em `profundidade`, -1 se é a de menor.
     acabamento = só metal: "pintado" ou "escovado"; se None, cinza médio -> escovado, o resto -> pintado.
+    limites    = ((x0,y0,z0), (x1,y1,z1)) da caixa envolvente da peça: marca as quinas para o desgaste.
+    ferrugem   = 0..1: quanto da camada de uso vira ferrugem (embaixo, nas frestas e escorrendo).
+    desgaste   = 0..1: camada de uso (amarelado, encardido, tinta lascada nas quinas, ferrugem com escorrido).
     """
     if tipo not in ("madeira", "metal", "tecido", "liso"):
         raise ValueError(f"tipo de material desconhecido: {tipo}")
@@ -356,4 +436,6 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
         _tecido(R, cor, comp, atrav, prof)
     else:
         _liso(R, cor)
+    if desgaste > 0:
+        _aplicar_desgaste(R, desgaste, limites, ferrugem)
     return mat

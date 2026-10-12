@@ -38,7 +38,7 @@ O esquema completo está em `receita.schema.json`, e `receita.py` valida a recei
 | `cores` | opcional, `{material: [r,g,b]}` em sRGB 0–255; sem isso, a cor vem da arte |
 | `pecas` | lista de peças (abaixo) |
 | `arte` | `{"modo": "adesivo"}` ou `{"modo": "kit", "recortes": {...}, "faces": {...}}` |
-| `realista` | opcional, `{"materiais": {nome: {"tipo": madeira\|metal\|tecido\|liso, ...}}}` |
+| `realista` | opcional, `{"materiais": {nome: {"tipo": madeira\|metal\|tecido\|liso, "desgaste": 0..1}}}`; `desgaste` põe sujeira, tinta lascada e ferrugem |
 
 ### Peças
 

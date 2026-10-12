@@ -186,6 +186,8 @@ def etapa_malha(pasta: Path, tex: int):
 
     cores = r.get("cores", {})
     tipos = {k: v["tipo"] for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    desgastes = {k: float(v.get("desgaste", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    ferrugens = {k: float(v.get("ferrugem", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     pecas, objs, mats_real, mats_id = [], [], [], []
     for i, p in enumerate(r["pecas"]):
         ob = {"caixa": caixa, "prisma": prisma, "cilindro": cilindro}[p["forma"]](p)
@@ -199,7 +201,8 @@ def etapa_malha(pasta: Path, tex: int):
         cor = cores.get(mat, [128, 128, 128])
         mr = materiais.criar(f"p{i:03d}_{p['nome']}", tipo, cor, eixos=(AX[comp], AX[atr], AX[prof]),
                              faixa=(float(lo[atr]), float(hi[atr])), superficie=float(hi[prof]),
-                             tabuas=int(p.get("tabuas", 0)), semente=i)
+                             tabuas=int(p.get("tabuas", 0)), semente=i, desgaste=desgastes.get(mat, 0.0), ferrugem=ferrugens.get(mat, 0.0),
+                             limites=(tuple(map(float, lo)), tuple(map(float, hi))))
         ob.data.materials.append(mr)
         mats_real.append(mr)
         mats_id.append(material_simples(f"id{i:03d}", (0, 0, 0), emissao=(1.0, 1.0, 1.0), forca=float(i + 1)))
