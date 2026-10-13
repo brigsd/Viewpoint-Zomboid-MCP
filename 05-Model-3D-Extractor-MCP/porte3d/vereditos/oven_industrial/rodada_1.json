@@ -1,0 +1,121 @@
+{
+ "versao": 1,
+ "objeto": "oven_industrial",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "respaldo",
+   "situacao": "ok",
+   "nota": "sobra uns 2 px na borda direita e no topo em 0°, leve"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok",
+   "nota": "forma e posição certas; cor escura demais no realista"
+  },
+  {
+   "nome": "alca",
+   "situacao": "fora_do_lugar",
+   "nota": "deslocada para a direita e passa da lateral do fogão; no realista fica na parte alta da porta e não na parte de baixo como no desenho"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok",
+   "nota": "escuro no realista; no desenho é claro"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "alca",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "ponta direita da alça, que passa da lateral direita do corpo e da porta",
+   "sentido": "deslocado_x",
+   "evidencia": "fio.png 045: a alça roxa vai de x≈605 a 785 e a porta termina em x≈720; giro_realista 045 e 090 mostram a haste fora do fogão",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "alca",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "altura da alça na porta (está no terço de cima; no desenho fica na parte de baixo da porta)",
+   "sentido": "deslocado_y",
+   "evidencia": "comparacao.png 0°: a haste do realista cruza o alto da porta; no jogo frente a alça fica na parte de baixo; zoom.png 000 baixo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "painel da porta, dentro da moldura",
+   "sentido": "",
+   "evidencia": "comparacao.png 0° e zoom.png 000 baixo: porta quase preta contra porta cinza clara do desenho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "bordas da moldura da porta, que descem até o rodapé e saem pela esquerda",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 090: faixas claras e finas de cor metálica diferente do desenho, ao lado e abaixo da porta",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "faces finas das grelhas: linha clara entre as duas grelhas em 45° e linha cruzando o tampo em 90°; ripas listradas em 180° e 135°",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 (linha vertical em x≈775), 090 (linha em x≈1180-1300), 135 e 180 (listras claras sobre as ripas)",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "socalo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "base inteira, escura e recuada; no desenho é clara e do mesmo tamanho do corpo",
+   "sentido": "",
+   "evidencia": "comparacao.png 0°: realista tem base preta recuada; jogo frente tem base clara",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "respaldo",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "borda direita e topo do respaldo",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png: faixa magenta de 1 a 2 px na borda direita e no topo do respaldo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O fogão está bem montado e o 0° do arte quase não difere do desenho; o que pesa é a alça, que sai da frente do fogão em todos os ângulos fora de 0°, e a porta escura no realista."
+}

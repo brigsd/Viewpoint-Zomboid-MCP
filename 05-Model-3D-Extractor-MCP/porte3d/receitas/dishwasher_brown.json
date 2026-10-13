@@ -1,0 +1,439 @@
+{
+ "versao": 1,
+ "id": "dishwasher_brown",
+ "sprites": {
+  "S": "appliances_cooking_01_73",
+  "E": "appliances_cooking_01_72",
+  "N": "appliances_cooking_01_75",
+  "W": "appliances_cooking_01_74"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "escuro": [
+   40,
+   36,
+   34
+  ],
+  "metal": [
+   165,
+   163,
+   158
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    -0.0974,
+    0.06
+   ],
+   "max": [
+    0.4627,
+    0.47,
+    0.7449
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.48129999999999995,
+    -0.07,
+    0.0
+   ],
+   "max": [
+    0.4327,
+    0.44,
+    0.06
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    -0.1074,
+    0.17
+   ],
+   "max": [
+    0.4627,
+    -0.0974,
+    0.575
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "porta_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    -0.1074,
+    0.065
+   ],
+   "max": [
+    0.4627,
+    -0.0974,
+    0.155
+   ],
+   "chanfro": 0.003
+  },
+  {
+   "nome": "painel_comando",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    -0.1174,
+    0.58
+   ],
+   "max": [
+    0.4627,
+    -0.0974,
+    0.725
+   ],
+   "material": "painel",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "friso_tampo",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    -0.1274,
+    0.725
+   ],
+   "max": [
+    0.4627,
+    -0.0974,
+    0.7449
+   ],
+   "chanfro": 0.003
+  },
+  {
+   "nome": "botao_1",
+   "forma": "caixa",
+   "min": [
+    -0.451,
+    -0.1274,
+    0.625
+   ],
+   "max": [
+    -0.419,
+    -0.1174,
+    0.655
+   ],
+   "material": "metal",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_2",
+   "forma": "caixa",
+   "min": [
+    -0.401,
+    -0.1274,
+    0.625
+   ],
+   "max": [
+    -0.369,
+    -0.1174,
+    0.655
+   ],
+   "material": "metal",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_3",
+   "forma": "caixa",
+   "min": [
+    -0.351,
+    -0.1274,
+    0.625
+   ],
+   "max": [
+    -0.31899999999999995,
+    -0.1174,
+    0.655
+   ],
+   "material": "metal",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_4",
+   "forma": "caixa",
+   "min": [
+    -0.301,
+    -0.1274,
+    0.625
+   ],
+   "max": [
+    -0.26899999999999996,
+    -0.1174,
+    0.655
+   ],
+   "material": "metal",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "display",
+   "forma": "caixa",
+   "min": [
+    0.02,
+    -0.1224,
+    0.6
+   ],
+   "max": [
+    0.12,
+    -0.1174,
+    0.64
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "disco",
+   "forma": "cilindro",
+   "centro": [
+    0.3,
+    -0.12240000000000001,
+    0.635
+   ],
+   "raio": 0.03,
+   "altura": 0.01,
+   "eixo": "y",
+   "material": "metal",
+   "segmentos": 20
+  },
+  {
+   "nome": "botao_marrom",
+   "forma": "caixa",
+   "min": [
+    0.37,
+    -0.1224,
+    0.6
+   ],
+   "max": [
+    0.43,
+    -0.1174,
+    0.67
+   ],
+   "material": "painel",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "moldura_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.5113,
+    0.47,
+    0.0
+   ],
+   "max": [
+    0.4627,
+    0.474,
+    0.7449
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "chapa_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.4713,
+    0.474,
+    0.04
+   ],
+   "max": [
+    0.4227,
+    0.478,
+    0.665
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "grade_1",
+   "forma": "caixa",
+   "min": [
+    0.04,
+    0.478,
+    0.06
+   ],
+   "max": [
+    0.34,
+    0.481,
+    0.2
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "grade_2",
+   "forma": "caixa",
+   "min": [
+    -0.38,
+    0.478,
+    0.06
+   ],
+   "max": [
+    -0.12,
+    0.481,
+    0.2
+   ],
+   "material": "escuro"
+  },
+  {
+   "nome": "ripa_g1_r1",
+   "forma": "caixa",
+   "min": [
+    0.05,
+    0.481,
+    0.08
+   ],
+   "max": [
+    0.33,
+    0.4836,
+    0.092
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g1_r2",
+   "forma": "caixa",
+   "min": [
+    0.05,
+    0.481,
+    0.11
+   ],
+   "max": [
+    0.33,
+    0.4836,
+    0.122
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g1_r3",
+   "forma": "caixa",
+   "min": [
+    0.05,
+    0.481,
+    0.14
+   ],
+   "max": [
+    0.33,
+    0.4836,
+    0.15200000000000002
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g1_r4",
+   "forma": "caixa",
+   "min": [
+    0.05,
+    0.481,
+    0.16999999999999998
+   ],
+   "max": [
+    0.33,
+    0.4836,
+    0.182
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g2_r1",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.481,
+    0.08
+   ],
+   "max": [
+    -0.13,
+    0.4836,
+    0.092
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g2_r2",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.481,
+    0.11
+   ],
+   "max": [
+    -0.13,
+    0.4836,
+    0.122
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g2_r3",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.481,
+    0.14
+   ],
+   "max": [
+    -0.13,
+    0.4836,
+    0.15200000000000002
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "ripa_g2_r4",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.481,
+    0.16999999999999998
+   ],
+   "max": [
+    -0.13,
+    0.4836,
+    0.182
+   ],
+   "material": "metal"
+  },
+  {
+   "nome": "furo_traseiro",
+   "forma": "cilindro",
+   "centro": [
+    0.235,
+    0.478,
+    0.31
+   ],
+   "raio": 0.035,
+   "altura": 0.004,
+   "eixo": "y",
+   "material": "escuro",
+   "segmentos": 20
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso"
+   },
+   "escuro": {
+    "tipo": "liso"
+   },
+   "painel": {
+    "tipo": "liso"
+   },
+   "metal": {
+    "tipo": "metal"
+   }
+  }
+ }
+}

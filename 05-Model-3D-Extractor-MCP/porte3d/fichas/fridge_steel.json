@@ -1,0 +1,200 @@
+{
+ "versao": 1,
+ "objeto": "fridge_steel",
+ "sprite": "appliances_refrigeration_01_8",
+ "decisao": "portar",
+ "motivo": "geladeira side-by-side de aço, um bloco só com portas, puxadores e serpentina traseira; formas simples",
+ "o_que_e": "geladeira alta de aço inox com duas portas lado a lado (side-by-side), cantos arredondados, serpentina e grade de ventilação na traseira",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "caixa do gabinete ~82 x 70 cm de planta e 168 cm de altura, aço claro, cantos e topo levemente arredondados (chanfro de ~3 cm)"
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "duas portas lado a lado na face da frente (S), ~40 cm de largura cada e ~150 cm de altura, saindo ~2 cm do corpo, separadas por uma fresta escura vertical no meio; começam logo acima do rodapé"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "puxador vertical fino (~3 x 3 cm, ~60 cm de comprimento) em cada porta, junto à fresta central, escuro, a ~90-140 cm do chão"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "rodapé escuro recuado de ~10 cm de altura na base, em torno das 4 faces, dando sombra sob a geladeira"
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "painel escuro rebaixado ocupando a parte de cima da traseira (N), ~70 x 100 cm, onde fica a serpentina"
+  },
+  {
+   "nome": "serpentina",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "4 tubos pretos finos (~2 cm de diâmetro) verticais em laço, ~90 cm de altura, sobre o painel traseiro, com as voltas de baixo em U"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "grade horizontal de ~70 x 20 cm com ~6 frestas, na traseira logo acima do rodapé, escura"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o jogo só descreve um bloco: portas, puxadores, rodapé, painel e serpentina são todos peças novas",
+  "serpentina é fina e em laço: aproximar por tubos retos verticais e, se der, voltas em U curtas",
+  "a traseira (N) é bem diferente da frente (N~S 0.52): usar o desenho N na parte de trás",
+  "E/W são espelho de S/N: dá para espelhar, mas a fresta e as portas mudam de face",
+  "cantos e topo arredondados: o bloco reto vai ficar mais anguloso que o desenho",
+  "desgaste e sujeira na parte de baixo do desenho: tratar como textura, não como peça"
+ ],
+ "medidas": {
+  "sprite": "appliances_refrigeration_01_8",
+  "sprites": {
+   "S": "appliances_refrigeration_01_8",
+   "E": "appliances_refrigeration_01_9",
+   "N": "appliances_refrigeration_01_10",
+   "W": "appliances_refrigeration_01_11"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.32,
+     -0.3,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.4,
+     1.68
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "MetalScrap",
+   "Material3": "Electric",
+   "MaterialType": "Metal_Large"
+  },
+  "props": {
+   "CustomName": "Fridge",
+   "GroupName": "Steel",
+   "Facing": "S",
+   "container": "fridge",
+   "Surface": "60",
+   "IsMoveAble": "",
+   "ContainerCapacity": "40",
+   "IsFridge": "",
+   "Freezer": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Large",
+   "PickUpWeight": "400"
+  },
+  "props_geometria": {
+   "Surface": "60",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.32,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.4,
+    1.68
+   ],
+   "largura": 0.82,
+   "profundidade": 0.7,
+   "altura": 1.68
+  },
+  "menor_medida_peca": 0.7,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8924,
+  "cobertura": 1.0,
+  "sobra": 0.1076,
+  "pixels_desenho": 13673,
+  "pixels_geometria": 15322,
+  "espelhado_E_S": 0.8267,
+  "espelhado_W_N": 0.8143,
+  "N_igual_S": 0.5175,
+  "silhueta_espelho_E_S": 0.9533,
+  "silhueta_espelho_W_N": 0.9124,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.09,
+   0.05
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 15249,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1034
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_steel",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_steel\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_steel\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_steel\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_steel\\profundidade.png"
+  }
+ }
+}

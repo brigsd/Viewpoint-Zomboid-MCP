@@ -1,0 +1,403 @@
+{
+ "versao": 1,
+ "id": "oven_industrial",
+ "sprites": {
+  "S": "appliances_cooking_01_21",
+  "E": "appliances_cooking_01_20",
+  "N": "appliances_cooking_01_23",
+  "W": "appliances_cooking_01_22"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "preto": [
+   28,
+   28,
+   30
+  ],
+  "ferro": [
+   18,
+   18,
+   20
+  ],
+  "escuro": [
+   60,
+   60,
+   64
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    -0.19,
+    0.1
+   ],
+   "max": [
+    0.49,
+    0.39,
+    0.85
+   ],
+   "chanfro": 0.012
+  },
+  {
+   "nome": "socalo",
+   "forma": "caixa",
+   "min": [
+    -0.43,
+    -0.17,
+    0.0
+   ],
+   "max": [
+    0.48,
+    0.38,
+    0.11
+   ],
+   "material": "escuro",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.2,
+    0.84
+   ],
+   "max": [
+    0.5,
+    0.4,
+    0.92
+   ],
+   "material": "preto",
+   "chanfro": 0.03
+  },
+  {
+   "nome": "respaldo",
+   "forma": "caixa",
+   "min": [
+    -0.455,
+    0.395,
+    0.002
+   ],
+   "max": [
+    0.505,
+    0.45,
+    1.4
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    -0.225,
+    0.14
+   ],
+   "max": [
+    0.43,
+    -0.2,
+    0.74
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "moldura_porta",
+   "forma": "caixa",
+   "min": [
+    -0.34,
+    -0.235,
+    0.2
+   ],
+   "max": [
+    0.37,
+    -0.225,
+    0.68
+   ],
+   "material": "escuro",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "alca",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.015,
+    -0.29,
+    0.68
+   ],
+   "raio": 0.012,
+   "altura": 0.64,
+   "segmentos": 14,
+   "material": "escuro"
+  },
+  {
+   "nome": "alca_apoio0",
+   "forma": "caixa",
+   "min": [
+    -0.29,
+    -0.29,
+    0.668
+   ],
+   "max": [
+    -0.27,
+    -0.222,
+    0.692
+   ],
+   "material": "escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "alca_apoio1",
+   "forma": "caixa",
+   "min": [
+    0.3,
+    -0.29,
+    0.668
+   ],
+   "max": [
+    0.32,
+    -0.222,
+    0.692
+   ],
+   "material": "escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "botao0",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.4,
+    -0.215,
+    0.79
+   ],
+   "raio": 0.016,
+   "altura": 0.03,
+   "segmentos": 14,
+   "material": "escuro"
+  },
+  {
+   "nome": "botao1",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.34,
+    -0.215,
+    0.79
+   ],
+   "raio": 0.016,
+   "altura": 0.03,
+   "segmentos": 14,
+   "material": "escuro"
+  },
+  {
+   "nome": "grelha0",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    -0.14,
+    0.92
+   ],
+   "max": [
+    0.03,
+    0.34,
+    0.93
+   ],
+   "material": "ferro",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "grelha0_ripa0",
+   "forma": "caixa",
+   "min": [
+    -0.39,
+    -0.12,
+    0.93
+   ],
+   "max": [
+    0.019999999999999997,
+    -0.09,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha0_ripa1",
+   "forma": "caixa",
+   "min": [
+    -0.39,
+    -0.032,
+    0.93
+   ],
+   "max": [
+    0.019999999999999997,
+    -0.0020000000000000018,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha0_ripa2",
+   "forma": "caixa",
+   "min": [
+    -0.39,
+    0.055999999999999994,
+    0.93
+   ],
+   "max": [
+    0.019999999999999997,
+    0.086,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha0_ripa3",
+   "forma": "caixa",
+   "min": [
+    -0.39,
+    0.14400000000000002,
+    0.93
+   ],
+   "max": [
+    0.019999999999999997,
+    0.17400000000000002,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha0_ripa4",
+   "forma": "caixa",
+   "min": [
+    -0.39,
+    0.23199999999999998,
+    0.93
+   ],
+   "max": [
+    0.019999999999999997,
+    0.262,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha1",
+   "forma": "caixa",
+   "min": [
+    0.07,
+    -0.14,
+    0.92
+   ],
+   "max": [
+    0.45,
+    0.34,
+    0.93
+   ],
+   "material": "ferro",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "grelha1_ripa0",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    -0.12,
+    0.93
+   ],
+   "max": [
+    0.44,
+    -0.09,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha1_ripa1",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    -0.032,
+    0.93
+   ],
+   "max": [
+    0.44,
+    -0.0020000000000000018,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha1_ripa2",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    0.055999999999999994,
+    0.93
+   ],
+   "max": [
+    0.44,
+    0.086,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha1_ripa3",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    0.14400000000000002,
+    0.93
+   ],
+   "max": [
+    0.44,
+    0.17400000000000002,
+    0.95
+   ],
+   "material": "ferro"
+  },
+  {
+   "nome": "grelha1_ripa4",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    0.23199999999999998,
+    0.93
+   ],
+   "max": [
+    0.44,
+    0.262,
+    0.95
+   ],
+   "material": "ferro"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "preto": {
+    "tipo": "metal",
+    "desgaste": 0.15
+   },
+   "ferro": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "escuro": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   }
+  }
+ }
+}

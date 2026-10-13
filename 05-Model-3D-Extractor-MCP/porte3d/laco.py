@@ -6,6 +6,7 @@ Ver .claude/skills/porte-3d/SKILL.md.
   python -m porte3d.laco gerar <id>               registra trabalho/<id>/receita.json, gera o modelo e as folhas,
                                                   copia as folhas para uma pasta neutra e imprime o pedido do crítico
   python -m porte3d.laco critica <id> <resposta>  valida o veredito do crítico e registra na fila
+  python -m porte3d.laco respostas                registra todas as respostas de crítico já gravadas
 """
 from __future__ import annotations
 
@@ -97,7 +98,32 @@ def cmd_critica(id_: str, resposta: str) -> dict:
             "estado": o["estado"], "motivo": o.get("motivo")}
 
 
+def cmd_respostas() -> list[dict]:
+    """Registra todas as respostas de crítico já gravadas para objetos em_critica (o pedido diz onde a
+    resposta fica). Devolve o resultado de cada uma; respostas inválidas aparecem com o erro."""
+    saida = []
+    for o in fila.objetos("em_critica"):
+        pedido = TRABALHO / o["id"] / f"pedido_critico_{o['rodada']}.txt"
+        if not pedido.exists():
+            continue
+        linha = [l for l in pedido.read_text(encoding="utf-8").splitlines() if l.startswith("gravar resposta em:")]
+        if not linha:
+            continue
+        resp = Path(linha[0].split(":", 1)[1].strip())
+        if not resp.exists():
+            continue
+        try:
+            saida.append(cmd_critica(o["id"], str(resp)))
+        except (fila.FilaErro, veredito.VereditoInvalido, ValueError) as e:
+            saida.append({"id": o["id"], "erro": str(e)[:200]})
+    return saida
+
+
 def main(argv: list[str]) -> int:
+    if len(argv) >= 2 and argv[1] == "respostas":
+        for r in cmd_respostas():
+            print(json.dumps(r, ensure_ascii=False))
+        return 0
     if len(argv) < 3:
         print(__doc__)
         return 1

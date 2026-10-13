@@ -1,0 +1,305 @@
+{
+ "versao": 1,
+ "id": "fridge_steel",
+ "sprites": {
+  "S": "appliances_refrigeration_01_8",
+  "E": "appliances_refrigeration_01_9",
+  "N": "appliances_refrigeration_01_10",
+  "W": "appliances_refrigeration_01_11"
+ },
+ "tras": "N",
+ "material": "metal",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    -0.28,
+    0.07
+   ],
+   "max": [
+    0.5,
+    0.39,
+    1.68
+   ],
+   "chanfro": 0.03
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.29,
+    -0.25,
+    0.0
+   ],
+   "max": [
+    0.47,
+    0.36,
+    0.08
+   ],
+   "material": "liso",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_esq",
+   "forma": "caixa",
+   "min": [
+    -0.31,
+    -0.3,
+    0.09
+   ],
+   "max": [
+    -0.1,
+    -0.27,
+    1.64
+   ],
+   "chanfro": 0.02
+  },
+  {
+   "nome": "porta_dir",
+   "forma": "caixa",
+   "min": [
+    -0.08,
+    -0.3,
+    0.09
+   ],
+   "max": [
+    0.49,
+    -0.27,
+    1.64
+   ],
+   "chanfro": 0.02
+  },
+  {
+   "nome": "puxador_esq",
+   "forma": "caixa",
+   "min": [
+    -0.145,
+    -0.33,
+    0.9
+   ],
+   "max": [
+    -0.115,
+    -0.295,
+    1.42
+   ],
+   "material": "liso",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "puxador_dir",
+   "forma": "caixa",
+   "min": [
+    -0.065,
+    -0.33,
+    0.9
+   ],
+   "max": [
+    -0.035,
+    -0.295,
+    1.42
+   ],
+   "material": "liso",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.3,
+    0.38,
+    0.4
+   ],
+   "max": [
+    0.48,
+    0.4,
+    1.56
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "forma": "caixa",
+   "min": [
+    -0.3,
+    0.38,
+    0.15
+   ],
+   "max": [
+    0.48,
+    0.4,
+    0.38
+   ],
+   "material": "liso"
+  },
+  {
+   "nome": "serpentina_tubo0",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.41,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_tubo1",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.285,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_tubo2",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.17,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_tubo3",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.03,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_tubo4",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    -0.1,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_tubo5",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    -0.23,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.91,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_volta0",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.3475,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.125,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_volta1",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.22749999999999998,
+    0.41,
+    1.52
+   ],
+   "raio": 0.01,
+   "altura": 0.11499999999999996,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_volta2",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.1,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.14,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_volta3",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.035,
+    0.41,
+    1.52
+   ],
+   "raio": 0.01,
+   "altura": 0.13,
+   "segmentos": 10,
+   "material": "metal"
+  },
+  {
+   "nome": "serpentina_volta4",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.165,
+    0.41,
+    0.61
+   ],
+   "raio": 0.01,
+   "altura": 0.13,
+   "segmentos": 10,
+   "material": "metal"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

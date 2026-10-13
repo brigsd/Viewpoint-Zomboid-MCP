@@ -2,8 +2,8 @@
  "versao": 1,
  "objeto": "oven_modern",
  "rodada": 1,
- "nota_arte": 5,
- "nota_realista": 7,
+ "nota_arte": 8,
+ "nota_realista": 8,
  "pecas": [
   {
    "nome": "corpo",
@@ -11,11 +11,13 @@
   },
   {
    "nome": "aba_traseira",
-   "situacao": "ok"
+   "situacao": "ok",
+   "nota": "leve deslocamento em x para a direita"
   },
   {
    "nome": "faixa_aba",
-   "situacao": "ok"
+   "situacao": "ok",
+   "nota": "no realista é mais fina que o desenho"
   },
   {
    "nome": "boca",
@@ -23,7 +25,8 @@
   },
   {
    "nome": "grelha",
-   "situacao": "ok"
+   "situacao": "ok",
+   "nota": "opcional na ficha; arte já tem o desenho, realista fica sem grelha"
   },
   {
    "nome": "painel_frontal",
@@ -56,47 +59,36 @@
  ],
  "defeitos": [
   {
-   "parte": "aba_traseira",
-   "tipo": "textura_deslocada",
-   "nivel": "arte",
-   "vista": "comparacao",
-   "angulo": 0,
-   "onde": "topo da aba e faixa escura, lado esquerdo até o meio",
-   "sentido": "",
-   "evidencia": "comparacao.png arte 0: cunha diagonal branca/cinza corta a faixa escura e há pedaço de queimador na aba",
-   "gravidade": "grave"
-  },
-  {
-   "parte": "faixa_aba",
-   "tipo": "textura_deslocada",
-   "nivel": "arte",
-   "vista": "giro",
-   "angulo": 180,
-   "onde": "faixa escura da aba vista de trás, lado esquerdo",
-   "sentido": "",
-   "evidencia": "giro_arte.png 180/270/315: triângulo claro invade a faixa escura",
-   "gravidade": "grave"
-  },
-  {
-   "parte": "boca",
-   "tipo": "textura_deslocada",
-   "nivel": "arte",
-   "vista": "comparacao",
-   "angulo": 0,
-   "onde": "boca da frente-esquerda do tampo",
-   "sentido": "",
-   "evidencia": "comparacao.png arte 0: dois queimadores sobrepostos onde o desenho tem um",
-   "gravidade": "leve"
-  },
-  {
    "parte": "botao",
    "tipo": "textura_deslocada",
    "nivel": "arte",
    "vista": "giro",
    "angulo": 45,
-   "onde": "queimadores e botões vistos de 45 a 135 graus",
+   "onde": "botões e faixa do painel frontal, vistos de frente a 45° e a 90°",
    "sentido": "",
-   "evidencia": "giro_arte.png 045/090: textura da frente projetada no topo e nos cilindros, borrada",
+   "evidencia": "giro_arte 045 e 090, zoom arte 045 cima: botões esticados e borrados, sem forma de botão",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grade_traseira",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "grade de ventilação traseira esquerda, no meio das ranhuras",
+   "sentido": "",
+   "evidencia": "giro_arte 225: linha horizontal de emenda cortando as ranhuras",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "borda de baixo do corpo, perto do rodapé",
+   "sentido": "",
+   "evidencia": "giro_arte 090, 135, 180 e 225: franja rosada/roxa na base",
    "gravidade": "leve"
   },
   {
@@ -105,44 +97,44 @@
    "nivel": "realista",
    "vista": "comparacao",
    "angulo": 0,
-   "onde": "superfície do gabinete e da aba",
+   "onde": "frente e lateral do gabinete, tampo",
    "sentido": "",
-   "evidencia": "comparacao.png realista 0: cinza médio escuro; o desenho é branco acinzentado claro",
+   "evidencia": "comparacao.png 0°: realista é branco limpo, o desenho é cinza-claro com manchas amareladas",
    "gravidade": "leve"
   },
   {
-   "parte": "grade_traseira",
-   "tipo": "chapado",
-   "nivel": "realista",
-   "vista": "giro",
-   "angulo": 180,
-   "onde": "as duas grades de ventilação embaixo da traseira",
-   "sentido": "",
-   "evidencia": "giro_realista.png 180/225: retângulos lisos sem ranhuras",
-   "gravidade": "leve"
-  },
-  {
-   "parte": "grelha",
+   "parte": "faixa_aba",
    "tipo": "proporcao",
    "nivel": "realista",
-   "vista": "zoom",
+   "vista": "comparacao",
    "angulo": 0,
-   "onde": "grelha sobre cada boca",
-   "sentido": "deslocado_z",
-   "evidencia": "zoom.png realista 0: quadrado escuro girado sobre disco, sem desenho de anel e grade",
+   "onde": "faixa escura no topo da aba traseira",
+   "sentido": "menor",
+   "evidencia": "comparacao.png 0°: faixa escura do realista mais fina que a do jogo",
    "gravidade": "leve"
   },
   {
    "parte": "aba_traseira",
    "tipo": "proporcao",
-   "nivel": "arte",
+   "nivel": "ambos",
    "vista": "sobreposicao",
    "angulo": 0,
-   "onde": "borda do topo da aba e lado direito do corpo",
-   "sentido": "maior",
-   "evidencia": "sobreposicao.png: faixa magenta fina no topo da aba e no lado direito",
+   "onde": "aba traseira, ponta esquerda e borda direita",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png: verde na ponta esquerda da aba, magenta na borda direita e no topo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "as 4 bocas sobre o tampo, só disco liso",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 cima e fio.png: sem grelha sobre as bocas (peça opcional na ficha)",
    "gravidade": "leve"
   }
  ],
- "observacao": "Geometria completa; segura a nota a textura da aba no nível arte (cunha), cor escura e grades lisas no realista."
+ "observacao": "Porte bem fechado: todas as peças existem, a frente e a traseira batem com os desenhos, e os defeitos são leves e quase todos só aparecem nas folhas."
 }

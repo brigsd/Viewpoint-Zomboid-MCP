@@ -1,0 +1,40 @@
+{
+ "versao": 1,
+ "objeto": "microwave_chrome",
+ "rodada": 1,
+ "nota_arte": 9,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok",
+   "nota": "formato e altura certos; só a cor do tampo no realista está errada"
+  },
+  {
+   "nome": "janela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo (face de cima) do corpo",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0° e giro_realista.png 000°/045°: tampo cinza escovado; no desenho e na ficha o tampo é preto",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Arte praticamente idêntica ao desenho do jogo e com todas as peças prometidas; no realista só o tampo precisa ficar preto."
+}

@@ -1,0 +1,302 @@
+{
+ "versao": 1,
+ "objeto": "oven_antique",
+ "sprite": "appliances_cooking_01_17",
+ "decisao": "portar",
+ "motivo": "fogão a lenha antigo de ferro com corpo em caixa, chaminé em cilindro e pés; formas simples, só a curva da chaminé e os pés pedem cuidado",
+ "o_que_e": "fogão a lenha antigo de ferro verde-escuro, com tampo de duas chapas, porta de ferro com grade na frente, quatro pés curvos e uma chaminé alta com cotovelo no topo",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "caixa do fogão ~88 x 54 cm de planta; o bloco do jogo vai de 0 a 87 cm, mas o corpo real começa a ~22 cm do chão (os pés ficam embaixo) e vai até ~87 cm; precisa ser reduzido por baixo"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "chapa do tampo de ~4 cm de espessura no topo, saliente ~2 cm em volta, com duas chapas retangulares levemente marcadas"
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "porta de ferro oval/retangular de ~50 x 25 cm na face da frente (S), saindo ~2 cm, no meio do corpo, com ~7 frestas verticais de grade na metade da esquerda"
+  },
+  {
+   "nome": "pe",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "pé de ferro curvo, ~8 cm de largura e ~22 cm de altura, em cada canto, abrindo para fora na base; modelar como caixa que afina para baixo"
+  },
+  {
+   "nome": "saia",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "faixa decorativa de ~6 cm logo acima dos pés, ligando os 4 pés nos 4 lados"
+  },
+  {
+   "nome": "tubo",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "tubo da chaminé de ~18 cm de diâmetro, subindo do tampo (~81 cm) até ~205 cm de altura, recuado para o fundo; com uma luva/colar mais grosso perto do tampo"
+  },
+  {
+   "nome": "cotovelo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "cotovelo curvo no topo do tubo (~18 cm, de 205 a 224 cm) virando a saída para a lateral/fundo; o jogo descreve só uma caixa, o desenho é um cano curvo com boca redonda escura"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "o bloco do jogo cobre os pés vazados: o corpo tem que ser recortado a ~22 cm do chão e os 4 pés são peças novas (a base toda aparece como bloco sem desenho)",
+  "o script de simetria sugere cilindros e caixas espelhados para a chaminé: é falso positivo, a chaminé é uma só",
+  "a chaminé é fina e muito alta (~2 m) e termina num cotovelo curvo que o jogo reduz a uma caixa; a boca do cano aparece só no desenho N, nas outras direções o cotovelo vira para outro lado",
+  "pés curvos e a saia decorativa são difíceis em caixas: aproximar e deixar os detalhes na textura",
+  "S e N são diferentes (N~S 0.28) e E não é espelho de S: usar N na traseira e não espelhar E/W",
+  "ferrugem e manchas claras no desenho: textura, não peça"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_17",
+  "sprites": {
+   "S": "appliances_cooking_01_17",
+   "E": "appliances_cooking_01_16",
+   "N": "appliances_cooking_01_18",
+   "W": "appliances_cooking_01_19"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 3,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 3,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 1,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4618,
+     -0.0291,
+     0.0
+    ],
+    "max": [
+     0.4136,
+     0.5105,
+     0.8715
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "cilindro",
+    "centro": [
+     -0.0064,
+     0.3653,
+     0.8137
+    ],
+    "raio": 0.0885,
+    "altura": 1.2363,
+    "eixo": "z"
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.0834,
+     0.2699,
+     2.0501
+    ],
+    "max": [
+     0.0926,
+     0.4533,
+     2.24
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "MetalPlates",
+   "Material2": "MetalScrap",
+   "Material3": "MetalScrap",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Oven",
+   "GroupName": "Antique",
+   "Facing": "S",
+   "container": "woodstove",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "ContainerCapacity": "15",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "400"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4618,
+    -0.0291,
+    0.0
+   ],
+   "max": [
+    0.4136,
+    0.5105,
+    2.24
+   ],
+   "largura": 0.8754,
+   "profundidade": 0.5396,
+   "altura": 2.24
+  },
+  "menor_medida_peca": 0.176,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7729,
+  "cobertura": 0.9983,
+  "sobra": 0.2261,
+  "pixels_desenho": 7836,
+  "pixels_geometria": 10109,
+  "espelhado_E_S": 0.6723,
+  "espelhado_W_N": 0.8143,
+  "N_igual_S": 0.2787,
+  "silhueta_espelho_E_S": 0.7112,
+  "silhueta_espelho_W_N": 0.8647,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0241,
+   0.2407
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0949,
+     0.0276,
+     0.8137
+    ],
+    "max": [
+     0.0821,
+     0.2046,
+     2.05
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1303,
+     0.0276,
+     0.8137
+    ],
+    "max": [
+     0.0467,
+     0.2046,
+     2.05
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0834,
+     0.0281,
+     2.0501
+    ],
+    "max": [
+     0.0926,
+     0.2115,
+     2.24
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1408,
+     0.0281,
+     2.0501
+    ],
+    "max": [
+     0.0352,
+     0.2115,
+     2.24
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9023,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1316
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_antique",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_antique\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_antique\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_antique\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\oven_antique\\profundidade.png"
+  }
+ }
+}

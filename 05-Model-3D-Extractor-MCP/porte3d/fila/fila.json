@@ -1396,7 +1396,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Combo Washer Dryer",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "combo_washer_dryer",
    "forma_de": null,
    "group_name": "Blue",
@@ -1406,14 +1406,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:31-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:16-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:08:54-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 7, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:11:39-03:00"
     }
    ],
    "id": "combo_washer_dryer_blue",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 7,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 401,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_laundry_01_1",
     "N": "appliances_laundry_01_2",
@@ -1564,7 +1594,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Conditioner",
-   "estado": "fila",
+   "estado": "nao_portar",
    "familia": "conditioner",
    "forma_de": null,
    "group_name": "Air",
@@ -1574,11 +1604,23 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:36-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "grade de ventilação presa à parede, fina (5 cm) e vazada com ripas: quase sem volume, melhor ficar 2D",
+     "para": "nao_portar",
+     "quando": "2026-10-12T21:00:54-03:00"
     }
    ],
    "id": "conditioner_air",
    "material": "metal",
-   "motivo": null,
+   "motivo": "grade de ventilação presa à parede, fina (5 cm) e vazada com ripas: quase sem volume, melhor ficar 2D",
    "notas": [],
    "prioridade": 413,
    "rodada": 0,
@@ -2857,7 +2899,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Deluxe",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "deluxe",
    "forma_de": null,
    "group_name": "Espresso",
@@ -2867,6 +2909,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:34-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:21-03:00"
     }
    ],
    "id": "deluxe_espresso",
@@ -2915,7 +2969,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Dishwasher",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "dishwasher",
    "forma_de": null,
    "group_name": "Brown",
@@ -2925,14 +2979,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:30-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:15-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:08:10-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 8",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-12T21:11:15-03:00"
     }
    ],
    "id": "dishwasher_brown",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 8,
+     "realista": 8,
+     "rodada": 1
+    }
+   ],
    "prioridade": 402,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_72",
     "N": "appliances_cooking_01_75",
@@ -2945,7 +3029,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Dishwasher",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "dishwasher",
    "forma_de": null,
    "group_name": "Metal",
@@ -3015,6 +3099,12 @@
      "nota": "rodada 3: arte 9, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:23:03-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:54:49-03:00"
     }
    ],
    "id": "dishwasher_metal",
@@ -3132,7 +3222,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Freezer",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "freezer",
    "forma_de": null,
    "group_name": "Chest",
@@ -3166,6 +3256,12 @@
      "nota": "rodada 1: arte 8, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:13:34-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:03-03:00"
     }
    ],
    "id": "freezer_chest",
@@ -3192,7 +3288,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "Blue",
@@ -3262,6 +3358,12 @@
      "nota": "rodada 3: arte 8, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:10:43-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:54:57-03:00"
     }
    ],
    "id": "fridge_blue",
@@ -3298,7 +3400,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "fila",
+   "estado": "nao_portar",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "Industrial",
@@ -3308,11 +3410,23 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:25-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "a porta é um painel grande de vidro translúcido e o modelo não tem transparência",
+     "para": "nao_portar",
+     "quando": "2026-10-12T21:00:00-03:00"
     }
    ],
    "id": "fridge_industrial",
    "material": "metal",
-   "motivo": null,
+   "motivo": "a porta é um painel grande de vidro translúcido e o modelo não tem transparência",
    "notas": [],
    "prioridade": 406,
    "rodada": 0,
@@ -3328,7 +3442,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "Mini",
@@ -3338,14 +3452,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:24-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T20:59:58-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:01:34-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 8",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-12T21:03:29-03:00"
     }
    ],
    "id": "fridge_mini",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 8,
+     "realista": 8,
+     "rodada": 1
+    }
+   ],
    "prioridade": 406,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_refrigeration_01_24",
     "N": "appliances_refrigeration_01_27",
@@ -3358,7 +3502,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "Steel",
@@ -3368,14 +3512,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:24-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T20:59:57-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:03:30-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:06:25-03:00"
     }
    ],
    "id": "fridge_steel",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 8,
+     "realista": 7,
+     "rodada": 1
+    }
+   ],
    "prioridade": 406,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_refrigeration_01_9",
     "N": "appliances_refrigeration_01_10",
@@ -3388,7 +3562,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "White",
@@ -3458,6 +3632,12 @@
      "nota": "rodada 3: arte 9, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:00:15-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:07-03:00"
     }
    ],
    "id": "fridge_white",
@@ -3494,7 +3674,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Fridge",
-   "estado": "fila",
+   "estado": "nao_portar",
    "familia": "fridge",
    "forma_de": null,
    "group_name": "White Industrial",
@@ -3504,11 +3684,23 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:26-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "a porta é um painel grande de vidro translúcido e o modelo não tem transparência",
+     "para": "nao_portar",
+     "quando": "2026-10-12T21:00:01-03:00"
     }
    ],
    "id": "fridge_white_industrial",
    "material": "metal",
-   "motivo": null,
+   "motivo": "a porta é um painel grande de vidro translúcido e o modelo não tem transparência",
    "notas": [],
    "prioridade": 406,
    "rodada": 0,
@@ -3584,7 +3776,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Generator",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "generator",
    "forma_de": null,
    "group_name": "Red",
@@ -3594,6 +3786,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:35-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:52-03:00"
     }
    ],
    "id": "generator_red",
@@ -3644,7 +3848,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Hood",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "hood",
    "forma_de": null,
    "group_name": "Extractor",
@@ -3654,6 +3858,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:37-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:57-03:00"
     }
    ],
    "id": "hood_extractor",
@@ -3847,7 +4063,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Microwave",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "microwave",
    "forma_de": null,
    "group_name": "Chrome",
@@ -3857,14 +4073,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:30-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:14-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:07:07-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 9, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:11:15-03:00"
     }
    ],
    "id": "microwave_chrome",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 9,
+     "realista": 7,
+     "rodada": 1
+    }
+   ],
    "prioridade": 402,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_29",
     "N": "appliances_cooking_01_31",
@@ -3877,7 +4123,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Microwave",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "microwave",
    "forma_de": null,
    "group_name": "White",
@@ -3911,6 +4157,12 @@
      "nota": "rodada 1: arte 9, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:03:10-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:09-03:00"
     }
    ],
    "id": "microwave_white",
@@ -3937,7 +4189,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Antique",
@@ -3947,14 +4199,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:27-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:02-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:05:13-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:11:15-03:00"
     }
    ],
    "id": "oven_antique",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 8,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 407,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_16",
     "N": "appliances_cooking_01_18",
@@ -3997,7 +4279,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Green",
@@ -4049,6 +4331,12 @@
      "nota": "rodada 2: arte 8, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:06:29-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:12-03:00"
     }
    ],
    "id": "oven_green",
@@ -4080,7 +4368,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Grey",
@@ -4090,14 +4378,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:28-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:11-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:06:28-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 7, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:11:39-03:00"
     }
    ],
    "id": "oven_grey",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 7,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 407,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_4",
     "N": "appliances_cooking_01_7",
@@ -4110,7 +4428,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Industrial",
@@ -4120,14 +4438,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:29-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:12-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:04:42-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 6, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:11:39-03:00"
     }
    ],
    "id": "oven_industrial",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 407,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_20",
     "N": "appliances_cooking_01_23",
@@ -4140,7 +4488,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "reprovado",
+   "estado": "aguardando_aprovacao",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Modern",
@@ -4210,11 +4558,41 @@
      "nota": "aba_traseira: textura_deslocada (arte, comparacao) — ponta esquerda da aba, onde encontra o tampo",
      "para": "reprovado",
      "quando": "2026-10-12T20:08:06-03:00"
+    },
+    {
+     "de": "reprovado",
+     "nota": "reiniciado",
+     "para": "fila",
+     "quando": "2026-10-12T20:56:47-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:56:48-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T20:56:49-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T20:56:49-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 8",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-12T20:59:26-03:00"
     }
    ],
    "id": "oven_modern",
    "material": "metal",
-   "motivo": "aba_traseira: textura_deslocada (arte, comparacao) — ponta esquerda da aba, onde encontra o tampo",
+   "motivo": null,
    "notas": [
     {
      "arte": 5,
@@ -4230,10 +4608,15 @@
      "arte": 7,
      "realista": 8,
      "rodada": 3
+    },
+    {
+     "arte": 8,
+     "realista": 8,
+     "rodada": 1
     }
    ],
    "prioridade": 407,
-   "rodada": 3,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_12",
     "N": "appliances_cooking_01_15",
@@ -4246,7 +4629,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Red",
@@ -4256,14 +4639,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:27-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:10-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:02:41-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 8, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-12T21:06:53-03:00"
     }
    ],
    "id": "oven_red",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 8,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 407,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_cooking_01_8",
     "N": "appliances_cooking_01_11",
@@ -4456,7 +4869,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Radio",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "radio",
    "forma_de": null,
    "group_name": "ValuTech",
@@ -4466,6 +4879,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:35-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:53-03:00"
     }
    ],
    "id": "radio_valutech",
@@ -4570,7 +4995,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Sink",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "sink",
    "forma_de": null,
    "group_name": "Chrome",
@@ -4580,6 +5005,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:37-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:56-03:00"
     }
    ],
    "id": "sink_chrome",
@@ -4775,7 +5212,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Television",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "television",
    "forma_de": null,
    "group_name": "Antique",
@@ -4845,6 +5282,12 @@
      "nota": "rodada 3: arte 8, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:35:05-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:16-03:00"
     }
    ],
    "id": "television_antique",
@@ -4881,7 +5324,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Television",
-   "estado": "fila",
+   "estado": "em_critica",
    "familia": "television",
    "forma_de": null,
    "group_name": "Premium Technologies",
@@ -4891,6 +5334,24 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:32-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:10:12-03:00"
     }
    ],
    "id": "television_premium_technologies",
@@ -4898,7 +5359,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 403,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_television_01_0",
     "N": "appliances_television_01_3",
@@ -4911,7 +5372,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Television",
-   "estado": "fila",
+   "estado": "em_critica",
    "familia": "television",
    "forma_de": null,
    "group_name": "ValuTech",
@@ -4921,6 +5382,24 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:32-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:19-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-12T21:10:58-03:00"
     }
    ],
    "id": "television_valutech",
@@ -4928,7 +5407,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 403,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "appliances_television_01_5",
     "N": "appliances_television_01_6",
@@ -4999,7 +5478,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Washing Machine",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "washing_machine",
    "forma_de": null,
    "group_name": "White",
@@ -5051,6 +5530,12 @@
      "nota": "rodada 2: arte 8, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-12T20:23:13-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-12T20:55:21-03:00"
     }
    ],
    "id": "washing_machine_white",
@@ -5082,7 +5567,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "X-press",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "x_press",
    "forma_de": null,
    "group_name": "Coffee",
@@ -5092,6 +5577,18 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-12T20:57:33-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-12T21:00:20-03:00"
     }
    ],
    "id": "x_press_coffee",

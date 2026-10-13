@@ -1,0 +1,347 @@
+{
+ "versao": 1,
+ "id": "television_premium_technologies",
+ "nota": "TV de tubo cinza claro. Frente em -y, traseira em +y. Fundo em prisma (perfil y-z) que afina em tronco, base escura chanfrada, grade com frisos e 3 luzinhas atras.",
+ "sprites": {
+  "S": "appliances_television_01_1",
+  "E": "appliances_television_01_0",
+  "N": "appliances_television_01_3",
+  "W": "appliances_television_01_2"
+ },
+ "tras": "N",
+ "material": "liso",
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "forma": "caixa",
+   "min": [
+    -0.4594,
+    -0.0531,
+    0.3828
+   ],
+   "max": [
+    0.4282,
+    -0.01,
+    1.1392
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "moldura",
+   "forma": "caixa",
+   "min": [
+    -0.4594,
+    -0.0731,
+    0.5
+   ],
+   "max": [
+    0.4282,
+    -0.0531,
+    1.1392
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "tela",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    -0.0751,
+    0.55
+   ],
+   "max": [
+    0.37,
+    -0.0701,
+    1.12
+   ],
+   "material": "tela",
+   "chanfro": 0.03
+  },
+  {
+   "nome": "painel_baixo",
+   "forma": "caixa",
+   "min": [
+    -0.4594,
+    -0.0731,
+    0.3828
+   ],
+   "max": [
+    0.4282,
+    -0.0531,
+    0.5
+   ],
+   "material": "painel",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "fita",
+   "forma": "caixa",
+   "min": [
+    -0.2,
+    -0.0751,
+    0.41
+   ],
+   "max": [
+    0.1,
+    -0.0731,
+    0.45
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_a",
+   "forma": "cilindro",
+   "centro": [
+    0.17,
+    -0.0771,
+    0.435
+   ],
+   "raio": 0.011,
+   "altura": 0.004,
+   "eixo": "y",
+   "material": "botao",
+   "segmentos": 16
+  },
+  {
+   "nome": "botao_b",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    -0.0771,
+    0.435
+   ],
+   "raio": 0.011,
+   "altura": 0.004,
+   "eixo": "y",
+   "material": "botao",
+   "segmentos": 16
+  },
+  {
+   "nome": "traseira",
+   "forma": "prisma",
+   "eixo": "x",
+   "de": -0.4594,
+   "ate": 0.4282,
+   "perfil": [
+    [
+     -0.0131,
+     0.5828
+    ],
+    [
+     -0.0131,
+     1.1392
+    ],
+    [
+     0.03,
+     1.1392
+    ],
+    [
+     0.2763,
+     0.98
+    ],
+    [
+     0.2763,
+     0.5828
+    ]
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "base_escura",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": -0.0131,
+   "ate": 0.2763,
+   "perfil": [
+    [
+     -0.4594,
+     0.5828
+    ],
+    [
+     0.4282,
+     0.5828
+    ],
+    [
+     0.39,
+     0.3828
+    ],
+    [
+     -0.42,
+     0.3828
+    ]
+   ],
+   "material": "escura"
+  },
+  {
+   "nome": "grade_tras",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.2763,
+    0.85
+   ],
+   "max": [
+    -0.14,
+    0.2823,
+    0.95
+   ],
+   "material": "grade",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "friso_a",
+   "forma": "caixa",
+   "min": [
+    -0.355,
+    0.2823,
+    0.925
+   ],
+   "max": [
+    -0.155,
+    0.2843,
+    0.935
+   ],
+   "material": "friso"
+  },
+  {
+   "nome": "friso_b",
+   "forma": "caixa",
+   "min": [
+    -0.355,
+    0.2823,
+    0.895
+   ],
+   "max": [
+    -0.155,
+    0.2843,
+    0.905
+   ],
+   "material": "friso"
+  },
+  {
+   "nome": "friso_c",
+   "forma": "caixa",
+   "min": [
+    -0.355,
+    0.2823,
+    0.865
+   ],
+   "max": [
+    -0.155,
+    0.2843,
+    0.875
+   ],
+   "material": "friso"
+  },
+  {
+   "nome": "luz_vermelha",
+   "forma": "caixa",
+   "min": [
+    -0.33,
+    0.2763,
+    0.61
+   ],
+   "max": [
+    -0.305,
+    0.2793,
+    0.63
+   ],
+   "material": "luz_r"
+  },
+  {
+   "nome": "luz_branca",
+   "forma": "caixa",
+   "min": [
+    -0.27,
+    0.2763,
+    0.61
+   ],
+   "max": [
+    -0.24500000000000002,
+    0.2793,
+    0.63
+   ],
+   "material": "luz_b"
+  },
+  {
+   "nome": "luz_amarela",
+   "forma": "caixa",
+   "min": [
+    -0.21,
+    0.2763,
+    0.61
+   ],
+   "max": [
+    -0.185,
+    0.2793,
+    0.63
+   ],
+   "material": "luz_a"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso"
+   },
+   "tela": {
+    "tipo": "liso"
+   },
+   "painel": {
+    "tipo": "liso"
+   },
+   "botao": {
+    "tipo": "liso"
+   },
+   "escura": {
+    "tipo": "liso"
+   },
+   "grade": {
+    "tipo": "liso"
+   },
+   "friso": {
+    "tipo": "liso"
+   },
+   "luz_r": {
+    "tipo": "liso"
+   },
+   "luz_b": {
+    "tipo": "liso"
+   },
+   "luz_a": {
+    "tipo": "liso"
+   }
+  }
+ },
+ "cores": {
+  "botao": [
+   20,
+   20,
+   22
+  ],
+  "friso": [
+   120,
+   120,
+   126
+  ],
+  "luz_r": [
+   170,
+   50,
+   45
+  ],
+  "luz_b": [
+   225,
+   225,
+   225
+  ],
+  "luz_a": [
+   220,
+   170,
+   50
+  ]
+ }
+}

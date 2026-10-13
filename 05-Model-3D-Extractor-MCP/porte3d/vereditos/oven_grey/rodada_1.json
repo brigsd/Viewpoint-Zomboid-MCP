@@ -1,0 +1,119 @@
+{
+ "versao": 1,
+ "objeto": "oven_grey",
+ "rodada": 1,
+ "nota_arte": 7,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mureta_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_preto",
+   "situacao": "ok",
+   "nota": "volume e frente saliente certos; bocas só no nível arte"
+  },
+  {
+   "nome": "janela_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alca_porta",
+   "situacao": "fora_do_lugar",
+   "nota": "comprida demais; passa da quina e da lateral do corpo e fica solta no ar"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "alca_porta",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "ponta direita da alça, além da lateral do corpo",
+   "sentido": "maior",
+   "evidencia": "fio.png 045: alça vai de x≈593 a x≈778 e o corpo termina em x≈742; giro 225/270 mostra a alça solta fora do corpo; comparacao realista 0° a ponta passa da quina frontal",
+   "gravidade": "media"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face de cima do tampo, onde ficam as 4 bocas",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0° e zoom.png realista 0°: tampo liso sem bocas, enquanto o desenho do jogo mostra 4 bocas",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira, painel com círculo e grades de ventilação",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 180° e giro_realista 180: placa branca lisa; o desenho 'jogo trás' mostra painel, círculo e grades",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "janela_forno",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "contorno da janela, lado esquerdo e embaixo",
+   "sentido": "",
+   "evidencia": "zoom.png arte 045 parte de baixo: aro claro fino desalinhado em volta do desenho da janela",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "face de cima do tampo e botões vistos de lado",
+   "sentido": "",
+   "evidencia": "giro_arte 045 e 135: textura do tampo esticada e serrilhada; botões viram losangos achatados sobre o desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "quina frontal do tampo perto da mureta",
+   "sentido": "",
+   "evidencia": "zoom.png arte 000 parte de cima: linha fina diagonal clara na quina do tampo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo e faixa frontal do tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: tampo cinza-arroxeado mais claro que o preto do desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Arte muito fiel ao desenho (IoU 95,3%) e todas as peças existem; falta corrigir a alça, que sai do corpo, e dar bocas ao tampo realista e detalhe à traseira."
+}

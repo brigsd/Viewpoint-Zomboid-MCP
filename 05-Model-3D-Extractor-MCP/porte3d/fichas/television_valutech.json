@@ -1,0 +1,184 @@
+{
+ "versao": 1,
+ "objeto": "television_valutech",
+ "sprite": "appliances_television_01_4",
+ "decisao": "portar",
+ "motivo": "televisão de tubo (CRT) pequena com volume claro; a tela é um painel escuro opaco, sem transparência real",
+ "o_que_e": "televisão antiga de tubo, cinza escuro, quase quadrada, com moldura grossa, tela escura, base preta chanfrada atrás e traseira que afina",
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "bloco ~73x39 cm de planta e ~64 cm de altura, é o bloco do jogo; envolve moldura e tela"
+  },
+  {
+   "nome": "tela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tela escura de ~48x42 cm, ligeiramente afundada ~2 cm, cantos arredondados; opaca"
+  },
+  {
+   "nome": "moldura",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "moldura cinza escura de ~7 cm em volta da tela, mais grossa embaixo, com a faixa de entrada de fita"
+  },
+  {
+   "nome": "botoes",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "2 botões pretos pequenos no canto direito da moldura, ~2 cm",
+   "quantidade": 2
+  },
+  {
+   "nome": "traseira",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "parte de trás afinando em tronco com topo mais baixo, cinza escuro, com um recorte retangular em relevo na face de trás"
+  },
+  {
+   "nome": "base_escura",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "bloco preto chanfrado embaixo atrás, ~25 cm de altura, com 3 luzinhas coloridas na traseira"
+  },
+  {
+   "nome": "grade_lateral",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "grade de ventilação com ~3 frisos na lateral, ~12 cm"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco do jogo é um paralelepípedo cheio; a forma real afina para trás (sobra 17%)",
+  "E não é espelho de S nem W de N: usar os 4 desenhos",
+  "tela é de vidro no jogo mas desenhada opaca: pintar como painel liso",
+  "fica sobre outro móvel (base a 38 cm do chão)"
+ ],
+ "medidas": {
+  "sprite": "appliances_television_01_4",
+  "sprites": {
+   "S": "appliances_television_01_4",
+   "E": "appliances_television_01_5",
+   "N": "appliances_television_01_6",
+   "W": "appliances_television_01_7"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4103,
+     -0.1101,
+     0.3828
+    ],
+    "max": [
+     0.3233,
+     0.2795,
+     1.0218
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "MaterialType": "Glass_Light"
+  },
+  "props": {
+   "CustomName": "Television",
+   "GroupName": "ValuTech",
+   "Facing": "S",
+   "Surface": "15",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4103,
+    -0.1101,
+    0.3828
+   ],
+   "max": [
+    0.3233,
+    0.2795,
+    1.0218
+   ],
+   "largura": 0.7336,
+   "profundidade": 0.3896,
+   "altura": 0.639
+  },
+  "menor_medida_peca": 0.3896,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.3828,
+  "montado_na_parede": false,
+  "contorno_0": 0.8301,
+  "cobertura": 1.0,
+  "sobra": 0.1699,
+  "pixels_desenho": 4055,
+  "pixels_geometria": 4885,
+  "espelhado_E_S": 0.7725,
+  "espelhado_W_N": 0.8432,
+  "N_igual_S": 0.7828,
+  "silhueta_espelho_E_S": 0.8322,
+  "silhueta_espelho_W_N": 0.8946,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0435,
+   0.0847
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4211,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.037
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_valutech",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_valutech\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_valutech\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_valutech\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_valutech\\profundidade.png"
+  }
+ }
+}

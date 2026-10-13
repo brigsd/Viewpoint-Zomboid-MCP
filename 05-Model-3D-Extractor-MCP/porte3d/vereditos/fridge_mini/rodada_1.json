@@ -1,0 +1,50 @@
+{
+ "versao": 1,
+ "objeto": "fridge_mini",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "borda lateral fina da porta, ao longo de toda a altura",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135 e 315: a borda da porta mostra listras esticadas em vez de cor lisa",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "topo e laterais do gabinete",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: corpo mais cinza e claro que o marrom escuro do desenho do jogo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo fiel ao desenho, com as quatro peças prometidas no lugar e só defeitos leves."
+}

@@ -1,0 +1,262 @@
+{
+ "versao": 1,
+ "id": "oven_grey",
+ "sprites": {
+  "S": "appliances_cooking_01_5",
+  "E": "appliances_cooking_01_4",
+  "N": "appliances_cooking_01_7",
+  "W": "appliances_cooking_01_6"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "vidro": [
+   18,
+   20,
+   22
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    -0.2109,
+    0.12
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.76
+   ],
+   "chanfro": 0.008,
+   "material": "metal"
+  },
+  {
+   "nome": "socalo",
+   "forma": "caixa",
+   "min": [
+    -0.4321,
+    -0.19090000000000001,
+    0.0
+   ],
+   "max": [
+    0.44999999999999996,
+    0.38999999999999996,
+    0.125
+   ],
+   "chanfro": 0.004,
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "tampo_preto",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    -0.22290000000000001,
+    0.76
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.86
+   ],
+   "chanfro": 0.012,
+   "material": "liso"
+  },
+  {
+   "nome": "mureta_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    0.37,
+    0.86
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.9339999999999999
+   ],
+   "chanfro": 0.003,
+   "material": "metal"
+  },
+  {
+   "nome": "janela_forno",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": -0.22290000000000001,
+   "ate": -0.2089,
+   "perfil": [
+    [
+     0.33,
+     0.5
+    ],
+    [
+     0.3138,
+     0.5448
+    ],
+    [
+     0.267,
+     0.5852
+    ],
+    [
+     0.194,
+     0.6173
+    ],
+    [
+     0.102,
+     0.6379
+    ],
+    [
+     0.0,
+     0.645
+    ],
+    [
+     -0.102,
+     0.6379
+    ],
+    [
+     -0.194,
+     0.6173
+    ],
+    [
+     -0.267,
+     0.5852
+    ],
+    [
+     -0.3138,
+     0.5448
+    ],
+    [
+     -0.33,
+     0.5
+    ],
+    [
+     -0.3138,
+     0.4552
+    ],
+    [
+     -0.267,
+     0.4148
+    ],
+    [
+     -0.194,
+     0.3827
+    ],
+    [
+     -0.102,
+     0.3621
+    ],
+    [
+     -0.0,
+     0.355
+    ],
+    [
+     0.102,
+     0.3621
+    ],
+    [
+     0.194,
+     0.3827
+    ],
+    [
+     0.267,
+     0.4148
+    ],
+    [
+     0.3138,
+     0.4552
+    ]
+   ],
+   "material": "vidro"
+  },
+  {
+   "nome": "alca_porta",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.03,
+    -0.2409,
+    0.715
+   ],
+   "raio": 0.011,
+   "altura": 0.62,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao0",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.02,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao1",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.11,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao2",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.2,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao3",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.29,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "liso": {
+    "tipo": "liso"
+   },
+   "vidro": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

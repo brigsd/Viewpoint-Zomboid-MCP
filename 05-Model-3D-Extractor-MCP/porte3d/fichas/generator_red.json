@@ -1,0 +1,187 @@
+{
+ "versao": 1,
+ "objeto": "generator_red",
+ "sprite": "appliances_misc_01_1",
+ "decisao": "portar",
+ "motivo": "gerador portátil: carenagem de caixa com gaiola de tubo, volume claro e fácil de ler",
+ "o_que_e": "gerador a gasolina portátil: carenagem vermelha em forma de caixa com topo levemente arredondado, tampa preta do tanque em cima, painel de controle e grelhas pretas na frente, e uma gaiola de tubo de aço cinza em volta, sobre uma base escura",
+ "pecas": [
+  {
+   "nome": "carenagem",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "corpo vermelho do gerador, caixa de ~67 cm de largura e ~54 cm de altura total com a gaiola; a carenagem em si ocupa a parte de cima e do meio, com quina de cima levemente chanfrada"
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/chassi escuro de ~8 cm de altura sob a carenagem, um pouco recuado, com os patins"
+  },
+  {
+   "nome": "tampa_tanque",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampa preta do tanque, ~8 cm de diâmetro e ~3 cm de altura, no topo, perto do canto de trás esquerdo"
+  },
+  {
+   "nome": "painel_frontal",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "painel de controle escuro, fino (~2 cm), na parte baixa da frente, com tomadas e mostrador"
+  },
+  {
+   "nome": "grelha",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "liso",
+   "descricao": "grelha de ventilação preta com ripas horizontais, ~15x12 cm, na lateral direita e (por giro) na traseira"
+  },
+  {
+   "nome": "arco_gaiola",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "arco de tubo de aço cinza ~2 cm de diâmetro em forma de U invertido, um em cada ponta lateral do gerador, subindo da base até um pouco acima do topo da carenagem"
+  },
+  {
+   "nome": "barra_gaiola",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "tubo horizontal de aço ~2 cm ligando os arcos, correndo no comprimento do gerador, na altura da base e da metade da carenagem"
+  }
+ ],
+ "simetria": "giro_180",
+ "tras": "simetrico",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "carenagem": "liso",
+  "base": "liso",
+  "tampa_tanque": "liso",
+  "painel_frontal": "liso",
+  "grelha": "liso",
+  "arco_gaiola": "metal",
+  "barra_gaiola": "metal"
+ },
+ "problemas_previstos": [
+  "o jogo só tem uma caixa de 67x31x54 cm, que é o envelope inclusive da gaiola; o modelador deve refazer a carenagem, a base e a gaiola pelo desenho",
+  "gaiola de tubo é fina e vazada: arcos curvos precisam de cilindros finos montados em U; risco de ficar solta ou grossa demais",
+  "o desenho parece mais fundo que os 31 cm da caixa do jogo: conferir a profundidade pelo desenho",
+  "N é igual a S (0,98) mas E/W não são espelho de S/N: usar giro de 180 graus para a traseira e conferir E e W pelo desenho",
+  "aviso 'material do jogo não informado': conferir pela imagem (tinta vermelha lisa + tubo cinza metálico)"
+ ],
+ "medidas": {
+  "sprite": "appliances_misc_01_1",
+  "sprites": {
+   "S": "appliances_misc_01_1",
+   "E": "appliances_misc_01_0",
+   "N": "appliances_misc_01_3",
+   "W": "appliances_misc_01_2"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3371,
+     -0.1751,
+     0.0
+    ],
+    "max": [
+     0.3371,
+     0.1363,
+     0.5351
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "liso",
+  "material_props": {},
+  "props": {
+   "CustomName": "Generator",
+   "GroupName": "Red",
+   "Facing": "S",
+   "BlocksPlacement": ""
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.3371,
+    -0.1751,
+    0.0
+   ],
+   "max": [
+    0.3371,
+    0.1363,
+    0.5351
+   ],
+   "largura": 0.6742,
+   "profundidade": 0.3114,
+   "altura": 0.5351
+  },
+  "menor_medida_peca": 0.3114,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8061,
+  "cobertura": 1.0,
+  "sobra": 0.1939,
+  "pixels_desenho": 2894,
+  "pixels_geometria": 3590,
+  "espelhado_E_S": 0.7931,
+  "espelhado_W_N": 0.7955,
+  "N_igual_S": 0.9793,
+  "silhueta_espelho_E_S": 0.8561,
+  "silhueta_espelho_W_N": 0.8561,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": false,
+  "centro_simetria": [
+   0.0,
+   -0.0194
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 3200,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0956
+  },
+  "sugestao": [
+   "o desenho N é a frente repetida (ou está vazio): tras = simetrico",
+   "material do jogo não informado: conferir pela imagem"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\generator_red",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\generator_red\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\generator_red\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\generator_red\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\generator_red\\profundidade.png"
+  }
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "versao": 1,
+ "objeto": "dishwasher_brown",
+ "sprite": "appliances_cooking_01_73",
+ "decisao": "portar",
+ "motivo": "lava-louça é uma caixa simples; porte direto, sem partes transparentes",
+ "o_que_e": "lava-louça bege/branca: caixa baixa com faixa de comando marrom e preta na frente em cima (botões, mostrador e disco), porta com friso e rodapé; traseira com chapa cinza e ventilação",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "caixa bege ~97x61 cm e 74 cm de altura com friso/frisos finos no tampo"
+  },
+  {
+   "nome": "painel_comando",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa marrom e preta ~97 cm de largura e ~12 cm de altura na frente, no alto, levemente saliente, com botões, mostrador e disco"
+  },
+  {
+   "nome": "botao",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 5,
+   "material": "metal",
+   "descricao": "botões e disco redondos no painel: um disco maior (~6 cm) à direita e 4 botões pequenos à esquerda"
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "porta frontal ~97x50 cm abaixo do painel com friso horizontal na altura de ~2/3"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "rodapé escuro recuado ~10 cm de altura no pé da frente"
+  },
+  {
+   "nome": "chapa_traseira",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "chapa cinza traseira com moldura escura, grade de ventilação e furo redondo para mangueira"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso",
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "traseira N é bem diferente da frente (chapa cinza com ventilação e furo redondo): usar o desenho N",
+  "botões e mostrador do painel muito pequenos",
+  "frisos do tampo e da porta são muito finos",
+  "E é só aproximadamente o espelho de S (0,76): conferir o lado do painel"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_73",
+  "sprites": {
+   "S": "appliances_cooking_01_73",
+   "E": "appliances_cooking_01_72",
+   "N": "appliances_cooking_01_75",
+   "W": "appliances_cooking_01_74"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5113,
+     -0.1274,
+     0.0
+    ],
+    "max": [
+     0.4627,
+     0.4836,
+     0.7449
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "Electric",
+   "Material3": "MetalScrap",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Dishwasher",
+   "GroupName": "Brown",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "dishwasher",
+   "Surface": "30",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "10",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "30",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5113,
+    -0.1274,
+    0.0
+   ],
+   "max": [
+    0.4627,
+    0.4836,
+    0.7449
+   ],
+   "largura": 0.974,
+   "profundidade": 0.611,
+   "altura": 0.7449
+  },
+  "menor_medida_peca": 0.611,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.976,
+  "cobertura": 0.9838,
+  "sobra": 0.008,
+  "pixels_desenho": 8533,
+  "pixels_geometria": 8463,
+  "espelhado_E_S": 0.7578,
+  "espelhado_W_N": 0.8451,
+  "N_igual_S": 0.4198,
+  "silhueta_espelho_E_S": 0.9049,
+  "silhueta_espelho_W_N": 0.9673,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0243,
+   0.1781
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 8653,
+   "cobertura": 0.996,
+   "fora_do_desenho": 0.0178
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\dishwasher_brown",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\dishwasher_brown\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\dishwasher_brown\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\dishwasher_brown\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\dishwasher_brown\\profundidade.png"
+  }
+ }
+}

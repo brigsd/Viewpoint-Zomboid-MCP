@@ -1,0 +1,215 @@
+{
+ "versao": 1,
+ "objeto": "combo_washer_dryer_blue",
+ "sprite": "appliances_laundry_01_0",
+ "decisao": "portar",
+ "motivo": "eletrodoméstico de uma caixa só, com volume e desenho de frente e de trás bem definidos; o vidro da porta é pequeno",
+ "o_que_e": "máquina de lavar e secar roupa de frente: gabinete bege quase cúbico, tampo azul levemente abaulado, painel azul com visor e botões na frente, porta redonda com escotilha de vidro e puxador azul, base escura recuada",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "gabinete bege ~78x72 cm de planta e ~96 cm de altura, único bloco do jogo; cobre o gabinete e o tampo"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo azul de ~5 cm de espessura no topo, ligeiramente maior que o gabinete e de cantos arredondados"
+  },
+  {
+   "nome": "painel",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa azul inclinada logo abaixo do tampo na frente, ~12 cm de altura, com visor claro e fileira de botões pequenos"
+  },
+  {
+   "nome": "botoes",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "~6 botões pequenos de ~2 cm no painel e um botão grande azul redondo de ~5 cm no canto direito do painel",
+   "quantidade": 6
+  },
+  {
+   "nome": "porta_aro",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "aro cinza escuro da porta redonda de ~48 cm de diâmetro, saliente ~3 cm, na frente do gabinete, deslocado para a esquerda"
+  },
+  {
+   "nome": "porta_vidro",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "escotilha de vidro azul-acinzentado de ~36 cm, afundada no aro; fica como disco liso opaco (sem transparência)"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "puxador azul vertical de ~4x10 cm na borda direita da porta"
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "soco escuro de ~6 cm, recuado ~3 cm, em toda a volta embaixo do gabinete"
+  },
+  {
+   "nome": "puxador_tras",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "alça escura em J na face de trás do gabinete, ~50 cm de altura, saliente ~3 cm"
+  },
+  {
+   "nome": "grade_tras",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "grade de ventilação com ~4 frisos horizontais, ~12 cm, na parte baixa da traseira"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o jogo só tem uma caixa: tampo, painel, porta, puxador e soco são peças novas",
+  "vidro da porta é pequeno; fazer como disco liso, sem transparência",
+  "traseira tem desenho próprio (N): alça em J e grade de ventilação",
+  "E/W são espelhos de S/N"
+ ],
+ "medidas": {
+  "sprite": "appliances_laundry_01_0",
+  "sprites": {
+   "S": "appliances_laundry_01_0",
+   "E": "appliances_laundry_01_1",
+   "N": "appliances_laundry_01_2",
+   "W": "appliances_laundry_01_3"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3919,
+     -0.3415,
+     0.0
+    ],
+    "max": [
+     0.3929,
+     0.3769,
+     0.9615
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "MetalScrap",
+   "Material3": "Electric",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Combo Washer Dryer",
+   "GroupName": "Blue",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "clothingwasher",
+   "Surface": "38",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "20",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "200"
+  },
+  "props_geometria": {
+   "Surface": "38",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.3919,
+    -0.3415,
+    0.0
+   ],
+   "max": [
+    0.3929,
+    0.3769,
+    0.9615
+   ],
+   "largura": 0.7848,
+   "profundidade": 0.7184,
+   "altura": 0.9615
+  },
+  "menor_medida_peca": 0.7184,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.9453,
+  "cobertura": 0.9931,
+  "sobra": 0.0484,
+  "pixels_desenho": 9280,
+  "pixels_geometria": 9685,
+  "espelhado_E_S": 0.8122,
+  "espelhado_W_N": 0.8389,
+  "N_igual_S": 0.698,
+  "silhueta_espelho_E_S": 0.9503,
+  "silhueta_espelho_W_N": 0.9995,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0005,
+   0.0177
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9610,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0343
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\combo_washer_dryer_blue",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\combo_washer_dryer_blue\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\combo_washer_dryer_blue\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\combo_washer_dryer_blue\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\combo_washer_dryer_blue\\profundidade.png"
+  }
+ }
+}

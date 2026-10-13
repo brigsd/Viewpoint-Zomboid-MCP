@@ -1,0 +1,173 @@
+{
+ "versao": 1,
+ "objeto": "microwave_chrome",
+ "sprite": "appliances_cooking_01_28",
+ "decisao": "portar",
+ "motivo": "micro-ondas é uma caixa simples sobre o balcão; a janela é pequena e escura, não vitrine",
+ "o_que_e": "micro-ondas cromado/cinza com tampa preta, janela escura na frente à esquerda e painel de botões à direita; fica a 90 cm do chão (sobre balcão)",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "caixa ~64x44 cm e 44 cm de altura, flutuando a 90 cm do chão, tampo preto e laterais cinza metálico"
+  },
+  {
+   "nome": "janela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "janela escura levemente embutida na frente, lado esquerdo, ~30x24 cm, com moldura preta"
+  },
+  {
+   "nome": "painel_botoes",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "painel de controle vertical na frente do lado direito ~10x30 cm, com botões em relevo"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "puxador vertical fino ao lado da janela, ~1x8 cm"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "objeto começa a 90 cm do chão (fica sobre outro móvel): o modelo é só a caixa, sem base",
+  "janela escura pequena: tratar como pintura/cor escura, não como transparência",
+  "puxador e botões são pequenos e finos",
+  "traseira N é uma face cinza lisa sem detalhes: usar o desenho N"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_28",
+  "sprites": {
+   "S": "appliances_cooking_01_28",
+   "E": "appliances_cooking_01_29",
+   "N": "appliances_cooking_01_31",
+   "W": "appliances_cooking_01_30"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.217,
+     -0.1011,
+     0.8969
+    ],
+    "max": [
+     0.4218,
+     0.3377,
+     1.3412
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "MetalScrap",
+   "Material2": "Electric",
+   "MaterialType": "Metal_Light"
+  },
+  "props": {
+   "CustomName": "Microwave",
+   "GroupName": "Chrome",
+   "Facing": "S",
+   "container": "microwave",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "ContainerCapacity": "5",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "ItemHeight": "18",
+   "Surface": "35",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.217,
+    -0.1011,
+    0.8969
+   ],
+   "max": [
+    0.4218,
+    0.3377,
+    1.3412
+   ],
+   "largura": 0.6388,
+   "profundidade": 0.4388,
+   "altura": 0.4443
+  },
+  "menor_medida_peca": 0.4388,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.8969,
+  "montado_na_parede": false,
+  "contorno_0": 0.9268,
+  "cobertura": 1.0,
+  "sobra": 0.0732,
+  "pixels_desenho": 3367,
+  "pixels_geometria": 3633,
+  "espelhado_E_S": 0.8319,
+  "espelhado_W_N": 0.8713,
+  "N_igual_S": 0.2347,
+  "silhueta_espelho_E_S": 0.9167,
+  "silhueta_espelho_W_N": 0.9473,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.1024,
+   0.1183
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 3456,
+   "cobertura": 0.9997,
+   "fora_do_desenho": 0.026
+  },
+  "sugestao": [
+   "a geometria começa a 90 cm do chão: objeto suspenso ou sobre outro móvel",
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_chrome",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_chrome\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_chrome\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_chrome\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\microwave_chrome\\profundidade.png"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "versao": 1,
+ "objeto": "oven_red",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok",
+   "nota": "no realista o tampo está sem bocas de cozimento"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok",
+   "nota": "no realista o topo não é branco"
+  },
+  {
+   "nome": "moldura_branca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "janela_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_inferior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_inferior",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tampo do corpo, área das duas bocas duplas",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: o tampo é um plano vermelho liso, sem as 4 bocas pretas que o desenho do jogo mostra",
+   "gravidade": "media"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face de cima do painel traseiro",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0° e zoom: topo do painel vermelho; o desenho e a ficha pedem topo branco",
+   "gravidade": "media"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "face lateral esquerda do painel traseiro, ponta",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090 e 135: faixa escura vertical na ponta do painel, que parece pedaço de textura de outra peça esticado",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "cor geral do corpo e das portas",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: vermelho mais escuro e apagado que o vermelho vivo do desenho",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira do corpo, abaixo do painel",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 180°: traseira vermelha lisa; o jogo mostra chapa cinza com grade de ventilação e botão",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "moldura_branca",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "ponta esquerda do friso empilhado e da barra inferior",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png 0°: magenta saliente à esquerda nas alturas do friso e da barra; comparacao.png arte 0° mostra blocos cinza passando do corpo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "janela_forno",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "meio da janela do forno, linha vertical",
+   "sentido": "",
+   "evidencia": "zoom.png arte 0° baixo: linha fina vertical dentro da janela do forno, ausente no desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O arte está pronto para o jogo, com defeitos leves; no realista faltam as bocas do tampo e o topo branco do painel, e o vermelho está apagado."
+}

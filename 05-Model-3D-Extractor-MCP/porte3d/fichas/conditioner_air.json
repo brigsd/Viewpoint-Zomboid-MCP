@@ -1,0 +1,131 @@
+{
+ "versao": 1,
+ "objeto": "conditioner_air",
+ "sprite": "rooftop_furniture_5",
+ "decisao": "nao_portar",
+ "motivo": "grade de ventilação presa à parede, fina (5 cm) e vazada com ripas: quase sem volume, melhor ficar 2D",
+ "o_que_e": "grade de ventilação/ar-condicionado de parede: moldura escura quadrada com ripas horizontais claras, encostada na parede",
+ "simetria": "nenhuma",
+ "tras": "simetrico",
+ "arte": "adesivo",
+ "materiais": {},
+ "problemas_previstos": [
+  "objeto de parede (MoveType WallObject) com profundidade de 5 cm e ripas vazadas",
+  "caixa do jogo (100x5x245 cm) é muito maior que a grade desenhada (IoU 0,25)",
+  "só existem as direções S e E no acervo"
+ ],
+ "medidas": {
+  "sprite": "rooftop_furniture_5",
+  "sprites": {
+   "S": "rooftop_furniture_5",
+   "E": "rooftop_furniture_4"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     0.4027,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.4541,
+     2.4494
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "MetalScrap"
+  },
+  "props": {
+   "CustomName": "Conditioner",
+   "GroupName": "Air",
+   "Facing": "S",
+   "MoveType": "WallObject",
+   "IsHigh": "",
+   "IsMoveAble": "",
+   "attachedN": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "25"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5,
+    0.4027,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.4541,
+    2.4494
+   ],
+   "largura": 1.0,
+   "profundidade": 0.0514,
+   "altura": 2.4494
+  },
+  "menor_medida_peca": 0.0514,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": true,
+  "contorno_0": 0.2506,
+  "cobertura": 1.0,
+  "sobra": 0.7494,
+  "pixels_desenho": 3385,
+  "pixels_geometria": 13506,
+  "espelhado_E_S": 0.8872,
+  "espelhado_W_N": null,
+  "N_igual_S": null,
+  "silhueta_espelho_E_S": 0.9493,
+  "silhueta_espelho_W_N": null,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": false,
+  "tem_N": false,
+  "centro_simetria": [
+   0.0,
+   0.4284
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 13056,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.7407
+  },
+  "sugestao": [
+   "objeto de parede (o jogo o prende à parede: MoveType/attached): candidato a não portar",
+   "75% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peça que não aparece",
+   "contorno em 0° baixo (IoU 0.25): as caixas do jogo não casam com o desenho",
+   "E é o espelho de S",
+   "sem desenho de trás (N): tras = simetrico, a traseira é inventada",
+   "só 2 direções no acervo (S, E)"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\conditioner_air",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\conditioner_air\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\conditioner_air\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\conditioner_air\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\conditioner_air\\profundidade.png"
+  }
+ }
+}

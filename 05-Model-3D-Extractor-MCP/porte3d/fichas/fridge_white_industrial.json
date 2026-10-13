@@ -1,0 +1,130 @@
+{
+ "versao": 1,
+ "objeto": "fridge_white_industrial",
+ "sprite": "appliances_refrigeration_01_40",
+ "decisao": "nao_portar",
+ "motivo": "a porta é um painel grande de vidro translúcido e o modelo não tem transparência",
+ "o_que_e": "geladeira de vitrine em pé, gabinete branco de metal com uma grande porta de vidro com prateleiras visíveis e grade de ventilação na base, serpentina na traseira",
+ "medidas": {
+  "sprite": "appliances_refrigeration_01_40",
+  "sprites": {
+   "S": "appliances_refrigeration_01_40",
+   "E": "appliances_refrigeration_01_41",
+   "N": "appliances_refrigeration_01_42",
+   "W": "appliances_refrigeration_01_43"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5124,
+     -0.1797,
+     0.0
+    ],
+    "max": [
+     0.445,
+     0.5437,
+     1.6016
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "Electric",
+   "Material3": "Glass",
+   "MaterialType": "Glass"
+  },
+  "props": {
+   "CustomName": "Fridge",
+   "GroupName": "White Industrial",
+   "Facing": "S",
+   "container": "fridge",
+   "Surface": "64",
+   "IsMoveAble": "",
+   "ContainerCapacity": "40",
+   "IsFridge": "",
+   "Freezer": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Large",
+   "PickUpWeight": "400"
+  },
+  "props_geometria": {
+   "Surface": "63",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5124,
+    -0.1797,
+    0.0
+   ],
+   "max": [
+    0.445,
+    0.5437,
+    1.6016
+   ],
+   "largura": 0.9574,
+   "profundidade": 0.7234,
+   "altura": 1.6016
+  },
+  "menor_medida_peca": 0.7234,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8752,
+  "cobertura": 0.9973,
+  "sobra": 0.1227,
+  "pixels_desenho": 14606,
+  "pixels_geometria": 16603,
+  "espelhado_E_S": 0.7664,
+  "espelhado_W_N": 0.8374,
+  "N_igual_S": 0.5434,
+  "silhueta_espelho_E_S": 0.9532,
+  "silhueta_espelho_W_N": 0.9687,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0337,
+   0.182
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 14868,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0176
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white_industrial",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white_industrial\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white_industrial\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white_industrial\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_white_industrial\\profundidade.png"
+  }
+ }
+}

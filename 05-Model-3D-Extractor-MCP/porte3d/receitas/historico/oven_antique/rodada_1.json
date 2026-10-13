@@ -1,0 +1,226 @@
+{
+ "versao": 1,
+ "id": "oven_antique",
+ "sprites": {
+  "S": "appliances_cooking_01_17",
+  "E": "appliances_cooking_01_16",
+  "N": "appliances_cooking_01_18",
+  "W": "appliances_cooking_01_19"
+ },
+ "tras": "N",
+ "material": "metal",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4518,
+    -0.0091,
+    0.21
+   ],
+   "max": [
+    0.3486,
+    0.4455,
+    0.82
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.4618,
+    -0.0291,
+    0.81
+   ],
+   "max": [
+    0.3886,
+    0.4855,
+    0.85
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "saia",
+   "forma": "caixa",
+   "min": [
+    -0.4368,
+    0.0059,
+    0.16
+   ],
+   "max": [
+    0.3166,
+    0.4305,
+    0.235
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "pe_fe",
+   "forma": "caixa",
+   "min": [
+    -0.4768,
+    -0.0141,
+    0.0
+   ],
+   "max": [
+    -0.3968,
+    0.0659,
+    0.22
+   ],
+   "afinar": {
+    "quanto": 0.02,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   }
+  },
+  {
+   "nome": "pe_fd",
+   "forma": "caixa",
+   "min": [
+    0.2436,
+    -0.0141,
+    0.0
+   ],
+   "max": [
+    0.3236,
+    0.0659,
+    0.22
+   ],
+   "afinar": {
+    "quanto": 0.02,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   }
+  },
+  {
+   "nome": "pe_te",
+   "forma": "caixa",
+   "min": [
+    -0.4568,
+    0.3605,
+    0.0
+   ],
+   "max": [
+    -0.3768,
+    0.4405,
+    0.22
+   ],
+   "afinar": {
+    "quanto": 0.02,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   }
+  },
+  {
+   "nome": "pe_td",
+   "forma": "caixa",
+   "min": [
+    0.2536,
+    0.3605,
+    0.0
+   ],
+   "max": [
+    0.3336,
+    0.4405,
+    0.22
+   ],
+   "afinar": {
+    "quanto": 0.02,
+    "lados": [
+     "+x",
+     "-x",
+     "+y",
+     "-y"
+    ]
+   }
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    -0.0291,
+    0.3
+   ],
+   "max": [
+    0.17,
+    -0.0091,
+    0.7
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "luva",
+   "forma": "cilindro",
+   "centro": [
+    -0.0178,
+    0.3653,
+    0.85
+   ],
+   "raio": 0.088,
+   "altura": 0.07,
+   "segmentos": 24
+  },
+  {
+   "nome": "tubo",
+   "forma": "cilindro",
+   "centro": [
+    -0.0178,
+    0.3653,
+    0.8
+   ],
+   "raio": 0.074,
+   "altura": 1.25,
+   "segmentos": 24
+  },
+  {
+   "nome": "cotovelo",
+   "forma": "cilindro",
+   "centro": [
+    -0.0178,
+    0.3653,
+    2.05
+   ],
+   "raio": 0.084,
+   "altura": 0.05,
+   "segmentos": 24
+  },
+  {
+   "nome": "cotovelo_boca",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.0178,
+    0.3653,
+    2.086
+   ],
+   "raio": 0.084,
+   "altura": 0.12,
+   "segmentos": 24
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   }
+  }
+ }
+}

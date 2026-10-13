@@ -1,0 +1,69 @@
+{
+ "versao": 1,
+ "objeto": "dishwasher_brown",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_comando",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "chapa_traseira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "rodape",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "canto inferior esquerdo da frente, rodapé",
+   "sentido": "deslocado_z",
+   "evidencia": "comparacao.png arte 0: o rodapé forma um degrau recuado no canto de baixo; no desenho do jogo a faixa fica rente à porta",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "friso_tampo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "friso do tampo e borda superior do painel, vistos de lado",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045/090/135: borda serrilhada onde o pixel do desenho foi esticado numa aresta fina",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "painel_comando",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "painel, trecho preto ao redor dos botões e do disco",
+   "sentido": "",
+   "evidencia": "zoom.png realista 0 parte de cima: painel todo marrom; no desenho há uma área preta com botões e botão vermelho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo completo e bem alinhado com o desenho em 0° e 180° nos dois níveis (IoU 92,1% e diferença de cor 1,0), só com detalhes leves de acabamento."
+}

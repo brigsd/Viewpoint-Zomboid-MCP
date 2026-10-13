@@ -1,0 +1,163 @@
+{
+ "versao": 1,
+ "objeto": "hood_extractor",
+ "sprite": "appliances_cooking_01_69",
+ "decisao": "portar",
+ "motivo": "coifa de cozinha de aço grande (1 m x 44 cm x 59 cm), volume claro, apesar de ser presa à parede",
+ "o_que_e": "coifa/exaustor de cozinha em aço escovado: campana larga com frente inclinada para cima e duto retangular no topo, preso à parede/teto acima de um fogão",
+ "pecas": [
+  {
+   "nome": "campana",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "parte de baixo: perfil lateral em trapézio (borda vertical baixa de ~8 cm, frente inclinada subindo e recuando até o duto), ~1 m de largura e ~44 cm de profundidade na base"
+  },
+  {
+   "nome": "duto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "caixa retangular de cima, ~100 cm de largura, ~25 cm de profundidade e ~20 cm de altura, encostada na parede; topo escuro"
+  },
+  {
+   "nome": "aba_inferior",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "faixa vertical na base da campana, ~8 cm de altura, ~100 cm de largura, com uma pequena aba"
+  }
+ ],
+ "simetria": "espelho_x",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "campana": "metal",
+  "duto": "metal",
+  "aba_inferior": "metal"
+ },
+ "problemas_previstos": [
+  "o jogo só tem uma caixa de 100x44x59 cm (envelope da coifa): o modelador deve refazer a campana em prisma e o duto pelo desenho",
+  "o topo é preto no desenho (topo do duto aberto ou vista de cima): decidir se é tampa lisa escura",
+  "traseira (N) é desenho próprio (vista pela parte de trás/encostada na parede): usar tras = N",
+  "rebites pequenos na quina da frente: ignorar ou fazer relevo raso",
+  "sem pés; o objeto fica suspenso a 1,85 m do chão"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_69",
+  "sprites": {
+   "S": "appliances_cooking_01_69",
+   "E": "appliances_cooking_01_68",
+   "N": "appliances_cooking_01_70",
+   "W": "appliances_cooking_01_71"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     0.0,
+     1.85
+    ],
+    "max": [
+     0.5,
+     0.44,
+     2.44
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "SmallMetalPlates",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Hood",
+   "GroupName": "Extractor",
+   "Facing": "S",
+   "MoveType": "WallObject",
+   "IsHigh": "",
+   "IsMoveAble": "",
+   "attachedCeiling": "",
+   "BlocksPlacement": ""
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5,
+    0.0,
+    1.85
+   ],
+   "max": [
+    0.5,
+    0.44,
+    2.44
+   ],
+   "largura": 1.0,
+   "profundidade": 0.44,
+   "altura": 0.59
+  },
+  "menor_medida_peca": 0.44,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 1.85,
+  "montado_na_parede": true,
+  "contorno_0": 0.9217,
+  "cobertura": 0.9925,
+  "sobra": 0.0719,
+  "pixels_desenho": 5762,
+  "pixels_geometria": 6162,
+  "espelhado_E_S": 0.837,
+  "espelhado_W_N": 0.85,
+  "N_igual_S": 0.0864,
+  "silhueta_espelho_E_S": 0.9386,
+  "silhueta_espelho_W_N": 0.9263,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   0.22
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 6070,
+   "cobertura": 0.9776,
+   "fora_do_desenho": 0.072
+  },
+  "sugestao": [
+   "objeto de parede (o jogo o prende à parede: MoveType/attached): candidato a não portar",
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hood_extractor",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hood_extractor\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hood_extractor\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hood_extractor\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hood_extractor\\profundidade.png"
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "versao": 1,
+ "objeto": "oven_antique",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok",
+   "nota": "no realista as duas chapas marcadas não aparecem"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "forma_errada",
+   "nota": "no realista é placa lisa, sem as ~7 frestas de grade"
+  },
+  {
+   "nome": "pe",
+   "situacao": "ok",
+   "nota": "4 pés presentes, retos e mais simples que os curvos do jogo"
+  },
+  {
+   "nome": "saia",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tubo",
+   "situacao": "ok",
+   "nota": "com luva perto do tampo"
+  },
+  {
+   "nome": "cotovelo",
+   "situacao": "forma_errada",
+   "nota": "no realista é cilindro/bloco deitado, não cano curvo; na arte funciona"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta_forno",
+   "tipo": "textura_deslocada",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "face da porta do forno, metade da esquerda",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000 e comparacao.png: porta é placa lisa, sem as frestas verticais do desenho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cotovelo",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "boca do cotovelo, topo do tubo",
+   "sentido": "",
+   "evidencia": "giro_realista.png 135 e 315: bloco retangular reto ao lado do topo do tubo, sem curva",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cotovelo",
+   "tipo": "chapado",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "boca do cotovelo, topo do tubo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135 e 315: retângulo com textura cortada colado ao lado do topo do tubo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "canto direito do tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 0°: bloco escuro saindo da ponta direita do tampo; sobreposicao: magenta ali",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "pe",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "pés da frente, metade de baixo",
+   "sentido": "deslocado_x",
+   "evidencia": "sobreposicao.png: verde e magenta nas pontas dos pés; pés retos em vez de curvos",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo",
+   "tipo": "sobra",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face de cima do tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 0°: sem as duas chapas retangulares marcadas e sem ferrugem",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "cotovelo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "boca do cotovelo, vista de trás",
+   "sentido": "",
+   "evidencia": "comparacao.png arte 180°: só um crescente escuro, o jogo trás tem boca redonda escura inteira",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "A arte está quase igual ao desenho em 0° e 180°, com estrutura completa; o realista tem as peças certas mas simples demais, sem as frestas da porta e com cotovelo em bloco."
+}

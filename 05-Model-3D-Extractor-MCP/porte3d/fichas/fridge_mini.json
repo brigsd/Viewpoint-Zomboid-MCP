@@ -1,0 +1,171 @@
+{
+ "versao": 1,
+ "objeto": "fridge_mini",
+ "sprite": "appliances_refrigeration_01_25",
+ "decisao": "portar",
+ "motivo": "frigobar pequeno, caixa escura com uma porta branca e puxador; formas simples",
+ "o_que_e": "frigobar baixo de ~84 cm, corpo escuro com uma porta branca-metálica numa face e um puxador pequeno na parte de cima da porta",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "gabinete escuro ~56 x 58 cm de planta e 84 cm de altura, cantos do topo levemente arredondados"
+  },
+  {
+   "nome": "porta",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "porta branca-acinzentada de ~50 cm de largura e ~70 cm de altura, saindo ~2 cm do corpo, na face da frente (S), de cima da base até perto do topo, com a borda clara visível também no canto lateral"
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "puxador horizontal pequeno (~8 x 2 x 2 cm) escuro, no canto de cima da porta, perto da aresta"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base escura e recuada de ~5 cm de altura sob o corpo"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso",
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "E não é espelho de S (0.70) e N é todo escuro com só uma borda clara fina: usar N na traseira e não espelhar E/W",
+  "no desenho S a porta fica na face da esquerda, em E na face da direita: conferir a face onde a porta realmente está",
+  "o desenho é pequeno e escuro: pouca informação de textura",
+  "o bloco do jogo tem os cantos retos e o desenho tem o topo arredondado"
+ ],
+ "medidas": {
+  "sprite": "appliances_refrigeration_01_25",
+  "sprites": {
+   "S": "appliances_refrigeration_01_25",
+   "E": "appliances_refrigeration_01_24",
+   "N": "appliances_refrigeration_01_27",
+   "W": "appliances_refrigeration_01_26"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3107,
+     -0.1638,
+     0.0
+    ],
+    "max": [
+     0.2453,
+     0.4126,
+     0.8352
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Fridge",
+   "Material2": "MetalScrap",
+   "Material3": "Electric"
+  },
+  "props": {
+   "CustomName": "Fridge",
+   "GroupName": "Mini",
+   "Facing": "S",
+   "container": "fridge",
+   "Surface": "32",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "20",
+   "IsFridge": "",
+   "Freezer": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Surface": "33",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.3107,
+    -0.1638,
+    0.0
+   ],
+   "max": [
+    0.2453,
+    0.4126,
+    0.8352
+   ],
+   "largura": 0.556,
+   "profundidade": 0.5764,
+   "altura": 0.8352
+  },
+  "menor_medida_peca": 0.556,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8817,
+  "cobertura": 0.9975,
+  "sobra": 0.1164,
+  "pixels_desenho": 5505,
+  "pixels_geometria": 6214,
+  "espelhado_E_S": 0.7041,
+  "espelhado_W_N": 0.8227,
+  "N_igual_S": 0.3558,
+  "silhueta_espelho_E_S": 0.8026,
+  "silhueta_espelho_W_N": 0.8741,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0327,
+   0.1244
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5718,
+   "cobertura": 0.9996,
+   "fora_do_desenho": 0.0376
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_mini",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_mini\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_mini\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_mini\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\fridge_mini\\profundidade.png"
+  }
+ }
+}

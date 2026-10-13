@@ -1,0 +1,184 @@
+{
+ "versao": 1,
+ "objeto": "television_premium_technologies",
+ "sprite": "appliances_television_01_1",
+ "decisao": "portar",
+ "motivo": "televisão de tubo (CRT) com volume claro; a tela é um painel escuro opaco, sem transparência real",
+ "o_que_e": "televisão antiga de tubo, cinza claro, com moldura frontal larga, tela escura levemente funda e traseira que afina para trás, parte de baixo mais escura e chanfrada",
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "bloco frontal ~89 cm de largura, ~76 cm de altura, é o bloco do jogo; envolve a moldura e a tela"
+  },
+  {
+   "nome": "tela",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tela escura de ~72x55 cm, afundada ~2 cm na moldura, cantos arredondados; opaca"
+  },
+  {
+   "nome": "moldura",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "moldura cinza clara em volta da tela, ~6 cm de largura, com friso saliente no topo e na borda inferior"
+  },
+  {
+   "nome": "painel_baixo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "faixa inferior com entrada de fita e 2 botões pretos pequenos, ~8 cm de altura, na frente"
+  },
+  {
+   "nome": "traseira",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "parte de trás afinando: o corpo estreita para o fundo em tronco, topo e laterais inclinados, cinza claro"
+  },
+  {
+   "nome": "base_escura",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base escura chanfrada na parte de baixo atrás, ~20 cm de altura, com 3 luzinhas coloridas na face de trás"
+  },
+  {
+   "nome": "grade_tras",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "grade de ventilação com 3 frisos na face de trás, ~15 cm"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco do jogo é um paralelepípedo cheio; a forma real afina para trás (sobra 21%), então o fundo precisa de tronco/prisma",
+  "tela é de vidro no jogo mas desenhada opaca: pintar como painel liso",
+  "só E é espelho de S; W não é espelho de N: usar os desenhos N e W",
+  "fica sobre outro móvel (base a 38 cm do chão)"
+ ],
+ "medidas": {
+  "sprite": "appliances_television_01_1",
+  "sprites": {
+   "S": "appliances_television_01_1",
+   "E": "appliances_television_01_0",
+   "N": "appliances_television_01_3",
+   "W": "appliances_television_01_2"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4594,
+     -0.0731,
+     0.3828
+    ],
+    "max": [
+     0.4282,
+     0.2763,
+     1.1392
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "MaterialType": "Glass_Light"
+  },
+  "props": {
+   "CustomName": "Television",
+   "GroupName": "Premium Technologies",
+   "Facing": "S",
+   "Surface": "15",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4594,
+    -0.0731,
+    0.3828
+   ],
+   "max": [
+    0.4282,
+    0.2763,
+    1.1392
+   ],
+   "largura": 0.8876,
+   "profundidade": 0.3494,
+   "altura": 0.7564
+  },
+  "menor_medida_peca": 0.3494,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.3828,
+  "montado_na_parede": false,
+  "contorno_0": 0.7884,
+  "cobertura": 1.0,
+  "sobra": 0.2116,
+  "pixels_desenho": 4840,
+  "pixels_geometria": 6139,
+  "espelhado_E_S": 0.8645,
+  "espelhado_W_N": 0.8198,
+  "N_igual_S": 0.4915,
+  "silhueta_espelho_E_S": 0.937,
+  "silhueta_espelho_W_N": 0.8841,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0156,
+   0.1016
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5001,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0322
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_premium_technologies",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_premium_technologies\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_premium_technologies\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_premium_technologies\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\television_premium_technologies\\profundidade.png"
+  }
+ }
+}

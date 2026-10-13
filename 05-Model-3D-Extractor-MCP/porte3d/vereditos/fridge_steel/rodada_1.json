@@ -1,0 +1,121 @@
+{
+ "versao": 1,
+ "objeto": "fridge_steel",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok",
+   "nota": "fresta do meio fina e clara no realista"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok",
+   "nota": "no realista quase da mesma cor do corpo"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "forma_errada",
+   "nota": "no realista as voltas são barras retas em T, não U, e os tubos não são pretos"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "forma_errada",
+   "nota": "no realista é um retângulo liso, sem as frestas"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "serpentina",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "voltas de cima e de baixo dos tubos, atrás",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180: as voltas são barras horizontais retas em T, sem o U do desenho; fio.png 180 idem",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grade_ventilacao",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "traseira, faixa logo acima do rodapé",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180 e 225: retângulo liso sem frestas; fio.png 180 quase sem linhas de fresta",
+   "gravidade": "media"
+  },
+  {
+   "parte": "painel_traseiro",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "painel, tubos da serpentina e grade na traseira; fresta entre portas e rodapé na frente",
+   "sentido": "",
+   "evidencia": "comparacao.png realista 180: tudo no mesmo cinza do corpo, enquanto o jogo trás tem painel e tubos pretos",
+   "gravidade": "media"
+  },
+  {
+   "parte": "serpentina",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "voltas de cima dos tubos, na traseira",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: o desenho das voltas aparece duplicado e borrado atrás do tubo 3D",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "topo e lado direito da porta direita",
+   "sentido": "",
+   "evidencia": "zoom.png arte 000: fio fino de contorno sobre o topo e ao lado da porta, que o desenho não tem",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo e rodapé, 1 a 2 px",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png: faixa magenta em cima e embaixo, e verde na esquerda (240 px)",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "serpentina",
+   "tipo": "sobra",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "primeiro tubo da esquerda, metade de baixo",
+   "sentido": "",
+   "evidencia": "giro_realista.png 180: a barra de baixo encosta ou passa um pouco da borda esquerda do corpo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O arte está pronto para o jogo; no realista, o volume e o material estão bons, e a traseira precisa de voltas em U, grade com frestas e o escuro prometido."
+}

@@ -1,0 +1,297 @@
+{
+ "versao": 1,
+ "id": "oven_red",
+ "sprites": {
+  "S": "appliances_cooking_01_9",
+  "E": "appliances_cooking_01_8",
+  "N": "appliances_cooking_01_11",
+  "W": "appliances_cooking_01_10"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "metal": [
+   225,
+   225,
+   220
+  ],
+  "vidro": [
+   24,
+   24,
+   26
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    -0.2109,
+    0.0
+   ],
+   "max": [
+    0.4923,
+    0.4535,
+    0.8966
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.4528,
+    0.338,
+    0.8966
+   ],
+   "max": [
+    0.4922,
+    0.4548,
+    1.0949
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "moldura_branca0",
+   "forma": "caixa",
+   "min": [
+    -0.4621,
+    -0.2509,
+    0.75
+   ],
+   "max": [
+    0.5023,
+    -0.2109,
+    0.79
+   ],
+   "material": "metal",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "moldura_branca1",
+   "forma": "caixa",
+   "min": [
+    -0.4621,
+    -0.2509,
+    0.8
+   ],
+   "max": [
+    0.5023,
+    -0.2109,
+    0.84
+   ],
+   "material": "metal",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "moldura_branca2",
+   "forma": "caixa",
+   "min": [
+    -0.4621,
+    -0.2509,
+    0.85
+   ],
+   "max": [
+    0.5023,
+    -0.2109,
+    0.8966
+   ],
+   "material": "metal",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "moldura_lateral",
+   "forma": "caixa",
+   "min": [
+    0.4923,
+    -0.2409,
+    0.755
+   ],
+   "max": [
+    0.5123,
+    -0.12,
+    0.8916
+   ],
+   "material": "metal",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_forno",
+   "forma": "caixa",
+   "min": [
+    -0.42,
+    -0.2309,
+    0.28
+   ],
+   "max": [
+    0.01,
+    -0.2109,
+    0.74
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "janela_forno",
+   "forma": "caixa",
+   "min": [
+    -0.33,
+    -0.2349,
+    0.37
+   ],
+   "max": [
+    -0.04,
+    -0.2299,
+    0.65
+   ],
+   "material": "vidro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "porta_inferior",
+   "forma": "caixa",
+   "min": [
+    0.03,
+    -0.2309,
+    0.28
+   ],
+   "max": [
+    0.44,
+    -0.2109,
+    0.74
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "puxador_forno",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.3,
+    -0.255,
+    0.69
+   ],
+   "raio": 0.01,
+   "altura": 0.2,
+   "material": "metal",
+   "segmentos": 12
+  },
+  {
+   "nome": "puxador_inferior",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    0.15,
+    -0.255,
+    0.69
+   ],
+   "raio": 0.01,
+   "altura": 0.2,
+   "material": "metal",
+   "segmentos": 12
+  },
+  {
+   "nome": "barra_inferior",
+   "forma": "caixa",
+   "min": [
+    -0.4621,
+    -0.2409,
+    0.23
+   ],
+   "max": [
+    0.5023,
+    -0.2109,
+    0.26
+   ],
+   "material": "metal",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "visor",
+   "forma": "caixa",
+   "min": [
+    -0.105,
+    0.333,
+    0.97
+   ],
+   "max": [
+    -0.045,
+    0.338,
+    1.0
+   ],
+   "material": "vidro"
+  },
+  {
+   "nome": "botao0",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.42,
+    0.33,
+    0.99
+   ],
+   "raio": 0.018,
+   "altura": 0.02,
+   "material": "metal",
+   "segmentos": 14
+  },
+  {
+   "nome": "botao1",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.28,
+    0.33,
+    0.99
+   ],
+   "raio": 0.018,
+   "altura": 0.02,
+   "material": "metal",
+   "segmentos": 14
+  },
+  {
+   "nome": "botao2",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.08,
+    0.33,
+    0.99
+   ],
+   "raio": 0.018,
+   "altura": 0.02,
+   "material": "metal",
+   "segmentos": 14
+  },
+  {
+   "nome": "botao3",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.21,
+    0.33,
+    0.99
+   ],
+   "raio": 0.018,
+   "altura": 0.02,
+   "material": "metal",
+   "segmentos": 14
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso"
+   },
+   "metal": {
+    "tipo": "metal"
+   },
+   "vidro": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

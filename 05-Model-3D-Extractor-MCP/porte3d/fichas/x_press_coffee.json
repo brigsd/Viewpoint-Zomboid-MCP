@@ -1,0 +1,175 @@
+{
+ "versao": 1,
+ "objeto": "x_press_coffee",
+ "sprite": "appliances_cooking_01_56",
+ "decisao": "portar",
+ "motivo": "cafeteira pequena de bancada com volume, mesmo vazada embaixo; o único bloco do jogo é só o envelope",
+ "o_que_e": "cafeteira elétrica individual de bancada, plástico preto: base redonda com prato, coluna traseira vertical e cabeça no alto com tampa e bico",
+ "pecas": [
+  {
+   "nome": "base",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base oval/redonda de ~28 cm de diâmetro e ~4 cm de altura, com prato de apoio mais claro e afundado no centro"
+  },
+  {
+   "nome": "coluna",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "coluna vertical de ~12x14 cm e ~45 cm de altura, no fundo, ligando base e cabeça"
+  },
+  {
+   "nome": "cabeca",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "cabeça de ~30x32 cm e ~16 cm de altura, no alto, projetada para a frente da coluna"
+  },
+  {
+   "nome": "tampa",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampa arredondada sobre a cabeça, ~4 cm, com alça retangular articulada atrás"
+  },
+  {
+   "nome": "bico",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "bico/porta-cápsula de ~10 cm de diâmetro embaixo da cabeça, sobre o prato, com um botãozinho na frente"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco do jogo é um cubo envelope e 45% dele fica fora do desenho: o objeto é em C, vazado embaixo; as peças são todas novas",
+  "N é bem diferente de S (a coluna aparece inteira atrás): usar N",
+  "W é espelho de N, mas E não é espelho de S",
+  "objeto pequeno e escuro: pouco contraste para o crítico",
+  "geometria começa a 86 cm do chão: fica sobre bancada"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_56",
+  "sprites": {
+   "S": "appliances_cooking_01_56",
+   "E": "appliances_cooking_01_57",
+   "N": "appliances_cooking_01_59",
+   "W": "appliances_cooking_01_58"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.25,
+     0.0,
+     0.86
+    ],
+    "max": [
+     0.15,
+     0.42,
+     1.4
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "MetalScrap",
+   "MaterialType": "Plastic"
+  },
+  "props": {
+   "CustomName": "X-press",
+   "GroupName": "Coffee",
+   "Facing": "S",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "40"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.25,
+    0.0,
+    0.86
+   ],
+   "max": [
+    0.15,
+    0.42,
+    1.4
+   ],
+   "largura": 0.4,
+   "profundidade": 0.42,
+   "altura": 0.54
+  },
+  "menor_medida_peca": 0.4,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.86,
+  "montado_na_parede": false,
+  "contorno_0": 0.5514,
+  "cobertura": 1.0,
+  "sobra": 0.4486,
+  "pixels_desenho": 1636,
+  "pixels_geometria": 2967,
+  "espelhado_E_S": 0.8004,
+  "espelhado_W_N": 0.8389,
+  "N_igual_S": 0.01,
+  "silhueta_espelho_E_S": 0.8659,
+  "silhueta_espelho_W_N": 0.9079,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.05,
+   0.21
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 2873,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.4306
+  },
+  "sugestao": [
+   "45% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peça que não aparece",
+   "contorno em 0° baixo (IoU 0.55): as caixas do jogo não casam com o desenho",
+   "a geometria começa a 86 cm do chão: objeto suspenso ou sobre outro móvel",
+   "W é o espelho de N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\x_press_coffee",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\x_press_coffee\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\x_press_coffee\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\x_press_coffee\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\x_press_coffee\\profundidade.png"
+  }
+ }
+}

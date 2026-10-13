@@ -1,0 +1,205 @@
+{
+ "versao": 1,
+ "objeto": "sink_chrome",
+ "sprite": "fixtures_sinks_01_9",
+ "decisao": "portar",
+ "motivo": "pia de cozinha de inox com duas cubas e torneira: tem volume claro e peças bem definidas, mesmo com a caixa do jogo muito maior que o desenho",
+ "o_que_e": "pia de embutir de aço inox com duas cubas separadas por uma divisória, borda de tampo ao redor e torneira cromada alta com bico curvo e alavanca, ~60x50 cm",
+ "pecas": [
+  {
+   "nome": "borda",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "moldura/tampo da pia, retângulo de bordas arredondadas ~60x50 cm, ~3 cm de espessura, formado por 4 tábuas ao redor das cubas"
+  },
+  {
+   "nome": "parede_cuba",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "metal",
+   "descricao": "paredes inclinadas/verticais das cubas, ~15 cm de profundidade, descendo da borda"
+  },
+  {
+   "nome": "fundo_cuba",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "fundo plano das cubas, com ralo escuro; uma peça por cuba"
+  },
+  {
+   "nome": "divisoria",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "parede fina (~2 cm) no meio, separando as duas cubas, um pouco mais baixa que a borda"
+  },
+  {
+   "nome": "base_torneira",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "base redonda ~6 cm de diâmetro, ~3 cm de altura, na borda de trás, sobre a divisória"
+  },
+  {
+   "nome": "haste_torneira",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "haste cromada ~3 cm de diâmetro subindo ~22 cm da base"
+  },
+  {
+   "nome": "bico_torneira",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "trecho curvo ~2,5 cm de diâmetro, saindo em arco da ponta da haste e descendo em direção às cubas (feito com 2 a 3 trechos)"
+  },
+  {
+   "nome": "alavanca",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "alavanca de ~8x2 cm na lateral da haste"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "borda": "metal",
+  "parede_cuba": "metal",
+  "fundo_cuba": "metal",
+  "divisoria": "metal",
+  "base_torneira": "metal",
+  "haste_torneira": "metal",
+  "bico_torneira": "metal",
+  "alavanca": "metal"
+ },
+ "problemas_previstos": [
+  "a caixa do jogo (100x100x245 cm, contorno 0,06) não casa com o desenho; o modelador deve refazer tudo pelo desenho, ignorando a caixa",
+  "a pia é só uma peça de embutir, sem armário: o desenho flutua, sem altura de chão definida (atenção ao Surface do jogo)",
+  "cuba funda é côncava: montar com caixas (paredes + fundo) em vez de buraco; difícil de ler a profundidade",
+  "torneira curva e fina: cilindros finos podem ficar quebrados ou soltos",
+  "N é desenho próprio (torneira do lado oposto); E não é espelho de S (0,80); só W é espelho de N"
+ ],
+ "medidas": {
+  "sprite": "fixtures_sinks_01_9",
+  "sprites": {
+   "S": "fixtures_sinks_01_9",
+   "E": "fixtures_sinks_01_8",
+   "N": "fixtures_sinks_01_11",
+   "W": "fixtures_sinks_01_10"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.5,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.5,
+     2.4495
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Plumbing",
+   "Material2": "Pipes",
+   "Material3": "Sink"
+  },
+  "props": {
+   "CustomName": "Sink",
+   "GroupName": "Chrome",
+   "Facing": "S",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "50"
+  },
+  "props_geometria": {
+   "Surface": "36",
+   "Translucent": "true"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.5,
+    -0.5,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.5,
+    2.4495
+   ],
+   "largura": 1.0,
+   "profundidade": 1.0,
+   "altura": 2.4495
+  },
+  "menor_medida_peca": 1.0,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.0615,
+  "cobertura": 1.0,
+  "sobra": 0.9385,
+  "pixels_desenho": 1769,
+  "pixels_geometria": 28768,
+  "espelhado_E_S": 0.8019,
+  "espelhado_W_N": 0.8334,
+  "N_igual_S": 0.1121,
+  "silhueta_espelho_E_S": 0.8733,
+  "silhueta_espelho_W_N": 0.9066,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   0.0
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 1844,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0407
+  },
+  "sugestao": [
+   "94% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peça que não aparece",
+   "contorno em 0° baixo (IoU 0.06): as caixas do jogo não casam com o desenho",
+   "W é o espelho de N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_chrome",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_chrome\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_chrome\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_chrome\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_chrome\\profundidade.png"
+  }
+ }
+}

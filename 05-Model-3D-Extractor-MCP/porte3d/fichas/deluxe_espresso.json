@@ -1,0 +1,426 @@
+{
+ "versao": 1,
+ "objeto": "deluxe_espresso",
+ "sprite": "appliances_cooking_01_61",
+ "decisao": "portar",
+ "motivo": "máquina de espresso de bancada com volume, vários blocos do jogo e desenho de trás próprio; vidro só em detalhes pequenos",
+ "o_que_e": "máquina de café espresso profissional: corpo escuro com tampo branco, moedor de grãos em cima, painel com manômetros e botões, bicos e alças de porta-filtro na frente, grade de bandeja embaixo",
+ "pecas": [
+  {
+   "nome": "bandeja",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "bandeja de gotejamento ~89x46 cm e ~5 cm de espessura, no fundo da máquina"
+  },
+  {
+   "nome": "coluna_traseira",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "parede traseira escura ~89 cm de largura, 14 cm de espessura, ~69 cm de altura, atrás da bandeja"
+  },
+  {
+   "nome": "cabeca",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "cabeça larga ~99x46 cm e ~24 cm de altura, no alto, com painel frontal escuro"
+  },
+  {
+   "nome": "bloco_esquerdo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "bloco ~41x46x35 cm no lado esquerdo da cabeça, com parte do painel e manômetros"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo branco/cinza claro de ~4 cm sobre a cabeça, levemente maior, bordas arredondadas"
+  },
+  {
+   "nome": "moedor_base",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "pescoço do moedor, cilindro de ~14 cm de diâmetro e ~12 cm de altura sobre o tampo"
+  },
+  {
+   "nome": "moedor_copo",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "copo do moedor cilíndrico de ~28 cm de diâmetro e ~15 cm, com parte marrom (grãos) e tampa cinza"
+  },
+  {
+   "nome": "manometros",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "3 mostradores redondos de ~8 cm no painel frontal e uma fileira de botões pequenos",
+   "quantidade": 3
+  },
+  {
+   "nome": "porta_filtro",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "2 bicos/alças de porta-filtro sob o painel frontal, cilindros finos de ~3 cm com cabo",
+   "quantidade": 2
+  },
+  {
+   "nome": "alavanca_vapor",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "alavanca/bico de vapor fino saindo na lateral direita do painel, ~25 cm"
+  },
+  {
+   "nome": "grade_bandeja",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "grade de frisos horizontais de ~2 cm sobre a bandeja, ~80x36 cm"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o medidor sugeriu peças faltando por espelho, mas a máquina NÃO é simétrica (moedor, bicos e alavanca de um lado só): não espelhar nada",
+  "partes finas: alavanca de vapor, bicos e cabos de porta-filtro",
+  "vazado embaixo da cabeça (espaço da xícara sobre a bandeja)",
+  "E não é espelho de S nem W de N: usar os 4 desenhos; a traseira N é diferente",
+  "geometria começa a 87 cm do chão: fica sobre bancada"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_61",
+  "sprites": {
+   "S": "appliances_cooking_01_61",
+   "E": "appliances_cooking_01_60",
+   "N": "appliances_cooking_01_62",
+   "W": "appliances_cooking_01_63"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 6,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 6,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 2,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4646,
+     -0.0402,
+     0.867
+    ],
+    "max": [
+     0.4258,
+     0.4194,
+     0.9212
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4635,
+     0.2747,
+     0.867
+    ],
+    "max": [
+     0.4269,
+     0.4195,
+     1.5618
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.56,
+     -0.0402,
+     1.3221
+    ],
+    "max": [
+     0.4264,
+     0.4194,
+     1.5618
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "cilindro",
+    "centro": [
+     -0.2447,
+     0.2161,
+     1.5616
+    ],
+    "raio": 0.0713,
+    "altura": 0.117,
+    "eixo": "z"
+   },
+   {
+    "nome": "forma_4",
+    "forma": "cilindro",
+    "centro": [
+     -0.2549,
+     0.2161,
+     1.6353
+    ],
+    "raio": 0.1396,
+    "altura": 0.1464,
+    "eixo": "z"
+   },
+   {
+    "nome": "forma_5",
+    "forma": "caixa",
+    "min": [
+     -0.5585,
+     -0.0404,
+     1.2099
+    ],
+    "max": [
+     -0.1457,
+     0.4192,
+     1.5618
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "MetalScrap",
+   "MaterialType": "Metal_Light"
+  },
+  "props": {
+   "CustomName": "Deluxe",
+   "GroupName": "Espresso",
+   "Facing": "S",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "60"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.56,
+    -0.0404,
+    0.867
+   ],
+   "max": [
+    0.4269,
+    0.4195,
+    1.7817
+   ],
+   "largura": 0.9869,
+   "profundidade": 0.4599,
+   "altura": 0.9147
+  },
+  "menor_medida_peca": 0.0542,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.867,
+  "montado_na_parede": false,
+  "contorno_0": 0.8889,
+  "cobertura": 0.9992,
+  "sobra": 0.1104,
+  "pixels_desenho": 6126,
+  "pixels_geometria": 6881,
+  "espelhado_E_S": 0.7192,
+  "espelhado_W_N": 0.7954,
+  "N_igual_S": 0.2541,
+  "silhueta_espelho_E_S": 0.8643,
+  "silhueta_espelho_W_N": 0.8988,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0666,
+   0.1895
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_5",
+    "sem_par": [
+     "x",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4635,
+     -0.0404,
+     0.867
+    ],
+    "max": [
+     0.4269,
+     0.1044,
+     1.5618
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.56,
+     -0.0404,
+     0.867
+    ],
+    "max": [
+     0.3304,
+     0.1044,
+     1.5618
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_3",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.0403,
+     0.1448,
+     1.5616
+    ],
+    "max": [
+     0.1829,
+     0.2874,
+     1.6786
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.0403,
+     0.0917,
+     1.5616
+    ],
+    "max": [
+     0.1829,
+     0.2343,
+     1.6786
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0178,
+     0.0765,
+     1.6353
+    ],
+    "max": [
+     0.2614,
+     0.3557,
+     1.7817
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0178,
+     0.0234,
+     1.6353
+    ],
+    "max": [
+     0.2614,
+     0.3026,
+     1.7817
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 6286,
+   "cobertura": 0.9995,
+   "fora_do_desenho": 0.0259
+  },
+  "sugestao": [
+   "a geometria começa a 87 cm do chão: objeto suspenso ou sobre outro móvel",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\deluxe_espresso",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\deluxe_espresso\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\deluxe_espresso\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\deluxe_espresso\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\deluxe_espresso\\profundidade.png"
+  }
+ }
+}

@@ -36,14 +36,15 @@ Leia antes o contrato `05-Model-3D-Extractor-MCP/porte3d/CONTRATO.md`, na parte 
    - **Cor:** ponha em `cores` a cor da tinta ou do material do objeto, tirada da parte **iluminada** do desenho (a face de cima ou a da esquerda). Nunca use a média do desenho nem a cor da sombra: a estimativa automática sai escura demais.
    - **Uso:** `realista.materiais.<mat>.desgaste` vai de 0 a 1 e põe encardido, tinta lascada nas quinas e amarelado. Comece em 0,3 a 0,4 se o desenho mostra sujeira.
    - **Ferrugem:** `ferrugem` vai de 0 a 1. Use só se o desenho mostrar ferrugem.
-4. Arte: use `adesivo`, que serve para quase tudo. Use `kit` só quando a ficha pedir, porque o adesivo fica feio numa peça escondida grande.
-5. **Acerte as medidas com a prévia:**
+4. **O realista não usa o desenho do jogo.** Todo detalhe que o desenho mostra e que dá identidade ao objeto tem que virar PEÇA com cor própria em `cores`, senão some no realista. Exemplos: bocas do fogão, grades de ventilação com frestas, painéis e faixas escuras, visor, botões, juntas, rodapé escuro, topo de cor diferente. Partes escuras sempre com cor explícita: a cor automática pega os pixels claros e as clareia.
+5. Arte: use `adesivo`, que serve para quase tudo. Use `kit` só quando a ficha pedir, porque o adesivo fica feio numa peça escondida grande.
+6. **Acerte as medidas com a prévia:**
    - valide com `python -m porte3d.receita <receita>`;
    - rode `python -m porte3d.prever <receita>`, a partir de `05-Model-3D-Extractor-MCP`, e abra com `Read` a imagem que ele grava;
    - as linhas de cada peça têm que cair em cima da parte certa do desenho, de frente e de trás;
    - busque `contorno_frente` ≥ 0.90, sem sacrificar peça prometida;
    - ajuste e repita, no máximo umas 6 vezes.
-6. Na rodada 2 ou 3, corrija **exatamente** os defeitos do veredito, do mais grave para o mais leve, sem mexer no que estava certo. Defeito `chapado` é peça fina demais: engrosse. `ausencia` é peça faltando: crie. `textura_deslocada` em 180° costuma ser `tras` errado ou peça no lugar errado.
+7. Na rodada 2 ou 3, corrija **exatamente** os defeitos do veredito, do mais grave para o mais leve, sem mexer no que estava certo. Defeito `chapado` é peça fina demais: engrosse. `ausencia` é peça faltando: crie. `textura_deslocada` em 180° costuma ser `tras` errado ou peça no lugar errado.
 
 ## Regras
 
