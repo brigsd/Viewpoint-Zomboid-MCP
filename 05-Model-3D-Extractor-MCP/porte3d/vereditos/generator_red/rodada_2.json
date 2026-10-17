@@ -1,0 +1,97 @@
+{
+ "versao": 1,
+ "objeto": "generator_red",
+ "rodada": 2,
+ "nota_arte": 5,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "carenagem",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_tanque",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "fora_do_lugar",
+   "nota": "segunda grelha foi colocada na lateral esquerda em vez da traseira"
+  },
+  {
+   "nome": "arco_gaiola",
+   "situacao": "forma_errada",
+   "nota": "não forma U invertido; colunas verticais sobram no topo como tocos"
+  },
+  {
+   "nome": "barra_gaiola",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "arco_gaiola",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 135,
+   "onde": "topo das laterais, união dos tubos",
+   "sentido": "",
+   "evidencia": "fio.png 135: sem arco em U unindo as colunas no topo lateral; colunas sobem isoladas com pontas abertas",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "carenagem",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira e teto",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: painel frontal repetido na traseira e mancha fantasma da tampa projetada no teto",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "ausencia",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "face traseira inferior",
+   "sentido": "",
+   "evidencia": "giro_realista.png 225: segunda grelha ausente na traseira, modelador duplicou na lateral esquerda",
+   "gravidade": "media"
+  },
+  {
+   "parte": "arco_gaiola",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "pontas superiores das quatro colunas",
+   "sentido": "alto",
+   "evidencia": "zoom.png 045: topos das colunas verticais sobram cerca de 5 cm acima da barra horizontal",
+   "gravidade": "media"
+  },
+  {
+   "parte": "barra_gaiola",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "barra horizontal frontal da base",
+   "sentido": "deslocado_y",
+   "evidencia": "sobreposicao.png 000: faixa magenta contínua na barra frontal inferior indica desalinhamento com o desenho",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Volumetria e materiais realistas são promissores, mas a estrutura da gaiola sem arcos em U e os erros de textura e traseira exigem correção."
+}

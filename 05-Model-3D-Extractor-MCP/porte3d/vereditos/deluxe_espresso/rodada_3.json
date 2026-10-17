@@ -1,0 +1,67 @@
+{
+ "versao": 1,
+ "objeto": "deluxe_espresso",
+ "rodada": 3,
+ "nota_arte": 9,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "bandeja",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cabeca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bloco_esquerdo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moedor_base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moedor_copo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manometros",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_filtro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca_vapor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_bandeja",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta_filtro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "laterais curvas dos corpos dos porta-filtros",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045: leve estiramento da projeção 2D nas faces curvas oblíquas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente modelo 3D de máquina de café expresso, com proporções precisas, alta fidelidade ao sprite original em 0° e 180°, e nível realista rico em detalhes."
+}

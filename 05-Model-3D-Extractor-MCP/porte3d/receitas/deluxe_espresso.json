@@ -25,6 +25,11 @@
    42,
    45
   ],
+  "grelha_escura": [
+   32,
+   34,
+   38
+  ],
   "liso": [
    228,
    230,
@@ -41,14 +46,19 @@
    215
   ],
   "marrom_graos": [
-   115,
-   75,
-   38
+   95,
+   60,
+   40
   ],
   "cinza_tampa": [
    140,
    142,
    145
+  ],
+  "ponteiro_vermelho": [
+   190,
+   45,
+   40
   ]
  },
  "pecas": [
@@ -71,7 +81,7 @@
   {
    "nome": "grade_bandeja",
    "forma": "caixa",
-   "material": "cromado",
+   "material": "grelha_escura",
    "min": [
     -0.425,
     -0.01,
@@ -80,14 +90,126 @@
    "max": [
     0.365,
     0.245,
-    0.935
+    0.932
    ],
    "chanfro": 0.002
   },
   {
+   "nome": "grade_friso_1",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.005,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.017,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_2",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.041,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.053,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_3",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.077,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.089,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_4",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.113,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.125,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_5",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.149,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.161,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_6",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.185,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.197,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
+   "nome": "grade_friso_7",
+   "forma": "caixa",
+   "material": "cromado",
+   "min": [
+    -0.42,
+    0.221,
+    0.93
+   ],
+   "max": [
+    0.36,
+    0.233,
+    0.935
+   ],
+   "chanfro": 0.001
+  },
+  {
    "nome": "coluna_traseira",
    "forma": "caixa",
-   "material": "metal",
+   "material": "painel_escuro",
    "min": [
     -0.465,
     0.265,
@@ -146,19 +268,34 @@
     0.41,
     1.558
    ],
-   "chanfro": 0.008
+   "chanfro": 0.008,
+   "arte_cor": true
   },
   {
    "nome": "moedor_base",
    "forma": "cilindro",
-   "material": "marrom_graos",
+   "material": "metal_escuro",
    "centro": [
     -0.245,
     0.18,
     1.558
    ],
    "raio": 0.072,
-   "altura": 0.115,
+   "altura": 0.077,
+   "eixo": "z"
+  },
+  {
+   "nome": "moedor_graos",
+   "forma": "cilindro",
+   "material": "marrom_graos",
+   "centro": [
+    -0.245,
+    0.18,
+    1.635
+   ],
+   "raio": 0.09,
+   "raio_topo": 0.138,
+   "altura": 0.08,
    "eixo": "z"
   },
   {
@@ -168,10 +305,10 @@
    "centro": [
     -0.245,
     0.18,
-    1.645
+    1.715
    ],
    "raio": 0.138,
-   "altura": 0.13,
+   "altura": 0.06,
    "eixo": "z"
   },
   {
@@ -183,8 +320,54 @@
     -0.062,
     1.4
    ],
-   "raio": 0.042,
+   "raio": 0.043,
    "altura": 0.02,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_escala_1",
+   "forma": "cilindro",
+   "material": "mostrador_claro",
+   "centro": [
+    -0.3,
+    -0.063,
+    1.4
+   ],
+   "raio": 0.033,
+   "altura": 0.021,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_ponteiro_1",
+   "forma": "caixa",
+   "material": "painel_escuro",
+   "min": [
+    -0.302,
+    -0.0645,
+    1.397
+   ],
+   "max": [
+    -0.298,
+    -0.0628,
+    1.422
+   ],
+   "rot": [
+    0,
+    -35,
+    0
+   ]
+  },
+  {
+   "nome": "manometros_centro_1",
+   "forma": "cilindro",
+   "material": "cromado",
+   "centro": [
+    -0.3,
+    -0.065,
+    1.4
+   ],
+   "raio": 0.006,
+   "altura": 0.004,
    "eixo": "y"
   },
   {
@@ -196,14 +379,60 @@
     -0.062,
     1.4
    ],
-   "raio": 0.042,
+   "raio": 0.043,
    "altura": 0.02,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_escala_2",
+   "forma": "cilindro",
+   "material": "mostrador_claro",
+   "centro": [
+    -0.04,
+    -0.063,
+    1.4
+   ],
+   "raio": 0.033,
+   "altura": 0.021,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_ponteiro_2",
+   "forma": "caixa",
+   "material": "painel_escuro",
+   "min": [
+    -0.042,
+    -0.0645,
+    1.397
+   ],
+   "max": [
+    -0.038,
+    -0.0628,
+    1.422
+   ],
+   "rot": [
+    0,
+    25,
+    0
+   ]
+  },
+  {
+   "nome": "manometros_centro_2",
+   "forma": "cilindro",
+   "material": "cromado",
+   "centro": [
+    -0.04,
+    -0.065,
+    1.4
+   ],
+   "raio": 0.006,
+   "altura": 0.004,
    "eixo": "y"
   },
   {
    "nome": "manometros_3",
    "forma": "cilindro",
-   "material": "mostrador_claro",
+   "material": "cromado",
    "centro": [
     0.21,
     -0.062,
@@ -211,6 +440,52 @@
    ],
    "raio": 0.045,
    "altura": 0.02,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_escala_3",
+   "forma": "cilindro",
+   "material": "mostrador_claro",
+   "centro": [
+    0.21,
+    -0.063,
+    1.4
+   ],
+   "raio": 0.035,
+   "altura": 0.021,
+   "eixo": "y"
+  },
+  {
+   "nome": "manometros_ponteiro_3",
+   "forma": "caixa",
+   "material": "ponteiro_vermelho",
+   "min": [
+    0.208,
+    -0.0645,
+    1.397
+   ],
+   "max": [
+    0.212,
+    -0.0628,
+    1.422
+   ],
+   "rot": [
+    0,
+    -45,
+    0
+   ]
+  },
+  {
+   "nome": "manometros_centro_3",
+   "forma": "cilindro",
+   "material": "cromado",
+   "centro": [
+    0.21,
+    -0.065,
+    1.4
+   ],
+   "raio": 0.006,
+   "altura": 0.004,
    "eixo": "y"
   },
   {
@@ -319,6 +594,10 @@
     "tipo": "metal",
     "desgaste": 0.3
    },
+   "grelha_escura": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
    "liso": {
     "tipo": "liso",
     "desgaste": 0.25
@@ -338,6 +617,10 @@
    "cinza_tampa": {
     "tipo": "metal",
     "desgaste": 0.25
+   },
+   "ponteiro_vermelho": {
+    "tipo": "liso",
+    "desgaste": 0.1
    }
   }
  }

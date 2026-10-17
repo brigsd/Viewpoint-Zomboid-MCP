@@ -1,0 +1,111 @@
+{
+ "versao": 1,
+ "objeto": "deluxe_espresso",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "bandeja",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cabeca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bloco_esquerdo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moedor_base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moedor_copo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manometros",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_filtro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca_vapor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_bandeja",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "grade_bandeja",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face superior da grade",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 parte de baixo: chapa lisa e uniforme, sem frisos horizontais ou aberturas de escoamento",
+   "gravidade": "media"
+  },
+  {
+   "parte": "moedor_copo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "corpo cilíndrico do copo",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: copo inteiramente cinza metálico, sem a seção marrom translúcida dos grãos de café prometida na ficha",
+   "gravidade": "media"
+  },
+  {
+   "parte": "tampo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "superfície superior, logo atrás do moedor",
+   "sentido": "",
+   "evidencia": "comparacao.png modelo arte 180 graus: mancha marrom escura projetada sobre o tampo branco atrás da base do moedor",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "manometros",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face frontal dos três mostradores",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000 parte de baixo: discos brancos lisos sem ponteiros, escala ou aro metálico",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "coluna_traseira",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "painel traseiro inferior",
+   "sentido": "",
+   "evidencia": "comparacao.png modelo realista 180 graus: tom cinza claro destoa do preto/carvão escuro do sprite original",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente silhueta e proporção geométrica, mas o nível realista precisa de frisos na grade da bandeja e distinção dos grãos no copo do moedor."
+}

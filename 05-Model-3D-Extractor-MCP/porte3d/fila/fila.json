@@ -2969,7 +2969,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Deluxe",
-   "estado": "em_critica",
+   "estado": "aguardando_aprovacao",
    "familia": "deluxe",
    "forma_de": null,
    "group_name": "Espresso",
@@ -3015,6 +3015,30 @@
      "nota": "receita da rodada 2",
      "para": "em_critica",
      "quando": "2026-10-17T00:25:52-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 8, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-17T03:09:04-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-17T03:23:07-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-17T03:23:07-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 3: arte 9, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-17T03:26:36-03:00"
     }
    ],
    "id": "deluxe_espresso",
@@ -3025,10 +3049,20 @@
      "arte": 7,
      "realista": 7,
      "rodada": 1
+    },
+    {
+     "arte": 8,
+     "realista": 7,
+     "rodada": 2
+    },
+    {
+     "arte": 9,
+     "realista": 10,
+     "rodada": 3
     }
    ],
    "prioridade": 401,
-   "rodada": 2,
+   "rodada": 3,
    "sprites": {
     "E": "appliances_cooking_01_60",
     "N": "appliances_cooking_01_62",
@@ -3946,7 +3980,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Generator",
-   "estado": "em_critica",
+   "estado": "retrabalho",
    "familia": "generator",
    "forma_de": null,
    "group_name": "Red",
@@ -3992,6 +4026,12 @@
      "nota": "receita da rodada 2",
      "para": "em_critica",
      "quando": "2026-10-17T00:27:08-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 5, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-17T03:09:04-03:00"
     }
    ],
    "id": "generator_red",
@@ -4002,6 +4042,11 @@
      "arte": 5,
      "realista": 7,
      "rodada": 1
+    },
+    {
+     "arte": 5,
+     "realista": 6,
+     "rodada": 2
     }
    ],
    "prioridade": 403,
@@ -6112,7 +6157,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "X-press",
-   "estado": "em_critica",
+   "estado": "aguardando_aprovacao",
    "familia": "x_press",
    "forma_de": null,
    "group_name": "Coffee",
@@ -6158,6 +6203,12 @@
      "nota": "receita da rodada 2",
      "para": "em_critica",
      "quando": "2026-10-17T00:25:26-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 9, realista 8",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-17T03:07:46-03:00"
     }
    ],
    "id": "x_press_coffee",
@@ -6168,6 +6219,11 @@
      "arte": 8,
      "realista": 7,
      "rodada": 1
+    },
+    {
+     "arte": 9,
+     "realista": 8,
+     "rodada": 2
     }
    ],
    "prioridade": 401,

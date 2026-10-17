@@ -1,0 +1,43 @@
+{
+ "versao": 1,
+ "objeto": "x_press_coffee",
+ "rodada": 2,
+ "nota_arte": 9,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cabeca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bico",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "cabeca",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "carcaça da cabeça e coluna",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: carcaça em cinza médio claro enquanto o desenho do jogo e a versão arte são grafite escuro",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente modelo 3D com todas as peças prometidas presentes, ótima fidelidade de silhueta e acabamento pronto para o jogo."
+}
