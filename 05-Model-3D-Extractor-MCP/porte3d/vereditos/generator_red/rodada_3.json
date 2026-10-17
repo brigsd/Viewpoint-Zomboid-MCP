@@ -1,0 +1,51 @@
+{
+ "versao": 1,
+ "objeto": "generator_red",
+ "rodada": 3,
+ "nota_arte": 8,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "carenagem",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_tanque",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "arco_gaiola",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_gaiola",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "carenagem",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "lateral esquerda da carenagem",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180: textura da grelha da lateral direita aparece projetada na lateral esquerda lisa",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo excelente com estrutura tubular completa, ripas em 3D real e altíssima aderência ao desenho do jogo em 0 graus."
+}

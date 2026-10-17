@@ -3980,7 +3980,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Generator",
-   "estado": "retrabalho",
+   "estado": "aguardando_aprovacao",
    "familia": "generator",
    "forma_de": null,
    "group_name": "Red",
@@ -4032,6 +4032,24 @@
      "nota": "rodada 2: arte 5, realista 6",
      "para": "retrabalho",
      "quando": "2026-10-17T03:09:04-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-17T03:36:53-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-17T03:36:53-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 3: arte 8, realista 9",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-17T03:41:37-03:00"
     }
    ],
    "id": "generator_red",
@@ -4047,10 +4065,15 @@
      "arte": 5,
      "realista": 6,
      "rodada": 2
+    },
+    {
+     "arte": 8,
+     "realista": 9,
+     "rodada": 3
     }
    ],
    "prioridade": 403,
-   "rodada": 2,
+   "rodada": 3,
    "sprites": {
     "E": "appliances_misc_01_0",
     "N": "appliances_misc_01_3",
