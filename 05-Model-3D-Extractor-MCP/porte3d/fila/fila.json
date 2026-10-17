@@ -5530,6 +5530,24 @@
      "nota": "rodada 1: arte 4, realista 4",
      "para": "retrabalho",
      "quando": "2026-10-17T00:14:23-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-17T03:48:58-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-17T03:48:58-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 6, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-17T03:53:37-03:00"
     }
    ],
    "id": "sink_chrome",
@@ -5540,10 +5558,15 @@
      "arte": 4,
      "realista": 4,
      "rodada": 1
+    },
+    {
+     "arte": 6,
+     "realista": 7,
+     "rodada": 2
     }
    ],
    "prioridade": 406,
-   "rodada": 1,
+   "rodada": 2,
    "sprites": {
     "E": "fixtures_sinks_01_8",
     "N": "fixtures_sinks_01_11",

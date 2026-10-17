@@ -11,19 +11,19 @@
  "material": "metal",
  "cores": {
   "metal": [
-   195,
    198,
-   202
+   201,
+   205
   ],
   "cromado": [
-   215,
-   218,
-   222
+   216,
+   219,
+   223
   ],
   "metal_escuro": [
-   90,
-   90,
-   88
+   52,
+   52,
+   54
   ]
  },
  "pecas": [
@@ -31,13 +31,13 @@
    "nome": "borda_frente",
    "forma": "caixa",
    "min": [
-    -0.282,
-    -0.088,
+    -0.312,
+    -0.094,
     0.9
    ],
    "max": [
-    0.335,
-    -0.033,
+    0.352,
+    -0.039,
     0.922
    ],
    "chanfro": 0.008
@@ -46,13 +46,13 @@
    "nome": "borda_tras",
    "forma": "caixa",
    "min": [
-    -0.282,
-    0.29,
+    -0.312,
+    0.28700000000000003,
     0.9
    ],
    "max": [
-    0.335,
-    0.395,
+    0.352,
+    0.382,
     0.922
    ],
    "chanfro": 0.008
@@ -61,13 +61,13 @@
    "nome": "borda_esq",
    "forma": "caixa",
    "min": [
-    -0.302,
-    -0.033,
+    -0.312,
+    -0.039,
     0.9
    ],
    "max": [
-    -0.247,
-    0.29,
+    -0.257,
+    0.28700000000000003,
     0.922
    ],
    "chanfro": 0.008
@@ -76,13 +76,13 @@
    "nome": "borda_dir",
    "forma": "caixa",
    "min": [
-    0.3,
-    -0.033,
+    0.297,
+    -0.039,
     0.9
    ],
    "max": [
-    0.355,
-    0.29,
+    0.352,
+    0.28700000000000003,
     0.922
    ],
    "chanfro": 0.008
@@ -91,13 +91,13 @@
    "nome": "parede_cuba_frente",
    "forma": "caixa",
    "min": [
-    -0.247,
-    -0.033,
+    -0.257,
+    -0.039,
     0.838
    ],
    "max": [
-    0.3,
-    -0.013,
+    0.297,
+    -0.021,
     0.905
    ],
    "chanfro": 0.004
@@ -106,13 +106,13 @@
    "nome": "parede_cuba_tras",
    "forma": "caixa",
    "min": [
-    -0.247,
-    0.28,
+    -0.257,
+    0.269,
     0.838
    ],
    "max": [
-    0.3,
-    0.3,
+    0.297,
+    0.28700000000000003,
     0.905
    ],
    "chanfro": 0.004
@@ -121,13 +121,13 @@
    "nome": "parede_cuba_esq",
    "forma": "caixa",
    "min": [
-    -0.249,
-    -0.013,
+    -0.257,
+    -0.021,
     0.838
    ],
    "max": [
-    -0.227,
-    0.28,
+    -0.239,
+    0.269,
     0.905
    ],
    "chanfro": 0.004
@@ -136,13 +136,13 @@
    "nome": "parede_cuba_dir",
    "forma": "caixa",
    "min": [
-    0.28,
-    -0.013,
+    0.279,
+    -0.021,
     0.838
    ],
    "max": [
-    0.302,
-    0.28,
+    0.297,
+    0.269,
     0.905
    ],
    "chanfro": 0.004
@@ -151,45 +151,71 @@
    "nome": "fundo_cuba_esq",
    "forma": "caixa",
    "min": [
-    -0.232,
-    -0.018,
+    -0.239,
+    -0.021,
     0.832
    ],
    "max": [
-    0.012,
-    0.285,
+    -0.004,
+    0.269,
     0.843
    ],
-   "material": "metal_escuro",
-   "chanfro": 0.003
+   "material": "metal",
+   "chanfro": 0.002
   },
   {
    "nome": "fundo_cuba_dir",
    "forma": "caixa",
    "min": [
-    0.036,
-    -0.018,
+    0.02,
+    -0.021,
     0.832
    ],
    "max": [
-    0.285,
-    0.285,
+    0.279,
+    0.269,
     0.843
    ],
+   "material": "metal",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "ralo_cuba_esq",
+   "forma": "cilindro",
+   "centro": [
+    -0.1215,
+    0.124,
+    0.843
+   ],
+   "raio": 0.026,
+   "altura": 0.002,
    "material": "metal_escuro",
-   "chanfro": 0.003
+   "segmentos": 16
+  },
+  {
+   "nome": "ralo_cuba_dir",
+   "forma": "cilindro",
+   "centro": [
+    0.1495,
+    0.124,
+    0.843
+   ],
+   "raio": 0.026,
+   "altura": 0.002,
+   "material": "metal_escuro",
+   "segmentos": 16
   },
   {
    "nome": "divisoria",
    "forma": "caixa",
    "min": [
-    0.012,
-    -0.013,
-    0.841
+    -0.004,
+    -0.021,
+    0.842
    ],
    "max": [
-    0.036,
-    0.28,
+    0.02,
+    0.269,
     0.914
    ],
    "chanfro": 0.004
@@ -198,11 +224,11 @@
    "nome": "base_torneira",
    "forma": "cilindro",
    "centro": [
-    0.015,
-    0.335,
+    0.008,
+    0.3345,
     0.919
    ],
-   "raio": 0.042,
+   "raio": 0.04,
    "altura": 0.025,
    "material": "cromado",
    "segmentos": 16
@@ -211,11 +237,11 @@
    "nome": "haste_torneira",
    "forma": "cilindro",
    "centro": [
-    0.015,
-    0.335,
+    0.008,
+    0.3345,
     0.94
    ],
-   "raio": 0.024,
+   "raio": 0.022,
    "altura": 0.195,
    "material": "cromado",
    "segmentos": 16
@@ -223,56 +249,81 @@
   {
    "nome": "bico_torneira_arco",
    "forma": "cilindro",
-   "eixo": "x",
    "centro": [
-    -0.145,
-    0.275,
-    1.094
+    -0.0145,
+    0.322,
+    1.1258
    ],
-   "raio": 0.022,
-   "altura": 0.165,
+   "raio": 0.016,
+   "altura": 0.0814,
+   "eixo": "z",
    "rot": [
-    0,
-    0,
-    -22
+    0.0,
+    39.25,
+    -150.95
    ],
    "material": "cromado",
-   "segmentos": 14
+   "segmentos": 16
+  },
+  {
+   "nome": "bico_torneira_descida",
+   "forma": "cilindro",
+   "centro": [
+    -0.052,
+    0.2845,
+    1.1085
+   ],
+   "raio": 0.016,
+   "altura": 0.099,
+   "eixo": "z",
+   "rot": [
+    0.0,
+    143.91,
+    -120.96
+   ],
+   "material": "cromado",
+   "segmentos": 16
   },
   {
    "nome": "bico_torneira_ponta",
    "forma": "cilindro",
    "centro": [
-    -0.138,
-    0.25,
-    1.047
+    -0.077,
+    0.2395,
+    1.0479
    ],
-   "raio": 0.035,
-   "raio_topo": 0.022,
-   "altura": 0.055,
+   "raio": 0.021,
+   "altura": 0.0773,
+   "eixo": "z",
+   "rot": [
+    0.0,
+    144.63,
+    -116.57
+   ],
    "material": "cromado",
-   "segmentos": 14
+   "segmentos": 16,
+   "raio_topo": 0.016
   },
   {
    "nome": "alavanca",
    "forma": "caixa",
    "min": [
-    -0.075,
-    0.3,
-    1.15
+    0.018,
+    0.3225,
+    1.04
    ],
    "max": [
-    0.035,
-    0.355,
-    1.18
+    0.066,
+    0.3465,
+    1.062
    ],
    "rot": [
-    0,
-    -8,
-    -12
+    0.0,
+    -12.0,
+    0.0
    ],
    "material": "cromado",
-   "chanfro": 0.004
+   "chanfro": 0.003
   }
  ],
  "arte": {

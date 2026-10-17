@@ -57,3 +57,5 @@ Thumbs.db
 
 # Acervo de objetos (Módulo 05): imagens e catálogo extraídos do jogo, não redistribuir
 /05-Model-3D-Extractor-MCP/acervo/data/
+/05-Model-3D-Extractor-MCP/acervo/*.db
+*.db
