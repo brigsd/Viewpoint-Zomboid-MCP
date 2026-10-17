@@ -1,0 +1,125 @@
+{
+ "versao": 1,
+ "objeto": "sink_chrome",
+ "rodada": 1,
+ "nota_arte": 4,
+ "nota_realista": 4,
+ "pecas": [
+  {
+   "nome": "borda",
+   "situacao": "forma_errada",
+   "nota": "as 4 tábuas não fecham os cantos, formando degraus abertos nas quinas"
+  },
+  {
+   "nome": "parede_cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "fundo_cuba",
+   "situacao": "forma_errada",
+   "nota": "sem ralo escuro no realista e com linha preta diagonal na arte em 0°"
+  },
+  {
+   "nome": "divisoria",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_torneira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "haste_torneira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bico_torneira",
+   "situacao": "fora_do_lugar",
+   "nota": "os dois trechos do bico flutuam soltos no ar, desconectados da haste e entre si, sem formar arco"
+  },
+  {
+   "nome": "alavanca",
+   "situacao": "fora_do_lugar",
+   "nota": "posicionada sobre o topo da haste em vez de na lateral"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "bico_torneira",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "trechos bico_torneira_arco e bico_torneira_ponta",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de cima e fio.png 090: cilindro e cone do bico flutuam no ar separados da haste e entre si",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "borda",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira, cubas e torneira em 180 graus",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: modelo 3D está com orientação oposta ao sprite jogo tras e com a textura frontal projetada/embaralhada sobre as cubas",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "borda",
+   "tipo": "emenda",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "quatro cantos de encontro entre borda_frente, borda_tras, borda_esq e borda_dir",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de baixo: as tábuas laterais e frontais não se encontram nas quinas, deixando recortes quadrados abertos",
+   "gravidade": "media"
+  },
+  {
+   "parte": "alavanca",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "extremidade superior da haste_torneira",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de cima e fio.png 045: caixa da alavanca está assentada no topo da haste como tampa, e não na lateral",
+   "gravidade": "media"
+  },
+  {
+   "parte": "parede_cuba",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "paredes internas e fundo das cubas fora de 0 graus",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 090: textura esticada em serrilhado nas paredes e fantasma da torneira projetado dentro da cuba",
+   "gravidade": "media"
+  },
+  {
+   "parte": "fundo_cuba",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "centro do fundo das duas cubas",
+   "sentido": "",
+   "evidencia": "zoom.png 000 parte de baixo: fundo cinza liso sem o ralo escuro prometido",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "fundo_cuba",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "fundo da cuba direita",
+   "sentido": "",
+   "evidencia": "zoom.png 000 parte de baixo: linha preta diagonal cruzando o fundo da cuba direita",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "A torneira está desmontada com peças flutuando no ar, os cantos da borda não se encontram e a textura do nível arte desmorona fora de 0° (especialmente em 180°)."
+}

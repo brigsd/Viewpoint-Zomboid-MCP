@@ -10,6 +10,11 @@
  "tras": "N",
  "material": "liso",
  "cores": {
+  "liso": [
+   198,
+   58,
+   54
+  ],
   "metal": [
    225,
    225,
@@ -19,6 +24,31 @@
    24,
    24,
    26
+  ],
+  "branco": [
+   236,
+   236,
+   232
+  ],
+  "boca_fundo": [
+   10,
+   10,
+   11
+  ],
+  "boca": [
+   38,
+   38,
+   40
+  ],
+  "chapa_cinza": [
+   150,
+   152,
+   146
+  ],
+  "fresta": [
+   34,
+   34,
+   36
   ]
  },
  "pecas": [
@@ -41,7 +71,7 @@
    "nome": "painel_traseiro",
    "forma": "caixa",
    "min": [
-    -0.4528,
+    -0.4521,
     0.338,
     0.8966
    ],
@@ -56,7 +86,7 @@
    "nome": "moldura_branca0",
    "forma": "caixa",
    "min": [
-    -0.4621,
+    -0.4531,
     -0.2509,
     0.75
    ],
@@ -72,7 +102,7 @@
    "nome": "moldura_branca1",
    "forma": "caixa",
    "min": [
-    -0.4621,
+    -0.4531,
     -0.2509,
     0.8
    ],
@@ -88,7 +118,7 @@
    "nome": "moldura_branca2",
    "forma": "caixa",
    "min": [
-    -0.4621,
+    -0.4531,
     -0.2509,
     0.85
    ],
@@ -194,7 +224,7 @@
    "nome": "barra_inferior",
    "forma": "caixa",
    "min": [
-    -0.4621,
+    -0.4531,
     -0.2409,
     0.23
    ],
@@ -276,6 +306,396 @@
    "altura": 0.02,
    "material": "metal",
    "segmentos": 14
+  },
+  {
+   "nome": "topo_painel",
+   "forma": "caixa",
+   "min": [
+    -0.4541,
+    0.332,
+    1.0549
+   ],
+   "max": [
+    0.4942,
+    0.4568,
+    1.0979
+   ],
+   "material": "branco",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "tampa_painel_esq",
+   "forma": "caixa",
+   "min": [
+    -0.4561,
+    0.338,
+    0.8966
+   ],
+   "max": [
+    -0.4521,
+    0.4548,
+    1.0549
+   ],
+   "material": "liso",
+   "arte_cor": true
+  },
+  {
+   "nome": "placa_boca0",
+   "forma": "caixa",
+   "min": [
+    -0.367,
+    -0.1,
+    0.8966
+   ],
+   "max": [
+    -0.082,
+    0.33,
+    0.8996
+   ],
+   "material": "boca_fundo",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "placa_boca1",
+   "forma": "caixa",
+   "min": [
+    0.085,
+    -0.1,
+    0.8966
+   ],
+   "max": [
+    0.374,
+    0.33,
+    0.8996
+   ],
+   "material": "boca_fundo",
+   "chanfro": 0.001
+  },
+  {
+   "nome": "boca0",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    -0.219,
+    0.034,
+    0.9031
+   ],
+   "raio": 0.1,
+   "altura": 0.007,
+   "material": "boca",
+   "segmentos": 24
+  },
+  {
+   "nome": "boca1",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    -0.219,
+    0.25,
+    0.9031
+   ],
+   "raio": 0.1,
+   "altura": 0.007,
+   "material": "boca",
+   "segmentos": 24
+  },
+  {
+   "nome": "boca2",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.2166,
+    0.034,
+    0.9031
+   ],
+   "raio": 0.1,
+   "altura": 0.007,
+   "material": "boca",
+   "segmentos": 24
+  },
+  {
+   "nome": "boca3",
+   "forma": "cilindro",
+   "eixo": "z",
+   "centro": [
+    0.2166,
+    0.25,
+    0.9031
+   ],
+   "raio": 0.1,
+   "altura": 0.007,
+   "material": "boca",
+   "segmentos": 24
+  },
+  {
+   "nome": "chapa_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    0.4525,
+    0.1
+   ],
+   "max": [
+    0.42,
+    0.4565,
+    0.7
+   ],
+   "material": "chapa_cinza",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "furo_traseira",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.3,
+    0.4565,
+    0.35
+   ],
+   "raio": 0.04,
+   "altura": 0.004,
+   "material": "fresta",
+   "segmentos": 20
+  },
+  {
+   "nome": "grade0_0",
+   "forma": "caixa",
+   "min": [
+    0.225,
+    0.4565,
+    0.154
+   ],
+   "max": [
+    0.388,
+    0.46,
+    0.166
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade0_1",
+   "forma": "caixa",
+   "min": [
+    0.225,
+    0.4565,
+    0.194
+   ],
+   "max": [
+    0.388,
+    0.46,
+    0.206
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade0_2",
+   "forma": "caixa",
+   "min": [
+    0.225,
+    0.4565,
+    0.234
+   ],
+   "max": [
+    0.388,
+    0.46,
+    0.246
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade0_3",
+   "forma": "caixa",
+   "min": [
+    0.225,
+    0.4565,
+    0.274
+   ],
+   "max": [
+    0.388,
+    0.46,
+    0.286
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade1_0",
+   "forma": "caixa",
+   "min": [
+    0.085,
+    0.4565,
+    0.154
+   ],
+   "max": [
+    0.209,
+    0.46,
+    0.166
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade1_1",
+   "forma": "caixa",
+   "min": [
+    0.085,
+    0.4565,
+    0.194
+   ],
+   "max": [
+    0.209,
+    0.46,
+    0.206
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade1_2",
+   "forma": "caixa",
+   "min": [
+    0.085,
+    0.4565,
+    0.234
+   ],
+   "max": [
+    0.209,
+    0.46,
+    0.246
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade1_3",
+   "forma": "caixa",
+   "min": [
+    0.085,
+    0.4565,
+    0.274
+   ],
+   "max": [
+    0.209,
+    0.46,
+    0.286
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade2_0",
+   "forma": "caixa",
+   "min": [
+    -0.196,
+    0.4565,
+    0.154
+   ],
+   "max": [
+    -0.056,
+    0.46,
+    0.166
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade2_1",
+   "forma": "caixa",
+   "min": [
+    -0.196,
+    0.4565,
+    0.194
+   ],
+   "max": [
+    -0.056,
+    0.46,
+    0.206
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade2_2",
+   "forma": "caixa",
+   "min": [
+    -0.196,
+    0.4565,
+    0.234
+   ],
+   "max": [
+    -0.056,
+    0.46,
+    0.246
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade2_3",
+   "forma": "caixa",
+   "min": [
+    -0.196,
+    0.4565,
+    0.274
+   ],
+   "max": [
+    -0.056,
+    0.46,
+    0.286
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade3_0",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.4565,
+    0.154
+   ],
+   "max": [
+    -0.22,
+    0.46,
+    0.166
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade3_1",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.4565,
+    0.194
+   ],
+   "max": [
+    -0.22,
+    0.46,
+    0.206
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade3_2",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.4565,
+    0.234
+   ],
+   "max": [
+    -0.22,
+    0.46,
+    0.246
+   ],
+   "material": "fresta"
+  },
+  {
+   "nome": "grade3_3",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.4565,
+    0.274
+   ],
+   "max": [
+    -0.22,
+    0.46,
+    0.286
+   ],
+   "material": "fresta"
   }
  ],
  "arte": {
@@ -284,12 +704,28 @@
  "realista": {
   "materiais": {
    "liso": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.2
    },
    "metal": {
     "tipo": "metal"
    },
    "vidro": {
+    "tipo": "liso"
+   },
+   "branco": {
+    "tipo": "liso"
+   },
+   "boca_fundo": {
+    "tipo": "liso"
+   },
+   "boca": {
+    "tipo": "liso"
+   },
+   "chapa_cinza": {
+    "tipo": "metal"
+   },
+   "fresta": {
     "tipo": "liso"
    }
   }

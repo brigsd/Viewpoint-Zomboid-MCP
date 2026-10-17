@@ -1,0 +1,39 @@
+{
+ "versao": 1,
+ "objeto": "microwave_chrome",
+ "rodada": 2,
+ "nota_arte": 9,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "janela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "janela",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda inferior da janela e moldura",
+   "sentido": "baixo",
+   "evidencia": "zoom.png 045: a moldura da janela no realista vai mais perto da base do corpo do que na textura original",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem executado nos dois níveis, com excelente fidelidade ao sprite original e ótimo relevo no realista."
+}

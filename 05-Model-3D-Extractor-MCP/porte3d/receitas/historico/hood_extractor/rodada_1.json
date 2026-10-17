@@ -1,0 +1,137 @@
+{
+ "versao": 1,
+ "id": "hood_extractor",
+ "sprites": {
+  "S": "appliances_cooking_01_69",
+  "E": "appliances_cooking_01_68",
+  "N": "appliances_cooking_01_70",
+  "W": "appliances_cooking_01_71"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   204,
+   207,
+   208
+  ],
+  "metal_medio": [
+   146,
+   147,
+   151
+  ],
+  "metal_escuro": [
+   28,
+   28,
+   30
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "campana",
+   "forma": "prisma",
+   "eixo": "x",
+   "de": -0.5,
+   "ate": 0.5,
+   "perfil": [
+    [
+     0.015,
+     1.88
+    ],
+    [
+     0.445,
+     1.88
+    ],
+    [
+     0.445,
+     2.315
+    ],
+    [
+     0.19,
+     2.315
+    ],
+    [
+     -0.005,
+     1.985
+    ],
+    [
+     -0.005,
+     1.96
+    ],
+    [
+     0.015,
+     1.96
+    ]
+   ],
+   "material": "metal",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "aba_inferior",
+   "forma": "caixa",
+   "min": [
+    -0.502,
+    -0.01,
+    1.88
+   ],
+   "max": [
+    0.502,
+    0.025,
+    1.985
+   ],
+   "material": "metal_medio",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "duto",
+   "forma": "caixa",
+   "min": [
+    -0.5,
+    0.19,
+    2.315
+   ],
+   "max": [
+    0.5,
+    0.445,
+    2.45
+   ],
+   "material": "metal_medio",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "duto_topo",
+   "forma": "caixa",
+   "min": [
+    -0.485,
+    0.205,
+    2.445
+   ],
+   "max": [
+    0.485,
+    0.43,
+    2.455
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.003
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "metal_medio": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   }
+  }
+ }
+}

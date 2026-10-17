@@ -1,0 +1,98 @@
+{
+ "versao": 1,
+ "objeto": "television_valutech",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "traseira",
+   "situacao": "forma_errada",
+   "nota": "sem o recorte retangular em relevo na face de trás no realista/wireframe e ligeiramente menor na silhueta em 0 graus"
+  },
+  {
+   "nome": "base_escura",
+   "situacao": "forma_errada",
+   "nota": "sem as 3 luzinhas coloridas na face traseira do modelo realista"
+  },
+  {
+   "nome": "grade_lateral",
+   "situacao": "forma_errada",
+   "nota": "caixa lisa sem os 3 frisos de ventilação no modelo realista"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "traseira",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face posterior central da traseira",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e fio.png 225: face traseira completamente lisa no realista, sem o recorte retangular em relevo prometido e visível no jogo tras",
+   "gravidade": "media"
+  },
+  {
+   "parte": "base_escura",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "canto direito traseiro da base escura",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: as 3 luzinhas coloridas (amarela, branca e vermelha) presentes no sprite traseiro não existem no modelo realista",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grade_lateral",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face externa da grade na lateral direita",
+   "sentido": "",
+   "evidencia": "zoom.png 000: grade_lateral é uma placa retangular lisa sem os 3 frisos de ventilação prometidos",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "traseira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo e parede direita do tronco traseiro",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png 000: borda verde contínua no topo e direita da traseira mostra que o tronco traseiro está ligeiramente mais baixo/curto que no sprite",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "traseira",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "quina superior esquerda e lateral da traseira",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: emenda diagonal escura e esticamento de pixels na junção entre as projeções da traseira",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Frente muito bem resolvida nos dois níveis, mas o nível realista omitiu os detalhes geométricos da traseira (relevo central e 3 luzinhas coloridas) e os frisos da grade lateral."
+}

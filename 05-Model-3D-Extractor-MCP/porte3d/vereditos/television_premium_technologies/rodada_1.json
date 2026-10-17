@@ -1,0 +1,62 @@
+{
+ "versao": 1,
+ "objeto": "television_premium_technologies",
+ "rodada": 1,
+ "nota_arte": 9,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_baixo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_escura",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_tras",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "traseira",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "face superior inclinada da traseira",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225: linha diagonal dividindo dois tons de cinza no plano inclinado superior",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "base_escura",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "três luzinhas/conectores na face traseira",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: ordem das cores está amarelo-branco-vermelho da esquerda para a direita, mas no jogo é vermelho-branco-amarelo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente conversão 3D tanto na arte quanto no realista, com correspondência quase exata ao sprite original de frente e de trás."
+}

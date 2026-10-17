@@ -1,0 +1,63 @@
+{
+ "versao": 1,
+ "objeto": "oven_antique",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "saia",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tubo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cotovelo",
+   "situacao": "ok",
+   "nota": "leve recorte de alfa em 180° na arte e degrau entre segmentos no realista"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "cotovelo",
+   "tipo": "buraco",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "topo curvo e boca traseira do cotovelo",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e giro_arte.png 180/225: recorte dentado na silhueta do cotovelo e boca escura pouco definida em relação ao sprite de trás",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "cotovelo",
+   "tipo": "emenda",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "junção frontal entre o trecho diagonal e a boca do cotovelo",
+   "sentido": "",
+   "evidencia": "zoom.png 0 e 45 (parte de cima): degrau escuro entre os cilindros inclinados do cotovelo parece uma fresta aberta na frente",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem construído e alinhado ao sprite original em ambos os níveis, pronto para o jogo com apenas detalhes leves no cotovelo da chaminé."
+}

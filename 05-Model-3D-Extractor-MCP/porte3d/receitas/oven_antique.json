@@ -34,7 +34,7 @@
     0.81
    ],
    "max": [
-    0.3886,
+    0.372,
     0.4855,
     0.85
    ],
@@ -187,6 +187,143 @@
    "segmentos": 24
   },
   {
+   "nome": "chapa_tras_esq",
+   "forma": "caixa",
+   "min": [
+    -0.41,
+    0.07,
+    0.845
+   ],
+   "max": [
+    -0.14,
+    0.45,
+    0.857
+   ],
+   "material": "chapa",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "chapa_frente_dir",
+   "forma": "caixa",
+   "min": [
+    -0.07,
+    0.0,
+    0.845
+   ],
+   "max": [
+    0.33,
+    0.25,
+    0.857
+   ],
+   "material": "chapa",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "fresta_1",
+   "forma": "caixa",
+   "min": [
+    -0.3,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.286,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_2",
+   "forma": "caixa",
+   "min": [
+    -0.25,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.236,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_3",
+   "forma": "caixa",
+   "min": [
+    -0.2,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.186,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_4",
+   "forma": "caixa",
+   "min": [
+    -0.15,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.136,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_5",
+   "forma": "caixa",
+   "min": [
+    -0.1,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.086,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_6",
+   "forma": "caixa",
+   "min": [
+    -0.05,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    -0.036,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "fresta_7",
+   "forma": "caixa",
+   "min": [
+    0.0,
+    -0.0325,
+    0.37
+   ],
+   "max": [
+    0.014,
+    -0.0262,
+    0.63
+   ],
+   "material": "metal_escuro"
+  },
+  {
    "nome": "cotovelo",
    "forma": "cilindro",
    "centro": [
@@ -195,8 +332,25 @@
     2.05
    ],
    "raio": 0.084,
-   "altura": 0.05,
+   "altura": 0.03,
    "segmentos": 24
+  },
+  {
+   "nome": "cotovelo_diag",
+   "forma": "cilindro",
+   "centro": [
+    -0.0178,
+    0.4003,
+    2.055
+   ],
+   "raio": 0.08,
+   "altura": 0.1,
+   "segmentos": 24,
+   "rot": [
+    -45,
+    0,
+    0
+   ]
   },
   {
    "nome": "cotovelo_boca",
@@ -204,12 +358,26 @@
    "eixo": "y",
    "centro": [
     -0.0178,
-    0.3653,
-    2.086
+    0.42,
+    2.1507
    ],
-   "raio": 0.084,
-   "altura": 0.12,
+   "raio": 0.08,
+   "altura": 0.045,
    "segmentos": 24
+  },
+  {
+   "nome": "boca_escura",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.0178,
+    0.46,
+    2.1507
+   ],
+   "raio": 0.064,
+   "altura": 0.01,
+   "segmentos": 24,
+   "material": "metal_escuro"
   }
  ],
  "arte": {
@@ -219,8 +387,34 @@
   "materiais": {
    "metal": {
     "tipo": "metal",
-    "desgaste": 0.3
+    "desgaste": 0.3,
+    "ferrugem": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal"
+   },
+   "chapa": {
+    "tipo": "metal",
+    "desgaste": 0.4,
+    "ferrugem": 0.3
    }
   }
+ },
+ "cores": {
+  "metal": [
+   58,
+   78,
+   64
+  ],
+  "metal_escuro": [
+   14,
+   16,
+   16
+  ],
+  "chapa": [
+   70,
+   92,
+   76
+  ]
  }
 }

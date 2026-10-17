@@ -1,0 +1,100 @@
+{
+ "versao": 1,
+ "objeto": "generator_red",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "carenagem",
+   "situacao": "ok",
+   "nota": "geometria correta, mas no nível arte o topo tem manchas da tampa e dos arcos projetadas na textura"
+  },
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_tanque",
+   "situacao": "ok",
+   "nota": "geometria correta, mas no nível arte recebe textura vermelha do topo em 45-315 graus"
+  },
+  {
+   "nome": "painel_frontal",
+   "situacao": "ok",
+   "nota": "no realista é uma caixa lisa sem as tomadas visíveis na arte"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "fora_do_lugar",
+   "nota": "colocada nas duas pontas laterais (direita e esquerda) em vez de lateral direita e traseira"
+  },
+  {
+   "nome": "arco_gaiola",
+   "situacao": "forma_errada",
+   "nota": "quinas superiores em ângulo reto em vez de curvadas como no sprite"
+  },
+  {
+   "nome": "barra_gaiola",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "carenagem",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "topo da carenagem e cilindro da tampa_tanque",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180 e zoom.png 045: o desenho da tampa preta e dos arcos curvados aparece achatado no topo da carenagem, enquanto a tampa 3D fica vermelha",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "carenagem",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira e painel inferior de trás",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: o modelo repete a textura da frente (com adesivo amarelo e tomadas) em vez do sprite 'jogo tras'",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "arco_gaiola",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "quinas superiores dos dois arcos laterais",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png 000 e comparacao.png 000: cantos vivos em 90 graus sobram (magenta) onde o tubo original do jogo faz curva arredondada",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 180,
+   "onde": "lateral esquerda vs face traseira",
+   "sentido": "",
+   "evidencia": "fio.png 180: segunda grelha colocada na lateral esquerda (grelha_esq) enquanto a traseira repete o painel_frontal",
+   "gravidade": "media"
+  },
+  {
+   "parte": "painel_frontal",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "face frontal do painel escuro inferior",
+   "sentido": "",
+   "evidencia": "zoom.png 000: painel realista é um bloco cinza totalmente liso, sem relevo ou marcação das tomadas e controles",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Boa estrutura volumétrica e materiais realistas convincentes, mas o nível arte sofre com projeção frontal duplicada na traseira e sombras da tampa/arcos pintadas direto na carenagem."
+}

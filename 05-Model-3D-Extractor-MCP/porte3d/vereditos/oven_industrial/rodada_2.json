@@ -1,0 +1,96 @@
+{
+ "versao": 1,
+ "objeto": "oven_industrial",
+ "rodada": 2,
+ "nota_arte": 5,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "respaldo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alca",
+   "situacao": "fora_do_lugar",
+   "nota": "barra cilindrica horizontal deslocada para a direita, solta do apoio esquerdo e saindo para fora da lateral do fogao"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "alca",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "barra cilindrica horizontal da alca",
+   "sentido": "deslocado_x",
+   "evidencia": "fio.png 045 e zoom.png 045: cilindro da alca deslocado para a direita, desconectado do apoio esquerdo e saindo para fora do corpo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "alca",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "superficie da barra cilindrica e apoios da alca",
+   "sentido": "",
+   "evidencia": "zoom.png 045 (arte): alca 3D mapeada com textura cinza-clara da porta em vez de preta, enquanto a alca original aparece desenhada atras na porta",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "bordas laterais da porta e frente do corpo atras da porta",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 090: textura da moldura da porta aparece duplicada na caixa da porta e no corpo ao fundo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "borda interna e ripas das grelhas",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e zoom.png 045 (arte): faixas brancas do respaldo/corpo projetadas nas bordas e ripas das grelhas pretas",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "painel central da porta do forno",
+   "sentido": "",
+   "evidencia": "comparacao.png 0: centro da porta e cinza escuro quase preto no realista, mas no jogo original e metal claro da mesma cor do corpo",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "O modelo tem boa volumetria geral, mas a barra da alca do forno esta gravemente deslocada para a direita (saindo para fora do fogao) em ambos os niveis, o mapeamento UV da arte projeta texturas trocadas nas pecas salientes (alca, porta, grelha) e o centro da porta realista esta escuro demais."
+}

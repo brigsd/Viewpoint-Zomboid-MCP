@@ -1,0 +1,241 @@
+{
+ "versao": 1,
+ "id": "microwave_chrome",
+ "sprites": {
+  "S": "appliances_cooking_01_28",
+  "E": "appliances_cooking_01_29",
+  "N": "appliances_cooking_01_31",
+  "W": "appliances_cooking_01_30"
+ },
+ "tras": "N",
+ "material": "metal",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.217,
+    -0.1011,
+    0.8969
+   ],
+   "max": [
+    0.4218,
+    0.3377,
+    1.3412
+   ],
+   "chanfro": 0.012
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.214,
+    -0.0981,
+    1.336
+   ],
+   "max": [
+    0.4188,
+    0.3347,
+    1.3442
+   ],
+   "material": "tampo_preto",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "moldura_janela",
+   "forma": "caixa",
+   "min": [
+    -0.19,
+    -0.11109999999999999,
+    0.935
+   ],
+   "max": [
+    0.225,
+    -0.0991,
+    1.245
+   ],
+   "material": "moldura",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "janela",
+   "forma": "caixa",
+   "min": [
+    -0.17,
+    -0.1151,
+    0.955
+   ],
+   "max": [
+    0.205,
+    -0.1091,
+    1.225
+   ],
+   "material": "vidro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "painel",
+   "forma": "caixa",
+   "min": [
+    0.245,
+    -0.1071,
+    0.915
+   ],
+   "max": [
+    0.405,
+    -0.0991,
+    1.305
+   ],
+   "material": "painel_mat",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "visor",
+   "forma": "caixa",
+   "min": [
+    0.27,
+    -0.11009999999999999,
+    1.245
+   ],
+   "max": [
+    0.38,
+    -0.1061,
+    1.285
+   ],
+   "material": "vidro",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao0",
+   "forma": "caixa",
+   "min": [
+    0.275,
+    -0.1151,
+    0.945
+   ],
+   "max": [
+    0.375,
+    -0.1061,
+    0.98
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao1",
+   "forma": "caixa",
+   "min": [
+    0.275,
+    -0.1151,
+    1.015
+   ],
+   "max": [
+    0.375,
+    -0.1061,
+    1.0499999999999998
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao2",
+   "forma": "caixa",
+   "min": [
+    0.275,
+    -0.1151,
+    1.085
+   ],
+   "max": [
+    0.375,
+    -0.1061,
+    1.1199999999999999
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao3",
+   "forma": "caixa",
+   "min": [
+    0.275,
+    -0.1151,
+    1.155
+   ],
+   "max": [
+    0.375,
+    -0.1061,
+    1.19
+   ],
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "min": [
+    0.228,
+    -0.1211,
+    0.94
+   ],
+   "max": [
+    0.238,
+    -0.1051,
+    1.02
+   ],
+   "material": "moldura",
+   "chanfro": 0.002
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "moldura": {
+    "tipo": "liso"
+   },
+   "vidro": {
+    "tipo": "liso"
+   },
+   "painel_mat": {
+    "tipo": "liso"
+   },
+   "botao": {
+    "tipo": "liso"
+   },
+   "tampo_preto": {
+    "tipo": "liso"
+   }
+  }
+ },
+ "cores": {
+  "moldura": [
+   40,
+   40,
+   42
+  ],
+  "vidro": [
+   78,
+   82,
+   98
+  ],
+  "painel_mat": [
+   170,
+   170,
+   172
+  ],
+  "botao": [
+   60,
+   60,
+   64
+  ],
+  "tampo_preto": [
+   24,
+   24,
+   26
+  ]
+ }
+}

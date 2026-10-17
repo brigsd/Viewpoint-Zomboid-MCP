@@ -1,0 +1,85 @@
+{
+ "versao": 1,
+ "objeto": "oven_red",
+ "rodada": 2,
+ "nota_arte": 8,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_branca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "janela_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_inferior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_inferior",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "painel_traseiro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face lateral direita e quina superior do painel traseiro",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e giro_arte.png 090/180: retangulo vermelho liso destoa do sombreado na lateral do painel",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "moldura_branca",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "canto frontal esquerdo, logo abaixo do tampo",
+   "sentido": "",
+   "evidencia": "giro_realista.png 090 e fio.png 045: moldura_lateral existe no canto direito mas falta no canto esquerdo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "quina frontal direita vista por tras, perto da moldura branca",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: leve borrao cinza vazando da moldura na borda direita do modelo arte",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem construído e fiel ao sprite original na frente e atrás, pronto para o jogo com apenas detalhes leves de acabamento lateral."
+}

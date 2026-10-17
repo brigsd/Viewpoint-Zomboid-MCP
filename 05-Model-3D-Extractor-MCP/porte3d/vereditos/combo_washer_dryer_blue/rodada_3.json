@@ -1,0 +1,75 @@
+{
+ "versao": 1,
+ "objeto": "combo_washer_dryer_blue",
+ "rodada": 3,
+ "nota_arte": 9,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_aro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_vidro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_tras",
+   "situacao": "ok",
+   "nota": "no realista falta apenas a pequena curva em J na ponta inferior"
+  },
+  {
+   "nome": "grade_tras",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "topo das faces laterais perto da quina frontal, logo abaixo do tampo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135 e 315: faixa azul escura da lateral do painel frontal se estende pela parede lateral do gabinete",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "puxador_tras",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "extremidade inferior da alça/mangueira traseira",
+   "sentido": "menor",
+   "evidencia": "comparacao.png 180: peça realista desce reta até o suporte inferior, sem a curva para a esquerda (formato em J) visível no desenho de trás",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem executado nos dois níveis, com silhueta precisa (IoU 97,6%) e todas as peças prometidas bem posicionadas."
+}

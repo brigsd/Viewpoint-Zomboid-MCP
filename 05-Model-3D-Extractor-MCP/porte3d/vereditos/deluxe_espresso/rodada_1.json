@@ -1,0 +1,140 @@
+{
+ "versao": 1,
+ "objeto": "deluxe_espresso",
+ "rodada": 1,
+ "nota_arte": 7,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "bandeja",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "ok",
+   "nota": "no nivel arte recebe sombra/fantasma projetado dos porta-filtros em 45 graus"
+  },
+  {
+   "nome": "cabeca",
+   "situacao": "ok",
+   "nota": "no nivel arte tem mancha da alavanca na borda superior direita"
+  },
+  {
+   "nome": "bloco_esquerdo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok",
+   "nota": "no nivel arte tem mancha escura da alavanca projetada no topo"
+  },
+  {
+   "nome": "moedor_base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moedor_copo",
+   "situacao": "forma_errada",
+   "nota": "no realista falta a parte marrom de graos separada da tampa cinza; na arte ha costura vertical branca em 45 e 90 graus"
+  },
+  {
+   "nome": "manometros",
+   "situacao": "ok",
+   "nota": "no realista sao cilindros cinzas lisos sem mostrador e sem a fileira de botoes pequenos"
+  },
+  {
+   "nome": "porta_filtro",
+   "situacao": "ok",
+   "nota": "cabo esquerdo levemente mais alto que no desenho em 0 graus"
+  },
+  {
+   "nome": "alavanca_vapor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_bandeja",
+   "situacao": "ok",
+   "nota": "no realista e uma placa branca lisa sem os frisos da grade"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "tampo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "borda frontal direita e face superior do tampo e da cabeca",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045, 090 e 180: a alavanca preta foi projetada na textura do tampo branco e da cabeca",
+   "gravidade": "media"
+  },
+  {
+   "parte": "coluna_traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "face frontal interna, atras dos porta-filtros",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de baixo: imagem fantasma dos porta-filtros e manometros borrada na parede traseira",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grade_bandeja",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face superior da grade sobre a bandeja",
+   "sentido": "",
+   "evidencia": "comparacao.png 0 graus realista: placa inteiramente branca e lisa, sem os frisos escuros da grelha de gotejamento",
+   "gravidade": "media"
+  },
+  {
+   "parte": "moedor_copo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "metade inferior do copo do moedor",
+   "sentido": "",
+   "evidencia": "comparacao.png 0 graus realista: cilindro inteiramente cinza metalico, faltando a parte marrom dos graos sob a tampa",
+   "gravidade": "media"
+  },
+  {
+   "parte": "manometros",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "painel frontal entre e sobre os mostradores",
+   "sentido": "",
+   "evidencia": "zoom.png 000 realista: mostradores sao discos cinzas cegos sem ponteiros e falta a fileira de botoes pequenos no painel",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "moedor_copo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "lateral frontal e esquerda do cilindro do copo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045 e 270: faixa vertical branca/cinza atravessando a parte marrom do copo do moedor",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "porta_filtro",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "cabo do porta-filtro esquerdo e alavanca lateral esquerda",
+   "sentido": "alto",
+   "evidencia": "sobreposicao.png 0 graus: faixa magenta acima e verde abaixo no cabo esquerdo e na alavanca lateral",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito fiel na silhueta em 0 graus, precisando limpar a projecao da textura frontal nas pecas de fundo no nivel arte e detalhar a grade, o visor de graos e os mostradores/botoes no nivel realista."
+}

@@ -1,0 +1,62 @@
+{
+ "versao": 1,
+ "objeto": "oven_grey",
+ "rodada": 3,
+ "nota_arte": 9,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mureta_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_preto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "janela_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alca_porta",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "botao",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "topo dos 4 botões cilíndricos no lado esquerdo do tampo",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de cima: pequena mancha clara na borda dos cilindros dos botões",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda esquerda das duas bandejas das bocas sobre o tampo",
+   "sentido": "",
+   "evidencia": "zoom.png 045 parte de cima: risco vertical fino claro na lateral esquerda de cada bandeja de bocas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente porte 3D do fogão tanto em arte quanto no realista, com frente e traseira muito fiéis ao jogo e prontos para uso."
+}

@@ -1,0 +1,74 @@
+{
+ "versao": 1,
+ "objeto": "oven_industrial",
+ "rodada": 3,
+ "nota_arte": 5,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "respaldo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alca",
+   "situacao": "fora_do_lugar",
+   "nota": "cilindro da alca deslocado para a direita no eixo X, solto do apoio esquerdo e vazando para fora da lateral direita do corpo"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "alca",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "barra cilíndrica principal da alça da porta",
+   "sentido": "deslocado_x",
+   "evidencia": "fio.png 045 e zoom.png 045: cilindro roxo (6 alca) começa no centro da porta, não alcança alca_apoio0 na esquerda e sobra para fora do fogão na direita",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "borda interna central entre as duas grelhas sobre o tampo",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e giro_arte.png 045/090: faixa branca da textura do respaldo projetada na lateral interna da grelha sobre o tampo preto",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_forno",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "face frontal do corpo atrás da porta_forno e bordas da porta",
+   "sentido": "",
+   "evidencia": "zoom.png 045 e giro_arte.png 090: textura frontal com desenho da alça aparece duplicada na porta saliente e no corpo logo atrás",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Geometria e materiais realistas muito bons no geral, mas o cilindro da alça está deslocado no eixo X vazando para fora do fogão, além de haver vazamento de textura branca nas grelhas no nível arte."
+}

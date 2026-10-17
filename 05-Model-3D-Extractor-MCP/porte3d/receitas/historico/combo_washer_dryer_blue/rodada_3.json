@@ -1,0 +1,515 @@
+{
+ "versao": 1,
+ "id": "combo_washer_dryer_blue",
+ "nota": "Lava e seca frontal: gabinete bege com recuo superior para o painel, tampo azul, painel inclinado com visor e botoes, porta redonda com vidro escuro, puxador azul, soco escuro, alca em J e grade na traseira.",
+ "sprites": {
+  "S": "appliances_laundry_01_0",
+  "E": "appliances_laundry_01_1",
+  "N": "appliances_laundry_01_2",
+  "W": "appliances_laundry_01_3"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   226,
+   222,
+   208
+  ],
+  "azul": [
+   104,
+   142,
+   200
+  ],
+  "azul_escuro": [
+   40,
+   84,
+   150
+  ],
+  "base": [
+   44,
+   46,
+   54
+  ],
+  "aro": [
+   70,
+   72,
+   80
+  ],
+  "cinza": [
+   150,
+   152,
+   158
+  ],
+  "vidro": [
+   70,
+   100,
+   112
+  ],
+  "visor": [
+   200,
+   225,
+   235
+  ],
+  "amarelo": [
+   236,
+   196,
+   80
+  ],
+  "botao": [
+   210,
+   210,
+   214
+  ],
+  "preto": [
+   36,
+   38,
+   46
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "prisma",
+   "perfil": [
+    [
+     -0.335,
+     0.06
+    ],
+    [
+     0.372,
+     0.06
+    ],
+    [
+     0.372,
+     0.91
+    ],
+    [
+     -0.27,
+     0.91
+    ],
+    [
+     -0.27,
+     0.785
+    ],
+    [
+     -0.335,
+     0.785
+    ]
+   ],
+   "eixo": "x",
+   "de": -0.388,
+   "ate": 0.388,
+   "chanfro": 0.006
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    -0.31,
+    0.0
+   ],
+   "max": [
+    0.36,
+    0.35,
+    0.07
+   ],
+   "material": "base",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.392,
+    -0.3415,
+    0.9
+   ],
+   "max": [
+    0.392,
+    0.3769,
+    0.9615
+   ],
+   "material": "azul",
+   "chanfro": 0.02
+  },
+  {
+   "nome": "painel",
+   "forma": "prisma",
+   "perfil": [
+    [
+     -0.3415,
+     0.78
+    ],
+    [
+     -0.3415,
+     0.8
+    ],
+    [
+     -0.3,
+     0.9
+    ],
+    [
+     -0.25,
+     0.905
+    ],
+    [
+     -0.25,
+     0.78
+    ]
+   ],
+   "eixo": "x",
+   "de": -0.385,
+   "ate": 0.385,
+   "material": "azul",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "visor",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    -0.32925,
+    0.834
+   ],
+   "max": [
+    -0.15,
+    -0.32125,
+    0.866
+   ],
+   "material": "visor",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao00",
+   "forma": "cilindro",
+   "centro": [
+    -0.03,
+    -0.32528,
+    0.868
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "botao",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao01",
+   "forma": "cilindro",
+   "centro": [
+    -0.03,
+    -0.34022,
+    0.832
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "amarelo",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao10",
+   "forma": "cilindro",
+   "centro": [
+    0.03,
+    -0.32528,
+    0.868
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "amarelo",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao11",
+   "forma": "cilindro",
+   "centro": [
+    0.03,
+    -0.34022,
+    0.832
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "botao",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao20",
+   "forma": "cilindro",
+   "centro": [
+    0.09,
+    -0.32528,
+    0.868
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "botao",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao21",
+   "forma": "cilindro",
+   "centro": [
+    0.09,
+    -0.34022,
+    0.832
+   ],
+   "raio": 0.0095,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "amarelo",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "botao_grande",
+   "forma": "cilindro",
+   "centro": [
+    0.27,
+    -0.33275,
+    0.85
+   ],
+   "raio": 0.025,
+   "altura": 0.02,
+   "eixo": "y",
+   "material": "azul_escuro",
+   "rot": [
+    -22.5,
+    0,
+    0
+   ]
+  },
+  {
+   "nome": "porta_aro",
+   "forma": "cilindro",
+   "centro": [
+    -0.04,
+    -0.352,
+    0.48
+   ],
+   "raio": 0.252,
+   "altura": 0.045,
+   "eixo": "y",
+   "material": "aro"
+  },
+  {
+   "nome": "porta_anel",
+   "forma": "cilindro",
+   "centro": [
+    -0.04,
+    -0.356,
+    0.48
+   ],
+   "raio": 0.22,
+   "altura": 0.045,
+   "eixo": "y",
+   "material": "cinza"
+  },
+  {
+   "nome": "porta_vidro",
+   "forma": "cilindro",
+   "centro": [
+    -0.04,
+    -0.36,
+    0.48
+   ],
+   "raio": 0.19,
+   "altura": 0.045,
+   "eixo": "y",
+   "material": "vidro",
+   "arte_cor": true
+  },
+  {
+   "nome": "puxador",
+   "forma": "caixa",
+   "min": [
+    0.11,
+    -0.378,
+    0.38
+   ],
+   "max": [
+    0.19,
+    -0.358,
+    0.54
+   ],
+   "material": "azul_escuro",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "puxador_tras",
+   "forma": "prisma",
+   "perfil": [
+    [
+     0.371,
+     0.14
+    ],
+    [
+     0.404,
+     0.14
+    ],
+    [
+     0.404,
+     0.69
+    ],
+    [
+     0.371,
+     0.69
+    ],
+    [
+     0.371,
+     0.66
+    ],
+    [
+     0.388,
+     0.66
+    ],
+    [
+     0.388,
+     0.17
+    ],
+    [
+     0.371,
+     0.17
+    ]
+   ],
+   "eixo": "x",
+   "de": -0.295,
+   "ate": -0.273,
+   "material": "preto",
+   "chanfro": 0.004,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade0",
+   "forma": "caixa",
+   "min": [
+    0.06,
+    0.368,
+    0.14
+   ],
+   "max": [
+    0.26,
+    0.381,
+    0.154
+   ],
+   "material": "preto"
+  },
+  {
+   "nome": "grade1",
+   "forma": "caixa",
+   "min": [
+    0.06,
+    0.368,
+    0.174
+   ],
+   "max": [
+    0.26,
+    0.381,
+    0.188
+   ],
+   "material": "preto"
+  },
+  {
+   "nome": "grade2",
+   "forma": "caixa",
+   "min": [
+    0.06,
+    0.368,
+    0.208
+   ],
+   "max": [
+    0.26,
+    0.381,
+    0.222
+   ],
+   "material": "preto"
+  },
+  {
+   "nome": "grade3",
+   "forma": "caixa",
+   "min": [
+    0.06,
+    0.368,
+    0.242
+   ],
+   "max": [
+    0.26,
+    0.381,
+    0.256
+   ],
+   "material": "preto"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal"
+   },
+   "azul": {
+    "tipo": "liso"
+   },
+   "azul_escuro": {
+    "tipo": "liso"
+   },
+   "base": {
+    "tipo": "liso"
+   },
+   "aro": {
+    "tipo": "liso"
+   },
+   "cinza": {
+    "tipo": "liso"
+   },
+   "vidro": {
+    "tipo": "liso"
+   },
+   "visor": {
+    "tipo": "liso"
+   },
+   "amarelo": {
+    "tipo": "liso"
+   },
+   "botao": {
+    "tipo": "liso"
+   },
+   "preto": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

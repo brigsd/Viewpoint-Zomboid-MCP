@@ -1,0 +1,73 @@
+{
+ "versao": 1,
+ "objeto": "television_valutech",
+ "rodada": 3,
+ "nota_arte": 8,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo_frente",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botoes",
+   "situacao": "ok"
+  },
+  {
+   "nome": "traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_escura",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_lateral",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "grade_lateral",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "moldura da grade na lateral direita vista de trás",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: placa cinza clara da grade_lateral destaca-se muito mais que os frisos discretos do jogo tras",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "traseira",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "centro do relevo traseiro e área das luzes na base",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225: risco vertical atravessando o relevo traseiro e duplicação dos pontos coloridos na textura ao lado das luzes 3D",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "traseira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo inclinado da parte traseira",
+   "sentido": "baixo",
+   "evidencia": "sobreposicao.png 0: faixa verde contínua no contorno superior direito indicando que a traseira do modelo é ligeiramente mais baixa que no sprite",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente conversão 3D da TV de tubo em ambos os níveis, pronta para o jogo, com apenas detalhes leves de textura na traseira do modo arte."
+}

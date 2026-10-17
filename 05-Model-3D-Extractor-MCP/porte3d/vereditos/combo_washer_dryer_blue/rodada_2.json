@@ -1,0 +1,98 @@
+{
+ "versao": 1,
+ "objeto": "combo_washer_dryer_blue",
+ "rodada": 2,
+ "nota_arte": 9,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel",
+   "situacao": "fora_do_lugar",
+   "nota": "inclinacao recua para dentro do corpo, ficando encoberto pelo gabinete bege no realista e escondendo o visor"
+  },
+  {
+   "nome": "botoes",
+   "situacao": "fora_do_lugar",
+   "nota": "fileira superior (botao00, botao01, botao10) enterrada dentro do corpo e botao_grande cortado pela metade no realista"
+  },
+  {
+   "nome": "porta_aro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta_vidro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador_tras",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_tras",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "painel",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "faixa inclinada frontal e visor",
+   "sentido": "",
+   "evidencia": "zoom.png 045 e fio.png 135: o painel inclinado entra para dentro da caixa corpo; no realista o gabinete bege cobre a faixa azul e esconde o visor",
+   "gravidade": "media"
+  },
+  {
+   "parte": "botoes",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "fileira superior de botoes pequenos e metade superior do botao grande",
+   "sentido": "",
+   "evidencia": "zoom.png 045 e fio.png 135: os 3 botoes superiores ficam submersos dentro da caixa corpo e o botao grande azul fica cortado ao meio",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta_aro",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "borda lateral externa do aro cilindrico",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135 e 315: faixa vertical branca do gabinete projetada na lateral do aro cinza",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "puxador_tras",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "face lateral e topo da barra traseira",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 e 270: textura clara do gabinete invadindo o meio da barra preta traseira",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O nível arte está excelente e pronto para o jogo, mas no nível realista a caixa do corpo precisa ser chanfrada ou recuada no topo frontal para não engolir o painel azul, o visor e a fileira superior de botões."
+}

@@ -1,0 +1,530 @@
+{
+ "versao": 1,
+ "id": "oven_grey",
+ "sprites": {
+  "S": "appliances_cooking_01_5",
+  "E": "appliances_cooking_01_4",
+  "N": "appliances_cooking_01_7",
+  "W": "appliances_cooking_01_6"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   188,
+   190,
+   186
+  ],
+  "metal_escuro": [
+   92,
+   92,
+   96
+  ],
+  "liso": [
+   28,
+   28,
+   32
+  ],
+  "boca_escura": [
+   45,
+   43,
+   48
+  ],
+  "painel_cinza": [
+   108,
+   104,
+   110
+  ],
+  "vidro": [
+   18,
+   20,
+   22
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    -0.2109,
+    0.12
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.76
+   ],
+   "chanfro": 0.008,
+   "material": "metal"
+  },
+  {
+   "nome": "socalo",
+   "forma": "caixa",
+   "min": [
+    -0.4321,
+    -0.1909,
+    0.0
+   ],
+   "max": [
+    0.45,
+    0.39,
+    0.125
+   ],
+   "chanfro": 0.004,
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "tampo_preto",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    -0.2229,
+    0.76
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.86
+   ],
+   "chanfro": 0.012,
+   "material": "liso"
+  },
+  {
+   "nome": "mureta_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.4521,
+    0.37,
+    0.86
+   ],
+   "max": [
+    0.47,
+    0.41,
+    0.934
+   ],
+   "chanfro": 0.003,
+   "material": "metal"
+  },
+  {
+   "nome": "janela_forno",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": -0.2229,
+   "ate": -0.2089,
+   "perfil": [
+    [
+     0.325,
+     0.5
+    ],
+    [
+     0.3106,
+     0.5433
+    ],
+    [
+     0.2687,
+     0.5823
+    ],
+    [
+     0.2034,
+     0.6133
+    ],
+    [
+     0.1212,
+     0.6331
+    ],
+    [
+     0.03,
+     0.64
+    ],
+    [
+     -0.0612,
+     0.6331
+    ],
+    [
+     -0.1434,
+     0.6133
+    ],
+    [
+     -0.2087,
+     0.5823
+    ],
+    [
+     -0.2506,
+     0.5433
+    ],
+    [
+     -0.265,
+     0.5
+    ],
+    [
+     -0.2506,
+     0.4567
+    ],
+    [
+     -0.2087,
+     0.4177
+    ],
+    [
+     -0.1434,
+     0.3867
+    ],
+    [
+     -0.0612,
+     0.3669
+    ],
+    [
+     0.03,
+     0.36
+    ],
+    [
+     0.1212,
+     0.3669
+    ],
+    [
+     0.2034,
+     0.3867
+    ],
+    [
+     0.2687,
+     0.4177
+    ],
+    [
+     0.3106,
+     0.4567
+    ]
+   ],
+   "material": "vidro"
+  },
+  {
+   "nome": "alca_porta",
+   "forma": "cilindro",
+   "eixo": "x",
+   "centro": [
+    -0.3,
+    -0.2409,
+    0.715
+   ],
+   "raio": 0.011,
+   "altura": 0.62,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao0",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.02,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao1",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.11,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao2",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.2,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "botao3",
+   "forma": "cilindro",
+   "centro": [
+    -0.4,
+    0.29,
+    0.86
+   ],
+   "raio": 0.016,
+   "altura": 0.02,
+   "segmentos": 14,
+   "material": "metal"
+  },
+  {
+   "nome": "bandeja_bocas_esq",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    -0.14,
+    0.858
+   ],
+   "max": [
+    0.04,
+    0.32,
+    0.866
+   ],
+   "chanfro": 0.002,
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "bandeja_bocas_dir",
+   "forma": "caixa",
+   "min": [
+    0.08,
+    -0.14,
+    0.858
+   ],
+   "max": [
+    0.4,
+    0.32,
+    0.866
+   ],
+   "chanfro": 0.002,
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "boca0",
+   "forma": "cilindro",
+   "centro": [
+    -0.12,
+    -0.02,
+    0.864
+   ],
+   "raio": 0.095,
+   "altura": 0.01,
+   "segmentos": 18,
+   "material": "boca_escura"
+  },
+  {
+   "nome": "boca1",
+   "forma": "cilindro",
+   "centro": [
+    -0.12,
+    0.2,
+    0.864
+   ],
+   "raio": 0.085,
+   "altura": 0.01,
+   "segmentos": 18,
+   "material": "boca_escura"
+  },
+  {
+   "nome": "boca2",
+   "forma": "cilindro",
+   "centro": [
+    0.24,
+    -0.02,
+    0.864
+   ],
+   "raio": 0.085,
+   "altura": 0.01,
+   "segmentos": 18,
+   "material": "boca_escura"
+  },
+  {
+   "nome": "boca3",
+   "forma": "cilindro",
+   "centro": [
+    0.24,
+    0.2,
+    0.864
+   ],
+   "raio": 0.095,
+   "altura": 0.01,
+   "segmentos": 18,
+   "material": "boca_escura"
+  },
+  {
+   "nome": "painel_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    0.408,
+    0.13
+   ],
+   "max": [
+    0.43,
+    0.42,
+    0.72
+   ],
+   "chanfro": 0.003,
+   "material": "painel_cinza"
+  },
+  {
+   "nome": "tomada_traseira",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.26,
+    0.418,
+    0.39
+   ],
+   "raio": 0.038,
+   "altura": 0.01,
+   "segmentos": 14,
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras0",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    0.418,
+    0.162
+   ],
+   "max": [
+    -0.05,
+    0.426,
+    0.178
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras1",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    0.418,
+    0.202
+   ],
+   "max": [
+    -0.05,
+    0.426,
+    0.218
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras2",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    0.418,
+    0.242
+   ],
+   "max": [
+    -0.05,
+    0.426,
+    0.258
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras3",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    0.418,
+    0.282
+   ],
+   "max": [
+    -0.05,
+    0.426,
+    0.298
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras4",
+   "forma": "caixa",
+   "min": [
+    0.12,
+    0.418,
+    0.162
+   ],
+   "max": [
+    0.35,
+    0.426,
+    0.178
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras5",
+   "forma": "caixa",
+   "min": [
+    0.12,
+    0.418,
+    0.202
+   ],
+   "max": [
+    0.35,
+    0.426,
+    0.218
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras6",
+   "forma": "caixa",
+   "min": [
+    0.12,
+    0.418,
+    0.242
+   ],
+   "max": [
+    0.35,
+    0.426,
+    0.258
+   ],
+   "material": "boca_escura"
+  },
+  {
+   "nome": "fresta_tras7",
+   "forma": "caixa",
+   "min": [
+    0.12,
+    0.418,
+    0.282
+   ],
+   "max": [
+    0.35,
+    0.426,
+    0.298
+   ],
+   "material": "boca_escura"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "painel_cinza": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "boca_escura": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "vidro": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

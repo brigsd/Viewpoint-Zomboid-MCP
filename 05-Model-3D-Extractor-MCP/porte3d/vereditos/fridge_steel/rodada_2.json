@@ -1,0 +1,75 @@
+{
+ "versao": 1,
+ "objeto": "fridge_steel",
+ "rodada": 2,
+ "nota_arte": 7,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "fora_do_lugar",
+   "nota": "divisão entre porta_esq e porta_dir está deslocada para a esquerda em relação à fresta pintada na textura da arte e às larguras iguais prometidas"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "fora_do_lugar",
+   "nota": "puxadores 3D pretos ressaltados não alinham com a fresta/sombra do sprite em 0 e 45 graus, duplicando visualmente a linha vertical na arte"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "puxador",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "fresta central e puxadores na face frontal das portas",
+   "sentido": "",
+   "evidencia": "zoom.png 045 (e sobreposicao.png 000): puxadores e fresta 3D pretos ficam à esquerda da fresta/sombra escura da textura original, gerando faixa duplicada na porta direita",
+   "gravidade": "media"
+  },
+  {
+   "parte": "porta",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "divisão vertical entre porta_esq e porta_dir",
+   "sentido": "deslocado_x",
+   "evidencia": "fio.png 045: porta_esq é bem mais estreita que porta_dir, divergindo das duas portas de ~40 cm prometidas e desalinhando da divisão do topo na arte",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "serpentina",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "curvas inferiores e superiores dos tubos sobre o painel traseiro",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: tubos 3D pretos da serpentina não casam exatamente com os tubos pintados na textura de fundo do painel traseiro",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente modelo realista; no nível arte, os elementos 3D escuros adicionados sobre as portas e traseira brigam com os mesmos elementos já pintados na textura original por falta de alinhamento exato."
+}

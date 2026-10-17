@@ -1,0 +1,223 @@
+{
+ "versao": 1,
+ "id": "radio_valutech",
+ "nota": "Rádio portátil de mesa ValuTech: corpo cinza escuro, antena telescópica cromada, moldura frontal prateada, alto-falante redondo preto, dois botões redondos escuros, mostrador branco de sintonia e rodapé frontal escuro recuado.",
+ "sprites": {
+  "S": "appliances_radio_01_0",
+  "E": "appliances_radio_01_1",
+  "N": "appliances_radio_01_2",
+  "W": "appliances_radio_01_3"
+ },
+ "tras": "N",
+ "material": "corpo",
+ "cores": {
+  "corpo": [
+   100,
+   100,
+   110
+  ],
+  "antena": [
+   180,
+   180,
+   186
+  ],
+  "moldura_frontal": [
+   168,
+   167,
+   170
+  ],
+  "alto_falante": [
+   48,
+   48,
+   50
+  ],
+  "botao": [
+   72,
+   72,
+   76
+  ],
+  "mostrador": [
+   226,
+   226,
+   226
+  ],
+  "rodape_frontal": [
+   82,
+   82,
+   92
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.168,
+    0.068,
+    0.915
+   ],
+   "max": [
+    0.228,
+    0.175,
+    1.155
+   ],
+   "material": "corpo",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "rodape_frontal",
+   "forma": "caixa",
+   "min": [
+    -0.168,
+    0.075,
+    0.87
+   ],
+   "max": [
+    0.228,
+    0.175,
+    0.915
+   ],
+   "material": "rodape_frontal",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "moldura_frontal",
+   "forma": "caixa",
+   "min": [
+    -0.165,
+    0.063,
+    0.948
+   ],
+   "max": [
+    0.214,
+    0.068,
+    1.148
+   ],
+   "material": "moldura_frontal",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "alto_falante",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    -0.092,
+    0.058,
+    1.042
+   ],
+   "raio": 0.052,
+   "altura": 0.005,
+   "segmentos": 24,
+   "material": "alto_falante",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_0",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.063,
+    0.057,
+    1.072
+   ],
+   "raio": 0.019,
+   "altura": 0.006,
+   "segmentos": 16,
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "botao_1",
+   "forma": "cilindro",
+   "eixo": "y",
+   "centro": [
+    0.155,
+    0.057,
+    1.072
+   ],
+   "raio": 0.019,
+   "altura": 0.006,
+   "segmentos": 16,
+   "material": "botao",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "mostrador",
+   "forma": "caixa",
+   "min": [
+    0.052,
+    0.059,
+    0.978
+   ],
+   "max": [
+    0.18,
+    0.063,
+    1.012
+   ],
+   "material": "mostrador",
+   "chanfro": 0.002
+  },
+  {
+   "nome": "antena",
+   "forma": "prisma",
+   "perfil": [
+    [
+     -0.1375,
+     1.1444
+    ],
+    [
+     -0.115,
+     1.1536
+    ],
+    [
+     -0.115,
+     1.4378
+    ],
+    [
+     -0.1375,
+     1.425
+    ]
+   ],
+   "eixo": "y",
+   "de": 0.1169,
+   "ate": 0.1269,
+   "material": "antena",
+   "chanfro": 0.002
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "corpo": {
+    "tipo": "liso",
+    "desgaste": 0.25
+   },
+   "antena": {
+    "tipo": "metal",
+    "desgaste": 0.15
+   },
+   "moldura_frontal": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "alto_falante": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "botao": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "mostrador": {
+    "tipo": "liso",
+    "desgaste": 0.15
+   },
+   "rodape_frontal": {
+    "tipo": "liso",
+    "desgaste": 0.3
+   }
+  }
+ }
+}

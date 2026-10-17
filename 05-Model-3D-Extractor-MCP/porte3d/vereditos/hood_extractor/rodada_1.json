@@ -1,0 +1,35 @@
+{
+ "versao": 1,
+ "objeto": "hood_extractor",
+ "rodada": 1,
+ "nota_arte": 9,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "campana",
+   "situacao": "ok"
+  },
+  {
+   "nome": "duto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_inferior",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "campana",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "face traseira, meia altura",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225: linha horizontal sutil marcando mudanca de tom na textura da parede traseira",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem executado nos dois níveis, com excelente fidelidade ao sprite original na frente e atrás."
+}

@@ -1,0 +1,74 @@
+{
+ "versao": 1,
+ "objeto": "radio_valutech",
+ "rodada": 1,
+ "nota_arte": 8,
+ "nota_realista": 8,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "antena",
+   "situacao": "ok"
+  },
+  {
+   "nome": "moldura_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alto_falante",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mostrador",
+   "situacao": "ok",
+   "nota": "no realista falta o ponteiro vermelho na janela branca"
+  },
+  {
+   "nome": "rodape_frontal",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "topo do corpo, ao redor da base da antena",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 e giro_arte.png 045/180/225: mancha e filete claro da antena projetados na face superior do corpo junto à base da antena",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "mostrador",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "centro da janela branca de sintonia",
+   "sentido": "",
+   "evidencia": "zoom.png 000 e 045: janela branca lisa sem o ponteiro vermelho central prometido na ficha e presente no jogo",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "borda esquerda do corpo e posição da antena",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png 000: faixa verde na lateral esquerda e na base indicando modelo levemente mais estreito, e magenta à direita da antena",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem construído e fiel ao sprite original nos dois níveis, com todas as peças volumétricas no lugar e apenas detalhes leves de acabamento."
+}

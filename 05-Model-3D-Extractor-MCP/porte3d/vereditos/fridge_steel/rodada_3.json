@@ -1,0 +1,73 @@
+{
+ "versao": 1,
+ "objeto": "fridge_steel",
+ "rodada": 3,
+ "nota_arte": 8,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "serpentina",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grade_ventilacao",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "porta",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda interna da porta direita, junto à fresta central",
+   "sentido": "",
+   "evidencia": "zoom.png 045: a faixa vertical escura da divisão/puxador embutido do sprite aparece na textura da porta direita ao lado da fresta 3D, duplicando a linha central",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "puxador",
+   "tipo": "sobra",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "frente das duas portas, junto ao vão central",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 000: mancha vermelha intensa de diferença de cor onde os puxadores pretos salientes cobrem a área clara da porta, pois no sprite original o puxador é embutido no vinco",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "serpentina",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "voltas inferiores em U sobre o painel traseiro",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225: o desenho da serpentina na textura do painel traseiro aparece deslocado logo acima das voltas em U da geometria 3D da serpentina",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo muito bem construído e pronto para o jogo nos dois níveis, com excelente correspondência de silhueta e materiais realistas limpos, apresentando apenas pequenas redundâncias entre o relevo 3D adicionado e o desenho original na textura."
+}

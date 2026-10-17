@@ -1,0 +1,86 @@
+{
+ "versao": 1,
+ "objeto": "oven_grey",
+ "rodada": 2,
+ "nota_arte": 6,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "mureta_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_preto",
+   "situacao": "forma_errada",
+   "nota": "no realista é uma caixa lisa sem as 4 bocas do fogão"
+  },
+  {
+   "nome": "janela_forno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "socalo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alca_porta",
+   "situacao": "fora_do_lugar",
+   "nota": "deslocada para a direita, saindo para fora da lateral do corpo"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "alca_porta",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "metade direita da barra horizontal da alça",
+   "sentido": "deslocado_x",
+   "evidencia": "fio.png 045 e zoom.png 045: cilindro laranja da alca_porta começa no meio da frente e sobra para fora da lateral direita do fogão",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "tampo_preto",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face superior do tampo preto",
+   "sentido": "",
+   "evidencia": "comparacao.png 0 graus e giro_realista.png: tampo superior é um bloco escuro totalmente liso, sem as 4 bocas do fogão",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face traseira do corpo",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 graus: traseira realista é toda branca lisa, sem o painel cinza escuro e grelhas de ventilação do desenho de trás",
+   "gravidade": "media"
+  },
+  {
+   "parte": "janela_forno",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "borda esquerda do oval da janela do forno",
+   "sentido": "",
+   "evidencia": "zoom.png 045 (parte de baixo): relevo oval da janela_forno avança sobre a pintura branca à esquerda, criando uma faixa clara no contorno do vidro",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O fogão tem ótima fidelidade de silhueta e textura em 0° e 180° na arte, mas a alça da porta está deslocada para fora da lateral direita em ambos os níveis e faltam as 4 bocas no tampo realista."
+}

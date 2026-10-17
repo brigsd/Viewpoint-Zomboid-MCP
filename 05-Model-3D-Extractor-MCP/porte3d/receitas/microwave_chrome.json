@@ -26,6 +26,22 @@
    "chanfro": 0.012
   },
   {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.214,
+    -0.0981,
+    1.336
+   ],
+   "max": [
+    0.4188,
+    0.3347,
+    1.3442
+   ],
+   "material": "tampo_preto",
+   "chanfro": 0.003
+  },
+  {
    "nome": "moldura_janela",
    "forma": "caixa",
    "min": [
@@ -189,6 +205,9 @@
    },
    "botao": {
     "tipo": "liso"
+   },
+   "tampo_preto": {
+    "tipo": "liso"
    }
   }
  },
@@ -212,6 +231,11 @@
    60,
    60,
    64
+  ],
+  "tampo_preto": [
+   24,
+   24,
+   26
   ]
  }
 }

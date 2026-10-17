@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "id": "combo_washer_dryer_blue",
- "nota": "Lava e seca frontal: gabinete bege, tampo azul, painel inclinado com visor e botoes, porta redonda com vidro escuro, puxador azul, soco escuro, alca em J e grade na traseira.",
+ "nota": "Lava e seca frontal: gabinete bege com recuo superior para o painel, tampo azul, painel inclinado com visor e botoes, porta redonda com vidro escuro, puxador azul, soco escuro, alca em J e grade na traseira.",
  "sprites": {
   "S": "appliances_laundry_01_0",
   "E": "appliances_laundry_01_1",
@@ -70,18 +70,37 @@
  "pecas": [
   {
    "nome": "corpo",
-   "forma": "caixa",
-   "min": [
-    -0.388,
-    -0.335,
-    0.06
+   "forma": "prisma",
+   "perfil": [
+    [
+     -0.335,
+     0.06
+    ],
+    [
+     0.372,
+     0.06
+    ],
+    [
+     0.372,
+     0.91
+    ],
+    [
+     -0.27,
+     0.91
+    ],
+    [
+     -0.27,
+     0.785
+    ],
+    [
+     -0.335,
+     0.785
+    ]
    ],
-   "max": [
-    0.388,
-    0.372,
-    0.91
-   ],
-   "chanfro": 0.008
+   "eixo": "x",
+   "de": -0.388,
+   "ate": 0.388,
+   "chanfro": 0.006
   },
   {
    "nome": "base",
@@ -151,12 +170,12 @@
    "forma": "caixa",
    "min": [
     -0.32,
-    -0.32925000000000004,
+    -0.32925,
     0.834
    ],
    "max": [
     -0.15,
-    -0.32125000000000004,
+    -0.32125,
     0.866
    ],
    "material": "visor",
@@ -171,7 +190,7 @@
    "forma": "cilindro",
    "centro": [
     -0.03,
-    -0.32528000000000007,
+    -0.32528,
     0.868
    ],
    "raio": 0.0095,
@@ -189,7 +208,7 @@
    "forma": "cilindro",
    "centro": [
     -0.03,
-    -0.3402200000000001,
+    -0.34022,
     0.832
    ],
    "raio": 0.0095,
@@ -207,7 +226,7 @@
    "forma": "cilindro",
    "centro": [
     0.03,
-    -0.32528000000000007,
+    -0.32528,
     0.868
    ],
    "raio": 0.0095,
@@ -225,7 +244,7 @@
    "forma": "cilindro",
    "centro": [
     0.03,
-    -0.3402200000000001,
+    -0.34022,
     0.832
    ],
    "raio": 0.0095,
@@ -243,7 +262,7 @@
    "forma": "cilindro",
    "centro": [
     0.09,
-    -0.32528000000000007,
+    -0.32528,
     0.868
    ],
    "raio": 0.0095,
@@ -261,7 +280,7 @@
    "forma": "cilindro",
    "centro": [
     0.09,
-    -0.3402200000000001,
+    -0.34022,
     0.832
    ],
    "raio": 0.0095,
@@ -279,7 +298,7 @@
    "forma": "cilindro",
    "centro": [
     0.27,
-    -0.33275000000000005,
+    -0.33275,
     0.85
    ],
    "raio": 0.025,
@@ -300,7 +319,7 @@
     -0.352,
     0.48
    ],
-   "raio": 0.28,
+   "raio": 0.252,
    "altura": 0.045,
    "eixo": "y",
    "material": "aro"
@@ -313,7 +332,7 @@
     -0.356,
     0.48
    ],
-   "raio": 0.225,
+   "raio": 0.22,
    "altura": 0.045,
    "eixo": "y",
    "material": "cinza"
@@ -349,52 +368,48 @@
    "chanfro": 0.006
   },
   {
-   "nome": "puxador_tras_alto",
-   "forma": "caixa",
-   "min": [
-    -0.302,
-    0.373,
-    0.66
+   "nome": "puxador_tras",
+   "forma": "prisma",
+   "perfil": [
+    [
+     0.371,
+     0.14
+    ],
+    [
+     0.404,
+     0.14
+    ],
+    [
+     0.404,
+     0.69
+    ],
+    [
+     0.371,
+     0.69
+    ],
+    [
+     0.371,
+     0.66
+    ],
+    [
+     0.388,
+     0.66
+    ],
+    [
+     0.388,
+     0.17
+    ],
+    [
+     0.371,
+     0.17
+    ]
    ],
-   "max": [
-    -0.278,
-    0.402,
-    0.69
-   ],
+   "eixo": "x",
+   "de": -0.295,
+   "ate": -0.273,
    "material": "preto",
-   "chanfro": 0.004
-  },
-  {
-   "nome": "puxador_tras_baixo",
-   "forma": "caixa",
-   "min": [
-    -0.302,
-    0.373,
-    0.14
-   ],
-   "max": [
-    -0.278,
-    0.402,
-    0.17
-   ],
-   "material": "preto",
-   "chanfro": 0.004
-  },
-  {
-   "nome": "puxador_tras_barra",
-   "forma": "caixa",
-   "min": [
-    -0.298,
-    0.388,
-    0.15
-   ],
-   "max": [
-    -0.282,
-    0.4,
-    0.68
-   ],
-   "material": "preto",
-   "chanfro": 0.006
+   "chanfro": 0.004,
+   "arte_cor": true
   },
   {
    "nome": "grade0",
@@ -407,7 +422,7 @@
    "max": [
     0.26,
     0.381,
-    0.15400000000000003
+    0.154
    ],
    "material": "preto"
   },
@@ -417,12 +432,12 @@
    "min": [
     0.06,
     0.368,
-    0.17400000000000002
+    0.174
    ],
    "max": [
     0.26,
     0.381,
-    0.18800000000000003
+    0.188
    ],
    "material": "preto"
   },
@@ -432,12 +447,12 @@
    "min": [
     0.06,
     0.368,
-    0.20800000000000002
+    0.208
    ],
    "max": [
     0.26,
     0.381,
-    0.22200000000000003
+    0.222
    ],
    "material": "preto"
   },
@@ -447,7 +462,7 @@
    "min": [
     0.06,
     0.368,
-    0.24200000000000002
+    0.242
    ],
    "max": [
     0.26,

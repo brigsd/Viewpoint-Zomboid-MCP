@@ -1,7 +1,7 @@
 {
  "versao": 1,
  "id": "television_valutech",
- "nota": "TV de tubo pequena: corpo da frente cinza com moldura e tela escura opaca, traseira em tronco que afina para tras (prisma), base preta chanfrada atras, grade lateral. Frente em -y, tras em +y.",
+ "nota": "TV de tubo pequena: corpo da frente cinza com moldura e tela escura opaca, traseira em tronco que afina para tras (prisma eixo x) com relevo central traseiro, base preta chanfrada atras com 3 luzinhas coloridas, grades laterais nos dois lados (+x e -x) com 3 frisos. Modo kit nas faces ocultas (traseira do bloco frontal e lateral -x) para evitar vazamento do adesivo.",
  "sprites": {
   "S": "appliances_television_01_4",
   "E": "appliances_television_01_5",
@@ -21,7 +21,7 @@
    ],
    "max": [
     0.3233,
-    -0.02,
+    -0.015,
     1.0218
    ],
    "chanfro": 0.012
@@ -108,109 +108,365 @@
    "forma": "prisma",
    "perfil": [
     [
-     -0.35,
+     -0.02,
      0.62
-    ],
-    [
-     0.3,
-     0.62
-    ],
-    [
-     0.3,
-     0.85
     ],
     [
      0.22,
-     0.99
+     0.62
     ],
     [
-     -0.27,
-     0.99
+     0.22,
+     0.835
     ],
     [
-     -0.35,
-     0.85
+     0.165,
+     1.005
+    ],
+    [
+     -0.02,
+     1.005
     ]
    ],
-   "eixo": "y",
-   "de": -0.03,
-   "ate": 0.21,
+   "eixo": "x",
+   "de": -0.355,
+   "ate": 0.318,
    "chanfro": 0.008
+  },
+  {
+   "nome": "traseira_relevo",
+   "forma": "caixa",
+   "min": [
+    -0.15,
+    0.215,
+    0.62
+   ],
+   "max": [
+    0.11,
+    0.245,
+    0.835
+   ],
+   "material": "liso_escuro",
+   "chanfro": 0.006
   },
   {
    "nome": "base_escura",
    "forma": "prisma",
    "perfil": [
     [
-     -0.03,
+     -0.02,
      0.3828
     ],
     [
-     0.17,
+     0.18,
      0.3828
     ],
     [
-     0.21,
-     0.43
+     0.22,
+     0.425
     ],
     [
-     0.21,
-     0.6
+     0.22,
+     0.625
     ],
     [
-     0.17,
-     0.63
-    ],
-    [
-     -0.03,
-     0.63
+     -0.02,
+     0.625
     ]
    ],
    "eixo": "x",
-   "de": -0.35,
-   "ate": 0.3,
+   "de": -0.355,
+   "ate": 0.318,
    "material": "preto"
+  },
+  {
+   "nome": "luz_amarela",
+   "forma": "caixa",
+   "min": [
+    -0.23,
+    0.215,
+    0.525
+   ],
+   "max": [
+    -0.2,
+    0.225,
+    0.55
+   ],
+   "material": "luz_amarela",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "luz_branca",
+   "forma": "caixa",
+   "min": [
+    -0.23,
+    0.215,
+    0.475
+   ],
+   "max": [
+    -0.2,
+    0.225,
+    0.5
+   ],
+   "material": "luz_branca",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "luz_vermelha",
+   "forma": "caixa",
+   "min": [
+    -0.23,
+    0.215,
+    0.425
+   ],
+   "max": [
+    -0.2,
+    0.225,
+    0.45
+   ],
+   "material": "luz_vermelha",
+   "chanfro": 0.001,
+   "arte_cor": true
   },
   {
    "nome": "grade_lateral",
    "forma": "caixa",
    "min": [
-    0.3,
-    0.09,
-    0.66
+    0.313,
+    0.07,
+    0.65
    ],
    "max": [
-    0.308,
+    0.322,
     0.19,
-    0.78
+    0.77
    ],
    "material": "grade",
    "chanfro": 0.002
+  },
+  {
+   "nome": "grade_friso_1",
+   "forma": "caixa",
+   "min": [
+    0.318,
+    0.085,
+    0.735
+   ],
+   "max": [
+    0.326,
+    0.175,
+    0.75
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_friso_2",
+   "forma": "caixa",
+   "min": [
+    0.318,
+    0.085,
+    0.7
+   ],
+   "max": [
+    0.326,
+    0.175,
+    0.715
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_friso_3",
+   "forma": "caixa",
+   "min": [
+    0.318,
+    0.085,
+    0.665
+   ],
+   "max": [
+    0.326,
+    0.175,
+    0.68
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_lateral_esq",
+   "forma": "caixa",
+   "min": [
+    -0.359,
+    0.07,
+    0.65
+   ],
+   "max": [
+    -0.35,
+    0.19,
+    0.77
+   ],
+   "material": "grade",
+   "chanfro": 0.002,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_esq_friso_1",
+   "forma": "caixa",
+   "min": [
+    -0.363,
+    0.085,
+    0.735
+   ],
+   "max": [
+    -0.355,
+    0.175,
+    0.75
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_esq_friso_2",
+   "forma": "caixa",
+   "min": [
+    -0.363,
+    0.085,
+    0.7
+   ],
+   "max": [
+    -0.355,
+    0.175,
+    0.715
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
+  },
+  {
+   "nome": "grade_esq_friso_3",
+   "forma": "caixa",
+   "min": [
+    -0.363,
+    0.085,
+    0.665
+   ],
+   "max": [
+    -0.355,
+    0.175,
+    0.68
+   ],
+   "material": "fresta",
+   "chanfro": 0.001,
+   "arte_cor": true
   }
  ],
  "arte": {
-  "modo": "adesivo"
+  "modo": "kit",
+  "recortes": {
+   "cinza_lateral": {
+    "peca": "corpo_frente",
+    "face": "+x",
+    "recorte": [
+     0.15,
+     0.15,
+     0.85,
+     0.85
+    ]
+   },
+   "traseira_lateral_dir": {
+    "peca": "traseira",
+    "face": "+x",
+    "recorte": [
+     0.15,
+     0.25,
+     0.85,
+     0.85
+    ]
+   },
+   "base_lateral_dir": {
+    "peca": "base_escura",
+    "face": "+x",
+    "recorte": [
+     0.15,
+     0.15,
+     0.85,
+     0.75
+    ]
+   }
+  },
+  "faces": {
+   "corpo_frente": {
+    "+y": "cinza_lateral",
+    "-x": "cinza_lateral"
+   },
+   "moldura": {
+    "+y": "cinza_lateral",
+    "-x": "cinza_lateral"
+   },
+   "traseira": {
+    "-x": "traseira_lateral_dir"
+   },
+   "base_escura": {
+    "-x": "base_lateral_dir"
+   }
+  }
  },
  "realista": {
   "materiais": {
    "liso": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.25
+   },
+   "liso_escuro": {
+    "tipo": "liso",
+    "desgaste": 0.25
    },
    "tela": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.15
    },
    "botao": {
     "tipo": "liso"
    },
    "preto": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.2
    },
    "grade": {
+    "tipo": "liso",
+    "desgaste": 0.25
+   },
+   "fresta": {
+    "tipo": "liso"
+   },
+   "luz_amarela": {
+    "tipo": "liso"
+   },
+   "luz_branca": {
+    "tipo": "liso"
+   },
+   "luz_vermelha": {
     "tipo": "liso"
    }
   }
  },
  "cores": {
+  "liso": [
+   115,
+   115,
+   120
+  ],
+  "liso_escuro": [
+   95,
+   95,
+   100
+  ],
   "tela": [
    24,
    26,
@@ -227,9 +483,29 @@
    33
   ],
   "grade": [
-   90,
-   90,
-   94
+   82,
+   82,
+   86
+  ],
+  "fresta": [
+   22,
+   22,
+   25
+  ],
+  "luz_amarela": [
+   165,
+   150,
+   65
+  ],
+  "luz_branca": [
+   200,
+   200,
+   205
+  ],
+  "luz_vermelha": [
+   160,
+   50,
+   45
   ]
  }
 }

@@ -1,0 +1,239 @@
+{
+ "versao": 1,
+ "id": "x_press_coffee",
+ "sprites": {
+  "S": "appliances_cooking_01_56",
+  "E": "appliances_cooking_01_57",
+  "N": "appliances_cooking_01_59",
+  "W": "appliances_cooking_01_58"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "liso": [
+   105,
+   105,
+   108
+  ],
+  "liso_escuro": [
+   62,
+   62,
+   65
+  ],
+  "liso_claro": [
+   128,
+   128,
+   130
+  ],
+  "prato": [
+   140,
+   140,
+   142
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "base",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.145,
+    0.86
+   ],
+   "raio": 0.138,
+   "altura": 0.05,
+   "material": "liso",
+   "chanfro": 0.006,
+   "segmentos": 24
+  },
+  {
+   "nome": "base_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.183,
+    0.145,
+    0.86
+   ],
+   "max": [
+    0.093,
+    0.37,
+    0.91
+   ],
+   "material": "liso",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "prato",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.14,
+    0.908
+   ],
+   "raio": 0.095,
+   "altura": 0.008,
+   "material": "prato",
+   "chanfro": 0.002,
+   "segmentos": 24
+  },
+  {
+   "nome": "prato_centro",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.14,
+    0.914
+   ],
+   "raio": 0.038,
+   "altura": 0.005,
+   "material": "liso_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "coluna",
+   "forma": "caixa",
+   "min": [
+    -0.181,
+    0.282,
+    0.908
+   ],
+   "max": [
+    0.091,
+    0.368,
+    1.35
+   ],
+   "material": "liso_escuro",
+   "chanfro": 0.008
+  },
+  {
+   "nome": "cabeca",
+   "forma": "caixa",
+   "min": [
+    -0.179,
+    0.17,
+    1.245
+   ],
+   "max": [
+    0.089,
+    0.292,
+    1.345
+   ],
+   "material": "liso",
+   "chanfro": 0.01
+  },
+  {
+   "nome": "cabeca_frente",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.17,
+    1.245
+   ],
+   "raio": 0.134,
+   "altura": 0.1,
+   "material": "liso",
+   "chanfro": 0.01,
+   "segmentos": 24
+  },
+  {
+   "nome": "tampa",
+   "forma": "caixa",
+   "min": [
+    -0.177,
+    0.173,
+    1.342
+   ],
+   "max": [
+    0.087,
+    0.275,
+    1.38
+   ],
+   "material": "liso_claro",
+   "chanfro": 0.008
+  },
+  {
+   "nome": "tampa_frente",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.17,
+    1.342
+   ],
+   "raio": 0.132,
+   "altura": 0.038,
+   "material": "liso_claro",
+   "chanfro": 0.008,
+   "segmentos": 24
+  },
+  {
+   "nome": "tampa_alca",
+   "forma": "caixa",
+   "min": [
+    -0.179,
+    0.286,
+    1.348
+   ],
+   "max": [
+    0.089,
+    0.366,
+    1.39
+   ],
+   "material": "liso_claro",
+   "chanfro": 0.006
+  },
+  {
+   "nome": "bico",
+   "forma": "cilindro",
+   "centro": [
+    -0.045,
+    0.165,
+    1.175
+   ],
+   "raio": 0.1,
+   "raio_topo": 0.12,
+   "altura": 0.075,
+   "material": "liso_escuro",
+   "chanfro": 0.005,
+   "segmentos": 24
+  },
+  {
+   "nome": "botao",
+   "forma": "caixa",
+   "min": [
+    -0.07,
+    0.042,
+    1.2
+   ],
+   "max": [
+    -0.02,
+    0.068,
+    1.222
+   ],
+   "material": "prato",
+   "chanfro": 0.003
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.25
+   },
+   "liso_escuro": {
+    "tipo": "liso",
+    "desgaste": 0.3
+   },
+   "liso_claro": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "prato": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   }
+  }
+ }
+}
