@@ -69,14 +69,30 @@
    "nome": "coluna_traseira",
    "forma": "caixa",
    "min": [
-    -0.51,
+    -0.5115,
     0.2523,
-    0.858
+    0.8575
    ],
    "max": [
-    0.483,
-    0.4175,
+    0.4845,
+    0.4193,
     1.6
+   ],
+   "chanfro": 0.005,
+   "material": "metal"
+  },
+  {
+   "nome": "painel_lateral",
+   "forma": "caixa",
+   "min": [
+    -0.5135,
+    -0.3217,
+    0.8575
+   ],
+   "max": [
+    -0.45,
+    0.2523,
+    1.394
    ],
    "chanfro": 0.005,
    "material": "metal"

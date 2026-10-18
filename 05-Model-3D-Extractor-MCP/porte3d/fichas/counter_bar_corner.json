@@ -1,0 +1,229 @@
+{
+ "versao": 1,
+ "objeto": "counter_bar_corner",
+ "sprite": "location_restaurant_bar_01_4",
+ "decisao": "portar",
+ "motivo": "módulo de canto em L de balcão de bar em madeira, geometria limpa e sólida bem definida pelos dois blocos ortogonais do jogo",
+ "o_que_e": "módulo de canto em L de balcão de bar de madeira escura, com corpo em painéis verticais formando a quina, tampo superior espesso com borda moldurada e rodapé escalonado contornando a base",
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "braço principal do corpo em L, bloco de ~99x61 cm e ~95 cm de altura útil (z de ~10 a 105 cm, derivado de forma_0 do jogo), com laterais revestidas em painéis verticais de madeira"
+  },
+  {
+   "nome": "corpo_curto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "braço perpendicular do corpo em L, bloco de ~62x39 cm e ~95 cm de altura útil (z de ~10 a 105 cm, derivado de forma_1 do jogo), adjacente a forma_0 formando o canto em L"
+  },
+  {
+   "nome": "tampo_longo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo superior do braço principal, caixa de ~100x62 cm e ~10 cm de espessura no topo (z de ~105 a 115 cm), com borda moldurada saliente"
+  },
+  {
+   "nome": "tampo_curto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo superior do braço perpendicular, caixa de ~63x40 cm e ~10 cm de espessura no topo (z de ~105 a 115 cm), completando o tampo contínuo em L"
+  },
+  {
+   "nome": "rodape_longo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/rodapé moldurado de madeira escura do braço principal, caixa de ~100x62 cm e ~10 cm de altura na base (z de 0 a 10 cm), projetando-se ligeiramente para fora"
+  },
+  {
+   "nome": "rodape_curto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/rodapé moldurado de madeira escura do braço perpendicular, caixa de ~63x40 cm e ~10 cm de altura na base (z de 0 a 10 cm), contornando a base do móvel em L"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "os dois blocos do jogo (forma_0 e forma_1) cobrem toda a altura (115 cm): é necessário desacoplar o tampo superior (~10 cm) e o rodapé da base (~10 cm) dos corpos principais para dar relevo estrutural sem distorcer o adesivo",
+  "junção dos dois braços do L: o encontro em 90 graus entre os blocos longo e curto (tanto no corpo quanto no tampo e rodapé) precisa de alinhamento preciso para evitar frestas, sobreposição ou z-fighting nas faces internas",
+  "canto interno vs externo nas direções: em S vê-se o canto reentrante (interno), enquanto em N vê-se o canto saliente (externo); a geometria em L do modelo deve coincidir perfeitamente com a silhueta em ambas as visões (0° e 180°)",
+  "o bloco do jogo em N é uma caixa cheia de 99x100 cm que não modela o recorte em L; o modelo 3D em L deve manter o recorte fiel ao sprite de N para não criar faces fantasmas ou projeção incorreta",
+  "ausência de portas ou puxadores: ao contrário do balcão reto (counter_bar), o módulo de canto possui superfícies inteiramente em painéis de madeira lisos com frisos verticais texturizados"
+ ],
+ "medidas": {
+  "sprite": "location_restaurant_bar_01_4",
+  "sprites": {
+   "S": "location_restaurant_bar_01_4",
+   "E": "location_restaurant_bar_01_6",
+   "N": "location_restaurant_bar_01_0",
+   "W": "location_restaurant_bar_01_2"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 2,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 2,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5234,
+     -0.1029,
+     0.0
+    ],
+    "max": [
+     0.4622,
+     0.5077,
+     1.1516
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.5234,
+     -0.492,
+     0.0
+    ],
+    "max": [
+     0.1016,
+     -0.1028,
+     1.1516
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Counter",
+   "GroupName": "Bar Corner",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "counter",
+   "Surface": "46",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Surface": "47"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.5234,
+    -0.492,
+    0.0
+   ],
+   "max": [
+    0.4622,
+    0.5077,
+    1.1516
+   ],
+   "largura": 0.9856,
+   "profundidade": 0.9997,
+   "altura": 1.1516
+  },
+  "menor_medida_peca": 0.3892,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.9513,
+  "cobertura": 0.9918,
+  "sobra": 0.0411,
+  "pixels_desenho": 14498,
+  "pixels_geometria": 14996,
+  "espelhado_E_S": 0.7723,
+  "espelhado_W_N": 0.7385,
+  "N_igual_S": 0.8894,
+  "silhueta_espelho_E_S": 0.7946,
+  "silhueta_espelho_W_N": 0.7653,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0306,
+   0.0079
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1628,
+     -0.492,
+     0.0
+    ],
+    "max": [
+     0.4622,
+     -0.1028,
+     1.1516
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 14426,
+   "cobertura": 0.9889,
+   "fora_do_desenho": 0.0062
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_bar_corner",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_bar_corner\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_bar_corner\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_bar_corner\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_bar_corner\\profundidade.png"
+  }
+ }
+}

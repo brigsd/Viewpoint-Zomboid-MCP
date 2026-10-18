@@ -6695,7 +6695,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Bar",
@@ -6705,14 +6705,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T11:28:21-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T11:31:41-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T11:41:13-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 10, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T11:44:30-03:00"
     }
    ],
    "id": "counter_bar",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 10,
+     "realista": 10,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_restaurant_bar_01_7",
     "N": "location_restaurant_bar_01_1",
@@ -6725,7 +6755,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Bar Corner",
@@ -6735,14 +6765,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T11:28:22-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T11:34:03-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T11:43:28-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 10, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T11:47:51-03:00"
     }
    ],
    "id": "counter_bar_corner",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 10,
+     "realista": 10,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_restaurant_bar_01_6",
     "N": "location_restaurant_bar_01_0",
@@ -11208,7 +11268,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "HK533p",
-   "estado": "retrabalho",
+   "estado": "reprovado",
    "familia": "hk533p",
    "forma_de": null,
    "group_name": "Imekagi",
@@ -11260,11 +11320,29 @@
      "nota": "rodada 2: arte 6, realista 6",
      "para": "retrabalho",
      "quando": "2026-10-18T00:33:23-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T11:58:13-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-18T11:58:13-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "cabeca_tripe: cor (arte, comparacao) — bloco central da cabeça do tripé",
+     "para": "reprovado",
+     "quando": "2026-10-18T12:03:02-03:00"
     }
    ],
    "id": "hk533p_imekagi",
    "material": "metal",
-   "motivo": null,
+   "motivo": "cabeca_tripe: cor (arte, comparacao) — bloco central da cabeça do tripé",
    "notas": [
     {
      "arte": 5,
@@ -11275,10 +11353,15 @@
      "arte": 6,
      "realista": 6,
      "rodada": 2
+    },
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 3
     }
    ],
    "prioridade": 401,
-   "rodada": 2,
+   "rodada": 3,
    "sprites": {
     "E": "appliances_com_01_45",
     "N": "appliances_com_01_47",
@@ -11434,7 +11517,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Industrial",
-   "estado": "retrabalho",
+   "estado": "reprovado",
    "familia": "industrial",
    "forma_de": null,
    "group_name": "Bake-O-Matic",
@@ -11486,11 +11569,29 @@
      "nota": "rodada 2: arte 5, realista 5",
      "para": "retrabalho",
      "quando": "2026-10-18T00:52:07-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T11:59:42-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-18T11:59:42-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "gabinete_inferior: sobra (ambos, sobreposicao) — lateral esquerda da abertura da câmara",
+     "para": "reprovado",
+     "quando": "2026-10-18T12:04:36-03:00"
     }
    ],
    "id": "industrial_bake_o_matic",
    "material": "metal",
-   "motivo": null,
+   "motivo": "gabinete_inferior: sobra (ambos, sobreposicao) — lateral esquerda da abertura da câmara",
    "notas": [
     {
      "arte": 6,
@@ -11501,10 +11602,15 @@
      "arte": 5,
      "realista": 5,
      "rodada": 2
+    },
+    {
+     "arte": 5,
+     "realista": 5,
+     "rodada": 3
     }
    ],
    "prioridade": 401,
-   "rodada": 2,
+   "rodada": 3,
    "sprites": {
     "E": "appliances_cooking_01_64",
     "N": "appliances_cooking_01_67",

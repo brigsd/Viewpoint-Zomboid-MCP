@@ -1,0 +1,118 @@
+{
+ "versao": 1,
+ "id": "counter_bar",
+ "sprites": {
+  "S": "location_restaurant_bar_01_5",
+  "E": "location_restaurant_bar_01_7",
+  "N": "location_restaurant_bar_01_1",
+  "W": "location_restaurant_bar_01_3"
+ },
+ "tras": "N",
+ "material": "liso",
+ "pecas": [
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "min": [
+    -0.5671,
+    -0.1376,
+    1.045
+   ],
+   "max": [
+    0.4799,
+    0.4846,
+    1.1516
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.5421,
+    -0.1126,
+    0.09
+   ],
+   "max": [
+    0.4549,
+    0.4596,
+    1.045
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "min": [
+    -0.5671,
+    -0.1376,
+    0.0
+   ],
+   "max": [
+    0.4799,
+    0.4846,
+    0.09
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_esq",
+   "forma": "caixa",
+   "min": [
+    -0.535,
+    -0.1326,
+    0.105
+   ],
+   "max": [
+    -0.055,
+    -0.1126,
+    1.03
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "porta_dir",
+   "forma": "caixa",
+   "min": [
+    -0.045,
+    -0.1326,
+    0.105
+   ],
+   "max": [
+    0.448,
+    -0.1126,
+    1.03
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "puxador_esq",
+   "forma": "cilindro",
+   "centro": [
+    -0.125,
+    -0.1526,
+    0.905
+   ],
+   "raio": 0.018,
+   "altura": 0.022,
+   "eixo": "y",
+   "segmentos": 16
+  },
+  {
+   "nome": "puxador_dir",
+   "forma": "cilindro",
+   "centro": [
+    0.025,
+    -0.1526,
+    0.905
+   ],
+   "raio": 0.018,
+   "altura": 0.022,
+   "eixo": "y",
+   "segmentos": 16
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "versao": 1,
+ "id": "counter_bar_corner",
+ "sprites": {
+  "S": "location_restaurant_bar_01_4",
+  "E": "location_restaurant_bar_01_6",
+  "N": "location_restaurant_bar_01_0",
+  "W": "location_restaurant_bar_01_2"
+ },
+ "tras": "N",
+ "material": "liso",
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.10285,
+    0.1
+   ],
+   "max": [
+    0.4622,
+    0.5077,
+    1.05
+   ]
+  },
+  {
+   "nome": "corpo_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.492,
+    0.1
+   ],
+   "max": [
+    0.1016,
+    -0.10285,
+    1.05
+   ]
+  },
+  {
+   "nome": "tampo_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.10285,
+    1.05
+   ],
+   "max": [
+    0.4622,
+    0.5077,
+    1.1516
+   ]
+  },
+  {
+   "nome": "tampo_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.492,
+    1.05
+   ],
+   "max": [
+    0.1016,
+    -0.10285,
+    1.1516
+   ]
+  },
+  {
+   "nome": "rodape_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.10285,
+    0.0
+   ],
+   "max": [
+    0.4622,
+    0.5077,
+    0.1
+   ]
+  },
+  {
+   "nome": "rodape_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5234,
+    -0.492,
+    0.0
+   ],
+   "max": [
+    0.1016,
+    -0.10285,
+    0.1
+   ]
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

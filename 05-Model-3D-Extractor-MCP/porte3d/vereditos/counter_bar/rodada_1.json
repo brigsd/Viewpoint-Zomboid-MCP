@@ -1,0 +1,31 @@
+{
+ "versao": 1,
+ "objeto": "counter_bar",
+ "rodada": 1,
+ "nota_arte": 10,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  },
+  {
+   "nome": "porta",
+   "situacao": "ok"
+  },
+  {
+   "nome": "puxador",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [],
+ "observacao": "Excelente reconstrução 3D do balcão, com encaixe dimensional perfeito das portas, puxadores, tampo e rodapé."
+}

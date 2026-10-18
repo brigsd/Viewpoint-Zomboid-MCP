@@ -1,0 +1,35 @@
+{
+ "versao": 1,
+ "objeto": "counter_bar_corner",
+ "rodada": 1,
+ "nota_arte": 10,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "corpo_curto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_curto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape_curto",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [],
+ "observacao": "Modelo exemplar: reprodução perfeitamente fiel ao sprite do jogo em todos os ângulos, geometria volumétrica sólida e peças prometidas 100% conformes."
+}

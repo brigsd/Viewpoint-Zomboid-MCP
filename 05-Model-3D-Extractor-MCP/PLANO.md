@@ -5,11 +5,11 @@
 ## Progresso Geral
 
 - **Total de Objetos:** 583 (539 bases + 44 variantes)
-- **Aprovados / Prontos:** 26 objetos
-- **Em Andamento (Retrabalho / Modelagem):** 2 objetos
-- **Não Portados / Reprovados:** 7 objetos
-- **Pendentes na Fila:** 548 objetos
-- **Progresso Resolvido:** `▓░░░░░░░░░░░░░░░░░░░   5%` (33/583)
+- **Aprovados / Prontos:** 28 objetos
+- **Em Andamento (Retrabalho / Modelagem):** 0 objetos
+- **Não Portados / Reprovados:** 9 objetos
+- **Pendentes na Fila:** 546 objetos
+- **Progresso Resolvido:** `▓░░░░░░░░░░░░░░░░░░░   6%` (37/583)
 
 ### Legenda de Marcadores
 - `[x]` **Aprovado / Aguardando Aprovação** (modelo 3D validado pelo crítico com notas 8+)
@@ -62,18 +62,18 @@
 - [x] **`washing_machine_white`** — **publicado/aprovado** (r2 · 8/8) `[eletrodomesticos | prio 401]`
 - [x] **`x_press_coffee`** — **aprovado** (r2 · 9/8) `[eletrodomesticos | prio 401]`
 
-## Lote 2 — Cozinha/eletrodomesticos (prio 417..401)  `▓▓░░░░░░░░░░  23%`  (4/17)
+## Lote 2 — Cozinha/eletrodomesticos (prio 417..401)  `▓▓▓▓▓░░░░░░░  47%`  (8/17)
 
+- [x] **`counter_bar`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
+- [x] **`counter_bar_corner`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
 - [-] **`counter_corner_a`** — *reprovado* (6/7) — vidro_traseiro: cor (arte, sobreposicao) — painel inteiro en… `[cozinha | prio 417]`
   - [ ] *↳ variante:* `counter_corner_b` — na fila
   - [ ] *↳ variante:* `counter_middle` — na fila
 - [x] **`computer_desktop`** — **aprovado** (r2 · 9/9) `[eletrodomesticos | prio 401]`
 - [-] **`dish_satellite`** — *nao_portar* — antena parabólica presa à parede (MoveType WallObject), estr… `[eletrodomesticos | prio 401]`
-- [~] **`hk533p_imekagi`** — `retrabalho` (r2 (6/6)) `[eletrodomesticos | prio 401]`
+- [-] **`hk533p_imekagi`** — *reprovado* (6/6) — cabeca_tripe: cor (arte, comparacao) — bloco central da cabe… `[eletrodomesticos | prio 401]`
 - [x] **`industrial_2000_fryers_club`** — **aprovado** (r2 · 9/9) `[eletrodomesticos | prio 401]`
-- [~] **`industrial_bake_o_matic`** — `retrabalho` (r2 (5/5)) `[eletrodomesticos | prio 401]`
-- [ ] **`counter_bar`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_bar_corner`** — na fila `[cozinha | prio 417]`
+- [-] **`industrial_bake_o_matic`** — *reprovado* (5/5) — gabinete_inferior: sobra (ambos, sobreposicao) — lateral esq… `[eletrodomesticos | prio 401]`
 - [ ] **`counter_cantina_food`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_cantina_food_location_restaurant_generic_01`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_cantina_food_location_restaurant_generic_01_22`** — na fila `[cozinha | prio 417]`

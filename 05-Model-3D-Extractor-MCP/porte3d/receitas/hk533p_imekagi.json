@@ -70,7 +70,8 @@
     0.0
    ],
    "material": "metal_tripe",
-   "segmentos": 16
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "sapata_tripe",
@@ -88,8 +89,9 @@
     0.0,
     0.0
    ],
-   "material": "plastico_escuro",
-   "segmentos": 16
+   "material": "borracha_preta",
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "perna_tripe_esq",
@@ -108,7 +110,8 @@
     -25.7
    ],
    "material": "metal_tripe",
-   "segmentos": 16
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "sapata_tripe_esq",
@@ -126,8 +129,9 @@
     32.19,
     -25.7
    ],
-   "material": "plastico_escuro",
-   "segmentos": 16
+   "material": "borracha_preta",
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "perna_tripe_dir",
@@ -146,7 +150,8 @@
     28.07
    ],
    "material": "metal_tripe",
-   "segmentos": 16
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "sapata_tripe_dir",
@@ -164,8 +169,9 @@
     -24.55,
     28.07
    ],
-   "material": "plastico_escuro",
-   "segmentos": 16
+   "material": "borracha_preta",
+   "segmentos": 16,
+   "arte_cor": true
   },
   {
    "nome": "cabeca_tripe",
@@ -180,8 +186,9 @@
     0.07,
     1.2682
    ],
-   "material": "metal_escuro",
-   "chanfro": 0.005
+   "material": "metal_tripe",
+   "chanfro": 0.005,
+   "arte_cor": true
   },
   {
    "nome": "manopla_controle",
@@ -418,7 +425,35 @@
   }
  ],
  "arte": {
-  "modo": "adesivo"
+  "modo": "kit",
+  "recortes": {
+   "bege_lateral": {
+    "peca": "corpo",
+    "face": "+x",
+    "recorte": [
+     0.05,
+     0.05,
+     0.25,
+     0.5
+    ]
+   },
+   "painel_traseiro": {
+    "peca": "corpo",
+    "face": "+x",
+    "recorte": [
+     0.05,
+     0.05,
+     0.85,
+     0.65
+    ]
+   }
+  },
+  "faces": {
+   "corpo": {
+    "-x": "bege_lateral",
+    "+y": "painel_traseiro"
+   }
+  }
  },
  "realista": {
   "materiais": {

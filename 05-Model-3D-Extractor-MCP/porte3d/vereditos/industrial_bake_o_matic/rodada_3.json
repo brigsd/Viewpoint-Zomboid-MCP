@@ -1,0 +1,78 @@
+{
+ "versao": 1,
+ "objeto": "industrial_bake_o_matic",
+ "rodada": 3,
+ "nota_arte": 5,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "gabinete_inferior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cupula_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_alavanca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manipulo_alavanca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pivo_articulacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tubo_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "gaveta_coletora",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "gabinete_inferior",
+   "tipo": "sobra",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "lateral esquerda da abertura da câmara",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 000: grande área magenta cobrindo o vão entre cúpula e gabinete; fio.png mostra painel_lateral fechando abertura vazada",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "gabinete_inferior",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "painel triangular lateral na abertura",
+   "sentido": "",
+   "evidencia": "giro_arte.png 090: textura cinza distorcida projetada sobre o painel lateral que fecha o vão",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Todas as 11 peças prometidas estão presentes e bem modeladas, mas foi adicionado um painel lateral espúrio fechando o vão aberto da câmara, arruinando a silhueta em 0 graus."
+}

@@ -1,0 +1,92 @@
+{
+ "versao": 1,
+ "objeto": "hk533p_imekagi",
+ "rodada": 3,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "perna_tripe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cabeca_tripe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manopla_controle",
+   "situacao": "ok"
+  },
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "parassol_lente",
+   "situacao": "ok"
+  },
+  {
+   "nome": "suporte_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_visor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "cabeca_tripe",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "bloco central da cabeça do tripé",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: bloco com preenchimento cinza plano sem textura do sprite do jogo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "perna_tripe",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "tubos das 3 pernas do tripé",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: pernas com cor cinza sólida sem o sombreamento e detalhes metálicos do desenho original",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "lateral esquerda do corpo da câmera",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270: botões e painel frontal esticados e projetados sobre a lateral oposta",
+   "gravidade": "media"
+  },
+  {
+   "parte": "tela_visor",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face posterior do visor CRT",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: tela verde CRT escurecida e pouco nítida comparada ao sprite jogo tras",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Geometria e proporções fiéis ao sprite com todas as peças presentes, mas o tripé sem textura e o estiramento lateral na arte exigem correção."
+}
