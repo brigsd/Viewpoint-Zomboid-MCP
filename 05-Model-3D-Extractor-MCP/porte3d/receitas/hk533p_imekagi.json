@@ -1,0 +1,458 @@
+{
+ "versao": 1,
+ "id": "hk533p_imekagi",
+ "nota": "Câmera profissional de estúdio de TV sobre tripé com parassol com cavidade e lente, visor CRT com tela externa e abas, e tripé com sapatas de borracha.",
+ "sprites": {
+  "S": "appliances_com_01_44",
+  "E": "appliances_com_01_45",
+  "N": "appliances_com_01_47",
+  "W": "appliances_com_01_46"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   148,
+   147,
+   147
+  ],
+  "metal_bege": [
+   187,
+   179,
+   133
+  ],
+  "metal_escuro": [
+   54,
+   50,
+   48
+  ],
+  "metal_tripe": [
+   148,
+   147,
+   147
+  ],
+  "liso": [
+   187,
+   179,
+   133
+  ],
+  "tela_crt": [
+   108,
+   125,
+   106
+  ],
+  "plastico_escuro": [
+   43,
+   40,
+   38
+  ],
+  "borracha_preta": [
+   35,
+   35,
+   35
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "perna_tripe",
+   "forma": "cilindro",
+   "centro": [
+    -0.0251,
+    -0.5637,
+    0.4431
+   ],
+   "raio": 0.0331,
+   "altura": 0.84,
+   "eixo": "y",
+   "rot": [
+    -110.85,
+    0.0,
+    0.0
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "sapata_tripe",
+   "forma": "cilindro",
+   "centro": [
+    -0.0251,
+    -0.344,
+    0.0156
+   ],
+   "raio": 0.0357,
+   "altura": 0.075,
+   "eixo": "y",
+   "rot": [
+    -110.85,
+    0.0,
+    0.0
+   ],
+   "material": "plastico_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "perna_tripe_esq",
+   "forma": "cilindro",
+   "centro": [
+    -0.2151,
+    -0.3343,
+    0.4057
+   ],
+   "raio": 0.0321,
+   "altura": 0.8314,
+   "eixo": "y",
+   "rot": [
+    -88.34,
+    32.19,
+    -25.7
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "sapata_tripe_esq",
+   "forma": "cilindro",
+   "centro": [
+    -0.4268,
+    0.1603,
+    0.0223
+   ],
+   "raio": 0.0347,
+   "altura": 0.075,
+   "eixo": "y",
+   "rot": [
+    -88.34,
+    32.19,
+    -25.7
+   ],
+   "material": "plastico_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "perna_tripe_dir",
+   "forma": "cilindro",
+   "centro": [
+    0.1517,
+    -0.303,
+    0.4407
+   ],
+   "raio": 0.0291,
+   "altura": 0.8306,
+   "eixo": "y",
+   "rot": [
+    -90.0,
+    -24.55,
+    28.07
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "sapata_tripe_dir",
+   "forma": "cilindro",
+   "centro": [
+    0.3177,
+    0.1633,
+    0.0288
+   ],
+   "raio": 0.0314,
+   "altura": 0.075,
+   "eixo": "y",
+   "rot": [
+    -90.0,
+    -24.55,
+    28.07
+   ],
+   "material": "plastico_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "cabeca_tripe",
+   "forma": "caixa",
+   "min": [
+    -0.09,
+    -0.05,
+    0.8125
+   ],
+   "max": [
+    0.03,
+    0.07,
+    1.2682
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "manopla_controle",
+   "forma": "cilindro",
+   "centro": [
+    -0.0914,
+    -0.005,
+    1.1659
+   ],
+   "raio": 0.03,
+   "altura": 0.4718,
+   "eixo": "x",
+   "rot": [
+    0.0,
+    -0.17,
+    0.0
+   ],
+   "material": "metal_escuro",
+   "segmentos": 12
+  },
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.1985,
+    -0.2807,
+    1.2682
+   ],
+   "max": [
+    0.1252,
+    0.1273,
+    1.5642
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "parassol_lente",
+   "forma": "caixa",
+   "min": [
+    -0.195,
+    -0.7,
+    1.54
+   ],
+   "max": [
+    0.125,
+    -0.28,
+    1.586
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "parassol_base",
+   "forma": "caixa",
+   "min": [
+    -0.195,
+    -0.56,
+    1.36
+   ],
+   "max": [
+    0.125,
+    -0.28,
+    1.395
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "parassol_lado_esq",
+   "forma": "caixa",
+   "min": [
+    -0.195,
+    -0.56,
+    1.395
+   ],
+   "max": [
+    -0.165,
+    -0.28,
+    1.54
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "parassol_lado_dir",
+   "forma": "caixa",
+   "min": [
+    0.095,
+    -0.56,
+    1.395
+   ],
+   "max": [
+    0.125,
+    -0.28,
+    1.54
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "lente",
+   "forma": "cilindro",
+   "centro": [
+    -0.035,
+    -0.45,
+    1.465
+   ],
+   "raio": 0.075,
+   "altura": 0.15,
+   "eixo": "y",
+   "material": "metal_escuro",
+   "segmentos": 16
+  },
+  {
+   "nome": "suporte_visor",
+   "forma": "caixa",
+   "min": [
+    -0.16,
+    -0.23,
+    1.5642
+   ],
+   "max": [
+    0.09,
+    -0.09,
+    1.72
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.008
+  },
+  {
+   "nome": "monitor_visor",
+   "forma": "caixa",
+   "min": [
+    -0.1604,
+    -0.2005,
+    1.6041
+   ],
+   "max": [
+    0.0551,
+    -0.0201,
+    1.8271
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.01
+  },
+  {
+   "nome": "tela_visor",
+   "forma": "caixa",
+   "min": [
+    -0.1276,
+    -0.0663,
+    1.7643
+   ],
+   "max": [
+    0.0224,
+    0.0537,
+    1.7763
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "tela_crt"
+  },
+  {
+   "nome": "aba_visor",
+   "forma": "caixa",
+   "min": [
+    -0.1376,
+    0.0369,
+    1.6984
+   ],
+   "max": [
+    0.0324,
+    0.0489,
+    1.7584
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "plastico_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "aba_visor_esq",
+   "forma": "caixa",
+   "min": [
+    -0.1386,
+    -0.0501,
+    1.7515
+   ],
+   "max": [
+    -0.1266,
+    0.0799,
+    1.8115
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "plastico_escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "aba_visor_dir",
+   "forma": "caixa",
+   "min": [
+    0.0214,
+    -0.0501,
+    1.7515
+   ],
+   "max": [
+    0.0334,
+    0.0799,
+    1.8115
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "plastico_escuro",
+   "chanfro": 0.003
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "metal_bege": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "metal_tripe": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "tela_crt": {
+    "tipo": "liso"
+   },
+   "plastico_escuro": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "borracha_preta": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   }
+  }
+ }
+}

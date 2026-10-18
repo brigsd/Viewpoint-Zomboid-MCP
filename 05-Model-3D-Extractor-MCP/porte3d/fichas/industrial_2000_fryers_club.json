@@ -1,0 +1,330 @@
+{
+ "versao": 1,
+ "objeto": "industrial_2000_fryers_club",
+ "sprite": "appliances_cooking_01_53",
+ "decisao": "portar",
+ "motivo": "fritadeira industrial volumosa de aço inoxidável com cubas profundas e espaldar bem definido, adequada para porte 3D direto",
+ "o_que_e": "fritadeira industrial de aço inoxidável com duas cubas de fritura, espaldar traseiro vertical elevado com barra de suporte, painel de controle frontal inclinado com seletores, gabinete elevado sobre 4 pés retos e torneiras de dreno frontais inferiores",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "bloco principal do gabinete ~100x60 cm e ~63 cm de altura (de z=28 a 91 cm), contendo o volume das cubas e gabinete elevado do chão"
+  },
+  {
+   "nome": "espaldar",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "chapa vertical traseira de proteção ~100x5 cm e 116 cm de altura total, encostada atrás das cubas com projeção acima do tampo"
+  },
+  {
+   "nome": "painel_inclinado",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "painel chanfrado inclinado a ~45° na frente do tampo, ~100x20 cm, abrigando seletores e indicadores de controle"
+  },
+  {
+   "nome": "cuba",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "duas cubas retangulares de fritura afundadas no tampo, cada uma ~40x45 cm e ~25 cm de profundidade, lado a lado com divisória central"
+  },
+  {
+   "nome": "barra_suporte_cestas",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "barra metálica horizontal saliente ~2 cm no espaldar traseiro, ~90 cm de comprimento, para suspensão e escorregamento dos cestos"
+  },
+  {
+   "nome": "pe_frontal",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "dois pés retos de tubo de metal ~6x6 cm e ~28 cm de altura nos cantos frontais inferiores sustentando o gabinete"
+  },
+  {
+   "nome": "pe_traseiro",
+   "forma": "caixa",
+   "origem": "simetria",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "dois pés retos traseiros de ~6x6 cm e ~28 cm de altura nos cantos posteriores inferiores, espelho dos frontais"
+  },
+  {
+   "nome": "valvula_dreno",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "duas torneiras/válvulas de dreno cilíndricas salientes ~5 cm na saia frontal inferior, uma abaixo de cada cuba"
+  },
+  {
+   "nome": "botao_seletor",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "manípulo giratório circular de ~6 cm de diâmetro saliente no lado esquerdo do painel de controle"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal"
+ },
+ "problemas_previstos": [
+  "forma_1 é apenas um plano/prisma de 1 cm no piso (helper do jogo) que gerou falso positivo de objeto fino: ignorar na modelagem física",
+  "o script sugeriu espelhar forma_0 (espaldar) na frente: incorreto, o espaldar só existe na parede de trás e não deve ser duplicado",
+  "o jogo descreve a frente com forma_3 como caixa sólida até o piso: no desenho há vão livre inferior de ~28 cm entre os pés que deve permanecer aberto",
+  "os pés traseiros não constam nos blocos do jogo e precisam ser criados por simetria a partir dos frontais",
+  "duas cubas de fritura profundas rebaixadas no tampo: modelar cavidades internas para evitar aspecto de tampo plano maciço",
+  "botões menores e mostradores no painel chanfrado: detalhes finos demais para geometria individual, simplificar como textura no adesivo destacando apenas o seletor principal e as válvulas de dreno",
+  "válvulas de dreno salientes na frente inferior: peças cilíndricas pequenas que exigem atenção no mapeamento UV do adesivo",
+  "traseira N possui desenho próprio (chapa lisa do espaldar com vão inferior): utilizar textura de N para as faces posteriores"
+ ],
+ "medidas": {
+  "sprite": "appliances_cooking_01_53",
+  "sprites": {
+   "S": "appliances_cooking_01_53",
+   "E": "appliances_cooking_01_52",
+   "N": "appliances_cooking_01_55",
+   "W": "appliances_cooking_01_54"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 4,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 3,
+   "cilindro": 0,
+   "prisma": 1
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     0.4,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.455,
+     1.16
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "prisma",
+    "perfil": [
+     [
+      -0.5,
+      -0.5
+     ],
+     [
+      0.5,
+      -0.5
+     ],
+     [
+      0.5,
+      0.5
+     ],
+     [
+      -0.5,
+      0.5
+     ]
+    ],
+    "eixo": "y",
+    "de": -0.005,
+    "ate": 0.005,
+    "rot": [
+     -90.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.2,
+     0.28
+    ],
+    "max": [
+     0.5,
+     0.4,
+     0.91
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.25,
+     0.0
+    ],
+    "max": [
+     0.5,
+     -0.2,
+     0.91
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "MetalPlates",
+   "Material3": "MetalScrap",
+   "MaterialType": "Metal"
+  },
+  "props": {
+   "CustomName": "Industrial 2000",
+   "GroupName": "Fryers Club",
+   "Facing": "S",
+   "container": "stove",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "5",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "300"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.5,
+    -0.5,
+    -0.005
+   ],
+   "max": [
+    0.5,
+    0.5,
+    1.16
+   ],
+   "largura": 1.0,
+   "profundidade": 1.0,
+   "altura": 1.165
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_1"
+  ],
+  "altura_base": -0.005,
+  "montado_na_parede": false,
+  "contorno_0": 0.7166,
+  "cobertura": 0.9935,
+  "sobra": 0.28,
+  "pixels_desenho": 9604,
+  "pixels_geometria": 13253,
+  "espelhado_E_S": 0.8696,
+  "espelhado_W_N": 0.8639,
+  "N_igual_S": 0.3728,
+  "silhueta_espelho_E_S": 0.9537,
+  "silhueta_espelho_W_N": 0.9372,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   0.0
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_0",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.5,
+     -0.455,
+     0.0
+    ],
+    "max": [
+     0.5,
+     -0.4,
+     1.16
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.5,
+     0.2,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.25,
+     0.91
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 13126,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.2683
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_1): candidato a não portar",
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\industrial_2000_fryers_club",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\industrial_2000_fryers_club\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\industrial_2000_fryers_club\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\industrial_2000_fryers_club\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\industrial_2000_fryers_club\\profundidade.png"
+  }
+ }
+}

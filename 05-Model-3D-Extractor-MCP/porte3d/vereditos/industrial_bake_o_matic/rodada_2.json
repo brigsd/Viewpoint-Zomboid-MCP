@@ -1,0 +1,90 @@
+{
+ "versao": 1,
+ "objeto": "industrial_bake_o_matic",
+ "rodada": 2,
+ "nota_arte": 5,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "gabinete_inferior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cupula_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "forma_errada",
+   "nota": "não fecha a lateral esquerda da câmara e está recuada em Y na junção da base"
+  },
+  {
+   "nome": "barra_alavanca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manipulo_alavanca",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pivo_articulacao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tubo_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "gaveta_coletora",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "coluna_traseira",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "lateral esquerda da câmara de lavagem",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 graus: jogo tras mostra fechamento sólido na lateral esquerda, mas o modelo deixa vão aberto revelando a grelha interna",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "coluna_traseira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 180,
+   "onde": "base da coluna na junção com o gabinete inferior",
+   "sentido": "deslocado_y",
+   "evidencia": "fio.png 180 graus: coluna traseira está recuada em Y formando um degrau saliente no topo traseiro do gabinete inferior",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "ripas e interior da cavidade na lateral esquerda",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270 graus: textura esticada e borrada nas ripas e parede interna visíveis através do vão lateral aberto",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Frente excelente em 0° com 97% de IoU, mas a traseira e lateral esquerda precisam de fechamento sólido para respeitar o sprite de trás do jogo."
+}

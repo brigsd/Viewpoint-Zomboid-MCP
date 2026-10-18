@@ -1,0 +1,288 @@
+{
+ "versao": 1,
+ "id": "hk533p_imekagi",
+ "nota": "Câmera de estúdio de TV sobre tripé alto com parassol, visor CRT inclinado e manopla.",
+ "sprites": {
+  "S": "appliances_com_01_44",
+  "E": "appliances_com_01_45",
+  "N": "appliances_com_01_47",
+  "W": "appliances_com_01_46"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   148,
+   147,
+   147
+  ],
+  "metal_bege": [
+   187,
+   179,
+   133
+  ],
+  "metal_escuro": [
+   54,
+   50,
+   48
+  ],
+  "metal_tripe": [
+   148,
+   147,
+   147
+  ],
+  "liso": [
+   187,
+   179,
+   133
+  ],
+  "tela_crt": [
+   108,
+   125,
+   106
+  ],
+  "plastico_escuro": [
+   43,
+   40,
+   38
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "perna_tripe",
+   "forma": "cilindro",
+   "centro": [
+    -0.0251,
+    -0.6145,
+    0.4081
+   ],
+   "raio": 0.0331,
+   "altura": 0.915,
+   "eixo": "y",
+   "rot": [
+    -110.85,
+    0.0,
+    0.0
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "perna_tripe_esq",
+   "forma": "cilindro",
+   "centro": [
+    -0.2326,
+    -0.3622,
+    0.374
+   ],
+   "raio": 0.0321,
+   "altura": 0.9064,
+   "eixo": "y",
+   "rot": [
+    -88.34,
+    32.19,
+    -25.7
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "perna_tripe_dir",
+   "forma": "cilindro",
+   "centro": [
+    0.1654,
+    -0.3332,
+    0.4066
+   ],
+   "raio": 0.0291,
+   "altura": 0.9056,
+   "eixo": "y",
+   "rot": [
+    -90.0,
+    -24.55,
+    28.07
+   ],
+   "material": "metal_tripe",
+   "segmentos": 16
+  },
+  {
+   "nome": "cabeca_tripe",
+   "forma": "caixa",
+   "min": [
+    -0.09,
+    -0.05,
+    0.8125
+   ],
+   "max": [
+    0.03,
+    0.07,
+    1.2682
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "manopla_controle",
+   "forma": "cilindro",
+   "centro": [
+    -0.0914,
+    -0.005,
+    1.1659
+   ],
+   "raio": 0.03,
+   "altura": 0.4718,
+   "eixo": "x",
+   "rot": [
+    0.0,
+    -0.17,
+    0.0
+   ],
+   "material": "metal_escuro",
+   "segmentos": 12
+  },
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.1985,
+    -0.2807,
+    1.2682
+   ],
+   "max": [
+    0.1303,
+    0.1273,
+    1.5642
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "parassol_lente",
+   "forma": "caixa",
+   "min": [
+    -0.1935,
+    -0.5768,
+    1.3477
+   ],
+   "max": [
+    0.1303,
+    -0.28,
+    1.5862
+   ],
+   "material": "metal_escuro",
+   "chanfro": 0.008
+  },
+  {
+   "nome": "suporte_visor",
+   "forma": "caixa",
+   "min": [
+    -0.16,
+    -0.23,
+    1.5642
+   ],
+   "max": [
+    0.09,
+    -0.09,
+    1.72
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.008
+  },
+  {
+   "nome": "monitor_visor",
+   "forma": "caixa",
+   "min": [
+    -0.1604,
+    -0.2005,
+    1.6041
+   ],
+   "max": [
+    0.0551,
+    -0.0201,
+    1.8271
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "metal_bege",
+   "chanfro": 0.01
+  },
+  {
+   "nome": "tela_visor",
+   "forma": "caixa",
+   "min": [
+    -0.12,
+    -0.0301,
+    1.64
+   ],
+   "max": [
+    0.02,
+    -0.0181,
+    1.76
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "tela_crt"
+  },
+  {
+   "nome": "aba_visor",
+   "forma": "caixa",
+   "min": [
+    -0.1554,
+    -0.0251,
+    1.6241
+   ],
+   "max": [
+    0.0551,
+    0.0301,
+    1.7787
+   ],
+   "rot": [
+    -62.26,
+    0.0,
+    0.0
+   ],
+   "material": "plastico_escuro",
+   "chanfro": 0.004
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "metal_bege": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "metal_tripe": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   },
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   },
+   "tela_crt": {
+    "tipo": "liso"
+   },
+   "plastico_escuro": {
+    "tipo": "liso",
+    "desgaste": 0.2
+   }
+  }
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "versao": 1,
+ "objeto": "industrial_2000_fryers_club",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "espaldar",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_inclinado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_suporte_cestas",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "valvula_dreno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao_seletor",
+   "situacao": "fora_do_lugar",
+   "nota": "modelado na face vertical do corpo abaixo do painel inclinado em vez de sobre o painel de controle"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "painel_inclinado",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "face inclinada frontal e lateral direita",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: painel inclinado totalmente preto sem material metalico nem textura",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "painel_inclinado",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "face inclinada frontal",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 000: perda dos seletores e visores originais deixando a face cinza lisa com forte mancha no mapa de diferenca",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "botao_seletor",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "face vertical frontal do corpo, abaixo do painel",
+   "sentido": "",
+   "evidencia": "fio.png 045: cilindro 12 posicionado na chapa vertical do corpo em vez de sobre a superficie chanfrada do painel de controle",
+   "gravidade": "media"
+  },
+  {
+   "parte": "valvula_dreno",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "zoom",
+   "angulo": 45,
+   "onde": "saia frontal inferior, acima dos cilindros 3D",
+   "sentido": "",
+   "evidencia": "zoom.png 045 baixo: torneiras do desenho aparecem na textura impressa deslocadas acima dos cilindros fisicos",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "lateral direita superior, junto ao painel inclinado",
+   "sentido": "",
+   "evidencia": "giro_arte.png 000: costura diagonal e estiramento de textura na quina superior direita",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Gabinete, cubas e espaldar bem estruturados, mas o painel de controle perdeu a textura no modelo arte e ficou em preto puro no modelo realista com seletor fora do lugar."
+}

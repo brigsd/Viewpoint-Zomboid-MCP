@@ -1,0 +1,55 @@
+{
+ "versao": 1,
+ "objeto": "computer_desktop",
+ "rodada": 2,
+ "nota_arte": 9,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "teclado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela_crt",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pedestal_monitor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "teclado_rampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "baias_disquete",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "monitor_traseira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "topo da carcaça traseira, crista superior",
+   "sentido": "alto",
+   "evidencia": "sobreposicao.png 000: pequena sobra magenta no topo indicando que o chanfro traseiro ultrapassa levemente a borda superior da moldura frontal",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente porte 3D de computador desktop CRT, fiel ao sprite original em ambas as faces e com geometria realista consistente."
+}

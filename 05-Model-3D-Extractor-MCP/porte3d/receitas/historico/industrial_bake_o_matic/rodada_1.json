@@ -1,0 +1,225 @@
+{
+ "versao": 1,
+ "id": "industrial_bake_o_matic",
+ "nota": "Forno/salamandra industrial Bake-O-Matic com gabinete inferior elevado, pés metálicos, grelha, cúpula superior móvel e alavanca frontal.",
+ "sprites": {
+  "S": "appliances_cooking_01_65",
+  "E": "appliances_cooking_01_64",
+  "N": "appliances_cooking_01_67",
+  "W": "appliances_cooking_01_66"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   194,
+   194,
+   195
+  ],
+  "metal_escuro": [
+   84,
+   83,
+   85
+  ],
+  "liso": [
+   45,
+   45,
+   45
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "gabinete_inferior",
+   "forma": "caixa",
+   "min": [
+    -0.5135,
+    -0.3217,
+    0.16
+   ],
+   "max": [
+    0.4865,
+    0.4193,
+    0.8575
+   ],
+   "chanfro": 0.008,
+   "material": "metal"
+  },
+  {
+   "nome": "cupula_superior",
+   "forma": "caixa",
+   "min": [
+    -0.5135,
+    -0.3217,
+    1.394
+   ],
+   "max": [
+    0.4865,
+    0.4193,
+    2.1529
+   ],
+   "chanfro": 0.012,
+   "material": "metal"
+  },
+  {
+   "nome": "coluna_traseira",
+   "forma": "caixa",
+   "min": [
+    -0.51,
+    0.2523,
+    0.858
+   ],
+   "max": [
+    0.483,
+    0.4175,
+    1.393
+   ],
+   "chanfro": 0.005,
+   "material": "metal"
+  },
+  {
+   "nome": "barra_alavanca",
+   "forma": "caixa",
+   "min": [
+    -0.0436,
+    -0.8732,
+    1.661
+   ],
+   "max": [
+    0.0292,
+    0.1268,
+    2.0942
+   ],
+   "rot": [
+    0.0,
+    20.0,
+    -89.98
+   ],
+   "chanfro": 0.008,
+   "material": "metal"
+  },
+  {
+   "nome": "pe_frontal",
+   "forma": "cilindro",
+   "centro": [
+    0.44,
+    -0.27,
+    0.0
+   ],
+   "raio": 0.025,
+   "altura": 0.16,
+   "eixo": "z",
+   "material": "metal",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "pe_traseiro",
+   "forma": "cilindro",
+   "centro": [
+    0.44,
+    0.36,
+    0.0
+   ],
+   "raio": 0.025,
+   "altura": 0.16,
+   "eixo": "z",
+   "material": "metal",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "grelha",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    -0.24,
+    0.858
+   ],
+   "max": [
+    0.41,
+    0.24,
+    0.885
+   ],
+   "chanfro": 0.003,
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "manipulo_alavanca",
+   "forma": "cilindro",
+   "centro": [
+    0.485,
+    -0.065,
+    1.7
+   ],
+   "raio": 0.03,
+   "altura": 0.05,
+   "eixo": "x",
+   "material": "liso"
+  },
+  {
+   "nome": "pivo_articulacao",
+   "forma": "cilindro",
+   "centro": [
+    0.485,
+    0.334,
+    1.644
+   ],
+   "raio": 0.025,
+   "altura": 0.04,
+   "eixo": "x",
+   "material": "metal",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "tubo_traseiro",
+   "forma": "cilindro",
+   "centro": [
+    -0.1,
+    0.435,
+    0.0
+   ],
+   "raio": 0.03,
+   "altura": 0.55,
+   "eixo": "z",
+   "material": "metal_escuro"
+  },
+  {
+   "nome": "gaveta_coletora",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    -0.325,
+    0.56
+   ],
+   "max": [
+    0.35,
+    -0.32,
+    0.64
+   ],
+   "chanfro": 0.002,
+   "material": "metal_escuro"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.3
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

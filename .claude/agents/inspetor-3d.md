@@ -34,7 +34,7 @@ Abra todas as imagens com `Read`.
 5. **O que o desenho esconde e precisa ser completado?** A traseira, os pés de trás, o lado de baixo.
 6. **A traseira tem desenho próprio?** Se a direção N é um desenho diferente da frente, use `tras = "N"`; se é igual, use `"simetrico"`.
 7. **Há partes finas, vazadas ou transparentes?** Grade, vidro, haste fina, tecido pendurado. Elas dão trabalho e precisam ir em `problemas_previstos`.
-8. **Qual o material de cada parte** no nível realista: `madeira`, `metal`, `tecido` ou `liso` (tinta ou plástico)?
+8. **Materiais realistas dispensados:** Não precisamos mais de modelos realistas procedurais. Use `"liso"` como padrão nos materiais da ficha e não crie exigências de materiais procedurais.
 9. **Vale portar ou fica 2D?**
 10. **Arte:** use `adesivo`, que cola o desenho do jogo nas peças e serve para quase tudo. Use `kit` (recortes do desenho repetidos nas faces escondidas) só se o objeto tiver faces grandes que nenhum desenho mostra e que ficariam com uma cor lisa, por exemplo o tampo de uma mesa visto de baixo. Na dúvida, `adesivo`.
 

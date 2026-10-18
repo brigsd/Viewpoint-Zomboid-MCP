@@ -38,22 +38,23 @@ Abra **todas** com `Read` antes de responder.
    - há peça flutuando, enterrada no chão ou atravessando outra?
    - a estrutura faz sentido para o objeto (4 pés numa mesa, portas na frente de uma geladeira)?
    - há peça que devia ser sólida e é só um plano?
-8. **No realista:** o material é crível (madeira parece madeira, metal pintado parece metal) e a cor bate com a do desenho?
+8. **Nível realista dispensado:** O projeto não utiliza mais modelos realistas procedurais. Não aponte defeitos relativos a materiais do realista (desgaste, brilho de metal, cor de tinta ou relevos físicos que já existem na textura 2D). Para manter a compatibilidade com o validador da esteira, atribua em `nota_realista` a mesma nota concedida a `nota_arte` (ou 10). Toda a cobrança de qualidade, conformidade e notas foca 100% no nível **ARTE**.
 
 Depois, responda **peça por peça** da lista prometida: `ok`, `ausente`, `forma_errada` ou `fora_do_lugar`.
 
-## Nota (uma para cada nível)
+## Nota (nível arte e compatibilidade)
 
 - **10:** não dá para melhorar olhando estas folhas.
 - **8 a 9:** pronto para o jogo. Só defeitos leves, que ninguém nota jogando.
 - **6 a 7:** algo médio, que se nota jogando. Volta para o modelador.
-- **0 a 5:** defeito grave. Exemplos: peça prometida ausente, peça chapada, textura de uma face aparecendo em outra, traseira errada, estrutura sem sentido.
+- **0 a 5:** defeito grave. Exemplos: peça prometida ausente na malha, peça chapada, textura da arte esticada ou aparecendo em outra face, traseira errada, estrutura sem sentido.
 
 Regras que não se negociam:
 
-- peça prometida `ausente` deixa a nota daquele nível em **no máximo 5**;
-- defeito `grave` deixa a nota em **no máximo 6**;
-- em 0°, a arte que não bate com o desenho deixa `nota_arte` em **no máximo 6**.
+- peça prometida `ausente` deixa a `nota_arte` em **no máximo 5**;
+- defeito `grave` deixa a `nota_arte` em **no máximo 6**;
+- em 0°, a arte que não bate com o desenho deixa `nota_arte` em **no máximo 6**;
+- `nota_realista` deve acompanhar `nota_arte` (ou receber 10), já que o nível realista foi descontinuado.
 
 **Não invente defeito para preencher lista.** Se você vê dois, diga dois. Se não vê nenhum, diga isso e dê a nota alta. Uma nota baixa custa uma rodada inteira de retrabalho.
 

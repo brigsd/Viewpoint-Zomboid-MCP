@@ -1,0 +1,89 @@
+{
+ "versao": 1,
+ "objeto": "computer_desktop",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "teclado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela_crt",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pedestal_monitor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_traseira",
+   "situacao": "forma_errada",
+   "nota": "topo côncavo vazado na arte e ausência de grelhas traseiras no realista"
+  },
+  {
+   "nome": "teclado_rampa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "baias_disquete",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "monitor_traseira",
+   "tipo": "buraco",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "topo da carcaça traseira",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: topo do monitor apresenta concavidade profunda vazada em calha, destoando do jogo tras",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "monitor_traseira",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "painel inferior da carcaça traseira",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: carcaça traseira lisa sem as grelhas de ventilação prometidas na ficha",
+   "gravidade": "media"
+  },
+  {
+   "parte": "teclado",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "espaço frontal entre teclado e gabinete",
+   "sentido": "deslocado_y",
+   "evidencia": "giro_realista.png 135: teclado excessivamente afastado da face frontal do gabinete",
+   "gravidade": "leve"
+  },
+  {
+   "parte": "monitor_corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "lateral direita da moldura do monitor",
+   "sentido": "",
+   "evidencia": "giro_arte.png 135: estiramento vertical perceptível da textura na lateral do monitor",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Excelente alinhamento e silhueta em 0 graus, mas o nível arte tem deformação/buraco grave no topo traseiro do monitor em 180 graus, e o realista carece das grelhas traseiras prometidas."
+}

@@ -1,0 +1,137 @@
+{
+ "versao": 1,
+ "objeto": "industrial_bake_o_matic",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "gabinete_inferior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cupula_superior",
+   "situacao": "ok"
+  },
+  {
+   "nome": "coluna_traseira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_alavanca",
+   "situacao": "forma_errada",
+   "nota": "modelada como placa sólida inclinada em vez de estribo tubular vazado"
+  },
+  {
+   "nome": "pe_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "grelha",
+   "situacao": "forma_errada",
+   "nota": "bloco sólido retangular sem ripas paralelas no realista"
+  },
+  {
+   "nome": "manipulo_alavanca",
+   "situacao": "fora_do_lugar",
+   "nota": "fixado na parede da cúpula em vez do centro da barra da alavanca"
+  },
+  {
+   "nome": "pivo_articulacao",
+   "situacao": "fora_do_lugar",
+   "nota": "mancais nas laterais da cúpula sem ligar à alavanca"
+  },
+  {
+   "nome": "tubo_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "gaveta_coletora",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "barra_alavanca",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 135,
+   "onde": "armação da alavanca, corpo inteiro",
+   "sentido": "",
+   "evidencia": "fio.png 135: modelada como placa sólida fechada em cunha em vez de estribo tubular vazado, flutuando sem conectar aos pivôs",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "manipulo_alavanca",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 0,
+   "onde": "corpo do manípulo",
+   "sentido": "",
+   "evidencia": "fio.png 000: manípulo fixado na parede da cúpula superior atrás da aba, desconectado da barra de alavanca",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "chapado",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "superfície superior da grelha",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: bloco retangular sólido sem ripas, vãos ou perfurações de grelha",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "barra_alavanca",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "face frontal da barra",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045: projeção do sprite esticada e borrada horizontalmente sobre o bloco inclinado",
+   "gravidade": "media"
+  },
+  {
+   "parte": "pivo_articulacao",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 135,
+   "onde": "mancais laterais",
+   "sentido": "",
+   "evidencia": "giro_realista.png 135: pivôs isolados na lateral da cúpula sem receber os braços da alavanca",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cupula_superior",
+   "tipo": "proporcao",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "canto superior direito do teto",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png: mancha magenta expressiva no topo direito por excesso de largura/profundidade em relação ao desenho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "grelha",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "ripas da grelha",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045: textura das ripas do jogo esticada e deformada em perspectiva pela projeção 2D",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "A base e o capô têm proporções corretas, mas a alavanca maciça flutuante com puxador deslocado e a grelha em bloco sólido exigem refação pelo modelador."
+}

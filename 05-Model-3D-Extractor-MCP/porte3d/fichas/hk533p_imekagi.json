@@ -1,0 +1,656 @@
+{
+ "versao": 1,
+ "objeto": "hk533p_imekagi",
+ "sprite": "appliances_com_01_44",
+ "decisao": "portar",
+ "motivo": "câmera pesada de estúdio de televisão sobre tripé alto, com pernas, cabeça, corpo, visor inclinado e manopla com claro volume 3D",
+ "o_que_e": "câmera profissional de estúdio de TV montada sobre tripé alto de metal de 3 pernas, com parassol retangular escuro na frente da lente, corpo bege com painéis de controle, manopla traseira de operação e monitor de tubo CRT inclinado no topo com abas de proteção",
+ "pecas": [
+  {
+   "nome": "perna_tripe",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "quantidade": 3,
+   "material": "metal",
+   "descricao": "3 pernas tubulares de metal cinza (~8-9 cm de diâmetro e ~90 cm de comprimento), partindo da cabeça central a ~80 cm de altura até o chão, abertas radialmente em tripé, com sapatas de borracha preta nas pontas (formas 1, 2 e 3 do jogo)"
+  },
+  {
+   "nome": "cabeca_tripe",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "coluna central / cabeça de montagem do tripé em metal escuro de ~20x20 cm e ~46 cm de altura (forma_4 do jogo, z entre 81 e 127 cm), conectando as pernas à base do corpo da câmera"
+  },
+  {
+   "nome": "manopla_controle",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "haste cilíndrica de operação (pan bar) de ~8 cm de diâmetro e ~47 cm de comprimento (forma_7 do jogo, z entre 112 e 121 cm), projetando-se para trás e para o lado direito da câmera a partir da cabeça do tripé"
+  },
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "corpo principal retangular bege da câmera de ~32x45 cm e ~32 cm de altura (porção traseira da forma_5 do jogo, z entre 126 e 159 cm), com painéis de controle laterais e traseiro"
+  },
+  {
+   "nome": "parassol_lente",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "coifa/parassol retangular escuro (matte box) na frente da câmera de ~35x40 cm e ~25 cm de altura, com cavidade frontal aberta revelando a lente (englobado pela forma_5 do jogo)"
+  },
+  {
+   "nome": "suporte_visor",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "alojamento intermediário no topo da câmera de ~32x14 cm e ~32 cm de altura (forma_6 do jogo, z entre 159 e 191 cm), servindo de base para o monitor"
+  },
+  {
+   "nome": "monitor_visor",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "caixa retangular do monitor/visor CRT de ~32x41x37 cm (forma_8 do jogo, z entre 162 e 199 cm), inclinada a ~62° voltada para trás em direção ao operador"
+  },
+  {
+   "nome": "tela_visor",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tela plana retangular CRT verde/escura de ~20x15 cm na face posterior inclinada do monitor, voltada para o operador (visível na direção N)"
+  },
+  {
+   "nome": "aba_visor",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "coifa/abas antirreflexo escuras ao redor da tela do monitor (~30x25 cm), projetadas para trás/cima"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "forma_0 é um prisma plano de apenas 1 cm de espessura (eixo x) que gerou o falso alerta de 'objeto fino/vazado' no script; corresponde ao plano lateral dos cabos/haste e NÃO deve ser modelado como lâmina 2D solta, devendo ser ignorado em prol da geometria real",
+  "o jogo agrupa corpo e parassol numa única caixa de 87 cm de comprimento (forma_5); a modelagem deve separar o corpo bege da caixa do parassol escuro na frente para permitir o recorte da lente",
+  "as pernas do tripé (formas 1, 2 e 3) e a manopla (forma 7) são cilindros compridos e esguios (~8-9 cm de diâmetro); conferir se as sapatas tocam o piso e se o mapeamento adesivo não distorce nas superfícies curvas",
+  "o visor no topo é inclinado em ~62° e voltado para a direção N (traseira); a direção N revela a tela CRT verde e painel com botões que não aparecem de frente (S)",
+  "as 4 direções (S, E, N, W) têm desenhos próprios (N igual a S apenas 0,47; E e W não são espelhos); usar projeção adesiva a partir dos 4 sprites",
+  "cabos espirais pendurados na lateral e traseira (conectando o corpo à coluna) são finos e devem ser representados na textura adesiva, sem geometria solta",
+  "os alertas de peças faltando por simetria (pecas_provavelmente_faltando) sugerem espelhar pernas e caixas em x/y; devem ser IGNORADOS pois o tripé de 3 pernas já está completo e o aparelho possui manopla e controles assimétricos"
+ ],
+ "medidas": {
+  "sprite": "appliances_com_01_44",
+  "sprites": {
+   "S": "appliances_com_01_44",
+   "E": "appliances_com_01_45",
+   "N": "appliances_com_01_47",
+   "W": "appliances_com_01_46"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 9,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 9,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 4,
+   "prisma": 1
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "prisma",
+    "perfil": [
+     [
+      0.1406,
+      0.9249
+     ],
+     [
+      0.3281,
+      1.027
+     ],
+     [
+      0.3594,
+      1.3204
+     ],
+     [
+      0.25,
+      1.5182
+     ]
+    ],
+    "eixo": "x",
+    "de": -0.005,
+    "ate": 0.005
+   },
+   {
+    "nome": "forma_1",
+    "forma": "cilindro",
+    "centro": [
+     0.0,
+     -0.6145,
+     0.4081
+    ],
+    "raio": 0.043,
+    "altura": 0.905,
+    "eixo": "y",
+    "rot": [
+     -110.85,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "cilindro",
+    "centro": [
+     -0.222,
+     -0.3563,
+     0.374
+    ],
+    "raio": 0.043,
+    "altura": 0.905,
+    "eixo": "y",
+    "rot": [
+     -88.34,
+     32.19,
+     -25.7
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "cilindro",
+    "centro": [
+     0.1963,
+     -0.3478,
+     0.4066
+    ],
+    "raio": 0.043,
+    "altura": 0.905,
+    "eixo": "y",
+    "rot": [
+     -90.0,
+     -24.55,
+     28.07
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     -0.1253,
+     -0.0876,
+     0.8125
+    ],
+    "max": [
+     0.0777,
+     0.1154,
+     1.2689
+    ]
+   },
+   {
+    "nome": "forma_5",
+    "forma": "caixa",
+    "min": [
+     -0.198,
+     -0.7323,
+     1.2647
+    ],
+    "max": [
+     0.1252,
+     0.1371,
+     1.5896
+    ]
+   },
+   {
+    "nome": "forma_6",
+    "forma": "caixa",
+    "min": [
+     -0.198,
+     -0.2323,
+     1.5883
+    ],
+    "max": [
+     0.1252,
+     -0.0947,
+     1.9132
+    ]
+   },
+   {
+    "nome": "forma_7",
+    "forma": "cilindro",
+    "centro": [
+     -0.0864,
+     0.0,
+     1.1659
+    ],
+    "raio": 0.0413,
+    "altura": 0.4718,
+    "eixo": "x",
+    "rot": [
+     0.0,
+     -0.17,
+     0.0
+    ]
+   },
+   {
+    "nome": "forma_8",
+    "forma": "caixa",
+    "min": [
+     -0.198,
+     -0.2464,
+     1.6402
+    ],
+    "max": [
+     0.1252,
+     0.0062,
+     1.9651
+    ],
+    "rot": [
+     -62.26,
+     0.0,
+     0.0
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "MetalBars",
+   "Material3": "MetalScrap",
+   "MaterialType": "Glass_Solid"
+  },
+  "props": {
+   "CustomName": "HK533p",
+   "GroupName": "Imekagi",
+   "Facing": "S",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "PickUpWeight": "250"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.4715,
+    -0.7323,
+    -0.0317
+   ],
+   "max": [
+    0.4022,
+    0.3594,
+    1.99
+   ],
+   "largura": 0.8737,
+   "profundidade": 1.0917,
+   "altura": 2.0217
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_0"
+  ],
+  "altura_base": -0.0317,
+  "montado_na_parede": false,
+  "contorno_0": 0.6485,
+  "cobertura": 0.9942,
+  "sobra": 0.349,
+  "pixels_desenho": 4320,
+  "pixels_geometria": 6598,
+  "espelhado_E_S": 0.5507,
+  "espelhado_W_N": 0.5967,
+  "N_igual_S": 0.4695,
+  "silhueta_espelho_E_S": 0.6091,
+  "silhueta_espelho_W_N": 0.6569,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0346,
+   -0.1864
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_5",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_6",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_7",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_8",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0743,
+     0.1406,
+     0.9249
+    ],
+    "max": [
+     -0.0643,
+     0.3594,
+     1.5182
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.005,
+     -0.7323,
+     0.9249
+    ],
+    "max": [
+     0.005,
+     -0.5135,
+     1.5182
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0743,
+     -0.7323,
+     0.9249
+    ],
+    "max": [
+     -0.0643,
+     -0.5135,
+     1.5182
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_1",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1123,
+     -0.3632,
+     -0.0301
+    ],
+    "max": [
+     -0.0263,
+     0.0392,
+     0.8463
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1123,
+     -0.4121,
+     -0.0301
+    ],
+    "max": [
+     -0.0263,
+     -0.0097,
+     0.8463
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4715,
+     -0.6266,
+     -0.0317
+    ],
+    "max": [
+     0.0275,
+     -0.3116,
+     0.7797
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0967,
+     -0.6266,
+     -0.0317
+    ],
+    "max": [
+     0.4022,
+     -0.3116,
+     0.7797
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0096,
+     -0.6081,
+     -0.0229
+    ],
+    "max": [
+     0.4022,
+     -0.3471,
+     0.8361
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4715,
+     -0.6081,
+     -0.0229
+    ],
+    "max": [
+     -0.0597,
+     -0.3471,
+     0.8361
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1253,
+     -0.4883,
+     0.8125
+    ],
+    "max": [
+     0.0777,
+     -0.2853,
+     1.2689
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.147,
+     -0.4883,
+     0.8125
+    ],
+    "max": [
+     0.056,
+     -0.2853,
+     1.2689
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_7",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4548,
+     -0.0413,
+     1.1239
+    ],
+    "max": [
+     0.0173,
+     0.0413,
+     1.2079
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_7",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0865,
+     -0.4142,
+     1.1239
+    ],
+    "max": [
+     0.3855,
+     -0.3316,
+     1.2079
+    ]
+   },
+   {
+    "forma": "cilindro",
+    "copia_de": "forma_7",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4548,
+     -0.4142,
+     1.1239
+    ],
+    "max": [
+     0.0173,
+     -0.3316,
+     1.2079
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 6840,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.3684
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_0): candidato a não portar",
+   "há desenho de trás real (N): usar tras = N",
+   "geometria passa do tile (0.87 x 1.09 m)",
+   "geometria com 9 peças: objeto complexo"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hk533p_imekagi",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hk533p_imekagi\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hk533p_imekagi\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hk533p_imekagi\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\hk533p_imekagi\\profundidade.png"
+  }
+ }
+}

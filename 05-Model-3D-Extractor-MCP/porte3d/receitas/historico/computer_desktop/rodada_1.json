@@ -1,0 +1,199 @@
+{
+ "versao": 1,
+ "id": "computer_desktop",
+ "sprites": {
+  "S": "appliances_com_01_72",
+  "E": "appliances_com_01_73",
+  "N": "appliances_com_01_74",
+  "W": "appliances_com_01_75"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "liso": [
+   216,
+   215,
+   203
+  ],
+  "tela": [
+   47,
+   47,
+   48
+  ],
+  "escuro": [
+   70,
+   68,
+   62
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "forma": "caixa",
+   "min": [
+    -0.1052,
+    -0.2486,
+    0.8668
+   ],
+   "max": [
+    0.4458,
+    0.237,
+    1.1043
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "pedestal_monitor",
+   "forma": "caixa",
+   "min": [
+    0.04,
+    -0.05,
+    1.1043
+   ],
+   "max": [
+    0.24,
+    0.12,
+    1.1343
+   ],
+   "material": "escuro",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "monitor_corpo",
+   "forma": "caixa",
+   "min": [
+    -0.1052,
+    -0.1132,
+    1.1343
+   ],
+   "max": [
+    0.3872,
+    -0.07,
+    1.5385
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "tela_crt",
+   "forma": "caixa",
+   "min": [
+    -0.02,
+    -0.116,
+    1.2
+   ],
+   "max": [
+    0.3,
+    -0.112,
+    1.48
+   ],
+   "material": "tela",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "monitor_traseira",
+   "forma": "prisma",
+   "eixo": "x",
+   "de": -0.0952,
+   "ate": 0.3722,
+   "perfil": [
+    [
+     -0.07,
+     1.1343
+    ],
+    [
+     -0.07,
+     1.5385
+    ],
+    [
+     0.03,
+     1.5385
+    ],
+    [
+     0.19,
+     1.5
+    ],
+    [
+     0.19,
+     1.1343
+    ]
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "teclado",
+   "forma": "caixa",
+   "min": [
+    -0.1052,
+    -0.48,
+    0.8668
+   ],
+   "max": [
+    0.43,
+    -0.2889,
+    0.9018
+   ],
+   "chanfro": 0.004
+  },
+  {
+   "nome": "teclado_rampa",
+   "forma": "prisma",
+   "eixo": "x",
+   "de": -0.095,
+   "ate": 0.415,
+   "perfil": [
+    [
+     -0.465,
+     0.9018
+    ],
+    [
+     -0.465,
+     0.9118
+    ],
+    [
+     -0.3,
+     0.9637
+    ],
+    [
+     -0.3,
+     0.9018
+    ]
+   ],
+   "chanfro": 0.003
+  },
+  {
+   "nome": "baias_disquete",
+   "forma": "caixa",
+   "min": [
+    0.18,
+    -0.252,
+    0.95
+   ],
+   "max": [
+    0.42,
+    -0.247,
+    1.08
+   ],
+   "material": "escuro",
+   "chanfro": 0.002
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.3
+   },
+   "tela": {
+    "tipo": "liso",
+    "desgaste": 0.1
+   },
+   "escuro": {
+    "tipo": "liso",
+    "desgaste": 0.3
+   }
+  }
+ }
+}

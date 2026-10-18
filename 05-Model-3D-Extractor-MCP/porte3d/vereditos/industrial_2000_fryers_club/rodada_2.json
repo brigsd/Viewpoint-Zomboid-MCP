@@ -1,0 +1,59 @@
+{
+ "versao": 1,
+ "objeto": "industrial_2000_fryers_club",
+ "rodada": 2,
+ "nota_arte": 9,
+ "nota_realista": 9,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "espaldar",
+   "situacao": "ok"
+  },
+  {
+   "nome": "painel_inclinado",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "barra_suporte_cestas",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_frontal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "pe_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "valvula_dreno",
+   "situacao": "ok"
+  },
+  {
+   "nome": "botao_seletor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "corpo",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "lateral do gabinete, canto inferior próximo ao pé",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180: artefato escuro de projeção na quina inferior da face lateral",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo tridimensional de altíssima qualidade, com IoU de 93,0%, todas as 9 peças sólidas e bem proporcionadas, pronto para o jogo."
+}

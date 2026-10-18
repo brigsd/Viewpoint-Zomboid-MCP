@@ -1,0 +1,81 @@
+{
+ "versao": 1,
+ "objeto": "hk533p_imekagi",
+ "rodada": 2,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "perna_tripe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cabeca_tripe",
+   "situacao": "ok"
+  },
+  {
+   "nome": "manopla_controle",
+   "situacao": "ok"
+  },
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "parassol_lente",
+   "situacao": "ok"
+  },
+  {
+   "nome": "suporte_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "monitor_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tela_visor",
+   "situacao": "ok"
+  },
+  {
+   "nome": "aba_visor",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "perna_tripe",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 180,
+   "onde": "perna central frontal, face voltada para a câmera",
+   "sentido": "",
+   "evidencia": "giro_arte.png 180 graus: faixa preta contínua na face da perna frontal vinda do fundo vazio do sprite traseiro",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "faces lateral e posterior do corpo da câmera",
+   "sentido": "",
+   "evidencia": "giro_arte.png 270 graus: textura bege esticada diagonalmente em borrão na face lateral/traseira",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cabeca_tripe",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face frontal da coluna de montagem em 180°",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 graus: coluna do tripé escurecida com manchas pretas por projeção indevida do fundo do sprite",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Geometria e alinhamento em 0° excelentes, mas a projeção em 180° e ângulos intermediários gerou faixas pretas e estiramento de textura."
+}

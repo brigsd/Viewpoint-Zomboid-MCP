@@ -1,0 +1,301 @@
+{
+ "versao": 1,
+ "objeto": "computer_desktop",
+ "sprite": "appliances_com_01_72",
+ "decisao": "portar",
+ "motivo": "computador de mesa clássico dos anos 90 com volume claro em 3 blocos (gabinete, monitor CRT e teclado) e excelente cobertura geométrica",
+ "o_que_e": "computador de mesa retrô bege dos anos 90 sobre móvel, composto por gabinete horizontal, monitor CRT de tubo apoiado em cima e teclado avulso inclinado à frente",
+ "pecas": [
+  {
+   "nome": "gabinete",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "gabinete horizontal bege ~55x49 cm de base e ~24 cm de altura (forma_0 do jogo), apoiado na mesa a ~87 cm do chão, servindo de suporte para o monitor"
+  },
+  {
+   "nome": "monitor_corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "bloco principal do monitor CRT ~49x31 cm e ~43 cm de altura (forma_1 do jogo), apoiado sobre o gabinete a z = 1,10 m"
+  },
+  {
+   "nome": "teclado",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "corpo do teclado ~55x21 cm e ~10 cm de altura (forma_2 do jogo), posicionado à frente do gabinete a z = 87 cm"
+  },
+  {
+   "nome": "tela_crt",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "painel escuro da tela CRT de ~32x26 cm, levemente afundado na moldura frontal do monitor, opaco"
+  },
+  {
+   "nome": "pedestal_monitor",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/pedestal curto e recuado entre o gabinete e o monitor, ~4 cm de altura"
+  },
+  {
+   "nome": "monitor_traseira",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "carcaça traseira do monitor CRT afinando em direção ao fundo para o tubo, com chanfros superiores/laterais e grelhas de ventilação"
+  },
+  {
+   "nome": "teclado_rampa",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "rampa inclinada das teclas sobre o corpo do teclado, descendo suavemente em direção à borda frontal"
+  },
+  {
+   "nome": "baias_disquete",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "rebaixo das baias de leitura de disquete e botão de força no lado direito do painel frontal do gabinete"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "objeto fica sobre uma mesa/móvel (altura base a ~87 cm do chão): o modelo 3D não deve criar pernas ou mesa abaixo de 87 cm",
+  "a caixa do monitor no jogo (forma_1) é um paralelepípedo reto de 49x31x43 cm, mas o desenho N mostra a traseira afinando em tronco para o tubo CRT (sobra de ~10% na cobertura)",
+  "o bloco do teclado no jogo (forma_2) é uma caixa plana de 10 cm; no desenho o teclado tem perfil em cunha/rampa inclinada",
+  "as sugestões de peças faltando (cópias espelhadas do teclado e do monitor) são falsos alarmes do script de simetria: é um único computador",
+  "E é espelho de S e W é espelho de N (direcoes_espelhadas = true); bastam os desenhos S e N para texturizar",
+  "a tela CRT possui reflexo de vidro no sprite, mas deve ser tratada como painel escuro opaco (adesivo), sem transparência real"
+ ],
+ "medidas": {
+  "sprite": "appliances_com_01_72",
+  "sprites": {
+   "S": "appliances_com_01_72",
+   "E": "appliances_com_01_73",
+   "N": "appliances_com_01_74",
+   "W": "appliances_com_01_75"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 3,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 3,
+  "tipos": {
+   "caixa": 3,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.1052,
+     -0.2486,
+     0.8668
+    ],
+    "max": [
+     0.4458,
+     0.237,
+     1.1043
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.1052,
+     -0.1132,
+     1.1044
+    ],
+    "max": [
+     0.3872,
+     0.1996,
+     1.5385
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.1052,
+     -0.4959,
+     0.8668
+    ],
+    "max": [
+     0.4458,
+     -0.2889,
+     0.9637
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Electric",
+   "Material2": "AluminumScrap",
+   "Material3": "Plastic",
+   "MaterialType": "Plastic"
+  },
+  "props": {
+   "CustomName": "Computer",
+   "GroupName": "Desktop",
+   "Facing": "S",
+   "Surface": "34",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "ItemHeight": "26",
+   "Translucent": "true"
+  },
+  "categoria": "eletrodomesticos",
+  "caixa": {
+   "min": [
+    -0.1052,
+    -0.4959,
+    0.8668
+   ],
+   "max": [
+    0.4458,
+    0.237,
+    1.5385
+   ],
+   "largura": 0.551,
+   "profundidade": 0.7329,
+   "altura": 0.6717
+  },
+  "menor_medida_peca": 0.0969,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.8668,
+  "montado_na_parede": false,
+  "contorno_0": 0.8922,
+  "cobertura": 0.9919,
+  "sobra": 0.1012,
+  "pixels_desenho": 4324,
+  "pixels_geometria": 4772,
+  "espelhado_E_S": 0.8109,
+  "espelhado_W_N": 0.8224,
+  "N_igual_S": 0.4621,
+  "silhueta_espelho_E_S": 0.9238,
+  "silhueta_espelho_W_N": 0.9087,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.1703,
+   -0.1295
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1052,
+     -0.4585,
+     1.1044
+    ],
+    "max": [
+     0.3872,
+     -0.1457,
+     1.5385
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.0466,
+     -0.4585,
+     1.1044
+    ],
+    "max": [
+     0.4458,
+     -0.1457,
+     1.5385
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.1052,
+     0.03,
+     0.8668
+    ],
+    "max": [
+     0.4458,
+     0.237,
+     0.9637
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4449,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0281
+  },
+  "sugestao": [
+   "a geometria começa a 87 cm do chão: objeto suspenso ou sobre outro móvel",
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\computer_desktop",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\computer_desktop\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\computer_desktop\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\computer_desktop\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\computer_desktop\\profundidade.png"
+  }
+ }
+}

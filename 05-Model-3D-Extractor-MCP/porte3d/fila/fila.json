@@ -1634,7 +1634,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Computer",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "computer",
    "forma_de": null,
    "group_name": "Desktop",
@@ -1644,14 +1644,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-17T23:16:55-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-17T23:19:48-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-17T23:34:53-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 5, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-17T23:40:43-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T00:06:47-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T00:06:47-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 9, realista 9",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T00:10:45-03:00"
     }
    ],
    "id": "computer_desktop",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 5,
+     "realista": 7,
+     "rodada": 1
+    },
+    {
+     "arte": 9,
+     "realista": 9,
+     "rodada": 2
+    }
+   ],
    "prioridade": 401,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "appliances_com_01_73",
     "N": "appliances_com_01_74",
@@ -3075,7 +3128,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Dish",
-   "estado": "fila",
+   "estado": "nao_portar",
    "familia": "dish",
    "forma_de": null,
    "group_name": "Satellite",
@@ -3085,11 +3138,23 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-17T23:17:02-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "antena parabólica presa à parede (MoveType WallObject), estrutura fina e vazada (prato côncavo e tripé de hastes finas) e geometria do jogo desproporcional (86% fora da arte); melhor ficar 2D",
+     "para": "nao_portar",
+     "quando": "2026-10-17T23:20:21-03:00"
     }
    ],
    "id": "dish_satellite",
    "material": "metal",
-   "motivo": null,
+   "motivo": "antena parabólica presa à parede (MoveType WallObject), estrutura fina e vazada (prato côncavo e tripé de hastes finas) e geometria do jogo desproporcional (86% fora da arte); melhor ficar 2D",
    "notas": [],
    "prioridade": 401,
    "rodada": 0,
@@ -4086,7 +4151,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "HK533p",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "hk533p",
    "forma_de": null,
    "group_name": "Imekagi",
@@ -4096,14 +4161,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-17T23:17:02-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-17T23:21:26-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-17T23:41:38-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 5, realista 5",
+     "para": "retrabalho",
+     "quando": "2026-10-17T23:47:10-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T00:28:55-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T00:28:55-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 6, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-18T00:33:23-03:00"
     }
    ],
    "id": "hk533p_imekagi",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 5,
+     "realista": 5,
+     "rodada": 1
+    },
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 2
+    }
+   ],
    "prioridade": 401,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "appliances_com_01_45",
     "N": "appliances_com_01_47",
@@ -4176,7 +4294,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Industrial 2000",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "industrial_2000",
    "forma_de": null,
    "group_name": "Fryers Club",
@@ -4186,14 +4304,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-17T23:17:03-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-17T23:20:21-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-17T23:40:57-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 5, realista 5",
+     "para": "retrabalho",
+     "quando": "2026-10-17T23:47:10-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T00:19:38-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T00:19:38-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 9, realista 9",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T00:28:13-03:00"
     }
    ],
    "id": "industrial_2000_fryers_club",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 5,
+     "realista": 5,
+     "rodada": 1
+    },
+    {
+     "arte": 9,
+     "realista": 9,
+     "rodada": 2
+    }
+   ],
    "prioridade": 401,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "appliances_cooking_01_52",
     "N": "appliances_cooking_01_55",
@@ -4206,7 +4377,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Industrial",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "industrial",
    "forma_de": null,
    "group_name": "Bake-O-Matic",
@@ -4216,14 +4387,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-17T23:20:26-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-17T23:25:44-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-17T23:42:33-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 6, realista 5",
+     "para": "retrabalho",
+     "quando": "2026-10-17T23:50:10-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T00:43:56-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T00:43:56-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 5, realista 5",
+     "para": "retrabalho",
+     "quando": "2026-10-18T00:52:07-03:00"
     }
    ],
    "id": "industrial_bake_o_matic",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 6,
+     "realista": 5,
+     "rodada": 1
+    },
+    {
+     "arte": 5,
+     "realista": 5,
+     "rodada": 2
+    }
+   ],
    "prioridade": 401,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "appliances_cooking_01_64",
     "N": "appliances_cooking_01_67",

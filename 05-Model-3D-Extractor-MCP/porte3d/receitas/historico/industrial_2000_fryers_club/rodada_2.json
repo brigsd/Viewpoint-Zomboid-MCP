@@ -1,0 +1,217 @@
+{
+ "versao": 1,
+ "id": "industrial_2000_fryers_club",
+ "sprites": {
+  "S": "appliances_cooking_01_53",
+  "E": "appliances_cooking_01_52",
+  "N": "appliances_cooking_01_55",
+  "W": "appliances_cooking_01_54"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   168,
+   168,
+   170
+  ],
+  "metal_escuro": [
+   96,
+   96,
+   102
+  ],
+  "cromado": [
+   188,
+   188,
+   190
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "min": [
+    -0.485,
+    -0.08,
+    0.28
+   ],
+   "max": [
+    0.485,
+    0.4,
+    0.91
+   ],
+   "chanfro": 0.005,
+   "material": "metal"
+  },
+  {
+   "nome": "espaldar",
+   "forma": "caixa",
+   "min": [
+    -0.485,
+    0.4,
+    0.0
+   ],
+   "max": [
+    0.485,
+    0.45,
+    1.16
+   ],
+   "chanfro": 0.005,
+   "material": "metal"
+  },
+  {
+   "nome": "painel_inclinado",
+   "forma": "prisma",
+   "eixo": "x",
+   "de": -0.485,
+   "ate": 0.485,
+   "perfil": [
+    [
+     -0.25,
+     0.28
+    ],
+    [
+     -0.08,
+     0.28
+    ],
+    [
+     -0.08,
+     0.91
+    ],
+    [
+     -0.25,
+     0.78
+    ]
+   ],
+   "chanfro": 0.004,
+   "material": "metal"
+  },
+  {
+   "nome": "cuba",
+   "forma": "caixa",
+   "min": [
+    0.05,
+    -0.06,
+    0.66
+   ],
+   "max": [
+    0.44,
+    0.36,
+    0.912
+   ],
+   "chanfro": 0.004,
+   "material": "metal_escuro",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "barra_suporte_cestas",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    0.38,
+    0.96
+   ],
+   "max": [
+    0.45,
+    0.4,
+    0.98
+   ],
+   "chanfro": 0.003,
+   "material": "cromado"
+  },
+  {
+   "nome": "pe_frontal",
+   "forma": "caixa",
+   "min": [
+    0.425,
+    -0.25,
+    0.0
+   ],
+   "max": [
+    0.485,
+    -0.19,
+    0.28
+   ],
+   "chanfro": 0.003,
+   "material": "metal",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "pe_traseiro",
+   "forma": "caixa",
+   "min": [
+    0.425,
+    0.34,
+    0.0
+   ],
+   "max": [
+    0.485,
+    0.4,
+    0.28
+   ],
+   "chanfro": 0.003,
+   "material": "metal",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "valvula_dreno",
+   "forma": "cilindro",
+   "centro": [
+    0.22,
+    -0.29,
+    0.415
+   ],
+   "eixo": "y",
+   "raio": 0.025,
+   "altura": 0.04,
+   "segmentos": 14,
+   "material": "cromado",
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "botao_seletor",
+   "forma": "cilindro",
+   "centro": [
+    -0.39,
+    -0.182,
+    0.832
+   ],
+   "rot": [
+    37.4,
+    0.0,
+    0.0
+   ],
+   "raio": 0.03,
+   "altura": 0.02,
+   "segmentos": 16,
+   "material": "metal_escuro"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.35
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.4
+   },
+   "cromado": {
+    "tipo": "metal",
+    "desgaste": 0.2
+   }
+  }
+ }
+}
