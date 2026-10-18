@@ -1,0 +1,5 @@
+name=PZInspecao
+id=PZInspecao
+description=Ferramenta de inspecao para dev: identifica objetos do mundo (sprite, coordenadas, indice e ID proprio) e copia para o log. Ativa so com tecla F6 no cliente.
+modversion=0.1
+versionMin=42.21
