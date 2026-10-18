@@ -1,0 +1,99 @@
+{
+ "versao": 1,
+ "objeto": "sink_chrome",
+ "rodada": 3,
+ "nota_arte": 4,
+ "nota_realista": 5,
+ "pecas": [
+  {
+   "nome": "borda",
+   "situacao": "ok"
+  },
+  {
+   "nome": "parede_cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "fundo_cuba",
+   "situacao": "ok"
+  },
+  {
+   "nome": "divisoria",
+   "situacao": "ok"
+  },
+  {
+   "nome": "base_torneira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "haste_torneira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bico_torneira",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "parede_cuba",
+   "tipo": "chapado",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "interior das cubas, paredes e fundo",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: interior aparece como plano cinza sem profundidade ou sombreamento das paredes",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "base_torneira",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "borda de trás, posição da torneira",
+   "sentido": "",
+   "evidencia": "comparacao.png 180: torneira aparece na borda do fundo em vez da borda frontal próxima como em jogo tras",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "haste_torneira",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "haste e arco do bico",
+   "sentido": "baixo",
+   "evidencia": "sobreposicao.png 000: torneira do modelo é mais baixa que a silhueta verde do jogo original",
+   "gravidade": "media"
+  },
+  {
+   "parte": "fundo_cuba",
+   "tipo": "cor",
+   "nivel": "arte",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "fundo e ralos das duas cubas",
+   "sentido": "",
+   "evidencia": "sobreposicao.png 000: diferença de cor vermelha intensa (48.3) em todo o interior das cubas",
+   "gravidade": "media"
+  },
+  {
+   "parte": "borda",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "faces externas e bordas laterais do tampo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 045: estiramento e pixelização diagonal nas faces laterais da borda",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Geometria realista bem construída e com material crível, mas o nível arte ficou com o interior chapado e ambos falham na traseira invertida em relação a jogo tras."
+}

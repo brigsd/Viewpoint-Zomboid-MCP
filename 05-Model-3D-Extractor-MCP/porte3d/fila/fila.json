@@ -5496,7 +5496,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Sink",
-   "estado": "retrabalho",
+   "estado": "reprovado",
    "familia": "sink",
    "forma_de": null,
    "group_name": "Chrome",
@@ -5548,11 +5548,29 @@
      "nota": "rodada 2: arte 6, realista 7",
      "para": "retrabalho",
      "quando": "2026-10-17T03:53:37-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-17T20:56:20-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-17T20:56:20-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "parede_cuba: chapado (arte, comparacao) — interior das cubas, paredes e fundo",
+     "para": "reprovado",
+     "quando": "2026-10-17T21:01:33-03:00"
     }
    ],
    "id": "sink_chrome",
    "material": "metal",
-   "motivo": null,
+   "motivo": "parede_cuba: chapado (arte, comparacao) — interior das cubas, paredes e fundo",
    "notas": [
     {
      "arte": 4,
@@ -5563,10 +5581,15 @@
      "arte": 6,
      "realista": 7,
      "rodada": 2
+    },
+    {
+     "arte": 4,
+     "realista": 5,
+     "rodada": 3
     }
    ],
    "prioridade": 406,
-   "rodada": 2,
+   "rodada": 3,
    "sprites": {
     "E": "fixtures_sinks_01_8",
     "N": "fixtures_sinks_01_11",
