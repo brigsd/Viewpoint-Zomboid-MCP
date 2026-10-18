@@ -1,0 +1,175 @@
+{
+ "versao": 1,
+ "objeto": "counter_dark_bar",
+ "sprite": "location_restaurant_bar_01_21",
+ "decisao": "portar",
+ "motivo": "balcão reto de bar em madeira escura, geometria de caixa sólida simples com portas frontais, tampo e rodapé bem definidos",
+ "o_que_e": "balcão de bar reto em madeira escura com tampo superior saliente, rodapé escalonado na base e duas portas frontais com puxadores verticais metálicos",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "gabinete principal do balcão em madeira escura, caixa de ~96x62 cm e ~100 cm de altura útil (z de ~10 a 110 cm), derivado da forma_0 do jogo"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo superior de madeira escura, caixa de ~100x65 cm e ~10 cm de espessura no topo (z de ~110 a 120 cm), com beiral ligeiramente saliente sobre o gabinete"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base e rodapé moldurado em madeira escura, caixa de ~100x65 cm e ~10 cm de altura na base (z de 0 a 10 cm), contornando o apoio no piso"
+  },
+  {
+   "nome": "portas",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "liso",
+   "descricao": "duas portas frontais retangulares de madeira escura com moldura em relevo, de ~44x85 cm e ~2-3 cm de espessura na face frontal"
+  },
+  {
+   "nome": "puxadores",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "liso",
+   "descricao": "par de puxadores verticais metálicos estreitos de perfil retangular de ~3x15 cm, fixados verticalmente junto ao centro das portas"
+  }
+ ],
+ "simetria": "espelho_x",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco único do jogo (forma_0) engloba toda a altura de 120 cm: o modelador deve desacoplar o tampo superior (~10 cm) com beiral saliente e o rodapé inferior (~10 cm) do corpo principal para manter a volumetria correta sem distorcer o adesivo",
+  "as portas e puxadores frontais estão contidos na face frontal do sprite (S e W): ao projetar a textura por adesivo, deve-se cuidar para que os puxadores e molduras não sangrem para o tampo ou para as faces laterais",
+  "a traseira (N e E) é fechada e lisa em madeira escura, enquanto a frente (S e W) possui portas e puxadores: a transição entre as faces com e sem portas nas diferentes vistas deve ser respeitada usando o sprite de N para a face posterior",
+  "os puxadores metálicos são peças finas e em relevo; ao usar projeção por adesivo, evitar sobreposição de vértices ou artefatos de projeção oblíqua nas faces superiores dos puxadores"
+ ],
+ "medidas": {
+  "sprite": "location_restaurant_bar_01_21",
+  "sprites": {
+   "S": "location_restaurant_bar_01_21",
+   "E": "location_restaurant_bar_01_23",
+   "N": "location_restaurant_bar_01_17",
+   "W": "location_restaurant_bar_01_19"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5,
+     -0.2,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.45,
+     1.2
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Counter",
+   "GroupName": "Dark Bar",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "counter",
+   "Surface": "46",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Surface": "47"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.5,
+    -0.2,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.45,
+    1.2
+   ],
+   "largura": 1.0,
+   "profundidade": 0.65,
+   "altura": 1.2
+  },
+  "menor_medida_peca": 0.65,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.927,
+  "cobertura": 1.0,
+  "sobra": 0.073,
+  "pixels_desenho": 11767,
+  "pixels_geometria": 12694,
+  "espelhado_E_S": 0.576,
+  "espelhado_W_N": 0.4872,
+  "N_igual_S": 0.5469,
+  "silhueta_espelho_E_S": 0.5955,
+  "silhueta_espelho_W_N": 0.5057,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   0.125
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 12652,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0699
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_dark_bar",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_dark_bar\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_dark_bar\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_dark_bar\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_dark_bar\\profundidade.png"
+  }
+ }
+}

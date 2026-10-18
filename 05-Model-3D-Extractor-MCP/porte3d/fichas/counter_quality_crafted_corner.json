@@ -1,0 +1,211 @@
+{
+ "versao": 1,
+ "objeto": "counter_quality_crafted_corner",
+ "sprite": "carpentry_02_20",
+ "decisao": "portar",
+ "motivo": "módulo de canto em L de balcão de marcenaria artesanal em madeira, geometria sólida bem definida pelos dois blocos ortogonais do jogo",
+ "o_que_e": "balcão de canto em L de madeira rústica artesanal, com corpo em tábuas verticais, tampo superior espesso de tábuas pregadas com borda saliente e base com rodapé de sustentação",
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "braço principal do corpo em L ao longo do eixo X, bloco de ~100x58 cm e ~75 cm de altura útil (z de ~8 a 83.5 cm, derivado de forma_0 do jogo), com laterais revestidas em tábuas verticais de madeira rústica"
+  },
+  {
+   "nome": "corpo_curto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "braço perpendicular do corpo em L ao longo do eixo Y, bloco de ~61x42 cm e ~75 cm de altura útil (z de ~8 a 83.5 cm, derivado de forma_1 do jogo), adjacente ao braço principal completando a quina em L"
+  },
+  {
+   "nome": "tampo_longo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo de madeira do braço principal, caixa de ~100x58 cm e ~5 cm de espessura no topo (z de ~83.5 a 88.5 cm), feito de tábuas de madeira pregadas com leve saliência nas bordas"
+  },
+  {
+   "nome": "tampo_curto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "tampo de madeira do braço perpendicular, caixa de ~61x42 cm e ~5 cm de espessura no topo (z de ~83.5 a 88.5 cm), completando o tampo contínuo em L com tábuas de madeira pregadas"
+  },
+  {
+   "nome": "rodape_longo",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/rodapé de sustentação do braço principal, caixa de ~100x58 cm e ~8 cm de altura na base (z de 0 a 8 cm), formando a base do balcão em L"
+  },
+  {
+   "nome": "rodape_curto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "base/rodapé de sustentação do braço perpendicular, caixa de ~61x42 cm e ~8 cm de altura na base (z de 0 a 8 cm), contornando a base do móvel em L"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "os dois blocos do jogo (forma_0 e forma_1) cobrem toda a altura (88.5 cm): é necessário desacoplar o tampo superior (~5 cm) e o rodapé da base (~8 cm) dos corpos principais para manter o relevo estrutural sem distorcer o adesivo",
+  "junção dos dois braços do L: o encontro em 90 graus entre os blocos longo e curto (corpo, tampo e rodapé) precisa de encaixe e alinhamento exatos para evitar sobreposições conflitantes ou frestas nas quinas internas",
+  "canto interno vs externo nas direções: em S vê-se o canto reentrante (interno), enquanto em N vê-se o canto saliente (externo); a geometria em L do modelo deve coincidir com a silhueta em ambas as visões",
+  "o sprite de N possui recorte em L real, mas no jogo alguns blocos simplificam a silhueta: a malha 3D deve preservar estritamente a forma em L em todos os ângulos",
+  "textura de tábuas pregadas no tampo e ripado vertical no corpo: o mapeamento UV via adesivo deve projetar corretamente as tábuas e pregos sem estiramento nas laterais e topos"
+ ],
+ "medidas": {
+  "sprite": "carpentry_02_20",
+  "sprites": {
+   "S": "carpentry_02_20",
+   "E": "carpentry_02_18",
+   "N": "carpentry_02_16",
+   "W": "carpentry_02_22"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 2,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 2,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.479,
+     -0.131,
+     0.0
+    ],
+    "max": [
+     0.521,
+     0.449,
+     0.885
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4789,
+     -0.5239,
+     0.0
+    ],
+    "max": [
+     0.1315,
+     0.4761,
+     0.885
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails"
+  },
+  "props": {
+   "CustomName": "Counter",
+   "GroupName": "Quality Crafted Corner",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "counter",
+   "Surface": "34",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "50",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "OpaquePixelsOnly": "true",
+   "Surface": "36"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.479,
+    -0.5239,
+    0.0
+   ],
+   "max": [
+    0.521,
+    0.4761,
+    0.885
+   ],
+   "largura": 1.0,
+   "profundidade": 1.0,
+   "altura": 0.885
+  },
+  "menor_medida_peca": 0.58,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.9307,
+  "cobertura": 1.0,
+  "sobra": 0.0693,
+  "pixels_desenho": 11459,
+  "pixels_geometria": 12312,
+  "espelhado_E_S": 0.7252,
+  "espelhado_W_N": 0.7135,
+  "N_igual_S": 0.8344,
+  "silhueta_espelho_E_S": 0.7758,
+  "silhueta_espelho_W_N": 0.7715,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.021,
+   -0.0239
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 11460,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0001
+  },
+  "sugestao": [
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted_corner",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted_corner\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted_corner\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted_corner\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted_corner\\profundidade.png"
+  }
+ }
+}

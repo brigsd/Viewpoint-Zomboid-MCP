@@ -1,0 +1,57 @@
+{
+ "versao": 1,
+ "objeto": "counter_quality_crafted",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "corpo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "tampo",
+   "tipo": "emenda",
+   "nivel": "arte",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "face superior do tampo, metade direita",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 graus: corte diagonal com falha de textura na metade direita do tampo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "textura_deslocada",
+   "nivel": "arte",
+   "vista": "giro",
+   "angulo": 225,
+   "onde": "quina vertical esquerda do corpo",
+   "sentido": "",
+   "evidencia": "giro_arte.png 225 graus: faixa vertical marrom lisa sem textura de tábuas na lateral",
+   "gravidade": "media"
+  },
+  {
+   "parte": "corpo",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "bordas laterais esquerda e direita",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png 0 graus: faixas verdes nas extremidades laterais indicando corpo ligeiramente mais estreito que o sprite",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Geometria e proporções sólidas e alinhadas em 0°, mas mapeamento UV apresenta falha no topo a 180° e faixa sem textura a 225°."
+}

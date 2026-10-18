@@ -1,0 +1,114 @@
+{
+ "versao": 1,
+ "id": "counter_quality_crafted_corner",
+ "sprites": {
+  "S": "carpentry_02_20",
+  "E": "carpentry_02_18",
+  "N": "carpentry_02_16",
+  "W": "carpentry_02_22"
+ },
+ "tras": "N",
+ "material": "liso",
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.131,
+    0.08
+   ],
+   "max": [
+    0.521,
+    0.449,
+    0.835
+   ]
+  },
+  {
+   "nome": "corpo_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.5239,
+    0.08
+   ],
+   "max": [
+    0.1315,
+    -0.131,
+    0.835
+   ]
+  },
+  {
+   "nome": "tampo_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.131,
+    0.835
+   ],
+   "max": [
+    0.521,
+    0.449,
+    0.885
+   ]
+  },
+  {
+   "nome": "tampo_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.5239,
+    0.835
+   ],
+   "max": [
+    0.1315,
+    -0.131,
+    0.885
+   ]
+  },
+  {
+   "nome": "rodape_longo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.131,
+    0.0
+   ],
+   "max": [
+    0.521,
+    0.449,
+    0.08
+   ]
+  },
+  {
+   "nome": "rodape_curto",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.479,
+    -0.5239,
+    0.0
+   ],
+   "max": [
+    0.1315,
+    -0.131,
+    0.08
+   ]
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

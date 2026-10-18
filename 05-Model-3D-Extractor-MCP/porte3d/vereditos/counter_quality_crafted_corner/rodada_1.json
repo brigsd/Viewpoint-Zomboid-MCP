@@ -1,0 +1,35 @@
+{
+ "versao": 1,
+ "objeto": "counter_quality_crafted_corner",
+ "rodada": 1,
+ "nota_arte": 10,
+ "nota_realista": 10,
+ "pecas": [
+  {
+   "nome": "corpo_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "corpo_curto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampo_curto",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape_longo",
+   "situacao": "ok"
+  },
+  {
+   "nome": "rodape_curto",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [],
+ "observacao": "Modelo excelente, reconstituição perfeita em L com todas as 6 peças sólidas e textura perfeitamente ajustada."
+}

@@ -1,0 +1,167 @@
+{
+ "versao": 1,
+ "objeto": "counter_quality_crafted",
+ "sprite": "carpentry_02_21",
+ "decisao": "portar",
+ "motivo": "balcão maciço de carpintaria em madeira com ripas verticais e tampo de tábuas pregadas; geometria limpa e sólida bem resolvida por caixas",
+ "o_que_e": "balcão reto de carpintaria rústica de madeira trabalhada, com tampo superior espesso de tábuas pregadas com borda saliente, corpo fechado por ripas verticais e rodapé rebaixado na base",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "gabinete principal do balcão em madeira, caixa de ~96x56 cm e ~75.5 cm de altura útil (z de ~8 a 83.5 cm, derivado de forma_0 do jogo ajustada na profundidade), fechada com tábuas e ripas verticais"
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "tampo superior horizontal espesso de tábuas de madeira pregadas, caixa de ~100x58 cm e ~5 cm de espessura no topo (z de ~83.5 a 88.5 cm), com borda saliente de ~2 cm sobre o corpo"
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "base/rodapé contínuo de madeira escura rente ao chão, caixa de ~96x54 cm e ~8 cm de altura (z de 0 a 8 cm), ligeiramente recuado sob o corpo formando a base do móvel"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "o bloco do jogo em S tem 100x100 cm (cobrindo o tile inteiro), mas o balcão real tem profundidade de ~58 cm (evidenciado na sobra de 29% e na caixa de N, que mede 100x58 cm): o corpo deve ser ajustado para ~100x58 cm para evitar profundidade excessiva e distorção na projeção do adesivo",
+  "o bloco único do jogo (forma_0) engloba toda a altura de 88.5 cm: é necessário desacoplar o tampo superior (~5 cm) com sua borda saliente e o rodapé rebaixado da base (~8 cm) do corpo principal para garantir relevo e volumetria sem distorcer o adesivo",
+  "alinhamento do tampo: o topo é feito de tábuas longitudinais com cabeças de prego visíveis; as arestas do tampo 3D devem casar precisamente com a beirada do desenho para evitar sangramento da textura superior nas laterais verticais",
+  "traseira com desenho próprio (N): a vista N é um sprite distinto (carpentry_02_17) com dimensões de 100x58 cm; usar tras = N para mapear a face posterior corretamente",
+  "rodapé escuro na base: a base possui um rodapé recuado e sombreado; manter a geometria recuada para produzir uma oclusão natural junto ao piso"
+ ],
+ "medidas": {
+  "sprite": "carpentry_02_21",
+  "sprites": {
+   "S": "carpentry_02_21",
+   "E": "carpentry_02_19",
+   "N": "carpentry_02_17",
+   "W": "carpentry_02_23"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 1,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 1,
+  "tipos": {
+   "caixa": 1,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.5151,
+     -0.5273,
+     0.0
+    ],
+    "max": [
+     0.4849,
+     0.4727,
+     0.885
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails"
+  },
+  "props": {
+   "CustomName": "Counter",
+   "GroupName": "Quality Crafted",
+   "Facing": "S",
+   "IsTable": "",
+   "container": "counter",
+   "Surface": "34",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "ContainerCapacity": "50",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "OpaquePixelsOnly": "true",
+   "Surface": "36"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.5151,
+    -0.5273,
+    0.0
+   ],
+   "max": [
+    0.4849,
+    0.4727,
+    0.885
+   ],
+   "largura": 1.0,
+   "profundidade": 1.0,
+   "altura": 0.885
+  },
+  "menor_medida_peca": 0.885,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.71,
+  "cobertura": 1.0,
+  "sobra": 0.29,
+  "pixels_desenho": 9168,
+  "pixels_geometria": 12912,
+  "espelhado_E_S": 0.8784,
+  "espelhado_W_N": 0.8777,
+  "N_igual_S": 0.4797,
+  "silhueta_espelho_E_S": 0.9499,
+  "silhueta_espelho_W_N": 0.9499,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0151,
+   -0.0273
+  ],
+  "pecas_sem_par": [],
+  "pecas_provavelmente_faltando": [],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9171,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0003
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\counter_quality_crafted\\profundidade.png"
+  }
+ }
+}

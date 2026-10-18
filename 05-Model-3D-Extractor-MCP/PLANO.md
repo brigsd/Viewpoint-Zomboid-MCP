@@ -5,11 +5,11 @@
 ## Progresso Geral
 
 - **Total de Objetos:** 583 (539 bases + 44 variantes)
-- **Aprovados / Prontos:** 28 objetos
-- **Em Andamento (Retrabalho / Modelagem):** 0 objetos
+- **Aprovados / Prontos:** 31 objetos
+- **Em Andamento (Retrabalho / Modelagem):** 1 objetos
 - **Não Portados / Reprovados:** 9 objetos
-- **Pendentes na Fila:** 546 objetos
-- **Progresso Resolvido:** `▓░░░░░░░░░░░░░░░░░░░   6%` (37/583)
+- **Pendentes na Fila:** 542 objetos
+- **Progresso Resolvido:** `▓░░░░░░░░░░░░░░░░░░░   6%` (40/583)
 
 ### Legenda de Marcadores
 - `[x]` **Aprovado / Aguardando Aprovação** (modelo 3D validado pelo crítico com notas 8+)
@@ -62,13 +62,17 @@
 - [x] **`washing_machine_white`** — **publicado/aprovado** (r2 · 8/8) `[eletrodomesticos | prio 401]`
 - [x] **`x_press_coffee`** — **aprovado** (r2 · 9/8) `[eletrodomesticos | prio 401]`
 
-## Lote 2 — Cozinha/eletrodomesticos (prio 417..401)  `▓▓▓▓▓░░░░░░░  47%`  (8/17)
+## Lote 2 — Cozinha/eletrodomesticos (prio 417..401)  `▓▓▓▓▓▓▓░░░░░  64%`  (11/17)
 
 - [x] **`counter_bar`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
 - [x] **`counter_bar_corner`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
 - [-] **`counter_corner_a`** — *reprovado* (6/7) — vidro_traseiro: cor (arte, sobreposicao) — painel inteiro en… `[cozinha | prio 417]`
   - [ ] *↳ variante:* `counter_corner_b` — na fila
   - [ ] *↳ variante:* `counter_middle` — na fila
+- [x] **`counter_dark_bar`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
+- [x] **`counter_dark_bar_corner`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
+- [~] **`counter_quality_crafted`** — `retrabalho` (r1 (6/6)) `[cozinha | prio 417]`
+- [x] **`counter_quality_crafted_corner`** — **aprovado** (r1 · 10/10) `[cozinha | prio 417]`
 - [x] **`computer_desktop`** — **aprovado** (r2 · 9/9) `[eletrodomesticos | prio 401]`
 - [-] **`dish_satellite`** — *nao_portar* — antena parabólica presa à parede (MoveType WallObject), estr… `[eletrodomesticos | prio 401]`
 - [-] **`hk533p_imekagi`** — *reprovado* (6/6) — cabeca_tripe: cor (arte, comparacao) — bloco central da cabe… `[eletrodomesticos | prio 401]`
@@ -77,18 +81,14 @@
 - [ ] **`counter_cantina_food`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_cantina_food_location_restaurant_generic_01`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_cantina_food_location_restaurant_generic_01_22`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_cantina_food_location_restaurant_generic_01_23`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_dark_bar`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_dark_bar_corner`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_glass_theater`** — na fila `[cozinha | prio 417]`
 
 ## Lote 3 — Cozinha/eletrodomesticos (prio 417..415)  `░░░░░░░░░░░░   0%`  (0/15)
 
+- [ ] **`counter_cantina_food_location_restaurant_generic_01_23`** — na fila `[cozinha | prio 417]`
+- [ ] **`counter_glass_theater`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_low_motel`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_low_motel_location_hospitality_sunstarmotel_02`** — na fila `[cozinha | prio 417]`
 - [ ] **`counter_mobile_tool`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_quality_crafted`** — na fila `[cozinha | prio 417]`
-- [ ] **`counter_quality_crafted_corner`** — na fila `[cozinha | prio 417]`
 - [ ] **`appliances_com_01_142`** — na fila `[eletrodomesticos | prio 415]`
 - [ ] **`appliances_com_01_143`** — na fila `[eletrodomesticos | prio 415]`
 - [ ] **`appliances_com_01_144`** — na fila `[eletrodomesticos | prio 415]`

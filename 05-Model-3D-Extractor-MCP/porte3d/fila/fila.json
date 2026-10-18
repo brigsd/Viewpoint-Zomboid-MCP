@@ -7063,7 +7063,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Dark Bar",
@@ -7073,14 +7073,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T12:18:10-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T12:20:48-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T12:27:48-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 10, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T12:31:22-03:00"
     }
    ],
    "id": "counter_dark_bar",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 10,
+     "realista": 10,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_restaurant_bar_01_23",
     "N": "location_restaurant_bar_01_17",
@@ -7093,7 +7123,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Dark Bar Corner",
@@ -7103,14 +7133,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T12:18:11-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T12:20:55-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T12:27:11-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 10, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T12:30:29-03:00"
     }
    ],
    "id": "counter_dark_bar_corner",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 10,
+     "realista": 10,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_restaurant_bar_01_22",
     "N": "location_restaurant_bar_01_16",
@@ -7273,7 +7333,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Quality Crafted",
@@ -7283,14 +7343,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T12:18:13-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T12:25:28-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T12:32:10-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 6, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-18T12:35:30-03:00"
     }
    ],
    "id": "counter_quality_crafted",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "carpentry_02_19",
     "N": "carpentry_02_17",
@@ -7303,7 +7393,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Counter",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "counter",
    "forma_de": null,
    "group_name": "Quality Crafted Corner",
@@ -7313,14 +7403,44 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T12:18:14-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T12:21:26-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T12:26:52-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 10, realista 10",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T12:30:29-03:00"
     }
    ],
    "id": "counter_quality_crafted_corner",
    "material": "madeira",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 10,
+     "realista": 10,
+     "rodada": 1
+    }
+   ],
    "prioridade": 417,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "carpentry_02_18",
     "N": "carpentry_02_16",

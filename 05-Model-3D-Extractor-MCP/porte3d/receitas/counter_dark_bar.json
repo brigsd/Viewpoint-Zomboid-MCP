@@ -1,0 +1,103 @@
+{
+ "versao": 1,
+ "id": "counter_dark_bar",
+ "sprites": {
+  "S": "location_restaurant_bar_01_21",
+  "E": "location_restaurant_bar_01_23",
+  "N": "location_restaurant_bar_01_17",
+  "W": "location_restaurant_bar_01_19"
+ },
+ "tras": "N",
+ "material": "liso",
+ "pecas": [
+  {
+   "nome": "corpo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.48,
+    -0.165,
+    0.1
+   ],
+   "max": [
+    0.48,
+    0.43,
+    1.1
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "tampo",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.5,
+    -0.19,
+    1.1
+   ],
+   "max": [
+    0.5,
+    0.44,
+    1.2
+   ],
+   "chanfro": 0.008
+  },
+  {
+   "nome": "rodape",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.49,
+    -0.175,
+    0.0
+   ],
+   "max": [
+    0.49,
+    0.435,
+    0.1
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "portas",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    0.01,
+    -0.19,
+    0.12
+   ],
+   "max": [
+    0.46,
+    -0.165,
+    1.08
+   ],
+   "chanfro": 0.005,
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "puxadores",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    0.055,
+    -0.21,
+    0.79
+   ],
+   "max": [
+    0.085,
+    -0.19,
+    0.94
+   ],
+   "chanfro": 0.003,
+   "espelhar": [
+    "x"
+   ]
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ }
+}
