@@ -359,6 +359,16 @@
           "type": "integer",
           "minimum": 3
         },
+        "curva": {
+          "type": "object",
+          "required": ["raio", "lado"],
+          "properties": {
+            "raio": {"type": "number", "exclusiveMinimum": 0},
+            "angulo": {"type": "number"},
+            "lado": {"enum": ["+x", "-x", "+y", "-y"]},
+            "passos": {"type": "integer", "minimum": 8}
+          }
+        },
         "arte_cor": {
           "type": "boolean",
           "description": "no nível arte, usa a cor lisa do material (vidro, transparências) em vez do desenho"

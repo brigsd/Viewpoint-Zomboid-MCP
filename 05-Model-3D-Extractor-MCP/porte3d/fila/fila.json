@@ -4578,7 +4578,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Blue Plastic",
@@ -4588,6 +4588,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:35-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:36:38-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:37:11-03:00"
     }
    ],
    "id": "chair_blue_plastic",
@@ -4595,7 +4619,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_12",
     "N": "furniture_seating_indoor_02_15",
@@ -5082,7 +5106,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Folding",
@@ -5092,6 +5116,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:36-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:35:39-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:36:10-03:00"
     }
    ],
    "id": "chair_folding",
@@ -5099,7 +5147,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_61",
     "N": "furniture_seating_indoor_01_62",
@@ -5214,7 +5262,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Grey",
@@ -5224,6 +5272,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:22:53-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:45:13-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:46:13-03:00"
     }
    ],
    "id": "chair_grey",
@@ -5231,7 +5303,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_53",
     "N": "furniture_seating_indoor_01_55",
@@ -5244,7 +5316,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": "chair_blue_plastic",
    "group_name": "Grey Plastic",
@@ -5254,6 +5326,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:36-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:37:40-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:38:09-03:00"
     }
    ],
    "id": "chair_grey_plastic",
@@ -5261,7 +5357,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_68",
     "N": "furniture_seating_indoor_03_71",
@@ -5274,7 +5370,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "em_inspecao",
    "familia": "chair",
    "forma_de": "chair_white_lazy",
    "group_name": "Light Blue",
@@ -5284,6 +5380,12 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:22:54-03:00"
     }
    ],
    "id": "chair_light_blue",
@@ -5358,7 +5460,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Mall",
@@ -5368,6 +5470,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:37-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:28:57-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:29:43-03:00"
     }
    ],
    "id": "chair_mall",
@@ -5375,7 +5501,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_shop_mall_01_41",
     "N": "location_shop_mall_01_42",
@@ -5494,7 +5620,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "em_inspecao",
    "familia": "chair",
    "forma_de": "chair_wooden",
    "group_name": "Pile o' Crepe",
@@ -5504,6 +5630,12 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:37-03:00"
     }
    ],
    "id": "chair_pile_o_crepe",
@@ -5524,7 +5656,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "em_modelagem",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Plastic",
@@ -5534,6 +5666,48 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T22:21:35-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T22:23:51-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T22:29:45-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T22:30:21-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": "remodelar cadeira monobloco",
+     "para": "rejeitado",
+     "quando": "2026-10-18T23:48:55-03:00"
+    },
+    {
+     "de": "rejeitado",
+     "nota": "ajuste de ripas e bracos",
+     "para": "retrabalho",
+     "quando": "2026-10-18T23:48:56-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T23:48:56-03:00"
     }
    ],
    "id": "chair_plastic",
@@ -13408,7 +13582,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Antique",
@@ -13460,6 +13634,12 @@
      "nota": "rodada 2: arte 8, realista 9",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-17T00:10:10-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T22:42:16-03:00"
     }
    ],
    "id": "oven_antique",

@@ -41,6 +41,7 @@ O esquema completo está em `receita.schema.json`, e `receita.py` valida a recei
 | `arte` (legado, opcional) | `{"modo": "adesivo"}` ou `{"modo": "kit", "recortes": {...}, "faces": {...}}` |
 | `realista` | opcional, `{"materiais": {nome: {"tipo": madeira\|metal\|tecido\|liso, "desgaste": 0..1}}}`; `desgaste` põe sujeira, tinta lascada e ferrugem; `veio` (só madeira, padrão 1) escala a força do veio: 2 a 3 deixa anéis e fibras bem visíveis; `manchas` (0..1, manchas irregulares com auréola), `rasgos` (0..1, fendas finas com enchimento claro, para tecido) e `podre` (0..1, apodrecimento escuro com fibras, para madeira) fazem o estrago no próprio material, sem peças extras; `trancado` (número > 0 = escala; 1 = tira de 1,6 cm; tipo `tecido` ou `liso`) gera trança de cestaria procedural (tiras cruzadas em sarja, frestas escuras, tom por tira) |
 
+- `desenho` (opcional, em `realista.materiais`): linhas pintadas na cor base, sem relevo, só nas faces voltadas para cima: `{"linhas": [[[x,y],...], ...] (polígonos fechados, metros), "largura": m, "cor": [r,g,b], "forca": 0..1}`. Vale para a peça inteira que usa o material (use um material só para o tampo/chapa).
 - `borda` (0..1, só madeira, em `realista.materiais`): biselado cartoon por peça/tábua e por face, com borda fina mais clara (até +40%) e miolo mais escuro (até −20%), com frestas entre tábuas mais largas e escuras; 0 = desligado (padrão).
 
 ### Peças
@@ -60,6 +61,7 @@ As formas:
 
 - `caixa`: `min`, `max`, mais o opcional `afinar` = `{"quanto": m, "lados": ["+x","-x","+y","-y"]}`. Os lados listados entram `quanto` metros na base (z mínimo), como um pé que afina para baixo.
 - `prisma`: `perfil` = lista de pontos `[a, z]` no plano vertical, `eixo` = `"x"` ou `"y"` (direção da extrusão), e `de` e `ate` (o intervalo nesse eixo). O `a` é a coordenada horizontal que sobra, ou seja, `x` quando o eixo é `y` e `y` quando o eixo é `x`.
+- `curva` (opcional, só `cilindro` de eixo `z`): `{raio, angulo (padrão 90), lado "+x|-x|+y|-y", passos}`; o `altura` vira o trecho reto inicial e depois o tubo dobra num arco liso de raio `raio` para o `lado` (cotovelo de chaminé). O fim do arco fica em `centro + altura em z + raio` no `lado` e em z.
 - `cortes` (opcional, qualquer peça `prisma`): lista de `{op, perfil, eixo, de, ate}`, cada um um prisma auxiliar aplicado com Boolean exato antes do `chanfro`; `op` = `"diferenca"` (padrão, faz furo) ou `"intersecao"` (mantém só a parte dentro, arredonda cantos). Não é espelhado por `espelhar`.
 - `cilindro`: `centro` `[x,y,z]` (centro da base), `raio`, `altura`, `eixo` (`"x" | "y" | "z"`, padrão `"z"`), `raio_topo` opcional (para tronco de cone) e `segmentos` (padrão 24).
 

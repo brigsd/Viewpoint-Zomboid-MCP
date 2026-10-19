@@ -487,6 +487,87 @@ def _aplicar_listras(R, forca, periodo):
     R.Lk.new(R.mult(col, tom), R.bsdf.inputs["Base Color"])
 
 
+def _aplicar_desenho(R, d, nome):
+    """Linhas pintadas na cor base (sem relevo): `d` = {"linhas": [[(x,y), ...], ...] polígonos fechados em metros no
+    plano xy, "largura": m, "cor": [r,g,b], "forca": 0..1}. Só vale nas faces voltadas para cima (topo)."""
+    geo = R.N.new("ShaderNodeNewGeometry")
+    nsep = R.N.new("ShaderNodeSeparateXYZ")
+    R.Lk.new(geo.outputs["Normal"], nsep.inputs["Vector"])
+    topo = R.M("GREATER_THAN", nsep.outputs["Z"], 0.9)
+    if not d.get("linhas"):
+        return
+    pol = [np.asarray(q, float) for q in d["linhas"]]
+    larg = float(d.get("largura", 0.0045))
+    forca = float(d.get("forca", 0.85))
+    ppm = float(d.get("pixels_por_metro", 2500.0))
+    todos = np.vstack(pol)
+    marg = 2 * larg
+    x0, y0 = todos.min(0) - marg
+    x1, y1 = todos.max(0) + marg
+    W, H = max(8, int((x1 - x0) * ppm)), max(8, int((y1 - y0) * ppm))
+    xs = x0 + (np.arange(W) + 0.5) / ppm
+    ys = y0 + (np.arange(H) + 0.5) / ppm
+    gx, gy = np.meshgrid(xs, ys)
+    dist = np.full((H, W), 1e9)
+    for q in pol:
+        for i in range(len(q)):
+            a, b = q[i], q[(i + 1) % len(q)]
+            ab = b - a
+            t = np.clip(((gx - a[0]) * ab[0] + (gy - a[1]) * ab[1]) / max(1e-9, ab @ ab), 0, 1)
+            dist = np.minimum(dist, np.hypot(gx - (a[0] + t * ab[0]), gy - (a[1] + t * ab[1])))
+    alfa = np.clip((larg / 2 - dist) * ppm + 0.5, 0.0, 1.0)      # borda suavizada de ~1 pixel
+    img = bpy.data.images.new(f"desenho_{nome}", W, H, alpha=True)
+    dentro = np.zeros((H, W), bool)                  # canal R = interior dos polígonos (para escurecer)
+    for q in pol:
+        ins = np.zeros((H, W), bool)
+        for i in range(len(q)):
+            a, b = q[i], q[(i + 1) % len(q)]
+            if a[1] == b[1]:
+                continue
+            cruza = (a[1] > gy) != (b[1] > gy)
+            xi = a[0] + (gy - a[1]) * (b[0] - a[0]) / (b[1] - a[1])
+            ins ^= cruza & (gx < xi)
+        dentro |= ins
+    px = np.ones((H, W, 4), np.float32)
+    px[..., 0] = dentro.astype(np.float32)
+    px[..., 3] = alfa
+    img.pixels.foreach_set(px.ravel())
+    img.alpha_mode = "CHANNEL_PACKED"
+    img.pack()
+    mp = R.N.new("ShaderNodeMapping")
+    mp.inputs["Scale"].default_value = (1.0 / (x1 - x0), 1.0 / (y1 - y0), 1.0)
+    mp.inputs["Location"].default_value = (-x0 / (x1 - x0), -y0 / (y1 - y0), 0.0)
+    R.Lk.new(R.tc.outputs["Object"], mp.inputs["Vector"])
+    tx = R.N.new("ShaderNodeTexImage")
+    tx.image, tx.extension, tx.interpolation = img, "CLIP", "Linear"
+    R.Lk.new(mp.outputs["Vector"], tx.inputs["Vector"])
+    csep = R.N.new("ShaderNodeSeparateXYZ")          # X = interior dos polígonos (canal R da imagem)
+    R.Lk.new(tx.outputs["Color"], csep.inputs["Vector"])
+    if d.get("escurecer"):       # escurece só a face de cima, só dentro dos polígonos
+        lk0 = R.bsdf.inputs["Base Color"].links[0]
+        col0 = lk0.from_socket
+        R.Lk.remove(lk0)
+        esc = R.M("MULTIPLY", R.M("MULTIPLY", csep.outputs["X"], topo), float(d["escurecer"]))
+        R.Lk.new(R.mult(col0, R.M("SUBTRACT", 1.0, esc)), R.bsdf.inputs["Base Color"])
+    if d.get("ferrugem_dentro"):  # manchas de ferrugem (marrom alaranjado) só dentro dos polígonos, na face de cima
+        f = float(d["ferrugem_dentro"])
+        ruido = R.ruido((9, 9, 9), detalhe=4.0, rugosidade=0.6)
+        fino = R.ruido((38, 38, 38), detalhe=2.0, rugosidade=0.5)
+        mancha = R.rng(R.M("ADD", ruido, R.M("MULTIPLY", fino, 0.35)), 0.0, 1.0, 0.80 - 0.12 * f, 0.92 - 0.12 * f, suave=True)
+        fr = R.M("MULTIPLY", R.M("MULTIPLY", mancha, csep.outputs["X"]), topo)
+        lk1 = R.bsdf.inputs["Base Color"].links[0]
+        col1 = lk1.from_socket
+        R.Lk.remove(lk1)
+        ferr = tuple(float(v) for v in _lin(d.get("cor_ferrugem", [92, 56, 30])))
+        R.Lk.new(R.misturar(col1, ferr, R.M("MULTIPLY", fr, 0.7)), R.bsdf.inputs["Base Color"])
+    fac = R.M("MULTIPLY", R.M("MULTIPLY", tx.outputs["Alpha"], topo), forca)
+    lk = R.bsdf.inputs["Base Color"].links[0]
+    col = lk.from_socket
+    R.Lk.remove(lk)
+    cor = tuple(float(v) for v in _lin(d.get("cor", [14, 20, 16])))
+    R.Lk.new(R.misturar(col, cor, fac), R.bsdf.inputs["Base Color"])
+
+
 def _aplicar_estrago(R, comp, atrav, manchas=0.0, rasgos=0.0, podre=0.0):
     """Estrago procedural por cima do material: manchas irregulares com auréola (tecido ou qualquer), rasgos finos
     com enchimento claro (tecido) e apodrecimento escuro com fibras (madeira). Tudo 0..1; zero desliga."""
@@ -529,7 +610,7 @@ def _cinza_medio(cor):
 
 def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=0.0, tabuas=0,
           semente=0, lado=1, acabamento=None, desgaste=0.0, limites=None, ferrugem=0.0, veio=1.0,
-          manchas=0.0, rasgos=0.0, podre=0.0, listras=0.0, listras_periodo=0.07, trancado=0.0, borda=0.0):
+          manchas=0.0, rasgos=0.0, podre=0.0, listras=0.0, listras_periodo=0.07, trancado=0.0, borda=0.0, desenho=None):
     """Cria o material procedural `tipo` (madeira | metal | tecido | liso) com cor base `cor` (sRGB 0..255).
 
     eixos      = (comprimento, atravessado, profundidade): direção do veio/comprimento da peça, o eixo em que
@@ -549,6 +630,8 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
     listras    = 0..1: listras verticais (tecido listrado); `listras_periodo` é a largura de um par de listras, em metros.
     trancado   = escala (>0) da trança de cestaria (tiras cruzadas/losangos), para tipo tecido ou liso; 1 = tira de 1,6 cm.
     borda      = só madeira, 0..1: biselado cartoon por tábua/face (borda mais clara e fina, miolo mais escuro); 0 = desligado.
+    desenho    = linhas pintadas na cor (sem relevo) nas faces voltadas para cima: {"linhas": [[[x,y],...],...],
+                 "largura": m, "cor": [r,g,b], "forca": 0..1, "escurecer": 0..1 (escurece só a face de cima, dentro dos polígonos), "ferrugem_dentro": 0..1 (manchas de ferrugem dentro dos polígonos)}.
     desgaste   = 0..1: camada de uso (amarelado, encardido, tinta lascada nas quinas, ferrugem com escorrido).
     """
     if tipo not in ("madeira", "metal", "tecido", "liso"):
@@ -568,6 +651,8 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
         _liso(R, cor)
     if trancado and trancado > 0 and tipo in ("tecido", "liso"):
         _aplicar_trancado(R, float(trancado), comp, atrav, prof)
+    if desenho:
+        _aplicar_desenho(R, desenho, nome)
     if listras > 0:
         _aplicar_listras(R, float(listras), float(listras_periodo))
     if desgaste > 0:

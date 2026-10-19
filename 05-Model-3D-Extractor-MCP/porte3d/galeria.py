@@ -557,6 +557,11 @@ def criar_servidor(porta: int = 8765, *, fila=None, raiz=None) -> ThreadingHTTPS
         def log_message(self, fmt, *args):
             pass
 
+        def end_headers(self):
+            # os modelos e imagens são regerados o tempo todo: sem isso o navegador mostra a versão antiga
+            self.send_header("Cache-Control", "no-store")
+            super().end_headers()
+
         def _json(self, codigo: int, dados: dict):
             corpo = json.dumps(dados, ensure_ascii=False, default=str).encode("utf-8")
             self.send_response(codigo)

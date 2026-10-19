@@ -99,7 +99,39 @@ def prisma(p):
     return _objeto(p["nome"], v, f, p)
 
 
+def _tubo_curvo(p):
+    """Cilindro de eixo z com `curva`: trecho reto de `altura` e depois um arco liso (`raio`, `angulo`, `lado` "+x|-x|+y|-y")."""
+    n, h, r = p["segmentos"], p["altura"], p["raio"]
+    cv = p["curva"]
+    R, A, lado = cv["raio"], math.radians(cv.get("angulo", 90)), cv["lado"]
+    sg = 1 if lado[0] == "+" else -1
+    b = AX.index(lado[1])               # eixo horizontal em que o tubo dobra
+    w = 1 - b if b < 2 else 0           # outro eixo horizontal (constante)
+    passos = max(8, int(cv.get("passos", 24)))
+    caminho = [(0.0, 0.0, 0.0, 1.0), (0.0, h, 0.0, 1.0)]   # (deslocamento em b, z, tangente b, tangente z)
+    for k in range(1, passos + 1):
+        t = A * k / passos
+        caminho.append((sg * R * (1 - math.cos(t)), h + R * math.sin(t), sg * math.sin(t), math.cos(t)))
+    v = []
+    for pb, pz, tb, tz in caminho:
+        nb, nz = tz, -tb                # normal no plano da curva
+        for i in range(n):
+            a = 2 * math.pi * i / n
+            q = [0.0, 0.0, 0.0]
+            q[w] = r * math.cos(a)
+            q[b] = pb + r * math.sin(a) * nb
+            q[2] = pz + r * math.sin(a) * nz
+            v.append(tuple(c + o for c, o in zip(q, p["centro"])))
+    m = len(caminho)
+    f = [tuple(range(n - 1, -1, -1)), tuple(range((m - 1) * n, m * n))]
+    for j in range(m - 1):
+        f += [(j * n + i, j * n + (i + 1) % n, (j + 1) * n + (i + 1) % n, (j + 1) * n + i) for i in range(n)]
+    return _objeto(p["nome"], v, f, p)
+
+
 def cilindro(p):
+    if p.get("curva"):
+        return _tubo_curvo(p)
     n, h = p["segmentos"], p["altura"]
     r0, r1 = p["raio"], p.get("raio_topo", p["raio"])
     ang = [2 * math.pi * i / n for i in range(n)]
@@ -126,6 +158,15 @@ def limites(p):
     k = AX.index(p["eixo"])
     lo, hi = c - r, c + r
     lo[k], hi[k] = c[k], c[k] + p["altura"]
+    cv = p.get("curva")
+    if cv:   # o arco estende o tubo em z e no eixo da dobra
+        R = cv["raio"]
+        b = AX.index(cv["lado"][1])
+        hi[2] = c[2] + p["altura"] + R + r
+        if cv["lado"][0] == "+":
+            hi[b] = c[b] + R + r
+        else:
+            lo[b] = c[b] - R - r
     return lo, hi
 
 
@@ -206,6 +247,7 @@ def etapa_malha(pasta: Path, tex: int):
     listras_m = {k: float(v.get("listras", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     listras_p = {k: float(v.get("listras_periodo", 0.07)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     trancado_m = {k: float(v.get("trancado", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    desenhos_m = {k: v.get("desenho") for k, v in r.get("realista", {}).get("materiais", {}).items()}
     bordas_m = {k: float(v.get("borda", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     pecas, objs, mats_real, mats_id = [], [], [], []
     for i, p in enumerate(r["pecas"]):
@@ -222,7 +264,7 @@ def etapa_malha(pasta: Path, tex: int):
                              faixa=(float(lo[atr]), float(hi[atr])), superficie=float(hi[prof]),
                              tabuas=int(p.get("tabuas", 0)), semente=i, desgaste=desgastes.get(mat, 0.0), ferrugem=ferrugens.get(mat, 0.0), veio=veios.get(mat, 1.0),
                              manchas=manchas_m.get(mat, 0.0), rasgos=rasgos_m.get(mat, 0.0), podre=podres_m.get(mat, 0.0),
-                             listras=listras_m.get(mat, 0.0), listras_periodo=listras_p.get(mat, 0.07), trancado=trancado_m.get(mat, 0.0), borda=bordas_m.get(mat, 0.0),
+                             listras=listras_m.get(mat, 0.0), listras_periodo=listras_p.get(mat, 0.07), trancado=trancado_m.get(mat, 0.0), borda=bordas_m.get(mat, 0.0), desenho=desenhos_m.get(mat),
                              limites=(tuple(map(float, lo)), tuple(map(float, hi))))
         ob.data.materials.append(mr)
         for cn in ob.data.get("cortadores", "").split("|"):   # o Boolean copia os slots do cortador: mesmo material, sem slot vazio
