@@ -1,0 +1,283 @@
+{
+ "versao": 1,
+ "objeto": "chair_green_dinner",
+ "sprite": "furniture_seating_indoor_01_57",
+ "decisao": "portar",
+ "motivo": "cadeira de jantar de madeira escura com assento estofado verde e encosto com ripas",
+ "o_que_e": "cadeira de jantar de madeira escura com assento estofado verde e encosto com ripas",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "quatro pes"
+  },
+  {
+   "nome": "travessas",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "saia sob o assento"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "tecido",
+   "descricao": "almofada verde"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "madeira",
+   "descricao": "montantes, travessa e ripas"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira",
+  "tecido": "tecido"
+ },
+ "problemas_previstos": [],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_01_57",
+  "sprites": {
+   "S": "furniture_seating_indoor_01_57",
+   "E": "furniture_seating_indoor_01_56",
+   "N": "furniture_seating_indoor_01_59",
+   "W": "furniture_seating_indoor_01_58"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 5,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.2267,
+     0.1209,
+     0.3139
+    ],
+    "max": [
+     0.2067,
+     0.2207,
+     1.0591
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     0.1564,
+     0.1579,
+     0.0
+    ],
+    "max": [
+     0.2032,
+     0.2231,
+     0.312
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.2271,
+     -0.2692,
+     0.0
+    ],
+    "max": [
+     -0.1803,
+     -0.2224,
+     0.312
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.1592,
+     -0.2662,
+     0.0
+    ],
+    "max": [
+     0.206,
+     -0.2194,
+     0.312
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     -0.226,
+     -0.27,
+     0.3139
+    ],
+    "max": [
+     0.2112,
+     0.193,
+     0.482
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Screws",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Green Dinner",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "19",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.2271,
+    -0.27,
+    0.0
+   ],
+   "max": [
+    0.2112,
+    0.2231,
+    1.0591
+   ],
+   "largura": 0.4383,
+   "profundidade": 0.4931,
+   "altura": 1.0591
+  },
+  "menor_medida_peca": 0.0468,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7619,
+  "cobertura": 0.9539,
+  "sobra": 0.2089,
+  "pixels_desenho": 3164,
+  "pixels_geometria": 3815,
+  "espelhado_E_S": 0.5969,
+  "espelhado_W_N": 0.6557,
+  "N_igual_S": 0.3228,
+  "silhueta_espelho_E_S": 0.6309,
+  "silhueta_espelho_W_N": 0.7107,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0079,
+   -0.0235
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "y"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_0",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.2267,
+     -0.2676,
+     0.3139
+    ],
+    "max": [
+     0.2067,
+     -0.1678,
+     1.0591
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "x",
+    "votos": 3,
+    "pe": true,
+    "min": [
+     -0.2191,
+     0.1579,
+     0.0
+    ],
+    "max": [
+     -0.1723,
+     0.2231,
+     0.312
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4459,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.2904
+  },
+  "sugestao": [
+   "3 pés descritos, provável pé escondido (falta 1, espelho de forma_1): completar por simetria",
+   "há desenho de trás real (N): usar tras = N"
+  ]
+ }
+}

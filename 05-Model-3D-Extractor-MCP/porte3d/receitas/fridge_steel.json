@@ -1,710 +1,757 @@
 {
- "versao": 1,
- "id": "fridge_steel",
- "sprites": {
-  "S": "appliances_refrigeration_01_8",
-  "E": "appliances_refrigeration_01_9",
-  "N": "appliances_refrigeration_01_10",
-  "W": "appliances_refrigeration_01_11"
- },
- "tras": "N",
- "material": "metal",
- "pecas": [
-  {
-   "nome": "corpo",
-   "forma": "caixa",
-   "min": [
-    -0.32,
-    -0.28,
-    0.07
-   ],
-   "max": [
-    0.5,
-    0.39,
-    1.67
-   ],
-   "chanfro": 0.03
+  "versao": 1,
+  "id": "fridge_steel",
+  "sprites": {
+    "S": "appliances_refrigeration_01_8",
+    "E": "appliances_refrigeration_01_9",
+    "N": "appliances_refrigeration_01_10",
+    "W": "appliances_refrigeration_01_11"
   },
-  {
-   "nome": "porta_esq",
-   "forma": "caixa",
-   "min": [
-    -0.31,
-    -0.3,
-    0.09
-   ],
-   "max": [
-    -0.04,
-    -0.27,
-    1.64
-   ],
-   "chanfro": 0.02
+  "tras": "N",
+  "material": "metal",
+  "pecas": [
+    {
+      "nome": "corpo",
+      "forma": "caixa",
+      "min": [
+        -0.32,
+        -0.28,
+        0.07
+      ],
+      "max": [
+        0.5,
+        0.39,
+        1.67
+      ],
+      "chanfro": 0.07
+    },
+    {
+      "nome": "porta_esq",
+      "forma": "caixa",
+      "min": [
+        -0.31,
+        -0.32,
+        0.09
+      ],
+      "max": [
+        -0.04,
+        -0.27,
+        1.64
+      ],
+      "chanfro": 0.024
+    },
+    {
+      "nome": "porta_dir",
+      "forma": "caixa",
+      "min": [
+        -0.02,
+        -0.32,
+        0.09
+      ],
+      "max": [
+        0.49,
+        -0.27,
+        1.64
+      ],
+      "chanfro": 0.024
+    },
+    {
+      "nome": "rodape",
+      "forma": "caixa",
+      "min": [
+        -0.29,
+        -0.25,
+        0.0
+      ],
+      "max": [
+        0.47,
+        0.36,
+        0.08
+      ],
+      "material": "rodape_escuro",
+      "chanfro": 0.005
+    },
+    {
+      "nome": "fresta_base",
+      "forma": "caixa",
+      "min": [
+        -0.31,
+        -0.29,
+        0.072
+      ],
+      "max": [
+        0.49,
+        -0.275,
+        0.09
+      ],
+      "material": "fresta_escura",
+      "arte_cor": true
+    },
+    {
+      "nome": "fresta_portas",
+      "forma": "caixa",
+      "min": [
+        -0.04,
+        -0.295,
+        0.09
+      ],
+      "max": [
+        -0.02,
+        -0.265,
+        1.64
+      ],
+      "material": "fresta_escura",
+      "arte_cor": true
+    },
+    {
+      "nome": "puxador_barra",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.065,
+        -0.333,
+        0.25
+      ],
+      "raio": 0.011,
+      "altura": 1.2,
+      "segmentos": 12,
+      "material": "puxador_escuro",
+      "arte_cor": true
+    },
+    {
+      "nome": "puxador_haste_baixo",
+      "forma": "caixa",
+      "min": [
+        -0.07,
+        -0.33,
+        0.3
+      ],
+      "max": [
+        -0.06,
+        -0.31,
+        0.33
+      ],
+      "material": "puxador_escuro",
+      "arte_cor": true
+    },
+    {
+      "nome": "puxador_haste_cima",
+      "forma": "caixa",
+      "min": [
+        -0.07,
+        -0.33,
+        1.37
+      ],
+      "max": [
+        -0.06,
+        -0.31,
+        1.4
+      ],
+      "material": "puxador_escuro",
+      "arte_cor": true
+    },
+    {
+      "nome": "painel_traseiro",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        0.38,
+        0.48
+      ],
+      "max": [
+        0.48,
+        0.4,
+        1.56
+      ],
+      "material": "painel_escuro"
+    },
+    {
+      "nome": "grade_fundo",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        0.38,
+        0.15
+      ],
+      "max": [
+        0.48,
+        0.4,
+        0.38
+      ],
+      "material": "painel_escuro"
+    },
+    {
+      "nome": "grade_ripa0",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.17
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.183
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "grade_ripa1",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.207
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.22
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "grade_ripa2",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.244
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.257
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "grade_ripa3",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.281
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.294
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "grade_ripa4",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.318
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.331
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "grade_ripa5",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.4,
+        0.355
+      ],
+      "max": [
+        0.46,
+        0.414,
+        0.368
+      ],
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.4,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.8975,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.275,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.855,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.15,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.855,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo3",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.025,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.855,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo4",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.1,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.855,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_tubo5",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.225,
+        0.41,
+        0.6525
+      ],
+      "raio": 0.01,
+      "altura": 0.8975,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true
+    },
+    {
+      "nome": "serp_u0_0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.3844,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -150.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u0_1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.3375,
+        0.41,
+        0.5611
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -90.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u0_2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.2906,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -30.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u1_0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.2594,
+        0.41,
+        1.4973
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -30.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u1_1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.2125,
+        0.41,
+        1.5244
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -90.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u1_2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.1656,
+        0.41,
+        1.4973
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -150.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u2_0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.1344,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -150.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u2_1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.0875,
+        0.41,
+        0.5611
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -90.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u2_2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.0406,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -30.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u3_0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.0094,
+        0.41,
+        1.4973
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -30.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u3_1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.0375,
+        0.41,
+        1.5244
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -90.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u3_2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.0844,
+        0.41,
+        1.4973
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -150.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u4_0",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.1156,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -150.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u4_1",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.1625,
+        0.41,
+        0.5611
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -90.0,
+        0
+      ]
+    },
+    {
+      "nome": "serp_u4_2",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.2094,
+        0.41,
+        0.5882
+      ],
+      "raio": 0.01,
+      "altura": 0.0745,
+      "segmentos": 8,
+      "material": "tubo_preto",
+      "arte_cor": true,
+      "rot": [
+        0,
+        -30.0,
+        0
+      ]
+    },
+    {
+      "nome": "friso_topo",
+      "forma": "caixa",
+      "min": [
+        -0.31,
+        -0.33,
+        1.635
+      ],
+      "max": [
+        0.49,
+        -0.315,
+        1.65
+      ],
+      "material": "fresta_escura",
+      "arte_cor": true
+    },
+    {
+      "nome": "dobradica_topo",
+      "forma": "caixa",
+      "min": [
+        -0.065,
+        -0.338,
+        1.575
+      ],
+      "max": [
+        0.005,
+        -0.3,
+        1.645
+      ],
+      "chanfro": 0.004,
+      "material": "fresta_escura",
+      "arte_cor": true,
+      "veio": "z"
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "porta_dir",
-   "forma": "caixa",
-   "min": [
-    -0.02,
-    -0.3,
-    0.09
-   ],
-   "max": [
-    0.49,
-    -0.27,
-    1.64
-   ],
-   "chanfro": 0.02
+  "realista": {
+    "materiais": {
+      "metal": {
+        "tipo": "metal",
+        "desgaste": 0.3
+      },
+      "rodape_escuro": {
+        "tipo": "liso"
+      },
+      "fresta_escura": {
+        "tipo": "liso"
+      },
+      "painel_escuro": {
+        "tipo": "liso"
+      },
+      "tubo_preto": {
+        "tipo": "metal"
+      },
+      "puxador_escuro": {
+        "tipo": "metal"
+      }
+    }
   },
-  {
-   "nome": "rodape",
-   "forma": "caixa",
-   "min": [
-    -0.29,
-    -0.25,
-    0.0
-   ],
-   "max": [
-    0.47,
-    0.36,
-    0.08
-   ],
-   "material": "rodape_escuro",
-   "chanfro": 0.005
-  },
-  {
-   "nome": "fresta_base",
-   "forma": "caixa",
-   "min": [
-    -0.31,
-    -0.29,
-    0.072
-   ],
-   "max": [
-    0.49,
-    -0.275,
-    0.09
-   ],
-   "material": "fresta_escura",
-   "arte_cor": true
-  },
-  {
-   "nome": "fresta_portas",
-   "forma": "caixa",
-   "min": [
-    -0.04,
-    -0.295,
-    0.09
-   ],
-   "max": [
-    -0.02,
-    -0.265,
-    1.64
-   ],
-   "material": "fresta_escura",
-   "arte_cor": true
-  },
-  {
-   "nome": "puxador_esq",
-   "forma": "caixa",
-   "min": [
-    -0.072,
-    -0.32,
-    0.9
-   ],
-   "max": [
-    -0.044,
-    -0.295,
-    1.42
-   ],
-   "material": "puxador_escuro",
-   "chanfro": 0.004,
-   "arte_cor": true
-  },
-  {
-   "nome": "puxador_dir",
-   "forma": "caixa",
-   "min": [
-    -0.016,
-    -0.32,
-    0.9
-   ],
-   "max": [
-    0.012,
-    -0.295,
-    1.42
-   ],
-   "material": "puxador_escuro",
-   "chanfro": 0.004,
-   "arte_cor": true
-  },
-  {
-   "nome": "painel_traseiro",
-   "forma": "caixa",
-   "min": [
-    -0.3,
-    0.38,
-    0.48
-   ],
-   "max": [
-    0.48,
-    0.4,
-    1.56
-   ],
-   "material": "painel_escuro"
-  },
-  {
-   "nome": "grade_fundo",
-   "forma": "caixa",
-   "min": [
-    -0.3,
-    0.38,
-    0.15
-   ],
-   "max": [
-    0.48,
-    0.4,
-    0.38
-   ],
-   "material": "painel_escuro"
-  },
-  {
-   "nome": "grade_ripa0",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.17
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.183
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "grade_ripa1",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.207
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.22
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "grade_ripa2",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.244
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.257
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "grade_ripa3",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.281
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.294
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "grade_ripa4",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.318
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.331
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "grade_ripa5",
-   "forma": "caixa",
-   "min": [
-    -0.28,
-    0.4,
-    0.355
-   ],
-   "max": [
-    0.46,
-    0.414,
-    0.368
-   ],
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.4,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.8975,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.275,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.855,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.15,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.855,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo3",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.025,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.855,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo4",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.1,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.855,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_tubo5",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.225,
-    0.41,
-    0.6525
-   ],
-   "raio": 0.01,
-   "altura": 0.8975,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true
-  },
-  {
-   "nome": "serp_u0_0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.3844,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -150.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u0_1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.3375,
-    0.41,
-    0.5611
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -90.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u0_2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.2906,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -30.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u1_0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.2594,
-    0.41,
-    1.4973
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -30.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u1_1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.2125,
-    0.41,
-    1.5244
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -90.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u1_2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.1656,
-    0.41,
-    1.4973
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -150.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u2_0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.1344,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -150.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u2_1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.0875,
-    0.41,
-    0.5611
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -90.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u2_2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.0406,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -30.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u3_0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.0094,
-    0.41,
-    1.4973
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -30.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u3_1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.0375,
-    0.41,
-    1.5244
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -90.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u3_2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.0844,
-    0.41,
-    1.4973
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -150.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u4_0",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.1156,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -150.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u4_1",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.1625,
-    0.41,
-    0.5611
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -90.0,
-    0
-   ]
-  },
-  {
-   "nome": "serp_u4_2",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.2094,
-    0.41,
-    0.5882
-   ],
-   "raio": 0.01,
-   "altura": 0.0745,
-   "segmentos": 8,
-   "material": "tubo_preto",
-   "arte_cor": true,
-   "rot": [
-    0,
-    -30.0,
-    0
-   ]
+  "cores": {
+    "rodape_escuro": [
+      40,
+      40,
+      44
+    ],
+    "fresta_escura": [
+      26,
+      26,
+      30
+    ],
+    "painel_escuro": [
+      48,
+      48,
+      54
+    ],
+    "tubo_preto": [
+      12,
+      12,
+      14
+    ],
+    "puxador_escuro": [
+      64,
+      66,
+      72
+    ]
   }
- ],
- "arte": {
-  "modo": "adesivo"
- },
- "realista": {
-  "materiais": {
-   "metal": {
-    "tipo": "metal",
-    "desgaste": 0.3
-   },
-   "rodape_escuro": {
-    "tipo": "liso"
-   },
-   "fresta_escura": {
-    "tipo": "liso"
-   },
-   "painel_escuro": {
-    "tipo": "liso"
-   },
-   "tubo_preto": {
-    "tipo": "metal"
-   },
-   "puxador_escuro": {
-    "tipo": "metal"
-   }
-  }
- },
- "cores": {
-  "rodape_escuro": [
-   40,
-   40,
-   44
-  ],
-  "fresta_escura": [
-   26,
-   26,
-   30
-  ],
-  "painel_escuro": [
-   48,
-   48,
-   54
-  ],
-  "tubo_preto": [
-   12,
-   12,
-   14
-  ],
-  "puxador_escuro": [
-   64,
-   66,
-   72
-  ]
- }
 }

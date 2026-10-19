@@ -1,0 +1,558 @@
+{
+  "versao": 1,
+  "id": "chair_poor_quality",
+  "sprites": {
+    "S": "carpentry_01_40",
+    "E": "carpentry_01_41",
+    "N": "carpentry_01_42",
+    "W": "carpentry_01_43"
+  },
+  "tras": "N",
+  "material": "madeira",
+  "cores": {
+    "madeira": [
+      110,
+      82,
+      55
+    ],
+    "madeira_escura": [
+      70,
+      50,
+      35
+    ],
+    "madeira_podre": [
+      52,
+      36,
+      24
+    ],
+    "fenda": [
+      25,
+      18,
+      12
+    ],
+    "prego": [
+      45,
+      45,
+      48
+    ],
+    "tecido": [
+      110,
+      82,
+      55
+    ]
+  },
+  "pecas": [
+    {
+      "nome": "pernas_frente",
+      "forma": "caixa",
+      "min": [
+        -0.29,
+        -0.27,
+        0
+      ],
+      "max": [
+        -0.22,
+        -0.2,
+        0.42
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003,
+      "espelhar": [
+        "x"
+      ]
+    },
+    {
+      "nome": "pernas_tras",
+      "forma": "caixa",
+      "min": [
+        -0.29,
+        0.19,
+        0
+      ],
+      "max": [
+        -0.22,
+        0.26,
+        0.42
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003,
+      "espelhar": [
+        "x"
+      ]
+    },
+    {
+      "nome": "travessa_lateral",
+      "forma": "caixa",
+      "min": [
+        -0.27,
+        -0.24,
+        0.12
+      ],
+      "max": [
+        -0.245,
+        0.24,
+        0.16
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003,
+      "espelhar": [
+        "x"
+      ]
+    },
+    {
+      "nome": "saia_frente",
+      "forma": "caixa",
+      "min": [
+        -0.22,
+        -0.26,
+        0.34
+      ],
+      "max": [
+        0.22,
+        -0.22,
+        0.42
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "saia_tras",
+      "forma": "caixa",
+      "min": [
+        -0.22,
+        0.2,
+        0.34
+      ],
+      "max": [
+        0.22,
+        0.24,
+        0.42
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "tabua_assento_1",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        -0.285,
+        0.42
+      ],
+      "max": [
+        0.3,
+        -0.18,
+        0.46
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_assento_2",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        -0.17,
+        0.42
+      ],
+      "max": [
+        0.3,
+        -0.06500000000000002,
+        0.46
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_assento_3",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        -0.055,
+        0.42
+      ],
+      "max": [
+        0.3,
+        0.049999999999999996,
+        0.46
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_assento_4",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        0.06,
+        0.42
+      ],
+      "max": [
+        0.3,
+        0.16499999999999998,
+        0.46
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_assento_5",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        0.17,
+        0.42
+      ],
+      "max": [
+        0.3,
+        0.26,
+        0.46
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_encosto_1",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.2,
+        0.4
+      ],
+      "max": [
+        -0.1,
+        0.255,
+        1.05
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_encosto_2",
+      "forma": "caixa",
+      "min": [
+        -0.09,
+        0.2,
+        0.4
+      ],
+      "max": [
+        0.09,
+        0.255,
+        1.0
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "tabua_encosto_3",
+      "forma": "caixa",
+      "min": [
+        0.1,
+        0.2,
+        0.4
+      ],
+      "max": [
+        0.28,
+        0.255,
+        1.03
+      ],
+      "material": "madeira",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "travessa_encosto",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        0.255,
+        0.62
+      ],
+      "max": [
+        0.28,
+        0.27,
+        0.67
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "prego_assento_1",
+      "forma": "cilindro",
+      "centro": [
+        -0.2716,
+        -0.2565,
+        0.46
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "z",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_assento_2",
+      "forma": "cilindro",
+      "centro": [
+        0.2716,
+        -0.2565,
+        0.46
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "z",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_assento_3",
+      "forma": "cilindro",
+      "centro": [
+        -0.2716,
+        0.15300000000000002,
+        0.46
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "z",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_assento_4",
+      "forma": "cilindro",
+      "centro": [
+        0.2716,
+        0.15300000000000002,
+        0.46
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "z",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_encosto_1",
+      "forma": "cilindro",
+      "centro": [
+        -0.19,
+        0.27,
+        0.645
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "y",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_encosto_2",
+      "forma": "cilindro",
+      "centro": [
+        0.0,
+        0.27,
+        0.645
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "y",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_encosto_3",
+      "forma": "cilindro",
+      "centro": [
+        0.19,
+        0.27,
+        0.645
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "y",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_encosto_4",
+      "forma": "cilindro",
+      "centro": [
+        -0.19,
+        0.27,
+        0.9
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "y",
+      "material": "prego"
+    },
+    {
+      "nome": "prego_encosto_5",
+      "forma": "cilindro",
+      "centro": [
+        0.19,
+        0.27,
+        0.9
+      ],
+      "raio": 0.008,
+      "altura": 0.008,
+      "eixo": "y",
+      "material": "prego"
+    },
+    {
+      "nome": "fenda_encosto",
+      "forma": "caixa",
+      "min": [
+        0.005,
+        0.2555,
+        0.67
+      ],
+      "max": [
+        0.016,
+        0.2575,
+        1.0
+      ],
+      "material": "fenda",
+      "chanfro": 0
+    },
+    {
+      "nome": "podre_pe_1",
+      "forma": "caixa",
+      "min": [
+        -0.292,
+        -0.272,
+        0
+      ],
+      "max": [
+        -0.218,
+        -0.198,
+        0.08
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "podre_pe_2",
+      "forma": "caixa",
+      "min": [
+        0.218,
+        -0.272,
+        0
+      ],
+      "max": [
+        0.292,
+        -0.198,
+        0.08
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "podre_pe_3",
+      "forma": "caixa",
+      "min": [
+        -0.292,
+        0.188,
+        0
+      ],
+      "max": [
+        -0.218,
+        0.262,
+        0.07
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "podre_pe_4",
+      "forma": "caixa",
+      "min": [
+        0.218,
+        0.188,
+        0
+      ],
+      "max": [
+        0.292,
+        0.262,
+        0.07
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "mancha_assento_1",
+      "forma": "caixa",
+      "min": [
+        -0.2,
+        -0.2,
+        0.46
+      ],
+      "max": [
+        -0.1,
+        -0.12,
+        0.462
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "mancha_assento_2",
+      "forma": "caixa",
+      "min": [
+        0.08,
+        0.0,
+        0.46
+      ],
+      "max": [
+        0.2,
+        0.07,
+        0.462
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    },
+    {
+      "nome": "mancha_encosto_2",
+      "forma": "caixa",
+      "min": [
+        0.12,
+        0.254,
+        0.75
+      ],
+      "max": [
+        0.22,
+        0.2565,
+        0.82
+      ],
+      "material": "madeira_podre",
+      "chanfro": 0
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
+  },
+  "realista": {
+    "materiais": {
+      "madeira": {
+        "tipo": "madeira",
+        "desgaste": 0.8,
+        "veio": 2.5,
+        "podre": 0.3,
+        "manchas": 0.3
+      },
+      "madeira_escura": {
+        "tipo": "madeira",
+        "desgaste": 0.8,
+        "veio": 2.5,
+        "podre": 0.4
+      },
+      "madeira_podre": {
+        "tipo": "madeira",
+        "desgaste": 0.9,
+        "veio": 2.5
+      },
+      "fenda": {
+        "tipo": "liso",
+        "desgaste": 0.5
+      },
+      "prego": {
+        "tipo": "metal",
+        "desgaste": 0.6,
+        "ferrugem": 0.3
+      }
+    }
+  }
+}

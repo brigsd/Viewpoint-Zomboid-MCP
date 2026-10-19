@@ -1,0 +1,100 @@
+{
+ "versao": 1,
+ "objeto": "toilet_chemical",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 3,
+ "pecas": [
+  {
+   "nome": "gabinete_traseiro",
+   "situacao": "ok"
+  },
+  {
+   "nome": "corpo_vaso",
+   "situacao": "forma_errada",
+   "nota": "cilindro circular reto sem curvatura frontal oval"
+  },
+  {
+   "nome": "assento_vaso",
+   "situacao": "forma_errada",
+   "nota": "disco sólido fechado sem furo central"
+  },
+  {
+   "nome": "bacia_vaso",
+   "situacao": "ausente",
+   "nota": "concavidade não visível, ocluída sob o assento sólido"
+  },
+  {
+   "nome": "coluna_pia",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba_pia",
+   "situacao": "ausente",
+   "nota": "topo da coluna fechado, concavidade e ralo ausentes na superfície"
+  },
+  {
+   "nome": "torneira",
+   "situacao": "forma_errada",
+   "nota": "bloco cúbico indistinto sem bica"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "bacia_vaso",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "topo do vaso sanitário",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: bacia sanitária está totalmente ausente na superfície, coberta por um topo sólido plano",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "cuba_pia",
+   "tipo": "ausencia",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "topo da coluna da pia",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000 e zoom.png: topo da pia é um disco maciço plano sem concavidade de cuba ou ralo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "assento_vaso",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 0,
+   "onde": "borda superior do vaso",
+   "sentido": "",
+   "evidencia": "fio.png 000: assento modelado como cilindro fechado sem furo central para a bacia",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "corpo_vaso",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "base e bojo do vaso sanitário",
+   "sentido": "menor",
+   "evidencia": "comparacao.png e sobreposicao.png: vaso modelado como cilindro redondo em vez de perfil oval com projeção frontal",
+   "gravidade": "media"
+  },
+  {
+   "parte": "torneira",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "bica sobre a pia",
+   "sentido": "",
+   "evidencia": "zoom.png 000: torneira é um cubo simples sem bica, inclinação ou detalhe de acionamento",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Silhueta geral e gabinete corretos, mas bacia sanitária e cuba da pia estão sepultadas sob tampos sólidos, impedindo o realismo funcional."
+}

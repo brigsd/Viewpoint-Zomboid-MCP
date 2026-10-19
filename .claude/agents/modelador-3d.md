@@ -32,21 +32,21 @@ Leia antes o contrato `05-Model-3D-Extractor-MCP/porte3d/CONTRATO.md`, na parte 
    - puxadores, rodapé, tampo com saia.
    
    Cada peça precisa aparecer no desenho ou ser exigida pela ficha. Nada de enfeite inventado.
-3. **Nível Realista Dispensado:**
-   - **NÃO precisamos mais de modelos realistas.** Não gaste tempo definindo materiais procedurais complexos, ranhuras físicas invisíveis na arte, cores manuais em `cores` ou peças decorativas que só existiriam para o realista.
-   - Use `"material": "liso"` por padrão.
-   - Toda a atenção e esforço devem ir 100% para a geometria, proporções, alinhamento e silhueta do nível **ARTE**.
-4. **Foco 100% na Arte:**
-   - A malha deve casar perfeitamente com os sprites do jogo (0°, 180° e giros).
-   - O modo `adesivo` projeta os pixels originais nas peças. Ajuste os planos, caixas e prismas para que a textura não fique esticada ou cortada.
-5. Arte: use `adesivo`, que serve para quase tudo. Use `kit` só quando a ficha pedir, porque o adesivo fica feio numa peça escondida grande.
+3. **Nível realista (produção):**
+   - Use materiais procedurais por tipo (`madeira`, `metal`, `tecido`, `liso`) em `realista.materiais`, com `desgaste` quando o objeto pede sujeira ou ferrugem.
+   - A forma vem da geometria: chanfro nas bordas, pés afinando, saia, cantoneiras, puxadores.
+   - Os materiais saem da ficha do inspetor; não invente material que o objeto não tem.
+4. **Foco na geometria e no material:**
+   - A silhueta deve casar com o desenho do jogo em 0°, 180° e nos giros.
+   - Confira o volume no wireframe: nada de placa fina onde devia haver bloco.
+5. O bloco `arte` da receita é legado: não escreva, a não ser que a ficha peça.
 6. **Acerte as medidas com a prévia:**
    - valide com `python -m porte3d.receita <receita>`;
    - rode `python -m porte3d.prever <receita>`, a partir de `05-Model-3D-Extractor-MCP`, e abra com `Read` a imagem que ele grava;
    - as linhas de cada peça têm que cair em cima da parte certa do desenho, de frente e de trás;
    - busque `contorno_frente` ≥ 0.90, sem sacrificar peça prometida;
    - ajuste e repita, no máximo umas 6 vezes.
-7. Na rodada 2 ou 3, corrija **exatamente** os defeitos do veredito (com foco total no nível arte), do mais grave para o mais leve, sem mexer no que estava certo. Defeito `chapado` é peça fina demais: engrosse. `ausencia` é peça faltando: crie. `textura_deslocada` em 180° costuma ser `tras` errado ou peça no lugar errado.
+7. Na rodada 2 ou 3, corrija **exatamente** os defeitos do veredito (com foco no nível realista), do mais grave para o mais leve, sem mexer no que estava certo. Defeito `chapado` é peça fina demais: engrosse. `ausencia` é peça faltando: crie. `textura_deslocada` em 180° costuma ser `tras` errado ou peça no lugar errado.
 
 ## Regras
 

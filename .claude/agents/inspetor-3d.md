@@ -36,7 +36,7 @@ Abra todas as imagens com `Read`.
 7. **Há partes finas, vazadas ou transparentes?** Grade, vidro, haste fina, tecido pendurado. Elas dão trabalho e precisam ir em `problemas_previstos`.
 8. **Materiais realistas dispensados:** Não precisamos mais de modelos realistas procedurais. Use `"liso"` como padrão nos materiais da ficha e não crie exigências de materiais procedurais.
 9. **Vale portar ou fica 2D?**
-10. **Arte:** use `adesivo`, que cola o desenho do jogo nas peças e serve para quase tudo. Use `kit` (recortes do desenho repetidos nas faces escondidas) só se o objeto tiver faces grandes que nenhum desenho mostra e que ficariam com uma cor lisa, por exemplo o tampo de uma mesa visto de baixo. Na dúvida, `adesivo`.
+10. **Material:** diga o tipo de material de cada peça (`madeira`, `metal`, `tecido` ou `liso`) e se o objeto pede `desgaste`. O nível realista é o de produção; o desenho do jogo só serve para a silhueta.
 
 ## Quando não portar
 
@@ -66,7 +66,7 @@ Exemplo de ficha, uma mesa em que o jogo só descreve 3 pés:
     {"nome": "pe", "forma": "caixa", "origem": "jogo", "quantidade": 3, "material": "madeira", "descricao": "pé quadrado ~8 cm nos cantos visíveis"},
     {"nome": "pe_tras", "forma": "caixa", "origem": "simetria", "material": "madeira", "descricao": "pé do canto do fundo, escondido no desenho; espelho dos outros"}
   ],
-  "simetria": "espelho_xy", "tras": "simetrico", "direcoes_espelhadas": false, "arte": "adesivo",
+  "simetria": "espelho_xy", "tras": "simetrico", "direcoes_espelhadas": false,
   "materiais": {"madeira": "madeira"},
   "problemas_previstos": ["o jogo só tem 3 pés: completar o quarto por simetria", "cantoneiras pequenas sob a saia no desenho"],
   "medidas": {}

@@ -1,0 +1,369 @@
+{
+ "versao": 1,
+ "objeto": "toilet_chemical",
+ "sprite": "fixtures_bathroom_02_4",
+ "decisao": "portar",
+ "motivo": "sanitário químico/institucional antivandálico monobloco em aço inox com vaso, pia e gabinete traseiro bem definidos",
+ "o_que_e": "unidade sanitária combinada de aço inox para canteiro ou presídio, com vaso sanitário oval à esquerda, coluna cilíndrica de lavatório com cuba e bica à direita, e gabinete traseiro estrutural apoiado na parede",
+ "pecas": [
+  {
+   "nome": "gabinete_traseiro",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "painel/gabinete traseiro retangular de ~95 x 20 cm e ~45 cm de altura, apoiado no chão e encostado na parede, unindo estruturalmente o vaso e a coluna da pia"
+  },
+  {
+   "nome": "corpo_vaso",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "corpo cilíndrico/oval do vaso sanitário com saia contínua até o chão, ~45 x 40 cm de base e ~40 cm de altura, com curvatura frontal pronunciada"
+  },
+  {
+   "nome": "assento_vaso",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "liso",
+   "descricao": "borda/aro superior do vaso sanitário com perfil oval arredondado de ~45 x 40 cm e ~5 cm de espessura (z de 40 a 45 cm), com abertura central para a bacia"
+  },
+  {
+   "nome": "bacia_vaso",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "concavidade interna da bacia sanitária de ~30 x 25 cm e ~25 cm de profundidade, com fundo escuro e orifício de dreno químico"
+  },
+  {
+   "nome": "coluna_pia",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "torre/coluna cilíndrica vertical do lavatório de ~35 cm de diâmetro e ~65 cm de altura, sustentando a cuba ao lado direito do vaso"
+  },
+  {
+   "nome": "cuba_pia",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "concavidade circular embutida no topo da coluna da pia com ~28 cm de diâmetro e ~10 cm de profundidade, com ralo no centro"
+  },
+  {
+   "nome": "torneira",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "metal",
+   "descricao": "bica/torneira metálica compacta antivandálica de ~10 x 5 cm (z de 65 a 70 cm), fixada na borda traseira superior da pia"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "metal": "metal",
+  "liso": "liso"
+ },
+ "problemas_previstos": [
+  "a forma_3 do jogo é muito fina (10x1x5 cm): a torneira deve ser tratada como bloco sólido ou cilindro para manter volume perceptível no 3D",
+  "bacia do vaso e cuba da pia são concavidades abertas: modelar com paredes internas ou disco de fundo para criar a profundidade correta sem artefatos visuais",
+  "geometria do jogo usa caixas ortogonais para o vaso e a pia, enquanto o desenho é arredondado/cilíndrico: usar cilindros ou cantos chanfrados na modelagem",
+  "traseira (N) possui desenho próprio (N~S 0.16) com gabinete fechado e verso da torre da pia: requer textura/projeção N específica",
+  "E e W são espelhos exatos de S e N (direcoes_espelhadas: true), permitindo espelhar a geometria nas vistas laterais",
+  "desgaste e oxidação na saia inferior e juntas de solda no metal: tratar via material procedural de metal/desgaste"
+ ],
+ "medidas": {
+  "sprite": "fixtures_bathroom_02_4",
+  "sprites": {
+   "S": "fixtures_bathroom_02_4",
+   "E": "fixtures_bathroom_02_5",
+   "N": "fixtures_bathroom_02_15",
+   "W": "fixtures_bathroom_02_14"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 4,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.45,
+     0.2,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.4,
+     0.45
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.3,
+     -0.2,
+     0.0
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.45
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     0.1,
+     0.12,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.45,
+     0.65
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.3,
+     0.44,
+     0.65
+    ],
+    "max": [
+     0.4,
+     0.45,
+     0.7
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Plumbing",
+   "Material2": "Screws"
+  },
+  "props": {
+   "CustomName": "Toilet",
+   "GroupName": "Chemical",
+   "Facing": "S",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "100"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "banheiro",
+  "caixa": {
+   "min": [
+    -0.45,
+    -0.2,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.45,
+    0.7
+   ],
+   "largura": 0.95,
+   "profundidade": 0.65,
+   "altura": 0.7
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_3"
+  ],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7831,
+  "cobertura": 0.998,
+  "sobra": 0.2156,
+  "pixels_desenho": 4483,
+  "pixels_geometria": 5704,
+  "espelhado_E_S": 0.8512,
+  "espelhado_W_N": 0.8927,
+  "N_igual_S": 0.1555,
+  "silhueta_espelho_E_S": 0.9199,
+  "silhueta_espelho_W_N": 0.9294,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.025,
+   0.125
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.45,
+     0.12,
+     0.0
+    ],
+    "max": [
+     -0.05,
+     0.45,
+     0.65
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.1,
+     -0.2,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.13,
+     0.65
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.45,
+     -0.2,
+     0.0
+    ],
+    "max": [
+     -0.05,
+     0.13,
+     0.65
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.35,
+     0.44,
+     0.65
+    ],
+    "max": [
+     -0.25,
+     0.45,
+     0.7
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.3,
+     -0.2,
+     0.65
+    ],
+    "max": [
+     0.4,
+     -0.19,
+     0.7
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.35,
+     -0.2,
+     0.65
+    ],
+    "max": [
+     -0.25,
+     -0.19,
+     0.7
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5594,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1986
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_3): candidato a não portar",
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\toilet_chemical",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\toilet_chemical\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\toilet_chemical\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\toilet_chemical\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\toilet_chemical\\profundidade.png"
+  }
+ }
+}

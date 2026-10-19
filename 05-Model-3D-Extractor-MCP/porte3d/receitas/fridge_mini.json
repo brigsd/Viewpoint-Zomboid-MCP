@@ -87,13 +87,18 @@
  "realista": {
   "materiais": {
    "liso": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.2
    },
    "metal": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.25,
+    "ferrugem": 0.1
    },
    "puxador": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.2,
+    "ferrugem": 0.1
    }
   }
  }

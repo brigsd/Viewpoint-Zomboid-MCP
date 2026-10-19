@@ -1,0 +1,138 @@
+{
+ "versao": 1,
+ "id": "toilet_chemical",
+ "nota": "Sanitário químico institucional antivandálico em aço inox, com vaso sanitário, lavatório cilíndrico e gabinete traseiro estrutural.",
+ "sprites": {
+  "S": "fixtures_bathroom_02_4",
+  "E": "fixtures_bathroom_02_5",
+  "N": "fixtures_bathroom_02_15",
+  "W": "fixtures_bathroom_02_14"
+ },
+ "tras": "N",
+ "material": "metal",
+ "cores": {
+  "metal": [
+   157,
+   156,
+   157
+  ],
+  "liso": [
+   185,
+   185,
+   188
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "gabinete_traseiro",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    0.2,
+    0.0
+   ],
+   "max": [
+    0.47,
+    0.39,
+    0.45
+   ],
+   "chanfro": 0.015,
+   "material": "metal"
+  },
+  {
+   "nome": "corpo_vaso",
+   "forma": "cilindro",
+   "centro": [
+    -0.075,
+    0.025,
+    0.0
+   ],
+   "raio": 0.195,
+   "altura": 0.4,
+   "material": "metal",
+   "segmentos": 24
+  },
+  {
+   "nome": "assento_vaso",
+   "forma": "cilindro",
+   "centro": [
+    -0.075,
+    0.025,
+    0.4
+   ],
+   "raio": 0.195,
+   "altura": 0.05,
+   "material": "liso",
+   "segmentos": 24
+  },
+  {
+   "nome": "bacia_vaso",
+   "forma": "cilindro",
+   "centro": [
+    -0.075,
+    0.025,
+    0.2
+   ],
+   "raio": 0.13,
+   "altura": 0.2,
+   "material": "metal",
+   "segmentos": 24
+  },
+  {
+   "nome": "coluna_pia",
+   "forma": "cilindro",
+   "centro": [
+    0.295,
+    0.28,
+    0.0
+   ],
+   "raio": 0.175,
+   "altura": 0.65,
+   "material": "metal",
+   "segmentos": 24
+  },
+  {
+   "nome": "cuba_pia",
+   "forma": "cilindro",
+   "centro": [
+    0.295,
+    0.28,
+    0.55
+   ],
+   "raio": 0.135,
+   "altura": 0.09,
+   "material": "metal",
+   "segmentos": 24
+  },
+  {
+   "nome": "torneira",
+   "forma": "caixa",
+   "min": [
+    0.265,
+    0.39,
+    0.65
+   ],
+   "max": [
+    0.325,
+    0.44,
+    0.7
+   ],
+   "chanfro": 0.005,
+   "material": "metal"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   },
+   "liso": {
+    "tipo": "liso"
+   }
+  }
+ }
+}

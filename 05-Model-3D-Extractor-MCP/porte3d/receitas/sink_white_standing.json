@@ -1,0 +1,186 @@
+{
+ "versao": 1,
+ "id": "sink_white_standing",
+ "sprites": {
+  "S": "fixtures_sinks_01_12",
+  "E": "fixtures_sinks_01_13",
+  "N": "fixtures_sinks_01_28",
+  "W": "fixtures_sinks_01_29"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "liso": [
+   230,
+   230,
+   230
+  ],
+  "metal": [
+   190,
+   190,
+   190
+  ],
+  "metal_escuro": [
+   52,
+   52,
+   54
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "cuba",
+   "forma": "prisma",
+   "material": "liso",
+   "eixo": "y",
+   "de": -0.035,
+   "ate": 0.418,
+   "perfil": [
+    [
+     -0.23,
+     0.6
+    ],
+    [
+     -0.31,
+     0.86
+    ],
+    [
+     -0.23,
+     0.86
+    ],
+    [
+     -0.14,
+     0.81
+    ],
+    [
+     -0.06,
+     0.77
+    ],
+    [
+     0.02,
+     0.76
+    ],
+    [
+     0.1,
+     0.77
+    ],
+    [
+     0.18,
+     0.81
+    ],
+    [
+     0.29,
+     0.86
+    ],
+    [
+     0.37,
+     0.86
+    ],
+    [
+     0.3,
+     0.6
+    ]
+   ],
+   "chanfro": 0.01
+  },
+  {
+   "nome": "coluna",
+   "forma": "cilindro",
+   "material": "liso",
+   "centro": [
+    0.02,
+    0.17,
+    0.0
+   ],
+   "raio": 0.118,
+   "raio_topo": 0.055,
+   "altura": 0.6,
+   "segmentos": 24,
+   "chanfro": 0.01
+  },
+  {
+   "nome": "frontao",
+   "forma": "caixa",
+   "material": "liso",
+   "min": [
+    -0.29,
+    0.34,
+    0.86
+   ],
+   "max": [
+    0.35,
+    0.42,
+    0.89
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "torneira_corpo",
+   "forma": "cilindro",
+   "material": "metal",
+   "centro": [
+    0.02,
+    0.33,
+    0.88
+   ],
+   "raio": 0.018,
+   "altura": 0.13,
+   "rot": [
+    35.0,
+    0.0,
+    0.0
+   ],
+   "chanfro": 0.008,
+   "segmentos": 16
+  },
+  {
+   "nome": "registros",
+   "forma": "cilindro",
+   "material": "metal",
+   "centro": [
+    0.14,
+    0.35,
+    0.88
+   ],
+   "raio": 0.03,
+   "altura": 0.025,
+   "chanfro": 0.005,
+   "segmentos": 16,
+   "espelhar": [
+    "x"
+   ]
+  },
+  {
+   "nome": "ralo",
+   "forma": "cilindro",
+   "material": "metal_escuro",
+   "centro": [
+    0.02,
+    0.17,
+    0.76
+   ],
+   "raio": 0.025,
+   "altura": 0.003,
+   "segmentos": 16,
+   "arte_cor": true
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.15
+   },
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.1
+   },
+   "metal_escuro": {
+    "tipo": "metal",
+    "desgaste": 0.25
+   }
+  }
+ }
+}

@@ -1,0 +1,364 @@
+{
+ "versao": 1,
+ "objeto": "chair_white_simple",
+ "sprite": "furniture_seating_indoor_03_57",
+ "decisao": "portar",
+ "motivo": "cadeira simples de madeira clara",
+ "o_que_e": "cadeira de madeira clara com assento levemente abaulado e encosto de painel",
+ "pecas": [
+  {
+   "nome": "pernas",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "quatro pernas",
+   "quantidade": 4
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "assento"
+  },
+  {
+   "nome": "painel_encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "painel do encosto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira"
+ },
+ "problemas_previstos": [
+  "pernas traseiras sobem ate o encosto"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_03_57",
+  "sprites": {
+   "S": "furniture_seating_indoor_03_57",
+   "E": "furniture_seating_indoor_03_56",
+   "N": "furniture_seating_indoor_03_59",
+   "W": "furniture_seating_indoor_03_58"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 6,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 6,
+  "tipos": {
+   "caixa": 6,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.2517,
+     -0.273,
+     0.348
+    ],
+    "max": [
+     0.2517,
+     0.2374,
+     0.4495
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.2185,
+     0.154,
+     0.6733
+    ],
+    "max": [
+     0.2503,
+     0.2174,
+     1.0029
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     0.1832,
+     -0.2477,
+     0.0
+    ],
+    "max": [
+     0.2488,
+     -0.1859,
+     0.3473
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.225,
+     -0.2497,
+     0.0
+    ],
+    "max": [
+     -0.1594,
+     -0.1879,
+     0.3473
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     0.1831,
+     0.1579,
+     0.0
+    ],
+    "max": [
+     0.2487,
+     0.2197,
+     0.6653
+    ]
+   },
+   {
+    "nome": "forma_5",
+    "forma": "caixa",
+    "min": [
+     -0.2216,
+     0.1577,
+     0.0
+    ],
+    "max": [
+     -0.156,
+     0.2195,
+     0.6653
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "White Simple",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "18",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.2517,
+    -0.273,
+    0.0
+   ],
+   "max": [
+    0.2517,
+    0.2374,
+    1.0029
+   ],
+   "largura": 0.5034,
+   "profundidade": 0.5104,
+   "altura": 1.0029
+  },
+  "menor_medida_peca": 0.0618,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8812,
+  "cobertura": 0.9997,
+  "sobra": 0.1185,
+  "pixels_desenho": 3214,
+  "pixels_geometria": 3645,
+  "espelhado_E_S": 0.7343,
+  "espelhado_W_N": 0.4489,
+  "N_igual_S": 0.3076,
+  "silhueta_espelho_E_S": 0.8168,
+  "silhueta_espelho_W_N": 0.4974,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0,
+   -0.0178
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_5",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.2185,
+     -0.253,
+     0.6733
+    ],
+    "max": [
+     0.2503,
+     -0.1896,
+     1.0029
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.2503,
+     -0.253,
+     0.6733
+    ],
+    "max": [
+     0.2185,
+     -0.1896,
+     1.0029
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.2488,
+     0.1503,
+     0.0
+    ],
+    "max": [
+     -0.1832,
+     0.2121,
+     0.3473
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.1594,
+     0.1523,
+     0.0
+    ],
+    "max": [
+     0.225,
+     0.2141,
+     0.3473
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.2487,
+     -0.2553,
+     0.0
+    ],
+    "max": [
+     -0.1831,
+     -0.1935,
+     0.6653
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_5",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.156,
+     -0.2551,
+     0.0
+    ],
+    "max": [
+     0.2216,
+     -0.1933,
+     0.6653
+    ]
+   }
+  ],
+  "n_pes": 4,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4445,
+   "cobertura": 0.9997,
+   "fora_do_desenho": 0.2772
+  },
+  "sugestao": [
+   "4 pÃ©s descritos, provÃ¡vel pÃ© escondido (faltam 4, espelho de forma_2): completar por simetria",
+   "hÃ¡ desenho de trÃ¡s real (N): usar tras = N"
+  ]
+ }
+}

@@ -1,118 +1,314 @@
 {
- "versao": 1,
- "id": "counter_bar",
- "sprites": {
-  "S": "location_restaurant_bar_01_5",
-  "E": "location_restaurant_bar_01_7",
-  "N": "location_restaurant_bar_01_1",
-  "W": "location_restaurant_bar_01_3"
- },
- "tras": "N",
- "material": "liso",
- "pecas": [
-  {
-   "nome": "tampo",
-   "forma": "caixa",
-   "min": [
-    -0.5671,
-    -0.1376,
-    1.045
-   ],
-   "max": [
-    0.4799,
-    0.4846,
-    1.1516
-   ],
-   "chanfro": 0.008
+  "versao": 1,
+  "id": "counter_bar",
+  "sprites": {
+    "S": "location_restaurant_bar_01_5",
+    "E": "location_restaurant_bar_01_7",
+    "N": "location_restaurant_bar_01_1",
+    "W": "location_restaurant_bar_01_3"
   },
-  {
-   "nome": "corpo",
-   "forma": "caixa",
-   "min": [
-    -0.5421,
-    -0.1126,
-    0.09
-   ],
-   "max": [
-    0.4549,
-    0.4596,
-    1.045
-   ],
-   "chanfro": 0.005
+  "tras": "N",
+  "material": "madeira_corpo",
+  "pecas": [
+    {
+      "nome": "tampo",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.5671,
+        -0.1376,
+        1.045
+      ],
+      "max": [
+        0.4799,
+        0.4846,
+        1.1516
+      ],
+      "chanfro": 0.008,
+      "veio": "x"
+    },
+    {
+      "nome": "corpo",
+      "forma": "caixa",
+      "material": "madeira_corpo",
+      "min": [
+        -0.5421,
+        -0.1126,
+        0.09
+      ],
+      "max": [
+        0.4549,
+        0.4596,
+        1.045
+      ],
+      "chanfro": 0.005,
+      "veio": "z"
+    },
+    {
+      "nome": "rodape",
+      "forma": "caixa",
+      "material": "madeira_rodape",
+      "min": [
+        -0.5671,
+        -0.1376,
+        0.0
+      ],
+      "max": [
+        0.4799,
+        0.4846,
+        0.09
+      ],
+      "chanfro": 0.005,
+      "veio": "x"
+    },
+    {
+      "nome": "porta_esq",
+      "forma": "caixa",
+      "material": "madeira_porta",
+      "min": [
+        -0.535,
+        -0.1326,
+        0.105
+      ],
+      "max": [
+        -0.055,
+        -0.1126,
+        1.03
+      ],
+      "chanfro": 0.005,
+      "veio": "z"
+    },
+    {
+      "nome": "porta_dir",
+      "forma": "caixa",
+      "material": "madeira_porta",
+      "min": [
+        -0.045,
+        -0.1326,
+        0.105
+      ],
+      "max": [
+        0.448,
+        -0.1126,
+        1.03
+      ],
+      "chanfro": 0.005,
+      "veio": "z"
+    },
+    {
+      "nome": "moldura_porta_esq_base",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.505,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        -0.085,
+        -0.1316,
+        0.141
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "moldura_porta_esq_topo",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.505,
+        -0.1356,
+        0.994
+      ],
+      "max": [
+        -0.085,
+        -0.1316,
+        1.0
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "moldura_porta_esq_lado_esq",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.505,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        -0.499,
+        -0.1316,
+        1.0
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "moldura_porta_esq_lado_dir",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.091,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        -0.085,
+        -0.1316,
+        1.0
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "moldura_porta_dir_base",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.015,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        0.418,
+        -0.1316,
+        0.141
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "moldura_porta_dir_topo",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.015,
+        -0.1356,
+        0.994
+      ],
+      "max": [
+        0.418,
+        -0.1316,
+        1.0
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "moldura_porta_dir_lado_esq",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        -0.015,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        -0.009,
+        -0.1316,
+        1.0
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "moldura_porta_dir_lado_dir",
+      "forma": "caixa",
+      "material": "madeira_moldura",
+      "min": [
+        0.412,
+        -0.1356,
+        0.135
+      ],
+      "max": [
+        0.418,
+        -0.1316,
+        1.0
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "puxador_esq",
+      "forma": "cilindro",
+      "material": "madeira_moldura",
+      "centro": [
+        -0.125,
+        -0.1526,
+        0.905
+      ],
+      "raio": 0.018,
+      "altura": 0.022,
+      "eixo": "y",
+      "segmentos": 16
+    },
+    {
+      "nome": "puxador_dir",
+      "forma": "cilindro",
+      "material": "madeira_moldura",
+      "centro": [
+        0.025,
+        -0.1526,
+        0.905
+      ],
+      "raio": 0.018,
+      "altura": 0.022,
+      "eixo": "y",
+      "segmentos": 16
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "rodape",
-   "forma": "caixa",
-   "min": [
-    -0.5671,
-    -0.1376,
-    0.0
-   ],
-   "max": [
-    0.4799,
-    0.4846,
-    0.09
-   ],
-   "chanfro": 0.005
+  "realista": {
+    "materiais": {
+      "madeira_corpo": {
+        "tipo": "madeira",
+        "desgaste": 0.2,
+        "veio": 2.5
+      },
+      "madeira_tampo": {
+        "tipo": "madeira",
+        "desgaste": 0.2,
+        "veio": 2.5
+      },
+      "madeira_porta": {
+        "tipo": "madeira",
+        "desgaste": 0.2,
+        "veio": 2.5
+      },
+      "madeira_rodape": {
+        "tipo": "madeira",
+        "desgaste": 0.3,
+        "veio": 2.5
+      },
+      "madeira_moldura": {
+        "tipo": "madeira",
+        "desgaste": 0.2,
+        "veio": 2.5
+      }
+    }
   },
-  {
-   "nome": "porta_esq",
-   "forma": "caixa",
-   "min": [
-    -0.535,
-    -0.1326,
-    0.105
-   ],
-   "max": [
-    -0.055,
-    -0.1126,
-    1.03
-   ],
-   "chanfro": 0.005
-  },
-  {
-   "nome": "porta_dir",
-   "forma": "caixa",
-   "min": [
-    -0.045,
-    -0.1326,
-    0.105
-   ],
-   "max": [
-    0.448,
-    -0.1126,
-    1.03
-   ],
-   "chanfro": 0.005
-  },
-  {
-   "nome": "puxador_esq",
-   "forma": "cilindro",
-   "centro": [
-    -0.125,
-    -0.1526,
-    0.905
-   ],
-   "raio": 0.018,
-   "altura": 0.022,
-   "eixo": "y",
-   "segmentos": 16
-  },
-  {
-   "nome": "puxador_dir",
-   "forma": "cilindro",
-   "centro": [
-    0.025,
-    -0.1526,
-    0.905
-   ],
-   "raio": 0.018,
-   "altura": 0.022,
-   "eixo": "y",
-   "segmentos": 16
+  "cores": {
+    "madeira_corpo": [
+      84,
+      40,
+      8
+    ],
+    "madeira_tampo": [
+      88,
+      46,
+      18
+    ],
+    "madeira_porta": [
+      86,
+      42,
+      10
+    ],
+    "madeira_rodape": [
+      120,
+      66,
+      24
+    ],
+    "madeira_moldura": [
+      60,
+      28,
+      6
+    ]
   }
- ],
- "arte": {
-  "modo": "adesivo"
- }
 }

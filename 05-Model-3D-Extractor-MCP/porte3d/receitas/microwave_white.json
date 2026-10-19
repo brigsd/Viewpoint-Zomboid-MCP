@@ -374,25 +374,34 @@
  "realista": {
   "materiais": {
    "metal": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.2,
+    "ferrugem": 0.1
    },
    "moldura": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.2
    },
    "vidro": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.15
    },
    "painel_mat": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.15
    },
    "botao": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.15
    },
    "base": {
-    "tipo": "liso"
+    "tipo": "liso",
+    "desgaste": 0.3
    },
    "ventil": {
-    "tipo": "metal"
+    "tipo": "metal",
+    "desgaste": 0.25,
+    "ferrugem": 0.15
    }
   }
  }

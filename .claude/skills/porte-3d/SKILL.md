@@ -21,6 +21,8 @@ O plano ativo é `planos/2026-10-12-esteira-de-porte-3d.md`, e o contrato da bib
 | aprovação | o usuário, na galeria (`porte3d/galeria.py servir`) | a decisão na fila |
 | lista final | script `porte3d/relatorio.py` | o texto, nunca escrito por agente |
 
+**Nível de produção:** o `realista` (materiais procedurais do Blender). O nível `arte` é legado: a textura vem do sprite do jogo e não serve em 3D. Detalhes em `05-Model-3D-Extractor-MCP/porte3d/CONTRATO.md`.
+
 Os tipos de agente novos só valem numa sessão nova. Até lá, despache um `general-purpose` com `model: sonnet` e mande ele primeiro ler e seguir o arquivo do agente.
 
 ## Um objeto

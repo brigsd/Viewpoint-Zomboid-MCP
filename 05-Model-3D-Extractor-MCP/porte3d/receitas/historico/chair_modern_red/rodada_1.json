@@ -1,0 +1,98 @@
+{
+ "versao": 1,
+ "id": "chair_modern_red",
+ "sprites": {
+  "S": "furniture_seating_indoor_01_41",
+  "E": "furniture_seating_indoor_01_40",
+  "N": "furniture_seating_indoor_01_43",
+  "W": "furniture_seating_indoor_01_42"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   46,
+   40,
+   38
+  ],
+  "tecido": [
+   155,
+   58,
+   60
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.24,
+    -0.22,
+    0.0
+   ],
+   "max": [
+    -0.19,
+    -0.17,
+    0.36
+   ],
+   "espelhar": [
+    "x",
+    "y"
+   ],
+   "material": "madeira",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    -0.28,
+    0.36
+   ],
+   "max": [
+    0.28,
+    0.22,
+    0.5
+   ],
+   "material": "tecido",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "min": [
+    -0.29,
+    0.19,
+    0.5
+   ],
+   "max": [
+    0.29,
+    0.27,
+    1.11
+   ],
+   "rot": [
+    3.0,
+    0.0,
+    0.0
+   ],
+   "material": "tecido",
+   "chanfro": 0.015
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.35
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.3
+   }
+  }
+ }
+}

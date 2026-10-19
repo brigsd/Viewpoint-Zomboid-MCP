@@ -4440,7 +4440,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Black Fancy",
@@ -4450,6 +4450,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:11-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:49:24-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:51:14-03:00"
     }
    ],
    "id": "chair_black_fancy",
@@ -4457,7 +4481,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_40",
     "N": "furniture_seating_indoor_03_43",
@@ -4470,7 +4494,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Black Office",
@@ -4480,6 +4504,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:11-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:42:36-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:43:43-03:00"
     }
    ],
    "id": "chair_black_office",
@@ -4487,7 +4535,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_49",
     "N": "furniture_seating_indoor_01_51",
@@ -4560,7 +4608,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aprovado",
    "familia": "chair",
    "forma_de": "chair_purple_rattan",
    "group_name": "Blue Rattan",
@@ -4570,6 +4618,66 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T18:11:42-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T18:12:56-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T18:14:08-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T18:16:10-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "rejeitado",
+     "quando": "2026-10-18T18:37:39-03:00"
+    },
+    {
+     "de": "rejeitado",
+     "nota": null,
+     "para": "retrabalho",
+     "quando": "2026-10-18T18:37:39-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T18:37:39-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T18:37:40-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T18:38:41-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T19:05:52-03:00"
     }
    ],
    "id": "chair_blue_rattan",
@@ -4577,7 +4685,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_40",
     "N": "furniture_seating_indoor_02_43",
@@ -4650,7 +4758,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Dark Wooden",
@@ -4660,6 +4768,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:15-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:34-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:30:34-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:32:36-03:00"
     }
    ],
    "id": "chair_dark_wooden",
@@ -4667,7 +4799,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_1",
     "N": "furniture_seating_indoor_02_2",
@@ -4680,7 +4812,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Darkblue Modern",
@@ -4690,6 +4822,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:13-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:44:38-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:45:19-03:00"
     }
    ],
    "id": "chair_darkblue_modern",
@@ -4697,7 +4853,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_48",
     "N": "furniture_seating_indoor_03_51",
@@ -4818,7 +4974,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Exceptionally crafted",
@@ -4828,6 +4984,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:31-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:13-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:22:43-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:24:14-03:00"
     }
    ],
    "id": "chair_exceptionally_crafted",
@@ -4835,7 +5015,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "carpentry_01_45",
     "N": "carpentry_01_46",
@@ -4848,7 +5028,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Fancy Wooden",
@@ -4858,6 +5038,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:13-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:32-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:29:44-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:31:17-03:00"
     }
    ],
    "id": "chair_fancy_wooden",
@@ -4865,7 +5069,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_44",
     "N": "furniture_seating_indoor_03_47",
@@ -4938,7 +5142,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Green Dinner",
@@ -4948,6 +5152,48 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:26-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:22-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:32:46-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "ajuste",
+     "para": "retrabalho",
+     "quando": "2026-10-18T19:35:01-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:35:01-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:35:34-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:38:03-03:00"
     }
    ],
    "id": "chair_green_dinner",
@@ -4955,7 +5201,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "furniture_seating_indoor_01_56",
     "N": "furniture_seating_indoor_01_59",
@@ -5058,7 +5304,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Makeshift",
@@ -5068,6 +5314,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:30-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:11-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:10:45-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:22:43-03:00"
     }
    ],
    "id": "chair_makeshift",
@@ -5075,7 +5345,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "carpentry_01_38",
     "N": "carpentry_01_37",
@@ -5118,7 +5388,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Modern Red",
@@ -5128,6 +5398,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:12-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:42:51-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:44:00-03:00"
     }
    ],
    "id": "chair_modern_red",
@@ -5135,7 +5429,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_40",
     "N": "furniture_seating_indoor_01_43",
@@ -5148,7 +5442,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Modern White",
@@ -5158,6 +5452,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:12-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:45:45-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:47:21-03:00"
     }
    ],
    "id": "chair_modern_white",
@@ -5165,7 +5483,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_44",
     "S": "furniture_seating_indoor_01_45"
@@ -5236,7 +5554,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Poor quality",
@@ -5246,6 +5564,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:29-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:23-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:35:39-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:38:08-03:00"
     }
    ],
    "id": "chair_poor_quality",
@@ -5253,7 +5595,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "carpentry_01_41",
     "N": "carpentry_01_42",
@@ -5266,7 +5608,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aprovado",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Purple Rattan",
@@ -5276,6 +5618,36 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T18:11:44-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T18:12:56-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T18:14:45-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T18:16:10-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T19:05:52-03:00"
     }
    ],
    "id": "chair_purple_rattan",
@@ -5283,7 +5655,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_01_32",
     "N": "furniture_seating_indoor_01_35",
@@ -5326,7 +5698,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Red Wooden",
@@ -5336,6 +5708,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:18-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:09-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:24:15-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:25:37-03:00"
     }
    ],
    "id": "chair_red_wooden",
@@ -5343,7 +5739,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_8",
     "N": "furniture_seating_indoor_02_11",
@@ -5356,7 +5752,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Rocking",
@@ -5366,6 +5762,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:22-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:14-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:24:54-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:26:09-03:00"
     }
    ],
    "id": "chair_rocking",
@@ -5373,7 +5793,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_144",
     "N": "furniture_seating_indoor_03_146",
@@ -5416,7 +5836,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Spiffos Dinner",
@@ -5426,6 +5846,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:24-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:21-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:31:18-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:32:36-03:00"
     }
    ],
    "id": "chair_spiffos_dinner",
@@ -5433,7 +5877,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "location_restaurant_spiffos_02_25",
     "N": "location_restaurant_spiffos_02_26",
@@ -5446,7 +5890,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Victorian 1",
@@ -5456,6 +5900,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T18:51:57-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T18:54:40-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T18:58:25-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:00:56-03:00"
     }
    ],
    "id": "chair_victorian_1",
@@ -5463,7 +5931,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_80",
     "N": "furniture_seating_indoor_03_82",
@@ -5476,7 +5944,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": "chair_victorian_1",
    "group_name": "Victorian 2",
@@ -5486,6 +5954,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T18:51:59-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T18:54:40-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T18:59:24-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:00:56-03:00"
     }
    ],
    "id": "chair_victorian_2",
@@ -5493,7 +5985,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_84",
     "N": "furniture_seating_indoor_03_86",
@@ -5656,7 +6148,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "White Simple",
@@ -5666,6 +6158,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:34-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:15-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:10:57-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:22:43-03:00"
     }
    ],
    "id": "chair_white_simple",
@@ -5673,7 +6189,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_56",
     "N": "furniture_seating_indoor_03_59",
@@ -5686,7 +6202,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "White Wooden",
@@ -5696,6 +6212,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:20-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:12-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:23:25-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:24:54-03:00"
     }
    ],
    "id": "chair_white_wooden",
@@ -5703,7 +6243,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_57",
     "N": "furniture_seating_indoor_02_58",
@@ -5716,7 +6256,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Wooden",
@@ -5726,6 +6266,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T19:07:10-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T19:09:31-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T19:29:02-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T19:30:34-03:00"
     }
    ],
    "id": "chair_wooden",
@@ -5733,7 +6297,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_02_4",
     "N": "furniture_seating_indoor_02_7",
@@ -5746,7 +6310,7 @@
    "categoria": "moveis",
    "comentario_usuario": null,
    "custom_name": "Chair",
-   "estado": "fila",
+   "estado": "aguardando_aprovacao",
    "familia": "chair",
    "forma_de": null,
    "group_name": "Yellow Modern",
@@ -5756,6 +6320,30 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T21:23:14-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T21:31:17-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T21:44:12-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": null,
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T21:45:08-03:00"
     }
    ],
    "id": "chair_yellow_modern",
@@ -5763,7 +6351,7 @@
    "motivo": null,
    "notas": [],
    "prioridade": 345,
-   "rodada": 0,
+   "rodada": 1,
    "sprites": {
     "E": "furniture_seating_indoor_03_29",
     "N": "furniture_seating_indoor_03_31",
@@ -11388,7 +11976,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "HK533p",
-   "estado": "reprovado",
+   "estado": "aguardando_aprovacao",
    "familia": "hk533p",
    "forma_de": null,
    "group_name": "Imekagi",
@@ -11458,11 +12046,17 @@
      "nota": "cabeca_tripe: cor (arte, comparacao) — bloco central da cabeça do tripé",
      "para": "reprovado",
      "quando": "2026-10-18T12:03:02-03:00"
+    },
+    {
+     "de": "reprovado",
+     "nota": "revisão pedida pelo usuário: o reprovado estava bom (transição manual, fora da máquina de estados)",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T14:38:54-03:00"
     }
    ],
    "id": "hk533p_imekagi",
    "material": "metal",
-   "motivo": "cabeca_tripe: cor (arte, comparacao) — bloco central da cabeça do tripé",
+   "motivo": null,
    "notas": [
     {
      "arte": 5,
@@ -11494,7 +12088,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Hood",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "hood",
    "forma_de": null,
    "group_name": "Extractor",
@@ -11528,6 +12122,12 @@
      "nota": "rodada 1: arte 9, realista 10",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-17T00:11:23-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T15:52:11-03:00"
     }
    ],
    "id": "hood_extractor",
@@ -11637,7 +12237,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Industrial",
-   "estado": "reprovado",
+   "estado": "aprovado",
    "familia": "industrial",
    "forma_de": null,
    "group_name": "Bake-O-Matic",
@@ -11707,11 +12307,23 @@
      "nota": "gabinete_inferior: sobra (ambos, sobreposicao) — lateral esquerda da abertura da câmara",
      "para": "reprovado",
      "quando": "2026-10-18T12:04:36-03:00"
+    },
+    {
+     "de": "reprovado",
+     "nota": "revisão pedida pelo usuário: o reprovado estava bom (transição manual, fora da máquina de estados)",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T14:38:54-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T15:52:09-03:00"
     }
    ],
    "id": "industrial_bake_o_matic",
    "material": "metal",
-   "motivo": "gabinete_inferior: sobra (ambos, sobreposicao) — lateral esquerda da abertura da câmara",
+   "motivo": null,
    "notas": [
     {
      "arte": 6,
@@ -13116,7 +13728,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Oven",
-   "estado": "reprovado",
+   "estado": "aguardando_aprovacao",
    "familia": "oven",
    "forma_de": null,
    "group_name": "Industrial",
@@ -13210,11 +13822,17 @@
      "nota": "alca: proporcao (ambos, fio) — barra cilíndrica principal da alça da porta",
      "para": "reprovado",
      "quando": "2026-10-17T03:04:26-03:00"
+    },
+    {
+     "de": "reprovado",
+     "nota": "revisão pedida pelo usuário: o reprovado estava bom (transição manual, fora da máquina de estados)",
+     "para": "aguardando_aprovacao",
+     "quando": "2026-10-18T14:38:54-03:00"
     }
    ],
    "id": "oven_industrial",
    "material": "metal",
-   "motivo": "alca: proporcao (ambos, fio) — barra cilíndrica principal da alça da porta",
+   "motivo": null,
    "notas": [
     {
      "arte": 6,
@@ -15937,7 +16555,7 @@
    "categoria": "cozinha",
    "comentario_usuario": null,
    "custom_name": "Sink",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "sink",
    "forma_de": null,
    "group_name": "White Standing",
@@ -15947,14 +16565,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-12T19:39:40-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T16:01:35-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:12:49-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:24:50-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 5, realista 3",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:28:37-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:47:16-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:47:16-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 6, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:50:17-03:00"
     }
    ],
    "id": "sink_white_standing",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 5,
+     "realista": 3,
+     "rodada": 1
+    },
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 2
+    }
+   ],
    "prioridade": 406,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "fixtures_sinks_01_13",
     "N": "fixtures_sinks_01_28",
@@ -17076,7 +17747,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "Television",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "television",
    "forma_de": null,
    "group_name": "Premium Technologies",
@@ -17110,6 +17781,12 @@
      "nota": "rodada 1: arte 9, realista 9",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-16T23:50:13-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T15:52:10-03:00"
     }
    ],
    "id": "television_premium_technologies",
@@ -17296,7 +17973,7 @@
    "categoria": "banheiro",
    "comentario_usuario": null,
    "custom_name": "Toilet",
-   "estado": "fila",
+   "estado": "retrabalho",
    "familia": "toilet",
    "forma_de": null,
    "group_name": "Chemical",
@@ -17306,14 +17983,67 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T16:01:03-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:06:49-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:22:45-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 5, realista 3",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:27:49-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:44:50-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:44:50-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 6, realista 4",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:49:33-03:00"
     }
    ],
    "id": "toilet_chemical",
    "material": "metal",
    "motivo": null,
-   "notas": [],
+   "notas": [
+    {
+     "arte": 5,
+     "realista": 3,
+     "rodada": 1
+    },
+    {
+     "arte": 6,
+     "realista": 4,
+     "rodada": 2
+    }
+   ],
    "prioridade": 205,
-   "rodada": 0,
+   "rodada": 2,
    "sprites": {
     "E": "fixtures_bathroom_02_5",
     "N": "fixtures_bathroom_02_15",
@@ -17326,7 +18056,7 @@
    "categoria": "banheiro",
    "comentario_usuario": null,
    "custom_name": "Toilet",
-   "estado": "fila",
+   "estado": "reprovado",
    "familia": "toilet",
    "forma_de": null,
    "group_name": "Fancy",
@@ -17336,14 +18066,90 @@
      "nota": "criado por popular",
      "para": "fila",
      "quando": "2026-10-18T11:21:42-03:00"
+    },
+    {
+     "de": "fila",
+     "nota": null,
+     "para": "em_inspecao",
+     "quando": "2026-10-18T16:00:30-03:00"
+    },
+    {
+     "de": "em_inspecao",
+     "nota": "ficha registrada",
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:06:07-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 1",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:20:13-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 1: arte 6, realista 6",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:26:16-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:35:30-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 2",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:35:30-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "rodada 2: arte 7, realista 7",
+     "para": "retrabalho",
+     "quando": "2026-10-18T16:38:50-03:00"
+    },
+    {
+     "de": "retrabalho",
+     "nota": null,
+     "para": "em_modelagem",
+     "quando": "2026-10-18T16:46:11-03:00"
+    },
+    {
+     "de": "em_modelagem",
+     "nota": "receita da rodada 3",
+     "para": "em_critica",
+     "quando": "2026-10-18T16:46:11-03:00"
+    },
+    {
+     "de": "em_critica",
+     "nota": "assento: estrutura (realista, comparacao) — face superior do assento",
+     "para": "reprovado",
+     "quando": "2026-10-18T16:50:17-03:00"
     }
    ],
    "id": "toilet_fancy",
    "material": "metal",
-   "motivo": null,
-   "notas": [],
+   "motivo": "assento: estrutura (realista, comparacao) — face superior do assento",
+   "notas": [
+    {
+     "arte": 6,
+     "realista": 6,
+     "rodada": 1
+    },
+    {
+     "arte": 7,
+     "realista": 7,
+     "rodada": 2
+    },
+    {
+     "arte": 7,
+     "realista": 6,
+     "rodada": 3
+    }
+   ],
    "prioridade": 205,
-   "rodada": 0,
+   "rodada": 3,
    "sprites": {
     "E": "fixtures_bathroom_01_1",
     "N": "fixtures_bathroom_01_3",
@@ -18515,7 +19321,7 @@
    "categoria": "eletrodomesticos",
    "comentario_usuario": null,
    "custom_name": "X-press",
-   "estado": "aguardando_aprovacao",
+   "estado": "aprovado",
    "familia": "x_press",
    "forma_de": null,
    "group_name": "Coffee",
@@ -18567,6 +19373,12 @@
      "nota": "rodada 2: arte 9, realista 8",
      "para": "aguardando_aprovacao",
      "quando": "2026-10-17T03:07:46-03:00"
+    },
+    {
+     "de": "aguardando_aprovacao",
+     "nota": null,
+     "para": "aprovado",
+     "quando": "2026-10-18T15:52:10-03:00"
     }
    ],
    "id": "x_press_coffee",

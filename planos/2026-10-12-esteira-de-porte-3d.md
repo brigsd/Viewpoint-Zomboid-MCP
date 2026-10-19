@@ -18,7 +18,7 @@ Fazer isso à mão, objeto por objeto, não escala. Aceitar o automático sem ol
 
 Uma esteira em que um agente **modelador** monta o 3D de cada objeto e um agente **crítico** olha as imagens e aponta defeitos, com até 3 rodadas de retrabalho. O usuário aprova o que passou. Antes de modelar, um agente **inspetor** levanta o que precisa ser feito numa ficha de serviço; os objetos que não passam em 3 rodadas viram uma lista curta com o motivo. Os aprovados viram um pack que o Viewpoint carrega no jogo, em **dois níveis gráficos**:
 
-- **arte**: textura tirada do desenho do jogo, fiel ao estilo pixel;
+- **arte** (legado, descontinuado em 2026-10-18): textura tirada do desenho do jogo;
 - **realista** (o "nível 3", adotado em 2026-10-12 depois do teste da mesa): geometria com detalhe (chanfro nas bordas, pés afinando, saia, cantoneiras, puxadores) e textura de material gerada no Blender sem janela (madeira com anéis e tábuas diferentes entre si, metal, tecido), nas cores da arte, com a oclusão de ambiente assada na textura. O material vem da propriedade `Material` do jogo.
 
 A mesma malha serve aos dois níveis; só a textura muda. O Viewpoint só aceita uma textura de cor (`map_Kd`), então todo o volume do realista é modelado na geometria ou assado na textura (testes de 2026-10-12: `experimentos3d/teste_realista_mesa.py` e `experimentos3d/blender_mesa_nivel3.py`). Ferramenta: Blender 5.2 (instalado pela Steam), rodando sem janela.
@@ -42,7 +42,7 @@ MODELADOR (Sonnet) ── receita ──► folhas (textura + wireframe + sobrep
                               conferência por amostra (eu) ──► GALERIA (usuário aprova)
                                                   │ aprovado
                                                   ▼
-                              PACK (mod próprio, nível arte e realista) ──► jogo (Viewpoint)
+                              PACK (mod próprio, nível realista) ──► jogo (Viewpoint)
 
 3 rodadas sem nota 8 ──► LISTA FINAL DE REPROVADOS (gerada por script): objeto · última nota · motivo em 1 linha
 ```
@@ -83,7 +83,7 @@ MODELADOR (Sonnet) ── receita ──► folhas (textura + wireframe + sobrep
   2. **forma**: uma receita de geometria por forma (comum, mini, grande, industrial...). É feita uma vez só, e as variantes reaproveitam a malha;
   3. **cor**: ligada aos sprites que o jogo já tem (`GroupName`: White, Blue, Green, Red, Steel...);
   4. **estado**: os presets `desgaste` e `ferrugem` dos materiais. No pack do jogo entram só **usada** e **enferrujada**. A **nova** fica fora e reservada para um mod futuro. O estado é uma opção do pack inteiro, já que o jogo não tem sprite por estado; sortear por objeto exigiria mudar o Viewpoint;
-  5. **nível gráfico** (arte, realista);
+  5. **nível gráfico** (realista);
   6. **qualidade**, que é a resolução da textura: baixa 512, média 1024 (padrão) ou alta 2048. Escolhida no pack, porque o Viewpoint carrega todos os modelos na placa de vídeo.
 
 - **Pack** (mod próprio, ex. `PZ3DObjects`), com uma opção para escolher o nível gráfico (dois packs registrados, um por nível; só o escolhido fica ativo):
@@ -159,6 +159,14 @@ Valem desde o piloto, para a esteira escalar sem perder controle:
 - **O crítico não separa bom de ruim na calibração.** Ajustar as perguntas. Se ainda assim falhar, a aprovação fica toda com o usuário e o crítico vira só uma triagem.
 - **Arte do jogo dentro do mod.** As texturas são derivadas da arte da The Indie Stone. Para uso pessoal tudo bem; publicar na Workshop exige decidir antes, porque muitos mods fazem isso, mas é uma decisão do usuário.
 - **Direções espelhadas** (E/W são espelho de S/N). Ligar o mesmo modelo girado pode mostrar o objeto "ao contrário" do desenho 2D. Conferir na prova da fatia 7.
+
+## Decisão de 2026-10-18: o nível realista vira o de produção
+
+- **O nível arte sai do fluxo de produção.** A textura `arte` vem do sprite do jogo, pintado para uma vista só. Em 3D, cada face mostra o pedaço errado (ver `deluxe_espresso/arte.png`, um mosaico de recortes do sprite). Não há correção barata.
+- **O realista não depende do arte.** Ele usa materiais procedurais do Blender (`blender/materiais.py`) e a oclusão da geometria. Por isso dá para aprender e manter só o realista.
+- **Cores:** continuam estimadas do sprite (`preparar.py`, `estimar_cores`), por enquanto. Trocar por cor fixa por material é um ajuste pequeno, se for preciso.
+- **Variante pixelada: descartada em 2026-10-18.** Testada em quatro objetos com blocos de 16 px e 24 cores; a versão limpa ficou melhor em alguns itens. Fica só o realista.
+- **Docs:** `CONTRATO.md` e a skill `porte-3d` passam a tratar o realista como o nível de produção e o arte como legado.
 
 ## Fechamento
 

@@ -1,114 +1,331 @@
 {
- "versao": 1,
- "id": "counter_quality_crafted_corner",
- "sprites": {
-  "S": "carpentry_02_20",
-  "E": "carpentry_02_18",
-  "N": "carpentry_02_16",
-  "W": "carpentry_02_22"
- },
- "tras": "N",
- "material": "liso",
- "pecas": [
-  {
-   "nome": "corpo_longo",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.131,
-    0.08
-   ],
-   "max": [
-    0.521,
-    0.449,
-    0.835
-   ]
+  "versao": 1,
+  "id": "counter_quality_crafted_corner",
+  "sprites": {
+    "S": "carpentry_02_20",
+    "E": "carpentry_02_18",
+    "N": "carpentry_02_16",
+    "W": "carpentry_02_22"
   },
-  {
-   "nome": "corpo_curto",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.5239,
-    0.08
-   ],
-   "max": [
-    0.1315,
-    -0.131,
-    0.835
-   ]
+  "tras": "N",
+  "material": "madeira_corpo",
+  "pecas": [
+    {
+      "nome": "corpo_longo",
+      "forma": "caixa",
+      "material": "madeira_corpo",
+      "min": [
+        -0.479,
+        -0.131,
+        0.08
+      ],
+      "max": [
+        0.521,
+        0.449,
+        0.835
+      ]
+    },
+    {
+      "nome": "corpo_curto",
+      "forma": "caixa",
+      "material": "madeira_corpo",
+      "min": [
+        -0.479,
+        -0.5239,
+        0.08
+      ],
+      "max": [
+        0.1315,
+        -0.131,
+        0.835
+      ]
+    },
+    {
+      "nome": "tampo_longo_tabua1",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.491,
+        -0.131,
+        0.835
+      ],
+      "max": [
+        -0.231,
+        0.461,
+        0.885
+      ],
+      "veio": "y"
+    },
+    {
+      "nome": "tampo_longo_tabua2",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.227,
+        -0.131,
+        0.835
+      ],
+      "max": [
+        0.019,
+        0.461,
+        0.885
+      ],
+      "veio": "y"
+    },
+    {
+      "nome": "tampo_longo_tabua3",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        0.023,
+        -0.131,
+        0.835
+      ],
+      "max": [
+        0.269,
+        0.461,
+        0.885
+      ],
+      "veio": "y"
+    },
+    {
+      "nome": "tampo_longo_tabua4",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        0.273,
+        -0.131,
+        0.835
+      ],
+      "max": [
+        0.533,
+        0.461,
+        0.885
+      ],
+      "veio": "y"
+    },
+    {
+      "nome": "tampo_curto_tabua1",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.491,
+        -0.5359,
+        0.835
+      ],
+      "max": [
+        0.1315,
+        -0.3943,
+        0.885
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "tampo_curto_tabua2",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.491,
+        -0.3903,
+        0.835
+      ],
+      "max": [
+        0.1315,
+        -0.2627,
+        0.885
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "tampo_curto_tabua3",
+      "forma": "caixa",
+      "material": "madeira_tampo",
+      "min": [
+        -0.491,
+        -0.2587,
+        0.835
+      ],
+      "max": [
+        0.1315,
+        -0.131,
+        0.885
+      ],
+      "veio": "x"
+    },
+    {
+      "nome": "rodape_longo",
+      "forma": "caixa",
+      "material": "madeira_rodape",
+      "min": [
+        -0.479,
+        -0.131,
+        0.0
+      ],
+      "max": [
+        0.521,
+        0.449,
+        0.08
+      ]
+    },
+    {
+      "nome": "rodape_curto",
+      "forma": "caixa",
+      "material": "madeira_rodape",
+      "min": [
+        -0.479,
+        -0.5239,
+        0.0
+      ],
+      "max": [
+        0.1315,
+        -0.131,
+        0.08
+      ]
+    },
+    {
+      "nome": "ranhura_corpo_curto_frente_1",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        -0.2725,
+        -0.5269,
+        0.08
+      ],
+      "max": [
+        -0.2675,
+        -0.5239,
+        0.835
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "ranhura_corpo_curto_frente_2",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        -0.0725,
+        -0.5269,
+        0.08
+      ],
+      "max": [
+        -0.0675,
+        -0.5239,
+        0.835
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "ranhura_corpo_longo_frente_1",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        0.3175,
+        -0.134,
+        0.08
+      ],
+      "max": [
+        0.3225,
+        -0.131,
+        0.835
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "ranhura_corpo_longo_direita_1",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        0.521,
+        0.0975,
+        0.08
+      ],
+      "max": [
+        0.524,
+        0.1025,
+        0.835
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "ranhura_corpo_longo_direita_2",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        0.521,
+        0.2775,
+        0.08
+      ],
+      "max": [
+        0.524,
+        0.2825,
+        0.835
+      ],
+      "veio": "z"
+    },
+    {
+      "nome": "ranhura_corpo_curto_direita_1",
+      "forma": "caixa",
+      "material": "ranhura",
+      "min": [
+        0.1315,
+        -0.3325,
+        0.08
+      ],
+      "max": [
+        0.1345,
+        -0.3275,
+        0.835
+      ],
+      "veio": "z"
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "tampo_longo",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.131,
-    0.835
-   ],
-   "max": [
-    0.521,
-    0.449,
-    0.885
-   ]
+  "realista": {
+    "materiais": {
+      "madeira_corpo": {
+        "tipo": "madeira",
+        "desgaste": 0.5,
+        "veio": 2.5
+      },
+      "madeira_tampo": {
+        "tipo": "madeira",
+        "desgaste": 0.4,
+        "veio": 2.5
+      },
+      "madeira_rodape": {
+        "tipo": "madeira",
+        "desgaste": 0.6,
+        "veio": 2.5
+      },
+      "ranhura": {
+        "tipo": "madeira",
+        "desgaste": 0.4,
+        "veio": 2.5
+      }
+    }
   },
-  {
-   "nome": "tampo_curto",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.5239,
-    0.835
-   ],
-   "max": [
-    0.1315,
-    -0.131,
-    0.885
-   ]
-  },
-  {
-   "nome": "rodape_longo",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.131,
-    0.0
-   ],
-   "max": [
-    0.521,
-    0.449,
-    0.08
-   ]
-  },
-  {
-   "nome": "rodape_curto",
-   "forma": "caixa",
-   "material": "liso",
-   "min": [
-    -0.479,
-    -0.5239,
-    0.0
-   ],
-   "max": [
-    0.1315,
-    -0.131,
-    0.08
-   ]
+  "cores": {
+    "madeira_corpo": [
+      104,
+      66,
+      36
+    ],
+    "madeira_tampo": [
+      118,
+      84,
+      50
+    ],
+    "madeira_rodape": [
+      78,
+      50,
+      30
+    ],
+    "ranhura": [
+      48,
+      28,
+      16
+    ]
   }
- ],
- "arte": {
-  "modo": "adesivo"
- },
- "realista": {
-  "materiais": {
-   "liso": {
-    "tipo": "liso"
-   }
-  }
- }
 }

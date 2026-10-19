@@ -45,7 +45,7 @@ def validar(r: dict) -> None:
                     erros.append(f"{p['nome']}: afinar maior que a peça")
         if p["forma"] == "prisma" and p["de"] >= p["ate"]:
             erros.append(f"{p['nome']}: 'de' precisa ser menor que 'ate'")
-    arte = r["arte"]
+    arte = r.get("arte", {"modo": "adesivo"})   # bloco legado: o nível arte não é mais aprovado
     if arte["modo"] == "kit":
         recortes = arte.get("recortes", {})
         if not recortes or not arte.get("faces"):

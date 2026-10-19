@@ -2,7 +2,7 @@
 
 Biblioteca da esteira de porte 3D (plano `planos/2026-10-12-esteira-de-porte-3d.md`). A partir de uma **receita** (as peças do objeto em metros), gera o modelo 3D em dois níveis gráficos e as folhas de imagem para o crítico.
 
-- **arte:** textura tirada do desenho do jogo.
+- **arte (legado):** textura tirada do desenho do jogo; não é mais produção.
 - **realista:** geometria com chanfro e material gerado no Blender, com a oclusão assada na textura.
 
 O que cada parte entrega para a outra está em [CONTRATO.md](CONTRATO.md).
@@ -15,7 +15,7 @@ python -m porte3d.portar porte3d/receitas/mesa_fancy_dark.json
 
 Isso roda tudo, nesta ordem: preparar → Blender (malha e buffers) → texturas e OBJ → Blender (vistas) → folhas. A saída vai para `acervo/data/porte3d/<id>/`, que fica fora do git porque tem arte derivada do jogo. Ali ficam:
 
-- `<id>_arte.obj` e `<id>_realista.obj`, cada um com o seu `.mtl` e a sua textura;
+- `<id>_realista.obj` (e `<id>_arte.obj`, legado), cada um com o seu `.mtl` e a sua textura;
 - `folhas/`;
 - `resultado.json`, com o contorno em 0° e a diferença de cor.
 
@@ -32,7 +32,7 @@ Precisa do Blender 5.2, por padrão o da Steam. Outro caminho pode ser indicado 
 | `preparar.py` | monta a pasta de trabalho: quadros do jogo e receita expandida com as cores |
 | `blender/construir.py` | dentro do Blender: monta as peças, faz o UV, assa por texel (posição, normal, peça, visibilidade da câmera do jogo, oclusão e cor do material) e renderiza as vistas |
 | `blender/materiais.py` | materiais procedurais do nível realista: madeira, metal, tecido e liso |
-| `texturas.py` | compõe as texturas: arte em modo adesivo ou kit, e realista; grava o OBJ e o MTL |
+| `texturas.py` | compõe as texturas: realista (e o arte legado); grava o OBJ e o MTL |
 | `folhas.py` | folhas para o crítico (comparação, giro, wireframe com legenda, sobreposição de contorno, zoom) e as medidas |
 | `portar.py` | o caminho completo de um objeto |
 | `conferir_formas.py` | folha que desenha a geometria do jogo convertida por cima dos sprites, para conferir a conversão |

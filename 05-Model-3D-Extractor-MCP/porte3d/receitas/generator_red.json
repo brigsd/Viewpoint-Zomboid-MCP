@@ -1,544 +1,637 @@
 {
- "versao": 1,
- "id": "generator_red",
- "nota": "Gerador portatil vermelho com carenagem chanfrada, base escura com patins, tampa do tanque, painel frontal, grelha lateral direita e grelha traseira com ripas, e gaiola tubular em arcos U continuos.",
- "sprites": {
-  "S": "appliances_misc_01_1",
-  "E": "appliances_misc_01_0",
-  "N": "appliances_misc_01_3",
-  "W": "appliances_misc_01_2"
- },
- "tras": "N",
- "material": "vermelho",
- "cores": {
-  "vermelho": [
-   194,
-   102,
-   89
-  ],
-  "metal_gaiola": [
-   132,
-   131,
-   137
-  ],
-  "preto_fosco": [
-   46,
-   43,
-   47
-  ],
-  "cinza_escuro": [
-   68,
-   66,
-   72
-  ]
- },
- "pecas": [
-  {
-   "nome": "carenagem",
-   "forma": "caixa",
-   "min": [
-    -0.303,
-    -0.158,
-    0.06
-   ],
-   "max": [
-    0.259,
-    0.162,
-    0.452
-   ],
-   "chanfro": 0.022,
-   "material": "vermelho"
+  "versao": 1,
+  "id": "generator_red",
+  "nota": "Gerador portatil vermelho com carenagem chanfrada, base escura com patins, tampa do tanque, painel frontal, grelha lateral direita e grelha traseira com ripas, e gaiola tubular em arcos U continuos.",
+  "sprites": {
+    "S": "appliances_misc_01_1",
+    "E": "appliances_misc_01_0",
+    "N": "appliances_misc_01_3",
+    "W": "appliances_misc_01_2"
   },
-  {
-   "nome": "base",
-   "forma": "caixa",
-   "min": [
-    -0.317,
-    -0.162,
-    0.0
-   ],
-   "max": [
-    0.273,
-    0.166,
-    0.064
-   ],
-   "chanfro": 0.006,
-   "material": "preto_fosco"
-  },
-  {
-   "nome": "tampa_tanque",
-   "forma": "cilindro",
-   "centro": [
-    -0.072,
-    0.02,
-    0.448
-   ],
-   "raio": 0.04,
-   "altura": 0.022,
-   "material": "preto_fosco",
-   "segmentos": 16,
-   "arte_cor": true
-  },
-  {
-   "nome": "painel_frontal",
-   "forma": "caixa",
-   "min": [
-    -0.285,
-    -0.166,
-    0.07
-   ],
-   "max": [
-    0.241,
-    -0.152,
-    0.165
-   ],
-   "chanfro": 0.004,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "mostrador_frontal",
-   "forma": "caixa",
-   "min": [
-    0.119,
-    -0.164,
-    0.18
-   ],
-   "max": [
-    0.219,
-    -0.152,
-    0.255
-   ],
-   "chanfro": 0.003,
-   "material": "preto_fosco"
-  },
-  {
-   "nome": "painel_traseiro",
-   "forma": "caixa",
-   "min": [
-    0.03,
-    0.158,
-    0.08
-   ],
-   "max": [
-    0.22,
-    0.166,
-    0.19
-   ],
-   "chanfro": 0.003,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha",
-   "forma": "caixa",
-   "min": [
-    0.253,
-    -0.138,
-    0.07
-   ],
-   "max": [
-    0.265,
-    0.142,
-    0.22
-   ],
-   "chanfro": 0.003,
-   "material": "preto_fosco"
-  },
-  {
-   "nome": "grelha_ripa0",
-   "forma": "caixa",
-   "min": [
-    0.261,
-    -0.128,
-    0.095
-   ],
-   "max": [
-    0.27,
-    0.132,
-    0.11
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha_ripa1",
-   "forma": "caixa",
-   "min": [
-    0.261,
-    -0.128,
-    0.135
-   ],
-   "max": [
-    0.27,
-    0.132,
-    0.15
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha_ripa2",
-   "forma": "caixa",
-   "min": [
-    0.261,
-    -0.128,
-    0.175
-   ],
-   "max": [
-    0.27,
-    0.132,
-    0.19
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha_tras",
-   "forma": "caixa",
-   "min": [
-    -0.22,
-    0.16,
-    0.08
-   ],
-   "max": [
-    0.02,
-    0.168,
-    0.22
-   ],
-   "chanfro": 0.003,
-   "material": "preto_fosco"
-  },
-  {
-   "nome": "grelha_tras_ripa0",
-   "forma": "caixa",
-   "min": [
-    -0.21,
-    0.166,
-    0.1
-   ],
-   "max": [
-    0.01,
-    0.173,
-    0.115
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha_tras_ripa1",
-   "forma": "caixa",
-   "min": [
-    -0.21,
-    0.166,
-    0.14
-   ],
-   "max": [
-    0.01,
-    0.173,
-    0.155
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "grelha_tras_ripa2",
-   "forma": "caixa",
-   "min": [
-    -0.21,
-    0.166,
-    0.18
-   ],
-   "max": [
-    0.01,
-    0.173,
-    0.195
-   ],
-   "chanfro": 0.002,
-   "material": "cinza_escuro"
-  },
-  {
-   "nome": "coluna_gaiola_fe",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.312,
-    -0.155,
-    0.0
-   ],
-   "raio": 0.014,
-   "altura": 0.42,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola_curva_fe",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.312,
-    -0.135,
-    0.40625
-   ],
-   "raio": 0.014,
-   "altura": 0.0545,
-   "rot": [
-    -47.2,
-    0.0,
-    0.0
-   ],
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    -0.312,
-    -0.12,
-    0.452
-   ],
-   "raio": 0.014,
-   "altura": 0.244,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola_curva_te",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.312,
-    0.139,
-    0.40625
-   ],
-   "raio": 0.014,
-   "altura": 0.0545,
-   "rot": [
-    47.2,
-    0.0,
-    0.0
-   ],
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "coluna_gaiola_te",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    -0.312,
-    0.159,
-    0.0
-   ],
-   "raio": 0.014,
-   "altura": 0.42,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "coluna_gaiola_fd",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.268,
-    -0.155,
-    0.0
-   ],
-   "raio": 0.014,
-   "altura": 0.42,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola_curva_fd",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.268,
-    -0.135,
-    0.40625
-   ],
-   "raio": 0.014,
-   "altura": 0.0545,
-   "rot": [
-    -47.2,
-    0.0,
-    0.0
-   ],
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola_dir",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.268,
-    -0.12,
-    0.452
-   ],
-   "raio": 0.014,
-   "altura": 0.244,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "arco_gaiola_curva_td",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.268,
-    0.139,
-    0.40625
-   ],
-   "raio": 0.014,
-   "altura": 0.0545,
-   "rot": [
-    47.2,
-    0.0,
-    0.0
-   ],
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "coluna_gaiola_td",
-   "forma": "cilindro",
-   "eixo": "z",
-   "centro": [
-    0.268,
-    0.159,
-    0.0
-   ],
-   "raio": 0.014,
-   "altura": 0.42,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "barra_gaiola",
-   "forma": "cilindro",
-   "eixo": "x",
-   "centro": [
-    -0.327,
-    -0.155,
-    0.255
-   ],
-   "raio": 0.014,
-   "altura": 0.61,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "barra_gaiola_tras",
-   "forma": "cilindro",
-   "eixo": "x",
-   "centro": [
-    -0.327,
-    0.159,
-    0.255
-   ],
-   "raio": 0.014,
-   "altura": 0.61,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "barra_gaiola_base_f",
-   "forma": "cilindro",
-   "eixo": "x",
-   "centro": [
-    -0.327,
-    -0.152,
-    0.012
-   ],
-   "raio": 0.013,
-   "altura": 0.61,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "barra_gaiola_base_t",
-   "forma": "cilindro",
-   "eixo": "x",
-   "centro": [
-    -0.327,
-    0.159,
-    0.015
-   ],
-   "raio": 0.014,
-   "altura": 0.61,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "travessa_base_esq",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    -0.312,
-    -0.17,
-    0.015
-   ],
-   "raio": 0.014,
-   "altura": 0.344,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  },
-  {
-   "nome": "travessa_base_dir",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.268,
-    -0.17,
-    0.015
-   ],
-   "raio": 0.014,
-   "altura": 0.344,
-   "material": "metal_gaiola",
-   "segmentos": 16
-  }
- ],
- "arte": {
-  "modo": "kit",
-  "recortes": {
-   "vermelho_topo": {
-    "peca": "carenagem",
-    "face": "+z",
-    "recorte": [
-     0.45,
-     0.25,
-     0.75,
-     0.75
+  "tras": "N",
+  "material": "vermelho",
+  "cores": {
+    "vermelho": [
+      200,
+      70,
+      55
+    ],
+    "metal_gaiola": [
+      132,
+      131,
+      137
+    ],
+    "preto_fosco": [
+      46,
+      43,
+      47
+    ],
+    "cinza_escuro": [
+      68,
+      66,
+      72
+    ],
+    "etiqueta": [
+      196,
+      196,
+      190
+    ],
+    "amarelo": [
+      205,
+      170,
+      40
     ]
-   }
   },
-  "faces": {
-   "carenagem": {
-    "+z": "vermelho_topo"
-   }
+  "pecas": [
+    {
+      "nome": "carenagem",
+      "forma": "caixa",
+      "min": [
+        -0.303,
+        -0.158,
+        0.06
+      ],
+      "max": [
+        0.259,
+        0.162,
+        0.452
+      ],
+      "chanfro": 0.022,
+      "material": "vermelho"
+    },
+    {
+      "nome": "base",
+      "forma": "caixa",
+      "min": [
+        -0.317,
+        -0.162,
+        0.0
+      ],
+      "max": [
+        0.273,
+        0.166,
+        0.064
+      ],
+      "chanfro": 0.006,
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "tampa_tanque",
+      "forma": "cilindro",
+      "centro": [
+        -0.072,
+        0.02,
+        0.448
+      ],
+      "raio": 0.04,
+      "altura": 0.022,
+      "material": "preto_fosco",
+      "segmentos": 16,
+      "arte_cor": true
+    },
+    {
+      "nome": "painel_frontal",
+      "forma": "caixa",
+      "min": [
+        -0.285,
+        -0.166,
+        0.07
+      ],
+      "max": [
+        0.241,
+        -0.152,
+        0.165
+      ],
+      "chanfro": 0.004,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "mostrador_frontal",
+      "forma": "caixa",
+      "min": [
+        0.125,
+        -0.164,
+        0.222
+      ],
+      "max": [
+        0.215,
+        -0.152,
+        0.3
+      ],
+      "chanfro": 0.003,
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "etiqueta_frontal",
+      "forma": "caixa",
+      "min": [
+        -0.162,
+        -0.17,
+        0.115
+      ],
+      "max": [
+        0.0,
+        -0.166,
+        0.155
+      ],
+      "material": "etiqueta"
+    },
+    {
+      "nome": "etiqueta_texto_1",
+      "forma": "caixa",
+      "min": [
+        -0.15,
+        -0.1725,
+        0.142
+      ],
+      "max": [
+        -0.04,
+        -0.17,
+        0.147
+      ],
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "etiqueta_texto_2",
+      "forma": "caixa",
+      "min": [
+        -0.15,
+        -0.1725,
+        0.128
+      ],
+      "max": [
+        -0.06,
+        -0.17,
+        0.133
+      ],
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "etiqueta_texto_3",
+      "forma": "caixa",
+      "min": [
+        -0.12,
+        -0.1725,
+        0.118
+      ],
+      "max": [
+        -0.03,
+        -0.17,
+        0.122
+      ],
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "marca_amarela",
+      "forma": "caixa",
+      "min": [
+        0.017,
+        -0.162,
+        0.21
+      ],
+      "max": [
+        0.096,
+        -0.158,
+        0.232
+      ],
+      "material": "amarelo"
+    },
+    {
+      "nome": "painel_traseiro",
+      "forma": "caixa",
+      "min": [
+        0.03,
+        0.158,
+        0.08
+      ],
+      "max": [
+        0.22,
+        0.166,
+        0.19
+      ],
+      "chanfro": 0.003,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha",
+      "forma": "caixa",
+      "min": [
+        0.253,
+        -0.138,
+        0.07
+      ],
+      "max": [
+        0.265,
+        0.142,
+        0.22
+      ],
+      "chanfro": 0.003,
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "grelha_ripa0",
+      "forma": "caixa",
+      "min": [
+        0.261,
+        -0.128,
+        0.095
+      ],
+      "max": [
+        0.27,
+        0.132,
+        0.11
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha_ripa1",
+      "forma": "caixa",
+      "min": [
+        0.261,
+        -0.128,
+        0.135
+      ],
+      "max": [
+        0.27,
+        0.132,
+        0.15
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha_ripa2",
+      "forma": "caixa",
+      "min": [
+        0.261,
+        -0.128,
+        0.175
+      ],
+      "max": [
+        0.27,
+        0.132,
+        0.19
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha_tras",
+      "forma": "caixa",
+      "min": [
+        -0.22,
+        0.16,
+        0.08
+      ],
+      "max": [
+        0.02,
+        0.168,
+        0.22
+      ],
+      "chanfro": 0.003,
+      "material": "preto_fosco"
+    },
+    {
+      "nome": "grelha_tras_ripa0",
+      "forma": "caixa",
+      "min": [
+        -0.21,
+        0.166,
+        0.1
+      ],
+      "max": [
+        0.01,
+        0.173,
+        0.115
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha_tras_ripa1",
+      "forma": "caixa",
+      "min": [
+        -0.21,
+        0.166,
+        0.14
+      ],
+      "max": [
+        0.01,
+        0.173,
+        0.155
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "grelha_tras_ripa2",
+      "forma": "caixa",
+      "min": [
+        -0.21,
+        0.166,
+        0.18
+      ],
+      "max": [
+        0.01,
+        0.173,
+        0.195
+      ],
+      "chanfro": 0.002,
+      "material": "cinza_escuro"
+    },
+    {
+      "nome": "coluna_gaiola_fe",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.32,
+        -0.155,
+        0.0
+      ],
+      "raio": 0.022,
+      "altura": 0.42,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola_curva_fe",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.32,
+        -0.135,
+        0.40625
+      ],
+      "raio": 0.022,
+      "altura": 0.0545,
+      "rot": [
+        -47.2,
+        0.0,
+        0.0
+      ],
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        -0.32,
+        -0.12,
+        0.452
+      ],
+      "raio": 0.022,
+      "altura": 0.244,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola_curva_te",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.32,
+        0.139,
+        0.40625
+      ],
+      "raio": 0.022,
+      "altura": 0.0545,
+      "rot": [
+        47.2,
+        0.0,
+        0.0
+      ],
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "coluna_gaiola_te",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        -0.32,
+        0.159,
+        0.0
+      ],
+      "raio": 0.022,
+      "altura": 0.42,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "coluna_gaiola_fd",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.276,
+        -0.155,
+        0.0
+      ],
+      "raio": 0.022,
+      "altura": 0.42,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola_curva_fd",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.276,
+        -0.135,
+        0.40625
+      ],
+      "raio": 0.022,
+      "altura": 0.0545,
+      "rot": [
+        -47.2,
+        0.0,
+        0.0
+      ],
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola_dir",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.276,
+        -0.12,
+        0.452
+      ],
+      "raio": 0.022,
+      "altura": 0.244,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "arco_gaiola_curva_td",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.276,
+        0.139,
+        0.40625
+      ],
+      "raio": 0.022,
+      "altura": 0.0545,
+      "rot": [
+        47.2,
+        0.0,
+        0.0
+      ],
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "coluna_gaiola_td",
+      "forma": "cilindro",
+      "eixo": "z",
+      "centro": [
+        0.276,
+        0.159,
+        0.0
+      ],
+      "raio": 0.022,
+      "altura": 0.42,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "barra_gaiola",
+      "forma": "cilindro",
+      "eixo": "x",
+      "centro": [
+        -0.32,
+        -0.155,
+        0.38
+      ],
+      "raio": 0.022,
+      "altura": 0.596,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "barra_gaiola_tras",
+      "forma": "cilindro",
+      "eixo": "x",
+      "centro": [
+        -0.32,
+        0.159,
+        0.255
+      ],
+      "raio": 0.022,
+      "altura": 0.596,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "barra_gaiola_base_f",
+      "forma": "cilindro",
+      "eixo": "x",
+      "centro": [
+        -0.32,
+        -0.152,
+        0.024
+      ],
+      "raio": 0.022,
+      "altura": 0.596,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "barra_gaiola_base_t",
+      "forma": "cilindro",
+      "eixo": "x",
+      "centro": [
+        -0.32,
+        0.159,
+        0.024
+      ],
+      "raio": 0.022,
+      "altura": 0.596,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "travessa_base_esq",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        -0.32,
+        -0.17,
+        0.024
+      ],
+      "raio": 0.022,
+      "altura": 0.344,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    },
+    {
+      "nome": "travessa_base_dir",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.276,
+        -0.17,
+        0.024
+      ],
+      "raio": 0.022,
+      "altura": 0.344,
+      "material": "metal_gaiola",
+      "segmentos": 16
+    }
+  ],
+  "arte": {
+    "modo": "kit",
+    "recortes": {
+      "vermelho_topo": {
+        "peca": "carenagem",
+        "face": "+z",
+        "recorte": [
+          0.45,
+          0.25,
+          0.75,
+          0.75
+        ]
+      }
+    },
+    "faces": {
+      "carenagem": {
+        "+z": "vermelho_topo"
+      }
+    }
+  },
+  "realista": {
+    "materiais": {
+      "vermelho": {
+        "tipo": "liso",
+        "desgaste": 0.5
+      },
+      "metal_gaiola": {
+        "tipo": "metal",
+        "desgaste": 0.5,
+        "ferrugem": 0.3
+      },
+      "preto_fosco": {
+        "tipo": "liso",
+        "desgaste": 0.4
+      },
+      "cinza_escuro": {
+        "tipo": "liso",
+        "desgaste": 0.4
+      },
+      "etiqueta": {
+        "tipo": "liso",
+        "desgaste": 0.25
+      },
+      "amarelo": {
+        "tipo": "liso",
+        "desgaste": 0.2
+      }
+    }
   }
- },
- "realista": {
-  "materiais": {
-   "vermelho": {
-    "tipo": "liso",
-    "desgaste": 0.35
-   },
-   "metal_gaiola": {
-    "tipo": "metal",
-    "desgaste": 0.4,
-    "ferrugem": 0.25
-   },
-   "preto_fosco": {
-    "tipo": "liso",
-    "desgaste": 0.3
-   },
-   "cinza_escuro": {
-    "tipo": "liso",
-    "desgaste": 0.3
-   }
-  }
- }
 }

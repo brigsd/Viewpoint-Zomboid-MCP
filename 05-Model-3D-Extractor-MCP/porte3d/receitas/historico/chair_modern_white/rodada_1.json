@@ -1,0 +1,128 @@
+{
+ "versao": 1,
+ "id": "chair_modern_white",
+ "sprites": {
+  "S": "furniture_seating_indoor_01_45",
+  "E": "furniture_seating_indoor_01_44"
+ },
+ "tras": "simetrico",
+ "material": "tecido",
+ "cores": {
+  "madeira": [
+   75,
+   50,
+   32
+  ],
+  "tecido": [
+   152,
+   129,
+   103
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    -0.4,
+    0.0
+   ],
+   "max": [
+    -0.37,
+    -0.33,
+    0.085
+   ],
+   "espelhar": [
+    "x",
+    "y"
+   ],
+   "material": "madeira",
+   "chanfro": 0.004
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "min": [
+    -0.3,
+    -0.4,
+    0.08
+   ],
+   "max": [
+    0.3,
+    0.41,
+    0.28
+   ],
+   "material": "tecido",
+   "chanfro": 0.01
+  },
+  {
+   "nome": "bracos",
+   "forma": "caixa",
+   "min": [
+    -0.45,
+    -0.41,
+    0.085
+   ],
+   "max": [
+    -0.31,
+    0.42,
+    0.615
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "material": "tecido",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.3,
+    -0.4,
+    0.285
+   ],
+   "max": [
+    0.3,
+    0.11,
+    0.44
+   ],
+   "material": "tecido",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.12,
+    0.285
+   ],
+   "max": [
+    0.32,
+    0.3,
+    0.8
+   ],
+   "material": "tecido",
+   "chanfro": 0.015
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.35,
+    "ferrugem": 0.1
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.4,
+    "ferrugem": 0.05
+   }
+  }
+ }
+}

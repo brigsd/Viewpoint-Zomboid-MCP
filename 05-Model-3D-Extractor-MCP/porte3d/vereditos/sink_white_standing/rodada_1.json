@@ -1,0 +1,96 @@
+{
+ "versao": 1,
+ "objeto": "sink_white_standing",
+ "rodada": 1,
+ "nota_arte": 5,
+ "nota_realista": 3,
+ "pecas": [
+  {
+   "nome": "coluna",
+   "situacao": "forma_errada",
+   "nota": "cone reto sem a base alargada assentada no chão"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "forma_errada",
+   "nota": "bloco fechado no topo sem cavidade interna côncava"
+  },
+  {
+   "nome": "frontao",
+   "situacao": "ok"
+  },
+  {
+   "nome": "torneira_corpo",
+   "situacao": "forma_errada",
+   "nota": "cilindro reto vertical sem arco para a frente"
+  },
+  {
+   "nome": "registros",
+   "situacao": "forma_errada",
+   "nota": "barra única prismática em vez de dois manípulos em cruz"
+  },
+  {
+   "nome": "ralo",
+   "situacao": "ausente",
+   "nota": "não modelado na malha"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "ralo",
+   "tipo": "ausencia",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 0,
+   "onde": "fundo central da cuba",
+   "sentido": "",
+   "evidencia": "fio.png 000: peça 5 ralo ausente na malha de arame",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "cuba",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "topo e interior da cuba",
+   "sentido": "",
+   "evidencia": "zoom.png 000: topo plano e maciço sem cavidade interna côncava",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "torneira_corpo",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "corpo e bica da torneira",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: cilindro vertical reto sem curvatura em arco",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "registros",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 0,
+   "onde": "manípulos laterais",
+   "sentido": "",
+   "evidencia": "fio.png 000: barra prismática contínua em vez de dois manípulos em cruz",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "coluna",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "base da coluna no chão",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png 000: base cônica estreita sem alargamento do pedestal",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Pia modelada como sólido fechado sem cavidade funcional, com ralo ausente e ferragens hidráulicas excessivamente simplificadas sem arco ou acabamento metálico."
+}

@@ -1,0 +1,123 @@
+{
+ "versao": 1,
+ "id": "chair_white_simple",
+ "sprites": {
+  "S": "furniture_seating_indoor_03_57",
+  "E": "furniture_seating_indoor_03_56",
+  "N": "furniture_seating_indoor_03_59",
+  "W": "furniture_seating_indoor_03_58"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   212,
+   190,
+   142
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "perna_fd",
+   "forma": "caixa",
+   "min": [
+    0.1832,
+    -0.2477,
+    0.0
+   ],
+   "max": [
+    0.2488,
+    -0.1859,
+    0.3473
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "perna_fe",
+   "forma": "caixa",
+   "min": [
+    -0.225,
+    -0.2497,
+    0.0
+   ],
+   "max": [
+    -0.1594,
+    -0.1879,
+    0.3473
+   ],
+   "chanfro": 0.005
+  },
+  {
+   "nome": "perna_td",
+   "forma": "caixa",
+   "min": [
+    0.1831,
+    0.1579,
+    0.0
+   ],
+   "max": [
+    0.2487,
+    0.2197,
+    1.0029
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "perna_te",
+   "forma": "caixa",
+   "min": [
+    -0.2216,
+    0.1577,
+    0.0
+   ],
+   "max": [
+    -0.156,
+    0.2195,
+    1.0029
+   ],
+   "chanfro": 0.006
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.2517,
+    -0.273,
+    0.348
+   ],
+   "max": [
+    0.2517,
+    0.2374,
+    0.4495
+   ],
+   "chanfro": 0.015
+  },
+  {
+   "nome": "painel_encosto",
+   "forma": "caixa",
+   "min": [
+    -0.156,
+    0.17,
+    0.68
+   ],
+   "max": [
+    0.1831,
+    0.205,
+    0.95
+   ],
+   "chanfro": 0.005
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.1,
+    "veio": 1.0
+   }
+  }
+ }
+}

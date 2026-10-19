@@ -131,7 +131,7 @@ class _Rede:
 
 
 # ------------------------------------------------------------------------------------------ madeira
-def _madeira(R, cor, comp, atrav, prof, faixa, superficie, tabuas, lado, espacamento=0.0055):
+def _madeira(R, cor, comp, atrav, prof, faixa, superficie, tabuas, lado, espacamento=0.0055, veio=1.0, borda=0.0, limites=None):
     """Madeira com anéis de crescimento de verdade: cada tábua tem o próprio centro de tronco (sorteado),
     inclinação, espaçamento de anel e tom — nenhuma tábua repete a outra. Os anéis são linhas finas escuras
     (lenho tardio) sobre fundo claro, e não listras de seno. Poros finos esticados no comprimento."""
@@ -177,16 +177,32 @@ def _madeira(R, cor, comp, atrav, prof, faixa, superficie, tabuas, lado, espacam
     els[1].position, els[1].color = 1.0, (*(base * 1.04), 1)
     for pos, f in ((0.55, 1.0), (0.80, 0.80), (0.88, 0.70)):
         e = els.new(pos)
-        e.color = (*(base * f), 1)
+        e.color = (*(base * max(0.05, 1.0 - (1.0 - f) * veio)), 1)   # `veio` escala o contraste dos anéis
     Lk.new(aneis, ramp.inputs["Fac"])
     col = ramp.outputs["Color"]
     # poros/fibras: ruído fino esticado no comprimento
     fib = R.ruido(R.esc(140.0, comp, 3.0), detalhe=2.0)
-    col = R.mult(col, R.rng(fib, 0.90, 1.07, 0.3, 0.7))
+    col = R.mult(col, R.rng(fib, 1.0 - 0.10 * veio, 1.0 + 0.07 * veio, 0.3, 0.7))
     col = R.mult(col, R.rng(r5, 0.88, 1.08))              # tom próprio de cada tábua
+    if borda > 0 and limites is not None:               # biselado cartoon: borda clara fina, miolo escuro (por tábua/face)
+        lo3, hi3 = limites
+        ia, ic, ip = _AX[atrav], _AX[comp], _AX[prof]
+        tam = [float(hi3[k] - lo3[k]) for k in range(3)]
+        wt = tam[ia] / tabuas if tabuas else tam[ia]
+        bw = max(0.003, min(0.03, 0.35 * min(wt, tam[ic], tam[ip])))
+        def _dist(c, k):
+            return M("MINIMUM", M("SUBTRACT", c, float(lo3[k])), M("SUBTRACT", float(hi3[k]), c))
+        if tabuas:
+            da_ = M("MULTIPLY", M("PINGPONG", M("MULTIPLY", M("SUBTRACT", pa, lo), tabuas / larg), 0.5), wt)
+        else:
+            da_ = _dist(pa, ia)
+        dc_, dp_ = _dist(pl, ic), _dist(pb, ip)
+        # mediana das 3 distancias = distancia a aresta mais proxima DENTRO da face (a normal da face da ~0)
+        med = M("MAXIMUM", M("MINIMUM", da_, dc_), M("MINIMUM", M("MAXIMUM", da_, dc_), dp_))
+        col = R.mult(col, R.rng(med, 1.0 + 0.4 * borda, 1.0 - 0.2 * borda, 0.0, bw, suave=True))
     if tabuas:                                           # junta entre tábuas
         fr = M("PINGPONG", M("MULTIPLY", M("SUBTRACT", pa, lo), tabuas / larg), 0.5)
-        col = R.mult(col, R.rng(fr, 0.4, 1.0, 0.0, 0.015))
+        col = R.mult(col, R.rng(fr, 0.4 if not borda else 0.22, 1.0, 0.0, 0.015 if not borda else 0.045))
     big = R.ruido((3.0, 3.0, 3.0), detalhe=2.0)
     col = R.mult(col, R.rng(big, 0.92, 1.06, 0.3, 0.7))   # manchas de uso
     R.saida(col, 0.65)
@@ -401,13 +417,119 @@ def _aplicar_desgaste(R, nivel, limites=None, ferrugem=0.0):
     col = R.misturar(col, tons.outputs["Color"], M("MULTIPLY", ferr, 0.95))
     R.Lk.new(col, R.bsdf.inputs["Base Color"])
 
+def _aplicar_trancado(R, escala, comp, atrav, prof):
+    """Trança de cestaria (palha/taquara): tiras de ~1,6 cm / `escala` que se cruzam alternadas (por cima/por baixo),
+    com a diagonal em dobro (sarja) para dar losangos; frestas escuras entre as tiras, tom próprio por tira e
+    nervura fina no sentido de cada tira. Como só a cor base é assada, o relevo (Bump) vira sombreado na cor.
+    Calculada nos dois eixos do plano de cada face (escolhidos pela normal), como o tecido."""
+    M, N, Lk = R.M, R.N, R.Lk
+    lk = R.bsdf.inputs["Base Color"].links[0]
+    col = lk.from_socket
+    R.Lk.remove(lk)
+    w = 0.016 / max(0.05, float(escala))
+
+    def tom_tira(i, k):
+        wn = N.new("ShaderNodeTexWhiteNoise")
+        wn.noise_dimensions = "1D"
+        Lk.new(M("ADD", i, R.semente * 7.1 + k), wn.inputs["W"])
+        sc = N.new("ShaderNodeSeparateColor")
+        Lk.new(wn.outputs["Color"], sc.inputs["Color"])
+        return R.rng(sc.outputs[0], 0.78, 1.16)
+
+    def trama(eu, ev, k):
+        pu, pv = R.coord(eu), R.coord(ev)
+        ond = R.ruido((30.0, 30.0, 30.0), detalhe=1.0)
+        uu = M("ADD", M("MULTIPLY", pu, 1.0 / w), M("MULTIPLY", M("SUBTRACT", ond, 0.5), 0.35))
+        vv = M("ADD", M("MULTIPLY", pv, 1.0 / w), M("MULTIPLY", M("SUBTRACT", ond, 0.5), 0.35))
+        iu, iv = M("FLOOR", uu), M("FLOOR", vv)
+        fu, fv = M("FRACT", uu), M("FRACT", vv)
+        # sarja 2x2: a tira que fica por cima muda a cada 2 casas na diagonal -> losangos
+        soma = M("FLOOR", M("MULTIPLY", M("ADD", iu, iv), 0.5))
+        par = M("SUBTRACT", soma, M("MULTIPLY", M("FLOOR", M("MULTIPLY", soma, 0.5)), 2.0))
+        su = M("POWER", M("SINE", M("MULTIPLY", fu, math.pi)), 0.55)
+        sv = M("POWER", M("SINE", M("MULTIPLY", fv, math.pi)), 0.55)
+        em_cima = M("ADD", sv, M("MULTIPLY", par, M("SUBTRACT", su, sv)))     # relevo da tira por cima
+        por_baixo = M("ADD", su, M("MULTIPLY", par, M("SUBTRACT", sv, su)))
+        fundo = M("MULTIPLY", por_baixo, 0.55)                                  # a tira de baixo aparece afundada
+        alt = M("MAXIMUM", em_cima, fundo)
+        t = M("ADD", tom_tira(iu, 0.13 + k), M("MULTIPLY", par, M("SUBTRACT", tom_tira(iv, 0.61 + k), tom_tira(iu, 0.13 + k))))
+        nerv = R.rng(R.ruido(R.esc(18.0, eu, 220.0), detalhe=1.0), 0.90, 1.08, 0.3, 0.7)
+        return M("MULTIPLY", M("MULTIPLY", R.rng(alt, 0.38, 1.30), t), nerv)
+
+    pares = {}
+    for k, nome_n in enumerate((comp, atrav, prof)):
+        restantes = [e for e in (comp, atrav, prof) if e != nome_n]
+        pares[nome_n] = trama(restantes[0], restantes[1], 3.0 * k)
+    sepn = N.new("ShaderNodeSeparateXYZ")
+    Lk.new(R.tc.outputs["Normal"], sepn.inputs["Vector"])
+    nx, ny, nz_ = (M("ABSOLUTE", sepn.outputs[i]) for i in range(3))
+    sx = M("MULTIPLY", M("GREATER_THAN", M("SUBTRACT", nx, ny), 0.0), M("GREATER_THAN", M("SUBTRACT", nx, nz_), 0.0))
+    sy = M("MULTIPLY", M("SUBTRACT", 1.0, sx), M("GREATER_THAN", M("SUBTRACT", ny, nz_), 0.0))
+    sz = M("SUBTRACT", M("SUBTRACT", 1.0, sx), sy)
+    peso = {"x": sx, "y": sy, "z": sz}
+    fator = None
+    for e in "xyz":
+        termo = M("MULTIPLY", pares[e], peso[e])
+        fator = termo if fator is None else M("ADD", fator, termo)
+    R.Lk.new(R.mult(col, fator), R.bsdf.inputs["Base Color"])
+
+
+def _aplicar_listras(R, forca, periodo):
+    """Listras verticais (tecido listrado): alternam tom claro e escuro a cada `periodo` metros, em x + y, para que
+    valham na frente e nas laterais. `forca` 0..1 é a diferença de tom."""
+    M = R.M
+    lk = R.bsdf.inputs["Base Color"].links[0]
+    col = lk.from_socket
+    R.Lk.remove(lk)
+    fase = M("MULTIPLY", M("ADD", R.coord("x"), R.coord("y")), 6.2832 / max(0.01, float(periodo)))
+    onda = M("SINE", fase)
+    tom = R.rng(onda, 1.0 - 0.22 * forca, 1.0 + 0.12 * forca, -1.0, 1.0)
+    R.Lk.new(R.mult(col, tom), R.bsdf.inputs["Base Color"])
+
+
+def _aplicar_estrago(R, comp, atrav, manchas=0.0, rasgos=0.0, podre=0.0):
+    """Estrago procedural por cima do material: manchas irregulares com auréola (tecido ou qualquer), rasgos finos
+    com enchimento claro (tecido) e apodrecimento escuro com fibras (madeira). Tudo 0..1; zero desliga."""
+    M = R.M
+    lk = R.bsdf.inputs["Base Color"].links[0]
+    col = lk.from_socket
+    R.Lk.remove(lk)
+    if manchas > 0:
+        v = R.ruido((4.5, 4.5, 4.5), detalhe=5.0, rugosidade=0.68)
+        lim = 0.64 - 0.10 * manchas
+        nucleo = R.rng(v, 0.0, 1.0, lim, lim + 0.05, suave=True)
+        aureola = R.rng(v, 0.0, 1.0, lim - 0.07, lim, suave=True)
+        col = R.misturar(col, R.mult(col, (0.84, 0.74, 0.56)), M("MULTIPLY", aureola, 0.7))      # halo amarelado de umidade
+        col = R.misturar(col, R.mult(col, (0.46, 0.36, 0.25)), M("MULTIPLY", nucleo, 0.85))     # miolo escuro
+    if podre > 0:
+        v = R.ruido((3.2, 3.2, 3.2), detalhe=6.0, rugosidade=0.72)
+        lim = 0.62 - 0.12 * podre
+        nucleo = R.rng(v, 0.0, 1.0, lim, lim + 0.045, suave=True)
+        borda = R.rng(v, 0.0, 1.0, lim - 0.08, lim, suave=True)
+        fibra = R.rng(R.ruido(R.esc(2.0, comp, 90.0), detalhe=3.0), 0.55, 1.15, 0.3, 0.7)       # fibras no sentido da madeira
+        escuro = R.mult(R.mult(col, (0.30, 0.23, 0.15)), fibra)
+        col = R.misturar(col, R.mult(col, (0.62, 0.52, 0.38)), M("MULTIPLY", borda, 0.8))        # madeira amolecida em volta
+        col = R.misturar(col, escuro, M("MULTIPLY", nucleo, 0.95))                                # miolo podre
+    if rasgos > 0:
+        zona = R.rng(R.ruido((2.2, 2.2, 2.2), detalhe=2.0), 0.0, 1.0, 0.60 - 0.06 * rasgos, 0.66 - 0.06 * rasgos, suave=True)
+        for eixo in (comp, atrav):
+            fenda = R.ruido(R.esc(1.5, eixo, 55.0), detalhe=1.0)
+            d = M("ABSOLUTE", M("SUBTRACT", fenda, 0.5))
+            miolo = R.rng(d, 1.0, 0.0, 0.0, 0.010 + 0.004 * rasgos)
+            enchi = R.rng(d, 1.0, 0.0, 0.0, 0.030 + 0.008 * rasgos)
+            col = R.misturar(col, R.mult(R.cor_base((205, 195, 160)), 0.9), M("MULTIPLY", M("MULTIPLY", enchi, zona), 0.9))   # enchimento claro
+            col = R.misturar(col, R.cor_base((20, 14, 18)), M("MULTIPLY", M("MULTIPLY", miolo, zona), 0.95))                  # fundo da fenda
+    R.Lk.new(col, R.bsdf.inputs["Base Color"])
+
+
 def _cinza_medio(cor):
     c = np.asarray(cor, float)
     return (c.max() - c.min()) <= 22 and c.mean() <= 205
 
 
 def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=0.0, tabuas=0,
-          semente=0, lado=1, acabamento=None, desgaste=0.0, limites=None, ferrugem=0.0):
+          semente=0, lado=1, acabamento=None, desgaste=0.0, limites=None, ferrugem=0.0, veio=1.0,
+          manchas=0.0, rasgos=0.0, podre=0.0, listras=0.0, listras_periodo=0.07, trancado=0.0, borda=0.0):
     """Cria o material procedural `tipo` (madeira | metal | tecido | liso) com cor base `cor` (sRGB 0..255).
 
     eixos      = (comprimento, atravessado, profundidade): direção do veio/comprimento da peça, o eixo em que
@@ -420,6 +542,13 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
     acabamento = só metal: "pintado" ou "escovado"; se None, cinza médio -> escovado, o resto -> pintado.
     limites    = ((x0,y0,z0), (x1,y1,z1)) da caixa envolvente da peça: marca as quinas para o desgaste.
     ferrugem   = 0..1: quanto da camada de uso vira ferrugem (embaixo, nas frestas e escorrendo).
+    veio       = só madeira: força do veio (1 = padrão; 2 a 3 deixa os anéis e as fibras bem visíveis).
+    manchas    = 0..1: manchas irregulares com auréola amarelada (umidade, sujeira).
+    rasgos     = 0..1: fendas finas com enchimento claro (tecido).
+    podre      = 0..1: apodrecimento escuro com fibras (madeira).
+    listras    = 0..1: listras verticais (tecido listrado); `listras_periodo` é a largura de um par de listras, em metros.
+    trancado   = escala (>0) da trança de cestaria (tiras cruzadas/losangos), para tipo tecido ou liso; 1 = tira de 1,6 cm.
+    borda      = só madeira, 0..1: biselado cartoon por tábua/face (borda mais clara e fina, miolo mais escuro); 0 = desligado.
     desgaste   = 0..1: camada de uso (amarelado, encardido, tinta lascada nas quinas, ferrugem com escorrido).
     """
     if tipo not in ("madeira", "metal", "tecido", "liso"):
@@ -428,7 +557,8 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
     mat = bpy.data.materials.new(nome)
     R = _Rede(mat, semente)
     if tipo == "madeira":
-        _madeira(R, cor, comp, atrav, prof, faixa, superficie, int(tabuas), lado)
+        _madeira(R, cor, comp, atrav, prof, faixa, superficie, int(tabuas), lado, veio=float(veio),
+                 borda=float(borda), limites=limites)
     elif tipo == "metal":
         esc = (acabamento == "escovado") if acabamento else _cinza_medio(cor)
         _metal(R, cor, comp, atrav, prof, esc)
@@ -436,6 +566,12 @@ def criar(nome, tipo, cor, eixos=("x", "y", "z"), faixa=(-0.5, 0.5), superficie=
         _tecido(R, cor, comp, atrav, prof)
     else:
         _liso(R, cor)
+    if trancado and trancado > 0 and tipo in ("tecido", "liso"):
+        _aplicar_trancado(R, float(trancado), comp, atrav, prof)
+    if listras > 0:
+        _aplicar_listras(R, float(listras), float(listras_periodo))
     if desgaste > 0:
         _aplicar_desgaste(R, desgaste, limites, ferrugem)
+    if manchas > 0 or rasgos > 0 or podre > 0:
+        _aplicar_estrago(R, comp, atrav, float(manchas), float(rasgos), float(podre))
     return mat

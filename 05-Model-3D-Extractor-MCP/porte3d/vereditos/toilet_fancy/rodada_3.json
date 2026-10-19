@@ -1,0 +1,86 @@
+{
+ "versao": 1,
+ "objeto": "toilet_fancy",
+ "rodada": 3,
+ "nota_arte": 7,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "caixa_acoplada",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_caixa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca_descarga",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bacia",
+   "situacao": "forma_errada",
+   "nota": "formato excessivamente quadrado e sem concavidade interna (bojo maciço)"
+  },
+  {
+   "nome": "assento",
+   "situacao": "forma_errada",
+   "nota": "modelado como tampa fechada inteiriça e plana em vez de assento aberto"
+  },
+  {
+   "nome": "base_pedestal",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tubo_agua",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "assento",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "face superior do assento",
+   "sentido": "",
+   "evidencia": "comparacao.png 000: tampa fechada inteiriça cobrindo a bacia em vez de assento sanitário aberto como no jogo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "bacia",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "topo e interior da bacia",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: ausência de concavidade interna (bojo côncavo), bacia modelada como bloco maciço",
+   "gravidade": "media"
+  },
+  {
+   "parte": "bacia",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "bordas laterais e curva frontal do bojo",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png: sobra verde de 504 px na curva oval frontal do jogo que o modelo cortou reta/trapezoidal",
+   "gravidade": "media"
+  },
+  {
+   "parte": "tubo_agua",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "superfície do cilindro vertical",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: material cinza fosco sem aspecto metálico cromado",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Vaso sanitário estruturalmente sólido e funcionalmente reconhecível, mas com bacia quadrada e tampa fechada maciça que desviam do sprite aberto e oval original."
+}

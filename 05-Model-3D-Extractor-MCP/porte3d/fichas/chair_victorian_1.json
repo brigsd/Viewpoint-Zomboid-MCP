@@ -1,0 +1,491 @@
+{
+ "versao": 1,
+ "objeto": "chair_victorian_1",
+ "sprite": "furniture_seating_indoor_03_81",
+ "decisao": "portar",
+ "motivo": "poltrona vitoriana classica entalhada com estofamento de luxo dourado/creme listrado",
+ "o_que_e": "poltrona de luxo em estilo vitoriano com pernas curvas entalhadas, bracos acolchoados e encosto alto em dourado/creme listrado",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "quatro pernas curvas estilo cabriole de madeira entalhada branca/marfim"
+  },
+  {
+   "nome": "saia_base",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "moldura da saia inferior entalhada sustentando o assento"
+  },
+  {
+   "nome": "assento_estofado",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "almofada espessa e estofada do assento com estofamento nobre"
+  },
+  {
+   "nome": "braco_esq",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "braco esquerdo acolchoado com apoio curvo"
+  },
+  {
+   "nome": "braco_dir",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "braco direito acolchoado com apoio curvo"
+  },
+  {
+   "nome": "encosto_estofado",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "encosto alto anatomico com moldura superior arqueada"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira",
+  "tecido": "tecido"
+ },
+ "problemas_previstos": [
+  "pernas cabriole curvas e entalhadas",
+  "encosto alto em arco com tecido nobre"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_03_81",
+  "sprites": {
+   "S": "furniture_seating_indoor_03_81",
+   "E": "furniture_seating_indoor_03_80",
+   "N": "furniture_seating_indoor_03_82",
+   "W": "furniture_seating_indoor_03_83"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 3,
+   "cilindro": 0,
+   "prisma": 2
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.4223,
+     -0.3303,
+     0.1817
+    ],
+    "max": [
+     0.4223,
+     0.3609,
+     0.4495
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.4231,
+     0.3604,
+     0.4204
+    ],
+    "max": [
+     0.4215,
+     0.4856,
+     1.0937
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.4517,
+     -0.3304,
+     0.4503
+    ],
+    "max": [
+     -0.3071,
+     0.3608,
+     0.7494
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "prisma",
+    "perfil": [
+     [
+      0.3291,
+      0.4727
+     ],
+     [
+      0.4853,
+      0.4727
+     ],
+     [
+      0.4853,
+      0.6131
+     ],
+     [
+      0.5009,
+      0.6322
+     ],
+     [
+      0.5009,
+      0.7343
+     ],
+     [
+      0.3916,
+      0.7406
+     ],
+     [
+      0.3291,
+      0.6386
+     ]
+    ],
+    "eixo": "y",
+    "de": -0.3028,
+    "ate": -0.2928
+   },
+   {
+    "nome": "forma_4",
+    "forma": "prisma",
+    "perfil": [
+     [
+      0.3862,
+      0.4434
+     ],
+     [
+      0.5033,
+      0.4356
+     ],
+     [
+      0.5111,
+      0.9746
+     ],
+     [
+      0.4486,
+      1.0371
+     ],
+     [
+      0.394,
+      0.9824
+     ],
+     [
+      0.3628,
+      0.9199
+     ],
+     [
+      0.3237,
+      0.7247
+     ],
+     [
+      0.3393,
+      0.584
+     ]
+    ],
+    "eixo": "y",
+    "de": -0.0045,
+    "ate": 0.0055,
+    "rot": [
+     -90.0,
+     0.0,
+     0.0
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "Material3": "Fabric"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Victorian 1",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "18",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.4517,
+    -0.3304,
+    0.1817
+   ],
+   "max": [
+    0.5111,
+    0.4856,
+    1.0937
+   ],
+   "largura": 0.9628,
+   "profundidade": 0.816,
+   "altura": 0.912
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_3",
+   "forma_4"
+  ],
+  "altura_base": 0.1817,
+  "montado_na_parede": false,
+  "contorno_0": 0.7608,
+  "cobertura": 0.9716,
+  "sobra": 0.2218,
+  "pixels_desenho": 7560,
+  "pixels_geometria": 9439,
+  "espelhado_E_S": 0.8075,
+  "espelhado_W_N": 0.7598,
+  "N_igual_S": 0.5118,
+  "silhueta_espelho_E_S": 0.9427,
+  "silhueta_espelho_W_N": 0.8751,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0297,
+   0.0776
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4231,
+     -0.3304,
+     0.4204
+    ],
+    "max": [
+     0.4215,
+     -0.2052,
+     1.0937
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.3621,
+     -0.3304,
+     0.4204
+    ],
+    "max": [
+     0.4825,
+     -0.2052,
+     1.0937
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.3665,
+     -0.3304,
+     0.4503
+    ],
+    "max": [
+     0.5111,
+     0.3608,
+     0.7494
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.3665,
+     -0.2056,
+     0.4503
+    ],
+    "max": [
+     0.5111,
+     0.4856,
+     0.7494
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_3",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4415,
+     -0.3028,
+     0.4727
+    ],
+    "max": [
+     -0.2697,
+     -0.2928,
+     0.7406
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.3291,
+     0.448,
+     0.4727
+    ],
+    "max": [
+     0.5009,
+     0.458,
+     0.7406
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4415,
+     0.448,
+     0.4727
+    ],
+    "max": [
+     -0.2697,
+     0.458,
+     0.7406
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4517,
+     -0.3002,
+     0.7313
+    ],
+    "max": [
+     -0.2643,
+     0.3012,
+     0.7413
+    ]
+   },
+   {
+    "forma": "prisma",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.4517,
+     -0.1461,
+     0.7313
+    ],
+    "max": [
+     -0.2643,
+     0.4554,
+     0.7413
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9367,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1929
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_3, forma_4): candidato a não portar",
+   "E é o espelho de S",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_victorian_1",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_victorian_1\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_victorian_1\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_victorian_1\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_victorian_1\\profundidade.png"
+  }
+ }
+}

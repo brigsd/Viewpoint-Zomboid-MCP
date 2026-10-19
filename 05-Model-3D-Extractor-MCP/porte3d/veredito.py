@@ -51,7 +51,8 @@ def validar(v: dict) -> None:
 
 
 def aprovado(v: dict) -> bool:
-    return v["nota_arte"] >= NOTA_MIN and v["nota_realista"] >= NOTA_MIN
+    # o nível de produção é o realista; a nota_arte segue no veredito, mas não decide mais a aprovação
+    return v["nota_realista"] >= NOTA_MIN
 
 
 def main(argv=None) -> int:

@@ -1,0 +1,87 @@
+{
+ "versao": 1,
+ "objeto": "toilet_fancy",
+ "rodada": 2,
+ "nota_arte": 7,
+ "nota_realista": 7,
+ "pecas": [
+  {
+   "nome": "caixa_acoplada",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_caixa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca_descarga",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bacia",
+   "situacao": "forma_errada",
+   "nota": "formato facetado/reto em vez de oval contínuo e estreito à direita"
+  },
+  {
+   "nome": "assento",
+   "situacao": "ok",
+   "nota": "tampa sólida fechada cobrindo a bacia"
+  },
+  {
+   "nome": "base_pedestal",
+   "situacao": "forma_errada",
+   "nota": "bloco uniforme sem afunilamento no meio e flare no chão"
+  },
+  {
+   "nome": "tubo_agua",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "bacia",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "lateral direita e borda frontal",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png 000: grande faixa verde à direita da bacia indicando largura menor que o desenho original",
+   "gravidade": "media"
+  },
+  {
+   "parte": "base_pedestal",
+   "tipo": "proporcao",
+   "nivel": "realista",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "meio e contato com o piso",
+   "sentido": "maior",
+   "evidencia": "comparacao.png 000: pedestal é um bloco reto sem afunilamento central nem alargamento no piso",
+   "gravidade": "media"
+  },
+  {
+   "parte": "bacia",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "face frontal e cantos",
+   "sentido": "",
+   "evidencia": "giro_realista.png 045: contorno frontal plano e cantos angulados em vez de arco oval contínuo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "assento",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 45,
+   "onde": "topo da bacia",
+   "sentido": "",
+   "evidencia": "giro_realista.png 045: assento modelado como tampa fechada sólida tapando o bojo côncavo",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Modelo sólido e funcional com bons materiais PBR, mas a bacia precisa de curvatura oval mais orgânica e o pedestal necessita do afunilamento clássico de louça sanitária."
+}

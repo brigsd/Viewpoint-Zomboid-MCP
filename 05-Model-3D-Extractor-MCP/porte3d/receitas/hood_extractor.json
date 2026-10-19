@@ -1,137 +1,637 @@
 {
- "versao": 1,
- "id": "hood_extractor",
- "sprites": {
-  "S": "appliances_cooking_01_69",
-  "E": "appliances_cooking_01_68",
-  "N": "appliances_cooking_01_70",
-  "W": "appliances_cooking_01_71"
- },
- "tras": "N",
- "material": "metal",
- "cores": {
-  "metal": [
-   204,
-   207,
-   208
-  ],
-  "metal_medio": [
-   146,
-   147,
-   151
-  ],
-  "metal_escuro": [
-   28,
-   28,
-   30
-  ]
- },
- "pecas": [
-  {
-   "nome": "campana",
-   "forma": "prisma",
-   "eixo": "x",
-   "de": -0.5,
-   "ate": 0.5,
-   "perfil": [
-    [
-     0.015,
-     1.88
+  "versao": 1,
+  "id": "hood_extractor",
+  "sprites": {
+    "S": "appliances_cooking_01_69",
+    "E": "appliances_cooking_01_68",
+    "N": "appliances_cooking_01_70",
+    "W": "appliances_cooking_01_71"
+  },
+  "tras": "N",
+  "material": "metal",
+  "cores": {
+    "metal": [
+      204,
+      207,
+      208
     ],
-    [
-     0.445,
-     1.88
+    "metal_medio": [
+      146,
+      147,
+      151
     ],
-    [
-     0.445,
-     2.315
+    "metal_escuro": [
+      6,
+      6,
+      8
     ],
-    [
-     0.19,
-     2.315
+    "preto_topo": [
+      4,
+      4,
+      5
     ],
-    [
-     -0.005,
-     1.985
-    ],
-    [
-     -0.005,
-     1.96
-    ],
-    [
-     0.015,
-     1.96
+    "lente_luz": [
+      235,
+      225,
+      190
     ]
-   ],
-   "material": "metal",
-   "chanfro": 0.006
   },
-  {
-   "nome": "aba_inferior",
-   "forma": "caixa",
-   "min": [
-    -0.502,
-    -0.01,
-    1.88
-   ],
-   "max": [
-    0.502,
-    0.025,
-    1.985
-   ],
-   "material": "metal_medio",
-   "chanfro": 0.004
+  "pecas": [
+    {
+      "nome": "campana",
+      "forma": "prisma",
+      "eixo": "x",
+      "de": -0.5,
+      "ate": 0.5,
+      "perfil": [
+        [
+          0.015,
+          1.88
+        ],
+        [
+          0.445,
+          1.88
+        ],
+        [
+          0.445,
+          2.315
+        ],
+        [
+          0.19,
+          2.315
+        ],
+        [
+          -0.005,
+          1.985
+        ],
+        [
+          -0.005,
+          1.96
+        ],
+        [
+          0.015,
+          1.96
+        ]
+      ],
+      "material": "metal",
+      "chanfro": 0.006
+    },
+    {
+      "nome": "aba_inferior",
+      "forma": "caixa",
+      "min": [
+        -0.502,
+        -0.01,
+        1.88
+      ],
+      "max": [
+        0.502,
+        0.025,
+        1.985
+      ],
+      "material": "metal_medio",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "duto",
+      "forma": "caixa",
+      "min": [
+        -0.5,
+        0.19,
+        2.315
+      ],
+      "max": [
+        0.5,
+        0.445,
+        2.45
+      ],
+      "material": "metal_medio",
+      "chanfro": 0.006
+    },
+    {
+      "nome": "duto_topo",
+      "forma": "caixa",
+      "min": [
+        -0.5,
+        0.19,
+        2.45
+      ],
+      "max": [
+        0.5,
+        0.445,
+        2.455
+      ],
+      "material": "preto_topo",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "filtro_esq_moldura_frente",
+      "forma": "caixa",
+      "min": [
+        -0.46,
+        0.06,
+        1.87
+      ],
+      "max": [
+        -0.02,
+        0.066,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_moldura_tras",
+      "forma": "caixa",
+      "min": [
+        -0.46,
+        0.394,
+        1.87
+      ],
+      "max": [
+        -0.02,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_moldura_ext",
+      "forma": "caixa",
+      "min": [
+        -0.46,
+        0.06,
+        1.87
+      ],
+      "max": [
+        -0.454,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_moldura_int",
+      "forma": "caixa",
+      "min": [
+        -0.026,
+        0.06,
+        1.87
+      ],
+      "max": [
+        -0.02,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa1",
+      "forma": "caixa",
+      "min": [
+        -0.4332,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.4272,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa2",
+      "forma": "caixa",
+      "min": [
+        -0.3857,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.3797,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa3",
+      "forma": "caixa",
+      "min": [
+        -0.3381,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.3321,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa4",
+      "forma": "caixa",
+      "min": [
+        -0.2906,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.2846,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa5",
+      "forma": "caixa",
+      "min": [
+        -0.243,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.237,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa6",
+      "forma": "caixa",
+      "min": [
+        -0.1954,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.1894,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa7",
+      "forma": "caixa",
+      "min": [
+        -0.1479,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.1419,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa8",
+      "forma": "caixa",
+      "min": [
+        -0.1003,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.0943,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_esq_ripa9",
+      "forma": "caixa",
+      "min": [
+        -0.0528,
+        0.066,
+        1.87
+      ],
+      "max": [
+        -0.0468,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_moldura_frente",
+      "forma": "caixa",
+      "min": [
+        0.02,
+        0.06,
+        1.87
+      ],
+      "max": [
+        0.46,
+        0.066,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_moldura_tras",
+      "forma": "caixa",
+      "min": [
+        0.02,
+        0.394,
+        1.87
+      ],
+      "max": [
+        0.46,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_moldura_ext",
+      "forma": "caixa",
+      "min": [
+        0.454,
+        0.06,
+        1.87
+      ],
+      "max": [
+        0.46,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_moldura_int",
+      "forma": "caixa",
+      "min": [
+        0.02,
+        0.06,
+        1.87
+      ],
+      "max": [
+        0.026,
+        0.4,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa1",
+      "forma": "caixa",
+      "min": [
+        0.0468,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.0528,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa2",
+      "forma": "caixa",
+      "min": [
+        0.0943,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.1003,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa3",
+      "forma": "caixa",
+      "min": [
+        0.1419,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.1479,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa4",
+      "forma": "caixa",
+      "min": [
+        0.1894,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.1954,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa5",
+      "forma": "caixa",
+      "min": [
+        0.237,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.243,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa6",
+      "forma": "caixa",
+      "min": [
+        0.2846,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.2906,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa7",
+      "forma": "caixa",
+      "min": [
+        0.3321,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.3381,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa8",
+      "forma": "caixa",
+      "min": [
+        0.3797,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.3857,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "filtro_dir_ripa9",
+      "forma": "caixa",
+      "min": [
+        0.4272,
+        0.066,
+        1.87
+      ],
+      "max": [
+        0.4332,
+        0.394,
+        1.8805
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "lente_luz_esq",
+      "forma": "caixa",
+      "min": [
+        -0.3,
+        0.027,
+        1.875
+      ],
+      "max": [
+        -0.2,
+        0.057,
+        1.8805
+      ],
+      "material": "lente_luz"
+    },
+    {
+      "nome": "lente_luz_dir",
+      "forma": "caixa",
+      "min": [
+        0.2,
+        0.027,
+        1.875
+      ],
+      "max": [
+        0.3,
+        0.057,
+        1.8805
+      ],
+      "material": "lente_luz"
+    },
+    {
+      "nome": "aba_fenda1",
+      "forma": "caixa",
+      "min": [
+        -0.33,
+        -0.013,
+        1.93
+      ],
+      "max": [
+        -0.27,
+        -0.009,
+        1.945
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "aba_fenda2",
+      "forma": "caixa",
+      "min": [
+        -0.13,
+        -0.013,
+        1.93
+      ],
+      "max": [
+        -0.07,
+        -0.009,
+        1.945
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "aba_fenda3",
+      "forma": "caixa",
+      "min": [
+        0.07,
+        -0.013,
+        1.93
+      ],
+      "max": [
+        0.13,
+        -0.009,
+        1.945
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "aba_fenda4",
+      "forma": "caixa",
+      "min": [
+        0.27,
+        -0.013,
+        1.93
+      ],
+      "max": [
+        0.33,
+        -0.009,
+        1.945
+      ],
+      "material": "metal_escuro"
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "duto",
-   "forma": "caixa",
-   "min": [
-    -0.5,
-    0.19,
-    2.315
-   ],
-   "max": [
-    0.5,
-    0.445,
-    2.45
-   ],
-   "material": "metal_medio",
-   "chanfro": 0.006
-  },
-  {
-   "nome": "duto_topo",
-   "forma": "caixa",
-   "min": [
-    -0.485,
-    0.205,
-    2.445
-   ],
-   "max": [
-    0.485,
-    0.43,
-    2.455
-   ],
-   "material": "metal_escuro",
-   "chanfro": 0.003
+  "realista": {
+    "materiais": {
+      "metal": {
+        "tipo": "metal",
+        "desgaste": 0.55,
+        "ferrugem": 0.15
+      },
+      "metal_medio": {
+        "tipo": "metal",
+        "desgaste": 0.55,
+        "ferrugem": 0.15
+      },
+      "metal_escuro": {
+        "tipo": "metal",
+        "desgaste": 0.08
+      },
+      "preto_topo": {
+        "tipo": "liso",
+        "desgaste": 0.05
+      },
+      "lente_luz": {
+        "tipo": "liso",
+        "desgaste": 0.05
+      }
+    }
   }
- ],
- "arte": {
-  "modo": "adesivo"
- },
- "realista": {
-  "materiais": {
-   "metal": {
-    "tipo": "metal",
-    "desgaste": 0.3
-   },
-   "metal_medio": {
-    "tipo": "metal",
-    "desgaste": 0.35
-   },
-   "metal_escuro": {
-    "tipo": "metal",
-    "desgaste": 0.2
-   }
-  }
- }
 }

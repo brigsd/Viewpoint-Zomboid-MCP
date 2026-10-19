@@ -38,8 +38,10 @@ O esquema completo está em `receita.schema.json`, e `receita.py` valida a recei
 | `material` | material padrão das peças no nível realista |
 | `cores` | opcional, `{material: [r,g,b]}` em sRGB 0–255; sem isso, a cor vem da arte |
 | `pecas` | lista de peças (abaixo) |
-| `arte` | `{"modo": "adesivo"}` ou `{"modo": "kit", "recortes": {...}, "faces": {...}}` |
-| `realista` | opcional, `{"materiais": {nome: {"tipo": madeira\|metal\|tecido\|liso, "desgaste": 0..1}}}`; `desgaste` põe sujeira, tinta lascada e ferrugem |
+| `arte` (legado, opcional) | `{"modo": "adesivo"}` ou `{"modo": "kit", "recortes": {...}, "faces": {...}}` |
+| `realista` | opcional, `{"materiais": {nome: {"tipo": madeira\|metal\|tecido\|liso, "desgaste": 0..1}}}`; `desgaste` põe sujeira, tinta lascada e ferrugem; `veio` (só madeira, padrão 1) escala a força do veio: 2 a 3 deixa anéis e fibras bem visíveis; `manchas` (0..1, manchas irregulares com auréola), `rasgos` (0..1, fendas finas com enchimento claro, para tecido) e `podre` (0..1, apodrecimento escuro com fibras, para madeira) fazem o estrago no próprio material, sem peças extras; `trancado` (número > 0 = escala; 1 = tira de 1,6 cm; tipo `tecido` ou `liso`) gera trança de cestaria procedural (tiras cruzadas em sarja, frestas escuras, tom por tira) |
+
+- `borda` (0..1, só madeira, em `realista.materiais`): biselado cartoon por peça/tábua e por face, com borda fina mais clara (até +40%) e miolo mais escuro (até −20%), com frestas entre tábuas mais largas e escuras; 0 = desligado (padrão).
 
 ### Peças
 
@@ -58,9 +60,10 @@ As formas:
 
 - `caixa`: `min`, `max`, mais o opcional `afinar` = `{"quanto": m, "lados": ["+x","-x","+y","-y"]}`. Os lados listados entram `quanto` metros na base (z mínimo), como um pé que afina para baixo.
 - `prisma`: `perfil` = lista de pontos `[a, z]` no plano vertical, `eixo` = `"x"` ou `"y"` (direção da extrusão), e `de` e `ate` (o intervalo nesse eixo). O `a` é a coordenada horizontal que sobra, ou seja, `x` quando o eixo é `y` e `y` quando o eixo é `x`.
+- `cortes` (opcional, qualquer peça `prisma`): lista de `{op, perfil, eixo, de, ate}`, cada um um prisma auxiliar aplicado com Boolean exato antes do `chanfro`; `op` = `"diferenca"` (padrão, faz furo) ou `"intersecao"` (mantém só a parte dentro, arredonda cantos). Não é espelhado por `espelhar`.
 - `cilindro`: `centro` `[x,y,z]` (centro da base), `raio`, `altura`, `eixo` (`"x" | "y" | "z"`, padrão `"z"`), `raio_topo` opcional (para tronco de cone) e `segmentos` (padrão 24).
 
-### Arte em modo kit
+### Arte em modo kit (legado)
 
 - `recortes`: `{nome: {"peca": nome, "face": "+x|-x|+y|-y|+z|-z", "recorte": [u0,v0,u1,v1], "limpar_transparente": bool}}`. É um pedaço de uma face de uma peça, desentortado do desenho de frente; `u,v` são frações da face.
 - `faces`: `{peça (sem sufixo de espelho): {"+z": recorte, "lados": recorte, "-z": recorte, ...}}`. A chave `lados` vale para as 4 faces verticais.
@@ -76,7 +79,7 @@ As formas:
 | `buffers/*.npy` | Blender, etapa 1 | por texel do atlas: `posicao` (H,W,3), `normal` (H,W,3), `peca` (H,W) com índice da peça ou −1, `vis_0` e `vis_180` (H,W) com a luz direta crua de um sol na direção da câmera do jogo em 0° e 180° (0 = não vê; `texturas.py` normaliza as duas pela mesma escala), `ao` (H,W), `albedo` (H,W,3) linear do realista |
 | `malha.obj`, `cena.blend` | Blender, etapa 1 | malha juntada com UV (um `usemtl` por peça) e a cena para a etapa 2 |
 | `pecas.json` | Blender, etapa 1 | `[{"indice", "nome", "cor_fio": [r,g,b]}]` |
-| `arte.png`, `realista.png` | `texturas.py` | texturas finais do atlas, sRGB |
+| `arte.png`, `realista.png` | `texturas.py` | texturas finais do atlas, sRGB. `arte` é legado: a textura vem do sprite do jogo, pintado para uma vista, e não serve em 3D. Produção nova usa só o `realista` |
 | `<id>_arte.obj/.mtl`, `<id>_realista.obj/.mtl` | `texturas.py` | modelos finais, uma malha só, `map_Kd` para a textura |
 | `vistas/<nivel>_<ang>.png` | Blender, etapa 2 | 128·E × 256·E px, fundo transparente, câmera do jogo; `nivel` ∈ `arte` (cor pura da textura, sem luz), `realista` (com luz), `fio`, `fio_sobre_arte`; `ang` com 3 dígitos (000, 045, …, 315); o objeto gira `+ang` em `z` |
 | `folhas/*.png`, `folhas/giro_<nivel>.gif` | `folhas.py` | folhas para o crítico (ver `folhas.py`) |

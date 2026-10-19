@@ -1,0 +1,236 @@
+{
+  "versao": 1,
+  "id": "chair_green_dinner",
+  "sprites": {
+    "S": "furniture_seating_indoor_01_57",
+    "E": "furniture_seating_indoor_01_56",
+    "N": "furniture_seating_indoor_01_59",
+    "W": "furniture_seating_indoor_01_58"
+  },
+  "tras": "N",
+  "material": "madeira",
+  "cores": {
+    "madeira": [
+      105,
+      72,
+      48
+    ],
+    "tecido": [
+      100,
+      114,
+      84
+    ],
+    "madeira_escura": [
+      58,
+      40,
+      30
+    ]
+  },
+  "pecas": [
+    {
+      "nome": "pes",
+      "forma": "caixa",
+      "min": [
+        -0.28,
+        -0.26,
+        0.0
+      ],
+      "max": [
+        -0.23,
+        -0.21,
+        0.45
+      ],
+      "espelhar": [
+        "x",
+        "y"
+      ],
+      "material": "madeira",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "saia_base",
+      "forma": "caixa",
+      "min": [
+        -0.27,
+        -0.25,
+        0.38
+      ],
+      "max": [
+        0.27,
+        0.25,
+        0.44
+      ],
+      "material": "madeira",
+      "chanfro": 0.005
+    },
+    {
+      "nome": "assento",
+      "forma": "caixa",
+      "min": [
+        -0.29,
+        -0.27,
+        0.44
+      ],
+      "max": [
+        0.29,
+        0.27,
+        0.5
+      ],
+      "material": "tecido",
+      "chanfro": 0.03
+    },
+    {
+      "nome": "postes_encosto",
+      "forma": "caixa",
+      "min": [
+        -0.27,
+        0.22,
+        0.48
+      ],
+      "max": [
+        -0.23,
+        0.26,
+        0.96
+      ],
+      "espelhar": [
+        "x"
+      ],
+      "material": "madeira",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "travessa_topo",
+      "forma": "caixa",
+      "min": [
+        -0.25,
+        0.23,
+        0.86
+      ],
+      "max": [
+        0.25,
+        0.26,
+        0.96
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "travessa_baixo",
+      "forma": "caixa",
+      "min": [
+        -0.25,
+        0.23,
+        0.5
+      ],
+      "max": [
+        0.25,
+        0.26,
+        0.54
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "ripa_1",
+      "forma": "caixa",
+      "min": [
+        -0.168,
+        0.237,
+        0.54
+      ],
+      "max": [
+        -0.152,
+        0.253,
+        0.86
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "ripa_2",
+      "forma": "caixa",
+      "min": [
+        -0.088,
+        0.237,
+        0.54
+      ],
+      "max": [
+        -0.07200000000000001,
+        0.253,
+        0.86
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "ripa_3",
+      "forma": "caixa",
+      "min": [
+        -0.008,
+        0.237,
+        0.54
+      ],
+      "max": [
+        0.008,
+        0.253,
+        0.86
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "ripa_4",
+      "forma": "caixa",
+      "min": [
+        0.07200000000000001,
+        0.237,
+        0.54
+      ],
+      "max": [
+        0.088,
+        0.253,
+        0.86
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "ripa_5",
+      "forma": "caixa",
+      "min": [
+        0.152,
+        0.237,
+        0.54
+      ],
+      "max": [
+        0.168,
+        0.253,
+        0.86
+      ],
+      "material": "madeira_escura",
+      "chanfro": 0.002
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
+  },
+  "realista": {
+    "materiais": {
+      "madeira": {
+        "tipo": "madeira",
+        "desgaste": 0.4,
+        "ferrugem": 0.1
+      },
+      "tecido": {
+        "tipo": "tecido",
+        "desgaste": 0.35,
+        "ferrugem": 0.1
+      },
+      "madeira_escura": {
+        "tipo": "madeira",
+        "desgaste": 0.4,
+        "ferrugem": 0.1
+      }
+    }
+  }
+}

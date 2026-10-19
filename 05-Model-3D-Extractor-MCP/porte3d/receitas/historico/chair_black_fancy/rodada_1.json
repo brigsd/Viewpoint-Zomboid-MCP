@@ -1,0 +1,166 @@
+{
+ "versao": 1,
+ "id": "chair_black_fancy",
+ "sprites": {
+  "S": "furniture_seating_indoor_03_41",
+  "E": "furniture_seating_indoor_03_40",
+  "N": "furniture_seating_indoor_03_43",
+  "W": "furniture_seating_indoor_03_42"
+ },
+ "tras": "N",
+ "material": "tecido",
+ "cores": {
+  "madeira": [
+   45,
+   30,
+   20
+  ],
+  "tecido": [
+   42,
+   36,
+   32
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.27,
+    -0.115,
+    0.0
+   ],
+   "max": [
+    -0.21,
+    -0.055,
+    0.165
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "chanfro": 0.005,
+   "material": "madeira"
+  },
+  {
+   "nome": "pes_tras",
+   "forma": "caixa",
+   "min": [
+    -0.33,
+    0.3,
+    0.0
+   ],
+   "max": [
+    -0.28,
+    0.355,
+    0.165
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "chanfro": 0.005,
+   "material": "madeira"
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "min": [
+    -0.294,
+    -0.078,
+    0.155
+   ],
+   "max": [
+    0.31,
+    0.453,
+    0.32
+   ],
+   "chanfro": 0.01,
+   "material": "tecido"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.294,
+    -0.078,
+    0.322
+   ],
+   "max": [
+    0.31,
+    0.45,
+    0.474
+   ],
+   "chanfro": 0.015,
+   "material": "tecido"
+  },
+  {
+   "nome": "bracos",
+   "forma": "caixa",
+   "min": [
+    -0.312,
+    -0.076,
+    0.472
+   ],
+   "max": [
+    -0.195,
+    0.423,
+    0.63
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "chanfro": 0.015,
+   "material": "tecido"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "min": [
+    -0.32,
+    0.34,
+    0.16
+   ],
+   "max": [
+    0.335,
+    0.532,
+    1.109
+   ],
+   "chanfro": 0.015,
+   "material": "tecido"
+  },
+  {
+   "nome": "orelhas",
+   "forma": "caixa",
+   "min": [
+    -0.318,
+    0.3,
+    0.72
+   ],
+   "max": [
+    -0.24,
+    0.42,
+    1.08
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "chanfro": 0.015,
+   "material": "tecido"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.2,
+    "veio": 1.0
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.15
+   }
+  }
+ }
+}

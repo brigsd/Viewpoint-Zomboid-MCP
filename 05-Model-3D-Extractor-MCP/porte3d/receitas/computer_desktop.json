@@ -1,215 +1,1987 @@
 {
- "versao": 1,
- "id": "computer_desktop",
- "sprites": {
-  "S": "appliances_com_01_72",
-  "E": "appliances_com_01_73",
-  "N": "appliances_com_01_74",
-  "W": "appliances_com_01_75"
- },
- "tras": "N",
- "material": "liso",
- "cores": {
-  "liso": [
-   216,
-   215,
-   203
-  ],
-  "tela": [
-   47,
-   47,
-   48
-  ],
-  "escuro": [
-   70,
-   68,
-   62
-  ]
- },
- "pecas": [
-  {
-   "nome": "gabinete",
-   "forma": "caixa",
-   "min": [
-    -0.1052,
-    -0.2486,
-    0.8668
-   ],
-   "max": [
-    0.4458,
-    0.237,
-    1.1043
-   ],
-   "chanfro": 0.006
+  "versao": 1,
+  "id": "computer_desktop",
+  "sprites": {
+    "S": "appliances_com_01_72",
+    "E": "appliances_com_01_73",
+    "N": "appliances_com_01_74",
+    "W": "appliances_com_01_75"
   },
-  {
-   "nome": "pedestal_monitor",
-   "forma": "caixa",
-   "min": [
-    0.04,
-    -0.05,
-    1.1043
-   ],
-   "max": [
-    0.24,
-    0.12,
-    1.1343
-   ],
-   "material": "escuro",
-   "chanfro": 0.003
-  },
-  {
-   "nome": "monitor_corpo",
-   "forma": "caixa",
-   "min": [
-    -0.1052,
-    -0.1132,
-    1.1343
-   ],
-   "max": [
-    0.3872,
-    -0.07,
-    1.5385
-   ],
-   "chanfro": 0.01
-  },
-  {
-   "nome": "tela_crt",
-   "forma": "caixa",
-   "min": [
-    -0.02,
-    -0.116,
-    1.2
-   ],
-   "max": [
-    0.3,
-    -0.112,
-    1.48
-   ],
-   "material": "tela",
-   "chanfro": 0.004
-  },
-  {
-   "nome": "monitor_traseira",
-   "forma": "prisma",
-   "eixo": "x",
-   "de": -0.1,
-   "ate": 0.384,
-   "perfil": [
-    [
-     -0.07,
-     1.1343
+  "tras": "N",
+  "material": "liso",
+  "cores": {
+    "liso": [
+      216,
+      215,
+      203
     ],
-    [
-     -0.07,
-     1.5385
+    "tela": [
+      47,
+      47,
+      48
     ],
-    [
-     0.14,
-     1.5385
+    "escuro": [
+      70,
+      68,
+      62
     ],
-    [
-     0.19,
-     1.44
+    "chassi_teclado": [
+      176,
+      170,
+      155
     ],
-    [
-     0.19,
-     1.1343
+    "tecla": [
+      222,
+      218,
+      204
+    ],
+    "tecla_escura": [
+      150,
+      146,
+      132
     ]
-   ],
-   "chanfro": 0.008
   },
-  {
-   "nome": "grelhas_ventilacao",
-   "forma": "caixa",
-   "min": [
-    -0.04,
-    0.188,
-    1.2
-   ],
-   "max": [
-    0.33,
-    0.193,
-    1.32
-   ],
-   "material": "escuro",
-   "chanfro": 0.002
+  "pecas": [
+    {
+      "nome": "gabinete",
+      "forma": "caixa",
+      "min": [
+        -0.1052,
+        -0.2486,
+        0.8668
+      ],
+      "max": [
+        0.4458,
+        0.237,
+        1.1043
+      ],
+      "chanfro": 0.006
+    },
+    {
+      "nome": "pedestal_monitor",
+      "forma": "caixa",
+      "min": [
+        0.04,
+        -0.05,
+        1.1043
+      ],
+      "max": [
+        0.24,
+        0.12,
+        1.1343
+      ],
+      "material": "escuro",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "monitor_corpo",
+      "forma": "caixa",
+      "min": [
+        -0.1052,
+        -0.1132,
+        1.1343
+      ],
+      "max": [
+        0.3872,
+        -0.07,
+        1.5385
+      ],
+      "chanfro": 0.01
+    },
+    {
+      "nome": "tela_crt",
+      "forma": "caixa",
+      "min": [
+        -0.02,
+        -0.116,
+        1.2
+      ],
+      "max": [
+        0.3,
+        -0.112,
+        1.48
+      ],
+      "material": "tela",
+      "chanfro": 0.004
+    },
+    {
+      "nome": "monitor_traseira",
+      "forma": "prisma",
+      "eixo": "x",
+      "de": -0.1,
+      "ate": 0.384,
+      "perfil": [
+        [
+          -0.07,
+          1.1343
+        ],
+        [
+          -0.07,
+          1.5385
+        ],
+        [
+          0.14,
+          1.5385
+        ],
+        [
+          0.19,
+          1.44
+        ],
+        [
+          0.19,
+          1.1343
+        ]
+      ],
+      "chanfro": 0.008
+    },
+    {
+      "nome": "grelhas_ventilacao",
+      "forma": "caixa",
+      "min": [
+        -0.04,
+        0.188,
+        1.2
+      ],
+      "max": [
+        0.33,
+        0.193,
+        1.32
+      ],
+      "material": "escuro",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "teclado",
+      "forma": "caixa",
+      "min": [
+        -0.1052,
+        -0.485,
+        0.8668
+      ],
+      "max": [
+        0.43,
+        -0.262,
+        0.9018
+      ],
+      "chanfro": 0.004,
+      "material": "chassi_teclado"
+    },
+    {
+      "nome": "teclado_rampa",
+      "forma": "prisma",
+      "eixo": "x",
+      "de": -0.095,
+      "ate": 0.415,
+      "perfil": [
+        [
+          -0.47,
+          0.9018
+        ],
+        [
+          -0.47,
+          0.9118
+        ],
+        [
+          -0.274,
+          0.9637
+        ],
+        [
+          -0.274,
+          0.9018
+        ]
+      ],
+      "chanfro": 0.003,
+      "material": "chassi_teclado"
+    },
+    {
+      "nome": "tecla_f0_0",
+      "forma": "caixa",
+      "min": [
+        -0.003,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.015,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_f0_1",
+      "forma": "caixa",
+      "min": [
+        0.018,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.036,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_f0_2",
+      "forma": "caixa",
+      "min": [
+        0.039,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.057,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "barra_espaco",
+      "forma": "caixa",
+      "min": [
+        0.06,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.26,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_f0_d0",
+      "forma": "caixa",
+      "min": [
+        0.263,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.281,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_f0_d1",
+      "forma": "caixa",
+      "min": [
+        0.284,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.302,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_f0_d2",
+      "forma": "caixa",
+      "min": [
+        0.305,
+        -0.449,
+        0.9192
+      ],
+      "max": [
+        0.323,
+        -0.431,
+        0.9262
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_0",
+      "forma": "caixa",
+      "min": [
+        -0.038,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        -0.02,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_1",
+      "forma": "caixa",
+      "min": [
+        -0.017,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.001,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_2",
+      "forma": "caixa",
+      "min": [
+        0.004,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.022,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_3",
+      "forma": "caixa",
+      "min": [
+        0.025,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.043,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_4",
+      "forma": "caixa",
+      "min": [
+        0.046,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.064,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_5",
+      "forma": "caixa",
+      "min": [
+        0.067,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.085,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_6",
+      "forma": "caixa",
+      "min": [
+        0.088,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.106,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_7",
+      "forma": "caixa",
+      "min": [
+        0.109,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.127,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_8",
+      "forma": "caixa",
+      "min": [
+        0.13,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.148,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_9",
+      "forma": "caixa",
+      "min": [
+        0.151,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.169,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_10",
+      "forma": "caixa",
+      "min": [
+        0.172,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.19,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_11",
+      "forma": "caixa",
+      "min": [
+        0.193,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.211,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_12",
+      "forma": "caixa",
+      "min": [
+        0.214,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.232,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_13",
+      "forma": "caixa",
+      "min": [
+        0.235,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.253,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_14",
+      "forma": "caixa",
+      "min": [
+        0.256,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.274,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_15",
+      "forma": "caixa",
+      "min": [
+        0.277,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.295,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_16",
+      "forma": "caixa",
+      "min": [
+        0.298,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.316,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_17",
+      "forma": "caixa",
+      "min": [
+        0.319,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.337,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l1_18",
+      "forma": "caixa",
+      "min": [
+        0.34,
+        -0.428,
+        0.9248
+      ],
+      "max": [
+        0.358,
+        -0.41,
+        0.9318
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_0",
+      "forma": "caixa",
+      "min": [
+        -0.038,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        -0.02,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_1",
+      "forma": "caixa",
+      "min": [
+        -0.017,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.001,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_2",
+      "forma": "caixa",
+      "min": [
+        0.004,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.022,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_3",
+      "forma": "caixa",
+      "min": [
+        0.025,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.043,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_4",
+      "forma": "caixa",
+      "min": [
+        0.046,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.064,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_5",
+      "forma": "caixa",
+      "min": [
+        0.067,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.085,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_6",
+      "forma": "caixa",
+      "min": [
+        0.088,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.106,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_7",
+      "forma": "caixa",
+      "min": [
+        0.109,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.127,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_8",
+      "forma": "caixa",
+      "min": [
+        0.13,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.148,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_9",
+      "forma": "caixa",
+      "min": [
+        0.151,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.169,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_10",
+      "forma": "caixa",
+      "min": [
+        0.172,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.19,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_11",
+      "forma": "caixa",
+      "min": [
+        0.193,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.211,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_12",
+      "forma": "caixa",
+      "min": [
+        0.214,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.232,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_13",
+      "forma": "caixa",
+      "min": [
+        0.235,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.253,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_14",
+      "forma": "caixa",
+      "min": [
+        0.256,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.274,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_15",
+      "forma": "caixa",
+      "min": [
+        0.277,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.295,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_16",
+      "forma": "caixa",
+      "min": [
+        0.298,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.316,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_17",
+      "forma": "caixa",
+      "min": [
+        0.319,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.337,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l2_18",
+      "forma": "caixa",
+      "min": [
+        0.34,
+        -0.407,
+        0.9304
+      ],
+      "max": [
+        0.358,
+        -0.389,
+        0.9374
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_0",
+      "forma": "caixa",
+      "min": [
+        -0.038,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        -0.02,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_1",
+      "forma": "caixa",
+      "min": [
+        -0.017,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.001,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_2",
+      "forma": "caixa",
+      "min": [
+        0.004,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.022,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_3",
+      "forma": "caixa",
+      "min": [
+        0.025,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.043,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_4",
+      "forma": "caixa",
+      "min": [
+        0.046,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.064,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_5",
+      "forma": "caixa",
+      "min": [
+        0.067,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.085,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_6",
+      "forma": "caixa",
+      "min": [
+        0.088,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.106,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_7",
+      "forma": "caixa",
+      "min": [
+        0.109,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.127,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_8",
+      "forma": "caixa",
+      "min": [
+        0.13,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.148,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_9",
+      "forma": "caixa",
+      "min": [
+        0.151,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.169,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_10",
+      "forma": "caixa",
+      "min": [
+        0.172,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.19,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_11",
+      "forma": "caixa",
+      "min": [
+        0.193,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.211,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_12",
+      "forma": "caixa",
+      "min": [
+        0.214,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.232,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_13",
+      "forma": "caixa",
+      "min": [
+        0.235,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.253,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_14",
+      "forma": "caixa",
+      "min": [
+        0.256,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.274,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_15",
+      "forma": "caixa",
+      "min": [
+        0.277,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.295,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_16",
+      "forma": "caixa",
+      "min": [
+        0.298,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.316,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_17",
+      "forma": "caixa",
+      "min": [
+        0.319,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.337,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l3_18",
+      "forma": "caixa",
+      "min": [
+        0.34,
+        -0.386,
+        0.9359
+      ],
+      "max": [
+        0.358,
+        -0.368,
+        0.9429
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_0",
+      "forma": "caixa",
+      "min": [
+        -0.038,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        -0.02,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_1",
+      "forma": "caixa",
+      "min": [
+        -0.017,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.001,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_2",
+      "forma": "caixa",
+      "min": [
+        0.004,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.022,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_3",
+      "forma": "caixa",
+      "min": [
+        0.025,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.043,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_4",
+      "forma": "caixa",
+      "min": [
+        0.046,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.064,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_5",
+      "forma": "caixa",
+      "min": [
+        0.067,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.085,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_6",
+      "forma": "caixa",
+      "min": [
+        0.088,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.106,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_7",
+      "forma": "caixa",
+      "min": [
+        0.109,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.127,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_8",
+      "forma": "caixa",
+      "min": [
+        0.13,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.148,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_9",
+      "forma": "caixa",
+      "min": [
+        0.151,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.169,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_10",
+      "forma": "caixa",
+      "min": [
+        0.172,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.19,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_11",
+      "forma": "caixa",
+      "min": [
+        0.193,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.211,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_12",
+      "forma": "caixa",
+      "min": [
+        0.214,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.232,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_13",
+      "forma": "caixa",
+      "min": [
+        0.235,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.253,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_14",
+      "forma": "caixa",
+      "min": [
+        0.256,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.274,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_15",
+      "forma": "caixa",
+      "min": [
+        0.277,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.295,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_16",
+      "forma": "caixa",
+      "min": [
+        0.298,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.316,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_17",
+      "forma": "caixa",
+      "min": [
+        0.319,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.337,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "tecla_l4_18",
+      "forma": "caixa",
+      "min": [
+        0.34,
+        -0.365,
+        0.9415
+      ],
+      "max": [
+        0.358,
+        -0.347,
+        0.9485
+      ],
+      "rot": [
+        14.83,
+        0,
+        0
+      ],
+      "material": "tecla_escura",
+      "chanfro": 0.002
+    },
+    {
+      "nome": "baias_disquete",
+      "forma": "caixa",
+      "min": [
+        0.18,
+        -0.252,
+        0.95
+      ],
+      "max": [
+        0.42,
+        -0.247,
+        1.08
+      ],
+      "material": "escuro",
+      "chanfro": 0.002
+    }
+  ],
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "teclado",
-   "forma": "caixa",
-   "min": [
-    -0.1052,
-    -0.485,
-    0.8668
-   ],
-   "max": [
-    0.43,
-    -0.262,
-    0.9018
-   ],
-   "chanfro": 0.004
-  },
-  {
-   "nome": "teclado_rampa",
-   "forma": "prisma",
-   "eixo": "x",
-   "de": -0.095,
-   "ate": 0.415,
-   "perfil": [
-    [
-     -0.47,
-     0.9018
-    ],
-    [
-     -0.47,
-     0.9118
-    ],
-    [
-     -0.274,
-     0.9637
-    ],
-    [
-     -0.274,
-     0.9018
-    ]
-   ],
-   "chanfro": 0.003
-  },
-  {
-   "nome": "baias_disquete",
-   "forma": "caixa",
-   "min": [
-    0.18,
-    -0.252,
-    0.95
-   ],
-   "max": [
-    0.42,
-    -0.247,
-    1.08
-   ],
-   "material": "escuro",
-   "chanfro": 0.002
+  "realista": {
+    "materiais": {
+      "liso": {
+        "tipo": "liso",
+        "desgaste": 0.3
+      },
+      "tela": {
+        "tipo": "liso",
+        "desgaste": 0.1
+      },
+      "escuro": {
+        "tipo": "liso",
+        "desgaste": 0.3
+      },
+      "chassi_teclado": {
+        "tipo": "liso",
+        "desgaste": 0.3
+      },
+      "tecla": {
+        "tipo": "liso",
+        "desgaste": 0.25
+      },
+      "tecla_escura": {
+        "tipo": "liso",
+        "desgaste": 0.3
+      }
+    }
   }
- ],
- "arte": {
-  "modo": "adesivo"
- },
- "realista": {
-  "materiais": {
-   "liso": {
-    "tipo": "liso",
-    "desgaste": 0.3
-   },
-   "tela": {
-    "tipo": "liso",
-    "desgaste": 0.1
-   },
-   "escuro": {
-    "tipo": "liso",
-    "desgaste": 0.3
-   }
-  }
- }
 }

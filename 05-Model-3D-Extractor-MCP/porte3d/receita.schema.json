@@ -299,6 +299,22 @@
             }
           }
         },
+        "cortes": {
+          "type": "array",
+          "description": "recortes booleanos de um prisma: cada item e um prisma (perfil, eixo, de, ate) com op diferenca (padrao, fura) ou intersecao (arredonda)",
+          "items": {
+            "type": "object",
+            "required": ["perfil", "eixo", "de", "ate"],
+            "properties": {
+              "op": {"enum": ["diferenca", "intersecao"]},
+              "perfil": {"type": "array", "minItems": 3, "items": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}},
+              "eixo": {"enum": ["x", "y"]},
+              "de": {"type": "number"},
+              "ate": {"type": "number"}
+            },
+            "additionalProperties": false
+          }
+        },
         "perfil": {
           "type": "array",
           "minItems": 3,

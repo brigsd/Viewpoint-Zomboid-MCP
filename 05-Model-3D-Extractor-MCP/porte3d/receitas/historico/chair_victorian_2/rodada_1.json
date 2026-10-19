@@ -1,0 +1,146 @@
+{
+ "versao": 1,
+ "id": "chair_victorian_2",
+ "sprites": {
+  "S": "furniture_seating_indoor_03_85",
+  "E": "furniture_seating_indoor_03_84",
+  "N": "furniture_seating_indoor_03_86",
+  "W": "furniture_seating_indoor_03_87"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   230,
+   226,
+   218
+  ],
+  "tecido": [
+   155,
+   48,
+   68
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.38,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    -0.32,
+    -0.24,
+    0.18
+   ],
+   "espelhar": [
+    "x",
+    "y"
+   ],
+   "material": "madeira",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "saia_base",
+   "forma": "caixa",
+   "min": [
+    -0.4,
+    -0.32,
+    0.16
+   ],
+   "max": [
+    0.4,
+    0.36,
+    0.28
+   ],
+   "material": "madeira",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "assento_estofado",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    -0.32,
+    0.26
+   ],
+   "max": [
+    0.37,
+    0.34,
+    0.45
+   ],
+   "material": "tecido",
+   "chanfro": 0.03
+  },
+  {
+   "nome": "braco_esq",
+   "forma": "caixa",
+   "min": [
+    -0.46,
+    -0.33,
+    0.36
+   ],
+   "max": [
+    -0.32,
+    0.36,
+    0.72
+   ],
+   "material": "tecido",
+   "chanfro": 0.04
+  },
+  {
+   "nome": "braco_dir",
+   "forma": "caixa",
+   "min": [
+    0.32,
+    -0.33,
+    0.36
+   ],
+   "max": [
+    0.46,
+    0.36,
+    0.72
+   ],
+   "material": "tecido",
+   "chanfro": 0.04
+  },
+  {
+   "nome": "encosto_estofado",
+   "forma": "caixa",
+   "min": [
+    -0.37,
+    0.36,
+    0.38
+   ],
+   "max": [
+    0.37,
+    0.44,
+    1.02
+   ],
+   "rot": [
+    -8.0,
+    0.0,
+    0.0
+   ],
+   "material": "tecido",
+   "chanfro": 0.06
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.2
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.15
+   }
+  }
+ }
+}

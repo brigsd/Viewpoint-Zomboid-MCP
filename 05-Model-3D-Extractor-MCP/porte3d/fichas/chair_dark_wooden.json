@@ -1,0 +1,293 @@
+{
+ "versao": 1,
+ "objeto": "chair_dark_wooden",
+ "sprite": "furniture_seating_indoor_02_0",
+ "decisao": "portar",
+ "motivo": "cadeira escolar de plástico azul com pernas de tubo preto",
+ "o_que_e": "cadeira escolar de plástico azul com pernas de tubo preto",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "quatro pes de madeira"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "madeira",
+   "descricao": "assento de madeira com saia"
+  },
+  {
+   "nome": "montantes_encosto",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "madeira",
+   "descricao": "montantes do encosto"
+  },
+  {
+   "nome": "ripas",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 5,
+   "material": "madeira",
+   "descricao": "ripas verticais do encosto"
+  },
+  {
+   "nome": "travessas_encosto",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "madeira",
+   "descricao": "travessas superior e inferior"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "plastico_azul": "liso",
+  "metal_preto": "metal"
+ },
+ "problemas_previstos": [
+  "pes e ripas finos: manter espessura minima de 2 cm"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_02_0",
+  "sprites": {
+   "S": "furniture_seating_indoor_02_0",
+   "E": "furniture_seating_indoor_02_1",
+   "N": "furniture_seating_indoor_02_2",
+   "W": "furniture_seating_indoor_02_3"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 5,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.1524,
+     -0.3149,
+     0.3662
+    ],
+    "max": [
+     0.3126,
+     0.1997,
+     0.4765
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.1524,
+     0.1001,
+     0.4773
+    ],
+    "max": [
+     0.3126,
+     0.1995,
+     1.0838
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.1408,
+     -0.3007,
+     0.0
+    ],
+    "max": [
+     -0.088,
+     -0.2531,
+     0.3559
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.2507,
+     -0.3007,
+     0.0
+    ],
+    "max": [
+     0.3035,
+     -0.2531,
+     0.3559
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     0.2507,
+     0.1287,
+     0.0
+    ],
+    "max": [
+     0.3035,
+     0.1763,
+     0.3559
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Dark Wooden",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "19",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.1524,
+    -0.3149,
+    0.0
+   ],
+   "max": [
+    0.3126,
+    0.1997,
+    1.0838
+   ],
+   "largura": 0.465,
+   "profundidade": 0.5146,
+   "altura": 1.0838
+  },
+  "menor_medida_peca": 0.0476,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7804,
+  "cobertura": 0.9917,
+  "sobra": 0.2145,
+  "pixels_desenho": 3132,
+  "pixels_geometria": 3954,
+  "espelhado_E_S": 0.6285,
+  "espelhado_W_N": 0.6747,
+  "N_igual_S": 0.46,
+  "silhueta_espelho_E_S": 0.6504,
+  "silhueta_espelho_W_N": 0.7104,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0801,
+   -0.0576
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "y"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.1524,
+     -0.3147,
+     0.4773
+    ],
+    "max": [
+     0.3126,
+     -0.2153,
+     1.0838
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 3,
+    "pe": true,
+    "min": [
+     -0.1408,
+     0.1379,
+     0.0
+    ],
+    "max": [
+     -0.088,
+     0.1855,
+     0.3559
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4481,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.301
+  },
+  "sugestao": [
+   "3 pés descritos, provável pé escondido (falta 1, espelho de forma_2): completar por simetria",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_dark_wooden",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_dark_wooden\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_dark_wooden\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_dark_wooden\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_dark_wooden\\profundidade.png"
+  }
+ }
+}

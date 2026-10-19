@@ -1,0 +1,76 @@
+{
+ "versao": 1,
+ "objeto": "toilet_fancy",
+ "rodada": 1,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "caixa_acoplada",
+   "situacao": "ok"
+  },
+  {
+   "nome": "tampa_caixa",
+   "situacao": "ok"
+  },
+  {
+   "nome": "alavanca_descarga",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bacia",
+   "situacao": "forma_errada",
+   "nota": "formato retangular e fechado em vez de oval com bojo côncavo"
+  },
+  {
+   "nome": "assento",
+   "situacao": "forma_errada",
+   "nota": "tampa sólida retangular em vez de contorno oval com abertura"
+  },
+  {
+   "nome": "base_pedestal",
+   "situacao": "forma_errada",
+   "nota": "prisma reto sem afunilamento central e sem alargamento da base"
+  },
+  {
+   "nome": "tubo_agua",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "bacia",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "corpo frontal e bordas laterais",
+   "sentido": "maior",
+   "evidencia": "sobreposicao.png 000: quinas retangulares em magenta extrapolam a silhueta oval do jogo",
+   "gravidade": "media"
+  },
+  {
+   "parte": "base_pedestal",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 0,
+   "onde": "base inferior de contato com o piso",
+   "sentido": "menor",
+   "evidencia": "comparacao.png 000: pedestal reto não reproduz a sapata alargada curva do desenho original",
+   "gravidade": "media"
+  },
+  {
+   "parte": "assento",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "topo da bacia e assento",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: modelado como tampa sólida fechada em vez de assento aberto com bojo côncavo",
+   "gravidade": "media"
+  }
+ ],
+ "observacao": "Caixa acoplada, alavanca e tubo estão corretos, mas bacia, assento e pedestal foram simplificados como prismas retos, divergindo da silhueta oval e do bojo aberto do jogo."
+}

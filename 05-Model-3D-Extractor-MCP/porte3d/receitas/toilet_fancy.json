@@ -1,0 +1,201 @@
+{
+ "versao": 1,
+ "id": "toilet_fancy",
+ "sprites": {
+  "S": "fixtures_bathroom_01_0",
+  "E": "fixtures_bathroom_01_1",
+  "N": "fixtures_bathroom_01_3",
+  "W": "fixtures_bathroom_01_2"
+ },
+ "tras": "N",
+ "material": "liso",
+ "cores": {
+  "liso": [
+   232,
+   235,
+   238
+  ],
+  "metal": [
+   195,
+   200,
+   205
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "caixa_acoplada",
+   "forma": "caixa",
+   "min": [
+    -0.285,
+    0.15,
+    0.525
+   ],
+   "max": [
+    0.265,
+    0.355,
+    0.915
+   ],
+   "chanfro": 0.02,
+   "material": "liso"
+  },
+  {
+   "nome": "tampa_caixa",
+   "forma": "caixa",
+   "min": [
+    -0.292,
+    0.142,
+    0.918
+   ],
+   "max": [
+    0.272,
+    0.362,
+    0.958
+   ],
+   "chanfro": 0.015,
+   "material": "liso"
+  },
+  {
+   "nome": "alavanca_descarga",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    0.12,
+    0.8
+   ],
+   "max": [
+    -0.22,
+    0.15,
+    0.83
+   ],
+   "chanfro": 0.003,
+   "material": "metal"
+  },
+  {
+   "nome": "bacia",
+   "forma": "caixa",
+   "min": [
+    -0.265,
+    -0.335,
+    0.2
+   ],
+   "max": [
+    0.24,
+    0.18,
+    0.475
+   ],
+   "afinar": {
+    "quanto": 0.09,
+    "lados": [
+     "+x",
+     "-x",
+     "-y"
+    ]
+   },
+   "chanfro": 0.08,
+   "material": "liso"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.26,
+    -0.33,
+    0.477
+   ],
+   "max": [
+    0.2,
+    0.175,
+    0.51
+   ],
+   "chanfro": 0.025,
+   "material": "liso"
+  },
+  {
+   "nome": "base_pedestal",
+   "forma": "prisma",
+   "eixo": "y",
+   "de": -0.26,
+   "ate": 0.13,
+   "perfil": [
+    [
+     -0.16,
+     0.0
+    ],
+    [
+     0.16,
+     0.0
+    ],
+    [
+     0.16,
+     0.025
+    ],
+    [
+     0.14,
+     0.05
+    ],
+    [
+     0.12,
+     0.1
+    ],
+    [
+     0.13,
+     0.15
+    ],
+    [
+     0.155,
+     0.2
+    ],
+    [
+     -0.155,
+     0.2
+    ],
+    [
+     -0.13,
+     0.15
+    ],
+    [
+     -0.12,
+     0.1
+    ],
+    [
+     -0.14,
+     0.05
+    ],
+    [
+     -0.16,
+     0.025
+    ]
+   ],
+   "chanfro": 0.02,
+   "material": "liso"
+  },
+  {
+   "nome": "tubo_agua",
+   "forma": "cilindro",
+   "centro": [
+    0.24,
+    0.26,
+    0.05
+   ],
+   "raio": 0.014,
+   "altura": 0.475,
+   "eixo": "z",
+   "material": "metal"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "liso": {
+    "tipo": "liso",
+    "desgaste": 0.15
+   },
+   "metal": {
+    "tipo": "metal",
+    "desgaste": 0.1
+   }
+  }
+ }
+}

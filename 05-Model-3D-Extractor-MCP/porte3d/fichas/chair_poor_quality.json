@@ -1,0 +1,337 @@
+{
+ "versao": 1,
+ "objeto": "chair_poor_quality",
+ "sprite": "carpentry_01_40",
+ "decisao": "portar",
+ "motivo": "cadeira rustica de tabuas de madeira velha com pregos",
+ "o_que_e": "cadeira rustica de tabuas de madeira velha com pregos",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "quatro pes"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "madeira",
+   "descricao": "tabuas do assento"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "quantidade": 1,
+   "material": "madeira",
+   "descricao": "tabuas do encosto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira"
+ },
+ "problemas_previstos": [],
+ "medidas": {
+  "sprite": "carpentry_01_40",
+  "sprites": {
+   "S": "carpentry_01_40",
+   "E": "carpentry_01_41",
+   "N": "carpentry_01_42",
+   "W": "carpentry_01_43"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 5,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3172,
+     -0.2509,
+     0.2978
+    ],
+    "max": [
+     0.171,
+     0.2349,
+     0.4164
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.3097,
+     0.1538,
+     0.416
+    ],
+    "max": [
+     0.1711,
+     0.1902,
+     1.0321
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.3033,
+     -0.2428,
+     0.0
+    ],
+    "max": [
+     -0.2373,
+     -0.2148,
+     0.2976
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.1019,
+     -0.2428,
+     0.0
+    ],
+    "max": [
+     0.1679,
+     -0.2148,
+     0.2976
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     0.1019,
+     0.1623,
+     0.0
+    ],
+    "max": [
+     0.1679,
+     0.1903,
+     0.2976
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Poor quality",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.3172,
+    -0.2509,
+    0.0
+   ],
+   "max": [
+    0.1711,
+    0.2349,
+    1.0321
+   ],
+   "largura": 0.4883,
+   "profundidade": 0.4858,
+   "altura": 1.0321
+  },
+  "menor_medida_peca": 0.028,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.8772,
+  "cobertura": 0.9923,
+  "sobra": 0.1167,
+  "pixels_desenho": 3226,
+  "pixels_geometria": 3624,
+  "espelhado_E_S": 0.5807,
+  "espelhado_W_N": 0.5581,
+  "N_igual_S": 0.3905,
+  "silhueta_espelho_E_S": 0.6343,
+  "silhueta_espelho_W_N": 0.6152,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.073,
+   -0.008
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.3097,
+     -0.2062,
+     0.416
+    ],
+    "max": [
+     0.1711,
+     -0.1698,
+     1.0321
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 2,
+    "pe": true,
+    "min": [
+     -0.3033,
+     0.1988,
+     0.0
+    ],
+    "max": [
+     -0.2373,
+     0.2268,
+     0.2976
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 2,
+    "pe": true,
+    "min": [
+     0.0912,
+     0.1988,
+     0.0
+    ],
+    "max": [
+     0.1572,
+     0.2268,
+     0.2976
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.314,
+     0.1623,
+     0.0
+    ],
+    "max": [
+     -0.248,
+     0.1903,
+     0.2976
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.1019,
+     -0.2063,
+     0.0
+    ],
+    "max": [
+     0.1679,
+     -0.1783,
+     0.2976
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.314,
+     -0.2063,
+     0.0
+    ],
+    "max": [
+     -0.248,
+     -0.1783,
+     0.2976
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4240,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.2392
+  },
+  "sugestao": [
+   "3 pés descritos, provável pé escondido (faltam 5, espelho de forma_2): completar por simetria",
+   "há desenho de trás real (N): usar tras = N"
+  ]
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "versao": 1,
+ "objeto": "sink_white_standing",
+ "rodada": 2,
+ "nota_arte": 6,
+ "nota_realista": 6,
+ "pecas": [
+  {
+   "nome": "coluna",
+   "situacao": "forma_errada",
+   "nota": "tronco de cone liso sem sapata alargada na base nem capitel"
+  },
+  {
+   "nome": "cuba",
+   "situacao": "forma_errada",
+   "nota": "perfil em sela com cantos vivos e laterais angulosas"
+  },
+  {
+   "nome": "frontao",
+   "situacao": "forma_errada",
+   "nota": "barra suspensa sobre a cuba com vão oco inferior em vez de respaldo fechado"
+  },
+  {
+   "nome": "torneira_corpo",
+   "situacao": "forma_errada",
+   "nota": "cilindro reto inclinado sem arco voltado para a cuba"
+  },
+  {
+   "nome": "registros",
+   "situacao": "forma_errada",
+   "nota": "discos cilíndricos lisos sem o formato de cruz/estrela"
+  },
+  {
+   "nome": "ralo",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "torneira_corpo",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "haste da bica",
+   "sentido": "",
+   "evidencia": "giro_realista.png 000: cilindro reto inclinado sem arco voltado para a cuba",
+   "gravidade": "media"
+  },
+  {
+   "parte": "frontao",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "fio",
+   "angulo": 45,
+   "onde": "base inferior do frontão",
+   "sentido": "",
+   "evidencia": "fio.png 045: vão aberto sob a barra do frontão sobre o bojo da cuba",
+   "gravidade": "media"
+  },
+  {
+   "parte": "registros",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "manípulos dos registros",
+   "sentido": "",
+   "evidencia": "zoom.png 000: pastilhas lisas sem asas em cruz",
+   "gravidade": "media"
+  },
+  {
+   "parte": "coluna",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "base inferior da coluna",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png: verde nas laterais da base da coluna, faltou sapata alargada",
+   "gravidade": "media"
+  },
+  {
+   "parte": "torneira_corpo",
+   "tipo": "cor",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 0,
+   "onde": "corpo metálico da torneira e registros",
+   "sentido": "",
+   "evidencia": "giro_realista.png: acabamento cinza fosco uniforme sem reflexo metálico cromado",
+   "gravidade": "media"
+  },
+  {
+   "parte": "cuba",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "giro",
+   "angulo": 90,
+   "onde": "bordas laterais da cuba",
+   "sentido": "",
+   "evidencia": "giro_realista.png 090: formato em sela com quinas vivas recortadas",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "Todas as 6 peças prometidas constam na malha, mas torneira, registros e frontão sofreram simplificações excessivas e falta a base alargada na coluna."
+}

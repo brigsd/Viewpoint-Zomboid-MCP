@@ -1,0 +1,149 @@
+{
+ "versao": 1,
+ "id": "chair_makeshift",
+ "sprites": {
+  "S": "carpentry_01_36",
+  "E": "carpentry_01_38",
+  "N": "carpentry_01_37",
+  "W": "carpentry_01_39"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   110,
+   78,
+   48
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "tabua_base1",
+   "forma": "caixa",
+   "min": [
+    -0.3739,
+    -0.3009,
+    0.0
+   ],
+   "max": [
+    0.3927,
+    0.2783,
+    0.0516
+   ],
+   "chanfro": 0.006,
+   "tabuas": 2,
+   "veio": "x"
+  },
+  {
+   "nome": "tabua_base2",
+   "forma": "caixa",
+   "min": [
+    -0.36,
+    -0.28,
+    0.0516
+   ],
+   "max": [
+    0.38,
+    0.26,
+    0.1033
+   ],
+   "chanfro": 0.006,
+   "veio": "y"
+  },
+  {
+   "nome": "tabua_meio",
+   "forma": "caixa",
+   "min": [
+    -0.3879,
+    -0.1722,
+    0.1036
+   ],
+   "max": [
+    0.4219,
+    0.3472,
+    0.2069
+   ],
+   "chanfro": 0.008,
+   "tabuas": 2,
+   "veio": "x"
+  },
+  {
+   "nome": "tabua_assento",
+   "forma": "caixa",
+   "min": [
+    -0.5006,
+    -0.1712,
+    0.2066
+   ],
+   "max": [
+    0.32,
+    0.408,
+    0.3099
+   ],
+   "chanfro": 0.01,
+   "tabuas": 3,
+   "veio": "x"
+  },
+  {
+   "nome": "encosto_1",
+   "forma": "caixa",
+   "min": [
+    -0.3656,
+    0.2997,
+    0.0
+   ],
+   "max": [
+    -0.1456,
+    0.3701,
+    0.6366
+   ],
+   "chanfro": 0.006,
+   "veio": "z"
+  },
+  {
+   "nome": "encosto_2",
+   "forma": "caixa",
+   "min": [
+    -0.1456,
+    0.2997,
+    0.0
+   ],
+   "max": [
+    0.0744,
+    0.3701,
+    0.5866
+   ],
+   "chanfro": 0.006,
+   "veio": "z"
+  },
+  {
+   "nome": "encosto_3",
+   "forma": "caixa",
+   "min": [
+    0.0744,
+    0.2997,
+    0.0
+   ],
+   "max": [
+    0.294,
+    0.3701,
+    0.5466
+   ],
+   "chanfro": 0.006,
+   "veio": "z"
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.7,
+    "veio": 2.5,
+    "podre": 0.3
+   }
+  }
+ }
+}

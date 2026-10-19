@@ -1,0 +1,500 @@
+{
+ "versao": 1,
+ "objeto": "chair_black_fancy",
+ "sprite": "furniture_seating_indoor_03_41",
+ "decisao": "portar",
+ "motivo": "cadeira modelo chair_black_fancy",
+ "o_que_e": "poltrona wingback clássica estofada escura",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "madeira",
+   "descricao": "dois pés dianteiros de madeira"
+  },
+  {
+   "nome": "pes_tras",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "madeira",
+   "descricao": "dois pés traseiros de madeira"
+  },
+  {
+   "nome": "base",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "tecido",
+   "descricao": "base e saia estofada inferior"
+  },
+  {
+   "nome": "bracos",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "tecido",
+   "descricao": "braços arredondados volumosos"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "almofada profunda de assento"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "encosto alto estofado"
+  },
+  {
+   "nome": "orelhas",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "tecido",
+   "descricao": "abas laterais wingback projetadas para frente"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira",
+  "tecido": "tecido"
+ },
+ "problemas_previstos": [],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_03_41",
+  "sprites": {
+   "S": "furniture_seating_indoor_03_41",
+   "E": "furniture_seating_indoor_03_40",
+   "N": "furniture_seating_indoor_03_43",
+   "W": "furniture_seating_indoor_03_42"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 7,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 7,
+  "tipos": {
+   "caixa": 7,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.2963,
+     -0.0787,
+     0.1553
+    ],
+    "max": [
+     0.3129,
+     0.4539,
+     0.4742
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.3122,
+     -0.0762,
+     0.4744
+    ],
+    "max": [
+     -0.1952,
+     0.4238,
+     0.6249
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     0.2364,
+     -0.0492,
+     0.472
+    ],
+    "max": [
+     0.3116,
+     0.4238,
+     0.6323
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.3203,
+     0.3406,
+     0.1274
+    ],
+    "max": [
+     0.3359,
+     0.532,
+     1.1098
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     -0.2576,
+     -0.1163,
+     0.0
+    ],
+    "max": [
+     -0.2072,
+     -0.0703,
+     0.1658
+    ]
+   },
+   {
+    "nome": "forma_5",
+    "forma": "caixa",
+    "min": [
+     0.2825,
+     -0.0966,
+     0.0
+    ],
+    "max": [
+     0.3291,
+     -0.0454,
+     0.1658
+    ]
+   },
+   {
+    "nome": "forma_6",
+    "forma": "caixa",
+    "min": [
+     0.2893,
+     0.3035,
+     0.0
+    ],
+    "max": [
+     0.3375,
+     0.3501,
+     0.1658
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "Material3": "Fabric",
+   "MaterialType": "Fabric"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Black Fancy",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "19",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.3203,
+    -0.1163,
+    0.0
+   ],
+   "max": [
+    0.3375,
+    0.532,
+    1.1098
+   ],
+   "largura": 0.6578,
+   "profundidade": 0.6483,
+   "altura": 1.1098
+  },
+  "menor_medida_peca": 0.046,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7847,
+  "cobertura": 0.989,
+  "sobra": 0.2084,
+  "pixels_desenho": 5623,
+  "pixels_geometria": 7025,
+  "espelhado_E_S": 0.8305,
+  "espelhado_W_N": 0.8233,
+  "N_igual_S": 0.2898,
+  "silhueta_espelho_E_S": 0.8872,
+  "silhueta_espelho_W_N": 0.8608,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0086,
+   0.2079
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_5",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_6",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.3203,
+     -0.1163,
+     0.1274
+    ],
+    "max": [
+     0.3359,
+     0.0751,
+     1.1098
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2244,
+     -0.1163,
+     0.0
+    ],
+    "max": [
+     0.2748,
+     -0.0703,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.2576,
+     0.486,
+     0.0
+    ],
+    "max": [
+     -0.2072,
+     0.532,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2244,
+     0.486,
+     0.0
+    ],
+    "max": [
+     0.2748,
+     0.532,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_5",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.3119,
+     -0.0966,
+     0.0
+    ],
+    "max": [
+     -0.2653,
+     -0.0454,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_5",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2825,
+     0.4611,
+     0.0
+    ],
+    "max": [
+     0.3291,
+     0.5123,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_5",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.3119,
+     0.4611,
+     0.0
+    ],
+    "max": [
+     -0.2653,
+     0.5123,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_6",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.3203,
+     0.3035,
+     0.0
+    ],
+    "max": [
+     -0.2721,
+     0.3501,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_6",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2893,
+     0.0656,
+     0.0
+    ],
+    "max": [
+     0.3375,
+     0.1122,
+     0.1658
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_6",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.3203,
+     0.0656,
+     0.0
+    ],
+    "max": [
+     -0.2721,
+     0.1122,
+     0.1658
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 6766,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.1689
+  },
+  "sugestao": [
+   "3 pés descritos, provável pé escondido (faltam 9, espelho de forma_4): completar por simetria",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_fancy",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_fancy\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_fancy\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_fancy\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_fancy\\profundidade.png"
+  }
+ }
+}

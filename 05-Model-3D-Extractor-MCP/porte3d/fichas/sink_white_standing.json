@@ -1,0 +1,347 @@
+{
+ "versao": 1,
+ "objeto": "sink_white_standing",
+ "sprite": "fixtures_sinks_01_12",
+ "decisao": "portar",
+ "motivo": "lavatório de coluna clássico de porcelana branca com volume bem definido e peças identificáveis (coluna pedestal, cuba e conjunto de torneira)",
+ "o_que_e": "lavatório de coluna de porcelana branca com cuba retangular de bordas arredondadas apoiada sobre pedestal central afunilado, acompanhado de torneira metálica curvada e manípulos em cruz",
+ "pecas": [
+  {
+   "nome": "coluna",
+   "forma": "cilindro",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "pedestal vertical de sustentação da cuba em porcelana branca, ~67 cm de altura, com base alargada de ~30x30 cm assentada no chão, fuste central afunilado (~20 cm) e capitel alargado no topo sob a cuba"
+  },
+  {
+   "nome": "cuba",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "cuba/bancada retangular em porcelana branca de bordas e cantos externos arredondados, ~80x55 cm de planta e ~18 cm de altura (z de 67 a 85 cm), com cavidade interna côncava para retenção de água"
+  },
+  {
+   "nome": "frontao",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "liso",
+   "descricao": "pequeno ressalto/respaldo posterior em porcelana branca de ~80x10x15 cm (z de 85 a 100 cm) encostado na parede, servindo de base de fixação da torneira"
+  },
+  {
+   "nome": "torneira_corpo",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "bica central metálica tubular cromada de ~12 a 15 cm de altura, curvando-se em arco para a frente em direção ao centro da cuba"
+  },
+  {
+   "nome": "registros",
+   "forma": "cilindro",
+   "origem": "nova",
+   "quantidade": 2,
+   "material": "metal",
+   "descricao": "dois manípulos/volantes metálicos cromados em forma de cruz/estrela, posicionados simetricamente aos lados da bica central"
+  },
+  {
+   "nome": "ralo",
+   "forma": "cilindro",
+   "origem": "nova",
+   "material": "metal",
+   "descricao": "ralo metálico circular cromado de ~5 cm de diâmetro no fundo central da cuba"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "coluna": "liso",
+  "cuba": "liso",
+  "frontao": "liso",
+  "torneira_corpo": "metal",
+  "registros": "metal",
+  "ralo": "metal"
+ },
+ "problemas_previstos": [
+  "forma_2 do jogo é uma chapa plana vertical colada na parede usada para colisão/montagem; não deve ser modelada como peça sólida visível",
+  "a coluna real é um pedestal centralizado e não estende por toda a profundidade até a parede como a forma_1 do jogo (sobra de 47% na geometria)",
+  "cuba possui cavidade interna côncava arredondada com ralo; modelar com chanfro suave e geometria limpa",
+  "aplicar acabamento procedural realista: louça/porcelana branca vitrificada com leve desgaste e sujeira amarelada nos cantos da cuba, e metal cromado reflexivo para a torneira e registros",
+  "N tem arte própria com a traseira da cuba e do pedestal visíveis; W é o espelho de N, mas E não é espelho de S"
+ ],
+ "medidas": {
+  "sprite": "fixtures_sinks_01_12",
+  "sprites": {
+   "S": "fixtures_sinks_01_12",
+   "E": "fixtures_sinks_01_13",
+   "N": "fixtures_sinks_01_28",
+   "W": "fixtures_sinks_01_29"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 4,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.35,
+     -0.1,
+     0.67
+    ],
+    "max": [
+     0.45,
+     0.45,
+     0.85
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.2,
+     0.0,
+     0.0
+    ],
+    "max": [
+     0.1,
+     0.45,
+     0.67
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.2,
+     0.44,
+     0.0
+    ],
+    "max": [
+     0.35,
+     0.45,
+     0.67
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.35,
+     0.35,
+     0.85
+    ],
+    "max": [
+     0.45,
+     0.45,
+     1.0
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "metal",
+  "material_props": {
+   "Material": "Plumbing",
+   "Material2": "Pipes",
+   "Material3": "Sink"
+  },
+  "props": {
+   "CustomName": "Sink",
+   "GroupName": "White Standing",
+   "Facing": "S",
+   "Surface": "34",
+   "MoveType": "WallObject",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "attachedN": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "50"
+  },
+  "props_geometria": {
+   "Surface": "34",
+   "Translucent": "true"
+  },
+  "categoria": "cozinha",
+  "caixa": {
+   "min": [
+    -0.35,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.45,
+    0.45,
+    1.0
+   ],
+   "largura": 0.8,
+   "profundidade": 0.55,
+   "altura": 1.0
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_2"
+  ],
+  "altura_base": 0.0,
+  "montado_na_parede": true,
+  "contorno_0": 0.5303,
+  "cobertura": 1.0,
+  "sobra": 0.4697,
+  "pixels_desenho": 3349,
+  "pixels_geometria": 6315,
+  "espelhado_E_S": 0.8369,
+  "espelhado_W_N": 0.8517,
+  "N_igual_S": 0.1316,
+  "silhueta_espelho_E_S": 0.8939,
+  "silhueta_espelho_W_N": 0.9009,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   0.05,
+   0.175
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "x",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "max": [
+     0.3,
+     0.45,
+     0.67
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     0.0,
+     -0.1,
+     0.0
+    ],
+    "max": [
+     0.3,
+     0.35,
+     0.67
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.2,
+     -0.1,
+     0.0
+    ],
+    "max": [
+     0.35,
+     -0.09,
+     0.67
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.25,
+     -0.1,
+     0.0
+    ],
+    "max": [
+     0.3,
+     -0.09,
+     0.67
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.35,
+     -0.1,
+     0.85
+    ],
+    "max": [
+     0.45,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5823,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.4249
+  },
+  "sugestao": [
+   "objeto de parede (o jogo o prende à parede: MoveType/attached): candidato a não portar",
+   "objeto fino/vazado (peças finas: forma_2): candidato a não portar",
+   "47% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peça que não aparece",
+   "contorno em 0° baixo (IoU 0.53): as caixas do jogo não casam com o desenho",
+   "W é o espelho de N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_white_standing",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_white_standing\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_white_standing\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_white_standing\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\sink_white_standing\\profundidade.png"
+  }
+ }
+}

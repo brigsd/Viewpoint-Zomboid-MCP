@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "objeto": "chair_blue_rattan",
+ "sprite": "furniture_seating_indoor_02_41",
+ "decisao": "portar",
+ "motivo": "poltrona de vime/rattan com bracos arredondados e almofada de tecido tecido azul acinzentado",
+ "o_que_e": "poltrona rustica de vime trancado com quatro pes de madeira, encosto e bracos largos e almofadas de tecido azul acinzentado",
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 4,
+   "material": "madeira",
+   "descricao": "quatro pes de madeira nos cantos inferiores elevando a estrutura do chao"
+  },
+  {
+   "nome": "base_vime",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "saia e base estrutural de vime sob o assento"
+  },
+  {
+   "nome": "braco_esq",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "apoio de braco esquerdo em vime com topo arredondado"
+  },
+  {
+   "nome": "braco_dir",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "apoio de braco direito em vime com topo arredondado"
+  },
+  {
+   "nome": "encosto_vime",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "painel traseiro de encosto estrutural em vime"
+  },
+  {
+   "nome": "almofada_assento",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "tecido",
+   "descricao": "almofada estofada macia sobre a base do assento"
+  },
+  {
+   "nome": "almofada_encosto",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "tecido",
+   "descricao": "almofada estofada vertical apoiada no encosto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira",
+  "tecido": "tecido"
+ },
+ "problemas_previstos": [
+  "bracos tem topo arredondado caracteristico do vime trancado",
+  "almofadas precisam de material tecido macio com chanfro sutil"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_02_41",
+  "sprites": {
+   "S": "furniture_seating_indoor_02_41",
+   "E": "furniture_seating_indoor_02_40",
+   "N": "furniture_seating_indoor_02_43",
+   "W": "furniture_seating_indoor_02_42"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 4,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3912,
+     -0.3654,
+     0.0933
+    ],
+    "max": [
+     0.4268,
+     0.453,
+     0.4798
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.5177,
+     -0.3305,
+     0.4402
+    ],
+    "max": [
+     -0.3791,
+     0.4957,
+     0.6188
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     0.3213,
+     -0.3558,
+     0.4609
+    ],
+    "max": [
+     0.4955,
+     0.5006,
+     0.6558
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.3709,
+     0.2227,
+     0.4793
+    ],
+    "max": [
+     0.2741,
+     0.4533,
+     0.7493
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "Material3": "Fabric",
+   "MaterialType": "Fabric"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Blue Rattan",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "19",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.5177,
+    -0.3654,
+    0.0933
+   ],
+   "max": [
+    0.4955,
+    0.5006,
+    0.7493
+   ],
+   "largura": 1.0132,
+   "profundidade": 0.866,
+   "altura": 0.656
+  },
+  "menor_medida_peca": 0.1386,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0933,
+  "montado_na_parede": false,
+  "contorno_0": 0.8765,
+  "cobertura": 0.9864,
+  "sobra": 0.1128,
+  "pixels_desenho": 7511,
+  "pixels_geometria": 8351,
+  "espelhado_E_S": 0.8983,
+  "espelhado_W_N": 0.8974,
+  "N_igual_S": 0.7109,
+  "silhueta_espelho_E_S": 0.9525,
+  "silhueta_espelho_W_N": 0.9568,
+  "E_e_espelho_de_S": true,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0111,
+   0.0676
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.3709,
+     -0.3181,
+     0.4793
+    ],
+    "max": [
+     0.2741,
+     -0.0875,
+     0.7493
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.2963,
+     -0.3181,
+     0.4793
+    ],
+    "max": [
+     0.3487,
+     -0.0875,
+     0.7493
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 9242,
+   "cobertura": 0.9988,
+   "fora_do_desenho": 0.1883
+  },
+  "sugestao": [
+   "E é o espelho de S",
+   "W é o espelho de N",
+   "E/W são só espelhos: bastam S e N",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_blue_rattan",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_blue_rattan\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_blue_rattan\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_blue_rattan\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_blue_rattan\\profundidade.png"
+  }
+ }
+}

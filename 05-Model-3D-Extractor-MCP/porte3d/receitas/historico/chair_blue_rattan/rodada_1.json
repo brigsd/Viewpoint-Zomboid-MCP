@@ -1,0 +1,174 @@
+{
+ "versao": 1,
+ "id": "chair_blue_rattan",
+ "sprites": {
+  "S": "furniture_seating_indoor_02_41",
+  "E": "furniture_seating_indoor_02_40",
+  "N": "furniture_seating_indoor_02_43",
+  "W": "furniture_seating_indoor_02_42"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   115,
+   88,
+   62
+  ],
+  "pes_madeira": [
+   48,
+   34,
+   24
+  ],
+  "tecido": [
+   88,
+   98,
+   106
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.43,
+    -0.32,
+    0.0
+   ],
+   "max": [
+    -0.36,
+    -0.25,
+    0.12
+   ],
+   "espelhar": [
+    "x",
+    "y"
+   ],
+   "material": "pes_madeira",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "base_vime",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    -0.34,
+    0.09
+   ],
+   "max": [
+    0.44,
+    0.42,
+    0.36
+   ],
+   "material": "madeira",
+   "chanfro": 0.02
+  },
+  {
+   "nome": "braco_esq",
+   "forma": "caixa",
+   "min": [
+    -0.49,
+    -0.34,
+    0.3
+   ],
+   "max": [
+    -0.35,
+    0.44,
+    0.58
+   ],
+   "material": "madeira",
+   "chanfro": 0.04
+  },
+  {
+   "nome": "braco_dir",
+   "forma": "caixa",
+   "min": [
+    0.34,
+    -0.34,
+    0.3
+   ],
+   "max": [
+    0.48,
+    0.44,
+    0.58
+   ],
+   "material": "madeira",
+   "chanfro": 0.04
+  },
+  {
+   "nome": "encosto_vime",
+   "forma": "caixa",
+   "min": [
+    -0.44,
+    0.28,
+    0.32
+   ],
+   "max": [
+    0.44,
+    0.44,
+    0.7
+   ],
+   "material": "madeira",
+   "chanfro": 0.025
+  },
+  {
+   "nome": "almofada_assento",
+   "forma": "caixa",
+   "min": [
+    -0.35,
+    -0.32,
+    0.32
+   ],
+   "max": [
+    0.35,
+    0.28,
+    0.46
+   ],
+   "material": "tecido",
+   "chanfro": 0.02
+  },
+  {
+   "nome": "almofada_encosto",
+   "forma": "caixa",
+   "min": [
+    -0.34,
+    0.16,
+    0.4
+   ],
+   "max": [
+    0.34,
+    0.34,
+    0.75
+   ],
+   "rot": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "material": "tecido",
+   "chanfro": 0.035
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.82,
+    "ferrugem": 0.4
+   },
+   "pes_madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.88,
+    "ferrugem": 0.5
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.75,
+    "ferrugem": 0.3
+   }
+  }
+ }
+}

@@ -185,10 +185,55 @@ def cartao(obj: dict, raiz: Path, base: str, vered: dict | None, ficha: dict | N
 
     tem_img = any((raiz / id_ / rel).is_file() for rel in
                   ("entrada/frente_original.png", "folhas/giro_arte.gif", "folhas/giro_realista.gif"))
+    
+    # Checa se existem vistas renderizadas dos 8 ângulos (000, 045, 090, 135, 180, 225, 270, 315)
+    angulos = ["000", "045", "090", "135", "180", "225", "270", "315"]
+    tem_vistas_arte = all((raiz / id_ / "vistas" / f"arte_{ang}.png").is_file() for ang in angulos)
+    tem_vistas_fio = all((raiz / id_ / "vistas" / f"fio_sobre_arte_{ang}.png").is_file() for ang in angulos)
+    
+    if tem_vistas_arte:
+        vistas_arte_attr = ",".join(f"{base}{quote(id_)}/vistas/arte_{ang}.png" for ang in angulos)
+        vistas_fio_attr = ",".join(f"{base}{quote(id_)}/vistas/fio_sobre_arte_{ang}.png" for ang in angulos) if tem_vistas_fio else ""
+        slider_ctrl = f"""
+    <div class="slider-controle" data-slider-container>
+      <div class="slider-cabecalho">
+        <label><b>Giro Manual:</b> <span class="grau-display">0°</span></label>
+        {f'<label class="lbl-fio"><input type="checkbox" class="chk-fio"> Exibir Wireframe</label>' if tem_vistas_fio else ''}
+      </div>
+      <input type="range" class="rot-slider" min="0" max="7" step="1" value="0" aria-label="Girar modelo">
+      <div class="graus-guia"><span>0°</span><span>90°</span><span>180°</span><span>270°</span><span>315°</span></div>
+    </div>"""
+        fig_arte = f"""<figure class="f-arte" data-vistas-arte="{_e(vistas_arte_attr)}" data-vistas-fio="{_e(vistas_fio_attr)}">
+      <figcaption>Arte (Giro Interativo)</figcaption>
+      {_img(base, id_, "vistas/arte_000.png", raiz, "vista arte", "view-arte")}
+      {slider_ctrl}
+    </figure>"""
+    else:
+        fig_arte = f"""<figure><figcaption>Arte</figcaption>{_img(base, id_, "folhas/giro_arte.gif", raiz, "giro, nível arte")}</figure>"""
+
+    tem_vistas_real = all((raiz / id_ / "vistas" / f"realista_{ang}.png").is_file() for ang in angulos)
+    if tem_vistas_real:
+        vistas_real_attr = ",".join(f"{base}{quote(id_)}/vistas/realista_{ang}.png" for ang in angulos)
+        slider_real = """
+    <div class="slider-controle" data-slider-container>
+      <div class="slider-cabecalho">
+        <label><b>Giro Manual:</b> <span class="grau-display">0°</span></label>
+      </div>
+      <input type="range" class="rot-slider" min="0" max="7" step="1" value="0" aria-label="Girar modelo">
+      <div class="graus-guia"><span>0°</span><span>90°</span><span>180°</span><span>270°</span><span>315°</span></div>
+    </div>"""
+        fig_real = f"""<figure class="f-arte" data-vistas-arte="{_e(vistas_real_attr)}">
+      <figcaption>Realista (Giro Interativo)</figcaption>
+      {_img(base, id_, "vistas/realista_000.png", raiz, "vista realista", "view-arte")}
+      {slider_real}
+    </figure>"""
+    else:
+        fig_real = f"""<figure><figcaption>Realista</figcaption>{_img(base, id_, "folhas/giro_realista.gif", raiz, "giro, nível realista")}</figure>"""
+
     imagens = f"""<div class="imagens">
     <figure class="f-sprite"><figcaption>Jogo</figcaption>{_img(base, id_, "entrada/frente_original.png", raiz, "sprite do jogo", "sprite")}</figure>
-    <figure><figcaption>Arte</figcaption>{_img(base, id_, "folhas/giro_arte.gif", raiz, "giro, nível arte")}</figure>
-    <figure><figcaption>Realista</figcaption>{_img(base, id_, "folhas/giro_realista.gif", raiz, "giro, nível realista")}</figure>
+    {fig_arte}
+    {fig_real}
   </div>""" if tem_img else ""
 
     notas_html = "" if (na is None and nr is None) else f"""<div class="notas">
@@ -200,7 +245,7 @@ def cartao(obj: dict, raiz: Path, base: str, vered: dict | None, ficha: dict | N
     return f"""
 <article class="cartao" data-id="{_e(id_)}" data-estado="{_e(estado)}" data-aba="{_e(aba)}"{"" if aba == "aguardando" else " hidden"}>
   <header>
-    <div><h2>{_e(nome)}</h2>{f'<p class="grupo">{_e(grupo)}</p>' if grupo else ""}<p class="idobj">{_e(id_)}</p></div>
+    <div><h2>{_e(nome)}</h2>{f'<p class="grupo">{_e(grupo)}</p>' if grupo else ""}<p class="idobj">{_e(id_)}</p><button class="copiar" type="button" data-copiar="{_e(id_)}">copiar ID</button></div>
     <span class="selo" data-estado-selo>{_e(_selo(estado))}</span>
   </header>
   {f'<p class="oque">{_e(o_que_e)}</p>' if o_que_e else ""}
@@ -244,17 +289,31 @@ main{max-width:1180px;margin:0 auto;padding:16px;display:grid;gap:16px;grid-temp
 .cartao h2{margin:0;font-size:1.15rem;overflow-wrap:anywhere}
 .grupo{margin:0;color:var(--mut);font-size:.9rem}
 .idobj{margin:0;color:var(--mut);font:.78rem ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+.copiar{margin-top:4px;font:.78rem system-ui,sans-serif;padding:3px 10px;border-radius:6px;border:1px solid var(--bd);background:var(--card2);color:var(--txt);cursor:pointer}
 .selo{flex:0 0 auto;font-size:.8rem;padding:2px 10px;border-radius:99px;background:var(--card2);color:var(--mut);border:1px solid var(--bd)}
 .cartao[data-estado=aprovado] .selo,.cartao[data-estado=publicado] .selo{background:var(--okbg);color:var(--ok);border-color:var(--ok)}
 .cartao[data-estado=rejeitado] .selo{background:var(--ambg);color:var(--am);border-color:var(--am)}
 .cartao[data-estado=reprovado] .selo,.cartao[data-estado=nao_portar] .selo{background:var(--rdbg);color:var(--rd);border-color:var(--rd)}
 .oque{margin:0;color:var(--mut);font-size:.95rem}
 .imagens{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.6fr);gap:8px;align-items:stretch}
-.imagens figure{margin:0;display:flex;flex-direction:column;justify-content:center;background:var(--card2);border-radius:8px;padding:6px;text-align:center;min-width:0}
+.imagens figure{margin:0;display:flex;flex-direction:column;justify-content:center;background:var(--card2);border-radius:8px;padding:6px;text-align:center;min-width:0;position:relative}
 .imagens figcaption{font-size:.78rem;color:var(--mut);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
 .imagens img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;margin:0 auto}
 .imagens img.sprite{image-rendering:pixelated}
 .semimg{color:var(--mut);font-size:.8rem;padding:24px 4px}
+
+/* Slider interativo de giro 360 */
+.slider-controle{margin-top:6px;padding:4px 6px;background:rgba(20,22,27,0.85);border:1px solid var(--bd);border-radius:6px;display:flex;flex-direction:column;gap:3px}
+.slider-cabecalho{display:flex;justify-content:space-between;align-items:center;font-size:0.75rem;color:var(--tx)}
+.slider-cabecalho label b{color:var(--az)}
+.grau-display{font-weight:700;color:var(--tx);min-width:32px;display:inline-block;text-align:left}
+.lbl-fio{font-size:0.72rem;color:var(--mut);cursor:pointer;display:flex;align-items:center;gap:4px}
+.lbl-fio input{margin:0;cursor:pointer}
+.rot-slider{width:100%;height:6px;border-radius:3px;background:var(--bd);outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;margin:4px 0 2px}
+.rot-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:14px;height:14px;border-radius:50%;background:var(--az);cursor:ew-resize}
+.rot-slider::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--az);cursor:ew-resize;border:none}
+.graus-guia{display:flex;justify-content:space-between;font-size:0.65rem;color:var(--mut);padding:0 2px}
+
 .notas{display:flex;align-items:center;gap:10px}
 .nota{display:flex;flex-direction:column;align-items:center;min-width:76px;padding:4px 12px;border-radius:10px;border:1px solid var(--bd)}
 .nota span{font-size:1.7rem;font-weight:700;line-height:1.1}
@@ -299,6 +358,7 @@ JS = """
   var vazio=document.getElementById('vazio-aba');
   var porAba={aguardando:['aguardando_aprovacao'],aprovados:['aprovado','publicado'],rejeitados:['rejeitado'],reprovados:['reprovado','nao_portar']};
   var SELO={aguardando_aprovacao:'aguardando',aprovado:'aprovado',publicado:'publicado',rejeitado:'refazer',reprovado:'reprovado',nao_portar:'não portado'};
+  var GRAUS=['0°', '45°', '90°', '135°', '180°', '225°', '270°', '315°'];
   var atual='aguardando';
   var textos=JSON.parse(document.getElementById('vazios').textContent);
   try{var s=sessionStorage.getItem('aba');if(s&&porAba[s])atual=s;}catch(e){}
@@ -318,6 +378,39 @@ JS = """
     vazio.hidden=visiveis>0; vazio.textContent=textos[atual]||'';
   }
   abas.forEach(function(b){b.addEventListener('click',function(){atual=b.dataset.aba;try{sessionStorage.setItem('aba',atual);}catch(e){}atualizar();});});
+  
+  // Controle dos sliders de rotação manual e alternância de wireframe
+  document.querySelectorAll('.f-arte').forEach(function(fig){
+    var vArte = (fig.dataset.vistasArte || '').split(',').filter(Boolean);
+    var vFio = (fig.dataset.vistasFio || '').split(',').filter(Boolean);
+    if (!vArte.length) return;
+    
+    // Pré-carrega as imagens das vistas para transição instantânea
+    vArte.forEach(function(src){ var im = new Image(); im.src = src; });
+    if (vFio.length) vFio.forEach(function(src){ var im = new Image(); im.src = src; });
+
+    var img = fig.querySelector('img.view-arte');
+    var slider = fig.querySelector('.rot-slider');
+    var disp = fig.querySelector('.grau-display');
+    var chkFio = fig.querySelector('.chk-fio');
+
+    function mudarAngulo(){
+      var idx = parseInt(slider.value, 10) || 0;
+      disp.textContent = GRAUS[idx] || (idx * 45 + '°');
+      var usarFio = chkFio && chkFio.checked && vFio.length;
+      var lista = usarFio ? vFio : vArte;
+      if (lista[idx]) img.src = lista[idx];
+    }
+
+    if (slider) {
+      slider.addEventListener('input', mudarAngulo);
+      slider.addEventListener('change', mudarAngulo);
+    }
+    if (chkFio) {
+      chkFio.addEventListener('change', mudarAngulo);
+    }
+  });
+
   function msg(c,t,cls){var m=c.querySelector('.msg');m.textContent=t;m.className='msg '+(cls||'');}
   cartoes.forEach(function(c){
     [].slice.call(c.querySelectorAll('[data-decisao]')).forEach(function(b){
@@ -346,6 +439,17 @@ JS = """
   });
   atualizar();
 })();
+
+  document.querySelectorAll('[data-copiar]').forEach(function(b){
+    b.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      var t = b.dataset.copiar;
+      var feito = function(){ b.textContent = 'copiado'; setTimeout(function(){ b.textContent = 'copiar ID'; }, 1200); };
+      if (navigator.clipboard) { navigator.clipboard.writeText(t).then(feito, function(){}); return; }
+      var a = document.createElement('textarea'); a.value = t; document.body.appendChild(a); a.select();
+      try { document.execCommand('copy'); feito(); } catch (e) {} a.remove();
+    });
+  });
 """
 
 

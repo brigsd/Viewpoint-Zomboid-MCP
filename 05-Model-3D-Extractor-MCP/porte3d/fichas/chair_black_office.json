@@ -1,0 +1,388 @@
+{
+ "versao": 1,
+ "objeto": "chair_black_office",
+ "sprite": "furniture_seating_indoor_01_50",
+ "decisao": "portar",
+ "motivo": "cadeira modelo chair_black_office",
+ "o_que_e": "cadeira giratória de escritório com base e rodízios",
+ "pecas": [
+  {
+   "nome": "base_estrela",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "base em cruz/estrela com rodizios"
+  },
+  {
+   "nome": "pistao",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "pistão/coluna vertical central"
+  },
+  {
+   "nome": "haste_encosto",
+   "forma": "caixa",
+   "origem": "nova",
+   "quantidade": 1,
+   "material": "liso",
+   "descricao": "haste dorsal de suporte do encosto"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "assento estofado preto"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "tecido",
+   "descricao": "encosto estofado preto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "tecido": "tecido",
+  "liso": "liso"
+ },
+ "problemas_previstos": [],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_01_50",
+  "sprites": {
+   "S": "furniture_seating_indoor_01_50",
+   "E": "furniture_seating_indoor_01_49",
+   "N": "furniture_seating_indoor_01_51",
+   "W": "furniture_seating_indoor_01_48"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 3,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 3,
+  "tipos": {
+   "caixa": 2,
+   "cilindro": 0,
+   "prisma": 1
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "prisma",
+    "perfil": [
+     [
+      0.1106,
+      0.0593
+     ],
+     [
+      0.2122,
+      0.0358
+     ],
+     [
+      0.2591,
+      -0.0111
+     ],
+     [
+      0.306,
+      -0.0267
+     ],
+     [
+      0.3527,
+      0.0202
+     ],
+     [
+      0.2591,
+      0.1139
+     ],
+     [
+      0.1185,
+      0.1608
+     ],
+     [
+      0.1028,
+      0.2076
+     ],
+     [
+      0.1263,
+      0.231
+     ],
+     [
+      0.1028,
+      0.2701
+     ],
+     [
+      0.0403,
+      0.3325
+     ],
+     [
+      0.0169,
+      0.3404
+     ],
+     [
+      -0.0142,
+      0.3092
+     ],
+     [
+      0.0015,
+      0.231
+     ],
+     [
+      -0.0492,
+      0.2822
+     ],
+     [
+      -0.1195,
+      0.2432
+     ],
+     [
+      -0.0101,
+      0.1339
+     ],
+     [
+      -0.0258,
+      0.1183
+     ],
+     [
+      -0.0455,
+      0.0593
+     ],
+     [
+      -0.0648,
+      0.0167
+     ],
+     [
+      -0.0414,
+      -0.0536
+     ],
+     [
+      0.0366,
+      -0.1317
+     ],
+     [
+      0.0716,
+      -0.1361
+     ],
+     [
+      0.095,
+      -0.1439
+     ],
+     [
+      0.1185,
+      -0.1203
+     ],
+     [
+      0.1106,
+      -0.0657
+     ],
+     [
+      0.0679,
+      0.0245
+     ]
+    ],
+    "eixo": "y",
+    "de": -0.09,
+    "ate": -0.08,
+    "rot": [
+     -90.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.3062,
+     -0.2011,
+     0.2518
+    ],
+    "max": [
+     0.2376,
+     0.2999,
+     0.3644
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.2918,
+     0.2283,
+     0.3647
+    ],
+    "max": [
+     0.1786,
+     0.3553,
+     0.8055
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "liso",
+  "material_props": {
+   "Material": "Foam",
+   "Material2": "Fabric",
+   "Material3": "PlasticHard",
+   "MaterialType": "Plastic"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Black Office",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "15",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.3062,
+    -0.3271,
+    0.0932
+   ],
+   "max": [
+    0.3527,
+    0.3553,
+    0.8055
+   ],
+   "largura": 0.6589,
+   "profundidade": 0.6825,
+   "altura": 0.7123
+  },
+  "menor_medida_peca": 0.01,
+  "fino": true,
+  "pecas_finas": [
+   "forma_0"
+  ],
+  "altura_base": 0.0932,
+  "montado_na_parede": false,
+  "contorno_0": 0.7801,
+  "cobertura": 0.9993,
+  "sobra": 0.2195,
+  "pixels_desenho": 2818,
+  "pixels_geometria": 3608,
+  "espelhado_E_S": 0.7473,
+  "espelhado_W_N": 0.7554,
+  "N_igual_S": 0.4269,
+  "silhueta_espelho_E_S": 0.7833,
+  "silhueta_espelho_W_N": 0.7869,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0232,
+   0.0141
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "prisma",
+    "copia_de": "forma_0",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.3062,
+     -0.129,
+     0.0932
+    ],
+    "max": [
+     0.166,
+     0.3553,
+     0.1033
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.2918,
+     -0.3271,
+     0.3647
+    ],
+    "max": [
+     0.1786,
+     -0.2001,
+     0.8055
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": false,
+    "min": [
+     -0.1321,
+     -0.3271,
+     0.3647
+    ],
+    "max": [
+     0.3383,
+     -0.2001,
+     0.8055
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 3989,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.2936
+  },
+  "sugestao": [
+   "objeto fino/vazado (peças finas: forma_0): candidato a não portar",
+   "há desenho de trás real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_office",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_office\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_office\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_office\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_black_office\\profundidade.png"
+  }
+ }
+}

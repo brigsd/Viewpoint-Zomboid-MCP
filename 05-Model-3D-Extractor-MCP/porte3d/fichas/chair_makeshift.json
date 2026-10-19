@@ -1,0 +1,239 @@
+{
+ "versao": 1,
+ "objeto": "chair_makeshift",
+ "sprite": "carpentry_01_36",
+ "decisao": "portar",
+ "motivo": "cadeira improvisada de tabuas toscas pregadas",
+ "o_que_e": "poltrona-banco de tabuas empilhadas com encosto de tres tabuas verticais",
+ "pecas": [
+  {
+   "nome": "base_tabuas",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "tabuas baixas empilhadas"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "tabuas do assento"
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "origem": "jogo",
+   "material": "madeira",
+   "descricao": "tabuas verticais do encosto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": false,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira"
+ },
+ "problemas_previstos": [
+  "tabuas irregulares e rachadas"
+ ],
+ "medidas": {
+  "sprite": "carpentry_01_36",
+  "sprites": {
+   "S": "carpentry_01_36",
+   "E": "carpentry_01_38",
+   "N": "carpentry_01_37",
+   "W": "carpentry_01_39"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 4,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3739,
+     -0.3009,
+     0.0
+    ],
+    "max": [
+     0.3927,
+     0.2783,
+     0.1033
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.3879,
+     -0.1722,
+     0.1036
+    ],
+    "max": [
+     0.4219,
+     0.3472,
+     0.2069
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.5006,
+     -0.1712,
+     0.2066
+    ],
+    "max": [
+     0.32,
+     0.408,
+     0.3099
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     -0.3656,
+     0.2997,
+     0.0
+    ],
+    "max": [
+     0.294,
+     0.3701,
+     0.6366
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Makeshift",
+   "Facing": "S",
+   "Surface": "15",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.5006,
+    -0.3009,
+    0.0
+   ],
+   "max": [
+    0.4219,
+    0.408,
+    0.6366
+   ],
+   "largura": 0.9225,
+   "profundidade": 0.7089,
+   "altura": 0.6366
+  },
+  "menor_medida_peca": 0.0704,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.9146,
+  "cobertura": 0.9991,
+  "sobra": 0.0847,
+  "pixels_desenho": 5325,
+  "pixels_geometria": 5812,
+  "espelhado_E_S": 0.8489,
+  "espelhado_W_N": 0.937,
+  "N_igual_S": 0.6724,
+  "silhueta_espelho_E_S": 0.892,
+  "silhueta_espelho_W_N": 0.9664,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": true,
+  "tem_N": true,
+  "centro_simetria": [
+   -0.0394,
+   0.0535
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.3656,
+     -0.263,
+     0.0
+    ],
+    "max": [
+     0.294,
+     -0.1926,
+     0.6366
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 5551,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.0407
+  },
+  "sugestao": [
+   "W Ã© o espelho de N",
+   "hÃ¡ desenho de trÃ¡s real (N): usar tras = N"
+  ]
+ }
+}

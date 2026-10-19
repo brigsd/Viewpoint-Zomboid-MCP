@@ -1,0 +1,98 @@
+{
+ "versao": 1,
+ "objeto": "toilet_chemical",
+ "rodada": 2,
+ "nota_arte": 6,
+ "nota_realista": 4,
+ "pecas": [
+  {
+   "nome": "gabinete_traseiro",
+   "situacao": "forma_errada",
+   "nota": "mais estreito à esquerda em 0° e disposição invertida em relação a jogo tras em 180°"
+  },
+  {
+   "nome": "corpo_vaso",
+   "situacao": "ok"
+  },
+  {
+   "nome": "assento_vaso",
+   "situacao": "ok"
+  },
+  {
+   "nome": "bacia_vaso",
+   "situacao": "forma_errada",
+   "nota": "sem concavidade interna no realista, fechada como tampa plana"
+  },
+  {
+   "nome": "coluna_pia",
+   "situacao": "ok"
+  },
+  {
+   "nome": "cuba_pia",
+   "situacao": "forma_errada",
+   "nota": "sem concavidade no realista, topo da coluna é plano e sem ralo"
+  },
+  {
+   "nome": "torneira",
+   "situacao": "ok"
+  }
+ ],
+ "defeitos": [
+  {
+   "parte": "bacia_vaso",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "abertura superior da bacia",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000: topo da bacia é um plano sólido horizontal sem concavidade nem dreno",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "cuba_pia",
+   "tipo": "estrutura",
+   "nivel": "realista",
+   "vista": "zoom",
+   "angulo": 0,
+   "onde": "topo da coluna da pia",
+   "sentido": "",
+   "evidencia": "zoom.png realista 000: topo da pia é plano e contínuo, sem concavidade de cuba nem ralo",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "gabinete_traseiro",
+   "tipo": "estrutura",
+   "nivel": "ambos",
+   "vista": "comparacao",
+   "angulo": 180,
+   "onde": "painel traseiro completo",
+   "sentido": "",
+   "evidencia": "comparacao.png 180 graus: disposição invertida em relação a jogo tras (pia à esquerda e gabinete à direita no modelo)",
+   "gravidade": "grave"
+  },
+  {
+   "parte": "gabinete_traseiro",
+   "tipo": "proporcao",
+   "nivel": "ambos",
+   "vista": "sobreposicao",
+   "angulo": 0,
+   "onde": "extremidade lateral esquerda atrás do vaso",
+   "sentido": "menor",
+   "evidencia": "sobreposicao.png: faixa verde expressiva à esquerda mostrando gabinete mais estreito que no desenho",
+   "gravidade": "media"
+  },
+  {
+   "parte": "coluna_pia",
+   "tipo": "sobra",
+   "nivel": "realista",
+   "vista": "giro",
+   "angulo": 270,
+   "onde": "face lateral direita externa",
+   "sentido": "",
+   "evidencia": "giro_realista.png 270: placa retangular saliente com costura visível na lateral da coluna",
+   "gravidade": "leve"
+  }
+ ],
+ "observacao": "O modelo reproduz a leitura metálica e os volumes principais, mas falha criticamente ao selar a bacia do vaso e a cuba da pia como tampas sólidas sem concavidade, além de inverter a traseira em 180° contra o sprite original."
+}

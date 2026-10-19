@@ -32,6 +32,9 @@ D_CAM = Vector((1.0, -1.0, 0.8166)).normalized()      # do objeto para a câmera
 ANGULOS = (0, 45, 90, 135, 180, 225, 270, 315)
 
 
+CORTADORES = []   # objetos auxiliares dos recortes (removidos depois de juntar a malha)
+
+
 def log(*a):
     print("[construir]", *a, flush=True)
 
@@ -55,6 +58,14 @@ def _objeto(nome, verts, faces, p):
     ob.location = Vector(c)
     if p.get("rot"):
         ob.rotation_euler = Euler([math.radians(a) for a in p["rot"]], "XYZ")
+    for k, cz in enumerate(p.get("cortes", [])):      # recortes booleanos (antes do chanfro)
+        cob = prisma({"nome": f"{p['nome']}_corte{k}", "perfil": cz["perfil"], "eixo": cz["eixo"], "de": cz["de"], "ate": cz["ate"]})
+        cob.display_type = "WIRE"
+        CORTADORES.append(cob)
+        ob.data["cortadores"] = ob.data.get("cortadores", "") + cob.name + "|"
+        m = ob.modifiers.new(f"corte{k}", "BOOLEAN")
+        m.operation = "INTERSECT" if cz.get("op") == "intersecao" else "DIFFERENCE"
+        m.solver, m.object = "EXACT", cob
     if p.get("chanfro", 0) > 0:
         m = ob.modifiers.new("chanfro", "BEVEL")
         m.width, m.segments, m.limit_method = p["chanfro"], 3, "ANGLE"
@@ -188,6 +199,14 @@ def etapa_malha(pasta: Path, tex: int):
     tipos = {k: v["tipo"] for k, v in r.get("realista", {}).get("materiais", {}).items()}
     desgastes = {k: float(v.get("desgaste", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     ferrugens = {k: float(v.get("ferrugem", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    veios = {k: float(v.get("veio", 1.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    manchas_m = {k: float(v.get("manchas", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    rasgos_m = {k: float(v.get("rasgos", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    podres_m = {k: float(v.get("podre", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    listras_m = {k: float(v.get("listras", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    listras_p = {k: float(v.get("listras_periodo", 0.07)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    trancado_m = {k: float(v.get("trancado", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
+    bordas_m = {k: float(v.get("borda", 0.0)) for k, v in r.get("realista", {}).get("materiais", {}).items()}
     pecas, objs, mats_real, mats_id = [], [], [], []
     for i, p in enumerate(r["pecas"]):
         ob = {"caixa": caixa, "prisma": prisma, "cilindro": cilindro}[p["forma"]](p)
@@ -201,9 +220,14 @@ def etapa_malha(pasta: Path, tex: int):
         cor = cores.get(mat, [128, 128, 128])
         mr = materiais.criar(f"p{i:03d}_{p['nome']}", tipo, cor, eixos=(AX[comp], AX[atr], AX[prof]),
                              faixa=(float(lo[atr]), float(hi[atr])), superficie=float(hi[prof]),
-                             tabuas=int(p.get("tabuas", 0)), semente=i, desgaste=desgastes.get(mat, 0.0), ferrugem=ferrugens.get(mat, 0.0),
+                             tabuas=int(p.get("tabuas", 0)), semente=i, desgaste=desgastes.get(mat, 0.0), ferrugem=ferrugens.get(mat, 0.0), veio=veios.get(mat, 1.0),
+                             manchas=manchas_m.get(mat, 0.0), rasgos=rasgos_m.get(mat, 0.0), podre=podres_m.get(mat, 0.0),
+                             listras=listras_m.get(mat, 0.0), listras_periodo=listras_p.get(mat, 0.07), trancado=trancado_m.get(mat, 0.0), borda=bordas_m.get(mat, 0.0),
                              limites=(tuple(map(float, lo)), tuple(map(float, hi))))
         ob.data.materials.append(mr)
+        for cn in ob.data.get("cortadores", "").split("|"):   # o Boolean copia os slots do cortador: mesmo material, sem slot vazio
+            if cn:
+                bpy.data.objects[cn].data.materials.append(mr)
         mats_real.append(mr)
         mats_id.append(material_simples(f"id{i:03d}", (0, 0, 0), emissao=(1.0, 1.0, 1.0), forca=float(i + 1)))
         objs.append(ob)
@@ -216,6 +240,9 @@ def etapa_malha(pasta: Path, tex: int):
     bpy.ops.object.convert(target="MESH")
     bpy.ops.object.join()
     ob = bpy.context.view_layer.objects.active
+    for cob in CORTADORES:
+        bpy.data.objects.remove(cob)
+    CORTADORES.clear()
     ob.name = r["id"]
     bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
     bpy.ops.object.shade_auto_smooth(angle=math.radians(35))

@@ -1,0 +1,381 @@
+{
+ "versao": 1,
+ "objeto": "chair_white_wooden",
+ "sprite": "furniture_seating_indoor_02_56",
+ "decisao": "portar",
+ "motivo": "cadeira de madeira branca com encosto de ripas",
+ "o_que_e": "cadeira de madeira branca com encosto de ripas",
+ "pecas": [
+  {
+   "nome": "pernas",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "pernas"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "assento"
+  },
+  {
+   "nome": "ripas",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "ripas"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira"
+ },
+ "problemas_previstos": [
+  "pecas finas"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_02_56",
+  "sprites": {
+   "S": "furniture_seating_indoor_02_56",
+   "E": "furniture_seating_indoor_02_57",
+   "N": "furniture_seating_indoor_02_58",
+   "W": "furniture_seating_indoor_02_59"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [],
+  "tem_geometria": true,
+  "n_formas": 5,
+  "tipos": {
+   "caixa": 5,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.1955,
+     -0.2717,
+     0.3662
+    ],
+    "max": [
+     0.2695,
+     0.2429,
+     0.4765
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.1953,
+     0.1369,
+     0.4773
+    ],
+    "max": [
+     0.2697,
+     0.2363,
+     1.0838
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.1729,
+     -0.27,
+     0.0
+    ],
+    "max": [
+     -0.1201,
+     -0.2224,
+     0.3657
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.2176,
+     -0.27,
+     0.0
+    ],
+    "max": [
+     0.2704,
+     -0.2224,
+     0.3669
+    ]
+   },
+   {
+    "nome": "forma_4",
+    "forma": "caixa",
+    "min": [
+     0.2176,
+     0.1557,
+     0.0
+    ],
+    "max": [
+     0.2704,
+     0.2101,
+     0.3657
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails",
+   "MaterialType": "Wood"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "White Wooden",
+   "Facing": "S",
+   "Surface": "17",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "19",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.1955,
+    -0.2717,
+    0.0
+   ],
+   "max": [
+    0.2704,
+    0.2429,
+    1.0838
+   ],
+   "largura": 0.4659,
+   "profundidade": 0.5146,
+   "altura": 1.0838
+  },
+  "menor_medida_peca": 0.0476,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.7852,
+  "cobertura": 1.0,
+  "sobra": 0.2148,
+  "pixels_desenho": 3132,
+  "pixels_geometria": 3989,
+  "espelhado_E_S": 0.569,
+  "espelhado_W_N": 0.5865,
+  "N_igual_S": 0.4217,
+  "silhueta_espelho_E_S": 0.6491,
+  "silhueta_espelho_W_N": 0.7101,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.0374,
+   -0.0144
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_4",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.1953,
+     -0.2651,
+     0.4773
+    ],
+    "max": [
+     0.2697,
+     -0.1657,
+     1.0838
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.1729,
+     0.1936,
+     0.0
+    ],
+    "max": [
+     -0.1201,
+     0.2412,
+     0.3657
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_2",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.195,
+     0.1936,
+     0.0
+    ],
+    "max": [
+     0.2478,
+     0.2412,
+     0.3657
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2176,
+     0.1936,
+     0.0
+    ],
+    "max": [
+     0.2704,
+     0.2412,
+     0.3669
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_3",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.1955,
+     0.1936,
+     0.0
+    ],
+    "max": [
+     -0.1427,
+     0.2412,
+     0.3669
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "x",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.1955,
+     0.1557,
+     0.0
+    ],
+    "max": [
+     -0.1427,
+     0.2101,
+     0.3657
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "y",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     0.2176,
+     -0.2389,
+     0.0
+    ],
+    "max": [
+     0.2704,
+     -0.1845,
+     0.3657
+    ]
+   },
+   {
+    "forma": "caixa",
+    "copia_de": "forma_4",
+    "espelho": "xy",
+    "votos": 1,
+    "pe": true,
+    "min": [
+     -0.1955,
+     -0.2389,
+     0.0
+    ],
+    "max": [
+     -0.1427,
+     -0.1845,
+     0.3657
+    ]
+   }
+  ],
+  "n_pes": 3,
+  "profundidade": {
+   "existe": true,
+   "pixels": 4501,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.3042
+  },
+  "sugestao": [
+   "3 pÃ©s descritos, provÃ¡vel pÃ© escondido (faltam 7, espelho de forma_2): completar por simetria",
+   "hÃ¡ desenho de trÃ¡s real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_white_wooden",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_white_wooden\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_white_wooden\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_white_wooden\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_white_wooden\\profundidade.png"
+  }
+ }
+}

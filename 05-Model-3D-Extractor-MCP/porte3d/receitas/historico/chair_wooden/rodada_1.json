@@ -1,0 +1,130 @@
+{
+ "versao": 1,
+ "id": "chair_wooden",
+ "sprites": {
+  "S": "furniture_seating_indoor_02_0",
+  "E": "furniture_seating_indoor_02_1",
+  "N": "furniture_seating_indoor_02_3",
+  "W": "furniture_seating_indoor_02_2"
+ },
+ "tras": "N",
+ "material": "madeira",
+ "cores": {
+  "madeira": [
+   135,
+   92,
+   58
+  ],
+  "tecido": [
+   135,
+   92,
+   58
+  ]
+ },
+ "pecas": [
+  {
+   "nome": "pes",
+   "forma": "caixa",
+   "min": [
+    -0.28,
+    -0.26,
+    0.0
+   ],
+   "max": [
+    -0.23,
+    -0.21,
+    0.45
+   ],
+   "espelhar": [
+    "x",
+    "y"
+   ],
+   "material": "madeira",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "saia_base",
+   "forma": "caixa",
+   "min": [
+    -0.27,
+    -0.25,
+    0.38
+   ],
+   "max": [
+    0.27,
+    0.25,
+    0.44
+   ],
+   "material": "madeira",
+   "chanfro": 0.005
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "min": [
+    -0.29,
+    -0.27,
+    0.44
+   ],
+   "max": [
+    0.29,
+    0.27,
+    0.48
+   ],
+   "material": "madeira",
+   "chanfro": 0.015
+  },
+  {
+   "nome": "postes_encosto",
+   "forma": "caixa",
+   "min": [
+    -0.27,
+    0.22,
+    0.48
+   ],
+   "max": [
+    -0.23,
+    0.26,
+    0.94
+   ],
+   "espelhar": [
+    "x"
+   ],
+   "material": "madeira",
+   "chanfro": 0.003
+  },
+  {
+   "nome": "encosto",
+   "forma": "caixa",
+   "min": [
+    -0.25,
+    0.23,
+    0.72
+   ],
+   "max": [
+    0.25,
+    0.26,
+    0.93
+   ],
+   "material": "madeira",
+   "chanfro": 0.01
+  }
+ ],
+ "arte": {
+  "modo": "adesivo"
+ },
+ "realista": {
+  "materiais": {
+   "madeira": {
+    "tipo": "madeira",
+    "desgaste": 0.4,
+    "ferrugem": 0.1
+   },
+   "tecido": {
+    "tipo": "tecido",
+    "desgaste": 0.35,
+    "ferrugem": 0.1
+   }
+  }
+ }
+}

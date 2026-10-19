@@ -1,481 +1,833 @@
 {
- "versao": 1,
- "id": "oven_modern",
- "sprites": {
-  "S": "appliances_cooking_01_13",
-  "E": "appliances_cooking_01_12",
-  "N": "appliances_cooking_01_15",
-  "W": "appliances_cooking_01_14"
- },
- "tras": "N",
- "material": "metal",
- "cores": {
-  "metal": [
-   205,
-   205,
-   208
+  "versao": 1,
+  "id": "oven_modern",
+  "sprites": {
+    "S": "appliances_cooking_01_13",
+    "E": "appliances_cooking_01_12",
+    "N": "appliances_cooking_01_15",
+    "W": "appliances_cooking_01_14"
+  },
+  "tras": "N",
+  "material": "metal",
+  "cores": {
+    "metal": [
+      205,
+      205,
+      208
+    ],
+    "metal_escuro": [
+      38,
+      38,
+      40
+    ],
+    "liso": [
+      26,
+      30,
+      30
+    ],
+    "reflexo_vidro": [
+      235,
+      240,
+      245
+    ]
+  },
+  "pecas": [
+    {
+      "nome": "corpo",
+      "forma": "caixa",
+      "min": [
+        -0.45,
+        -0.22,
+        0.07
+      ],
+      "max": [
+        0.49,
+        0.4534,
+        0.925
+      ],
+      "chanfro": 0.012
+    },
+    {
+      "nome": "rodape",
+      "forma": "caixa",
+      "min": [
+        -0.43,
+        -0.2,
+        0.0
+      ],
+      "max": [
+        0.47,
+        0.43,
+        0.08
+      ],
+      "material": "metal_escuro",
+      "chanfro": 0.005
+    },
+    {
+      "nome": "aba_traseira",
+      "forma": "caixa",
+      "min": [
+        -0.45,
+        0.4083,
+        0.925
+      ],
+      "max": [
+        0.49,
+        0.4533,
+        1.09
+      ],
+      "chanfro": 0.008
+    },
+    {
+      "nome": "faixa_aba",
+      "forma": "caixa",
+      "min": [
+        -0.45,
+        0.4083,
+        1.09
+      ],
+      "max": [
+        0.49,
+        0.4533,
+        1.1234
+      ],
+      "material": "liso",
+      "chanfro": 0.006
+    },
+    {
+      "nome": "painel_frontal",
+      "forma": "caixa",
+      "min": [
+        -0.45,
+        -0.245,
+        0.79
+      ],
+      "max": [
+        0.49,
+        -0.22,
+        0.925
+      ],
+      "chanfro": 0.01
+    },
+    {
+      "nome": "porta_forno",
+      "forma": "caixa",
+      "min": [
+        -0.4,
+        -0.24,
+        0.2
+      ],
+      "max": [
+        0.4,
+        -0.22,
+        0.73
+      ],
+      "chanfro": 0.01
+    },
+    {
+      "nome": "vidro_forno",
+      "forma": "caixa",
+      "min": [
+        -0.33,
+        -0.246,
+        0.3
+      ],
+      "max": [
+        0.33,
+        -0.239,
+        0.6
+      ],
+      "material": "liso",
+      "chanfro": 0.003
+    },
+    {
+      "nome": "puxador_forno",
+      "forma": "cilindro",
+      "eixo": "x",
+      "centro": [
+        -0.4,
+        -0.285,
+        0.69
+      ],
+      "raio": 0.015,
+      "altura": 0.8,
+      "segmentos": 14
+    },
+    {
+      "nome": "puxador_apoio0",
+      "forma": "caixa",
+      "min": [
+        -0.39,
+        -0.285,
+        0.675
+      ],
+      "max": [
+        -0.37,
+        -0.24,
+        0.705
+      ],
+      "chanfro": 0.003
+    },
+    {
+      "nome": "puxador_apoio1",
+      "forma": "caixa",
+      "min": [
+        0.37,
+        -0.285,
+        0.675
+      ],
+      "max": [
+        0.39,
+        -0.24,
+        0.705
+      ],
+      "chanfro": 0.003
+    },
+    {
+      "nome": "botao0",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        -0.31,
+        -0.27,
+        0.86
+      ],
+      "raio": 0.02,
+      "altura": 0.025,
+      "segmentos": 14
+    },
+    {
+      "nome": "botao1",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        -0.16,
+        -0.27,
+        0.86
+      ],
+      "raio": 0.02,
+      "altura": 0.025,
+      "segmentos": 14
+    },
+    {
+      "nome": "botao2",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.02,
+        -0.27,
+        0.86
+      ],
+      "raio": 0.02,
+      "altura": 0.025,
+      "segmentos": 14
+    },
+    {
+      "nome": "botao3",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.2,
+        -0.27,
+        0.86
+      ],
+      "raio": 0.02,
+      "altura": 0.025,
+      "segmentos": 14
+    },
+    {
+      "nome": "botao4",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.35,
+        -0.27,
+        0.86
+      ],
+      "raio": 0.02,
+      "altura": 0.025,
+      "segmentos": 14
+    },
+    {
+      "nome": "boca_fe",
+      "forma": "cilindro",
+      "centro": [
+        -0.245,
+        -0.095,
+        0.925
+      ],
+      "raio": 0.075,
+      "altura": 0.02,
+      "material": "metal_escuro",
+      "segmentos": 20
+    },
+    {
+      "nome": "anel_fe",
+      "forma": "cilindro",
+      "centro": [
+        -0.245,
+        -0.095,
+        0.925
+      ],
+      "raio": 0.083,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 20
+    },
+    {
+      "nome": "tampa_fe",
+      "forma": "cilindro",
+      "centro": [
+        -0.245,
+        -0.095,
+        0.945
+      ],
+      "raio": 0.0225,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 14
+    },
+    {
+      "nome": "grade_boca_fe0",
+      "forma": "caixa",
+      "min": [
+        -0.3125,
+        -0.098,
+        0.9450000000000001
+      ],
+      "max": [
+        -0.1775,
+        -0.092,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_boca_fe1",
+      "forma": "caixa",
+      "min": [
+        -0.3125,
+        -0.098,
+        0.9450000000000001
+      ],
+      "max": [
+        -0.1775,
+        -0.092,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        -45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "boca_fd",
+      "forma": "cilindro",
+      "centro": [
+        0.3,
+        -0.075,
+        0.925
+      ],
+      "raio": 0.088,
+      "altura": 0.02,
+      "material": "metal_escuro",
+      "segmentos": 20
+    },
+    {
+      "nome": "anel_fd",
+      "forma": "cilindro",
+      "centro": [
+        0.3,
+        -0.075,
+        0.925
+      ],
+      "raio": 0.096,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 20
+    },
+    {
+      "nome": "tampa_fd",
+      "forma": "cilindro",
+      "centro": [
+        0.3,
+        -0.075,
+        0.945
+      ],
+      "raio": 0.0264,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 14
+    },
+    {
+      "nome": "grade_boca_fd0",
+      "forma": "caixa",
+      "min": [
+        0.2208,
+        -0.078,
+        0.9450000000000001
+      ],
+      "max": [
+        0.3792,
+        -0.072,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_boca_fd1",
+      "forma": "caixa",
+      "min": [
+        0.2208,
+        -0.078,
+        0.9450000000000001
+      ],
+      "max": [
+        0.3792,
+        -0.072,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        -45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "boca_te",
+      "forma": "cilindro",
+      "centro": [
+        -0.155,
+        0.15,
+        0.925
+      ],
+      "raio": 0.075,
+      "altura": 0.02,
+      "material": "metal_escuro",
+      "segmentos": 20
+    },
+    {
+      "nome": "anel_te",
+      "forma": "cilindro",
+      "centro": [
+        -0.155,
+        0.15,
+        0.925
+      ],
+      "raio": 0.083,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 20
+    },
+    {
+      "nome": "tampa_te",
+      "forma": "cilindro",
+      "centro": [
+        -0.155,
+        0.15,
+        0.945
+      ],
+      "raio": 0.0225,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 14
+    },
+    {
+      "nome": "grade_boca_te0",
+      "forma": "caixa",
+      "min": [
+        -0.2225,
+        0.147,
+        0.9450000000000001
+      ],
+      "max": [
+        -0.0875,
+        0.153,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_boca_te1",
+      "forma": "caixa",
+      "min": [
+        -0.2225,
+        0.147,
+        0.9450000000000001
+      ],
+      "max": [
+        -0.0875,
+        0.153,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        -45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "boca_td",
+      "forma": "cilindro",
+      "centro": [
+        0.16,
+        0.16,
+        0.925
+      ],
+      "raio": 0.075,
+      "altura": 0.02,
+      "material": "metal_escuro",
+      "segmentos": 20
+    },
+    {
+      "nome": "anel_td",
+      "forma": "cilindro",
+      "centro": [
+        0.16,
+        0.16,
+        0.925
+      ],
+      "raio": 0.083,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 20
+    },
+    {
+      "nome": "tampa_td",
+      "forma": "cilindro",
+      "centro": [
+        0.16,
+        0.16,
+        0.945
+      ],
+      "raio": 0.0225,
+      "altura": 0.01,
+      "material": "metal",
+      "segmentos": 14
+    },
+    {
+      "nome": "grade_boca_td0",
+      "forma": "caixa",
+      "min": [
+        0.0925,
+        0.157,
+        0.9450000000000001
+      ],
+      "max": [
+        0.2275,
+        0.163,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_boca_td1",
+      "forma": "caixa",
+      "min": [
+        0.0925,
+        0.157,
+        0.9450000000000001
+      ],
+      "max": [
+        0.2275,
+        0.163,
+        0.949
+      ],
+      "rot": [
+        0,
+        0,
+        -45
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira0",
+      "forma": "caixa",
+      "min": [
+        0.115,
+        0.4534,
+        0.095
+      ],
+      "max": [
+        0.365,
+        0.457,
+        0.215
+      ],
+      "chanfro": 0.002
+    },
+    {
+      "nome": "grade_traseira1",
+      "forma": "caixa",
+      "min": [
+        -0.31,
+        0.4534,
+        0.135
+      ],
+      "max": [
+        -0.06,
+        0.457,
+        0.255
+      ],
+      "chanfro": 0.002
+    },
+    {
+      "nome": "grade_traseira0_ripa0",
+      "forma": "caixa",
+      "min": [
+        0.127,
+        0.457,
+        0.1025
+      ],
+      "max": [
+        0.353,
+        0.463,
+        0.1145
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira0_ripa1",
+      "forma": "caixa",
+      "min": [
+        0.127,
+        0.457,
+        0.1295
+      ],
+      "max": [
+        0.353,
+        0.463,
+        0.1415
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira0_ripa2",
+      "forma": "caixa",
+      "min": [
+        0.127,
+        0.457,
+        0.1565
+      ],
+      "max": [
+        0.353,
+        0.463,
+        0.1685
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira0_ripa3",
+      "forma": "caixa",
+      "min": [
+        0.127,
+        0.457,
+        0.1835
+      ],
+      "max": [
+        0.353,
+        0.463,
+        0.1955
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira1_ripa0",
+      "forma": "caixa",
+      "min": [
+        -0.298,
+        0.457,
+        0.1425
+      ],
+      "max": [
+        -0.072,
+        0.463,
+        0.1545
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira1_ripa1",
+      "forma": "caixa",
+      "min": [
+        -0.298,
+        0.457,
+        0.1695
+      ],
+      "max": [
+        -0.072,
+        0.463,
+        0.1815
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira1_ripa2",
+      "forma": "caixa",
+      "min": [
+        -0.298,
+        0.457,
+        0.1965
+      ],
+      "max": [
+        -0.072,
+        0.463,
+        0.2085
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "grade_traseira1_ripa3",
+      "forma": "caixa",
+      "min": [
+        -0.298,
+        0.457,
+        0.2235
+      ],
+      "max": [
+        -0.072,
+        0.463,
+        0.2355
+      ],
+      "material": "metal_escuro"
+    },
+    {
+      "nome": "furo_cabo",
+      "forma": "cilindro",
+      "eixo": "y",
+      "centro": [
+        0.28,
+        0.4534,
+        0.32
+      ],
+      "raio": 0.02,
+      "altura": 0.005,
+      "material": "liso",
+      "segmentos": 14
+    },
+    {
+      "nome": "reflexo_vidro0",
+      "forma": "prisma",
+      "material": "reflexo_vidro",
+      "perfil": [
+        [
+          -0.28,
+          0.58
+        ],
+        [
+          -0.23,
+          0.58
+        ],
+        [
+          0.07,
+          0.3
+        ],
+        [
+          0.02,
+          0.3
+        ]
+      ],
+      "eixo": "y",
+      "de": -0.249,
+      "ate": -0.248
+    },
+    {
+      "nome": "reflexo_vidro1",
+      "forma": "prisma",
+      "material": "reflexo_vidro",
+      "perfil": [
+        [
+          -0.12,
+          0.58
+        ],
+        [
+          -0.09,
+          0.58
+        ],
+        [
+          0.15,
+          0.3
+        ],
+        [
+          0.12,
+          0.3
+        ]
+      ],
+      "eixo": "y",
+      "de": -0.249,
+      "ate": -0.248
+    },
+    {
+      "nome": "reflexo_vidro2",
+      "forma": "prisma",
+      "material": "reflexo_vidro",
+      "perfil": [
+        [
+          0.1,
+          0.58
+        ],
+        [
+          0.13,
+          0.58
+        ],
+        [
+          0.27,
+          0.3
+        ],
+        [
+          0.24,
+          0.3
+        ]
+      ],
+      "eixo": "y",
+      "de": -0.249,
+      "ate": -0.248
+    }
   ],
-  "metal_escuro": [
-   38,
-   38,
-   40
-  ],
-  "liso": [
-   26,
-   30,
-   30
-  ]
- },
- "pecas": [
-  {
-   "nome": "corpo",
-   "forma": "caixa",
-   "min": [
-    -0.45,
-    -0.22,
-    0.07
-   ],
-   "max": [
-    0.49,
-    0.4534,
-    0.925
-   ],
-   "chanfro": 0.012
+  "arte": {
+    "modo": "adesivo"
   },
-  {
-   "nome": "rodape",
-   "forma": "caixa",
-   "min": [
-    -0.43,
-    -0.2,
-    0.0
-   ],
-   "max": [
-    0.47,
-    0.43,
-    0.08
-   ],
-   "material": "metal_escuro",
-   "chanfro": 0.005
-  },
-  {
-   "nome": "aba_traseira",
-   "forma": "caixa",
-   "min": [
-    -0.45,
-    0.4083,
-    0.925
-   ],
-   "max": [
-    0.49,
-    0.4533,
-    1.09
-   ],
-   "chanfro": 0.008
-  },
-  {
-   "nome": "faixa_aba",
-   "forma": "caixa",
-   "min": [
-    -0.45,
-    0.4083,
-    1.09
-   ],
-   "max": [
-    0.49,
-    0.4533,
-    1.1234
-   ],
-   "material": "liso",
-   "chanfro": 0.006
-  },
-  {
-   "nome": "painel_frontal",
-   "forma": "caixa",
-   "min": [
-    -0.45,
-    -0.245,
-    0.79
-   ],
-   "max": [
-    0.49,
-    -0.22,
-    0.925
-   ],
-   "chanfro": 0.01
-  },
-  {
-   "nome": "porta_forno",
-   "forma": "caixa",
-   "min": [
-    -0.4,
-    -0.24,
-    0.2
-   ],
-   "max": [
-    0.4,
-    -0.22,
-    0.73
-   ],
-   "chanfro": 0.01
-  },
-  {
-   "nome": "vidro_forno",
-   "forma": "caixa",
-   "min": [
-    -0.33,
-    -0.246,
-    0.3
-   ],
-   "max": [
-    0.33,
-    -0.239,
-    0.6
-   ],
-   "material": "liso",
-   "chanfro": 0.003
-  },
-  {
-   "nome": "puxador_forno",
-   "forma": "cilindro",
-   "eixo": "x",
-   "centro": [
-    -0.4,
-    -0.285,
-    0.69
-   ],
-   "raio": 0.015,
-   "altura": 0.8,
-   "segmentos": 14
-  },
-  {
-   "nome": "puxador_apoio0",
-   "forma": "caixa",
-   "min": [
-    -0.39,
-    -0.285,
-    0.675
-   ],
-   "max": [
-    -0.37,
-    -0.24,
-    0.705
-   ],
-   "chanfro": 0.003
-  },
-  {
-   "nome": "puxador_apoio1",
-   "forma": "caixa",
-   "min": [
-    0.37,
-    -0.285,
-    0.675
-   ],
-   "max": [
-    0.39,
-    -0.24,
-    0.705
-   ],
-   "chanfro": 0.003
-  },
-  {
-   "nome": "botao0",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    -0.31,
-    -0.27,
-    0.86
-   ],
-   "raio": 0.02,
-   "altura": 0.025,
-   "segmentos": 14
-  },
-  {
-   "nome": "botao1",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    -0.16,
-    -0.27,
-    0.86
-   ],
-   "raio": 0.02,
-   "altura": 0.025,
-   "segmentos": 14
-  },
-  {
-   "nome": "botao2",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.02,
-    -0.27,
-    0.86
-   ],
-   "raio": 0.02,
-   "altura": 0.025,
-   "segmentos": 14
-  },
-  {
-   "nome": "botao3",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.2,
-    -0.27,
-    0.86
-   ],
-   "raio": 0.02,
-   "altura": 0.025,
-   "segmentos": 14
-  },
-  {
-   "nome": "botao4",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.35,
-    -0.27,
-    0.86
-   ],
-   "raio": 0.02,
-   "altura": 0.025,
-   "segmentos": 14
-  },
-  {
-   "nome": "boca_fe",
-   "forma": "cilindro",
-   "centro": [
-    -0.245,
-    -0.095,
-    0.925
-   ],
-   "raio": 0.075,
-   "altura": 0.02,
-   "material": "metal_escuro",
-   "segmentos": 20
-  },
-  {
-   "nome": "boca_fd",
-   "forma": "cilindro",
-   "centro": [
-    0.3,
-    -0.075,
-    0.925
-   ],
-   "raio": 0.088,
-   "altura": 0.02,
-   "material": "metal_escuro",
-   "segmentos": 20
-  },
-  {
-   "nome": "boca_te",
-   "forma": "cilindro",
-   "centro": [
-    -0.155,
-    0.15,
-    0.925
-   ],
-   "raio": 0.075,
-   "altura": 0.02,
-   "material": "metal_escuro",
-   "segmentos": 20
-  },
-  {
-   "nome": "boca_td",
-   "forma": "cilindro",
-   "centro": [
-    0.16,
-    0.16,
-    0.925
-   ],
-   "raio": 0.075,
-   "altura": 0.02,
-   "material": "metal_escuro",
-   "segmentos": 20
-  },
-  {
-   "nome": "grade_traseira0",
-   "forma": "caixa",
-   "min": [
-    0.115,
-    0.4534,
-    0.095
-   ],
-   "max": [
-    0.365,
-    0.457,
-    0.215
-   ],
-   "chanfro": 0.002
-  },
-  {
-   "nome": "grade_traseira1",
-   "forma": "caixa",
-   "min": [
-    -0.31,
-    0.4534,
-    0.135
-   ],
-   "max": [
-    -0.06,
-    0.457,
-    0.255
-   ],
-   "chanfro": 0.002
-  },
-  {
-   "nome": "grade_traseira0_ripa0",
-   "forma": "caixa",
-   "min": [
-    0.127,
-    0.457,
-    0.1025
-   ],
-   "max": [
-    0.353,
-    0.463,
-    0.1145
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira0_ripa1",
-   "forma": "caixa",
-   "min": [
-    0.127,
-    0.457,
-    0.1295
-   ],
-   "max": [
-    0.353,
-    0.463,
-    0.1415
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira0_ripa2",
-   "forma": "caixa",
-   "min": [
-    0.127,
-    0.457,
-    0.1565
-   ],
-   "max": [
-    0.353,
-    0.463,
-    0.1685
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira0_ripa3",
-   "forma": "caixa",
-   "min": [
-    0.127,
-    0.457,
-    0.1835
-   ],
-   "max": [
-    0.353,
-    0.463,
-    0.1955
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira1_ripa0",
-   "forma": "caixa",
-   "min": [
-    -0.298,
-    0.457,
-    0.1425
-   ],
-   "max": [
-    -0.072,
-    0.463,
-    0.1545
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira1_ripa1",
-   "forma": "caixa",
-   "min": [
-    -0.298,
-    0.457,
-    0.1695
-   ],
-   "max": [
-    -0.072,
-    0.463,
-    0.1815
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira1_ripa2",
-   "forma": "caixa",
-   "min": [
-    -0.298,
-    0.457,
-    0.1965
-   ],
-   "max": [
-    -0.072,
-    0.463,
-    0.2085
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "grade_traseira1_ripa3",
-   "forma": "caixa",
-   "min": [
-    -0.298,
-    0.457,
-    0.2235
-   ],
-   "max": [
-    -0.072,
-    0.463,
-    0.2355
-   ],
-   "material": "metal_escuro"
-  },
-  {
-   "nome": "furo_cabo",
-   "forma": "cilindro",
-   "eixo": "y",
-   "centro": [
-    0.28,
-    0.4534,
-    0.32
-   ],
-   "raio": 0.02,
-   "altura": 0.005,
-   "material": "liso",
-   "segmentos": 14
+  "realista": {
+    "materiais": {
+      "metal": {
+        "tipo": "metal",
+        "desgaste": 0.5,
+        "ferrugem": 0.1
+      },
+      "metal_escuro": {
+        "tipo": "metal",
+        "desgaste": 0.4
+      },
+      "liso": {
+        "tipo": "liso",
+        "desgaste": 0.2
+      },
+      "reflexo_vidro": {
+        "tipo": "liso"
+      }
+    }
   }
- ],
- "arte": {
-  "modo": "adesivo"
- },
- "realista": {
-  "materiais": {
-   "metal": {
-    "tipo": "metal",
-    "desgaste": 0.3
-   },
-   "metal_escuro": {
-    "tipo": "metal",
-    "desgaste": 0.2
-   },
-   "liso": {
-    "tipo": "liso"
-   }
-  }
- }
 }

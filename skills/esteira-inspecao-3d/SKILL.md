@@ -44,8 +44,8 @@ sequenceDiagram
     Insp->>Dir: Grava 4 Vistas (isométrica, topo, frontal, lateral) + auditoria.json
     Insp->>QA: Notifica conclusão com links das fotos
     alt Dúvida em geometria ou curvatura
-        QA->>Insp: Solicita ativar_bancada(arquivo, porta=8080)
-        Insp-->>QA: Disponibiliza Three.js orbital no navegador
+        QA->>Insp: Solicita inspeção isolada do .obj (visualizador-obj.html)
+        Insp-->>QA: Disponibiliza o .obj no navegador, com a parte isolada
     end
     alt Aprovado pelo Auditor
         QA->>Ext: Homologação Aprovada
@@ -126,18 +126,17 @@ O operador humano abre as imagens na pasta de inspeção e analisa os 5 pilares 
 | **4. Texturas** | Orientação correta e sem esticamentos? | Rótulos invertidos ou nós de madeira esticados. |
 | **5. Solo (Y=0)** | Toca o piso na linha Y=0? | Flutuando no ar ou afundado no piso. |
 
-### Passo 5: Depuração Interativa na Bancada 3D (Se Houver Dúvida)
-Se o auditor suspeitar de imperfeições que não ficam claras em 2D:
-1. Suba a bancada 3D Three.js:
-   ```python
-   # mecanifica:ativar_bancada(
-   #   arquivo="05-Model-3D-Extractor-MCP/packs/zomboid-essentials/models/wooden_crate_01.obj",
-   #   modo="isolar",
-   #   focar="wooden_crate_01",
-   #   porta=8080
-   # )
+### Passo 5: Inspeção Isolada de um `.obj` (Se Houver Dúvida)
+Se o auditor suspeitar de imperfeições que não ficam claras em 2D, use o visualizador de OBJ do repositório Mecanifica (`src/visualizador-obj/`). Ele lê o `.obj` direto, sem receita, e isola uma parte pelo material (`usemtl`), que é como os modelos do jogo estão organizados (uma parte por material, um objeto por arquivo).
+
+1. Com o servidor de desenvolvimento do Mecanifica rodando (`npm run dev`), abra no navegador:
+   ```text
+   http://localhost:5173/nos-mecanifica/visualizador-obj.html?obj=<caminho do .obj relativo ao repositório Mecanifica>&selecionadas=<material da parte>&modo=isolar
    ```
-2. Abra `http://localhost:8080/` no navegador para girar em órbita, dar zoom milimétrico e inspecionar o wireframe.
+   O caminho precisa estar dentro do repositório Mecanifica, porque o servidor só serve arquivos de lá. Copie o `.obj` para uma pasta ignorada, como `tmp/`, antes de abrir.
+2. No painel, a lista mostra cada parte e o estado dela (`normal` ou `oculto`). Sem `selecionadas`, todas aparecem.
+
+O `ativar:bancada` do Mecanifica não serve para isto: ele só carrega receita `.js` do próprio Mecanifica, não um `.obj`.
 
 ### Passo 6: Amarração do Sprite e Deploy no Viewpoint
 Após a homologação expressa do Auditor Humano:
@@ -172,6 +171,6 @@ Após a homologação expressa do Auditor Humano:
 | Injetar malha 3D customizada | `pz-model-extractor:generate_custom_obj` | Extrator 3D |
 | Renderizar 4 vistas headless | `mecanifica:renderizar_vistas` | Inspetor Visual |
 | Descrever geometria e volume | `mecanifica:descrever_peca` | Inspetor Visual |
-| Ligar Bancada 3D interativa | `mecanifica:ativar_bancada` | Inspetor / Auditor |
+| Inspecionar e isolar um `.obj` | visualizador de OBJ do Mecanifica (`visualizador-obj.html`) | Inspetor / Auditor |
 | Amarrar sprite ao modelo 3D | `pz-model-extractor:bind_sprite_to_3d` | Extrator 3D |
 | Fazer deploy no jogo ativo | `pz-model-extractor:deploy_pack` | Extrator 3D |

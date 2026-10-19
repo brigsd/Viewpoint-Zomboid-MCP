@@ -1,0 +1,254 @@
+{
+ "versao": 1,
+ "objeto": "chair_rocking",
+ "sprite": "furniture_seating_indoor_03_145",
+ "decisao": "portar",
+ "motivo": "cadeira de balanco de vime com patins curvos",
+ "o_que_e": "cadeira de balanco de vime com patins curvos",
+ "pecas": [
+  {
+   "nome": "patins",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "patins curvos"
+  },
+  {
+   "nome": "assento",
+   "forma": "caixa",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "assento"
+  },
+  {
+   "nome": "encosto",
+   "forma": "prisma",
+   "origem": "nova",
+   "material": "madeira",
+   "descricao": "encosto"
+  }
+ ],
+ "simetria": "nenhuma",
+ "tras": "N",
+ "direcoes_espelhadas": true,
+ "arte": "adesivo",
+ "materiais": {
+  "madeira": "madeira"
+ },
+ "problemas_previstos": [
+  "pecas finas"
+ ],
+ "medidas": {
+  "sprite": "furniture_seating_indoor_03_145",
+  "sprites": {
+   "S": "furniture_seating_indoor_03_145",
+   "E": "furniture_seating_indoor_03_144",
+   "N": "furniture_seating_indoor_03_146",
+   "W": "furniture_seating_indoor_03_147"
+  },
+  "tem_quadro_S": true,
+  "n_formas_jogo": 5,
+  "formas_ignoradas": [
+   {
+    "indice": 4,
+    "motivo": "placa de sombra no chÃ£o"
+   }
+  ],
+  "tem_geometria": true,
+  "n_formas": 4,
+  "tipos": {
+   "caixa": 4,
+   "cilindro": 0,
+   "prisma": 0
+  },
+  "pecas": [
+   {
+    "nome": "forma_0",
+    "forma": "caixa",
+    "min": [
+     -0.3,
+     -0.3,
+     0.02
+    ],
+    "max": [
+     0.3,
+     0.2,
+     0.38
+    ]
+   },
+   {
+    "nome": "forma_1",
+    "forma": "caixa",
+    "min": [
+     -0.45,
+     0.2,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.45,
+     1.18
+    ]
+   },
+   {
+    "nome": "forma_2",
+    "forma": "caixa",
+    "min": [
+     -0.45,
+     -0.5,
+     0.0
+    ],
+    "max": [
+     -0.3,
+     0.2,
+     0.6
+    ]
+   },
+   {
+    "nome": "forma_3",
+    "forma": "caixa",
+    "min": [
+     0.3,
+     -0.5,
+     0.0
+    ],
+    "max": [
+     0.5,
+     0.2,
+     0.6
+    ]
+   }
+  ],
+  "multi_tile": false,
+  "material": "madeira",
+  "material_props": {
+   "Material": "Wood",
+   "Material2": "Nails"
+  },
+  "props": {
+   "CustomName": "Chair",
+   "GroupName": "Rocking",
+   "Facing": "S",
+   "Surface": "15",
+   "IsLow": "",
+   "IsMoveAble": "",
+   "BlocksPlacement": "",
+   "solidtrans": "",
+   "ScrapSize": "Small",
+   "PickUpWeight": "75"
+  },
+  "props_geometria": {
+   "Surface": "15",
+   "Translucent": "true"
+  },
+  "categoria": "moveis",
+  "caixa": {
+   "min": [
+    -0.45,
+    -0.5,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.45,
+    1.18
+   ],
+   "largura": 0.95,
+   "profundidade": 0.95,
+   "altura": 1.18
+  },
+  "menor_medida_peca": 0.15,
+  "fino": false,
+  "pecas_finas": [],
+  "altura_base": 0.0,
+  "montado_na_parede": false,
+  "contorno_0": 0.5288,
+  "cobertura": 0.9976,
+  "sobra": 0.4706,
+  "pixels_desenho": 6677,
+  "pixels_geometria": 12581,
+  "espelhado_E_S": 0.702,
+  "espelhado_W_N": 0.7626,
+  "N_igual_S": 0.3022,
+  "silhueta_espelho_E_S": 0.7634,
+  "silhueta_espelho_W_N": 0.84,
+  "E_e_espelho_de_S": false,
+  "W_e_espelho_de_N": false,
+  "tem_N": true,
+  "centro_simetria": [
+   0.025,
+   -0.025
+  ],
+  "pecas_sem_par": [
+   {
+    "peca": "forma_0",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_1",
+    "sem_par": [
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_2",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   },
+   {
+    "peca": "forma_3",
+    "sem_par": [
+     "x",
+     "y",
+     "xy"
+    ]
+   }
+  ],
+  "pecas_provavelmente_faltando": [
+   {
+    "forma": "caixa",
+    "copia_de": "forma_1",
+    "espelho": "y",
+    "votos": 2,
+    "pe": false,
+    "min": [
+     -0.45,
+     -0.5,
+     0.0
+    ],
+    "max": [
+     0.5,
+     -0.25,
+     1.18
+    ]
+   }
+  ],
+  "n_pes": 0,
+  "profundidade": {
+   "existe": true,
+   "pixels": 12959,
+   "cobertura": 1.0,
+   "fora_do_desenho": 0.4848
+  },
+  "sugestao": [
+   "47% da geometria cai fora do desenho: medidas do jogo maiores que a arte, ou peÃ§a que nÃ£o aparece",
+   "contorno em 0Â° baixo (IoU 0.53): as caixas do jogo nÃ£o casam com o desenho",
+   "hÃ¡ desenho de trÃ¡s real (N): usar tras = N"
+  ],
+  "pasta": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_rocking",
+  "imagens": {
+   "direcoes.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_rocking\\direcoes.png",
+   "geometria.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_rocking\\geometria.png",
+   "cobertura.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_rocking\\cobertura.png",
+   "profundidade.png": "C:\\Users\\micro\\Desktop\\ProjectZomboid-FirstPerson-Suite\\05-Model-3D-Extractor-MCP\\acervo\\data\\porte3d\\inspecao\\chair_rocking\\profundidade.png"
+  }
+ }
+}
